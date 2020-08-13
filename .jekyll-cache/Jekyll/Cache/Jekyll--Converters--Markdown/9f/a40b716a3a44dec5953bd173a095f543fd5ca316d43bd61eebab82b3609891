@@ -1,0 +1,34 @@
+I"%<p><a href="http://www.mathjax.org/">MathJax</a> is a simple way of including Tex/LaTex/MathML based mathematics in HTML webpages. To get up and running you need to include the MathJax script in the header of your github pages page, and then write some maths. For LaTex, there are two delimiters you need to know about, one for block or displayed mathematics <code class="language-plaintext highlighter-rouge">\[ ... \]</code>, and the other for inline mathematics <code class="language-plaintext highlighter-rouge">\( ... \)</code>.</p>
+
+<h2 id="usage">Usage</h2>
+
+<p>To enable MathJax support be sure Kramdown is your Markdown flavor of choice and MathJax is set to true in your <code class="language-plaintext highlighter-rouge">_config.yml</code> file.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>markdown: kramdown
+mathjax: true
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block rendering: 
+\\[ \frac{1}{n^{2}} \\]
+</code></pre></div></div>
+
+<p>Here is an example MathJax inline rendering \( 1/x^{2} \), and here is a block rendering: 
+\[ \frac{1}{n^{2}} \]</p>
+
+<p>The only thing to look out for is the escaping of the backslash when using markdown, so the delimiters become <code class="language-plaintext highlighter-rouge">\\[ ... \\]</code> and <code class="language-plaintext highlighter-rouge">\\( ... \\)</code> for inline and block maths respectively.</p>
+
+\[\begin{align*}
+  &amp; \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  &amp; (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) &amp; \cdots &amp; \phi(e_1, e_n) \\
+      \vdots &amp; \ddots &amp; \vdots \\
+      \phi(e_n, e_1) &amp; \cdots &amp; \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{align*}\]
+:ET

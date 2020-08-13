@@ -1,0 +1,24 @@
+---
+layout: blog
+title: Pages
+group: navigation
+tagline: All pages order by capegories 
+tags : [blog, fullit, posts, post]
+img : 3.jpg
+img-mobile : 3-mobile.jpg
+author : Antonio Trento
+css: 
+js:
+bgcolor: ff5a71
+keywords: fullpage, html, css, landing page, jekyll, ruby, web marketing, advertising, Antonio Trento
+canonical: https://fullit.github.io/blog
+---
+{% include JB/setup %}
+
+
+<h2>All Pages</h2>
+<ul>
+{% assign pages_list = site.pages %}
+{% include JB/pages_list %}
+</ul>
+

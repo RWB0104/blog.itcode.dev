@@ -11,7 +11,7 @@ locale:             ko_KR
 url:                https://rwb0104.github.io/
 
 # Jekyll
-permalink:          /:title/
+permalink:          /posts/:year/:month/:title/
 markdown:           kramdown
 highlighter:        rouge
 kramdown:

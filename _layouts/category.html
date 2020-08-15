@@ -31,7 +31,7 @@ layout: compress
 
                 <div class="post-list">
                     {% assign category = page.title %}
-                    {% for post in site.posts %}
+                    {% for post in site.categories[category] %}
                     {% if post.project == null %}
                     <ul>
                         <li class="wow fadeInLeft" data-wow-duration="1.5s">

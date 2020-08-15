@@ -52,6 +52,10 @@ comments: true
         <!-- MathJax -->
         <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         {% endif %}
+
+        {% if page.comments != false %}
+        {% include disqus_comments.html %}
+        {% endif %}
     </header>
 </body>
 

@@ -1,0 +1,18 @@
+div.content {
+	font-size: 1em;
+}
+
+div.content > div.post-title {
+	margin-top: -2em;
+	margin-left: -4em;
+	margin-right: -4em;
+	padding: 8em;
+
+	border-radius: 3px 3px 0px 0px;
+
+	background-blend-mode: multiply;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-position: center;
+
+	color: white;
+}

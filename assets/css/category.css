@@ -1,0 +1,14 @@
+div.post-categories {
+	margin-bottom: 2em;
+}
+
+div.content > div.post-categories > select {
+	margin-left: 30px;
+	padding: 5px;
+	width: 200px;
+	border: 0px;
+}
+
+div.content > div.post-categories > select:focus {
+	outline: none;
+}

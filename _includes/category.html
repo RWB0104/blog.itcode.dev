@@ -1,22 +1,19 @@
-<div>
-	<select style="
-	margin-left: 30px;
-	padding: 5px;
-	width: 100px;
-	border: 0px;
-">
-		<option value="/posts">All</option>
+<div class="post-categories">
+	<p><b>Category</b></p>
+	<select>
+		<option value="/posts"> - All</option>
 		{% assign pages_list = site.pages %}
 		{% for node in pages_list %}
 		{% if node.title != null %}
 		{% if node.layout == "category" %}
 		{% if node.url == page.url %}
-		<option value="{{ site.baseurl }}{{ node.url }}" selected>{{ node.title }}</option>
+		<option value="{{ site.baseurl }}{{ node.url }}" selected> - {{ node.title }}</option>
 		{% else %}
-		<option value="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</option>
+		<option value="{{ site.baseurl }}{{ node.url }}"> - {{ node.title }}</option>
 		{% endif %}
 		{% endif %}
 		{% endif %}
 		{% endfor %}
 	</select>
 </div>
+<hr />

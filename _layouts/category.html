@@ -12,18 +12,7 @@ layout: compress
 <head>
     {% include head.html %}
 
-    {% include scripts.html %}
-    <script src="{{ site.url }}/assets/js/wow.min.js"></script>
-    <script type="text/javascript">(new WOW).init();</script>
-    <script>
-        $(document).ready(function()
-        {
-        	$("select").change(function()
-        	{
-        		location.href = $("select").val();
-        	});
-        });
-    </script>
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/category.css" />
 </head>
 
 <body>
@@ -59,6 +48,19 @@ layout: compress
             </div>
         </div>
     </header>
+
+    {% include scripts.html %}
+    <script src="{{ site.url }}/assets/js/wow.min.js"></script>
+    <script type="text/javascript">(new WOW).init();</script>
+    <script>
+        $(document).ready(function()
+        {
+        	$("select").change(function()
+        	{
+        		location.href = $("select").val();
+        	});
+        });
+    </script>
 </body>
 
 </html>

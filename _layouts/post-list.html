@@ -11,6 +11,9 @@ layout: compress
 
 <head>
     {% include head.html %}
+
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/posts-list.css" />
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/category.css" />
 </head>
 
 <body>
@@ -45,11 +48,12 @@ layout: compress
                 </div>
             </div>
         </div>
-    </header>
-    {% include scripts.html %}
-    <script src="{{ site.url }}/assets/js/wow.min.js"></script>
-    <script type="text/javascript">(new WOW).init();</script>
-    <script>
+
+        {% include scripts.html %}
+        <script src="{{ site.url }}/assets/js/wow.min.js"></script>
+        <script type="text/javascript">(new WOW).init();</script>
+
+        <script>
         $(document).ready(function()
         {
         	$("select").change(function()
@@ -58,6 +62,7 @@ layout: compress
         	});
         });
     </script>
+    </header>
 </body>
 
 </html>

@@ -46,15 +46,13 @@ comments: true
                 </div>
             </div>
         </div>
-        {% if page.comments != false %}
-        {% include disqus_comments.html %}
+
+        {% include scripts.html %}
+        {% if site.mathjax == true %}
+        <!-- MathJax -->
+        <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         {% endif %}
     </header>
-    {% include scripts.html %}
-    {% if site.mathjax == true %}
-    <!-- MathJax -->
-    <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    {% endif %}
 </body>
 
 </html>

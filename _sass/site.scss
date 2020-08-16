@@ -19,6 +19,7 @@ body {
 	// background-color: $bodycolor;
 	background-position: center center;
 	background-attachment: fixed;
+	background-size: cover;
 	@media #{$small} {
 	    background-image: none !important;
 		background: $white;
@@ -35,7 +36,7 @@ body {
 }
 .header {
 	height: 100%;
-	position: relative;
+	position: absolute;
 	width: 100%;
 	min-height: 300px;
 	text-align: left;

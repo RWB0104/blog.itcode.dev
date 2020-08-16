@@ -13,6 +13,7 @@ div.content > div.post-title {
 	background-blend-mode: multiply;
 	background-color: rgba(0, 0, 0, 0.5);
 	background-position: center;
+	background-size: cover;
 
 	color: white;
 }
@@ -29,6 +30,10 @@ span.green {
 	color: green;
 }
 
-div.post-title.Jekyll {
+div.post-title.bg-jekyll {
 	background-image: url("https://user-images.githubusercontent.com/50317129/90335558-b8a2d880-e010-11ea-9b66-897d33828ae2.png");
+}
+
+div.post-title.bg-begin {
+	background-image: url("https://user-images.githubusercontent.com/50317129/90335825-767a9680-e012-11ea-9140-6c1a01945922.png");
 }

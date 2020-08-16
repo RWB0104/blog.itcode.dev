@@ -16,3 +16,19 @@ div.content > div.post-title {
 
 	color: white;
 }
+
+span.red {
+	color: red;
+}
+
+span.blue {
+	color: blue;
+}
+
+span.green {
+	color: green;
+}
+
+div.post-title.Jekyll {
+	background-image: url("https://user-images.githubusercontent.com/50317129/90335558-b8a2d880-e010-11ea-9b66-897d33828ae2.png");
+}

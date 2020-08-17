@@ -18,16 +18,16 @@ div.content > div.post-title {
 	color: white;
 }
 
-span.red {
-	color: red;
+.color-red {
+	color: rgb(255, 120, 120);
 }
 
-span.blue {
-	color: blue;
+.color-blue {
+	color: rgb(100, 100, 241);
 }
 
-span.green {
-	color: green;
+.color-green {
+	color: rgb(80, 161, 80);
 }
 
 div.post-title.bg-jekyll {
@@ -36,4 +36,8 @@ div.post-title.bg-jekyll {
 
 div.post-title.bg-begin {
 	background-image: url("https://user-images.githubusercontent.com/50317129/90335825-767a9680-e012-11ea-9140-6c1a01945922.png");
+}
+
+.align-center {
+	text-align: center;
 }

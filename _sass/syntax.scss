@@ -3,9 +3,9 @@ pre.highlight {
 }
 
 .highlight {
-	background-color: #49483e;
+	background-color: #333333;
 	font-family: $font2;
-	@include font-size(16);
+	@include font-size(18);
 	color: #f8f8f2;
 	border-radius: 4px;
 	pre {

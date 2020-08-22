@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Github를 이용해 나만의 블로그 만들기 - 2. Github와 친해지기"
+title:  "Github를 이용해 나만의 Jekyll 블로그 만들기 - 2. Github와 친해지기"
 date:   2020-08-18 00:45:02 +0900
 excerpt: "Github Jekyll 블로그 개발기"
 categories: "Jekyll"
@@ -81,4 +81,4 @@ Github 페이지에 접속하면 위와 같은 화면을 볼 수 있는데, 상�
 
 다시 한 번 Github 홈페이지에 접속해서 상단 우측의 [<span class="color-green">Sign In</span>] 버튼을 클릭하여 로그인을 진행하자. 로그인은 회원가입 시 입력한 **username** 혹은 **Email address** 중 아무거나 사용해도 무방하다.
 
-위와 같은 화면이 뜨면 Github 회원가입이 완료된 것이다. 이로써 Jekyll를 보관하고 배포하기 위한 초석이 마련됐다. 다음 편에선 원하는 Jekyll 테마를 직접 골라보고 Github에 올려보는 과정을 진행할 예정이다.
+위와 같은 화면이 뜨면 Github 회원가입이 완료된 것이다. 이로써 Jekyll를 보관하고 배포하기 위한 초석이 마련됐다. 다음 편에선 원하는 Jekyll 블로그를 호스팅하기위한 준비과정에 대해 다룬다.

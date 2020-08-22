@@ -6,6 +6,7 @@ excerpt: "Github Jekyll 블로그 개발기"
 categories: "Jekyll"
 tag:
 - jekyll
+- github.io
 comments: true
 background: "bg-jekyll"
 ---

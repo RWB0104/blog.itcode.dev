@@ -1,7 +1,7 @@
 # Site
 title:              Kapoo
-bio:                "314159265359번째 개발조무사 알파카의 행복한 블로그"
-description:        "Kapoo is Happy"
+bio:                "314159265359번째 유사개발자 알파카의 행복한 블로그"
+description:        "행복한 알파카 카푸"
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'

@@ -22,9 +22,7 @@ Git도 Github도 많이 생소하여 처음 시작하는 분들껜 당혹스러�
 ---
 ## Github Repository 만들기
 
-Jekyll 테마를 선택하고 적용하는 방법엔 여러가지가 있는데, 이 글에선 원하는 테마를 다운로드하고, Repository 하나를 생성하여 Git을 통해 Repository에 반영하는 방식으로 설명하고자 한다.
-<br />
-이 방법 외에도 원하는 테마의 Repository를 fork하는 방법도 있으니, 궁금하면 한 번 찾아보길 바란다.
+Github Repository는 Github 홈페이지에서 만들 수 있다.
 
 <center>
 	<a href="https://github.com/" class="btn btn-info" target="_blank">Github 공식 홈페이지</a>
@@ -314,8 +312,18 @@ Git에서 제공하는 실험적인 옵션을 선택한다. 해당 옵션은 버
 	</a>
 </figure>
 
-설치 후 바탕화면 혹은 폴더에서 오른쪽 마우스를 클릭하면 [Git Bash Here] 혹은 [Git GUI Here]를 확인할 수 있다. 해당 컨텍스트를 클릭하면 Git 콘솔 혹은 GUI 프로그램이 실행된다.
+설치 후 바탕화면 혹은 폴더에서 오른쪽 마우스를 클릭하면 [Git Bash Here] 혹은 [Git GUI Here]를 확인할 수 있다. 해당 컨텍스트를 클릭하면 Git 콘솔 혹은 GUI 프로그램이 실행된다. 위 그림은 Git Bash를 실행한 것이며, GUI는 우리가 흔히 아는 유저 인터페이스가 있는 일반적인 프로그램이다. Bash는 명령어를 입력하여 Git를 관리하고, GUI는 버튼과 같은 메뉴를 마우스로 조작하여 Git을 관리한다.
 
-위 그림은 Git Bash를 실행한 것이며, GUI는 우리가 흔히 아는 유저 인터페이스가 있는 일반적인 프로그램이다. Bash는 명령어를 입력하여 Git를 관리하고, GUI는 버튼과 같은 메뉴를 마우스로 조작하여 Git을 관리한다.
+---
+## Git 설정하기
+
+바탕화면에서 오른쪽 마우스를 클릭하고 [Git Bash Here]를 클릭하여 Git Console을 실행하자. 자신이 만든 Repository와 통신하기 위해선 로그인처럼 본인이라는 인증을 해야한다. 이 인증은 아래의 명령어를 통해 진행할 수 있다. 아래 두 명령어를 Console에 입력하여 인증정보를 저장한다.
+
+git config --global user.name "사용자 username"
+<br />
+git config --global user.email "사용자 email"
+{: .notice}
+
+username과 email은 회원가입시 입력한 정보로 입력해야한다.
 
 이로써 Jekyll 블로그를 호스팅할 Repository, 이를 로컬에서 관리할 Git의 설치를 완료했다. 다음 장에선 실제로 내가 원하는 Jekyll 테마를 선택하고, 이를 생성한 Repository에 적용한 뒤 직접 접속해보는 방법에 대해 알아본다.

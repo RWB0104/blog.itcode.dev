@@ -5,8 +5,9 @@ date:   2020-08-19 00:45:02 +0900
 excerpt: "Github Jekyll 블로그 개발기"
 categories: "Jekyll"
 tag:
-- jekyll
+- github
 - github.io
+- jekyll
 comments: true
 background: "bg-jekyll"
 ---

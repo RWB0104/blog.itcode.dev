@@ -245,8 +245,28 @@ git commit -m "내용"
 git push
 {: .notice}
 
+<figure>
+	<a href="https://user-images.githubusercontent.com/50317129/91337574-88c4b380-e80e-11ea-9c9c-e5c8be4b85d8.png">
+		<img src="https://user-images.githubusercontent.com/50317129/91337574-88c4b380-e80e-11ea-9c9c-e5c8be4b85d8.png" class="w10" />
+	</a>
+</figure>
+
 * git add .: 현재 폴더를 기준으로 현재 및 하위 폴더의 모든 파일을 추가한다.
+
+<figure>
+	<a href="https://user-images.githubusercontent.com/50317129/91337738-ce817c00-e80e-11ea-9a67-919d7f356a77.png">
+		<img src="https://user-images.githubusercontent.com/50317129/91337738-ce817c00-e80e-11ea-9a67-919d7f356a77.png" class="w10" />
+	</a>
+</figure>
+
 * git commit -m "내용": 추가한 내용을 commit한다.
+
+<figure>
+	<a href="https://user-images.githubusercontent.com/50317129/91337956-21f3ca00-e80f-11ea-960a-34d5a833527e.png">
+		<img src="https://user-images.githubusercontent.com/50317129/91337956-21f3ca00-e80f-11ea-960a-34d5a833527e.png" class="w10" />
+	</a>
+</figure>
+
 * git push: commit 데이터를 연결된 Repository에 업로드한다.
 
 git commit의 -m 옵션은 commit에 일종의 부연설명을 달아놓는 것으로, 이를 제외하고 `git commit`만 입력해도 무방하다. 그러나 여러 이유로 예전 commit으로 돌아가야 할 경우가 왕왕 생긴다. 이 때 **commit의 부연설명을 통해 언제, 무엇을 작업했는지 기록해뒀다면 각 commit의 구분이 쉬워 rollback 지점을 정하기가 쉬워진다.**

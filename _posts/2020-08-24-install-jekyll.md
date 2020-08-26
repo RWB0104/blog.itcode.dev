@@ -206,7 +206,7 @@ bundle exec jekyll serve
 
 위 페이지로 접속하여 확인해보자. 내가 골랐던 테마가 그대로 뜨는 것을 확인할 수 있다.
 
-bundle exec jekyll serve -host {IP} -port {PORT}
+bundle exec jekyll serve --host {IP} --port {PORT}
 {: .notice}
 
 위처럼 host 혹은 port 인수를 입력하여 원하는 IP나 포트 번호로 구동할 수도 있다. 이를 지정하지 않았을 경우 기본 host는 localhost이며, 포트는 4000이다. 이제 로컬에서 소스를 변경하면, 위 주소를 통해 실서버 적용 없이도 즉시 결과물을 확인할 수 있다.
@@ -221,4 +221,36 @@ bundle exec jekyll serve -host {IP} -port {PORT}
 4. 생성된 파일 중 Gemfile, Gemfile-lock을 복사한다.
 5. 내 테마의 폴더 안에 덮어씌우고 `bundle exec jekyll serve`를 다시 실행해본다.
 
-다음 장에선 Jekyll의 개발서버를 구축하는 방법에 대해 다뤄본다.
+---
+## 수정한 내용 반영하기
+
+테스트를 완료하고 이를 실서버에 반영하려면 연결된 Github Repository에 이를 업로드해야한다. 로컬에 있는 소스는 Repository만 연결되어 명령어를 통한 통신이 가능할 뿐, 파일을 실시간으로 동기화하지 않는다. 때문에 수정 후 이상이 없다고 판단하여 이를 반영할 경우, clone 과정처럼 명령어를 입력해 Repository에 업로드해야한다. 이를 commit이라고 한다.
+
+<figure>
+	<a href="https://user-images.githubusercontent.com/50317129/91334853-88c2b480-e80a-11ea-8f53-e948d971a3fc.png">
+		<img src="https://user-images.githubusercontent.com/50317129/91334853-88c2b480-e80a-11ea-8f53-e948d971a3fc.png" class="w10" />
+	</a>
+</figure>
+
+로컬 저장소와 Github 저장소가 서로 연결되어있을 경우, Github -> Local로 파일을 다운로드 받는 작업을 **pull**, Local -> Github로 파일을 업로드하는 작업을 **commit**이라 한다.
+
+로컬 저장소에서 수정한 내용을 테스트 후, 실제로 반영해야하고, Jekyll 블로그의 호스팅은 Github Repository가 직접 담당하므로 commit을 통해 블로그의 변경사항을 반영할 수 있는 것이다.
+
+{username}.github.io로 접근하여 오른쪽 마우스를 클릭하고, [Git Bash Here]를 클릭하여 Git Bash를 실행한다.
+
+이후 아래의 명령어를 한 줄씩 순차적으로 입력한다.
+
+git add .
+git commit -m "내용"
+git push
+{: .notice}
+
+* git add .: 현재 폴더를 기준으로 현재 및 하위 폴더의 모든 파일을 추가한다.
+* git commit -m "내용": 추가한 내용을 commit한다.
+* git push: commit 데이터를 연결된 Repository에 업로드한다.
+
+git commit의 -m 옵션은 commit에 일종의 부연설명을 달아놓는 것으로, 이를 제외하고 `git commit`만 입력해도 무방하다. 그러나 여러 이유로 예전 commit으로 돌아가야 할 경우가 왕왕 생긴다. 이 때 **commit의 부연설명을 통해 언제, 무엇을 작업했는지 기록해뒀다면 각 commit의 구분이 쉬워 rollback 지점을 정하기가 쉬워진다.**
+
+반드시 `git push`까지 완료해야 반영이 끝난다. 반영된 사항은 서버의 상태에 따라 약 수 분 정도의 딜레이가 발생할 수 있다.
+
+이렇게 Jekyll 개발서버를 구축하고, 로컬에서 테스트를 진행하고 해당 사항을 Github에 반영하는 방법에 대해 다뤄봤다. 다음 장에선 실제 Jekyll를 운용하기 위한 기본적인 구조와 설정방법에 대해 다룬다.

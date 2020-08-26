@@ -106,8 +106,7 @@ hr {
 
 // images and figures
 img {
-    display: block;
-	max-width: 100%;
+	  max-width: 100%;
     width: auto;
     height: auto;
     vertical-align: middle;
@@ -132,6 +131,7 @@ img {
     margin-top: 0;
 }
 figure {
+  text-align: center;
   margin: 0;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -205,4 +205,16 @@ kbd {
     text-align: center;
     font-weight: 300;
     margin-bottom: 10px;
+}
+
+#next, #prev {
+  max-width: 40%;
+  font-size: 14px;
+
+  margin: 0px;
+}
+
+.PageNavigation {
+  display: flex;
+  justify-content: space-between;
 }

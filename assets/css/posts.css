@@ -42,6 +42,10 @@ div.post-title.bg-begin {
 	text-align: center;
 }
 
+img {
+	min-width: 270px;
+}
+
 img.w1 {
 	width: 10%;
 }

@@ -1,0 +1,232 @@
+I"�+<h2 id="개요">개요</h2>
+
+<p>이번 장에서는 블로그의 핵심인 컨텐츠. 즉, 게시글을 쓰는 방법에 대해 알아보자. 게시글은 <code class="language-plaintext highlighter-rouge">_posts</code> 폴더의 아래에 보관되며, <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-{title}.md</code>의 이름으로 저장한다. Jekyll 컴파일 시 이름의 날짜 정보를 토대로 분류하여 컴파일을 진행하여 HTML 파일로 변환한다. 포스트 파일은 마크다운으로 작성하며, 포스트의 시작엔 항상 Jekyll 헤더가 선언되어야한다. Jekyll 헤더에 관한 설명은 <a href="/posts/2020/08/about-jekyll/">여기</a> 혹은 <a href="http://jekyllrb-ko.github.io/docs/front-matter/">공식 홈페이지</a>를 확인하자.</p>
+
+<hr />
+<h2 id="문법">문법</h2>
+
+<p>포스트는 마크다운으로 작성하기 때문에, 마크다운 문법을 통해 작성한다. 마크다운은 마크다운 고유 문법과 HTML 태그를 병행하여 작성할 수 있으며, 각각의 마크다운 문법들은 모두 HTML 문법과 동일하기 때문에, HTML로 대체하여 작성할 수 있다. 만약 태그 내에 style을 지정하고 싶을 경우, 반드시 HTML 태그로 작성해야 태그별 style을 지정할 수 있다.</p>
+
+<h4 id="1-헤더">1. 헤더</h4>
+
+<p>헤더 문법은 HTML의 h1과 같은 태그와 동일하며, 아래와 같이 사용한다.</p>
+
+<h1 id="h1-태그">h1 태그</h1>
+<h2 id="h2-태그">h2 태그</h2>
+<h3 id="h3-태그">h3 태그</h3>
+<h4 id="h4-태그">h4 태그</h4>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="gh"># h1 태그</span>
+<span class="gu">## h2 태그</span>
+<span class="gu">### h3 태그</span>
+<span class="gu">#### h4 태그</span></code></pre></figure>
+
+<h4 id="2-내용">2. 내용</h4>
+
+<p>내용 문법은 HTML의 p 태그와 동일하며, 가장 범용적으로 사용된다. 별도의 문법 없이 그냥 작성하면 된다. 또한 일반적인 텍스트 말고도 굵기, 기울임, 취소선을 표시할 수도 있으며, 여러 효과를 동시에 줄 수도 있다. 굵기는 b태그, 기울임꼴은 i, em태그, 취소선은 del태그와 동일하다.</p>
+
+<p>Lorem ipsum.</p>
+
+<p><strong>Lorem ipsum.</strong></p>
+
+<p><em>Lorem ipsum.</em></p>
+
+<p><del>Lorem ipsum.</del></p>
+
+<p><strong><em><del>Lorem ipsum.</del></em></strong></p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown">Lorem ipsum.
+<span class="gs">**Lorem ipsum.**</span>
+<span class="ge">*Lorem ipsum.*</span>
+~~Lorem ipsum.~~
+<span class="gs">**_~~Lorem ipsum.~~_**</span></code></pre></figure>
+
+<h4 id="3-인용문">3. 인용문</h4>
+
+<p>인용문을 표시하기 위한 구문이며, blockquote 태그와 동일하다.</p>
+
+<blockquote>
+  <blockquote>
+    <p>이런식으로 표시하면 아무말이나 쳐도 있어보인다.</p>
+  </blockquote>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="gt">&gt;&gt; 이런식으로 표시하면 아무말이나 쳐도 있어보인다.</span></code></pre></figure>
+
+<h4 id="4-리스트">4. 리스트</h4>
+
+<p>리스트를 표시하기 위한 구문이며, 리스트 내부에 또다른 리스트를 표시할 수도 있다. 리스트의 종류는 숫자가 표시되는 정렬 리스트와 숫자가 표시되지 않는 비정렬 리스트 두 가지가 있다. 각각의 리스트는 ul과 ol 및 하위 태그인 li에 대응한다.</p>
+
+<h4 id="정렬-리스트">정렬 리스트</h4>
+
+<ol>
+  <li>정렬 리스트 1
+    <ol>
+      <li>리스트 속 리스트</li>
+      <li>리스트 속의 리스트
+        <ol>
+          <li>한 번더</li>
+        </ol>
+      </li>
+      <li>리스트 안 리스트</li>
+    </ol>
+  </li>
+  <li>정렬 리스트 2
+    <ol>
+      <li>리스트 하나</li>
+    </ol>
+  </li>
+</ol>
+
+<h4 id="비정렬-리스트">비정렬 리스트</h4>
+
+<ul>
+  <li>비정렬 리스트 1
+    <ul>
+      <li>가는덴 순서 없어</li>
+      <li>이거 왜이래</li>
+    </ul>
+  </li>
+  <li>비정렬 리스트 2
+    <ul>
+      <li>정렬할 수 없습니다.
+        <ul>
+          <li>정렬에 실패했습니다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">1.</span> 정렬 리스트 1
+<span class="p">	1.</span> 리스트 속 리스트
+<span class="p">	2.</span> 리스트 속의 리스트
+<span class="p">		1.</span> 한 번더
+<span class="p">	3.</span> 리스트 안 리스트
+<span class="p">2.</span> 정렬 리스트 2
+<span class="p">	1.</span> 리스트 하나
+<span class="p">
+*</span> 비정렬 리스트 1
+<span class="p">	*</span> 가는덴 순서 없어
+<span class="p">	*</span> 이거 왜이래
+<span class="p">*</span> 비정렬 리스트 2
+<span class="p">	*</span> 정렬할 수 없습니다.
+<span class="p">		*</span> 정렬에 실패했습니다.</code></pre></figure>
+
+<h4 id="5-테이블">5. 테이블</h4>
+
+<p>테이블을 표시하기 위한 구문이며, table 및 하위 요소인 tr, th, td 태그에 대응한다.</p>
+
+<table rules="groups">
+  <thead>
+    <tr>
+      <th style="text-align: left">왼쪽정렬</th>
+      <th style="text-align: center">가운데 정렬</th>
+      <th style="text-align: right">오른쪽 정렬</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">cell1</td>
+      <td style="text-align: center">cell2</td>
+      <td style="text-align: right">cell3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell4</td>
+      <td style="text-align: center">cell5</td>
+      <td style="text-align: right">cell6</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">cell1</td>
+      <td style="text-align: center">cell2</td>
+      <td style="text-align: right">cell3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell4</td>
+      <td style="text-align: center">cell5</td>
+      <td style="text-align: right">cell6</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td style="text-align: left">Foot1</td>
+      <td style="text-align: center">Foot2</td>
+      <td style="text-align: right">Foot3</td>
+    </tr>
+  </tfoot>
+</table>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown">| 왼쪽정렬 | 가운데 정렬 | 오른쪽 정렬 |
+|:--------|:-------:|--------:|
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+|----
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+|=====
+| Foot1   | Foot2   | Foot3</code></pre></figure>
+
+<p>그 밖에도 Jekyll 테마별로 지원하는 여러 문법이나 커스터마이징 스타일이 있으니, 실제로 마크다운을 작성할 땐 테마의 문법을 확인하자. 보통 테마의 데모 페이지에서 사용자들을 위해 문법 사용 예시를 제공한다. 같은 태그라도 테마의 스타일에 따라 다른 형태로 표시될 수 있으니, 어디까지나 문법만 참고하길 바란다.</p>
+
+<h4 id="6-이미지-삽입">6. 이미지 삽입</h4>
+
+<p>이미지를 표시하기 위한 구문이며, img 태그에 대응한다. 아래처럼 마크다운 문법을 통해 이미지를 삽입해도 되지만, 개인적으로는 HTML 태그를 더욱 추천한다. 그 이유는 스타일링에 있는데, 기본적으로 마크다운 문법 사용 시 태그 스타일을 주기가 어렵다. 예를 들어, 아래의 사진은 마크다운 문법을 통해 삽입한 사진이다. 해당 사진을 가운데 정렬하려면</p>
+
+<div>
+
+![example-images](https://lh3.googleusercontent.com/HVkQ7I2fVjvjr5pF4LVmBYh0Kfd_BhB1-dorxbKOeJrhUbFhIb9dlgWihOT4sI0Qexd46XbdfGtZsYuJT7RX=w2560-h1289)
+
+</div>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">![</span><span class="nv">example-images</span><span class="p">](</span><span class="sx">https://lh3.googleusercontent.com/HVkQ7I2fVjvjr5pF4LVmBYh0Kfd_BhB1-dorxbKOeJrhUbFhIb9dlgWihOT4sI0Qexd46XbdfGtZsYuJT7RX=w2560-h1289</span><span class="p">)</span></code></pre></figure>
+
+<hr />
+<h2 id="예시">예시</h2>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">title</span><span class="pi">:</span>  <span class="s2">"</span><span class="s">Github를</span><span class="nv"> </span><span class="s">이용해</span><span class="nv"> </span><span class="s">나만의</span><span class="nv"> </span><span class="s">Jekyll</span><span class="nv"> </span><span class="s">블로그</span><span class="nv"> </span><span class="s">만들기</span><span class="nv"> </span><span class="s">-</span><span class="nv"> </span><span class="s">7.</span><span class="nv"> </span><span class="s">post</span><span class="nv"> </span><span class="s">작성하기"</span>
+<span class="na">date</span><span class="pi">:</span>   <span class="s">2020-08-27 16:45:51 +0900</span>
+<span class="na">categories</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Jekyll"</span>
+<span class="na">tag</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="s">github</span>
+<span class="pi">-</span> <span class="s">github.io</span>
+<span class="pi">-</span> <span class="s">jekyll</span>
+<span class="nn">---</span>
+
+[여기에 텍스트 입력]</code></pre></figure>
+
+<p>위는 이 게시글의 jekyll 헤더 일부이다. 쉬운 이해를 위해 사용자 헤더값은 제외했다.</p>
+
+<ol>
+  <li>layout: post
+    <ul>
+      <li>페이지 템플릿을 <code class="language-plaintext highlighter-rouge">_layouts</code>에 위치한 post.html 템플릿을 사용하도록 지정한다. 컴파일 시 해당 헤더를 인식하고 지정한 템플릿을 사용하여 작성한다.</li>
+    </ul>
+  </li>
+  <li>title: “{제목}”
+    <ul>
+      <li>게시글의 제목을 지정한다. HTML의 title 태그를 생각하면 쉽다.</li>
+    </ul>
+  </li>
+  <li>date: 2020-08-27 16:45:51 +0900
+    <ul>
+      <li>해당 날짜에 작성되었음을 지정한다. 한국은 GMT 기준 9시가 빠르므로, GMT 기준 +9임을 표시한다. 지정된 시간 이전에는 게시글이 보이지 않는다.</li>
+    </ul>
+  </li>
+  <li>categories: “Jekyll”
+    <ul>
+      <li>Jekyll 카테고리에 속함을 나타내는 태그, 테마의 구조에 따라 여러 카테고리를 지정할 수도 있다. 내 블로그의 경우 복수의 카테고리도 문제없으나, 하나의 카테고리만 가지는 것을 원칙으로 한다.</li>
+    </ul>
+  </li>
+  <li>tag
+    <ul>
+      <li>태그 이름들. 공백으로 띄어서 표기해도 되고, 위 처럼 하나씩 하이픈으로 표시해도 상관 없다. 위 방식은 <a href="https://en.wikipedia.org/wiki/YAML#Basic_components">YAML 객체</a>의 한 방식이다.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>해당 헤더 밑으로 마크다운 문법에 기초하여 원하는 내용을 작성하면 된다.</p>
+:ET

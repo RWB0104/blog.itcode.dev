@@ -1,0 +1,36 @@
+I"�<h2 id="개요">개요</h2>
+
+<p>이번 장에서는 블로그의 핵심인 컨텐츠. 즉, 게시글을 쓰는 방법에 대해 알아보자. 게시글은 <code class="language-plaintext highlighter-rouge">_posts</code> 폴더의 아래에 보관되며, <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-{title}.md</code>의 이름으로 저장한다. Jekyll 컴파일 시 이름의 날짜 정보를 토대로 분류하여 컴파일을 진행하여 HTML 파일로 변환한다. 포스트 파일은 마크다운으로 작성하며, 포스트의 시작엔 항상 Jekyll 헤더가 선언되어야한다. Jekyll 헤더에 관한 설명은 <a href="/posts/2020/08/about-jekyll/">여기</a> 혹은 <a href="http://jekyllrb-ko.github.io/docs/front-matter/">공식 홈페이지</a>를 확인하자.</p>
+
+<hr />
+<h2 id="문법">문법</h2>
+
+<p>포스트는 마크다운으로 작성하기 때문에, 마크다운 문법을 통해 작성한다. 마크다운은 마크다운 고유 문법과 HTML 태그를 병행하여 작성할 수 있으며, 각각의 마크다운 문법들은 모두 HTML 문법과 동일하기 때문에, HTML로 대체하여 작성할 수 있다. 만약 태그 내에 style을 지정하고 싶을 경우, 반드시 HTML 태그로 작성해야 태그별 style을 지정할 수 있다.</p>
+
+<h4 id="1-헤더">1. 헤더</h4>
+
+<p>헤더 문법은 HTML의 h1과 같은 태그와 동일하며, 아래와 같이 사용한다.</p>
+
+<h1 id="h1-태그">h1 태그</h1>
+<h2 id="h2-태그">h2 태그</h2>
+<h3 id="h3-태그">h3 태그</h3>
+<h4 id="h4-태그">h4 태그</h4>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="gh"># h1 태그</span>
+<span class="gu">## h2 태그</span>
+<span class="gu">### h3 태그</span>
+<span class="gu">#### h4 태그</span></code></pre></figure>
+
+<h4 id="2-내용">2. 내용</h4>
+
+<p>내용 문법은 HTML의 p 태그와 동일하며, 가장 범용적으로 사용된다. 별도의 문법 없이 그냥 작성하면 된다.</p>
+
+<p>Lorem ipsum.</p>
+
+<p><strong>Lorem ipsum.</strong></p>
+
+<p><em>Lorem ipsum</em></p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown">Lorem ipsum.</code></pre></figure>
+
+:ET

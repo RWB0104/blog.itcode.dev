@@ -1,4 +1,4 @@
-I"A%<style>
+I"#<<style>
 	.jekyll-element > thead > tr {
 		background: midnightblue;
 		color: white;
@@ -151,6 +151,74 @@
 <p>특히 <span class="color-red">url의 경우 기본값을 변경하지 않으면, 엉뚱한 주소로 리다이렉트</span>(ex. 테마 데모 페이지) 되니 반드시 자신의 Jekyll 블로그 주소를 입력해야 함에 유의하자.</p>
 
 <p>간혹 이러한 설정파일의 존재를 인지하지 못 하거나, 장황하고 용도를 알 수 없는 텍스트의 향연에 겁을 먹어 포기하는 경우가 더러 있다. 당황하지말고, <strong>위의 5개 설정값만 변경해줘도 당장 구동에 큰 문제는 없다.</strong> 또한 사이트의 요소 및 텍스트와 설정파일의 값을 비교해보면 해당 설정값이 어디에 쓰이는지를 간략하게 파악할 수 있으니 차차 파악해가면 된다. 눈썰미가 좋거나 센스있는 사람은 어렵지 않게 그 연관성을 파악할 수 있을 것이다.</p>
+
+<h2 id="jekyll-헤더">Jekyll 헤더</h2>
+
+<p>Jekyll는 .md의 헤더 블록을 가진 파일들을 인식하고 지정된 헤더값에 따라 처리한다. 헤더는 반드시 파일 최상단에 위치해야 하며, 주요 헤더값은 아래와 같다.</p>
+
+<table class="jekyll-element" rules="groups">
+  <thead>
+    <tr>
+      <th style="text-align: left">요소</th>
+      <th style="text-align: left">내용</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">layout</td>
+      <td style="text-align: left">사용할 템플릿 파일의 이름. 템플릿은 <code class="language-plaintext highlighter-rouge">_layouts</code>에 존재하는 파일 중 하나를 입력한다.<br /><br />예를 들어, <code class="language-plaintext highlighter-rouge">_layouts/post.html</code> 파일을 레이아웃으로 사용한다면, <strong>layout</strong>의 값을 <code class="language-plaintext highlighter-rouge">post</code>로 지정하면 된다. 확장자는 제외함에 유의한다. post.html의 {{ content }} 변수 위치에 해당 파일의 내용이 들어가게 된다.</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">title</td>
+      <td style="text-align: left">게시글 타이틀</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">date</td>
+      <td style="text-align: left">작성 날짜. <code class="language-plaintext highlighter-rouge">YYYY-MM-DD hh:mm:ss +0900</code>의 형태로 입력한다. 작성한 게시글은 date를 기준으로 date 전에는 표시되지 않는다. 이러한 특성을 활용하여 게시글을 미리 작성한 후, 원하는 시간대에 보여지게끔 예약할 수 있다.<br /><br />예를 들어, 오늘이 <code class="language-plaintext highlighter-rouge">2020-08-28 00:00:01 +0900</code>이라면, 해당 시간 이전인 <code class="language-plaintext highlighter-rouge">2020-08-28 00:00:00 +0900</code>까지는 게시글이 보이지 않는다.</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">category or categories</td>
+      <td style="text-align: left">카테고리의 이름. 하나의 카테고리가 아닌 여러개의 카테고리를 지정할 수도 있다. 카테고리를 복수로 지정할 경우 배열 혹은 공백, YAML 객체로 구분하여 작성하면 된다. YAML 객체의 종류는 <a href="https://en.wikipedia.org/wiki/YAML#Basic_components">이 곳</a>을 참조하자.</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">tags</td>
+      <td style="text-align: left">태그 이름. 하나의 태그가 아닌 여러개의 태그를 지정할 수도 있다. 태그를 복수로 지정할 경우 배열 혹은 공백, YAML 객체로 구분하여 작성하면 된다. YAML 객체의 종류는 <a href="https://en.wikipedia.org/wiki/YAML#Basic_components">이 곳</a>을 참조하자.</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">tags</td>
+      <td style="text-align: left">태그 이름. 하나의 태그가 아닌 여러개의 태그를 지정할 수도 있다. 태그를 복수로 지정할 경우 배열 혹은 공백, YAML 객체로 구분하여 작성하면 된다. YAML 객체의 종류는 <a href="https://en.wikipedia.org/wiki/YAML#Basic_components">이 곳</a>을 참조하자.</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">permalink</td>
+      <td style="text-align: left">포스트의 접근 URL을 임의로 지정한다. 기본값은 <code class="language-plaintext highlighter-rouge">/YYYY/MM/DD/title.html</code>이며, 이 날짜값은 헤더의 <code class="language-plaintext highlighter-rouge">date</code>와 연관된다. 이 헤더를 임의로 변경하면 해당 포스트의 접근 URL을 변경할 수 있다.</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">published</td>
+      <td style="text-align: left">포스트의 표시 여부를 지정할 수 있다. <code class="language-plaintext highlighter-rouge">false</code>로 지정할 경우, 해당 포스트는 숨김처리된다. 단순히 작성된 파일을 어떠한 이유로든 숨길 필요가 있을 때, 굳이 파일을 옮길 필요 없이 해당 옵션을 추가해주는 것으로 해소할 수 있다.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>이러한 헤더값 역시 <code class="language-plaintext highlighter-rouge">_config.yml</code>에 전역으로 지정할 수 있다. 이 경우, 마크다운에 별도의 헤더값을 지정하지 않을 경우, <code class="language-plaintext highlighter-rouge">_config.yml</code>에 해당 헤더의 기본값이 자동으로 지정된다. 이러한 특성을 통해 공통적으로 적용하는 값에 대한 작업을 단축할 수 있다. 그 밖에 임의의 헤더값을 추가하여 사용자 정의 변수로 활용할 수 있다. 이러한 사용자 정의 변수들은 <code class="language-plaintext highlighter-rouge">page.{변수이름}</code>으로 접근할 수 있으며, 해당 페이지에서만 정의되는 함수이므로, <code class="language-plaintext highlighter-rouge">_config.yml</code>의 변수처럼 전역으로 사용할 수 없다는 점에 유의하자.</p>
+
+<p class="notice">예를 들어, 헤더에 <code class="language-plaintext highlighter-rouge">excerpt: 부가설명</code>이라고 기록했다면, {{ page.excerpt }}를 통해 해당 변수의 값을 사용할 수 있다.<br />
+{{ page.excerpt }} -&gt; 부가설명</p>
+
+<p>헤더에서 가장 중요한 것은 <code class="language-plaintext highlighter-rouge">layout</code> 헤더이다. 해당 헤더가 제대로 입력되어야만 <code class="language-plaintext highlighter-rouge">_layouts</code>에 미리 작성해둔 템플릿을 사용할 수 있음에 유의하자.</p>
 
 <p>다음 장에서는 실제로 게시글을 작성하는 방법에 대해 다뤄본다.</p>
 :ET

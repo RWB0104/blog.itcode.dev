@@ -10,7 +10,7 @@ tag:
 - jekyll
 comments: true
 background: "bg-jekyll"
-published: false
+published: true
 ---
 
 ## 개요
@@ -143,10 +143,10 @@ Lorem ipsum.
 
 이미지를 표시하기 위한 구문이며, img 태그에 대응한다. 아래처럼 마크다운 문법을 통해 이미지를 삽입해도 되지만, 개인적으로는 HTML 태그를 더욱 추천한다. 그 이유는 스타일링에 있는데, 기본적으로 마크다운 문법 사용 시 태그 스타일을 주기가 어렵다. 예를 들어, 아래의 사진은 마크다운 문법을 통해 삽입한 사진이다. 만약 해당 사진을 가운데로 정렬하려면 매우 난감하다. 그 이유는, img 태그 자체로는 가운데 정렬을 할 수 없기 때문에, div, p 혹은 center 태그로 감싸줘야 하는데, 마크다운 문법를 HTML 태그로 감싸면 제대로 동작하지 않는다.
 
-![example-images](https://lh3.googleusercontent.com/HVkQ7I2fVjvjr5pF4LVmBYh0Kfd_BhB1-dorxbKOeJrhUbFhIb9dlgWihOT4sI0Qexd46XbdfGtZsYuJT7RX=w2560-h1289)
+![example-images](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fdtz5vu%2FbtqHoWcyHxe%2Fj4KQWBNJOC0FcilcabppKk%2Fimg.gif)
 
 {% highlight markdown %}
-![example-images](https://lh3.googleusercontent.com/HVkQ7I2fVjvjr5pF4LVmBYh0Kfd_BhB1-dorxbKOeJrhUbFhIb9dlgWihOT4sI0Qexd46XbdfGtZsYuJT7RX=w2560-h1289)
+![example-images](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fdtz5vu%2FbtqHoWcyHxe%2Fj4KQWBNJOC0FcilcabppKk%2Fimg.gif)
 {% endhighlight %}
 
 ---

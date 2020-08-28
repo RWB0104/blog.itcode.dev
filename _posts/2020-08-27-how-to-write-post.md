@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Github를 이용해 나만의 Jekyll 블로그 만들기 - 7. post 작성하기"
-date:   2020-08-27 16:45:51 +0900
+date:   2020-08-28 23:30:56 +0900
 excerpt: "Github Jekyll 블로그 개발기"
 categories: "Jekyll"
 tag:
@@ -10,7 +10,6 @@ tag:
 - jekyll
 comments: true
 background: "bg-jekyll"
-published: true
 ---
 
 ## 개요
@@ -141,13 +140,31 @@ Lorem ipsum.
 
 #### 6. 이미지 삽입
 
-이미지를 표시하기 위한 구문이며, img 태그에 대응한다. 아래처럼 마크다운 문법을 통해 이미지를 삽입해도 되지만, 개인적으로는 HTML 태그를 더욱 추천한다. 그 이유는 스타일링에 있는데, 기본적으로 마크다운 문법 사용 시 태그 스타일을 주기가 어렵다. 예를 들어, 아래의 사진은 마크다운 문법을 통해 삽입한 사진이다. 만약 해당 사진을 가운데로 정렬하려면 매우 난감하다. 그 이유는, img 태그 자체로는 가운데 정렬을 할 수 없기 때문에, div, p 혹은 center 태그로 감싸줘야 하는데, 마크다운 문법를 HTML 태그로 감싸면 제대로 동작하지 않는다.
+이미지를 표시하기 위한 구문이며, img 태그에 대응한다. 아래처럼 마크다운 문법을 통해 이미지를 삽입해도 되지만, 개인적으로는 HTML 태그를 더욱 추천한다. 그 이유는 스타일링에 있는데, 기본적으로 <span class="color-red">마크다운 문법 사용 시 태그 스타일을 주기가 어렵다.</span> 예를 들어, 아래의 사진은 마크다운 문법을 통해 삽입한 사진이다. 만약 해당 사진을 가운데로 정렬하려면 매우 난감하다. 그 이유는, img 태그 자체로는 가운데 정렬을 할 수 없기 때문에, div, p 혹은 center 태그로 감싸줘야 하는데, **마크다운 문법을 HTML 태그로 감싸면 제대로 동작하지 않는다.**
 
 ![example-images](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fdtz5vu%2FbtqHoWcyHxe%2Fj4KQWBNJOC0FcilcabppKk%2Fimg.gif)
 
 {% highlight markdown %}
 ![example-images](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fdtz5vu%2FbtqHoWcyHxe%2Fj4KQWBNJOC0FcilcabppKk%2Fimg.gif)
 {% endhighlight %}
+
+이미지에 HTML 방식으로 스타일링을 하려면 반드시 HTML 태그를 사용해야 함에 유의하자.
+
+#### 7. 동영상 삽입
+
+순수 마크다운은 기본적으로 동영상에 대한 문법은 따로 존재하지 않는다. 따라서 동영상을 삽입하기 위해선 iframe을 주로 사용하는 편이다.
+<div class="w5" style="margin: 0px auto;">
+	<center>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/csvh47pJhu0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+	</center>
+</div>
+<br />
+
+{% highlight markdown %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/csvh47pJhu0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+{% endhighlight %}
+
+실제 위 태그를 그대로 쓴 건 아니고, 중앙정렬이나 크기조절은 별도의 CSS 및 HTML 태그를 감싼 결과이니 참고할 것.
 
 ---
 ## 예시

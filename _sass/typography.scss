@@ -63,6 +63,16 @@ h3.title a {
 			font-weight: lighter;
 			@include font-rem(16);
 		}
+		.category {
+			display: block;
+			margin: 15.75px 0px 0px 0px;
+			font-weight: normal;
+			@include font-rem(14);
+			color: $violet;
+			&:hover {
+                color: #dfbfff;
+            }
+		}
 	}
 }
 

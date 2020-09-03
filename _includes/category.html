@@ -2,14 +2,13 @@
 	<p><b>Category</b></p>
 	<select>
 		<option value="/posts"> - All</option>
-		{% assign pages_list = site.pages %}
-		{% for node in pages_list %}
+		{% for node in site.pages %}
 		{% if node.title != null %}
 		{% if node.layout == "category" %}
-		{% if node.url == page.url %}
-		<option value="{{ site.baseurl }}{{ node.url }}" selected> - {{ node.title }}</option>
+		{% if page.url == node.url %}
+		<option value="{{ site.url }}{{ node.url }}" selected> - {{ node.title }}</option>
 		{% else %}
-		<option value="{{ site.baseurl }}{{ node.url }}"> - {{ node.title }}</option>
+		<option value="{{ site.url }}{{ node.url }}"> - {{ node.title }}</option>
 		{% endif %}
 		{% endif %}
 		{% endif %}

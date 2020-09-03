@@ -45,6 +45,29 @@ comments: true
                     {{ content }}
                 </div>
 
+                <br />
+                <br />
+                <hr />
+
+                <div id="post-related">
+                    <h3>Related Posts</h3>
+                    {% assign posts = site[page.collection] | sample:5 %}
+                    {% assign relatedCount = 0 %}
+                    <ul>
+                        {% for post in posts %}
+                        {% if post.url != page.url %}
+                        <li>
+                            <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                        </li>
+                        {% assign relatedCount = relatedCount | plus: 1 %}
+                        {% if relatedCount >= 4 %}
+                        {% break %}
+                        {% endif %}
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+
                 <div class="entry-meta">
                     {% include meta.html %}
                 </div>

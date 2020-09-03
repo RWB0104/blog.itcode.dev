@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Github를 이용해 나만의 Jekyll 블로그 만들기 - 8. 카테고리 만들기"
-date:   2020-09-04 12:04:02 +0900
+date:   2020-09-04 00:04:02 +0900
 excerpt: "Github Jekyll 블로그 개발기"
 categories: "Jekyll"
 tag:

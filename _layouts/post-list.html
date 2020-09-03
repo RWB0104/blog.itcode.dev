@@ -33,7 +33,6 @@ comments: false
                 {% include category.html %}
 
                 <div class="post-list">
-                    {% assign category = page.title %}
                     {% for post in site.posts %}
                     {% if post.project == null %}
                     <ul>

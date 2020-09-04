@@ -1,6 +1,6 @@
-I"m2<h2 id="개요">개요</h2>
+I"|2<h2 id="개요">개요</h2>
 
-<p>이번 장에서는 블로그의 핵심인 컨텐츠. 즉, 게시글을 쓰는 방법에 대해 알아보자. 게시글은 <code class="language-plaintext highlighter-rouge">_posts</code> 폴더의 아래에 보관되며, <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-{title}.md</code>의 이름으로 저장한다. Jekyll 컴파일 시 이름의 날짜 정보를 토대로 분류하여 컴파일을 진행하여 HTML 파일로 변환한다. 포스트 파일은 마크다운으로 작성하며, 포스트의 시작엔 항상 Jekyll 헤더가 선언되어야한다. Jekyll 헤더에 관한 설명은 <a href="/posts/2020/08/about-jekyll/">여기</a> 혹은 <a href="http://jekyllrb-ko.github.io/docs/front-matter/">공식 홈페이지</a>를 확인하자.</p>
+<p>이번 장에서는 블로그의 핵심인 컨텐츠. 즉, 게시글을 쓰는 방법에 대해 알아보자. 게시글은 <code class="language-plaintext highlighter-rouge">_posts</code> 폴더의 아래에 보관되며, <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-{title}.md</code>의 이름으로 저장한다. Jekyll 컴파일 시 이름의 날짜 정보를 토대로 분류하여 컴파일을 진행하여 HTML 파일로 변환한다. 포스트 파일은 마크다운으로 작성하며, 포스트의 시작엔 항상 Jekyll 헤더가 선언되어야한다. Jekyll 헤더에 관한 설명은 <a href="/posts/2020/08/about-jekyll#ㅓekyll-헤더">여기</a> 혹은 <a href="http://jekyllrb-ko.github.io/docs/front-matter/">공식 홈페이지</a>를 확인하자.</p>
 
 <hr />
 <h2 id="문법">문법</h2>

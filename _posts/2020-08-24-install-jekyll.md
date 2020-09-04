@@ -8,6 +8,7 @@ tag:
 - github
 - github.io
 - jekyll
+- jekyll 블로그
 comments: true
 background: "bg-jekyll"
 ---

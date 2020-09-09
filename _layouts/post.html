@@ -14,7 +14,6 @@ comments: true
     {% include head.html %}
 
     <link rel="stylesheet" href="{{ site.url }}/assets/css/posts.css" />
-    <script id="dsq-count-scr" src="//{{ site.discus-identifier }}.disqus.com/count.js" async></script>
 </head>
 
 <body>
@@ -41,8 +40,6 @@ comments: true
                             <i class="fa fa-chevron-left"></i>
                         </a>
                 </div>
-                <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.id }}">0 Comments</a>
-                <a href="{{ site.url }}{{ page.url }}#disqus_thread">0 Comments</a>
 
                 <div id="post-content">
                     {{ content }}

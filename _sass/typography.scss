@@ -73,6 +73,16 @@ h3.title a {
                 color: #dfbfff;
             }
 		}
+		.comment {
+			display: block;
+			margin: 15.75px 0px 10px 0px;
+			@include font-rem(12);
+			color: $color_shark;
+			font-weight: normal;
+            &:hover {
+                color: $red;
+            }
+		}
 	}
 }
 

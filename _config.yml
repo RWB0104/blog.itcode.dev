@@ -4,8 +4,8 @@ bio:                "314159265359번째 유사개발자 알파카의 행복한 �
 description:        "행복한 알파카 카푸"
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/logo.png'
-background:         'assets/img/placeholder-big.jpg'
+logo:               'https://cdn.jsdelivr.net/gh/RWB0104/RWB0104.github.io@master/assets/img/logo.png'
+background:         'https://cdn.jsdelivr.net/gh/RWB0104/RWB0104.github.io@master/assets/img/placeholder-big.jpg'
 tiled_bg:           true   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             ko_KR
 url:                https://rwb0104.github.io

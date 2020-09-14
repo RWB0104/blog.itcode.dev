@@ -1,42 +1,46 @@
-@font-face{
-  font-family: 'Apple SD Gothic Neo';
-  src: url("https://cdn.jsdelivr.net/gh/RWB0104/FontBase@master/AppleSD/AppleSDGothicNeoM.eot");
-  src: local("Apple SD Gothic Neo Regular"),
-       url("https://cdn.jsdelivr.net/gh/RWB0104/FontBase@master/AppleSD/AppleSDGothicNeoM.eot") format("embedded-opentype"),
-       url("https://cdn.jsdelivr.net/gh/RWB0104/FontBase@master/AppleSD/AppleSDGothicNeoM.woff") format("woff"),
-       url("https://cdn.jsdelivr.net/gh/RWB0104/FontBase@master/AppleSD/AppleSDGothicNeoM.ttf") format("ttf")
+@font-face {
+	font-family: 'Apple SD 산돌고딕 Neo';
+	src: url("https://cdn.jsdelivr.net/gh/RWB0104/FontBase@master/AppleSD/AppleSDGothicNeoR.eot");
+	src: local("Apple SD 산돌고딕 Neo"),
+		url("https://cdn.jsdelivr.net/gh/RWB0104/FontBase@master/AppleSD/AppleSDGothicNeoR.eot?#iefix") format("embedded-opentype"),
+		url("https://cdn.jsdelivr.net/gh/RWB0104/FontBase@master/AppleSD/AppleSDGothicNeoR.woff2") format("woff2"),
+		url("https://cdn.jsdelivr.net/gh/RWB0104/FontBase@master/AppleSD/AppleSDGothicNeoR.woff") format("woff"),
+		url("https://cdn.jsdelivr.net/gh/RWB0104/FontBase@master/AppleSD/AppleSDGothicNeoR.ttf") format("truetype")
 }
 
 // Inconsolata
 // latin-ext
 @font-face {
-  font-family: 'Inconsolata';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Inconsolata'), url(https://fonts.gstatic.com/s/inconsolata/v12/BjAYBlHtW3CJxDcjzrnZCCYE0-AqJ3nfInTTiDXDjU4.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+	font-family: 'Inconsolata';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Inconsolata'), url(https://fonts.gstatic.com/s/inconsolata/v12/BjAYBlHtW3CJxDcjzrnZCCYE0-AqJ3nfInTTiDXDjU4.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
+
 // latin
 @font-face {
-  font-family: 'Inconsolata';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Inconsolata'), url(https://fonts.gstatic.com/s/inconsolata/v12/BjAYBlHtW3CJxDcjzrnZCI4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+	font-family: 'Inconsolata';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Inconsolata'), url(https://fonts.gstatic.com/s/inconsolata/v12/BjAYBlHtW3CJxDcjzrnZCI4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
+
 // latin-ext
 @font-face {
-  font-family: 'Inconsolata';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Inconsolata Bold'), local('Inconsolata-Bold'), url(https://fonts.gstatic.com/s/inconsolata/v12/AIed271kqQlcIRSOnQH0yejkDdvhIIFj_YMdgqpnSB0.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+	font-family: 'Inconsolata';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Inconsolata Bold'), local('Inconsolata-Bold'), url(https://fonts.gstatic.com/s/inconsolata/v12/AIed271kqQlcIRSOnQH0yejkDdvhIIFj_YMdgqpnSB0.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
+
 // latin
 @font-face {
-  font-family: 'Inconsolata';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Inconsolata Bold'), local('Inconsolata-Bold'), url(https://fonts.gstatic.com/s/inconsolata/v12/AIed271kqQlcIRSOnQH0yYlIZu-HDpmDIZMigmsroc4.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+	font-family: 'Inconsolata';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Inconsolata Bold'), local('Inconsolata-Bold'), url(https://fonts.gstatic.com/s/inconsolata/v12/AIed271kqQlcIRSOnQH0yYlIZu-HDpmDIZMigmsroc4.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }

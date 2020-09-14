@@ -18,16 +18,32 @@ div.content > div.post-title {
 	color: white;
 }
 
+.color-purered {
+	color: red;
+}
+
 .color-red {
 	color: rgb(255, 120, 120);
+}
+
+.color-pureblue {
+	color: blue;
 }
 
 .color-blue {
 	color: rgb(100, 100, 241);
 }
 
+.color-puregreen {
+	color: green;
+}
+
 .color-green {
 	color: rgb(80, 161, 80);
+}
+
+.color-orange {
+	color: orange;
 }
 
 div.post-title.bg-jekyll {

@@ -46,11 +46,11 @@ div.content > div.post-title {
 	color: orange;
 }
 
-div.post-title.bg-jekyll {
+.bg-jekyll {
 	background-image: url("https://user-images.githubusercontent.com/50317129/90983201-582f1080-e5a7-11ea-970b-8d7d82cb2084.png");
 }
 
-div.post-title.bg-begin {
+.bg-begin {
 	background-image: url("https://user-images.githubusercontent.com/50317129/90335825-767a9680-e012-11ea-9140-6c1a01945922.png");
 }
 

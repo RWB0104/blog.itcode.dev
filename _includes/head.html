@@ -73,17 +73,22 @@
     body {
         background-image:url("{{ background }}");
 
-            {% unless site.tiled_bg %}
+            {
+            % unless site.tiled_bg %
+        }
 
         background-repeat: no-repeat;
         background-size: cover;
 
-            {% endunless %}
+            {
+            % endunless %
+        }
     }
 
     /* width */
     ::-webkit-scrollbar {
         width: 10px;
+        height: 10px;
     }
 
     /* Track */
@@ -99,7 +104,7 @@
 
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-        background: #555;
+        background: #333;
     }
 </style>
 

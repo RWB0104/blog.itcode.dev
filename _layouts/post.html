@@ -24,8 +24,9 @@ comments: true
             <div class="content">
                 <div class="post-title {% if page.feature %} feature {% endif %} {{ page.categories }} {{ page.background }}">
                     <h1>{{ page.title }}</h1>
+                    <h3>{{ page.excerpt }}</h3>
                     <p>{{ page.categories }}</p>
-                    <h4>{{ page.date | date_to_string }}</h4>
+                    <p>{{ page.date | date_to_string }}</p>
                     {% if site.reading_time %}
                     <p class="reading-time">
                         <i class="fa fa-clock-o"></i>

@@ -2,7 +2,7 @@
 layout: post
 title:  "Github를 이용해 나만의 Jekyll 블로그 만들기 - 7. post 작성하기"
 date:   2020-08-28 23:30:56 +0900
-excerpt: "Github Jekyll 블로그 개발기"
+excerpt: "[이 곳에 게시글 입력]"
 categories: "Jekyll"
 tag:
 - github

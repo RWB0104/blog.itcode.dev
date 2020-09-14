@@ -2,7 +2,7 @@
 layout: post
 title:  "Github를 이용해 나만의 Jekyll 블로그 만들기 - 5. Jekyll 개발환경 구축하기"
 date:   2020-08-24 00:15:11 +0900
-excerpt: "Github Jekyll 블로그 개발기"
+excerpt: "Jekyll이요? 그건 좀 아는데... 네? Ruby요?? 테스트 서버요????"
 categories: "Jekyll"
 tag:
 - github

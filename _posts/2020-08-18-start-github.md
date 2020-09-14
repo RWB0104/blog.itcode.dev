@@ -2,7 +2,7 @@
 layout: post
 title:  "Github를 이용해 나만의 Jekyll 블로그 만들기 - 2. Github와 친해지기"
 date:   2020-08-18 00:45:02 +0900
-excerpt: "Github Jekyll 블로그 개발기"
+excerpt: "인싸 Jekyll와 아싸 개발자의 눈물겨운 친구 만들기"
 categories: "Jekyll"
 tag:
 - github

@@ -2,7 +2,7 @@
 layout: post
 title:  "Github를 이용해 나만의 Jekyll 블로그 만들기 - 10. Disqus 댓글 기능 사용하기"
 date:   2020-09-14 21:27:56 +0900
-excerpt: "Github Jekyll 블로그 개발기"
+excerpt: "흠... 어쩌면 없는 게 나을 수도?"
 categories: "Jekyll"
 tag:
 - github

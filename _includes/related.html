@@ -1,0 +1,38 @@
+{% assign posts = site[page.collection] %}
+<div id="post-related">
+	<h3>Related Posts</h3>
+
+	<ul>
+		{% for post in posts %}
+		{% if post.url != page.url %}
+		<li>
+			<a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+		</li>
+		{% endif %}
+		{% endfor %}
+	</ul>
+</div>
+
+<div id="post-recommend">
+	<h3>Recommended Posts</h3>
+
+	<div style="display: none;">
+		{% assign posts = site.posts | where_exp:"post", "post.url != page.url" | sample: 5 %}
+		<ul style="width: 100%; height: 250px; overflow-x: auto; overflow-y: hidden; white-space: nowrap;">
+			{% for post in posts %}
+			<li style="display: inline-block;">
+				<a href="#" style="width: 200px; height: 200px; display: inline-block; background-color: teal; margin: 10px; background-image: url('https://raw.githubusercontent.com/RWB0104/RWB0104.github.io/master/assets/img/background/{{ post.background }}.png');">asdf</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+
+	<ul>
+		{% assign posts = site.posts | where_exp:"post", "post.url != page.url" | sample: 5 %}
+		{% for post in posts %}
+		<li>
+			<a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+		</li>
+		{% endfor %}
+	</ul>
+</div>

@@ -2,7 +2,7 @@
 layout: post
 title:  "Github를 이용해 나만의 Jekyll 블로그 만들기 - 1. Jekyll이란?"
 date:   2020-08-16 22:31:27 +0900
-excerpt: "Github Jekyll 블로그 개발기"
+excerpt: "Jekyll, 그 낮선 개념에 대하여"
 categories: "Jekyll"
 tag:
 - github

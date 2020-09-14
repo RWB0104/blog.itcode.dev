@@ -2,7 +2,7 @@
 layout: post
 title:  "Github를 이용해 나만의 Jekyll 블로그 만들기 - 9. 멀티미디어 데이터 관리하기"
 date:   2020-09-05 02:29:43 +0900
-excerpt: "Github Jekyll 블로그 개발기"
+excerpt: "[새 폴더] - [직박구리] ....?"
 categories: "Jekyll"
 tag:
 - github

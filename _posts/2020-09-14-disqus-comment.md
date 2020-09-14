@@ -251,3 +251,39 @@ option 하나를 선택하여 값을 수정하자. value를 **ko**로 수정하�
 </figure>
 
 정상적으로 수정했다면, 위 그림과 같이 수정한 내용이 select에 적용됨을 확인할 수 있다. 변경된 option을 선택하고, 설정을 저장하자. 이후 Jekyll 블로그로 접속하면 한국어로 변경된 것을 확인할 수 있다.
+
+#### 9. 댓글 카운터 만들기
+
+여러 게시판은 해당 글 뿐만 아니라, 글에 달린 댓글의 갯수를 보여주기도 한다. DB가 있다면, 해당 게시글과 연관된 댓글 데이터의 수를 계산해서 보여주면 되지만, Disqus는 DB를 직접 다루기 어렵다. 그렇다면 댓글 카운터를 달 수 없는 걸까?
+
+다행히도 Disqus는 이러한 요구를 충족시켜줄만한 서비스를 제공해준다. 댓글 카운팅을 위한 각 사이트별 고유 JavaScript와 HTML 태그만 넣어주면 된다.
+
+{% highlight html %}
+<script id="dsq-count-scr" src="//{Website Name}.disqus.com/count.js" async></script>
+{% endhighlight %}
+
+우선, 카운터를 사용하려는 페이지에 위의 스크립트가 삽입되어야 한다. 이 스크립트는 **<a href="#4-disqus-적용하기">이 과정</a>**에서 [**I dont's see my platform listed, install manually with Universial Code**]를 클릭하고 맨 아래를 보면 고유 스크립트를 확인할 수 있다.
+
+<figure>
+	<a href="https://user-images.githubusercontent.com/50317129/93090269-7fc15680-f6d7-11ea-8d56-265b640c49c6.png">
+		<img src="https://user-images.githubusercontent.com/50317129/93090269-7fc15680-f6d7-11ea-8d56-265b640c49c6.png" class="w6" />
+	</a>
+</figure>
+
+위와 같이 고유 스크립트를 알려준다. 보통 **//{Website Name}.disqus.com/count.js**의 형태를 띄고 있지만, 반드시 통용되지는 않다. 만약 username이 중복될 경우 Website Name이 중복될 경우 이를 구분하기 위해 Website Name 뒤에 임의의 난수가 붙기 때문이다. 따라서 Disqus에서 스크립트를 직접 확인하고 삽입하는 것이 좋다.
+
+{% highlight html %}
+{% raw %}
+<a href="{{ site.url }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ page.id }}" class="comment">Comment</a>
+{% endraw %}
+{% endhighlight %}
+
+스크립트를 삽입한 HTML에서 위와 같은 태그를 입력하면 댓글 카운터를 구현할 수 있다. a 태그의 href를 활용하여 해당 게시글의 댓글 창으로 즉시 리다이렉트 되도록 구현한 소스이다. **data-disqus-identifier**는 각 게시글을 구분하기 위한 변수이니 그대로 둔다. class는 CSS를 적용하기 위해 필자가 직접 지정한 클래스니 빼고 입력해도 동작엔 문제가 없다.
+
+<figure>
+	<a href="https://user-images.githubusercontent.com/50317129/93090759-358ca500-f6d8-11ea-9eaa-2e9b7fbf5b06.png">
+		<img src="https://user-images.githubusercontent.com/50317129/93090759-358ca500-f6d8-11ea-9eaa-2e9b7fbf5b06.png" class="w6" />
+	</a>
+</figure>
+
+필자는 게시글 리스트에 댓글 수를 표시하도록 테마를 수정했다. 댓글 수는 반영에 약간의 딜레이가 발생하니 참고하기 바란다.

@@ -12,7 +12,12 @@
 <meta name="twitter:image" content="{{ feature }}" />
 {% else %}
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:image" content="{{ site.url }}/{{ site.logo }}" />
+{% if page.layout == "post" %}
+<meta property="twitter:image" content="https://raw.githubusercontent.com/RWB0104/RWB0104.github.io/master/assets/img/background/{{ page.background }}.png">
+<meta property="twitter:url" content="{{ site.url }}" />
+{% else %}
+<meta property="twitter:image" content="{{ site.logo }}" />
+{% endif %}
 {% endif %}
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
 {% if page.excerpt %}

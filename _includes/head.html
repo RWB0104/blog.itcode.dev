@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary" />
 {% if page.layout == "post" %}
 <meta property="twitter:image" content="https://raw.githubusercontent.com/RWB0104/RWB0104.github.io/master/assets/img/background/{{ page.background }}.png">
-<meta property="twitter:url" content="{{ site.url }}" />
+<meta property="twitter:url" content="{{ site.url }}/{{ page.url }}" />
 {% else %}
 <meta property="twitter:image" content="{{ site.logo }}" />
 {% endif %}
@@ -39,7 +39,7 @@
 
 {% if page.layout == "post" %}
 <meta property="og:image" content="https://raw.githubusercontent.com/RWB0104/RWB0104.github.io/master/assets/img/background/{{ page.background }}.png">
-<meta property="og:url" content="{{ site.url }}" />
+<meta property="og:url" content="{{ site.url }}/{{ page.url }}" />
 {% else %}
 <meta property="og:image" content="{{ site.logo }}" />
 {% endif %}

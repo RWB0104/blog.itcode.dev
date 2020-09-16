@@ -208,15 +208,19 @@ kbd {
 }
 
 #next, #prev {
-  max-width: 40%;
   font-size: 14px;
 
   margin: 0px;
+  height: 100%;
 }
 
 .page-control {
   display: flex;
   justify-content: space-between;
+}
+
+.page-control > div {
+  max-width: 50%;
 }
 
 #post-recommend{

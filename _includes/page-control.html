@@ -1,8 +1,13 @@
 <div class="page-control">
-	{% if page.previous.url %}
-	<a id="prev" class="btn" href="{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
-	{% endif %}
-	{% if page.next.url %}
-	<a id="next" class="btn" href="{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
-	{% endif %}
+	<div>
+		{% if page.previous.url %}
+		<a id="prev" class="btn" href="{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
+		{% endif %}
+	</div>
+
+	<div>
+		{% if page.next.url %}
+		<a id="next" class="btn" href="{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
+		{% endif %}
+	</div>
 </div>

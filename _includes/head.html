@@ -30,9 +30,14 @@
 {% if page.excerpt %}
 <meta property="og:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}" />
 {% endif %}
-<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
-<meta property="og:site_name" content="{{ site.title }}" />
-<meta property="og:image" content="{{ site.url }}/{{ site.logo }}" />
+<meta property="og:site_name" content="{{ site.bio }}" />
+
+{% if page.layout == "post" %}
+<meta property="og:image" content="https://raw.githubusercontent.com/RWB0104/RWB0104.github.io/master/assets/img/background/{{ page.background }}.png">
+<meta property="og:url" content="{{ site.url }}" />
+{% else %}
+<meta property="og:image" content="{{ site.logo }}" />
+{% endif %}
 
 {% if site.google.verify %}
 <!-- Webmaster Tools verfication -->

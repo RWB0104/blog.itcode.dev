@@ -21,7 +21,7 @@ body {
 	background-attachment: fixed;
 	background-size: cover;
 	@media #{$small} {
-	    background-image: none !important;
+		background-image: none !important;
 		background: $white;
 	}
 }
@@ -45,7 +45,7 @@ body {
 		display: block !important;
 	}
 	@media only screen and (max-height: 500px) {
-	    display: block !important;
+		display: block !important;
 	}
 }
 .flex {
@@ -84,7 +84,7 @@ body {
 	@include transition(.5s);
 	@media #{$small} {
 		width: 100%;
-	    box-shadow: none;
+		box-shadow: none;
 	}
 	@media #{$medium} {
 		width: 80%;
@@ -94,8 +94,8 @@ body {
 	margin-top: 15px;
 	text-align: center;
 	.title {
-	    margin-top: 0;
-	    margin-bottom: 5px;
+		margin-top: 0;
+		margin-bottom: 5px;
 	}
 	@media #{$small} {
 		padding: 0 1em;
@@ -114,7 +114,7 @@ body {
 	@media #{$small} {
 		width: 90%;
 		padding: 2em 0;
-	    box-shadow: none;
+		box-shadow: none;
 	}
 }
 #disqus_thread {
@@ -130,7 +130,7 @@ body {
 	@media #{$small} {
 		width: 90%;
 		padding: 2em 0;
-	    box-shadow: none;
+		box-shadow: none;
 	}
 }
 // entry meta
@@ -143,19 +143,19 @@ body {
 		color: lighten($color_tuatara,60);
 	}
 	li {
-	    list-style-type: none;
-	    display: inline;
+		list-style-type: none;
+		display: inline;
 	}
 	.tag {
-	    display: inline-block;
-        border: 1px solid;
-        border-color: rgba($color_mercury,0.5) rgba($color_bon_jour,0.5) $color_mischka;
-        @include rounded(3px);
-        text-decoration: none;
-        background-color: $white;
-        color: $color_tuatara;
-        @include transition(.75s);
-        margin: 2px 5px;
+		display: inline-block;
+		border: 1px solid;
+		border-color: rgba($color_mercury,0.5) rgba($color_bon_jour,0.5) $color_mischka;
+		@include rounded(3px);
+		text-decoration: none;
+		background-color: $white;
+		color: $color_tuatara;
+		@include transition(.75s);
+		margin: 2px 5px;
 		span {
 			float: left;
 			padding: 2px 6px;
@@ -177,47 +177,47 @@ header .entry-meta {
 	}
 }
 .entry-title a {
-    text-decoration: none;
+	text-decoration: none;
 }
 .entry-tags {
 	display: block;
-    margin-top: 1rem;
+	margin-top: 1rem;
 	width: 70%;
-    float: left;
-    text-align: left;
+	float: left;
+	text-align: left;
 }
 .social-share {
 	display: block;
-    margin-top: 1rem;
-    width: 30%;
-    float: right;
-    text-align: right;
+	margin-top: 1rem;
+	width: 30%;
+	float: right;
+	text-align: right;
 }
 .feature {
-    @include transition(.5s);
-    @media #{$small} {
-        background-image: none !important;
-    }
-    @media #{$medium} {
-        color: white;
-        padding: 4em;
-        margin-left: -4rem;
-        margin-right: -4rem;
-        margin-top: -2rem;
-        border-radius: 3px 3px 0 0;
-        background-color: rgba($black, 0.6);
-        background-blend-mode: multiply;
-        background-position: center center;
-    }
-    @media #{$notsmall} {
-        color: white;
-        padding: 10em;
-        margin-left: -4rem;
-        margin-right: -4rem;
-        margin-top: -2rem;
-        border-radius: 3px 3px 0 0;
-        background-color: rgba($black, 0.6);
-        background-blend-mode: multiply;
-        background-position: center center;
-    }
+	@include transition(.5s);
+	@media #{$small} {
+		background-image: none !important;
+	}
+	@media #{$medium} {
+		color: white;
+		padding: 4em;
+		margin-left: -4rem;
+		margin-right: -4rem;
+		margin-top: -2rem;
+		border-radius: 3px 3px 0 0;
+		background-color: rgba($black, 0.6);
+		background-blend-mode: multiply;
+		background-position: center center;
+	}
+	@media #{$notsmall} {
+		color: white;
+		padding: 10em;
+		margin-left: -4rem;
+		margin-right: -4rem;
+		margin-top: -2rem;
+		border-radius: 3px 3px 0 0;
+		background-color: rgba($black, 0.6);
+		background-blend-mode: multiply;
+		background-position: center center;
+	}
 }

@@ -12,6 +12,7 @@ tag:
 - disqus
 comments: true
 background: "bg-jekyll"
+related: jekyll
 ---
 
 ## 개요

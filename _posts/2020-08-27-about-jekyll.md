@@ -11,6 +11,7 @@ tag:
 - jekyll 블로그
 comments: true
 background: "bg-jekyll"
+related: jekyll
 ---
 
 <style>

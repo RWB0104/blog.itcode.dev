@@ -1,14 +1,14 @@
-{% assign posts = site[page.collection] %}
+{% assign posts = site.posts | sort: index, "first" %}
 {% assign count = false %}
-<div id="post-related">
+<div id="post-related" class="post-service">
 	<h3>Related Posts</h3>
 
 	<ul>
 		{% for post in posts %}
-		{% if post.url != page.url and post.background == page.background %}
+		{% if post.url != page.url and post.related != null and post.related == page.related %}
 		{% assign count = true %}
 		<li>
-			<a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+			<a href="{{ site.url }}{{ post.url }}" class="{{ post.background }}">{{ post.title }}</a>
 		</li>
 		{% endif %}
 		{% endfor %}
@@ -23,7 +23,7 @@
 </style>
 {% endif %}
 
-<div id="post-recommend">
+<div class="post-service">
 	<h3>Recommended Posts</h3>
 
 	{% assign posts = site.posts | where_exp:"post", "post.url != page.url" | sample: 7 %}

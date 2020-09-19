@@ -223,7 +223,7 @@ kbd {
   max-width: 50%;
 }
 
-#post-recommend{
+.post-service {
   ul {
     text-align: center;
     white-space: nowrap;
@@ -250,11 +250,18 @@ kbd {
         text-decoration: none;
         vertical-align: middle;
         white-space: initial;
+        overflow: hidden;
 
         background-position: center;
         background-size: cover;
         background-blend-mode: multiply;
         background-color: rgba($color: #000000, $alpha: 0.5);
+
+        transition: all 0.5s;
+
+        &:hover {
+          color: rgb(0, 247, 255);
+        }
       }
     }
   }

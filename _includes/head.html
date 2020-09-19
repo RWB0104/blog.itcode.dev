@@ -80,42 +80,44 @@
 {% if site.background %}{% capture background %}{{ site.background }}{% endcapture %}{% unless background contains 'http://' or background contains 'https://' %}{% capture background %}{{ site.url }}/{{ background }}{% endcapture %}{% endunless %}
 
 <style type="text/css">
-    body {
-        background-image:url("{{ background }}");
+	body {
+		background-image:url("{{ background }}");
 
-            {
-            % unless site.tiled_bg %
-        }
+			{
+			% unless site.tiled_bg %
+		}
 
-        background-repeat: no-repeat;
-        background-size: cover;
+		background-repeat: no-repeat;
+		background-size: cover;
 
-            {
-            % endunless %
-        }
-    }
+			{
+			% endunless %
+		}
+	}
 
-    /* width */
-    ::-webkit-scrollbar {
-        width: 10px;
-        height: 10px;
-    }
+	/* width */
+	::-webkit-scrollbar {
+		width: 10px;
+		height: 10px;
+	}
 
-    /* Track */
-    ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-    }
+	/* Track */
+	::-webkit-scrollbar-track {
+		background: transparent;
+	}
 
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-        background: #888;
-        border-radius: 10px;
-    }
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		background: #888;
+		transition: 0.5s;
+	}
 
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-        background: #333;
-    }
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		display: initial;
+		background: #222;
+	}
 </style>
 
 {% endif %}
@@ -124,8 +126,8 @@
 {% capture feature %}{{ page.feature }}{% endcapture %}
 {% unless feature contains 'http://' or feature contains 'https://' %}{% capture feature %}{{ site.url }}/{{ feature }}{% endcapture %}{% endunless %}
 <style type="text/css">
-    .feature {
-        background-image:url({{ feature }});
-    }
+	.feature {
+		background-image:url({{ feature }});
+	}
 </style>
 {% endif %}

@@ -2,7 +2,7 @@
 layout: post
 title:  "Github를 이용해 나만의 Jekyll 블로그 만들기 - 12. 추천 게시물(Recommended Posts) 출력하기"
 date:   2020-09-20 01:47:58 +0900
-excerpt: "관계가 있을 수도, 없을 수도 있습니다."
+excerpt: "추천 꾹!"
 categories: "Jekyll"
 tag:
 - github

@@ -1,4 +1,4 @@
-I"7A<h2 id="개요">개요</h2>
+I"8A<h2 id="개요">개요</h2>
 
 <p>Jekyll 블로그는 호스팅의 주체가 Github이므로, 해당하는 Github Repository에 소스를 업로드해야 실제 블로그에 적용된다. 만약 적용 전에 작성한 글이나 디자인 등을 테스트하고 싶다면? Github에 바로 적용하여 보는 방법도 있지만, 이 경우 모든 사람들이 볼 수 있기 때문에, 디자인 실수나 오타까지 노출된다. 더군다나 블로그에 어떤 기능을 추가할 때, 잘 못 설계할 경우 블로그가 제대로 동작하지 않을 수 있다. 최악의 경우 블로그의 정상적인 사용 자체가 불가능해지는 것이다. 이러한 실수를 미연에 방지하고 싶을 경우, 로컬 PC에 개발환경을 구축해서 나만 접속해서 블로그를 테스트할 수 있다.</p>
 
@@ -30,7 +30,7 @@
 <p>Ruby는 일본의 마츠모토 유키히로가 개발한 인터프리터 언어다. 특히 Python과는 자주 비교되며 서로에게 영향을 주는 라이벌 관계에 있다. Python과 비슷하게 배우기 쉬워 초보 개발자도 비교적 쉽게 다룰 수 있는 언어라는 평을 받는다. Ruby의 다운로드는 아래의 버튼을 눌러 접근할 수 있다. 아래의 버튼은 Ruby 공식 홈페이지의 다운로드 메뉴로 연결된다. 아래의 홈페이지는 Windows 전용으로 컴파일된 설치파일이며, 다른 OS는 공식 홈페이지에서 알맞는 설치파일을 받을 수 있다.</p>
 
 <center>
-<a href="https://rubyinstaller.org" class="btn btn-danger" target="_blank">Ruby 공식 홈페이지</a>
+	<a href="https://rubyinstaller.org" class="btn btn-danger" target="_blank">Ruby 공식 홈페이지</a>
 	<a href="https://rubyinstaller.org/downloads/" class="btn btn-danger" target="_blank">Ruby 공식 다운로드 페이지 for Windows</a>
 </center>
 

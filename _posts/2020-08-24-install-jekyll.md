@@ -44,7 +44,7 @@ Jekyll 블로그는 호스팅의 주체가 Github이므로, 해당하는 Github 
 Ruby는 일본의 마츠모토 유키히로가 개발한 인터프리터 언어다. 특히 Python과는 자주 비교되며 서로에게 영향을 주는 라이벌 관계에 있다. Python과 비슷하게 배우기 쉬워 초보 개발자도 비교적 쉽게 다룰 수 있는 언어라는 평을 받는다. Ruby의 다운로드는 아래의 버튼을 눌러 접근할 수 있다. 아래의 버튼은 Ruby 공식 홈페이지의 다운로드 메뉴로 연결된다. 아래의 홈페이지는 Windows 전용으로 컴파일된 설치파일이며, 다른 OS는 공식 홈페이지에서 알맞는 설치파일을 받을 수 있다.
 
 <center>
-<a href="https://rubyinstaller.org" class="btn btn-danger" target="_blank">Ruby 공식 홈페이지</a>
+	<a href="https://rubyinstaller.org" class="btn btn-danger" target="_blank">Ruby 공식 홈페이지</a>
 	<a href="https://rubyinstaller.org/downloads/" class="btn btn-danger" target="_blank">Ruby 공식 다운로드 페이지 for Windows</a>
 </center>
 

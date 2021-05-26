@@ -6,12 +6,12 @@
 		<link>https://rwb0104.github.io//</link>
 		<atom:link href="https://rwb0104.github.io/feed.xml" rel="self" type="application/rss+xml"/>
 		<pubDate>2021-05-26T14:36:57.000Z</pubDate>
-		<lastBuildDate>2021-05-26T15:30:13.014Z</lastBuildDate>
+		<lastBuildDate>2021-05-26T16:13:14.885Z</lastBuildDate>
 	</channel>
 	<item>
 		<title>[JAVA] 백준 알고리즘 A1000 A + B</title>
 		<description>&lt;h1&gt;A + B&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;https://shields.io/badge/java-JDK%2014-lightgray?logo=java&#x26;style=plastic&#x26;logoColor=white&#x26;labelColor=orange&quot; alt=&quot;JAVA&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://shields.io/badge/java-JDK%2014-lightgray?logo=java&amp;#x26;style=plastic&amp;#x26;logoColor=white&amp;#x26;labelColor=orange&quot; alt=&quot;JAVA&quot;&gt;&lt;/p&gt;
 &lt;p&gt;🔗 &lt;a href=&quot;https://www.acmicpc.net/problem/1000&quot;&gt;전체 1000번 문제&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;조건&lt;/h2&gt;
 &lt;table&gt;
@@ -31,7 +31,7 @@
 &lt;h2&gt;문제&lt;/h2&gt;
 &lt;p&gt;두 정수 A와 B를 입력받은 다음, A + B를 출력하는 프로그램을 작성하시오.&lt;/p&gt;
 &lt;h2&gt;입력&lt;/h2&gt;
-&lt;p&gt;첫째 줄에 A와 B가 주어진다. &lt;code&gt;(0 &#x3C; A, B &#x3C; 10)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;첫째 줄에 A와 B가 주어진다. &lt;code&gt;(0 &amp;#x3C; A, B &amp;#x3C; 10)&lt;/code&gt;&lt;/p&gt;
 &lt;h2&gt;출력&lt;/h2&gt;
 &lt;p&gt;첫째 줄에 A + B를 출력한다.&lt;/p&gt;
 &lt;h2&gt;케이스&lt;/h2&gt;
@@ -90,7 +90,7 @@ Scanner로 두 숫자를 입력받아 덧셈한 결과를 출력한다.&lt;/p&gt
 	<item>
 		<title>[JAVA] 백준 알고리즘 A1001 A - B</title>
 		<description>&lt;h1&gt;A - B&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;https://shields.io/badge/java-JDK%2014-lightgray?logo=java&#x26;style=plastic&#x26;logoColor=white&#x26;labelColor=orange&quot; alt=&quot;JAVA&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://shields.io/badge/java-JDK%2014-lightgray?logo=java&amp;#x26;style=plastic&amp;#x26;logoColor=white&amp;#x26;labelColor=orange&quot; alt=&quot;JAVA&quot;&gt;&lt;/p&gt;
 &lt;p&gt;🔗 &lt;a href=&quot;https://www.acmicpc.net/problem/1001&quot;&gt;전체 1001번 문제&lt;/a&gt;&lt;/p&gt;
 &lt;br /&gt;
 &lt;h2&gt;조건&lt;/h2&gt;
@@ -113,7 +113,7 @@ Scanner로 두 숫자를 입력받아 덧셈한 결과를 출력한다.&lt;/p&gt
 &lt;p&gt;두 정수 A와 B를 입력받은 다음, A - B를 출력하는 프로그램을 작성하시오.&lt;/p&gt;
 &lt;br /&gt;
 &lt;h2&gt;입력&lt;/h2&gt;
-&lt;p&gt;첫째 줄에 A와 B가 주어진다. (0 &#x3C; A, B &#x3C; 10)&lt;/p&gt;
+&lt;p&gt;첫째 줄에 A와 B가 주어진다. (0 &amp;#x3C; A, B &amp;#x3C; 10)&lt;/p&gt;
 &lt;br /&gt;
 &lt;h2&gt;출력&lt;/h2&gt;
 &lt;p&gt;첫째 줄에 A - B를 출력한다.&lt;/p&gt;
@@ -180,7 +180,7 @@ Scanner로 두 숫자를 입력받아 뺄셈한 결과를 출력한다.&lt;/p&gt
 	<item>
 		<title>[JAVA] 백준 알고리즘 A1002 터렛</title>
 		<description>&lt;h1&gt;터렛&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;https://shields.io/badge/java-JDK%2014-lightgray?logo=java&#x26;style=plastic&#x26;logoColor=white&#x26;labelColor=orange&quot; alt=&quot;JAVA&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://shields.io/badge/java-JDK%2014-lightgray?logo=java&amp;#x26;style=plastic&amp;#x26;logoColor=white&amp;#x26;labelColor=orange&quot; alt=&quot;JAVA&quot;&gt;&lt;/p&gt;
 &lt;p&gt;🔗 &lt;a href=&quot;https://www.acmicpc.net/problem/1002&quot;&gt;전체 1002번 문제&lt;/a&gt;&lt;/p&gt;
 &lt;br /&gt;
 &lt;h2&gt;조건&lt;/h2&gt;
@@ -298,10 +298,10 @@ Scanner로 두 숫자를 입력받아 뺄셈한 결과를 출력한다.&lt;/p&gt
 &lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 &lt;p align=&quot;center&quot;&gt;
-	&lt;img src=&quot;https://latex.codecogs.com/svg.latex?%5Cfn_phv%20%7B%5Ccolor%7BWhite%7D%20distance%20=%20%5Csqrt%7B%28x_%7B1%7D%20-%20x_%7B2%7D%29%5E%7B2%7D%20&plus;%20%28y_%7B1%7D%20-%20y_%7B2%7D%29%5E%7B2%7D%7D%7D&quot; /&gt;
+	&lt;img src=&quot;https://latex.codecogs.com/svg.latex?%5Cfn_phv%20%7B%5Ccolor%7BWhite%7D%20distance%20=%20%5Csqrt%7B%28x_%7B1%7D%20-%20x_%7B2%7D%29%5E%7B2%7D%20&amp;plus;%20%28y_%7B1%7D%20-%20y_%7B2%7D%29%5E%7B2%7D%7D%7D&quot; /&gt;
 &lt;/p&gt;
 &lt;p align=&quot;center&quot;&gt;
-	&lt;img src=&quot;https://latex.codecogs.com/svg.latex?%5Cfn_phv%20%7B%5Ccolor%7BWhite%7D%20sum%20%3D%20r_%7B1%7D%20&plus;%20r_%7B2%7D%7D&quot; /&gt;
+	&lt;img src=&quot;https://latex.codecogs.com/svg.latex?%5Cfn_phv%20%7B%5Ccolor%7BWhite%7D%20sum%20%3D%20r_%7B1%7D%20&amp;plus;%20r_%7B2%7D%7D&quot; /&gt;
 &lt;/p&gt;
 &lt;p align=&quot;center&quot;&gt;
 	&lt;img src=&quot;https://latex.codecogs.com/svg.latex?%5Cfn_phv%20%7B%5Ccolor%7BWhite%7D%20sub%20%3D%20%5Cleft%20%7C%20r_%7B1%7D%20-%20r_%7B2%7D%20%5Cright%20%7C%7D&quot; /&gt;
@@ -319,7 +319,7 @@ Scanner로 두 숫자를 입력받아 뺄셈한 결과를 출력한다.&lt;/p&gt
 &lt;p&gt;case 2 - 두 원이 서로 겹치면서 인접하지 않는 경우&lt;/p&gt;
 &lt;p&gt;두 원의 원점과의 거리가 반지름의 차이보다 짧은 상황.
 &lt;br /&gt;
-&lt;code&gt;distance &#x3C; sub&lt;/code&gt;일 경우 성립한다.
+&lt;code&gt;distance &amp;#x3C; sub&lt;/code&gt;일 경우 성립한다.
 &lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -351,7 +351,7 @@ Scanner로 두 숫자를 입력받아 뺄셈한 결과를 출력한다.&lt;/p&gt
 &lt;p&gt;case 6 - 두 원이 서로 겹치면서 인접하지 않는 경우&lt;/p&gt;
 &lt;p&gt;두 원이 서로 적당히 겹치는 상황.
 &lt;br /&gt;
-&lt;code&gt;distance &#x3C; sum &#x26;&#x26; distance &gt; sub&lt;/code&gt;일 경우 성립한다.
+&lt;code&gt;distance &amp;#x3C; sum &amp;#x26;&amp;#x26; distance &gt; sub&lt;/code&gt;일 경우 성립한다.
 &lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -381,7 +381,7 @@ Scanner로 두 숫자를 입력받아 뺄셈한 결과를 출력한다.&lt;/p&gt
 
 		&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; length &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-		&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&#x3C;&lt;/span&gt; length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;#x3C;&lt;/span&gt; length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
 			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; x1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; y1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -423,13 +423,13 @@ Scanner로 두 숫자를 입력받아 뺄셈한 결과를 출력한다.&lt;/p&gt
 		&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; sub &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;r1 &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; r2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
 		&lt;span class=&quot;token comment&quot;&gt;// case 1 - 두 원이 정확히 겹칠 경우&lt;/span&gt;
-		&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;distance &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&#x26;&#x26;&lt;/span&gt; r1 &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; r2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;distance &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;#x26;&amp;#x26;&lt;/span&gt; r1 &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; r2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
 			&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
 		&lt;span class=&quot;token comment&quot;&gt;// case 2 - 두 원이 서로 겹치면서 인접하지 않는 경우&lt;/span&gt;
-		&lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;distance &lt;span class=&quot;token operator&quot;&gt;&#x3C;&lt;/span&gt; sub&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;distance &lt;span class=&quot;token operator&quot;&gt;&amp;#x3C;&lt;/span&gt; sub&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
 			&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
@@ -473,7 +473,7 @@ Scanner로 두 숫자를 입력받아 뺄셈한 결과를 출력한다.&lt;/p&gt
 	<item>
 		<title>[JAVA] 백준 알고리즘 A1003 피보나치 함수</title>
 		<description>&lt;h1&gt;피보나치 함수&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;https://shields.io/badge/java-JDK%2014-lightgray?logo=java&#x26;style=plastic&#x26;logoColor=white&#x26;labelColor=orange&quot; alt=&quot;JAVA&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://shields.io/badge/java-JDK%2014-lightgray?logo=java&amp;#x26;style=plastic&amp;#x26;logoColor=white&amp;#x26;labelColor=orange&quot; alt=&quot;JAVA&quot;&gt;&lt;/p&gt;
 &lt;p&gt;🔗 &lt;a href=&quot;https://www.acmicpc.net/problem/1003&quot;&gt;전체 1003번 문제&lt;/a&gt;&lt;/p&gt;
 &lt;br /&gt;
 &lt;h2&gt;조건&lt;/h2&gt;
@@ -676,7 +676,7 @@ Scanner로 두 숫자를 입력받아 뺄셈한 결과를 출력한다.&lt;/p&gt
 
 		&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; length &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-		&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&#x3C;&lt;/span&gt; length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;#x3C;&lt;/span&gt; length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
 			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; n &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
@@ -732,7 +732,7 @@ N&lt;sub&gt;3&lt;/sub&gt; = 4 -&gt; &lt;code&gt;f(4)&lt;/code&gt; 부터 &lt;cod
 &lt;p&gt;int는 Primitive(자료형) 데이터고, Integer는 Wrapper 클래스다. Wrapper 클래스는 null 입력이 가능하다는 특징이 있으므로, Integer 역시 숫자 이외에 null값을 입력할 수 있다.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Integer 배열의 초기값은 null로 지정되므로, 배열의 값이 null인 인덱스는 아직 피보나치 수열 계산이 이루어지지 않은 인덱스라고 판단할 수 있다.&lt;/p&gt;
-&lt;p&gt;다행히 문제에서 주어진 &lt;code&gt;N&lt;/code&gt;의 조건은 &lt;code&gt;0 &#x3C;= N &#x3C;= 40&lt;/code&gt;이므로, 배열의 인덱스는 최대 41을 넘지 않음을 알 수 있다.
+&lt;p&gt;다행히 문제에서 주어진 &lt;code&gt;N&lt;/code&gt;의 조건은 &lt;code&gt;0 &amp;#x3C;= N &amp;#x3C;= 40&lt;/code&gt;이므로, 배열의 인덱스는 최대 41을 넘지 않음을 알 수 있다.
 (배열은 0부터 시작하므로 40개가 아닌 0을 포함한 41개임에 유의하자)&lt;/p&gt;
 &lt;p&gt;이후 피보나치 연산에서 각 과정의 값을 배열에 저장하는 로직을 추가한다.
 배열의 값이 null일 경우, 아직 연산이 진행되지 않았으므로 피보나치 연산을 수행하고 배열에 저장한다.
@@ -770,7 +770,7 @@ N&lt;sub&gt;3&lt;/sub&gt; = 4 -&gt; &lt;code&gt;f(4)&lt;/code&gt; 부터 &lt;cod
 
 		&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; length &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-		&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&#x3C;&lt;/span&gt; length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;#x3C;&lt;/span&gt; length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
 			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; n &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
@@ -826,80 +826,6 @@ N&lt;sub&gt;3&lt;/sub&gt; = 4 -&gt; &lt;code&gt;f(4)&lt;/code&gt; 부터 &lt;cod
 		<category>백준</category>
 		<category>알고리즘</category>
 		<category>JAVA(자바)</category>
-	</item>
-	<item>
-		<title>도메인이란?</title>
-		<description>&lt;h1&gt;Domain(도메인)이란?&lt;/h1&gt;
-&lt;p&gt;도메인을 이해하기 위해선, IP에 대해 짚고 넘어가야 한다.&lt;br&gt;
-인터넷에 연결된 모든 디바이스(컴퓨터, 스마트폰, 공유기 등)는 &lt;span class=&quot;blue-500&quot;&gt;고유한 12자리 숫자로 구성된 IP주소&lt;/span&gt;를 가진다.&lt;br&gt;
-IP를 유동성으로 나누면 크게 유동 IP, 고정 IP로 분류할 수 있다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&quot;primary&quot;&gt;유동 IP&lt;/span&gt;: 임의의 시점마다 IP주소가 갱신되는 IP. 갱신 주기는 일정하지 않음. 대부분의 인터넷 회선에 적용됨.&lt;/li&gt;
-&lt;li&gt;&lt;span class=&quot;primary&quot;&gt;고정 IP&lt;/span&gt;: 회선에 고정된 IP를 부여하며, 해당 회선의 IP는 갱신되지 않음. 부가서비스 형태로 제공되며, 쇼핑몰이나 회사 등 지속적으로 시스템을 운영해야 할 경우 적합함.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;우리가 원하는 장소에 방문하기 위해 주소를 찾듯이, &lt;span class=&quot;green-500&quot;&gt;특정 서버에서 운영하는 웹 사이트를 방문하기 위해선 해당 서버의 주소인 IP가 필요&lt;/span&gt;하다.&lt;br&gt;
-불행히도, IP는 불규칙적인 숫자로 이루어져있어, 사람이 쉽게 기억하기 다소 어렵다. 이러한 불편함을 해소하기 위한 것이 Domain(도메인)이다.&lt;/p&gt;
-&lt;h1&gt;그래서 도메인을 왜 쓰는데?&lt;/h1&gt;
-&lt;p&gt;우리가 흔히 &lt;span class=&quot;green-A700&quot;&gt;네이버&lt;/span&gt;라고 부르는 사이트의 실제 IP는 &lt;a href=&quot;http://125.209.222.141&quot;&gt;125.209.222.141&lt;/a&gt;이다. 하지만 우리들 중 그 누구도 저런 IP로 &lt;span class=&quot;green-A700&quot;&gt;네이버&lt;/span&gt;에 접속하지 않는다. 대신 우리는 &lt;a href=&quot;https://www.naver.com&quot;&gt;https://www.naver.com&lt;/a&gt;이라는 도메인으로 접속한다. 이유는 간단하다. 주소 자체에 &lt;span class=&quot;green-A700&quot;&gt;naver&lt;/span&gt;라는 키워드가 포함되어 있으므로 기억하기 쉽기 때문이다.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt;은 숫자가 아닌, 문자 형태로 이루어진 주소다. 문자이므로, 주소에 의미를 부여하기 용이하다. 사용자가 주소를 기억하기 쉬워 주소에 대한 접근성을 높여준다.&lt;br&gt;
-생성한 &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt;에 원하는 IP를 연결하면 &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt; 주소를 통해서도 해당 IP에 접근할 수 있다.
-&lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt; 제공 업체에 따라, 영숫자 뿐만 아니라 한글과 같은 유니코드 문자도 지원하므로, 딱딱한 IP 대신 개성있는 주소를 사용할 수 있는 것이다.&lt;/p&gt;
-&lt;h1&gt;도메인의 구조 &#x3C;- URL로 뺄 것&lt;/h1&gt;
-&lt;p&gt;도메인은 아래와 같은 구조로 이루어진다.&lt;/p&gt;
-&lt;p class=&quot;large&quot; align=&quot;center&quot;&gt;&lt;span class=&quot;lightBlue-400&quot;&gt;https&lt;/span&gt;://&lt;span class=&quot;green-400&quot;&gt;rwb0104&lt;/span&gt;.&lt;span class=&quot;yellow-400&quot;&gt;github&lt;/span&gt;.&lt;span class=&quot;pink-400&quot;&gt;com&lt;/span&gt;:&lt;span class=&quot;amber-400&quot;&gt;443&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;span class=&quot;lightBlue-400&quot;&gt;Protocol(프로토콜)&lt;/span&gt;: 도메인의 프로토콜. 웹 페이지는 &lt;code&gt;http&lt;/code&gt; 혹은 &lt;code&gt;https&lt;/code&gt; 중 하나를 선택한다. 이 중 &lt;code&gt;https&lt;/code&gt;는 &lt;span class=&quot;deepPurple-400&quot;&gt;SSL&lt;/span&gt;이 적용되어 &lt;span class=&quot;red-400&quot;&gt;서버와 클라이언트 간의 통신이 암호화&lt;/span&gt;됨을 의미한다.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;span class=&quot;green-400&quot;&gt;SLD(Second Level Domain; 서브도메인, 호스트)&lt;/span&gt;: &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt;의 확장자. 같은 &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt;에 &lt;span class=&quot;pink-400&quot;&gt;서브도메인&lt;/span&gt;을 여러개 추가할 수 있으며, 이를 통해 각 &lt;span class=&quot;pink-400&quot;&gt;서브도메인&lt;/span&gt;별로 다른 서비스를 제공할 수 있다. &lt;code&gt;www&lt;/code&gt;, &lt;code&gt;admin&lt;/code&gt;, &lt;code&gt;dev&lt;/code&gt; 등 다양한 문자열로 지정할 수 있다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://naver.com&quot;&gt;naver.com&lt;/a&gt;: 기본 네이버 홈페이지. 각 플랫폼(데스크탑, 모바일 등)에 가장 적합한 사이트로 리다이렉트&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.naver.com&quot;&gt;www.naver.com&lt;/a&gt;: 데스크탑용 네이버 홈페이지&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://m.naver.com&quot;&gt;m.naver.com&lt;/a&gt;: 모바일용 네이버 홈페이지&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://map.naver.com&quot;&gt;map.naver.com&lt;/a&gt;: 네이버 지도&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;span class=&quot;yellow-400&quot;&gt;Domain(도메인)&lt;/span&gt;: 도메인의 이름. 대부분 해당 도메인이 제공하는 서비스의 아이덴티티를 위해 제공하는 서비스의 이름을 사용한다. &lt;code&gt;naver&lt;/code&gt;, &lt;code&gt;github&lt;/code&gt;, &lt;code&gt;steam&lt;/code&gt;, &lt;code&gt;instagram&lt;/code&gt; 등이 있다.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;span class=&quot;pink-400&quot;&gt;TLD(Top Level Domain; 최상위도메인)&lt;/span&gt;: 해당 도메인을 관리하는 국가, 업체, 기관 등을 나타낸다. &lt;span class=&quot;pink-400&quot;&gt;서브도메인&lt;/span&gt; 및 &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt;과 달리 사용자가 임의로 지정할 수 없으며, 반드시 존재하는 최상위 도메인 중 하나를 선택해야 한다. 최상위 도메인의 예시와 의미는 아래와 같으며, 대부분의 최상위 도메인은 사이트의 용도와 일치하지 않아도 무관하다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&quot;primary&quot;&gt;.kr&lt;/span&gt;: 대한민국 국가코드 도메인&lt;/li&gt;
-&lt;li&gt;&lt;span class=&quot;primary&quot;&gt;.us&lt;/span&gt;: 미국 국가코드 도메인&lt;/li&gt;
-&lt;li&gt;&lt;span class=&quot;primary&quot;&gt;.com&lt;/span&gt;: 영리 기업, 단체 도메인&lt;/li&gt;
-&lt;li&gt;&lt;span class=&quot;primary&quot;&gt;.net&lt;/span&gt;: 네트워크 기관&lt;/li&gt;
-&lt;li&gt;&lt;span class=&quot;primary&quot;&gt;.org&lt;/span&gt;: 비영리 기관&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;: 해당 사이트를 서비스하는 포트. http의 경우 &lt;code&gt;80&lt;/code&gt;, https의 경우 &lt;code&gt;443&lt;/code&gt; 포트를 기본으로 사용한다. 기본 포트를 사용할 경우 URL에 표시되지 않는다.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;해당 URL을 기준으로 하위 디렉토리나 쿼리 등이 붙게 된다.&lt;/p&gt;
-&lt;h1&gt;도메인의 원리&lt;/h1&gt;
-&lt;p&gt;여기서 의문점이 한 가지 생긴다. IP &lt;a href=&quot;http://125.209.222.141&quot;&gt;125.209.222.141&lt;/a&gt;와 &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt; &lt;a href=&quot;https://www.naver.com&quot;&gt;https://www.naver.com&lt;/a&gt;가 &lt;span class=&quot;green-A700&quot;&gt;네이버&lt;/span&gt;를 가리키는 주소인건 알겠는데, 인터넷은 과연 두 주소의 연결고리를 어떻게 아는 걸까?&lt;/p&gt;
-&lt;p&gt;이는 &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt;의 동작 원리를 보면 알 수 있다.&lt;/p&gt;
-&lt;p&gt;-- 사진 --&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;사용자가 &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt;에 접근을 요청한다.&lt;/li&gt;
-&lt;li&gt;사용자의 네트워트에 지정된 로컬&lt;span class=&quot;pink-400&quot;&gt;DNS(Domain Name System)&lt;/span&gt;에 &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt;의 정보를 요청한다.&lt;/li&gt;
-&lt;li&gt;로컬&lt;span class=&quot;pink-400&quot;&gt;DNS(Domain Name System)&lt;/span&gt;에 해당 정보가 있을 경우, 정보를 즉시 반환한다.&lt;/li&gt;
-&lt;li&gt;전 세계에 구축된 Root &lt;span class=&quot;pink-400&quot;&gt;DNS(Domain Name System)&lt;/span&gt; 중 근접한 Root &lt;span class=&quot;pink-400&quot;&gt;DNS&lt;/span&gt;에 &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt;의 정보를 요청한다.&lt;/li&gt;
-&lt;li&gt;Root &lt;span class=&quot;pink-400&quot;&gt;DNS&lt;/span&gt;가 해당 도메인의 정보를 보유 중인 &lt;span class=&quot;pink-400&quot;&gt;DNS&lt;/span&gt;의 정보를 전달한다.
-&lt;ul&gt;
-&lt;li&gt;ex) &lt;code&gt;.com&lt;/code&gt;, &lt;code&gt;.net&lt;/code&gt;, &lt;code&gt;.kr&lt;/code&gt;, &lt;code&gt;.io&lt;/code&gt; 등 해당&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-		<pubDate>2021-05-22T03:52:51.000Z</pubDate>
-		<link>https://rwb0104.github.io/posts/about-domain/</link>
-		<guid isPermaLink="true">https://rwb0104.github.io/posts/about-domain/</guid>
-		<category>WEB</category>
-		<category>WEB</category>
-		<category>WEB(웹)</category>
 	</item>
 	<item>
 		<title>Jekyll에서 Next.js로</title>
@@ -982,6 +908,7 @@ IP를 유동성으로 나누면 크게 유동 IP, 고정 IP로 분류할 수 있
 		<category>WAS</category>
 		<category>WAS</category>
 		<category>WAS</category>
-		<category>WEB(웹)</category>
+		<category>Tomcat(톰캣)</category>
+		<category>Console(콘솔)</category>
 	</item>
 </rss>

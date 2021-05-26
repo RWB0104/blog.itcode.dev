@@ -1,77 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-		<urlset
-		xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-			
-		<url>
-			<loc>https://rwb0104.github.io/404/</loc>
-			<lastmod>2021-05-26</lastmod>
-		</url>
-		
-		<url>
-			<loc>https://rwb0104.github.io/about/</loc>
-			<lastmod>2021-05-26</lastmod>
-		</url>
-		
-		<url>
-			<loc>https://rwb0104.github.io/google26ae5c1e50cc6a61.html</loc>
-			<lastmod>2021-05-26</lastmod>
-		</url>
-		
-		<url>
-			<loc>https://rwb0104.github.io/</loc>
-			<lastmod>2021-05-26</lastmod>
-		</url>
-		
-		<url>
-			<loc>https://rwb0104.github.io/naverb70e1c2fb75b0ff8e2d26e93a5ff63bb.html</loc>
-			<lastmod>2021-05-26</lastmod>
-		</url>
-		
-		<url>
-			<loc>https://rwb0104.github.io/posts/A1000/</loc>
-			<lastmod>2021-05-26</lastmod>
-		</url>
-		
-		<url>
-			<loc>https://rwb0104.github.io/posts/A1001/</loc>
-			<lastmod>2021-05-26</lastmod>
-		</url>
-		
-		<url>
-			<loc>https://rwb0104.github.io/posts/A1002/</loc>
-			<lastmod>2021-05-26</lastmod>
-		</url>
-		
-		<url>
-			<loc>https://rwb0104.github.io/posts/A1003/</loc>
-			<lastmod>2021-05-26</lastmod>
-		</url>
-		
-		<url>
-			<loc>https://rwb0104.github.io/posts/</loc>
-			<lastmod>2021-05-26</lastmod>
-		</url>
-		
-		<url>
-			<loc>https://rwb0104.github.io/posts/jekyll-to-nextjs/</loc>
-			<lastmod>2021-05-26</lastmod>
-		</url>
-		
-		<url>
-			<loc>https://rwb0104.github.io/posts/tomcat-encoding-euckr/</loc>
-			<lastmod>2021-05-26</lastmod>
-		</url>
-		
-		<url>
-			<loc>https://rwb0104.github.io/projects/</loc>
-			<lastmod>2021-05-26</lastmod>
-		</url>
-		
-		<url>
-			<loc>https://rwb0104.github.io/robots.txt</loc>
-			<lastmod>2021-05-26</lastmod>
-		</url>
-		
-		</urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://rwb0104.github.io/about/</loc>
+		<priority>1.00</priority>
+		<lastmod>2021-05-26T15:30:13.037Z</lastmod>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>https://rwb0104.github.io/</loc>
+		<priority>1.00</priority>
+		<lastmod>2021-05-26T15:30:13.037Z</lastmod>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>https://rwb0104.github.io/posts/</loc>
+		<priority>1.00</priority>
+		<lastmod>2021-05-26T15:30:13.037Z</lastmod>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>https://rwb0104.github.io/projects/</loc>
+		<priority>1.00</priority>
+		<lastmod>2021-05-26T15:30:13.037Z</lastmod>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>https://rwb0104.github.io/posts/A1000/</loc>
+		<priority>0.5</priority>
+		<lastmod>2021-04-21T12:38:17.000Z</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>https://rwb0104.github.io/posts/A1001/</loc>
+		<priority>0.5</priority>
+		<lastmod>2021-04-21T12:51:19.000Z</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>https://rwb0104.github.io/posts/A1002/</loc>
+		<priority>0.5</priority>
+		<lastmod>2021-04-21T12:56:10.000Z</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>https://rwb0104.github.io/posts/A1003/</loc>
+		<priority>0.5</priority>
+		<lastmod>2021-04-21T14:29:03.000Z</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>https://rwb0104.github.io/posts/about-domain/</loc>
+		<priority>0.5</priority>
+		<lastmod>2021-05-22T03:52:51.000Z</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>https://rwb0104.github.io/posts/jekyll-to-nextjs/</loc>
+		<priority>0.5</priority>
+		<lastmod>2021-05-21T06:09:33.000Z</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>https://rwb0104.github.io/posts/tomcat-current-window/</loc>
+		<priority>0.5</priority>
+		<lastmod>2021-05-26T07:32:16.000Z</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+</urlset>

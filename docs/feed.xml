@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Kapoo</title>
+		<description>314159265359번째 알파카의 개발 낙서장</description>
+		<link>https://rwb0104.github.io//</link>
+		<atom:link href="https://rwb0104.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+		<pubDate>2021-05-26T14:36:57.000Z</pubDate>
+		<lastBuildDate>2021-05-27T07:31:02.956Z</lastBuildDate>
+	</channel>
+	<item>
+		<title>[JAVA] 백준 알고리즘 1000번 A + B</title>
+		<description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;h1&gt;A + B&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://shields.io/badge/java-JDK%2014-lightgray?logo=java&amp;#x26;style=plastic&amp;#x26;logoColor=white&amp;#x26;labelColor=orange&quot; alt=&quot;JAVA&quot;&gt;&lt;/p&gt;
+&lt;p&gt;🔗 &lt;a href=&quot;https://www.acmicpc.net/problem/1000&quot;&gt;전체 1000번 문제&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;조건&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;시간제한&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;메모리 제한&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;2초&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;128MB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;문제&lt;/h2&gt;
+&lt;p&gt;두 정수 A와 B를 입력받은 다음, A + B를 출력하는 프로그램을 작성하시오.&lt;/p&gt;
+&lt;h2&gt;입력&lt;/h2&gt;
+&lt;p&gt;첫째 줄에 A와 B가 주어진다. &lt;code&gt;(0 &amp;#x3C; A, B &amp;#x3C; 10)&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;출력&lt;/h2&gt;
+&lt;p&gt;첫째 줄에 A + B를 출력한다.&lt;/p&gt;
+&lt;h2&gt;케이스&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;입력&lt;/p&gt;
+&lt;p&gt;1 2&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;출력&lt;/p&gt;
+&lt;p&gt;3&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;풀이&lt;/h2&gt;
+&lt;p&gt;알고리즘이라고 하기 뭐한 기초적인 연산 알고리즘&lt;br&gt;
+Scanner로 두 숫자를 입력받아 덧셈한 결과를 출력한다.&lt;/p&gt;
+&lt;h2&gt;전체 소스&lt;/h2&gt;
+&lt;div class=&quot;remark-highlight&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;java&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;util&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token doc-comment comment&quot;&gt;/**
+ * 백준 전체 1000 문제 알고리즘 클래스
+ *
+ * &lt;span class=&quot;token keyword&quot;&gt;@author&lt;/span&gt; RWB
+ * &lt;span class=&quot;token keyword&quot;&gt;@since&lt;/span&gt; 2021.04.21 Wed 21:38:17
+ */&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Main&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;token doc-comment comment&quot;&gt;/**
+	 * 메인 함수
+	 *
+	 * &lt;span class=&quot;token keyword&quot;&gt;@param&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;args&lt;/span&gt;: [String[]] 매개변수
+	 */&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; args&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token class-name&quot;&gt;Scanner&lt;/span&gt; scanner &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;in&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+		&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; b &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+		scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+		&lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</description>
+		<pubDate>2021-04-21T12:38:17.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/A1000/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/A1000/</guid>
+		<category>알고리즘</category>
+		<category>알고리즘</category>
+		<category>백준</category>
+		<category>알고리즘</category>
+		<category>JAVA(자바)</category>
+	</item>
+	<item>
+		<title>[JAVA] 백준 알고리즘 1001번 A - B</title>
+		<description>&lt;h1&gt;A - B&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://shields.io/badge/java-JDK%2014-lightgray?logo=java&amp;#x26;style=plastic&amp;#x26;logoColor=white&amp;#x26;labelColor=orange&quot; alt=&quot;JAVA&quot;&gt;&lt;/p&gt;
+&lt;p&gt;🔗 &lt;a href=&quot;https://www.acmicpc.net/problem/1001&quot;&gt;전체 1001번 문제&lt;/a&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;h2&gt;조건&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;시간제한&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;메모리 제한&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;2초&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;128MB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br /&gt;
+&lt;h2&gt;문제&lt;/h2&gt;
+&lt;p&gt;두 정수 A와 B를 입력받은 다음, A - B를 출력하는 프로그램을 작성하시오.&lt;/p&gt;
+&lt;br /&gt;
+&lt;h2&gt;입력&lt;/h2&gt;
+&lt;p&gt;첫째 줄에 A와 B가 주어진다. (0 &amp;#x3C; A, B &amp;#x3C; 10)&lt;/p&gt;
+&lt;br /&gt;
+&lt;h2&gt;출력&lt;/h2&gt;
+&lt;p&gt;첫째 줄에 A - B를 출력한다.&lt;/p&gt;
+&lt;br /&gt;
+&lt;h2&gt;케이스&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;입력&lt;/p&gt;
+&lt;p&gt;3 2&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br /&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;출력&lt;/p&gt;
+&lt;p&gt;1&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br /&gt;
+&lt;h2&gt;풀이&lt;/h2&gt;
+&lt;p&gt;1000번 문제에서 연산만 달라지는 뺄셈 알고리즘
+&lt;br /&gt;
+Scanner로 두 숫자를 입력받아 뺄셈한 결과를 출력한다.&lt;/p&gt;
+&lt;br /&gt;
+&lt;h2&gt;전체 소스&lt;/h2&gt;
+&lt;div class=&quot;remark-highlight&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;java&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;util&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token doc-comment comment&quot;&gt;/**
+ * 백준 전체 1001 문제 알고리즘 클래스
+ *
+ * &lt;span class=&quot;token keyword&quot;&gt;@author&lt;/span&gt; RWB
+ * &lt;span class=&quot;token keyword&quot;&gt;@since&lt;/span&gt; 2021.04.21 Wed 21:51:19
+ */&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Main&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;token doc-comment comment&quot;&gt;/**
+	 * 메인 함수
+	 *
+	 * &lt;span class=&quot;token keyword&quot;&gt;@param&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;args&lt;/span&gt;: [String[]] 매개변수
+	 */&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; args&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token class-name&quot;&gt;Scanner&lt;/span&gt; scanner &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;in&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+		&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; b &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+		scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+		&lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</description>
+		<pubDate>2021-04-21T12:51:19.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/A1001/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/A1001/</guid>
+		<category>알고리즘</category>
+		<category>알고리즘</category>
+		<category>백준</category>
+		<category>알고리즘</category>
+		<category>JAVA(자바)</category>
+	</item>
+	<item>
+		<title>[JAVA] 백준 알고리즘 1002번 터렛</title>
+		<description>&lt;h1&gt;터렛&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://shields.io/badge/java-JDK%2014-lightgray?logo=java&amp;#x26;style=plastic&amp;#x26;logoColor=white&amp;#x26;labelColor=orange&quot; alt=&quot;JAVA&quot;&gt;&lt;/p&gt;
+&lt;p&gt;🔗 &lt;a href=&quot;https://www.acmicpc.net/problem/1002&quot;&gt;전체 1002번 문제&lt;/a&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;h2&gt;조건&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;시간제한&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;메모리 제한&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;2초&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;128MB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br /&gt;
+&lt;h2&gt;문제&lt;/h2&gt;
+&lt;p&gt;조규현과 백승환은 터렛에 근무하는 직원이다. 하지만 워낙 존재감이 없어서 인구수는 차지하지 않는다. 다음은 조규현과 백승현의 사진이다.
+&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+	&lt;img src=&quot;https://www.acmicpc.net/upload/201003/dfcmhrjj_142c3w76qg8_b.jpg&quot; width=&quot;128px&quot; /&gt;
+&lt;/p&gt;
+&lt;br /&gt;
+이석원은 조규현과 백승환에게 상대편 마린(류재영)의 위치를 계산하라는 명령을 내렸다. 조규현과 백승환은 각각 자신의 터렛 위치에서 현재 적까지의 거리를 계산했다.
+&lt;br /&gt;
+조규현의 좌표 (x&lt;sub&gt;1&lt;/sub&gt;, y&lt;sub&gt;2&lt;/sub&gt;)와 백승환의 좌표 (x&lt;sub&gt;2&lt;/sub&gt;, y&lt;sub&gt;2&lt;/sub&gt;)가 주어지고, 조규현이 계산한 류재명과의 거리 r&lt;sub&gt;1&lt;/sub&gt;과 백승환이 계산한 류재명과의 거리 r&lt;sub&gt;2&lt;/sub&gt;가 주어졌을 때, 류재명이 있을 수 있는 좌표의 수를 출력하는 프로그램을 작성하시오.
+&lt;br /&gt;
+&lt;h2&gt;입력&lt;/h2&gt;
+&lt;p&gt;첫째 줄에 테스트 케이스의 개수 T가 주어진다. 각 테스트 케이스는 다음과 같이 이루어져 있다.
+&lt;br /&gt;
+한 줄에 x&lt;sub&gt;1&lt;/sub&gt;, y&lt;sub&gt;1&lt;/sub&gt;, r&lt;sub&gt;1&lt;/sub&gt;, x&lt;sub&gt;2&lt;/sub&gt;, y&lt;sub&gt;2&lt;/sub&gt;, r&lt;sub&gt;2&lt;/sub&gt;가 주어진다. x&lt;sub&gt;1&lt;/sub&gt;, y&lt;sub&gt;1&lt;/sub&gt;, x&lt;sub&gt;2&lt;/sub&gt;, y&lt;sub&gt;2&lt;/sub&gt;는 -10,000보다 크거나 같고, 10,000보다 작거나 같은 점수이고, r&lt;sub&gt;1&lt;/sub&gt;, r&lt;sub&gt;2&lt;/sub&gt;는 10,000보다 작거나 같은 자연수이다.&lt;/p&gt;
+&lt;br /&gt;
+&lt;h2&gt;출력&lt;/h2&gt;
+&lt;p&gt;각 테스트 케이스마다 류재명이 있을 수 있는 위치의 수를 출력한다. 만약 류재명이 있을 수 있는 위치의 개수가 무한대일 경우에는 -1을 출력한다.&lt;/p&gt;
+&lt;br /&gt;
+&lt;h2&gt;케이스&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;입력&lt;/p&gt;
+&lt;p&gt;3
+&lt;br /&gt;
+0 0 13 40 0 37
+&lt;br /&gt;
+0 0 30 0 7 4
+&lt;br /&gt;
+1 1 1 1 1 5&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br /&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;출력&lt;/p&gt;
+&lt;p&gt;2
+&lt;br /&gt;
+1
+&lt;br /&gt;
+0&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br /&gt;
+&lt;h2&gt;풀이&lt;/h2&gt;
+&lt;p&gt;예제의 요소를 사람 이름으로 두었으나, 문제 이해에 방해가 되니 간단하게 서술하면 아래와 같다.&lt;br /&gt;
+임의의 위치에 있는 점 A, B, C가 존재하며, A와 C의 거리, B와 C의 거리가 주어진다.
+&lt;br /&gt;
+이 때, C가 실제로 위치할 수 있는 점의 갯수를 구하는 것. 즉, 간단하게 &lt;strong&gt;두 원의 접점을 구하는 문제&lt;/strong&gt;라고 정의할 수 있다.
+&lt;br /&gt;
+원이 완벽하게 겹칠 경우, &lt;strong&gt;그 수가 무수히 많으므로 -1로 표현&lt;/strong&gt;하라는 조건이 포함된다.
+&lt;br /&gt;
+&lt;br /&gt;
+이를 그림으로 표현하면 아래와 같다.
+[대충 원 그림]
+&lt;br /&gt;
+변수는 아래와 같이 정리할 수 있다.
+&lt;br /&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;n&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;x&lt;sub&gt;n&lt;/sub&gt;&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;y&lt;sub&gt;n&lt;/sub&gt;&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;r&lt;sub&gt;n&lt;/sub&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;A의 x좌표&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;A의 y좌표&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;A의 반지름&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;2&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;B의 x좌표&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;B의 y좌표&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;B의 반지름&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br /&gt;
+케이스를 세분화하면 총 6가지로 나눌 수 있다.
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;ol&gt;
+&lt;li&gt;두 원이 정확히 겹칠 경우 (-1)&lt;/li&gt;
+&lt;li&gt;두 원이 서로 겹치면서 인접하지 않는 경우 (0)&lt;/li&gt;
+&lt;li&gt;두 원이 서로 겹치지 않으면서 인접하지 않는 경우 (0)&lt;/li&gt;
+&lt;li&gt;두 원이 서로 겹치면서 인접하는 경우 (1)&lt;/li&gt;
+&lt;li&gt;두 원이 서로 겹치지 않으면서 인접하는 경우 (1)&lt;/li&gt;
+&lt;li&gt;두 원이 서로 겹치면서 인접하지 않는 경우 (2)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;br /&gt;
+&lt;p&gt;본 풀이에선 x&lt;sub&gt;1&lt;/sub&gt;, y&lt;sub&gt;1&lt;/sub&gt;과 x&lt;sub&gt;2&lt;/sub&gt;, y&lt;sub&gt;2&lt;/sub&gt;의 거리(&lt;code&gt;distance&lt;/code&gt;) 및 r&lt;sub&gt;1&lt;/sub&gt;, r&lt;sub&gt;2&lt;/sub&gt;를 합한 길이(&lt;code&gt;sum&lt;/code&gt;)와 뺀 길이(&lt;code&gt;sub&lt;/code&gt;)의 절대값을 이용하여 진행한다.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+	&lt;img src=&quot;https://latex.codecogs.com/svg.latex?%5Cfn_phv%20%7B%5Ccolor%7BWhite%7D%20distance%20=%20%5Csqrt%7B%28x_%7B1%7D%20-%20x_%7B2%7D%29%5E%7B2%7D%20&amp;plus;%20%28y_%7B1%7D%20-%20y_%7B2%7D%29%5E%7B2%7D%7D%7D&quot; /&gt;
+&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+	&lt;img src=&quot;https://latex.codecogs.com/svg.latex?%5Cfn_phv%20%7B%5Ccolor%7BWhite%7D%20sum%20%3D%20r_%7B1%7D%20&amp;plus;%20r_%7B2%7D%7D&quot; /&gt;
+&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+	&lt;img src=&quot;https://latex.codecogs.com/svg.latex?%5Cfn_phv%20%7B%5Ccolor%7BWhite%7D%20sub%20%3D%20%5Cleft%20%7C%20r_%7B1%7D%20-%20r_%7B2%7D%20%5Cright%20%7C%7D&quot; /&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;case 1 - 두 원이 정확히 겹칠 경우&lt;/p&gt;
+&lt;p&gt;두 원의 위치 및 반지름이 서로 동일한 상황.
+&lt;br /&gt;
+&lt;code&gt;distance&lt;/code&gt;가 0이며, r&lt;sub&gt;1&lt;/sub&gt;과 r&lt;sub&gt;2&lt;/sub&gt;의 길이가 동일할 경우 성립한다.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;case 2 - 두 원이 서로 겹치면서 인접하지 않는 경우&lt;/p&gt;
+&lt;p&gt;두 원의 원점과의 거리가 반지름의 차이보다 짧은 상황.
+&lt;br /&gt;
+&lt;code&gt;distance &amp;#x3C; sub&lt;/code&gt;일 경우 성립한다.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;case 3 - 두 원이 서로 겹치지 않으면서 인접하지 않는 경우&lt;/p&gt;
+&lt;p&gt;두 원의 원점과의 거리가 반지름의 합보다 긴 상황.
+&lt;br /&gt;
+&lt;code&gt;distance &gt; sum&lt;/code&gt;일 경우 성립한다.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;case 4 - 두 원이 서로 겹치면서 인접하는 경우&lt;/p&gt;
+&lt;p&gt;두 원의 원점과의 거리가 반지름의 차이와 일치하는 상황.
+&lt;br /&gt;
+&lt;code&gt;distance == sub&lt;/code&gt;일 경우 성립한다.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;case 5 - 두 원이 서로 겹치지 않으면서 인접하는 경우&lt;/p&gt;
+&lt;p&gt;두 원의 원점과의 거리가 반지름의 합과 일치하는 상황.
+&lt;br /&gt;
+&lt;code&gt;distance == sum&lt;/code&gt;일 경우 성립한다.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;case 6 - 두 원이 서로 겹치면서 인접하지 않는 경우&lt;/p&gt;
+&lt;p&gt;두 원이 서로 적당히 겹치는 상황.
+&lt;br /&gt;
+&lt;code&gt;distance &amp;#x3C; sum &amp;#x26;&amp;#x26; distance &gt; sub&lt;/code&gt;일 경우 성립한다.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;굳이 식으로 표현하지 않아도, 위의 5개 케이스에 부합하지 않는 모든 상황에 적용하면 된다.&lt;/p&gt;
+&lt;p&gt;위 케이스들을 &lt;code&gt;if&lt;/code&gt;문을 사용하여 적절히 표현하면 된다. &lt;code&gt;switch&lt;/code&gt;문의 경우 하나의 변수를 기준으로 분기를 판단하므로 해당 알고리즘에 적용하기엔 다소 부적절하다.&lt;/p&gt;
+&lt;br /&gt;
+&lt;h2&gt;전체 소스&lt;/h2&gt;
+&lt;div class=&quot;remark-highlight&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;java&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;util&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token doc-comment comment&quot;&gt;/**
+ * 백준 전체 1002 문제 알고리즘 클래스
+ *
+ * &lt;span class=&quot;token keyword&quot;&gt;@author&lt;/span&gt; RWB
+ * &lt;span class=&quot;token keyword&quot;&gt;@since&lt;/span&gt; 2021.04.21 Wed 21:56:10
+ */&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Main&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;token doc-comment comment&quot;&gt;/**
+	 * 메인 함수
+	 *
+	 * &lt;span class=&quot;token keyword&quot;&gt;@param&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;args&lt;/span&gt;: [String[]] 매개변수
+	 */&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; args&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token class-name&quot;&gt;Scanner&lt;/span&gt; scanner &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;in&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+		&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; length &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+		&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;#x3C;&lt;/span&gt; length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; x1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; y1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; r1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; x2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; y2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; r2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+			&lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;calcPoints&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;x1&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; y1&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; r1&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; x2&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; y2&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; r2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+	&lt;span class=&quot;token doc-comment comment&quot;&gt;/**
+	 * 접점 갯수 반환 함수
+	 *
+	 * case 1 - 두 원이 정확히 겹칠 경우 (-1)
+	 * case 2 - 두 원이 서로 겹치면서 인접하지 않는 경우 (0)
+	 * case 3 - 두 원이 서로 겹치지 않으면서 인접하지 않는 경우 (0)
+	 * case 4 - 두 원이 서로 겹치면서 인접하는 경우 (1)
+	 * case 5 - 두 원이 서로 겹치지 않으면서 인접하는 경우 (1)
+	 * case 6 - 두 원이 서로 겹치면서 인접하지 않는 경우 (2)
+	 *
+	 * &lt;span class=&quot;token keyword&quot;&gt;@param&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;x1&lt;/span&gt;: [int] A의 x좌표
+	 * &lt;span class=&quot;token keyword&quot;&gt;@param&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;y1&lt;/span&gt;: [int] A의 y좌표
+	 * &lt;span class=&quot;token keyword&quot;&gt;@param&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;r1&lt;/span&gt;: [int] A와 C 사이의 거리
+	 * &lt;span class=&quot;token keyword&quot;&gt;@param&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;x2&lt;/span&gt;: [int] B의 x좌표
+	 * &lt;span class=&quot;token keyword&quot;&gt;@param&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;y2&lt;/span&gt;: [int] B의 y좌표
+	 * &lt;span class=&quot;token keyword&quot;&gt;@param&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;r2&lt;/span&gt;: [int] B와 C 사이의 거리
+	 *
+	 * &lt;span class=&quot;token keyword&quot;&gt;@return&lt;/span&gt; [int] 접점 갯수
+	 */&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;calcPoints&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; x1&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; y1&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; r1&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; x2&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; y2&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; r2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token comment&quot;&gt;// 두 점 사이의 거리 계산식&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;double&lt;/span&gt; distance &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;sqrt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pow&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;x2 &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; x1&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pow&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;y2 &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; y1&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+		&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; sum &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; r1 &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; r2&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; sub &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;r1 &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; r2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+		&lt;span class=&quot;token comment&quot;&gt;// case 1 - 두 원이 정확히 겹칠 경우&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;distance &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;#x26;&amp;#x26;&lt;/span&gt; r1 &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; r2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+		&lt;span class=&quot;token comment&quot;&gt;// case 2 - 두 원이 서로 겹치면서 인접하지 않는 경우&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;distance &lt;span class=&quot;token operator&quot;&gt;&amp;#x3C;&lt;/span&gt; sub&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+		&lt;span class=&quot;token comment&quot;&gt;// case 3 - 두 원이 서로 겹치지 않으면서 인접하지 않는 경우&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;distance &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; sum&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+		&lt;span class=&quot;token comment&quot;&gt;// case 4 - 두 원이 서로 겹치면서 인접하는 경우&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;distance &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; sub&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+		&lt;span class=&quot;token comment&quot;&gt;// case 5 - 두 원이 서로 겹치지 않으면서 인접하는 경우&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;distance &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; sum&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+		&lt;span class=&quot;token comment&quot;&gt;// case 6 - 두 원이 서로 겹치면서 인접하지 않는 경우&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</description>
+		<pubDate>2021-04-21T12:56:10.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/A1002/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/A1002/</guid>
+		<category>알고리즘</category>
+		<category>알고리즘</category>
+		<category>백준</category>
+		<category>알고리즘</category>
+		<category>JAVA(자바)</category>
+	</item>
+	<item>
+		<title>[JAVA] 백준 알고리즘 1003번 피보나치 함수</title>
+		<description>&lt;h1&gt;피보나치 함수&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://shields.io/badge/java-JDK%2014-lightgray?logo=java&amp;#x26;style=plastic&amp;#x26;logoColor=white&amp;#x26;labelColor=orange&quot; alt=&quot;JAVA&quot;&gt;&lt;/p&gt;
+&lt;p&gt;🔗 &lt;a href=&quot;https://www.acmicpc.net/problem/1003&quot;&gt;전체 1003번 문제&lt;/a&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;h2&gt;조건&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;시간제한&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;메모리 제한&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;0.25초 (추가 시간 없음)&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;128MB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br /&gt;
+&lt;h2&gt;문제&lt;/h2&gt;
+&lt;p&gt;다음 소스는 N번째 피보나치 수를 구하는 C++ 함수이다.&lt;/p&gt;
+&lt;div class=&quot;remark-highlight&quot;&gt;&lt;pre class=&quot;language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;0&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n‐&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n‐&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;fibonacci(3)&lt;/code&gt;을 호출하면 다음과 같은 일이 일어난다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;fibonacci(3)&lt;/code&gt;은 &lt;code&gt;fibonacci(2)&lt;/code&gt;와 &lt;code&gt;fibonacci(1)&lt;/code&gt; (첫 번째 호출)을 호출한다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fibonacci(2)&lt;/code&gt;는 &lt;code&gt;fibonacci(1)&lt;/code&gt; (두 번째 호출)과 &lt;code&gt;fibonacci(0)&lt;/code&gt;을 호출한다.&lt;/li&gt;
+&lt;li&gt;두 번째 호출한 &lt;code&gt;fibonacci(1)&lt;/code&gt;은 1을 출력하고 1을 리턴한다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fibonacci(0)&lt;/code&gt;은 0을 출력하고 0을 리턴한다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fibonacci(2)&lt;/code&gt;는 &lt;code&gt;fibonacci(1)&lt;/code&gt;과 &lt;code&gt;fibonacci(0)&lt;/code&gt;의 결과를 얻고, 1을 리턴한다.&lt;/li&gt;
+&lt;li&gt;첫 번째 호출한 &lt;code&gt;fibonacci(1)&lt;/code&gt;은 1을 출력하고, 1을 리턴한다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fibonacci(3)&lt;/code&gt;은 &lt;code&gt;fibonacci(2)&lt;/code&gt;와 &lt;code&gt;fibonacci(1)&lt;/code&gt;의 결과를 얻고, 2를 리턴한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1은 2번 출력되고, 0은 1번 출력된다. N이 주어졌을 때, &lt;code&gt;fibonacci(N)&lt;/code&gt;을 호출했을 때, 0과 1이 각각 몇 번 출력되는지 구하는 프로그램을 적성하시오.&lt;/p&gt;
+&lt;br /&gt;
+&lt;h2&gt;입력&lt;/h2&gt;
+&lt;p&gt;첫째 줄에 테스트 케이스의 개수 T가 주어진다.
+각 테스트 케이스는 한 줄로 이루어져 있고, N이 주어진다. N은 40보다 작거나 같은 자연수 또는 0이다.&lt;/p&gt;
+&lt;br /&gt;
+&lt;h2&gt;출력&lt;/h2&gt;
+&lt;p&gt;각 테스트 케이스마다 0이 출력되는 횟수와 1이 출력되는 횟수를 공백으로 구분해서 출력한다.&lt;/p&gt;
+&lt;br /&gt;
+&lt;h2&gt;케이스&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;입력&lt;/p&gt;
+&lt;p&gt;3
+0
+1
+3&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;출력&lt;/p&gt;
+&lt;p&gt;1 0
+0 1
+1 2&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br /&gt;
+&lt;h2&gt;풀이&lt;/h2&gt;
+&lt;p&gt;알고리즘 풀면서 느끼는 거지만, 문제가 뭘 말하는 지 이해가 안 되는 경우가 많은 것 같다. 내가 멍청해서 그런건가.&lt;/p&gt;
+&lt;p&gt;이 문제를 풀기 위해선, 피보나치 수열에 대한 식을 이해하고 있어야 한다.
+피보나치 수열이 &lt;code&gt;f()&lt;/code&gt;일 때, &lt;code&gt;n&lt;/code&gt;번째 피보나치 수열의 식은 &lt;code&gt;f(n) = f(n - 1) + f(n - 2)&lt;/code&gt;로 정의할 수 있다.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;n = 0, 1&lt;/code&gt;일 때의 초기값이 정해져있다. (식의 특성 상 초기값이 없으면 계산할 수가 없다.)
+&lt;code&gt;f(0) = 0&lt;/code&gt;
+&lt;code&gt;f(1) = 1&lt;/code&gt;
+초기값은 위와 같으며, 실질적으로 &lt;code&gt;n &gt;= 2&lt;/code&gt; 부터 의미있는 연산이 수행된다.&lt;/p&gt;
+&lt;p&gt;다시 문제로 돌아가서, 임의의 수 N이 주어질 경우 &lt;code&gt;f(N)&lt;/code&gt;을 수행하면서 &lt;code&gt;f(0)&lt;/code&gt;, &lt;code&gt;f(1)&lt;/code&gt;이 몇 번 호출되는지를 구하면 된다.
+예를 들어, &lt;code&gt;N = 4&lt;/code&gt;라고 가정하고 식을 전개하면 아래와 같다.
+&lt;code&gt;f(4) = f(3) + f(2)&lt;/code&gt;
+위 식에서 &lt;code&gt;f(3)&lt;/code&gt;은 &lt;code&gt;f(2) + f(1)&lt;/code&gt;로 치환할 수 있으며, 같은 이유로 &lt;code&gt;f(2)&lt;/code&gt; 역시 &lt;code&gt;f(1) + f(0)&lt;/code&gt;으로 치환 가능하다.
+&lt;code&gt;f(4) = f(2) + f(1) + f(1) + f(0)&lt;/code&gt;
+&lt;code&gt;= f(1) + f(0) + f(1) + f(1) + f(0)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;결과적으로 &lt;code&gt;f(4) = 2(f0) + 3f(1)&lt;/code&gt;로 정리할 수 있다.
+따라서 이 문제의 알고리즘은 &lt;code&gt;N = 4&lt;/code&gt;일 경우 &lt;code&gt;2 3&lt;/code&gt;이 출력되어야 한다.&lt;/p&gt;
+&lt;p&gt;우선 식을 정리하여 한 눈에 보면 문제 해결에 도움이 될 것 같다.
+피보나치 수열을 쭉 정리하면 아래와 같다.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;n&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;f(0)의 갯수&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;f(1)의 갯수&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;f(n)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;0&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;0&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;0&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;2&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;3&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;2&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;4&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;2&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;3&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;5&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;3&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;5&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;6&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;5&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;8&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;7&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;8&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;13&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;13&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;8&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;13&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;21&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;21&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;9&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;21&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;34&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;34&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;표로 정리하니 어느정도 규칙성이 눈에 보이기 시작한다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;N의 &lt;code&gt;f(1)&lt;/code&gt; 출력 갯수는 &lt;code&gt;f(N)&lt;/code&gt;과 동일하다.&lt;/li&gt;
+&lt;li&gt;N의 &lt;code&gt;f(0)&lt;/code&gt; 출력 갯수는 &lt;code&gt;f(N - 1)&lt;/code&gt;과 동일하다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;즉, &lt;code&gt;N = 4&lt;/code&gt;일 경우 알고리즘은 &lt;code&gt;f(3) f(4)&lt;/code&gt;가 출력되면 된다.&lt;/p&gt;
+&lt;p&gt;여기서 단순하게 생각하면 아래와 같이 코드를 짤 수 있다.&lt;/p&gt;
+&lt;br /&gt;
+&lt;h3&gt;완성....?&lt;/h3&gt;
+&lt;div class=&quot;remark-highlight&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;java&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;util&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token doc-comment comment&quot;&gt;/**
+ * 백준 전체 1003 문제 알고리즘 클래스
+ *
+ * &lt;span class=&quot;token keyword&quot;&gt;@author&lt;/span&gt; RWB
+ * &lt;span class=&quot;token keyword&quot;&gt;@since&lt;/span&gt; 2021.04.21 Wed 23:29:03
+ */&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Main&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; arr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;41&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+	&lt;span class=&quot;token doc-comment comment&quot;&gt;/**
+	 * 메인 함수
+	 *
+	 * &lt;span class=&quot;token keyword&quot;&gt;@param&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;args&lt;/span&gt;: [String[]] 매개변수
+	 */&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; args&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token class-name&quot;&gt;Scanner&lt;/span&gt; scanner &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;in&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+		&lt;span class=&quot;token comment&quot;&gt;// N = 0일 때, 0이 호출되는 횟수&lt;/span&gt;
+		arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+		&lt;span class=&quot;token comment&quot;&gt;// N = 0일 때, 1이 호출되는 횟수&lt;/span&gt;
+		arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+		&lt;span class=&quot;token comment&quot;&gt;// N = 1일 때, 0이 호출되는 횟수&lt;/span&gt;
+		arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+		&lt;span class=&quot;token comment&quot;&gt;// N = 1일 때, 1이 호출되는 횟수&lt;/span&gt;
+		arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+		&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; length &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+		&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;#x3C;&lt;/span&gt; length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; n &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; f0 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; f1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+			&lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;f0 &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot; &quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; f1&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+	&lt;span class=&quot;token doc-comment comment&quot;&gt;/**
+	 * 피보나치 값 반환 함수
+	 *
+	 * &lt;span class=&quot;token keyword&quot;&gt;@param&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;n&lt;/span&gt;: [int] 인덱스
+	 *
+	 * &lt;span class=&quot;token keyword&quot;&gt;@return&lt;/span&gt; [int] 피보나치 값
+	 */&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token comment&quot;&gt;// 인덱스가 0일 경우&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+		&lt;span class=&quot;token comment&quot;&gt;// 인덱스가 1일 경우&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+		&lt;span class=&quot;token comment&quot;&gt;// 인덱스가 2 이상일 경우 (연산 가능)&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br /&gt;
+&lt;p&gt;위 코드는 크게 두 가지 문제가 있는데, 우선 &lt;code&gt;n = 0, 1&lt;/code&gt;일 때의 처리가 정상적으로 이루어지지 않고 있다.
+&lt;code&gt;f(1) = f(0) + f(-1)&lt;/code&gt;
+N이 문제되기 이전에 이 코드는 런타임 시간 초과로 실패한다. 왜일까?&lt;/p&gt;
+&lt;p&gt;위 코드는 &lt;strong&gt;불필요한 연산을 너무 많이 수행한다.&lt;/strong&gt; 피보나치 수열의 특성 상 &lt;code&gt;f(N)&lt;/code&gt;을 계산할 경우, &lt;code&gt;f(N - 1)&lt;/code&gt;, &lt;code&gt;f(N - 2)&lt;/code&gt; ... 등과 같이 N 이하의 피보나치 값까지 전부 계산하게 된다.
+다시 말하면, &lt;code&gt;f(6)&lt;/code&gt;을 연산할 경우 계산 과정에서 자연스레 &lt;code&gt;f(4)&lt;/code&gt;, &lt;code&gt;f(2)&lt;/code&gt; 등의 피보나치 값을 구할 수 있다.&lt;/p&gt;
+&lt;p&gt;위 이론을 알고리즘에 적용하면 아래와 같이 응용할 수 있다.
+N을 총 3번 입력한다고 가정하면 N&lt;sub&gt;1&lt;/sub&gt;, N&lt;sub&gt;2&lt;/sub&gt;, N&lt;sub&gt;3&lt;/sub&gt;으로 구분할 수 있다.&lt;/p&gt;
+&lt;p&gt;N&lt;sub&gt;2&lt;/sub&gt; = 8 -&gt; &lt;code&gt;f(8)&lt;/code&gt; 부터 &lt;code&gt;f(0)&lt;/code&gt;까지의 값을 구할 수 있음.
+N&lt;sub&gt;3&lt;/sub&gt; = 4 -&gt; &lt;code&gt;f(4)&lt;/code&gt; 부터 &lt;code&gt;f(0)&lt;/code&gt;까지의 값을 구할 수 있음.&lt;/p&gt;
+&lt;p&gt;피보나치 연산값을 저장하면 N&lt;sub&gt;n&lt;/sub&gt; &gt; N&lt;sub&gt;n+1&lt;/sub&gt;일 경우 굳이 &lt;strong&gt;추가적인 연산을 진행하지 않고 이미 저장된 값을 출력&lt;/strong&gt;만 함으로써, 런타임 리소스를 줄일 수 있다.&lt;/p&gt;
+&lt;p&gt;클래스의 멤버변수로 &lt;strong&gt;Integer 배열을 선언&lt;/strong&gt;하여 피보나치 수열값을 저장하고, 알고리즘 연산에 이를 활용하면 될 것 같다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;int는 Primitive(자료형) 데이터고, Integer는 Wrapper 클래스다. Wrapper 클래스는 null 입력이 가능하다는 특징이 있으므로, Integer 역시 숫자 이외에 null값을 입력할 수 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Integer 배열의 초기값은 null로 지정되므로, 배열의 값이 null인 인덱스는 아직 피보나치 수열 계산이 이루어지지 않은 인덱스라고 판단할 수 있다.&lt;/p&gt;
+&lt;p&gt;다행히 문제에서 주어진 &lt;code&gt;N&lt;/code&gt;의 조건은 &lt;code&gt;0 &amp;#x3C;= N &amp;#x3C;= 40&lt;/code&gt;이므로, 배열의 인덱스는 최대 41을 넘지 않음을 알 수 있다.
+(배열은 0부터 시작하므로 40개가 아닌 0을 포함한 41개임에 유의하자)&lt;/p&gt;
+&lt;p&gt;이후 피보나치 연산에서 각 과정의 값을 배열에 저장하는 로직을 추가한다.
+배열의 값이 null일 경우, 아직 연산이 진행되지 않았으므로 피보나치 연산을 수행하고 배열에 저장한다.
+반대로, 배열이 특정 숫자값을 가질 경우, 이미 연산이 진행된 인덱스이므로 별도의 연산을 거치지 않고 해당 값을 바로 출력한다.&lt;/p&gt;
+&lt;br /&gt;
+&lt;h2&gt;전체 소스&lt;/h2&gt;
+&lt;div class=&quot;remark-highlight&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;all&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;a1003&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;java&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;util&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token doc-comment comment&quot;&gt;/**
+ * 백준 전체 1003 문제 알고리즘 클래스
+ *
+ * &lt;span class=&quot;token keyword&quot;&gt;@author&lt;/span&gt; RWB
+ * &lt;span class=&quot;token keyword&quot;&gt;@since&lt;/span&gt; 2021.04.21 Wed 23:29:03
+ */&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Main&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; arr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;41&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+	&lt;span class=&quot;token doc-comment comment&quot;&gt;/**
+	 * 메인 함수
+	 *
+	 * &lt;span class=&quot;token keyword&quot;&gt;@param&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;args&lt;/span&gt;: [String[]] 매개변수
+	 */&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; args&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token class-name&quot;&gt;Scanner&lt;/span&gt; scanner &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;in&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+		&lt;span class=&quot;token comment&quot;&gt;// 피보나치 수열 초기값 (N = 0)&lt;/span&gt;
+		arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+		&lt;span class=&quot;token comment&quot;&gt;// 피보나치 수열 초기값 (N = 1)&lt;/span&gt;
+		arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+		&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; length &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+		&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;#x3C;&lt;/span&gt; length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; n &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+			&lt;span class=&quot;token function&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+			&lt;span class=&quot;token comment&quot;&gt;// n이 0일 경우&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+			&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;1 0&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+			&lt;span class=&quot;token comment&quot;&gt;// n이 1일 경우&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+			&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;0 1&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+			&lt;span class=&quot;token comment&quot;&gt;// 초기값이 아닐 경우&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;
+			&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;StringBuffer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+		scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+	&lt;span class=&quot;token doc-comment comment&quot;&gt;/**
+	 * 피보나치 값 반환 함수
+	 *
+	 * &lt;span class=&quot;token keyword&quot;&gt;@param&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;n&lt;/span&gt;: [int] 인덱스
+	 *
+	 * &lt;span class=&quot;token keyword&quot;&gt;@return&lt;/span&gt; [int] 피보나치 값
+	 */&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token comment&quot;&gt;// 해당 인덱스의 피보나치가 아직 연산되지 않았을 경우&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+		&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</description>
+		<pubDate>2021-04-21T14:29:03.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/A1003/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/A1003/</guid>
+		<category>알고리즘</category>
+		<category>알고리즘</category>
+		<category>백준</category>
+		<category>알고리즘</category>
+		<category>JAVA(자바)</category>
+	</item>
+	<item>
+		<title>Jekyll에서 Next.js로</title>
+		<description>&lt;h1&gt;Bye, Jekyll!&lt;/h1&gt;
+&lt;div&gt;
+	&lt;img src=&quot;https://user-images.githubusercontent.com/50317129/119211743-e44a7600-baee-11eb-85d0-f21c1f68debc.png&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;기존에 &lt;a href=&quot;http://jekyllrb-ko.github.io/&quot; target=&quot;_blank&quot; class=&quot;pink-500&quot;&gt;Jekyll&lt;/a&gt;로 운영하던 블로그를 버리고 React 기반의 &lt;span class=&quot;blue-500&quot;&gt;Next.js&lt;/span&gt;를 통해 블로그를 새로 개발했다.&lt;/p&gt;
+&lt;p&gt;Github Pages를 처음 접했을 때, 호스팅을 반드시 &lt;span class=&quot;pink-500&quot;&gt;Jekyll&lt;/span&gt; 기반으로 해야한다고 착각하고있었다. 사실 조금만 생각해보면 상관 없던건데.&lt;/p&gt;
+&lt;p&gt;최근에 React를 접했는데, 생각보다 꽤나 매력적인 프레임워크라 소소하게나마 뭔가 만들어보고 싶었다.&lt;br&gt;
+블로그가 적절한 프로젝트(?)가 될 것 같았다. 명색이 개발자인데 블로그 하나 정도는 직접 개발해야 할 것 같기도 하고....&lt;/p&gt;
+&lt;h1&gt;굳이 멀쩡한 블로그 놔두고?&lt;/h1&gt;
+&lt;p&gt;한동안 안 하긴 했지만, 지금까진 &lt;span class=&quot;pink-500&quot;&gt;Jekyll&lt;/span&gt; 블로그를 운영하고 있었다. &lt;a href=&quot;http://taylantatli.github.io/Moon/&quot;&gt;Moon Theme&lt;/a&gt;를 적용해서 사용했었는데, 크고작은 불편함이 있었다.&lt;/p&gt;
+&lt;br /&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;b class=&quot;green-500&quot;&gt;Jekyll이라는 생소한 환경&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Github의 개발언어는 &lt;span class=&quot;red-500&quot;&gt;Ruby&lt;/span&gt;다. 그래서일까, Github Pages의 기본 배포는 &lt;span class=&quot;red-500&quot;&gt;Ruby&lt;/span&gt; 기반 프레임워크인 &lt;span class=&quot;pink-500&quot;&gt;Jekyll&lt;/span&gt;을 따라간다.&lt;br&gt;
+문제는 한국엔 &lt;span class=&quot;pink-500&quot;&gt;Jekyll&lt;/span&gt;은 물론, &lt;span class=&quot;red-500&quot;&gt;Ruby&lt;/span&gt;라는 언어 자체의 수요가 많지 않다. 단순 블로그 하나 운영하기 위해 생판 모르는 언어를 접해야 한다는 점은 무시할 수 없는 디메리트.&lt;/p&gt;
+&lt;p&gt;물론 &lt;span class=&quot;red-500&quot;&gt;Ruby&lt;/span&gt;를 직접적으로 개발하진 않지만 &lt;span class=&quot;pink-500&quot;&gt;Jekyll&lt;/span&gt; 생태계 또한 그리 친숙한 형태는 아니였다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;b class=&quot;green-500&quot;&gt;타인이 개발한 소스의 이해&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;1번과 같은 문제로, 밑바닥부터 &lt;span class=&quot;pink-500&quot;&gt;Jekyll&lt;/span&gt;을 개발할 수 없었다.&lt;br&gt;
+특정 기능에 대한 소요가 발생할 경우, 현재 테마에 어울리도록 &quot;&lt;strong&gt;잘 디자인&lt;/strong&gt;&quot;하는 것이 중요하다. 하지만 사용자의 입장에서 테마 개발자의 디자인 철학을 이해하는 것은 단순 디자인과는 또 다른 문제. 구조 파악은 덤&lt;br&gt;
+더군다나 내 경우 모자란 실력에 이상한 강박증까지 있어서, 내 스타일로 작성되지 않은 코드의 리딩을 못 한다. 또한, 프로젝트의 블랙박스를 싫어한다. 실력은 없는 주제에 프로젝트 내에 내가 모르는 코드 덩어리가 있는 걸 굉장히 싫어한다. 디자인 감각이 좋지도 못 해서 결과물도 기존 테마와 이질적인 무언가가 나온다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;b class=&quot;green-500&quot;&gt;편리한 사용자 확장성, 불편한 개발자 확장성&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;블로그나, 웹 페이지, PPT 같은 환경에서 &lt;span class=&quot;grenn-500&quot;&gt;테마&lt;/span&gt;를 사용하는 이유는 뭘까? 귀찮지만 중요한 디자인에 대한 투자를 과감히 패스하면서도 준수한 디자인 퍼포먼스를 내기 위함이다. 물론 취지는 좋다. 어디까지나 &lt;strong&gt;단순히 해당 테마가 의도한 방향에 맞을 때만.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;다들 비슷한 경험이 있었을 것이다. 테마 혹은 템플릿을 사용하면서 필요에 따라 커스터마이징이 필요할 경우가 그렇다.&lt;br&gt;
+대부분의 테마는 결과물이 테마가 추구하는 디자인 철학과 상통할 때 그 빛을 발한다. 다시 말해, 그 의도가 손상될 경우 결과물의 퀄리티는 급락한다.&lt;br&gt;
+이 뿐만 아니라, &lt;span class=&quot;red-500&quot;&gt;필요에 따라 기존의 요소(소스코드, 플러그인 등)을 제거할 경우 그 의존성을 파악하기 힘들어 리스크&lt;/span&gt;가 크다.&lt;/p&gt;
+&lt;p&gt;일례로, 위에서 언급한 &lt;span class=&quot;lightBlue-500&quot;&gt;Moon Theme&lt;/span&gt;의 경우, JQuery에 의존성을 갖고 있다.&lt;br&gt;
+근래 웹 개발의 JQuery에 대한 비관적인 평을 생각한다면, 이는 큰 디메리트로 다가온다. 제거 작업으로 인한 공수 또한 무시할 수 없을 것이고.&lt;br&gt;
+물론 당시의 개발 트렌드를 무시할 수 없으며, &lt;strong&gt;개발&lt;/strong&gt;은 그 중에서도 트렌드의 주기가 매우 빠른 편이다. 이로 미루어 볼 때, 결과론적인 얘기다. 그럼에도 불구하고, &lt;strong&gt;사용자가 의도하지 않은 결함&lt;/strong&gt;이라는 사실은 불변하다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;b class=&quot;green-500&quot;&gt;개발 욕구&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;정적 블로그의 경우 백엔드 영역이 거의 전무한데다, 복잡한 비즈니스 로직도 필요 없기 때문에 개발 난이도가 상대적으로 낮다고 판단했다. 즉, 원한다면 내가 직접 개발한 블로그를 사용하는게 그리 어렵지 않다.&lt;br&gt;
+위에서 언급했듯이, 직접 개발한 블로그를 사용하는 것이 좀 더 개발자스럽다. 난이도 또한 공부 중인 React를 적용하기도 적합하고.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1&gt;Hello, Next.js!&lt;/h1&gt;
+&lt;p&gt;React로 블로그를 만들 땐 주로 &lt;a href=&quot;https://nextjs.org/&quot; target=&quot;_blank&quot; class=&quot;blue-500&quot;&gt;Next.js&lt;/a&gt; 혹은 &lt;a href=&quot;https://www.gatsbyjs.com/&quot; target=&quot;_blank&quot; class=&quot;deepPurple-400&quot;&gt;Gatsby.js&lt;/a&gt;를 사용한다. 이번에 개발한 블로그는 &lt;span class=&quot;blue-500&quot;&gt;Next.js&lt;/span&gt;를 활용했다.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;blue-500&quot;&gt;Next.js&lt;/span&gt;는 &lt;span class=&quot;red-500&quot;&gt;Ruby&lt;/span&gt;의 &lt;span class=&quot;pink-500&quot;&gt;Jekyll&lt;/span&gt; 프레임워크와 그 결이 비슷하다. &lt;span class=&quot;pink-500&quot;&gt;Jekyll&lt;/span&gt;는 &lt;strong&gt;프레임워크 자체에 구조 스키마를 정함으로써 React의 Component와 유사하게 동작&lt;/strong&gt;한다. 그 당시의 난 React라는 걸 접하지도 않은 상황에서, React의 Component 방식으로 블로그를 구성했던 것이다. 말 그대로 낫 놓고 기역자도 모른 셈.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;blue-500&quot;&gt;Next.js&lt;/span&gt; 역시 라이브러리 자체에 정적 웹을 구성하고 빌드할 수 있는 환경이 구축되어 있어, 쉽게 사용이 가능하다. 여러 사용자들이 개발한 다수의 플러그인은 덤.&lt;br&gt;
+덕분에 정적 블로그를 밑바닥에서부터 개발할 수 있었다. 나름대로 디자인 한다고 하긴 했는데, 역시 디자인은 어렵다.&lt;br&gt;
+&lt;span class=&quot;blue-500&quot;&gt;Next.js&lt;/span&gt;와 &lt;span class=&quot;deepPurple-500&quot;&gt;Gatsby.js&lt;/span&gt;에 대한 내용은 나중에 따로 다룰 예정이다.&lt;/p&gt;
+&lt;p&gt;아직 해야할 것들이 남아있다. sitemap 생성기도 붙여야 하고, 연관 게시물 기능도 필요하다. 아직 다듬어지지 않은 자잘한 요소들도 있고. 역시 규모에 상관없이 무언가를 퍼블리싱하는건 정말 힘든 것 같다.&lt;br&gt;
+적어도 이번 블로그는 내 노력으로 내가 개발한 거니, 꾸준히 운영할 수 있었음 한다.&lt;/p&gt;
+</description>
+		<pubDate>2021-05-21T06:09:33.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/jekyll-to-nextjs/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/jekyll-to-nextjs/</guid>
+		<category>잡담</category>
+		<category>잡담</category>
+		<category>React(리액트)</category>
+		<category>Next.js</category>
+		<category>개발 블로그</category>
+		<category>Jekyll</category>
+		<category>Next.js</category>
+	</item>
+	<item>
+		<title>Tomcat(톰캣) 현재 콘솔창에서 구동하기</title>
+		<description>&lt;h1&gt;왜 자꾸 꺼지는거야!&lt;/h1&gt;
+&lt;p&gt;오늘도 어느때와 다름없이 톰캣을 구동하는 A씨. 어제까지만 해도 잘 되던 톰캣이 무슨 오류가 있는지 구동 중에 바로 꺼져버린다. 꺼지기 직전의 순간 무슨 오류가 뜬 거 같은데..... 너무 빨라서 도통 확인할 수가 없다. 할 수 없이 일일이 로그를 찾아보며 오류를 수정하는 A씨. 건드린 것도 없는데, 왜 이러는 걸까?&lt;/p&gt;
+&lt;h1&gt;왜?&lt;/h1&gt;
+&lt;p&gt;톰캣이 콘솔 형태로 실행되는 것은 맞지만, 실행되는 프로세스를 보면 살짝 다르다. &lt;code&gt;startup.bat&lt;/code&gt;을 실행하면 cmd창이 뜬 뒤 꺼지면서 곧바로 Tomcat 창이 표시된다. &lt;span class=&quot;primary&quot;&gt;톰캣을 구동하면 항상 새로운 창이 뜨기 때문에, 톰캣이 오류로 인해 동작이 중지되면 창이 곧바로 닫히게 된다.&lt;/span&gt;&lt;/p&gt;
+&lt;h1&gt;해결책?&lt;/h1&gt;
+&lt;p&gt;그렇다고 해결책이 없는 건 아니고, &lt;code&gt;startup.bat&lt;/code&gt;의 간단한 수정을 통해 톰캣이 &lt;span class=&quot;primary&quot;&gt;현재 창에서 동작&lt;/span&gt;하도록 수정할 수 있다.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;startup.bat&lt;/code&gt;을 메모장으로 열면, 맨 아래에 &lt;code&gt;call &quot;%EXECUTABLE%&quot; run %CMD_LINE_ARGS%&lt;/code&gt; 구문이 존재한다. 여기서 가운데 &lt;code&gt;run&lt;/code&gt;을 &lt;code&gt;start&lt;/code&gt;로 변경한다.&lt;/p&gt;
+&lt;p&gt;즉 &lt;code&gt;call &quot;%EXECUTABLE%&quot; start %CMD_LINE_ARGS%&lt;/code&gt;로 구문을 변경하고 저장하면 된다.&lt;/p&gt;
+&lt;p&gt;이후 &lt;code&gt;startup.bat&lt;/code&gt;을 클릭하여 실행하지 말고, &lt;code&gt;cmd&lt;/code&gt;창 하나를 킨 다음에, 해당 콘솔에서 &lt;code&gt;startup.bat&lt;/code&gt;을 호출하면 새 창이 뜨지 않고 호출한 콘솔에서 톰캣이 구동된다.&lt;br&gt;
+톰캣이 종료돼도 콘솔창이 꺼지지 않으므로, 편하게 메시지를 확인할 수 있다.&lt;/p&gt;
+</description>
+		<pubDate>2021-05-26T07:32:16.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/tomcat-current-window/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/tomcat-current-window/</guid>
+		<category>WAS</category>
+		<category>WAS</category>
+		<category>WAS</category>
+		<category>Tomcat(톰캣)</category>
+		<category>Console(콘솔)</category>
+	</item>
+</rss>

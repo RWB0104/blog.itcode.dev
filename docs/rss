@@ -6,7 +6,7 @@
 		<link>https://rwb0104.github.io//</link>
 		<atom:link href="https://rwb0104.github.io/feed.xml" rel="self" type="application/rss+xml"/>
 		<pubDate>2021-05-26T14:36:57.000Z</pubDate>
-		<lastBuildDate>2021-05-29T03:02:54.338Z</lastBuildDate>
+		<lastBuildDate>2021-05-31T16:39:36.046Z</lastBuildDate>
 	</channel>
 	<item>
 		<title>[JAVA] 백준 알고리즘 1000번 A + B</title>
@@ -45,8 +45,8 @@
 &lt;p&gt;3&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;풀이&lt;/h2&gt;
-&lt;p&gt;알고리즘이라고 하기 뭐한 기초적인 연산 알고리즘&lt;br&gt;
+&lt;h1&gt;풀이&lt;/h1&gt;
+&lt;p&gt;알고리즘이라고 하기 뭐한 기초적인 연산 알고리즘
 Scanner로 두 숫자를 입력받아 덧셈한 결과를 출력한다.&lt;/p&gt;
 &lt;h2&gt;전체 소스&lt;/h2&gt;
 &lt;div class=&quot;remark-highlight&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;java&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;util&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -92,7 +92,6 @@ Scanner로 두 숫자를 입력받아 덧셈한 결과를 출력한다.&lt;/p&gt
 		<description>&lt;h1&gt;A - B&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&quot;https://shields.io/badge/java-JDK%2014-lightgray?logo=java&amp;#x26;style=plastic&amp;#x26;logoColor=white&amp;#x26;labelColor=orange&quot; alt=&quot;JAVA&quot;&gt;&lt;/p&gt;
 &lt;p&gt;🔗 &lt;a href=&quot;https://www.acmicpc.net/problem/1001&quot;&gt;전체 1001번 문제&lt;/a&gt;&lt;/p&gt;
-&lt;br /&gt;
 &lt;h2&gt;조건&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -108,36 +107,26 @@ Scanner로 두 숫자를 입력받아 덧셈한 결과를 출력한다.&lt;/p&gt
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;br /&gt;
 &lt;h2&gt;문제&lt;/h2&gt;
 &lt;p&gt;두 정수 A와 B를 입력받은 다음, A - B를 출력하는 프로그램을 작성하시오.&lt;/p&gt;
-&lt;br /&gt;
 &lt;h2&gt;입력&lt;/h2&gt;
 &lt;p&gt;첫째 줄에 A와 B가 주어진다. (0 &amp;#x3C; A, B &amp;#x3C; 10)&lt;/p&gt;
-&lt;br /&gt;
 &lt;h2&gt;출력&lt;/h2&gt;
 &lt;p&gt;첫째 줄에 A - B를 출력한다.&lt;/p&gt;
-&lt;br /&gt;
 &lt;h2&gt;케이스&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;입력&lt;/p&gt;
 &lt;p&gt;3 2&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;br /&gt;
-&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;출력&lt;/p&gt;
 &lt;p&gt;1&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;br /&gt;
-&lt;h2&gt;풀이&lt;/h2&gt;
+&lt;h1&gt;풀이&lt;/h1&gt;
 &lt;p&gt;1000번 문제에서 연산만 달라지는 뺄셈 알고리즘
-&lt;br /&gt;
 Scanner로 두 숫자를 입력받아 뺄셈한 결과를 출력한다.&lt;/p&gt;
-&lt;br /&gt;
 &lt;h2&gt;전체 소스&lt;/h2&gt;
 &lt;div class=&quot;remark-highlight&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;java&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;util&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
@@ -182,7 +171,6 @@ Scanner로 두 숫자를 입력받아 뺄셈한 결과를 출력한다.&lt;/p&gt
 		<description>&lt;h1&gt;터렛&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&quot;https://shields.io/badge/java-JDK%2014-lightgray?logo=java&amp;#x26;style=plastic&amp;#x26;logoColor=white&amp;#x26;labelColor=orange&quot; alt=&quot;JAVA&quot;&gt;&lt;/p&gt;
 &lt;p&gt;🔗 &lt;a href=&quot;https://www.acmicpc.net/problem/1002&quot;&gt;전체 1002번 문제&lt;/a&gt;&lt;/p&gt;
-&lt;br /&gt;
 &lt;h2&gt;조건&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -198,65 +186,42 @@ Scanner로 두 숫자를 입력받아 뺄셈한 결과를 출력한다.&lt;/p&gt
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;br /&gt;
 &lt;h2&gt;문제&lt;/h2&gt;
-&lt;p&gt;조규현과 백승환은 터렛에 근무하는 직원이다. 하지만 워낙 존재감이 없어서 인구수는 차지하지 않는다. 다음은 조규현과 백승현의 사진이다.
-&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;조규현과 백승환은 터렛에 근무하는 직원이다. 하지만 워낙 존재감이 없어서 인구수는 차지하지 않는다. 다음은 조규현과 백승현의 사진이다.&lt;/p&gt;
 &lt;p align=&quot;center&quot;&gt;
 	&lt;img src=&quot;https://www.acmicpc.net/upload/201003/dfcmhrjj_142c3w76qg8_b.jpg&quot; width=&quot;128px&quot; /&gt;
 &lt;/p&gt;
-&lt;br /&gt;
-이석원은 조규현과 백승환에게 상대편 마린(류재영)의 위치를 계산하라는 명령을 내렸다. 조규현과 백승환은 각각 자신의 터렛 위치에서 현재 적까지의 거리를 계산했다.
-&lt;br /&gt;
-조규현의 좌표 (x&lt;sub&gt;1&lt;/sub&gt;, y&lt;sub&gt;2&lt;/sub&gt;)와 백승환의 좌표 (x&lt;sub&gt;2&lt;/sub&gt;, y&lt;sub&gt;2&lt;/sub&gt;)가 주어지고, 조규현이 계산한 류재명과의 거리 r&lt;sub&gt;1&lt;/sub&gt;과 백승환이 계산한 류재명과의 거리 r&lt;sub&gt;2&lt;/sub&gt;가 주어졌을 때, 류재명이 있을 수 있는 좌표의 수를 출력하는 프로그램을 작성하시오.
-&lt;br /&gt;
+&lt;p&gt;이석원은 조규현과 백승환에게 상대편 마린(류재영)의 위치를 계산하라는 명령을 내렸다. 조규현과 백승환은 각각 자신의 터렛 위치에서 현재 적까지의 거리를 계산했다.&lt;br&gt;
+조규현의 좌표 (x&lt;sub&gt;1&lt;/sub&gt;, y&lt;sub&gt;2&lt;/sub&gt;)와 백승환의 좌표 (x&lt;sub&gt;2&lt;/sub&gt;, y&lt;sub&gt;2&lt;/sub&gt;)가 주어지고, 조규현이 계산한 류재명과의 거리 r&lt;sub&gt;1&lt;/sub&gt;과 백승환이 계산한 류재명과의 거리 r&lt;sub&gt;2&lt;/sub&gt;가 주어졌을 때, 류재명이 있을 수 있는 좌표의 수를 출력하는 프로그램을 작성하시오.&lt;/p&gt;
 &lt;h2&gt;입력&lt;/h2&gt;
-&lt;p&gt;첫째 줄에 테스트 케이스의 개수 T가 주어진다. 각 테스트 케이스는 다음과 같이 이루어져 있다.
-&lt;br /&gt;
+&lt;p&gt;첫째 줄에 테스트 케이스의 개수 T가 주어진다. 각 테스트 케이스는 다음과 같이 이루어져 있다.&lt;br&gt;
 한 줄에 x&lt;sub&gt;1&lt;/sub&gt;, y&lt;sub&gt;1&lt;/sub&gt;, r&lt;sub&gt;1&lt;/sub&gt;, x&lt;sub&gt;2&lt;/sub&gt;, y&lt;sub&gt;2&lt;/sub&gt;, r&lt;sub&gt;2&lt;/sub&gt;가 주어진다. x&lt;sub&gt;1&lt;/sub&gt;, y&lt;sub&gt;1&lt;/sub&gt;, x&lt;sub&gt;2&lt;/sub&gt;, y&lt;sub&gt;2&lt;/sub&gt;는 -10,000보다 크거나 같고, 10,000보다 작거나 같은 점수이고, r&lt;sub&gt;1&lt;/sub&gt;, r&lt;sub&gt;2&lt;/sub&gt;는 10,000보다 작거나 같은 자연수이다.&lt;/p&gt;
-&lt;br /&gt;
 &lt;h2&gt;출력&lt;/h2&gt;
 &lt;p&gt;각 테스트 케이스마다 류재명이 있을 수 있는 위치의 수를 출력한다. 만약 류재명이 있을 수 있는 위치의 개수가 무한대일 경우에는 -1을 출력한다.&lt;/p&gt;
-&lt;br /&gt;
 &lt;h2&gt;케이스&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;입력&lt;/p&gt;
-&lt;p&gt;3
-&lt;br /&gt;
-0 0 13 40 0 37
-&lt;br /&gt;
-0 0 30 0 7 4
-&lt;br /&gt;
+&lt;p&gt;3&lt;br&gt;
+0 0 13 40 0 37&lt;br&gt;
+0 0 30 0 7 4&lt;br&gt;
 1 1 1 1 1 5&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;br /&gt;
-&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;출력&lt;/p&gt;
-&lt;p&gt;2
-&lt;br /&gt;
-1
-&lt;br /&gt;
+&lt;p&gt;2&lt;br&gt;
+1&lt;br&gt;
 0&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;br /&gt;
-&lt;h2&gt;풀이&lt;/h2&gt;
-&lt;p&gt;예제의 요소를 사람 이름으로 두었으나, 문제 이해에 방해가 되니 간단하게 서술하면 아래와 같다.&lt;br /&gt;
-임의의 위치에 있는 점 A, B, C가 존재하며, A와 C의 거리, B와 C의 거리가 주어진다.
-&lt;br /&gt;
-이 때, C가 실제로 위치할 수 있는 점의 갯수를 구하는 것. 즉, 간단하게 &lt;strong&gt;두 원의 접점을 구하는 문제&lt;/strong&gt;라고 정의할 수 있다.
-&lt;br /&gt;
-원이 완벽하게 겹칠 경우, &lt;strong&gt;그 수가 무수히 많으므로 -1로 표현&lt;/strong&gt;하라는 조건이 포함된다.
-&lt;br /&gt;
-&lt;br /&gt;
-이를 그림으로 표현하면 아래와 같다.
-[대충 원 그림]
-&lt;br /&gt;
-변수는 아래와 같이 정리할 수 있다.
-&lt;br /&gt;&lt;/p&gt;
+&lt;h1&gt;풀이&lt;/h1&gt;
+&lt;p&gt;예제의 요소를 사람 이름으로 두었으나, 문제 이해에 방해가 되니 간단하게 서술하면 아래와 같다.&lt;br&gt;
+임의의 위치에 있는 점 A, B, C가 존재하며, A와 C의 거리, B와 C의 거리가 주어진다.&lt;br&gt;
+이 때, C가 실제로 위치할 수 있는 점의 갯수를 구하는 것. 즉, 간단하게 &lt;strong&gt;두 원의 접점을 구하는 문제&lt;/strong&gt;라고 정의할 수 있다.&lt;br&gt;
+원이 완벽하게 겹칠 경우, &lt;strong&gt;그 수가 무수히 많으므로 -1로 표현&lt;/strong&gt;하라는 조건이 포함된다.&lt;/p&gt;
+&lt;p&gt;이를 그림으로 표현하면 아래와 같다.&lt;br&gt;
+[대충 원 그림]&lt;/p&gt;
+&lt;p&gt;변수는 아래와 같이 정리할 수 있다.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -281,10 +246,7 @@ Scanner로 두 숫자를 입력받아 뺄셈한 결과를 출력한다.&lt;/p&gt
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;br /&gt;
-케이스를 세분화하면 총 6가지로 나눌 수 있다.
-&lt;br /&gt;
-&lt;br /&gt;
+&lt;p&gt;케이스를 세분화하면 총 6가지로 나눌 수 있다.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;두 원이 정확히 겹칠 경우 (-1)&lt;/li&gt;
 &lt;li&gt;두 원이 서로 겹치면서 인접하지 않는 경우 (0)&lt;/li&gt;
@@ -293,10 +255,7 @@ Scanner로 두 숫자를 입력받아 뺄셈한 결과를 출력한다.&lt;/p&gt
 &lt;li&gt;두 원이 서로 겹치지 않으면서 인접하는 경우 (1)&lt;/li&gt;
 &lt;li&gt;두 원이 서로 겹치면서 인접하지 않는 경우 (2)&lt;/li&gt;
 &lt;/ol&gt;
-&lt;br /&gt;
-&lt;p&gt;본 풀이에선 x&lt;sub&gt;1&lt;/sub&gt;, y&lt;sub&gt;1&lt;/sub&gt;과 x&lt;sub&gt;2&lt;/sub&gt;, y&lt;sub&gt;2&lt;/sub&gt;의 거리(&lt;code&gt;distance&lt;/code&gt;) 및 r&lt;sub&gt;1&lt;/sub&gt;, r&lt;sub&gt;2&lt;/sub&gt;를 합한 길이(&lt;code&gt;sum&lt;/code&gt;)와 뺀 길이(&lt;code&gt;sub&lt;/code&gt;)의 절대값을 이용하여 진행한다.
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;본 풀이에선 x&lt;sub&gt;1&lt;/sub&gt;, y&lt;sub&gt;1&lt;/sub&gt;과 x&lt;sub&gt;2&lt;/sub&gt;, y&lt;sub&gt;2&lt;/sub&gt;의 거리(&lt;code&gt;distance&lt;/code&gt;) 및 r&lt;sub&gt;1&lt;/sub&gt;, r&lt;sub&gt;2&lt;/sub&gt;를 합한 길이(&lt;code&gt;sum&lt;/code&gt;)와 뺀 길이(&lt;code&gt;sub&lt;/code&gt;)의 절대값을 이용하여 진행한다.&lt;/p&gt;
 &lt;p align=&quot;center&quot;&gt;
 	&lt;img src=&quot;https://latex.codecogs.com/svg.latex?%5Cfn_phv%20%7B%5Ccolor%7BWhite%7D%20distance%20=%20%5Csqrt%7B%28x_%7B1%7D%20-%20x_%7B2%7D%29%5E%7B2%7D%20&amp;plus;%20%28y_%7B1%7D%20-%20y_%7B2%7D%29%5E%7B2%7D%7D%7D&quot; /&gt;
 &lt;/p&gt;
@@ -309,56 +268,37 @@ Scanner로 두 숫자를 입력받아 뺄셈한 결과를 출력한다.&lt;/p&gt
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;case 1 - 두 원이 정확히 겹칠 경우&lt;/p&gt;
-&lt;p&gt;두 원의 위치 및 반지름이 서로 동일한 상황.
-&lt;br /&gt;
-&lt;code&gt;distance&lt;/code&gt;가 0이며, r&lt;sub&gt;1&lt;/sub&gt;과 r&lt;sub&gt;2&lt;/sub&gt;의 길이가 동일할 경우 성립한다.
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;두 원의 위치 및 반지름이 서로 동일한 상황.&lt;br&gt;
+&lt;code&gt;distance&lt;/code&gt;가 0이며, r&lt;sub&gt;1&lt;/sub&gt;과 r&lt;sub&gt;2&lt;/sub&gt;의 길이가 동일할 경우 성립한다.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;case 2 - 두 원이 서로 겹치면서 인접하지 않는 경우&lt;/p&gt;
-&lt;p&gt;두 원의 원점과의 거리가 반지름의 차이보다 짧은 상황.
-&lt;br /&gt;
-&lt;code&gt;distance &amp;#x3C; sub&lt;/code&gt;일 경우 성립한다.
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;두 원의 원점과의 거리가 반지름의 차이보다 짧은 상황.&lt;br&gt;
+&lt;code&gt;distance &amp;#x3C; sub&lt;/code&gt;일 경우 성립한다.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;case 3 - 두 원이 서로 겹치지 않으면서 인접하지 않는 경우&lt;/p&gt;
-&lt;p&gt;두 원의 원점과의 거리가 반지름의 합보다 긴 상황.
-&lt;br /&gt;
-&lt;code&gt;distance &gt; sum&lt;/code&gt;일 경우 성립한다.
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;두 원의 원점과의 거리가 반지름의 합보다 긴 상황.&lt;br&gt;
+&lt;code&gt;distance &gt; sum&lt;/code&gt;일 경우 성립한다.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;case 4 - 두 원이 서로 겹치면서 인접하는 경우&lt;/p&gt;
-&lt;p&gt;두 원의 원점과의 거리가 반지름의 차이와 일치하는 상황.
-&lt;br /&gt;
-&lt;code&gt;distance == sub&lt;/code&gt;일 경우 성립한다.
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;두 원의 원점과의 거리가 반지름의 차이와 일치하는 상황.&lt;br&gt;
+&lt;code&gt;distance == sub&lt;/code&gt;일 경우 성립한다.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;case 5 - 두 원이 서로 겹치지 않으면서 인접하는 경우&lt;/p&gt;
-&lt;p&gt;두 원의 원점과의 거리가 반지름의 합과 일치하는 상황.
-&lt;br /&gt;
-&lt;code&gt;distance == sum&lt;/code&gt;일 경우 성립한다.
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;두 원의 원점과의 거리가 반지름의 합과 일치하는 상황.&lt;br&gt;
+&lt;code&gt;distance == sum&lt;/code&gt;일 경우 성립한다.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;case 6 - 두 원이 서로 겹치면서 인접하지 않는 경우&lt;/p&gt;
-&lt;p&gt;두 원이 서로 적당히 겹치는 상황.
-&lt;br /&gt;
-&lt;code&gt;distance &amp;#x3C; sum &amp;#x26;&amp;#x26; distance &gt; sub&lt;/code&gt;일 경우 성립한다.
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;두 원이 서로 적당히 겹치는 상황.&lt;br&gt;
+&lt;code&gt;distance &amp;#x3C; sum &amp;#x26;&amp;#x26; distance &gt; sub&lt;/code&gt;일 경우 성립한다.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;굳이 식으로 표현하지 않아도, 위의 5개 케이스에 부합하지 않는 모든 상황에 적용하면 된다.&lt;/p&gt;
-&lt;p&gt;위 케이스들을 &lt;code&gt;if&lt;/code&gt;문을 사용하여 적절히 표현하면 된다. &lt;code&gt;switch&lt;/code&gt;문의 경우 하나의 변수를 기준으로 분기를 판단하므로 해당 알고리즘에 적용하기엔 다소 부적절하다.&lt;/p&gt;
-&lt;br /&gt;
+&lt;p&gt;굳이 식으로 표현하지 않아도, 위의 5개 케이스에 부합하지 않는 모든 상황에 적용하면 된다.&lt;br&gt;
+위 케이스들을 &lt;code&gt;if&lt;/code&gt;문을 사용하여 적절히 표현하면 된다. &lt;code&gt;switch&lt;/code&gt;문의 경우 하나의 변수를 기준으로 분기를 판단하므로 해당 알고리즘에 적용하기엔 다소 부적절하다.&lt;/p&gt;
 &lt;h2&gt;전체 소스&lt;/h2&gt;
 &lt;div class=&quot;remark-highlight&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;java&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;util&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
@@ -475,7 +415,6 @@ Scanner로 두 숫자를 입력받아 뺄셈한 결과를 출력한다.&lt;/p&gt
 		<description>&lt;h1&gt;피보나치 함수&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&quot;https://shields.io/badge/java-JDK%2014-lightgray?logo=java&amp;#x26;style=plastic&amp;#x26;logoColor=white&amp;#x26;labelColor=orange&quot; alt=&quot;JAVA&quot;&gt;&lt;/p&gt;
 &lt;p&gt;🔗 &lt;a href=&quot;https://www.acmicpc.net/problem/1003&quot;&gt;전체 1003번 문제&lt;/a&gt;&lt;/p&gt;
-&lt;br /&gt;
 &lt;h2&gt;조건&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -491,7 +430,6 @@ Scanner로 두 숫자를 입력받아 뺄셈한 결과를 출력한다.&lt;/p&gt
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;br /&gt;
 &lt;h2&gt;문제&lt;/h2&gt;
 &lt;p&gt;다음 소스는 N번째 피보나치 수를 구하는 C++ 함수이다.&lt;/p&gt;
 &lt;div class=&quot;remark-highlight&quot;&gt;&lt;pre class=&quot;language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -517,48 +455,44 @@ Scanner로 두 숫자를 입력받아 뺄셈한 결과를 출력한다.&lt;/p&gt
 &lt;li&gt;&lt;code&gt;fibonacci(3)&lt;/code&gt;은 &lt;code&gt;fibonacci(2)&lt;/code&gt;와 &lt;code&gt;fibonacci(1)&lt;/code&gt;의 결과를 얻고, 2를 리턴한다.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;1은 2번 출력되고, 0은 1번 출력된다. N이 주어졌을 때, &lt;code&gt;fibonacci(N)&lt;/code&gt;을 호출했을 때, 0과 1이 각각 몇 번 출력되는지 구하는 프로그램을 적성하시오.&lt;/p&gt;
-&lt;br /&gt;
 &lt;h2&gt;입력&lt;/h2&gt;
-&lt;p&gt;첫째 줄에 테스트 케이스의 개수 T가 주어진다.
+&lt;p&gt;첫째 줄에 테스트 케이스의 개수 T가 주어진다.&lt;br&gt;
 각 테스트 케이스는 한 줄로 이루어져 있고, N이 주어진다. N은 40보다 작거나 같은 자연수 또는 0이다.&lt;/p&gt;
-&lt;br /&gt;
 &lt;h2&gt;출력&lt;/h2&gt;
 &lt;p&gt;각 테스트 케이스마다 0이 출력되는 횟수와 1이 출력되는 횟수를 공백으로 구분해서 출력한다.&lt;/p&gt;
-&lt;br /&gt;
 &lt;h2&gt;케이스&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;입력&lt;/p&gt;
-&lt;p&gt;3
-0
-1
+&lt;p&gt;3&lt;br&gt;
+0&lt;br&gt;
+1&lt;br&gt;
 3&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;출력&lt;/p&gt;
-&lt;p&gt;1 0
-0 1
+&lt;p&gt;1 0&lt;br&gt;
+0 1&lt;br&gt;
 1 2&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;br /&gt;
-&lt;h2&gt;풀이&lt;/h2&gt;
+&lt;h1&gt;풀이&lt;/h1&gt;
 &lt;p&gt;알고리즘 풀면서 느끼는 거지만, 문제가 뭘 말하는 지 이해가 안 되는 경우가 많은 것 같다. 내가 멍청해서 그런건가.&lt;/p&gt;
-&lt;p&gt;이 문제를 풀기 위해선, 피보나치 수열에 대한 식을 이해하고 있어야 한다.
+&lt;p&gt;이 문제를 풀기 위해선, 피보나치 수열에 대한 식을 이해하고 있어야 한다.&lt;br&gt;
 피보나치 수열이 &lt;code&gt;f()&lt;/code&gt;일 때, &lt;code&gt;n&lt;/code&gt;번째 피보나치 수열의 식은 &lt;code&gt;f(n) = f(n - 1) + f(n - 2)&lt;/code&gt;로 정의할 수 있다.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;n = 0, 1&lt;/code&gt;일 때의 초기값이 정해져있다. (식의 특성 상 초기값이 없으면 계산할 수가 없다.)
-&lt;code&gt;f(0) = 0&lt;/code&gt;
-&lt;code&gt;f(1) = 1&lt;/code&gt;
+&lt;p&gt;&lt;code&gt;n = 0, 1&lt;/code&gt;일 때의 초기값이 정해져있다. (식의 특성 상 초기값이 없으면 계산할 수가 없다.)&lt;br&gt;
+&lt;code&gt;f(0) = 0&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;f(1) = 1&lt;/code&gt;&lt;br&gt;
 초기값은 위와 같으며, 실질적으로 &lt;code&gt;n &gt;= 2&lt;/code&gt; 부터 의미있는 연산이 수행된다.&lt;/p&gt;
-&lt;p&gt;다시 문제로 돌아가서, 임의의 수 N이 주어질 경우 &lt;code&gt;f(N)&lt;/code&gt;을 수행하면서 &lt;code&gt;f(0)&lt;/code&gt;, &lt;code&gt;f(1)&lt;/code&gt;이 몇 번 호출되는지를 구하면 된다.
-예를 들어, &lt;code&gt;N = 4&lt;/code&gt;라고 가정하고 식을 전개하면 아래와 같다.
-&lt;code&gt;f(4) = f(3) + f(2)&lt;/code&gt;
-위 식에서 &lt;code&gt;f(3)&lt;/code&gt;은 &lt;code&gt;f(2) + f(1)&lt;/code&gt;로 치환할 수 있으며, 같은 이유로 &lt;code&gt;f(2)&lt;/code&gt; 역시 &lt;code&gt;f(1) + f(0)&lt;/code&gt;으로 치환 가능하다.
-&lt;code&gt;f(4) = f(2) + f(1) + f(1) + f(0)&lt;/code&gt;
+&lt;p&gt;다시 문제로 돌아가서, 임의의 수 N이 주어질 경우 &lt;code&gt;f(N)&lt;/code&gt;을 수행하면서 &lt;code&gt;f(0)&lt;/code&gt;, &lt;code&gt;f(1)&lt;/code&gt;이 몇 번 호출되는지를 구하면 된다.&lt;br&gt;
+예를 들어, &lt;code&gt;N = 4&lt;/code&gt;라고 가정하고 식을 전개하면 아래와 같다.&lt;br&gt;
+&lt;code&gt;f(4) = f(3) + f(2)&lt;/code&gt;&lt;br&gt;
+위 식에서 &lt;code&gt;f(3)&lt;/code&gt;은 &lt;code&gt;f(2) + f(1)&lt;/code&gt;로 치환할 수 있으며, 같은 이유로 &lt;code&gt;f(2)&lt;/code&gt; 역시 &lt;code&gt;f(1) + f(0)&lt;/code&gt;으로 치환 가능하다.&lt;br&gt;
+&lt;code&gt;f(4) = f(2) + f(1) + f(1) + f(0)&lt;/code&gt;&lt;br&gt;
 &lt;code&gt;= f(1) + f(0) + f(1) + f(1) + f(0)&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;결과적으로 &lt;code&gt;f(4) = 2(f0) + 3f(1)&lt;/code&gt;로 정리할 수 있다.
+&lt;p&gt;결과적으로 &lt;code&gt;f(4) = 2(f0) + 3f(1)&lt;/code&gt;로 정리할 수 있다.&lt;br&gt;
 따라서 이 문제의 알고리즘은 &lt;code&gt;N = 4&lt;/code&gt;일 경우 &lt;code&gt;2 3&lt;/code&gt;이 출력되어야 한다.&lt;/p&gt;
-&lt;p&gt;우선 식을 정리하여 한 눈에 보면 문제 해결에 도움이 될 것 같다.
+&lt;p&gt;우선 식을 정리하여 한 눈에 보면 문제 해결에 도움이 될 것 같다.&lt;br&gt;
 피보나치 수열을 쭉 정리하면 아래와 같다.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -639,8 +573,7 @@ Scanner로 두 숫자를 입력받아 뺄셈한 결과를 출력한다.&lt;/p&gt
 &lt;/ul&gt;
 &lt;p&gt;즉, &lt;code&gt;N = 4&lt;/code&gt;일 경우 알고리즘은 &lt;code&gt;f(3) f(4)&lt;/code&gt;가 출력되면 된다.&lt;/p&gt;
 &lt;p&gt;여기서 단순하게 생각하면 아래와 같이 코드를 짤 수 있다.&lt;/p&gt;
-&lt;br /&gt;
-&lt;h3&gt;완성....?&lt;/h3&gt;
+&lt;h2&gt;완성....?&lt;/h2&gt;
 &lt;div class=&quot;remark-highlight&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;java&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;util&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
 &lt;span class=&quot;token doc-comment comment&quot;&gt;/**
@@ -716,15 +649,14 @@ Scanner로 두 숫자를 입력받아 뺄셈한 결과를 출력한다.&lt;/p&gt
 	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;br /&gt;
-&lt;p&gt;위 코드는 크게 두 가지 문제가 있는데, 우선 &lt;code&gt;n = 0, 1&lt;/code&gt;일 때의 처리가 정상적으로 이루어지지 않고 있다.
-&lt;code&gt;f(1) = f(0) + f(-1)&lt;/code&gt;
+&lt;p&gt;위 코드는 크게 두 가지 문제가 있는데, 우선 &lt;code&gt;n = 0, 1&lt;/code&gt;일 때의 처리가 정상적으로 이루어지지 않고 있다.&lt;br&gt;
+&lt;code&gt;f(1) = f(0) + f(-1)&lt;/code&gt;&lt;br&gt;
 N이 문제되기 이전에 이 코드는 런타임 시간 초과로 실패한다. 왜일까?&lt;/p&gt;
-&lt;p&gt;위 코드는 &lt;strong&gt;불필요한 연산을 너무 많이 수행한다.&lt;/strong&gt; 피보나치 수열의 특성 상 &lt;code&gt;f(N)&lt;/code&gt;을 계산할 경우, &lt;code&gt;f(N - 1)&lt;/code&gt;, &lt;code&gt;f(N - 2)&lt;/code&gt; ... 등과 같이 N 이하의 피보나치 값까지 전부 계산하게 된다.
+&lt;p&gt;위 코드는 &lt;strong&gt;불필요한 연산을 너무 많이 수행한다.&lt;/strong&gt; 피보나치 수열의 특성 상 &lt;code&gt;f(N)&lt;/code&gt;을 계산할 경우, &lt;code&gt;f(N - 1)&lt;/code&gt;, &lt;code&gt;f(N - 2)&lt;/code&gt; ... 등과 같이 N 이하의 피보나치 값까지 전부 계산하게 된다.&lt;br&gt;
 다시 말하면, &lt;code&gt;f(6)&lt;/code&gt;을 연산할 경우 계산 과정에서 자연스레 &lt;code&gt;f(4)&lt;/code&gt;, &lt;code&gt;f(2)&lt;/code&gt; 등의 피보나치 값을 구할 수 있다.&lt;/p&gt;
-&lt;p&gt;위 이론을 알고리즘에 적용하면 아래와 같이 응용할 수 있다.
+&lt;p&gt;위 이론을 알고리즘에 적용하면 아래와 같이 응용할 수 있다.&lt;br&gt;
 N을 총 3번 입력한다고 가정하면 N&lt;sub&gt;1&lt;/sub&gt;, N&lt;sub&gt;2&lt;/sub&gt;, N&lt;sub&gt;3&lt;/sub&gt;으로 구분할 수 있다.&lt;/p&gt;
-&lt;p&gt;N&lt;sub&gt;2&lt;/sub&gt; = 8 -&gt; &lt;code&gt;f(8)&lt;/code&gt; 부터 &lt;code&gt;f(0)&lt;/code&gt;까지의 값을 구할 수 있음.
+&lt;p&gt;N&lt;sub&gt;2&lt;/sub&gt; = 8 -&gt; &lt;code&gt;f(8)&lt;/code&gt; 부터 &lt;code&gt;f(0)&lt;/code&gt;까지의 값을 구할 수 있음.&lt;br&gt;
 N&lt;sub&gt;3&lt;/sub&gt; = 4 -&gt; &lt;code&gt;f(4)&lt;/code&gt; 부터 &lt;code&gt;f(0)&lt;/code&gt;까지의 값을 구할 수 있음.&lt;/p&gt;
 &lt;p&gt;피보나치 연산값을 저장하면 N&lt;sub&gt;n&lt;/sub&gt; &gt; N&lt;sub&gt;n+1&lt;/sub&gt;일 경우 굳이 &lt;strong&gt;추가적인 연산을 진행하지 않고 이미 저장된 값을 출력&lt;/strong&gt;만 함으로써, 런타임 리소스를 줄일 수 있다.&lt;/p&gt;
 &lt;p&gt;클래스의 멤버변수로 &lt;strong&gt;Integer 배열을 선언&lt;/strong&gt;하여 피보나치 수열값을 저장하고, 알고리즘 연산에 이를 활용하면 될 것 같다.&lt;/p&gt;
@@ -732,12 +664,11 @@ N&lt;sub&gt;3&lt;/sub&gt; = 4 -&gt; &lt;code&gt;f(4)&lt;/code&gt; 부터 &lt;cod
 &lt;p&gt;int는 Primitive(자료형) 데이터고, Integer는 Wrapper 클래스다. Wrapper 클래스는 null 입력이 가능하다는 특징이 있으므로, Integer 역시 숫자 이외에 null값을 입력할 수 있다.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Integer 배열의 초기값은 null로 지정되므로, 배열의 값이 null인 인덱스는 아직 피보나치 수열 계산이 이루어지지 않은 인덱스라고 판단할 수 있다.&lt;/p&gt;
-&lt;p&gt;다행히 문제에서 주어진 &lt;code&gt;N&lt;/code&gt;의 조건은 &lt;code&gt;0 &amp;#x3C;= N &amp;#x3C;= 40&lt;/code&gt;이므로, 배열의 인덱스는 최대 41을 넘지 않음을 알 수 있다.
+&lt;p&gt;다행히 문제에서 주어진 &lt;code&gt;N&lt;/code&gt;의 조건은 &lt;code&gt;0 &amp;#x3C;= N &amp;#x3C;= 40&lt;/code&gt;이므로, 배열의 인덱스는 최대 41을 넘지 않음을 알 수 있다.&lt;br&gt;
 (배열은 0부터 시작하므로 40개가 아닌 0을 포함한 41개임에 유의하자)&lt;/p&gt;
-&lt;p&gt;이후 피보나치 연산에서 각 과정의 값을 배열에 저장하는 로직을 추가한다.
-배열의 값이 null일 경우, 아직 연산이 진행되지 않았으므로 피보나치 연산을 수행하고 배열에 저장한다.
+&lt;p&gt;이후 피보나치 연산에서 각 과정의 값을 배열에 저장하는 로직을 추가한다.&lt;br&gt;
+배열의 값이 null일 경우, 아직 연산이 진행되지 않았으므로 피보나치 연산을 수행하고 배열에 저장한다.&lt;br&gt;
 반대로, 배열이 특정 숫자값을 가질 경우, 이미 연산이 진행된 인덱스이므로 별도의 연산을 거치지 않고 해당 값을 바로 출력한다.&lt;/p&gt;
-&lt;br /&gt;
 &lt;h2&gt;전체 소스&lt;/h2&gt;
 &lt;div class=&quot;remark-highlight&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;all&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;a1003&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
@@ -826,6 +757,984 @@ N&lt;sub&gt;3&lt;/sub&gt; = 4 -&gt; &lt;code&gt;f(4)&lt;/code&gt; 부터 &lt;cod
 		<category>백준</category>
 		<category>알고리즘</category>
 		<category>JAVA(자바)</category>
+	</item>
+	<item>
+		<title>[JAVA] 백준 알고리즘 1004번 어린 왕자</title>
+		<description>&lt;h1&gt;어린 왕자&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://shields.io/badge/java-JDK%2014-lightgray?logo=java&amp;#x26;style=plastic&amp;#x26;logoColor=white&amp;#x26;labelColor=orange&quot; alt=&quot;JAVA&quot;&gt;&lt;/p&gt;
+&lt;p&gt;🔗 &lt;a href=&quot;https://www.acmicpc.net/problem/1004&quot;&gt;전체 1004번 문제&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;조건&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;시간제한&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;메모리 제한&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;2초&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;128MB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;문제&lt;/h2&gt;
+&lt;p&gt;어린 왕자는 소혹성 B-664에서 자신이 사랑하는 한 송이 장미를 위해 살아간다. 어느 날 장미가 위험에 빠지게 된 것을 알게 된 어린 왕자는, 장미를 구하기 위해 은하수를 따라 긴 여행을 하기 시작했다. 하지만 어린 왕자의 우주선은 그렇게 좋지 않아서 행성계 간의 이동을 최대한 피해서 여행해야 한다. 아래의 그림은 어린 왕자가 펼쳐본 은하수 지도의 일부이다.&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+	&lt;img src=&quot;https://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/upload/201003/dfcmhrjj_113gw6bcng2_b.gif&quot; width=&quot;512px&quot; /&gt;
+&lt;/p&gt;
+&lt;p&gt;빨간 실선은 어린 왕자가 출발점에서 도착점까지 도달하는데 있어서 필요한 행성계 진입/이탈 횟수를 최소화하는 경로이며, 원은 행성계의 경계를 의미한다. 이러한 경로는 여러 개 존재할 수 있지만 적어도 3번의 행성계 진입/이탈이 필요하다는 것을 알 수 있다.&lt;/p&gt;
+&lt;p&gt;위와 같은 은하수 지도, 출발점, 도착점이 주어졌을 때 어린 왕자에게 필요한 최소의 행성계 진입/이탈 횟수를 구하는 프로그램을 작성해 보자. (행성계의 경계가 맞닿거나 서로 교차하는 경우는 없다고 가정한다. 또한, 출발점이나 도착점이 행성계 경계에 걸쳐진 경우 역시 입력으로 주어지지 않는다.)&lt;/p&gt;
+&lt;h2&gt;입력&lt;/h2&gt;
+&lt;p&gt;입력의 첫 줄에는 테스트 케이스의 개수 T가 주어진다. 그 다음 줄부터 각각의 테스트케이스에 대해 첫째 줄에 출발점 (x&lt;sub&gt;1&lt;/sub&gt;, y&lt;sub&gt;1&lt;/sub&gt;)과 도착점 `(x&lt;sub&gt;2&lt;/sub&gt;, y&lt;sub&gt;2&lt;/sub&gt;)이 주어진다. 두 번째 줄에는 행성계의 개수 n이 주어지며, 세 번째 줄부터 n줄에 걸쳐 행성계의 중점과 반지름 (c&lt;sub&gt;x&lt;/sub&gt;, c&lt;sub&gt;y&lt;/sub&gt;, r)이 주어진다. 입력제한은 다음과 같다. (-1000 ≤ x&lt;sub&gt;1&lt;/sub&gt;, y&lt;sub&gt;1&lt;/sub&gt;, x&lt;sub&gt;2&lt;/sub&gt;, y&lt;sub&gt;2&lt;/sub&gt;, c&lt;sub&gt;x&lt;/sub&gt;, c&lt;sub&gt;y&lt;/sub&gt; ≤ 1000, 1 ≤ r ≤ 1000, 1 ≤ n ≤ 50)&lt;/p&gt;
+&lt;p&gt;좌표와 반지름은 모두 정수이다.&lt;/p&gt;
+&lt;h2&gt;출력&lt;/h2&gt;
+&lt;p&gt;각 테스트 케이스에 대해 어린 왕자가 거쳐야 할 최소의 행성계 진입/이탈 횟수를 출력한다.&lt;/p&gt;
+&lt;h2&gt;케이스&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;입력&lt;/p&gt;
+&lt;p&gt;2&lt;br&gt;
+-5 1 12 1&lt;br&gt;
+7&lt;br&gt;
+1 1 8&lt;br&gt;
+-3 -1 1&lt;br&gt;
+2 2 2&lt;br&gt;
+5 5 1&lt;br&gt;
+-4 5 1&lt;br&gt;
+12 1 1&lt;br&gt;
+12 1 2&lt;br&gt;
+-5 1 5 1&lt;br&gt;
+1&lt;br&gt;
+0 0 2&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;출력&lt;/p&gt;
+&lt;p&gt;3&lt;br&gt;
+0&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;풀이&lt;/h1&gt;
+&lt;p&gt;1002번째 알고리즘의 내용을 응용하면 쉽게 풀 수 있는 문제인 것 같다. 실제로 별다른 레퍼런스를 찾지도 않고 풀 수 있었으니.&lt;/p&gt;
+&lt;p&gt;문제를 풀기 전에 몇 가지 집고 넘아갈 게 있다.&lt;br&gt;
+숫자들 때문에 입력의 한 세트를 착각하기 쉽다.&lt;/p&gt;
+&lt;p&gt;위 예제를 기준으로 설명하면, 첫 번째 숫자는 세트의 갯수. 본문에서는 &lt;code&gt;2&lt;/code&gt;이므로, 두 세트를 테스트하므로 결과는 두 줄이 출력된다.&lt;br&gt;
+이후 테스트에 필요한 데이터가 출력된다.&lt;/p&gt;
+&lt;p&gt;-5 1 12 1 &amp;#x3C;= x&lt;sub&gt;1&lt;/sub&gt;, y&lt;sub&gt;1&lt;/sub&gt;, x&lt;sub&gt;2&lt;/sub&gt;, y&lt;sub&gt;2&lt;/sub&gt;&lt;br&gt;
+7 &amp;#x3C;= 행성 갯수&lt;br&gt;
+1 1 8 &amp;#x3C;= c&lt;sub&gt;x1&lt;/sub&gt;, c&lt;sub&gt;y1&lt;/sub&gt;, r&lt;sub&gt;1&lt;/sub&gt;&lt;br&gt;
+-3 -1 1&lt;br&gt;
+2 2 2&lt;br&gt;
+5 5 1&lt;br&gt;
+-4 5 1&lt;br&gt;
+12 1 1&lt;br&gt;
+12 1 2 &amp;#x3C;= 행성 갯수만큼 출력됨&lt;/p&gt;
+&lt;p&gt;또한, 결과는 행성계의 진입/이탈 횟수를 통틀어서 출력하므로 굳이 진입/이탈을 구분하여 저장할 필요는 없다.&lt;/p&gt;
+&lt;p&gt;문제에서 &lt;strong&gt;출발점에서 도착점까지 가는데 통과해야하는 행성계(이하 원, circle)의 최소&lt;/strong&gt;를 목적으로 두기 때문에, 반드시 통과해야하는 원만 계산하면 된다.&lt;br&gt;
+출발/도착점이 임의의 원 안에 포함될 경우 반드시 진입/이탈이 일어난다. 따라서, 출발/도착점을 온전히 포함하는 원의 갯수를 계산하면 진입/이탈의 횟수를 구할 수 있다.&lt;br&gt;
+주의할 점이 있는데, &lt;strong&gt;한 원이 출발/도착점을 모두 포함할 경우 계산에서 제외&lt;/strong&gt;시켜야 한다.&lt;br&gt;
+하나의 원이 출발/도착점을 전부 포함할 경우, 원 안에서 이동하기 때문에 진입/이탈이 일어나지 않기 때문.&lt;/p&gt;
+&lt;p&gt;-그림-&lt;/p&gt;
+&lt;p&gt;원리는 간단하다. 원점과 점의 거리를 계산한다. 계산한 거리가 원의 반지름보다 짧을 경우, 해당 원은 점을 포함하는 셈이다.&lt;br&gt;
+이를 식으로 정리하면 아래와 같다.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;변수&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;의미&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;code&gt;x&lt;/code&gt;, &lt;code&gt;y&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;원점 좌표&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;code&gt;xo&lt;/code&gt;, &lt;code&gt;yo&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;원의 원점 좌표&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;code&gt;r&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;원의 반지름&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;변수는 위 표와 같이 정의하고 식을 전개한다.&lt;/p&gt;
+&lt;p&gt;-식-&lt;/p&gt;
+&lt;p&gt;위 식을 코드로 표현하면 되는 비교적 간단한 알고리즘이다.&lt;/p&gt;
+&lt;h2&gt;전체 소스&lt;/h2&gt;
+&lt;div class=&quot;remark-highlight&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;java&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;util&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token doc-comment comment&quot;&gt;/**
+ * 백준 전체 1004 문제 알고리즘 클래스
+ *
+ * &lt;span class=&quot;token keyword&quot;&gt;@author&lt;/span&gt; RWB
+ * &lt;span class=&quot;token keyword&quot;&gt;@since&lt;/span&gt; 2021.04.24 Sat 02:15:31
+ */&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Main&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;token doc-comment comment&quot;&gt;/**
+	 * 메인 함수
+	 *
+	 * &lt;span class=&quot;token keyword&quot;&gt;@param&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;args&lt;/span&gt;: [String[]] 매개변수
+	 */&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; args&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token class-name&quot;&gt;Scanner&lt;/span&gt; scanner &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;in&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		
+		&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; length &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextLine&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		
+		&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;#x3C;&lt;/span&gt; length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; base &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextLine&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			
+			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; x_start &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;parseInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;base&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; y_start &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;parseInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;base&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			
+			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; x_end &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;parseInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;base&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; y_end &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;parseInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;base&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			
+			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; through &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			
+			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; count &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextLine&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			
+			&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; j &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; j &lt;span class=&quot;token operator&quot;&gt;&amp;#x3C;&lt;/span&gt; count&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; j&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+			&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; circle &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextLine&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+				
+				&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;parseInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;circle&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+				&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; y &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;parseInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;circle&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+				&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; r &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;parseInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;circle&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+				
+				&lt;span class=&quot;token keyword&quot;&gt;boolean&lt;/span&gt; hasStartContain &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;hasContain&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;x_start&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; y_start&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; r&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+				&lt;span class=&quot;token keyword&quot;&gt;boolean&lt;/span&gt; hasEndContain &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;hasContain&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;x_end&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; y_end&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; r&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+				
+				&lt;span class=&quot;token comment&quot;&gt;// 해당 행성이 출발 혹은 도착점 중 하나만을 포함할 경우&lt;/span&gt;
+				&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;hasStartContain &lt;span class=&quot;token operator&quot;&gt;&amp;#x26;&amp;#x26;&lt;/span&gt; hasEndContain&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;#x26;&amp;#x26;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;hasStartContain &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; hasEndContain&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+				&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+					through&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+				&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+			&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+			
+			&lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;through&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+		
+		scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+	
+	&lt;span class=&quot;token doc-comment comment&quot;&gt;/**
+	 * 출발/도착점 포함 여부 반환 함수
+	 *
+	 * &lt;span class=&quot;token keyword&quot;&gt;@param&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;xo&lt;/span&gt;: [int] 출발/도착점의 x좌표
+	 * &lt;span class=&quot;token keyword&quot;&gt;@param&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;yo&lt;/span&gt;: [int] 출발/도착점의 y좌표
+	 * &lt;span class=&quot;token keyword&quot;&gt;@param&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;x&lt;/span&gt;: [int] 행성의 x좌표
+	 * &lt;span class=&quot;token keyword&quot;&gt;@param&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;y&lt;/span&gt;: [int] 행성의 y좌표
+	 * &lt;span class=&quot;token keyword&quot;&gt;@param&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;r&lt;/span&gt;: [int] 행성의 반지름
+	 *
+	 * &lt;span class=&quot;token keyword&quot;&gt;@return&lt;/span&gt; [boolean] 출발/도착점 포함 여부
+	 */&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;hasContain&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; xo&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; yo&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; r&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;sqrt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pow&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;xo &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pow&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;yo &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;#x3C;&lt;/span&gt; r&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</description>
+		<pubDate>2021-04-22T12:42:23.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/A1004/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/A1004/</guid>
+		<category>알고리즘</category>
+		<category>알고리즘</category>
+		<category>백준</category>
+		<category>알고리즘</category>
+		<category>JAVA(자바)</category>
+	</item>
+	<item>
+		<title>[JAVA] 백준 알고리즘 1005번 ACM Craft</title>
+		<description>&lt;h1&gt;ACM Craft&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://shields.io/badge/java-JDK%2014-lightgray?logo=java&amp;#x26;style=plastic&amp;#x26;logoColor=white&amp;#x26;labelColor=orange&quot; alt=&quot;JAVA&quot;&gt;&lt;/p&gt;
+&lt;p&gt;🔗 &lt;a href=&quot;https://www.acmicpc.net/problem/1005&quot;&gt;전체 1005번 문제&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;조건&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;시간제한&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;메모리 제한&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;1초&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;512MB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;문제&lt;/h2&gt;
+&lt;p&gt;서기 2012년! 드디어 2년간 수많은 국민들을 기다리게 한 게임 ACM Craft(Association of Construction Mananger Craft)가 발매되었다.&lt;/p&gt;
+&lt;p&gt;이 게임은 지금까지 나온 게임들과는 다르게 ACM Craft는 다이나믹한 게임 진행을 위해 건물을 짓는 순서가 정해져있지 않다. 즉, 첫 번째 게임과 두 번째 게임이 건물을 짓는 순서가 다를 수도 있다. 매 게임시작 시 건물을 짓는 순서가 주어진다. 또한 모든 건물은 각각 건설을 시작하여 완성이 될 때까지 Delay가 존재한다.&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+	&lt;img src=&quot;https://user-images.githubusercontent.com/50317129/120219763-b1cf1480-c276-11eb-8131-a3471db1cfc4.png&quot; width=&quot;1024px&quot; /&gt;
+&lt;/p&gt;
+&lt;p&gt;위의 예시를 보자.&lt;/p&gt;
+&lt;p&gt;이번 게임에서는 다음과 같이 건설 순서 규칙이 주어졌다. 1번 건물의 건설이 완료된다면 2번과 3번의 건설을 시작할 수 있다. (동시에 진행이 가능하다.) 그리고 4번 건물을 짓기 위해서는 2번과 3번 건물이 모두 건설 완료되어야지만 4번 건물의 건설을 시작할 수 있다.&lt;/p&gt;
+&lt;p&gt;따라서 4번 건물의 건설을 완료하기 위해서는 우선 처음 1번 건물을 건설하는데 10초가 소요된다. 그리고 2번 건물와 3번 건물을 동시에 건설하기 시작하면 2번은 1초 뒤에 건설이 완료되지만 아직 3번 건물이 완료되지 않았으므로 4번 건물을 건설할 수 없다. 3번 건물이 완성되고 나면 그때 4번 건물을 지을 수 있으므로 4번 건물이 완성되기까지는 총 120초가 소요된다.&lt;/p&gt;
+&lt;p&gt;프로게이머 최백준은 애인과의 데이트 비용을 마련하기 위해 서강대학교배 ACM Craft 대회에 참가했다! 최백준은 화려한 컨트롤 실력을 가지고 있기 때문에 모든 경기에서 특정 건물만 짓는다면 무조건 게임에서 이길 수 있다. 그러나 매 게임마다 특정 건물을 짓기 위한 순서가 달라지므로 최백준은 좌절하고 있었다. 백준이를 위해 특정 건물을 가장 빨리 지을 때까지 걸리는 최소시간을 알아내는 프로그램을 작성해주자.&lt;/p&gt;
+&lt;h2&gt;입력&lt;/h2&gt;
+&lt;p&gt;첫째 줄에는 테스트케이스의 갯수 &lt;code&gt;T&lt;/code&gt;가 주어진다. 각 테스트 케이스는 다음과 같이 주어진다, 첫째 줄에 건물의 갯수 &lt;code&gt;N&lt;/code&gt;과 건물 간의 건설순서 규칙의 총 갯수 &lt;code&gt;K&lt;/code&gt;가 주어진다.(전물의 번호는 1번 부터 N번 까지 존재한다.)&lt;/p&gt;
+&lt;p&gt;둘째 줄에는 각 건물 당 건설에 걸리는 시간 D가 공백을 사이로 주어진다. 셋째 줄부터 &lt;code&gt;K + 2&lt;/code&gt;줄 까지 건설순서 &lt;code&gt;X&lt;/code&gt; &lt;code&gt;Y&lt;/code&gt;가 주어진다.(이는 건물 X를 지은 다음에 건물 Y를 짓는 것이 가능하다는 의미이다.)&lt;/p&gt;
+&lt;p&gt;마지막 줄에는 백준이가 승리하기 위해 건설해야 할 건물의 번호 W가 주어진다.&lt;/p&gt;
+&lt;h2&gt;출력&lt;/h2&gt;
+&lt;p&gt;건물 W를 건설완료 하는데 드는 최소 시간을 출력한다. 편의상 건물을 짓는 명령을 내리는 데는 시간이 소요되지 않는다고 가정한다.&lt;br&gt;
+건설순서는 모든 건물이 건설 가능하도록 주어진다.&lt;/p&gt;
+&lt;h2&gt;제한&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;2 ≤ N ≤ 1,000&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;1 ≤ K ≤ 100,000&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;1 ≤ X, Y, W ≤ N&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;0 ≤ D ≤ 100,000)&lt;/code&gt; D는 정수&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;케이스&lt;/h2&gt;
+&lt;h3&gt;예제 1&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;입력&lt;/p&gt;
+&lt;p&gt;2&lt;br&gt;
+4 4&lt;br&gt;
+10 1 100 10&lt;br&gt;
+1 2&lt;br&gt;
+1 3&lt;br&gt;
+2 4&lt;br&gt;
+3 4&lt;br&gt;
+4&lt;br&gt;
+8 8&lt;br&gt;
+10 20 1 5 8 7 1 43&lt;br&gt;
+1 2&lt;br&gt;
+1 3&lt;br&gt;
+2 4&lt;br&gt;
+2 5&lt;br&gt;
+3 6&lt;br&gt;
+5 7&lt;br&gt;
+6 7&lt;br&gt;
+7 8&lt;br&gt;
+7&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;출력&lt;/p&gt;
+&lt;p&gt;120&lt;br&gt;
+39&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;예제 2&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;입력&lt;/p&gt;
+&lt;p&gt;5&lt;br&gt;
+3 2&lt;br&gt;
+1 2 3&lt;br&gt;
+3 2&lt;br&gt;
+2 1&lt;br&gt;
+1&lt;br&gt;
+4 3&lt;br&gt;
+5 5 5 5&lt;br&gt;
+1 2&lt;br&gt;
+1 3&lt;br&gt;
+2 3&lt;br&gt;
+4&lt;br&gt;
+5 10&lt;br&gt;
+100000 99999 99997 99994 99990&lt;br&gt;
+4 5&lt;br&gt;
+3 5&lt;br&gt;
+3 4&lt;br&gt;
+2 5&lt;br&gt;
+2 4&lt;br&gt;
+2 3&lt;br&gt;
+1 5&lt;br&gt;
+1 4&lt;br&gt;
+1 3&lt;br&gt;
+1 2&lt;br&gt;
+4&lt;br&gt;
+4 3&lt;br&gt;
+1 1 1 1&lt;br&gt;
+1 2&lt;br&gt;
+3 2&lt;br&gt;
+1 4&lt;br&gt;
+4&lt;br&gt;
+7 8&lt;br&gt;
+0 0 0 0 0 0 0&lt;br&gt;
+1 2&lt;br&gt;
+1 3&lt;br&gt;
+2 4&lt;br&gt;
+3 4&lt;br&gt;
+4 5&lt;br&gt;
+4 6&lt;br&gt;
+5 7&lt;br&gt;
+6 7&lt;br&gt;
+7&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;출력&lt;/p&gt;
+&lt;p&gt;6&lt;br&gt;
+5&lt;br&gt;
+399990&lt;br&gt;
+2&lt;br&gt;
+0&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;풀이&lt;/h1&gt;
+&lt;p&gt;문제는 이해가 되는데, 이를 코딩으로 풀어내기가 어려웠던 알고리즘. &lt;span class=&quot;primary&quot;&gt;위상정렬&lt;/span&gt; 알고리즘에 대한 이해가 있어야한다.&lt;br&gt;
+문제의 경우, 스타크래프트의 건물 테크트리랑 비슷한 개념으로 접근하면 된다. 군수공장을 짓기 위해선 병영을 지어야하는 것처럼, 요구 트리가 있는 건물의 경우 해당 건물을 반드시 완료해야 하며, 하나의 건물이 여러 요구 트리를 가질 경우도 존재한다. 물론 이 경우 요구하는 건물들을 &lt;strong&gt;모두&lt;/strong&gt; 건설한 뒤에 건설 가능하다. 요구하는 건물들 중 하나만 건설하면 충족되는게 아니다.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;위상정렬&lt;/span&gt;은 &lt;span class=&quot;green-A400&quot;&gt;순서가 정해진 작업을 수행할 때, 이 순서를 결정하는 알고리즘&lt;/span&gt;이다. &lt;span class=&quot;primary&quot;&gt;위상정렬&lt;/span&gt;은 반드시 DAG(Directed Acyclic Graph, 유향 비순환 그래프) 형태여야 한다. 즉, 순서를 도식화했을 때 반드시 &lt;span class=&quot;red-A400&quot;&gt;시작/도착점이 존재&lt;/span&gt;해야 한다. 시작/도착점이 구분되지 않는 순환 형태일 경우 위상정렬을 적용할 수 없다.&lt;/p&gt;
+&lt;p&gt;위상정렬은 순서를 정하는 알고리즘이고, 순서도의 형태에 따라 여러가지의 답이 나올 수 있다. 이 문제는 최적의 답을 도출하기 위해 각 &lt;strong&gt;건물을 건설하는데 필요한 요구 건물&lt;/strong&gt;과 &lt;strong&gt;건설 시간&lt;/strong&gt;을 적용했다.&lt;/p&gt;
+&lt;p&gt;다음 건물을 건설하기 위해선 요구 건물을 모두 건설해야하므로 요구 건물의 건설시간이 가장 많은 건물이 다음 순서가 된다.&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+	&lt;img src=&quot;https://user-images.githubusercontent.com/50317129/120219453-3b321700-c276-11eb-9029-ec105c694854.png&quot; width=&quot;1024px&quot; /&gt;
+&lt;/p&gt;
+&lt;p&gt;예시 1번의 두 번째 케이스를 예시로 하여 위상정렬을 도식화하면 위 사진과 같다.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;노드&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;1&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;2&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;3&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;4&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;5&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;6&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;7&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;8&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;진입선&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;0&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;2&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;시간&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;10&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;20&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;5&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;8&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;7&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;43&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;위 표는 도식를 수치화하여 정리한 것이다.&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;&lt;span class=&quot;large orange-A400&quot;&gt;1. 순서의 시작점(진입선이 없는 점)을 찾는다. 시작점이 여러개일 경우 시작점 중 무작위로 하나를 선택해도 무방하다. (위 예시는 시작점이 하나)&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+	&lt;img src=&quot;https://user-images.githubusercontent.com/50317129/120219469-4127f800-c276-11eb-91c8-db36e543c217.png&quot; width=&quot;1024px&quot; /&gt;
+&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;&lt;span class=&quot;large orange-A400&quot;&gt;2. 시작점 1을 큐에 넣고, 시작점에 연결된 진출선을 전부 제거한다.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+	&lt;img src=&quot;https://user-images.githubusercontent.com/50317129/120219471-438a5200-c276-11eb-9cd3-ca5f31dfb19b.png&quot; width=&quot;1024px&quot; /&gt;
+&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;노드&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;1&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;2&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;3&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;4&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;5&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;6&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;7&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;8&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;진입선&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;0&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;0&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;2&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;시간&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;10&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;20&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;5&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;8&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;7&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;43&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;큐&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;1&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;p&gt;이 과정에서 2와 3이 새로운 시작점이 된 것을 확인할 수 있다.&lt;/p&gt;
+&lt;p&gt;1을 건설하는데 걸리는 시간은 1초.&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;&lt;span class=&quot;large orange-A400&quot;&gt;3. 2에 대해 2번 과정을 적용한다.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+	&lt;img src=&quot;https://user-images.githubusercontent.com/50317129/120219484-45ecac00-c276-11eb-8114-a6c4c8b17036.png&quot; width=&quot;1024px&quot; /&gt;
+&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;노드&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;1&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;2&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;3&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;4&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;5&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;6&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;7&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;8&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;진입선&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;0&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;0&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;0&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;2&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;시간&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;10&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;20&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;5&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;8&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;7&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;43&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;큐&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;1&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;2&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;p&gt;4와 5의 진입선이 0이 된다. 즉, 4와 5를 건설할 수 있게 된다.&lt;/p&gt;
+&lt;p&gt;2를 건설하는데는 &lt;code&gt;10(1) + 20(2)&lt;/code&gt;로 총 30초가 소요된다.&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;&lt;span class=&quot;large orange-A400&quot;&gt;4. 3에 대해 2번 과정을 적용한다.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+	&lt;img src=&quot;https://user-images.githubusercontent.com/50317129/120219493-48e79c80-c276-11eb-8f48-cf132cab8f5c.png&quot; width=&quot;1024px&quot; /&gt;
+&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;노드&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;1&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;2&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;3&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;4&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;5&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;6&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;7&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;8&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;진입선&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;0&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;0&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;0&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;2&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;시간&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;10&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;20&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;5&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;8&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;7&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;43&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;큐&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;1&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;2&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;3&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;p&gt;6의 진입선이 0이 된다. 6을 건설할 수 있게 된다.&lt;/p&gt;
+&lt;p&gt;3의 건설시간은 &lt;code&gt;10(1) + 1(3)&lt;/code&gt;으로 총 11초.&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;&lt;span class=&quot;large orange-A400&quot;&gt;5. 4에 대해 2번 과정을 적용한다.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+	&lt;img src=&quot;https://user-images.githubusercontent.com/50317129/120219504-4be28d00-c276-11eb-9b40-07c5ea51cbd9.png&quot; width=&quot;1024px&quot; /&gt;
+&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;노드&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;1&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;2&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;3&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;4&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;5&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;6&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;7&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;8&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;진입선&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;0&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;0&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;2&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;시간&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;10&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;20&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;5&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;8&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;7&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;43&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;큐&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;1&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;2&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;3&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;4&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;p&gt;4는 진출선이 없으므로 큐에만 추가된다.&lt;/p&gt;
+&lt;p&gt;4의 건설시간은 &lt;code&gt;10(1) + 20(2) + 5(4)&lt;/code&gt;로 총 35초&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;&lt;span class=&quot;large orange-A400&quot;&gt;6. 5에 대해 2번 과정을 적용한다.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+	&lt;img src=&quot;https://user-images.githubusercontent.com/50317129/120219509-4edd7d80-c276-11eb-9c5f-fc17d373bf50.png&quot; width=&quot;1024px&quot; /&gt;
+&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;노드&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;1&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;2&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;3&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;4&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;5&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;6&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;7&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;8&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;진입선&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;0&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;시간&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;10&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;20&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;5&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;8&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;7&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;43&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;큐&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;1&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;2&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;3&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;4&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;5&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;p&gt;7이 5와 6에 연결되어 있으므로, 7의 진입선은 1이 된다. 아직 7을 건설할 수 없다.&lt;/p&gt;
+&lt;p&gt;5의 건설시간은 &lt;code&gt;10(1) + 20(2) + 8(5)&lt;/code&gt;로 총 38초&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;&lt;span class=&quot;large orange-A400&quot;&gt;7. 6에 대해 2번 과정을 적용한다.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+	&lt;img src=&quot;https://user-images.githubusercontent.com/50317129/120219520-53099b00-c276-11eb-9c99-060dcd2039d8.png&quot; width=&quot;1024px&quot; /&gt;
+&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;노드&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;1&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;2&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;3&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;4&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;5&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;6&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;7&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;8&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;진입선&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;0&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;시간&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;10&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;20&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;5&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;8&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;7&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;43&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;큐&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;1&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;2&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;3&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;4&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;5&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;6&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;p&gt;7의 진입선이 0이 된다. 7을 건설할 수 있게 된다.&lt;/p&gt;
+&lt;p&gt;6의 건설시간은 &lt;code&gt;10(1) + 1(3) + 7(6)&lt;/code&gt;으로 총 18초.&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;&lt;span class=&quot;large orange-A400&quot;&gt;8. 7에 대해 2번 과정을 적용한다.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+	&lt;img src=&quot;https://user-images.githubusercontent.com/50317129/120219527-56048b80-c276-11eb-866b-9b411445b22b.png&quot; width=&quot;1024px&quot; /&gt;
+&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;노드&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;1&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;2&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;3&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;4&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;5&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;6&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;7&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;8&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;진입선&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;시간&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;10&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;20&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;5&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;8&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;7&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;43&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;큐&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;1&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;2&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;3&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;4&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;5&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;6&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;7&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;p&gt;8의 진입선이 0이 된다.&lt;/p&gt;
+&lt;p&gt;1 ~ 6까지는 요구 건물이 하나였지만, 7은 두개이다. 앞서 언급했듯이, 5와 6 중 건설시간이 더 긴 것을 기준으로 계산해야한다.&lt;/p&gt;
+&lt;p&gt;즉, 7의 건설시간은 &lt;code&gt;10(1) + 20(2) + 8(5) + 1(7)&lt;/code&gt;로 총 39초&lt;/p&gt;
+&lt;p&gt;5번을 기준으로 계산하므로, &lt;span class=&quot;red-A400&quot;&gt;6번과 중간인 3번은 계산에서 제외&lt;/span&gt;된다. 만약, 3의 건설시간을 1초에서 4초로 증가시켜도 결과에 영향을 미치지 않는다. 3의 건설시간을 무시하기 때문이다. 단, 3의 건설시간이 너무 커지게되면 5보다 6의 건설시간이 같이 커지게 되어 결과에 영향을 미치게 된다.&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;&lt;span class=&quot;large orange-A400&quot;&gt;9. 8에 대해 2번 과정을 적용한다.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+	&lt;img src=&quot;https://user-images.githubusercontent.com/50317129/120219535-58ff7c00-c276-11eb-907c-2a90cc84c596.png&quot; width=&quot;1024px&quot; /&gt;
+&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;노드&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;1&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;2&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;3&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;4&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;5&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;6&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;7&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;8&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;진입선&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;시간&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;10&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;20&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;5&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;8&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;7&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;43&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;큐&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;1&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;2&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;3&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;4&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;5&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;6&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;7&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;8&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;p&gt;문제는 7에 대한 건설시간을 요구하고 있으므로 8은 무시해도 무방하다.
+8의 건설시간은 &lt;code&gt;10(1) + 20(2) + 8(5) + 1(7) + 43(8)&lt;/code&gt;로 총 82초&lt;/p&gt;
+&lt;h2&gt;전체 소스&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;time&lt;/code&gt;, &lt;code&gt;matrix&lt;/code&gt;, &lt;code&gt;link&lt;/code&gt;의 배열 크기가 &lt;code&gt;N + 1&lt;/code&gt;이다. 별다른 이유는 아니고, 건물은 1번부터 시작하는데 배열은 0번부터 시작한다. 이러한 차이에서 오는 혼란을 방지하기 위해 건물이 총 4개면 배열의 크기를 5로(0, 1, 2, 3, 4, 5)로 지정하여 0을 제외하고 1부터 사용한다.&lt;/p&gt;
+&lt;div class=&quot;remark-highlight&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;java&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;util&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;LinkedList&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;java&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;util&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Queue&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;java&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;util&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token doc-comment comment&quot;&gt;/**
+ * 백준 전체 1005 문제 알고리즘 클래스
+ *
+ * &lt;span class=&quot;token keyword&quot;&gt;@author&lt;/span&gt; RWB
+ * &lt;span class=&quot;token keyword&quot;&gt;@since&lt;/span&gt; 2021.05.31 Mon 19:11:58
+ */&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Main&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;token doc-comment comment&quot;&gt;/**
+	 * 메인 함수
+	 *
+	 * &lt;span class=&quot;token keyword&quot;&gt;@param&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;args&lt;/span&gt;: [String[]] 매개변수
+	 */&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; args&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token class-name&quot;&gt;Scanner&lt;/span&gt; scanner &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;in&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		
+		&lt;span class=&quot;token class-name&quot;&gt;StringBuilder&lt;/span&gt; builder &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;StringBuilder&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		
+		&lt;span class=&quot;token comment&quot;&gt;// 케이스 갯수&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;T&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		
+		&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;#x3C;&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;token comment&quot;&gt;// 건물 갯수&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			
+			&lt;span class=&quot;token comment&quot;&gt;// 규칙(건설시간) 갯수&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;K&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			
+			&lt;span class=&quot;token comment&quot;&gt;// 건물별 건설시간 배열&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; time &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			
+			&lt;span class=&quot;token comment&quot;&gt;// 건물별 연결여부 배열&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;boolean&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; maxtrix &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;boolean&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			
+			&lt;span class=&quot;token comment&quot;&gt;// 건물별 연결 갯수 배열&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; link &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			
+			&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; j &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; j &lt;span class=&quot;token operator&quot;&gt;&amp;#x3C;&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; j&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+			&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+				time&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+			
+			&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; j &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; j &lt;span class=&quot;token operator&quot;&gt;&amp;#x3C;&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;K&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; j&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+			&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;token comment&quot;&gt;// 하위 건물&lt;/span&gt;
+				&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;X&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+				
+				&lt;span class=&quot;token comment&quot;&gt;// 상위 건물&lt;/span&gt;
+				&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Y&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+				
+				maxtrix&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+				link&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+			
+			&lt;span class=&quot;token comment&quot;&gt;// 목표 건물&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;W&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			
+			builder&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;calcTopologicalSort&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;time&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; maxtrix&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; link&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;W&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;\n&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+		
+		&lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;builder&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		
+		scanner&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+	
+	&lt;span class=&quot;token doc-comment comment&quot;&gt;/**
+	 * 위상정렬 결과 반환 함수
+	 *
+	 * &lt;span class=&quot;token keyword&quot;&gt;@param&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;time&lt;/span&gt;: [int[]] 건물별 건설시간
+	 * &lt;span class=&quot;token keyword&quot;&gt;@param&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;matrix&lt;/span&gt;: [boolean[][]] 건물별 연결여부
+	 * &lt;span class=&quot;token keyword&quot;&gt;@param&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;link&lt;/span&gt;: [int[]] 건물별 연결 갯수
+	 *
+	 * &lt;span class=&quot;token keyword&quot;&gt;@return&lt;/span&gt; [int[]] 건물별 종 건설시간 배열
+	 */&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;calcTopologicalSort&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; time&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;boolean&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; matrix&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; link&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token class-name&quot;&gt;Queue&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;#x3C;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; queue &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;LinkedList&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;#x3C;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		
+		&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;link&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		
+		&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;#x3C;&lt;/span&gt; link&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;token comment&quot;&gt;// 요구 건물이 없는 건물일 경우&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;link&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+			&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+				result&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; time&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+				queue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+		
+		&lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;queue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;isEmpty&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;token comment&quot;&gt;// 하위 건물&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; prev &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; queue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;poll&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+			
+			&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;#x3C;&lt;/span&gt; link&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+			&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;token comment&quot;&gt;// 하위 건물 건설을 요구 하는 건물일 경우&lt;/span&gt;
+				&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;matrix&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;prev&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+				&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+					result&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;result&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; result&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;prev&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; time&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+					
+					&lt;span class=&quot;token comment&quot;&gt;// 해당 건물의 요구 건물 갯수 1 감소&lt;/span&gt;
+					&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;link&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+					
+					&lt;span class=&quot;token comment&quot;&gt;// 요구 건물이 없는 건물일 경우&lt;/span&gt;
+					&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;link&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+					&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+						queue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+					&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+				&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+			&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+		
+		&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; result&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</description>
+		<pubDate>2021-05-31T16:27:56.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/A1005/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/A1005/</guid>
+		<category>알고리즘</category>
+		<category>알고리즘</category>
+		<category>백준</category>
+		<category>알고리즘</category>
+		<category>JAVA(자바)</category>
+		<category>위상정렬</category>
 	</item>
 	<item>
 		<title>도메인이란?</title>
@@ -1022,6 +1931,50 @@ Windows Console의 기본 인코딩과 Tomcat이 출력하는 인코딩이 서�
 		<category>WAS</category>
 		<category>Tomcat(톰캣)</category>
 		<category>Console(콘솔)</category>
+	</item>
+	<item>
+		<title>Unsupported major.minor version 에러 해결하기 (+Servlet 404 에러)</title>
+		<description>&lt;h1&gt;Unsupported major.minor version&lt;/h1&gt;
+&lt;p&gt;간혹 JAVA 프로그램을 실행하다보면 &lt;span class=&quot;error&quot;&gt;Unsupported major.minor version 52&lt;/span&gt;(숫자는 class 버전에 따라 다름) 오류가 출력되면서 정상적으로 동작하지 않는 오류가 발생한다.&lt;br&gt;
+&lt;span class=&quot;error&quot;&gt;Unsupported major.minor version&lt;/span&gt; 오류는 직역하면 &quot;지원하지 않는 주/부 버전&quot;이다. JAVA 버전관련 오류라고 보면 된다.&lt;/p&gt;
+&lt;h1&gt;원인&lt;/h1&gt;
+&lt;p&gt;JAVA는 컴파일 언어로, 개발자가 작성한 코드는 &lt;code&gt;.java&lt;/code&gt; 파일이다. 이를 컴파일하면 JVM(Java Virtual Machine, 자바 가상머신)이 읽을 수 있는 &lt;code&gt;.class&lt;/code&gt; 파일로 번역한다. 코딩은 사람이 이해할 수 있는 언어로 작성하고, 실제 동작은 컴파일을 통해 컴퓨터가 이해할 수 있는 언어를 사용하는 셈이다.&lt;br&gt;
+JAVA는 작성일 기준으로 16까지 릴리즈됐다. JAVA의 역사가 짧지 않고, 이 시간동안 크고작은 버전 업데이트가 지속적으로 이루어졌다.&lt;br&gt;
+문제는 이 과정에서 생긴 호환성 문제다. 1.5 버전으로 컴파일한 &lt;code&gt;.class&lt;/code&gt; 파일을 1.8 버전의 환경에서 구동한다거나, 그 반대의 경우가 그 예시다. 다행스럽게도, JAVA는 하위 버전에 대한 호환성을 보장한다. 1.8 버전의 환경에서는 1.8 이하로 컴파일된 &lt;code&gt;.class&lt;/code&gt; 파일의 실행을 보장한다. 하지만 반대로 상위 버전에 대한 호환성은 제공하지 않는다. 그도 그럴 것이, 호환성을 지키기 위해선, 각 버전 간의 구성을 알맞게 변환해야 하는데, 아직 개발되지 않은 미래 버전의 구성을 알 순 없는 노릇이니...&lt;/p&gt;
+&lt;p&gt;즉, &lt;span class=&quot;green-A400&quot;&gt;Unsupported major.minor version 오류는 내가 실행하려는 JAVA 코드가 내 PC의 JAVA 환경보다 높은 버전에서 컴파일된 경우 발생&lt;/span&gt;한다.&lt;/p&gt;
+&lt;h1&gt;해결&lt;/h1&gt;
+&lt;p&gt;결과적으로, JAVA 버전을 동등 혹은 그 이상의 상위버전으로 업그레이드하면 된다.&lt;/p&gt;
+&lt;p&gt;| 프로그램 JAVA 버전 | PC JAVA 버전 | Unsupported 오류 발생여부 | 해결책 |
+| :------: | :---------: |
+| 14 | 1.8 | O | JAVA 14 버전 이상으로 업그레이드 |
+| 12 | 1.7 | X | 칼퇴근 |&lt;/p&gt;
+&lt;p&gt;크게 두 가지 방법이 있다.&lt;/p&gt;
+&lt;h2&gt;프로그램 코드의 버전 다운그레이드&lt;/h2&gt;
+&lt;p&gt;만약 본인이 온전한 프로그램 코드를 갖고 있을 경우, 시도해볼 수 있는 방법이다.&lt;br&gt;
+&lt;span class=&quot;green-A400&quot;&gt;JAVA 버전을 다운그레이드하고 컴파일을 진행&lt;/span&gt;하면, 프로그램의 JAVA 버전이 낮아져 기존의 버전보다 훨씬 낮은 버전의 환경에서 구동이 가능하다.&lt;/p&gt;
+&lt;p&gt;단, 조건이 있다. JAVA 버전이 업그레이드됨에 따라 여러 신규 패턴, 문법 등이 추가됐다. 만약 &lt;span class=&quot;red-A400&quot;&gt;1.8 버전부터 새로 생긴 기능을 적극적으로 활용했다면, 1.7 이하의 버전에선 컴파일 오류가 발생&lt;/span&gt;한다.&lt;br&gt;
+그도 그럴것이, 1.8 부터 생긴 기능은 1.7에서는 구현되지 않은 기능이기 때문.&lt;/p&gt;
+&lt;p&gt;이 경우 프로그램의 코드를 좀더 범용적인 방식으로 리팩토링해야한다.&lt;/p&gt;
+&lt;h2&gt;PC의 버전 업그레이드&lt;/h2&gt;
+&lt;p&gt;만약 본인이 &lt;code&gt;.class&lt;/code&gt; 파일만 갖고있다거나, 상기한 문제로 다운그레이드가 어려울 경우 혹은 간단한 방법을 찾을 경우 시도해볼 수 있는 방법이다.
+&lt;span class=&quot;green-A400&quot;&gt;PC의 JAVA 버전을 업그레이드하고 프로그램을 실행&lt;/span&gt;하면 된다.&lt;/p&gt;
+&lt;p&gt;JAVA는 하위 호환성을 지키기 때문에, 별다른 조건이 존재하지 않는다.&lt;/p&gt;
+&lt;h1&gt;아니 버전 맞췄다고 아ㅋㅋ&lt;/h1&gt;
+&lt;p&gt;톰캣을 사용하다보면, 이 오류가 뜨는 경우가 있다. 그런데 간혹 PC에 설치된 JAVA 버전에 맞게 컴파일을 해줬음에도 오류가 사라지지 않는 현상이 발생하기도 한다.&lt;br&gt;
+이 경우 동반되는 증상이, Servlet Context에 접근할 경우, 첫 접속시 500 에러(Unsupported major.minor version 오류로 인해 발생)가 발생하고, 이후부터는 404 에러만 발생한다. 이러한 현상을 겪어보지 않았거나, 경험이 적은 개발자가 이러한 문제에 부딪히면 십중팔구 고생한다. 원인인 Unsupported major.minor version 오류가 보이지 않아 Servlet 동작의 404 오류와 관련된 정보를 검색하거나 질문하기 때문. 당연히 이러한 사정을 모르는 다른 사람들은 404 오류에 관한 답변을 줄 수 밖에 없다. 이런 경우 정말 난감하기 그지없다. 절대 경험담이라서가 아니다.&lt;/p&gt;
+&lt;p&gt;혹시 위 처럼 정상적인 Servlet(서블릿)임에도 불구하고 404 오류가 뜰 경우 아래의 환경변수에서 JRE_HOME이 설정돼있는지 확인해보자.&lt;br&gt;
+간혹 개발 프로그램 중 임의로 JRE_HOME을 설정해버리는 프로그램이 존재한다. 문제는 여기서 발생하는데, JAVA_HOME과 JRE_HOME 환경변수가 둘 다 설정되어있을 경우, &lt;span class=&quot;red-A400&quot;&gt;톰캣은 JRE_HOME을 우선&lt;/span&gt;한다. 즉 JRE의 버전이 적용된다.&lt;/p&gt;
+&lt;p&gt;예를 들어, JAVA_HOME이 1.8 버전, JRE_HOME이 1.6 버전이라 가정하자. 컴파일은 반드시 JDK가 필요하므로 JAVA_HOME의 버전인 1.8로 컴파일이 수행된다. 그러나 톰캣 실행 시, JRE_HOME을 우선하는 특징으로 인해 1.6 버전으로 실행된다. 결과적으로 &lt;strong&gt;1.8 버전으로 컴파일된 코드를 1.6으로 실행하는 셈&lt;/strong&gt;이니, 버전이 맞지 않아 오류가 발생한다.&lt;/p&gt;
+</description>
+		<pubDate>2021-05-29T17:16:35.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/unsupported-version-error/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/unsupported-version-error/</guid>
+		<category>JAVA</category>
+		<category>JAVA</category>
+		<category>JAVA</category>
+		<category>WAS</category>
+		<category>Tomcat(톰캣)</category>
+		<category>오류 해결책</category>
 	</item>
 	<item>
 		<title>URI? URL? URN? 리소스 식별자 구분하기</title>

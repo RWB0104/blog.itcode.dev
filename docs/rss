@@ -6,7 +6,7 @@
 		<link>https://rwb0104.github.io//</link>
 		<atom:link href="https://rwb0104.github.io/feed.xml" rel="self" type="application/rss+xml"/>
 		<pubDate>2021-05-26T14:36:57.000Z</pubDate>
-		<lastBuildDate>2021-05-31T16:39:36.046Z</lastBuildDate>
+		<lastBuildDate>2021-06-01T16:34:40.680Z</lastBuildDate>
 	</channel>
 	<item>
 		<title>[JAVA] 백준 알고리즘 1000번 A + B</title>
@@ -78,9 +78,9 @@ Scanner로 두 숫자를 입력받아 덧셈한 결과를 출력한다.&lt;/p&gt
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 </description>
-		<pubDate>2021-04-21T12:38:17.000Z</pubDate>
-		<link>https://rwb0104.github.io/posts/A1000/</link>
-		<guid isPermaLink="true">https://rwb0104.github.io/posts/A1000/</guid>
+		<pubDate>2021-05-21T12:38:17.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/05/21/A1000/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/05/21/A1000/</guid>
 		<category>알고리즘</category>
 		<category>알고리즘</category>
 		<category>백준</category>
@@ -157,9 +157,9 @@ Scanner로 두 숫자를 입력받아 뺄셈한 결과를 출력한다.&lt;/p&gt
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 </description>
-		<pubDate>2021-04-21T12:51:19.000Z</pubDate>
-		<link>https://rwb0104.github.io/posts/A1001/</link>
-		<guid isPermaLink="true">https://rwb0104.github.io/posts/A1001/</guid>
+		<pubDate>2021-05-21T12:51:19.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/05/21/A1001/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/05/21/A1001/</guid>
 		<category>알고리즘</category>
 		<category>알고리즘</category>
 		<category>백준</category>
@@ -401,9 +401,9 @@ Scanner로 두 숫자를 입력받아 뺄셈한 결과를 출력한다.&lt;/p&gt
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 </description>
-		<pubDate>2021-04-21T12:56:10.000Z</pubDate>
-		<link>https://rwb0104.github.io/posts/A1002/</link>
-		<guid isPermaLink="true">https://rwb0104.github.io/posts/A1002/</guid>
+		<pubDate>2021-05-21T12:56:10.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/05/21/A1002/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/05/21/A1002/</guid>
 		<category>알고리즘</category>
 		<category>알고리즘</category>
 		<category>백준</category>
@@ -749,9 +749,98 @@ N&lt;sub&gt;3&lt;/sub&gt; = 4 -&gt; &lt;code&gt;f(4)&lt;/code&gt; 부터 &lt;cod
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 </description>
-		<pubDate>2021-04-21T14:29:03.000Z</pubDate>
-		<link>https://rwb0104.github.io/posts/A1003/</link>
-		<guid isPermaLink="true">https://rwb0104.github.io/posts/A1003/</guid>
+		<pubDate>2021-05-21T14:29:03.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/05/21/A1003/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/05/21/A1003/</guid>
+		<category>알고리즘</category>
+		<category>알고리즘</category>
+		<category>백준</category>
+		<category>알고리즘</category>
+		<category>JAVA(자바)</category>
+	</item>
+	<item>
+		<title>Jekyll에서 Next.js로</title>
+		<description>&lt;h1&gt;Bye, Jekyll!&lt;/h1&gt;
+&lt;div&gt;
+	&lt;img src=&quot;https://user-images.githubusercontent.com/50317129/119211743-e44a7600-baee-11eb-85d0-f21c1f68debc.png&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;기존에 &lt;a href=&quot;http://jekyllrb-ko.github.io/&quot; target=&quot;_blank&quot; class=&quot;pink-500&quot;&gt;Jekyll&lt;/a&gt;로 운영하던 블로그를 버리고 React 기반의 &lt;span class=&quot;blue-500&quot;&gt;Next.js&lt;/span&gt;를 통해 블로그를 새로 개발했다.&lt;/p&gt;
+&lt;p&gt;Github Pages를 처음 접했을 때, 호스팅을 반드시 &lt;span class=&quot;pink-500&quot;&gt;Jekyll&lt;/span&gt; 기반으로 해야한다고 착각하고있었다. 사실 조금만 생각해보면 상관 없던건데.&lt;/p&gt;
+&lt;p&gt;최근에 React를 접했는데, 생각보다 꽤나 매력적인 프레임워크라 소소하게나마 뭔가 만들어보고 싶었다.&lt;br&gt;
+블로그가 적절한 프로젝트(?)가 될 것 같았다. 명색이 개발자인데 블로그 하나 정도는 직접 개발해야 할 것 같기도 하고....&lt;/p&gt;
+&lt;h1&gt;굳이 멀쩡한 블로그 놔두고?&lt;/h1&gt;
+&lt;p&gt;한동안 안 하긴 했지만, 지금까진 &lt;span class=&quot;pink-500&quot;&gt;Jekyll&lt;/span&gt; 블로그를 운영하고 있었다. &lt;a href=&quot;http://taylantatli.github.io/Moon/&quot;&gt;Moon Theme&lt;/a&gt;를 적용해서 사용했었는데, 크고작은 불편함이 있었다.&lt;/p&gt;
+&lt;br /&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;b class=&quot;green-500&quot;&gt;Jekyll이라는 생소한 환경&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Github의 개발언어는 &lt;span class=&quot;red-500&quot;&gt;Ruby&lt;/span&gt;다. 그래서일까, Github Pages의 기본 배포는 &lt;span class=&quot;red-500&quot;&gt;Ruby&lt;/span&gt; 기반 프레임워크인 &lt;span class=&quot;pink-500&quot;&gt;Jekyll&lt;/span&gt;을 따라간다.&lt;br&gt;
+문제는 한국엔 &lt;span class=&quot;pink-500&quot;&gt;Jekyll&lt;/span&gt;은 물론, &lt;span class=&quot;red-500&quot;&gt;Ruby&lt;/span&gt;라는 언어 자체의 수요가 많지 않다. 단순 블로그 하나 운영하기 위해 생판 모르는 언어를 접해야 한다는 점은 무시할 수 없는 디메리트.&lt;/p&gt;
+&lt;p&gt;물론 &lt;span class=&quot;red-500&quot;&gt;Ruby&lt;/span&gt;를 직접적으로 개발하진 않지만 &lt;span class=&quot;pink-500&quot;&gt;Jekyll&lt;/span&gt; 생태계 또한 그리 친숙한 형태는 아니였다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;b class=&quot;green-500&quot;&gt;타인이 개발한 소스의 이해&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;1번과 같은 문제로, 밑바닥부터 &lt;span class=&quot;pink-500&quot;&gt;Jekyll&lt;/span&gt;을 개발할 수 없었다.&lt;br&gt;
+특정 기능에 대한 소요가 발생할 경우, 현재 테마에 어울리도록 &quot;&lt;strong&gt;잘 디자인&lt;/strong&gt;&quot;하는 것이 중요하다. 하지만 사용자의 입장에서 테마 개발자의 디자인 철학을 이해하는 것은 단순 디자인과는 또 다른 문제. 구조 파악은 덤&lt;br&gt;
+더군다나 내 경우 모자란 실력에 이상한 강박증까지 있어서, 내 스타일로 작성되지 않은 코드의 리딩을 못 한다. 또한, 프로젝트의 블랙박스를 싫어한다. 실력은 없는 주제에 프로젝트 내에 내가 모르는 코드 덩어리가 있는 걸 굉장히 싫어한다. 디자인 감각이 좋지도 못 해서 결과물도 기존 테마와 이질적인 무언가가 나온다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;b class=&quot;green-500&quot;&gt;편리한 사용자 확장성, 불편한 개발자 확장성&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;블로그나, 웹 페이지, PPT 같은 환경에서 &lt;span class=&quot;grenn-500&quot;&gt;테마&lt;/span&gt;를 사용하는 이유는 뭘까? 귀찮지만 중요한 디자인에 대한 투자를 과감히 패스하면서도 준수한 디자인 퍼포먼스를 내기 위함이다. 물론 취지는 좋다. 어디까지나 &lt;strong&gt;단순히 해당 테마가 의도한 방향에 맞을 때만.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;다들 비슷한 경험이 있었을 것이다. 테마 혹은 템플릿을 사용하면서 필요에 따라 커스터마이징이 필요할 경우가 그렇다.&lt;br&gt;
+대부분의 테마는 결과물이 테마가 추구하는 디자인 철학과 상통할 때 그 빛을 발한다. 다시 말해, 그 의도가 손상될 경우 결과물의 퀄리티는 급락한다.&lt;br&gt;
+이 뿐만 아니라, &lt;span class=&quot;red-500&quot;&gt;필요에 따라 기존의 요소(소스코드, 플러그인 등)을 제거할 경우 그 의존성을 파악하기 힘들어 리스크&lt;/span&gt;가 크다.&lt;/p&gt;
+&lt;p&gt;일례로, 위에서 언급한 &lt;span class=&quot;lightBlue-500&quot;&gt;Moon Theme&lt;/span&gt;의 경우, JQuery에 의존성을 갖고 있다.&lt;br&gt;
+근래 웹 개발의 JQuery에 대한 비관적인 평을 생각한다면, 이는 큰 디메리트로 다가온다. 제거 작업으로 인한 공수 또한 무시할 수 없을 것이고.&lt;br&gt;
+물론 당시의 개발 트렌드를 무시할 수 없으며, &lt;strong&gt;개발&lt;/strong&gt;은 그 중에서도 트렌드의 주기가 매우 빠른 편이다. 이로 미루어 볼 때, 결과론적인 얘기다. 그럼에도 불구하고, &lt;strong&gt;사용자가 의도하지 않은 결함&lt;/strong&gt;이라는 사실은 불변하다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;b class=&quot;green-500&quot;&gt;개발 욕구&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;정적 블로그의 경우 백엔드 영역이 거의 전무한데다, 복잡한 비즈니스 로직도 필요 없기 때문에 개발 난이도가 상대적으로 낮다고 판단했다. 즉, 원한다면 내가 직접 개발한 블로그를 사용하는게 그리 어렵지 않다.&lt;br&gt;
+위에서 언급했듯이, 직접 개발한 블로그를 사용하는 것이 좀 더 개발자스럽다. 난이도 또한 공부 중인 React를 적용하기도 적합하고.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1&gt;Hello, Next.js!&lt;/h1&gt;
+&lt;p&gt;React로 블로그를 만들 땐 주로 &lt;a href=&quot;https://nextjs.org/&quot; target=&quot;_blank&quot; class=&quot;blue-500&quot;&gt;Next.js&lt;/a&gt; 혹은 &lt;a href=&quot;https://www.gatsbyjs.com/&quot; target=&quot;_blank&quot; class=&quot;deepPurple-400&quot;&gt;Gatsby.js&lt;/a&gt;를 사용한다. 이번에 개발한 블로그는 &lt;span class=&quot;blue-500&quot;&gt;Next.js&lt;/span&gt;를 활용했다.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;blue-500&quot;&gt;Next.js&lt;/span&gt;는 &lt;span class=&quot;red-500&quot;&gt;Ruby&lt;/span&gt;의 &lt;span class=&quot;pink-500&quot;&gt;Jekyll&lt;/span&gt; 프레임워크와 그 결이 비슷하다. &lt;span class=&quot;pink-500&quot;&gt;Jekyll&lt;/span&gt;는 &lt;strong&gt;프레임워크 자체에 구조 스키마를 정함으로써 React의 Component와 유사하게 동작&lt;/strong&gt;한다. 그 당시의 난 React라는 걸 접하지도 않은 상황에서, React의 Component 방식으로 블로그를 구성했던 것이다. 말 그대로 낫 놓고 기역자도 모른 셈.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;blue-500&quot;&gt;Next.js&lt;/span&gt; 역시 라이브러리 자체에 정적 웹을 구성하고 빌드할 수 있는 환경이 구축되어 있어, 쉽게 사용이 가능하다. 여러 사용자들이 개발한 다수의 플러그인은 덤.&lt;br&gt;
+덕분에 정적 블로그를 밑바닥에서부터 개발할 수 있었다. 나름대로 디자인 한다고 하긴 했는데, 역시 디자인은 어렵다.&lt;br&gt;
+&lt;span class=&quot;blue-500&quot;&gt;Next.js&lt;/span&gt;와 &lt;span class=&quot;deepPurple-500&quot;&gt;Gatsby.js&lt;/span&gt;에 대한 내용은 나중에 따로 다룰 예정이다.&lt;/p&gt;
+&lt;p&gt;아직 해야할 것들이 남아있다. sitemap 생성기도 붙여야 하고, 연관 게시물 기능도 필요하다. 아직 다듬어지지 않은 자잘한 요소들도 있고. 역시 규모에 상관없이 무언가를 퍼블리싱하는건 정말 힘든 것 같다.&lt;br&gt;
+적어도 이번 블로그는 내 노력으로 내가 개발한 거니, 꾸준히 운영할 수 있었음 한다.&lt;/p&gt;
+</description>
+		<pubDate>2021-05-21T06:09:33.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/05/21/jekyll-to-nextjs/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/05/21/jekyll-to-nextjs/</guid>
+		<category>잡담</category>
+		<category>잡담</category>
+		<category>React(리액트)</category>
+		<category>Next.js</category>
+		<category>개발 블로그</category>
+		<category>Jekyll</category>
+		<category>Next.js</category>
+	</item>
+	<item>
+		<title>백준 알고리즘 시작하기</title>
+		<description>&lt;h1&gt;백준 알고리즘&lt;/h1&gt;
+&lt;p&gt;코딩 테스트 및 개인 실력 향상을 위해 백준 알고리즘을 차례로 풀어보기로 했다.&lt;/p&gt;
+&lt;p&gt;그냥 풀기만 하면 분명히 나중에 어떻게 풀었는지 까먹을테니, 이해한 내용을 포스팅하며 풀이를 진행한다.&lt;/p&gt;
+&lt;p&gt;풀이의 규칙은 아래와 같다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;가급적 문제번호 순서대로 진행한다.&lt;/li&gt;
+&lt;li&gt;기본 언어는 &lt;span class=&quot;orange-A400&quot;&gt;JAVA&lt;/span&gt;로 진행한다.&lt;/li&gt;
+&lt;li&gt;원리는 과하다 싶을 정도로 최대한 자세하게 적는다.&lt;/li&gt;
+&lt;li&gt;번은 개인주의야&lt;/li&gt;
+&lt;li&gt;숏코딩을 지양하고, 이해하기 쉽도록 성능이 허락하는 선에서 풀어 쓴다.&lt;/li&gt;
+&lt;li&gt;주석을 적극 활용한다.&lt;/li&gt;
+&lt;li&gt;채점결과가 반드시 &lt;b class=&quot;green-A400&quot;&gt;맞았습니다!!&lt;/b&gt;인 코드를 기준으로 한다.&lt;/li&gt;
+&lt;li&gt;풀이에 제시되는 코드는 그대로 복사해도 알고리즘 풀이가 가능하도록 코딩한다.&lt;/li&gt;
+&lt;li&gt;신명호는 놔둔다.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+		<pubDate>2021-05-21T12:22:31.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/05/21/start-beakjoon/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/05/21/start-beakjoon/</guid>
 		<category>알고리즘</category>
 		<category>알고리즘</category>
 		<category>백준</category>
@@ -942,14 +1031,626 @@ N&lt;sub&gt;3&lt;/sub&gt; = 4 -&gt; &lt;code&gt;f(4)&lt;/code&gt; 부터 &lt;cod
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 </description>
-		<pubDate>2021-04-22T12:42:23.000Z</pubDate>
-		<link>https://rwb0104.github.io/posts/A1004/</link>
-		<guid isPermaLink="true">https://rwb0104.github.io/posts/A1004/</guid>
+		<pubDate>2021-05-22T12:42:23.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/05/22/A1004/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/05/22/A1004/</guid>
 		<category>알고리즘</category>
 		<category>알고리즘</category>
 		<category>백준</category>
 		<category>알고리즘</category>
 		<category>JAVA(자바)</category>
+	</item>
+	<item>
+		<title>도메인이란?</title>
+		<description>&lt;h1&gt;Domain(도메인)이란?&lt;/h1&gt;
+&lt;p&gt;도메인을 이해하기 위해선, IP에 대해 짚고 넘어가야 한다.&lt;br&gt;
+인터넷에 연결된 모든 디바이스(컴퓨터, 스마트폰, 공유기 등)는 &lt;span class=&quot;blue-500&quot;&gt;고유한 12자리 숫자로 구성된 IP주소&lt;/span&gt;를 가진다.&lt;br&gt;
+IP를 유동성으로 나누면 크게 유동 IP, 고정 IP로 분류할 수 있다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&quot;primary&quot;&gt;유동 IP&lt;/span&gt;: 임의의 시점마다 IP주소가 갱신되는 IP. 갱신 주기는 일정하지 않음. 대부분의 인터넷 회선에 적용됨.&lt;/li&gt;
+&lt;li&gt;&lt;span class=&quot;primary&quot;&gt;고정 IP&lt;/span&gt;: 회선에 고정된 IP를 부여하며, 해당 회선의 IP는 갱신되지 않음. 부가서비스 형태로 제공되며, 쇼핑몰이나 회사 등 지속적으로 시스템을 운영해야 할 경우 적합함.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;우리가 원하는 장소에 방문하기 위해 주소를 찾듯이, &lt;span class=&quot;green-500&quot;&gt;특정 서버에서 운영하는 웹 사이트를 방문하기 위해선 해당 서버의 주소인 IP가 필요&lt;/span&gt;하다.&lt;br&gt;
+불행히도, IP는 불규칙적인 숫자로 이루어져있어, 사람이 쉽게 기억하기 다소 어렵다. 이러한 불편함을 해소하기 위한 것이 Domain(도메인)이다.&lt;/p&gt;
+&lt;p&gt;도메인은 &lt;span class=&quot;pink-400&quot;&gt;SLD(서브도메인)&lt;/span&gt;, &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt;, &lt;span class=&quot;pink-400&quot;&gt;TLD(최상위 도메인)&lt;/span&gt;으로 구분되며, 해당 도메인의 정보는 1차적으로 각 로컬 DNS 서버가 관리하며, 최종적으로는 TLD를 관리하는 Root DNS에서 관리한다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;도메인에 대한 자세한 내용은 이전에 작성된 &lt;a href=&quot;/posts/uri-url-urn&quot;&gt;URI? URL? URN? 리소스 식별자 구분하기&lt;/a&gt;를 참조한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1&gt;그래서 도메인을 왜 쓰는데?&lt;/h1&gt;
+&lt;p&gt;우리가 흔히 &lt;span class=&quot;green-A700&quot;&gt;네이버&lt;/span&gt;라고 부르는 사이트의 실제 IP는 &lt;a href=&quot;http://125.209.222.141&quot;&gt;125.209.222.141&lt;/a&gt;이다. 하지만 우리들 중 그 누구도 저런 IP로 &lt;span class=&quot;green-A700&quot;&gt;네이버&lt;/span&gt;에 접속하지 않는다. 대신 우리는 &lt;a href=&quot;https://www.naver.com&quot;&gt;https://www.naver.com&lt;/a&gt;이라는 도메인으로 접속한다. 이유는 간단하다. 주소 자체에 &lt;span class=&quot;green-A700&quot;&gt;naver&lt;/span&gt;라는 키워드가 포함되어 있으므로 기억하기 쉽기 때문이다.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt;은 숫자가 아닌, 문자 형태로 이루어진 주소다. 문자이므로, 주소에 의미를 부여하기 용이하다. 사용자가 주소를 기억하기 쉬워 주소에 대한 접근성을 높여준다.&lt;br&gt;
+생성한 &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt;에 원하는 IP를 연결하면 &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt; 주소를 통해서도 해당 IP에 접근할 수 있다.
+&lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt; 제공 업체에 따라, 영숫자 뿐만 아니라 한글과 같은 유니코드 문자도 지원하므로, 딱딱한 IP 대신 개성있는 주소를 사용할 수 있는 것이다.&lt;/p&gt;
+&lt;h1&gt;도메인의 원리&lt;/h1&gt;
+&lt;p&gt;여기서 의문점이 한 가지 생긴다. IP &lt;a href=&quot;http://125.209.222.141&quot;&gt;125.209.222.141&lt;/a&gt;와 &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt; &lt;a href=&quot;https://www.naver.com&quot;&gt;https://www.naver.com&lt;/a&gt;가 &lt;span class=&quot;green-A700&quot;&gt;네이버&lt;/span&gt;를 가리키는 주소인건 알겠는데, 인터넷은 과연 두 주소의 연결고리를 어떻게 아는 걸까?&lt;/p&gt;
+&lt;p&gt;이는 &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt;의 동작 원리를 보면 알 수 있다. &lt;code&gt;rwb0104.github.io&lt;/code&gt; &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt;에 접근하는 과정을 예시로 보자.&lt;/p&gt;
+&lt;p&gt;-- 사진 --&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;HTTP 통신을 통해 &lt;code&gt;rwb0104.github.io&lt;/code&gt;에 접근을 시도한다.&lt;/li&gt;
+&lt;li&gt;네트워크에 지정된 로컬 DNS에게 &lt;code&gt;rwb0104.github.io&lt;/code&gt;의 정보를 요청한다.
+&lt;ul&gt;
+&lt;li&gt;만약 로컬 DNS가 해당 도메인의 정보를 보유하고 있을 경우, 즉시 정보를 제공한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rwb0104.github.io&lt;/code&gt;에 대한 정보가 없을 경우, 근접한 Root DNS에 해당 도메인의 정보를 요청한다.&lt;/li&gt;
+&lt;li&gt;Root DNS가 &lt;code&gt;.io&lt;/code&gt; TLD를 관리하는 DNS 서버의 정보를 로컬 DNS에 제공한다.&lt;/li&gt;
+&lt;li&gt;로컬 DNS가 &lt;code&gt;rwb0104.github.io&lt;/code&gt;를 관리하는 TLD의 DNS 서버에 해당 정보를 요청한다.&lt;/li&gt;
+&lt;li&gt;TLD DNS 서버가 &lt;code&gt;rwb0104.github.io&lt;/code&gt;에 대한 정보(IP 등)을 제공한다.&lt;/li&gt;
+&lt;li&gt;로컬 DNS가 &lt;code&gt;rwb0104.github.io&lt;/code&gt;의 IP를 알고 있으므로, 이를 통해 해당 사이트에 접근할 수 있다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;기본적으로 &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt;은 반드시 하나의 IP와 연결된다. 이런 특징 덕분에 &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt;은 항상 특정한 하나의 IP만을 반환한다.&lt;/p&gt;
+</description>
+		<pubDate>2021-05-22T03:52:51.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/05/22/about-domain/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/05/22/about-domain/</guid>
+		<category>WEB</category>
+		<category>WEB</category>
+		<category>WEB(웹)</category>
+		<category>Domain(도메인)</category>
+	</item>
+	<item>
+		<title>Tomcat(톰캣) 콘솔창 한글 인코딩 깨짐 현상 해결하기</title>
+		<description>&lt;h1&gt;와장창!&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/50317129/119212087-342a3c80-baf1-11eb-89bc-06829a5f7c16.png&quot; alt=&quot;Encoding Broken&quot;&gt;&lt;/p&gt;
+&lt;p&gt;톰캣을 구동하다보면 심심치않게 마주하는 오류(?)는 아니고 현상.&lt;br&gt;
+Windows Console의 기본 인코딩과 Tomcat이 출력하는 인코딩이 서로 달라서 생긴다.&lt;/p&gt;
+&lt;h1&gt;도대체 왜?&lt;/h1&gt;
+&lt;p&gt;실력 좋은 개발자가 아니더라도, 컴퓨터와 친분이 있다면 언어가 깨짐은 곧 인코딩의 불일치라는 걸 개괄적으로 이해하고 있다. 이러한 현상이 일어나는 이유는 아래와 같은데,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&quot;primary&quot;&gt;Windows Console&lt;/span&gt;: Windows OS 설정 언어의 기본 인코딩 (한국어는 &lt;strong&gt;EUC-KR&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;span class=&quot;primary&quot;&gt;Tomcat Console&lt;/span&gt;: 설정파일의 인코딩 (&lt;strong&gt;기본 UTF-8&lt;/strong&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이 처럼, 기본 인코딩이 서로 다르다.&lt;/p&gt;
+&lt;h1&gt;해결책&lt;/h1&gt;
+&lt;p&gt;이를 해결하는 방법은 크게 두 가지가 존재한다. 개인적으로 &lt;span class=&quot;red-300&quot;&gt;두 번째 방법을 추천&lt;/span&gt;한다.&lt;/p&gt;
+&lt;h3&gt;Windows Console 인코딩 변경하기&lt;/h3&gt;
+&lt;p&gt;첫 번째로, Windows Console의 인코딩을 변경한다. Windows 10 기준으로 OS의 기본 콘솔은 &lt;span class=&quot;green-500&quot;&gt;cmd&lt;/span&gt;와 &lt;span class=&quot;green-500&quot;&gt;PowerShell&lt;/span&gt; 두 가지다. &lt;strong&gt;사용할 콘솔의 기본 인코딩을 EUC-KR에서 UTF-8로 변경&lt;/strong&gt;해주면 된다.&lt;/p&gt;
+&lt;p&gt;애석하게도, 두 콘솔 모두 인코딩을 변경하는 옵션을 제공하지 않는다. 그렇다고 방법이 없는 건 아니고, 레지스트리 수정을 통해 문제를 해결할 수 있다.&lt;/p&gt;
+&lt;br /&gt;
+&lt;ol&gt;
+&lt;li&gt;작업표시줄에서 &lt;code&gt;regedit&lt;/code&gt;을 입력하여 &lt;span class=&quot;blue-500&quot;&gt;레지스트리 편집기&lt;/span&gt;를 띄운다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;HKEY_CURRENT_USER\Console&lt;/code&gt; 경로에 접근한다. 사용자 계정에 설치된 콘솔들이 출력된다. (cmd, PowerShell, Git 등)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/50317129/119212160-83706d00-baf1-11eb-92c8-b41458950f20.png&quot; alt=&quot;Registry&quot;&gt;&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;인코딩을 변경하려는 콘솔의 폴더를 클릭한다.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;%SystemRoot%_system32_cmd.exe&lt;/strong&gt;: cmd&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;%SystemRoot%_System32_WindowsPowerShell_v1.0_powershell.exe&lt;/strong&gt;: 32비트 PowerShell&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;%SystemRoot%_SysWOW64_WindowsPowerShell_v1.0_powershell.exe&lt;/strong&gt;: 64비트 PowerShell&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CodePage&lt;/code&gt; 키를 더블클릭하여 편집을 수행한다.
+&lt;code&gt;CodePage&lt;/code&gt;가 없을 경우, 오른쪽 마우스 버튼을 클릭하여 새 DWORD(32비트) 키를 동일한 이름으로 생성한다.&lt;/li&gt;
+&lt;li&gt;값 데이터를 10진수 &lt;code&gt;65001&lt;/code&gt;로 변경한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/50317129/119212198-ab5fd080-baf1-11eb-981b-82599148c8f8.png&quot; alt=&quot;Registry&quot;&gt;&lt;/p&gt;
+&lt;ol start=&quot;6&quot;&gt;
+&lt;li&gt;앞으로 실행되는 Windows Console은 해당 인코딩이 적용된다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;이렇게 하면 Windows Console과 Tomcat의 기본 인코딩이 UTF-8로 서로 일치하므로, 한글이 정상적으로 출력된다.&lt;br&gt;
+하지만 이 방법은 Windows Console의 인코딩을 바꾸므로, 차후 해당 &lt;span class=&quot;red-500&quot;&gt;콘솔을 통해 다른 작업이나 프로그램이 실행될 경우 엉뚱한 프로그램의 한글이 깨질 우려&lt;/span&gt;가 있다.&lt;br&gt;
+(대부분은 OS 언어의 기본 인코딩을 따라가도록 설계함)&lt;/p&gt;
+&lt;p&gt;Windows Console은 범용적으로 사용되는 프로그램이므로, 다른 작업에 영향을 줄 수 있다. 내가 이 방법을 굳이 추천하지 않는 이유이기도 하다.&lt;/p&gt;
+&lt;h3&gt;Tomcat Console 인코딩 변경하기&lt;/h3&gt;
+&lt;p&gt;두 번째로, Tomcat Console의 인코딩을 변경한다. 첫 번째 방법보다 이 방법이 나은 이유는, Tomcat이라는 제한적인 용도의 콘솔에만 영향을 미치기 때문. 어차피 Tomcat Console의 인코딩이 불일치해서 생기는 문제이므로, 이쪽을 바꾸는게 상식적으로도 맞다.&lt;/p&gt;
+&lt;p&gt;대부분 마찬가지로 위 방법처럼 레지스트리를 수정하라고 안내할텐데, Tomcat은 굳이 그렇게 바꿔줄 필요 없다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;%TOMCAT_HOME%\conf\logging.properties&lt;/code&gt;을 연다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;java.util.logging.ConsoleHandler.encoding&lt;/strong&gt;의 값을 &lt;strong&gt;EUC-KR&lt;/strong&gt;로 변경한다.
+별다른 설정이 없었다면, UTF-8이 기본으로 설정되어 있다.&lt;/li&gt;
+&lt;li&gt;앞으로 실행되는 Tomcat은 해당 인코딩이 적용된다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Tomcat을 실행하면 한글이 정상적으로 출력된다.&lt;/p&gt;
+</description>
+		<pubDate>2021-05-22T03:52:51.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/05/22/tomcat-encoding-euckr/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/05/22/tomcat-encoding-euckr/</guid>
+		<category>WAS</category>
+		<category>WAS</category>
+		<category>WAS</category>
+		<category>Tomcat(톰캣)</category>
+		<category>Console(콘솔)</category>
+	</item>
+	<item>
+		<title>Tomcat(톰캣) 현재 콘솔창에서 구동하기</title>
+		<description>&lt;h1&gt;왜 자꾸 꺼지는거야!&lt;/h1&gt;
+&lt;p&gt;오늘도 어느때와 다름없이 톰캣을 구동하는 A씨. 어제까지만 해도 잘 되던 톰캣이 무슨 오류가 있는지 구동 중에 바로 꺼져버린다. 꺼지기 직전의 순간 무슨 오류가 뜬 거 같은데..... 너무 빨라서 도통 확인할 수가 없다. 할 수 없이 일일이 로그를 찾아보며 오류를 수정하는 A씨. 건드린 것도 없는데, 왜 이러는 걸까?&lt;/p&gt;
+&lt;h1&gt;왜?&lt;/h1&gt;
+&lt;p&gt;톰캣이 콘솔 형태로 실행되는 것은 맞지만, 실행되는 프로세스를 보면 살짝 다르다. &lt;code&gt;startup.bat&lt;/code&gt;을 실행하면 cmd창이 뜬 뒤 꺼지면서 곧바로 Tomcat 창이 표시된다. &lt;span class=&quot;primary&quot;&gt;톰캣을 구동하면 항상 새로운 창이 뜨기 때문에, 톰캣이 오류로 인해 동작이 중지되면 창이 곧바로 닫히게 된다.&lt;/span&gt;&lt;/p&gt;
+&lt;h1&gt;해결책?&lt;/h1&gt;
+&lt;p&gt;그렇다고 해결책이 없는 건 아니고, &lt;code&gt;startup.bat&lt;/code&gt;의 간단한 수정을 통해 톰캣이 &lt;span class=&quot;primary&quot;&gt;현재 창에서 동작&lt;/span&gt;하도록 수정할 수 있다.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;startup.bat&lt;/code&gt;을 메모장으로 열면, 맨 아래에 &lt;code&gt;call &quot;%EXECUTABLE%&quot; run %CMD_LINE_ARGS%&lt;/code&gt; 구문이 존재한다. 여기서 가운데 &lt;code&gt;run&lt;/code&gt;을 &lt;code&gt;start&lt;/code&gt;로 변경한다.&lt;/p&gt;
+&lt;p&gt;즉 &lt;code&gt;call &quot;%EXECUTABLE%&quot; start %CMD_LINE_ARGS%&lt;/code&gt;로 구문을 변경하고 저장하면 된다.&lt;/p&gt;
+&lt;p&gt;이후 &lt;code&gt;startup.bat&lt;/code&gt;을 클릭하여 실행하지 말고, &lt;code&gt;cmd&lt;/code&gt;창 하나를 킨 다음에, 해당 콘솔에서 &lt;code&gt;startup.bat&lt;/code&gt;을 호출하면 새 창이 뜨지 않고 호출한 콘솔에서 톰캣이 구동된다.&lt;br&gt;
+톰캣이 종료돼도 콘솔창이 꺼지지 않으므로, 편하게 메시지를 확인할 수 있다.&lt;/p&gt;
+</description>
+		<pubDate>2021-05-26T07:32:16.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/05/26/tomcat-current-window/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/05/26/tomcat-current-window/</guid>
+		<category>WAS</category>
+		<category>WAS</category>
+		<category>WAS</category>
+		<category>Tomcat(톰캣)</category>
+		<category>Console(콘솔)</category>
+	</item>
+	<item>
+		<title>URI? URL? URN? 리소스 식별자 구분하기</title>
+		<description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;h1&gt;URL! URI... URN??&lt;/h1&gt;
+&lt;p&gt;우리가 인터넷 상에서 &lt;strong&gt;특정한 데이터&lt;/strong&gt;에 접근할 때 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;이라는 것을 활용하여 접근한다.&lt;br&gt;
+원하는 자료의 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;을 얻으면, 브라우저 같은 HTTP 통신 프로그램에 해당 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;을 호출하여 응답을 얻는 것이다.&lt;/p&gt;
+&lt;p&gt;개발자나, 굳이 개발자가 아니더라도 관련 정보를 찾다보면 심심치않게 &lt;span class=&quot;primary&quot;&gt;URI&lt;/span&gt;라는 용어를 접하게 된다.&lt;br&gt;
+I와 L의 오묘한 유사성 때문에 아예 &lt;span class=&quot;primary&quot;&gt;URI&lt;/span&gt;를 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;로 오독하는가 하면, 오타라고 생각하는 사람도 더러 있을 것이다.&lt;br&gt;
+하지만 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;과 &lt;span class=&quot;primary&quot;&gt;URI&lt;/span&gt;는 그 의미가 비슷하면서도 살짝 다르다.&lt;/p&gt;
+&lt;p&gt;누구나 알고있는 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;과 아리까리한 &lt;span class=&quot;primary&quot;&gt;URI&lt;/span&gt;, 생소한 &lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;. 이들에 대해 알아보자&lt;/p&gt;
+&lt;h1&gt;UR* 톱아보기&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URI&lt;/span&gt;, &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;, &lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;은 구조상 서로 연관이 있다.&lt;/p&gt;
+&lt;h2&gt;URI(Uniform Resource Identifier, 통합 자원 식별자)&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URI&lt;/span&gt;는 우리말로 &lt;strong&gt;통합 자원 식별자&lt;/strong&gt;라고 한다. &lt;span class=&quot;primary&quot;&gt;URI&lt;/span&gt;는 앞서 말한 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;, &lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;을 포함하는 상위 개념으로, &lt;span class=&quot;orange-400&quot;&gt;인터넷 상에 존재하는 &lt;strong&gt;자원을 구분&lt;/strong&gt;하는 식별자&lt;/span&gt;라 할 수 있다. 웹 상에서 자원을 식별하는 모든 수단이 곧 &lt;span class=&quot;primary&quot;&gt;URI&lt;/span&gt;이라 할 수 있다.&lt;/p&gt;
+&lt;h2&gt;URL(Uniform Resource Locater, 통합 자원 지시자)&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;은 굳이 우리말로 하자면 &lt;strong&gt;통합 자원 지시자&lt;/strong&gt;라고 할 수 있겠지만, 흔히 인터넷 상에서 &lt;strong&gt;주소&lt;/strong&gt;라 함은 99% 이 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;을 의미한다. 1994년 &lt;strong&gt;RFC-1738&lt;/strong&gt;에 정의되어있다.&lt;br&gt;
+&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;은 &lt;strong&gt;Locater&lt;/strong&gt;라는 키워드에 걸맞게 &lt;span class=&quot;orange-400&quot;&gt;인터넷 상에 존재하는 자원의 &lt;strong&gt;위치&lt;/strong&gt;를 나타내는 식별자&lt;/span&gt;라 할 수 있다. 여기서 &lt;strong&gt;위치&lt;/strong&gt;라는 키워드에 주목하자. &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;은 자원의 위치정보를 가지므로, 어떠한 이유로든 자원의 위치가 변경되면 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;은 자원을 찾을 수 없으며, 변경된 위치를 추적할 수도 없다. 이 때 맞이하게 되는 HTTP 오류가 누구나 알고있는 404 Not Found다.&lt;br&gt;
+당장 내가 이 게시물의 이름을 한 글자만 변경해도, 지금까지의 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;은 아무 쓸모가 없어지며, 사용자들 또한 해당 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;로 이 게시물에 접근할 수 없다. 또한, 이 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;을 통해 원래 있던 게시물의 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;을 논리적으로 유추할 수도 없다.&lt;/p&gt;
+&lt;h2&gt;URN(Uniform Resource Name, 통합 자원 이름)&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;은 &lt;strong&gt;통합 자원 이름&lt;/strong&gt;이다. 눈치가 빠른 분들은 아시겠지만, &lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;은 &lt;span class=&quot;orange-400&quot;&gt;인터넷 상에 존재하는 자원의 &lt;strong&gt;이름&lt;/strong&gt;을 나타내는 식별자&lt;/span&gt;다. 자원의 이름은 고유한 값을 가지므로, 인터넷 상의 수 많은 자원들 중 특정 자원을 식별할 수 있는 것이다.&lt;br&gt;
+&lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;은 대부분 위에 언급한 두 개념에 비해 생소할 것이다. 그도 그럴 것이, &lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;은 위 두 개념보다 훨씬 뒤에 나온 개념이기 때문이다. 1997년 &lt;strong&gt;RFC-2141&lt;/strong&gt;에 정의되어있다. &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;보다 3년 뒤에 출범하여 그 역사가 상대적으로 짧다.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;의 치명적인 단점은 &lt;strong&gt;위치&lt;/strong&gt;정보 외에 다른 정보를 저장하지 않는다. 이 상황에서 해당 자원을 찾아야 한다면? 안타깝게도 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;만으로는 찾아낼 수 없다. 구글링해서 운 좋게 찾아낸다면 모를까.&lt;br&gt;
+반면 &lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;을 사용한다면 어떨까? 위치가 아무리 변경된다 하더라도, 자원의 고유한 이름을 통해 찾기 때문에 자원이 웹 상에서 완전히 삭제된 게 아니라면 손쉽게 찾아낼 수 있을 것이다.&lt;/p&gt;
+&lt;h2&gt;정리&lt;/h2&gt;
+&lt;p&gt;난 어려운 개념을 이해할 때 현실세계와 연관지어 이해하는 걸 좋아한다. 위 세 개념을 현실에서 특정 사람의 신원을 확인하는 과정과 접목해서 정리하면 아래와 같이 정리할 수 있을 것 같다.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;구분&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;현실&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;값&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;자원&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;나 자신&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;나&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;URI&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;나를 식별할 수 있는 모든 식별자&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;URL&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;내가 사는 주소&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;서울특별시 A구 가동&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;URN&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;내 주민등록번호&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;000000-0000000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;span class=&quot;small red-A400&quot;&gt;※ URN은 모든 자원의 고유값이므로, 사람과 연관지었을 때, 중복 가능성이 있는 이름 보다는 고유값인 주민등록번호가 더 적합하다.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;예를 들어, 내 정보가 위와 같다고 가정해보자. 내가 사는 주소 및 내 주민등록번호 모두 내 신원을 확인할 수 있는 방식(&lt;span class=&quot;primary&quot;&gt;URI&lt;/span&gt;)이므로, 나를 찾기에 적합하다.&lt;br&gt;
+만약 내 주소(&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;)를 통해 확인할 경우, 내가 이사(자원의 이동)를 가게 되면 해당 주소엔 아무것도 없으며, 날 찾을 수도 없다(404 HTTP 에러). 또한, 내가 예전에 살던 주소만으로 내가 이사간 주소를 유추해낼 수도 없을 것이다.&lt;/p&gt;
+&lt;p&gt;반면, 내 주민등록번호(&lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;)을 통해 확인할 경우, 내 주민등록번호와 매칭되는 사람을 찾는 것으로 나를 식별할 수 있다. 이 과정에서 내가 어디에 있는지는 전혀 중요치 않은 것이다. 주민등록번호 자체가 말소(자원 삭제)되지 않는 한, 내가 어디에서 무엇을 하고있든 내 신원을 확인할 수 있다.&lt;/p&gt;
+&lt;h1&gt;구조&lt;/h1&gt;
+&lt;p&gt;그렇다면 이들은 어떻게 생겼는지 알아보자. &lt;span class=&quot;primary&quot;&gt;URI&lt;/span&gt;는 자원의 식별자를 포괄하여 지칭하는 개념 그 자체이므로, 구조라고 할 건 없다. 하위 개념인 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;, &lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;에 대해 알아보자.&lt;/p&gt;
+&lt;h2&gt;URL 구조&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;은 아래와 같은 구조로 이루어진다. 매우 익숙할 것이다.&lt;/p&gt;
+&lt;p class=&quot;large&quot; align=&quot;center&quot;&gt;&lt;span class=&quot;lightBlue-400&quot;&gt;https&lt;/span&gt;://&lt;span class=&quot;green-400&quot;&gt;rwb0104&lt;/span&gt;.&lt;span class=&quot;yellow-400&quot;&gt;github&lt;/span&gt;.&lt;span class=&quot;pink-400&quot;&gt;com&lt;/span&gt;:&lt;span class=&quot;amber-400&quot;&gt;443&lt;/span&gt;/&lt;span class=&quot;cyan-400&quot;&gt;posts&lt;/span&gt;&lt;span class=&quot;teal-400&quot;&gt;?category=WEB&amp;page=1&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;구조별로 색상을 입혔으며, 순서대로 기술한다.&lt;/p&gt;
+&lt;h3&gt;Protocol(프로토콜)&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;상의 &lt;span class=&quot;lightBlue-400&quot;&gt;https&lt;/span&gt; 부분.&lt;/p&gt;
+&lt;p&gt;통신규약을 의미한다. 작성일 기준으로, 이 규약엔 계층별로 많은 &lt;span class=&quot;lightBlue-400&quot;&gt;프로토콜&lt;/span&gt;이 존재하는데, 웹 통신을 수행할 땐 크게 두 가지로 나뉜다.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;구분&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;내용&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;HTTP&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;W3 상에서의 HTML 문서 통신규약&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;HTTPS&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;암호화된 HTTP 통신 규약&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;현재는 포털, 쇼핑몰같은 대형 비즈니스 사이트나 블로그, 카페 등 중소규모의 개인 사이트까지 &lt;span class=&quot;red-A400&quot;&gt;HTTPS의 사용이 반 강제적으로 권장&lt;/span&gt;되어 있다. 특히 전자상거래가 접목된 비즈니스 사이트의 경우 필수로 적용해야 한다. 더군다나 &lt;span class=&quot;red-A400&quot;&gt;HTTPS가 적용되지 않는 사이트(localhost 제외)에 접근할 경우 브라우저 측에서 보안 관련 경고 메시지&lt;/span&gt;를 띄우니, 규모에 관계없이 웹 사이트를 운영할 경우 HTTPS는 필수로 적용하는 편이다.&lt;/p&gt;
+&lt;h3&gt;SLD(Second Level Domain, 서브도메인, 호스트)&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;상의 &lt;span class=&quot;green-400&quot;&gt;rwb0104&lt;/span&gt; 부분.&lt;/p&gt;
+&lt;p&gt;도메인 앞에 붙으며, &lt;span class=&quot;green-400&quot;&gt;서브도메인&lt;/span&gt;을 통해 하나의 &lt;span class=&quot;yellow-400&quot;&gt;도메인&lt;/span&gt;으로 다중 서비스를 제공할 수 있다. 하나의 &lt;span class=&quot;yellow-400&quot;&gt;도메인&lt;/span&gt;에 여러 &lt;span class=&quot;green-400&quot;&gt;서브도메인&lt;/span&gt;을 생성할 수 있으며, 우리가 흔히 아는 &lt;code&gt;www&lt;/code&gt; 외에도 &lt;code&gt;dev&lt;/code&gt;, &lt;code&gt;admin&lt;/code&gt;, &lt;code&gt;m&lt;/code&gt; 용도에 따라 다양한 문자열을 지정할 수 있다.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;URL&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;내용&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://naver.com&quot;&gt;naver.com&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;기본 네이버 홈페이지. 각 플랫폼(데스크탑, 모바일 등)에 가장 적합한 사이트로 리다이렉트&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.naver.com&quot;&gt;www.naver.com&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;데스크탑용 네이버 홈페이지&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://m.naver.com&quot;&gt;m.naver.com&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;모바일용 네이버 홈페이지&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://map.naver.com&quot;&gt;map.naver.com&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;네이버 지도&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;위는 네이버 서비스의 &lt;span class=&quot;green-400&quot;&gt;서브도메인&lt;/span&gt;으로, &lt;code&gt;naver.com&lt;/code&gt; &lt;span class=&quot;yellow-400&quot;&gt;도메인&lt;/span&gt;을 중심으로 각기 다른 서비스를 제공하는 것을 확인할 수 있다.&lt;/p&gt;
+&lt;h3&gt;Domain(도메인)&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;상의 &lt;span class=&quot;yellow-400&quot;&gt;github&lt;/span&gt; 부분.&lt;/p&gt;
+&lt;p&gt;URL의 중심이 되는 부분으로, 제공하는 웹 서비스의 아이덴티티 역할을 겸한다. 때문에 &lt;span class=&quot;yellow-400&quot;&gt;도메인&lt;/span&gt;에는 대부분 해당 웹 서비스의 이름이 들어간다.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;서비스&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;URL&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;네이버&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://naver.com&quot;&gt;naver.com&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;다음&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.daum.com&quot;&gt;www.daum.com&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;GitHub&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://github.com&quot;&gt;github.com&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;Instagram&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://instagram.com&quot;&gt;instagram.com&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;대부분의 서비스가 &lt;span class=&quot;yellow-400&quot;&gt;도메인&lt;/span&gt;으로 서비스의 이름을 사용하고 있다.&lt;/p&gt;
+&lt;h3&gt;TLD(Top Level Domain, 최상위 도메인)&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;상의 &lt;span class=&quot;pink-400&quot;&gt;com&lt;/span&gt; 부분.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;pink-400&quot;&gt;최상위 도메인&lt;/span&gt;이란, 앞서 언급한 &lt;span class=&quot;green-400&quot;&gt;서브도메인&lt;/span&gt;, &lt;span class=&quot;yellow-400&quot;&gt;도메인&lt;/span&gt;을 관리하는 업체 혹은 기관이라고 볼 수 있다.&lt;br&gt;
+앞서 언급한 개념의 경우, 중복되지 않는 선에서 사용자가 임의로 지정할 수 있다. 하지만 &lt;span class=&quot;pink-400&quot;&gt;최상위 도메인&lt;/span&gt;의 경우 현재 운영 중인 업체나 기관 중 하나를 &lt;strong&gt;선택&lt;/strong&gt;해서 등록해야 한다. &lt;span class=&quot;pink-400&quot;&gt;최상위 도메인&lt;/span&gt;을 선택할 경우, 당신의 도메인은 해당 &lt;span class=&quot;pink-400&quot;&gt;최상위 도메인&lt;/span&gt;을 운영하는 곳에서 관리하게 된다.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;pink-400&quot;&gt;최상위 도메인&lt;/span&gt;은 운영 주체에 따라 두 가지로 나뉜다.&lt;/p&gt;
+&lt;h4&gt;ccTLD(country code TLD, 국가 코드 최상위 도메인)&lt;/h4&gt;
+&lt;p&gt;국가를 나타내는 &lt;span class=&quot;pink-400&quot;&gt;최상위 도메인&lt;/span&gt;이다.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;ccTLD&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;내용&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;.kr&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;한국(KISA)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;.us&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;미국(LLC)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;.jp&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;일본&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;.io&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;영국령 인도양&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;span class=&quot;pink-400&quot;&gt;ccTLD&lt;/span&gt;는 위 표와 같이 국가 코드 형태이며, 각 국가기관이 직접 관리한다. 즉, &lt;code&gt;.kr&lt;/code&gt;을 가진 모든 도메인은 &lt;strong&gt;한국의 KISA(한국 인터넷 진흥원)에서 관리&lt;/strong&gt;한다.&lt;/p&gt;
+&lt;h4&gt;gTLD(generic TLD, 일반 최상위 도메인)&lt;/h4&gt;
+&lt;p&gt;사이트 혹은 사이트를 소유한 조직, 기관의 특성에 따라 사용하는 &lt;span class=&quot;pink-400&quot;&gt;최상위 도메인&lt;/span&gt;이다.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;gTLD&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;내용&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;.com&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;영리 단체 및 기관&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;.net&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;네트워크 관리기관&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;.org&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;비영리 기관&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;.gov&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;정부 기관&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;span class=&quot;pink-400&quot;&gt;gTLD&lt;/span&gt;는 위 표와 같이 다양한 종류가 있으며, 그 중 몇몇은 자주 접했을 것이다. 정부기관이 왜 여기있나 생각할 수도 있는데, &lt;span class=&quot;pink-400&quot;&gt;ccTLD&lt;/span&gt;는 &lt;strong&gt;국가 코드&lt;/strong&gt;만 해당된다. 국가 예하의 정부기관, 군사조직 등은 구분 상 &lt;span class=&quot;pink-400&quot;&gt;gTLD&lt;/span&gt;로 분류된다.&lt;br&gt;
+마찬가지로, 각 &lt;span class=&quot;pink-400&quot;&gt;최상위 도메인&lt;/span&gt;은 &lt;strong&gt;해당 &lt;span class=&quot;pink-400&quot;&gt;최상위 도메인&lt;/span&gt;을 소유한 기관 혹은 기업에서 관리&lt;/strong&gt;한다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;현재 운영 중인 &lt;span class=&quot;pink-400&quot;&gt;최상위 도메인&lt;/span&gt;은 &lt;a href=&quot;https://www.iana.org/domains/root/db&quot;&gt;IANA&lt;/a&gt;에서 확인할 수 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;여담으로, &lt;span class=&quot;pink-400&quot;&gt;최상위 도메인&lt;/span&gt;에 중복된 &lt;span class=&quot;yellow-400&quot;&gt;도메인&lt;/span&gt;을 등록할 수 없다. 예를 들어, 내가 &lt;code&gt;aaa.com&lt;/code&gt; URL을 등록한다고 가정해보자.&lt;br&gt;
+우선 제일 먼저 &lt;code&gt;.com&lt;/code&gt;을 관리하는 업체에 &lt;code&gt;aaa&lt;/code&gt;라는 &lt;span class=&quot;yellow-400&quot;&gt;도메인&lt;/span&gt;을 등록해야 한다. 하지만, 이미 누군가가 &lt;code&gt;aaa.com&lt;/code&gt;을 등록했다면 해당 소유주가 &lt;span class=&quot;yellow-400&quot;&gt;도메인&lt;/span&gt;의 소유권을 포기하기 전까진 &lt;code&gt;aaa.com&lt;/code&gt; &lt;span class=&quot;yellow-400&quot;&gt;도메인&lt;/span&gt;을 소유할 수 없다.&lt;br&gt;
+물론 &lt;code&gt;.com&lt;/code&gt;이 아닌 &lt;code&gt;.kr&lt;/code&gt;이나 &lt;code&gt;.net&lt;/code&gt;에는 등록할 수 있다. 하지만 &lt;code&gt;socket.io&lt;/code&gt; 처럼 &lt;span class=&quot;yellow-400&quot;&gt;도메인&lt;/span&gt;과 &lt;span class=&quot;pink-400&quot;&gt;최상위 도메인&lt;/span&gt;까지 의미론적으로 구성했다면, 이러한 상황이 달갑지 않을 것이다. 때문에 일전에 이슈됐던 &lt;span class=&quot;primary&quot;&gt;덮죽 상표권 선점&lt;/span&gt;과 비슷한 일이 일어나기도 한다.&lt;/p&gt;
+&lt;h2&gt;Port(포트)&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;상의 &lt;span class=&quot;amber-400&quot;&gt;443&lt;/span&gt; 부분. 앞에 반드시 &lt;code&gt;:&lt;/code&gt;이 붙는다.&lt;/p&gt;
+&lt;p&gt;인터넷에 연결된 모든 디바이스는 사용하는 네트워크의 IP를 할당받는다. 할당받은 IP 내에서 해당 디바이스가 수행 중인 모든 프로세스의 통신이 이루어진다. &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;는 프로세스의 데이터가 IO되는 통로다. 작업 시, 각 프로세스 별로 고유한 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;를 할당받으며, 하나의 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;는 반드시 하나의 프로세스와 1:1 매칭된다. 반면, 하나의 프로세스는 여러 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;를 할당받을 수 있다.&lt;br&gt;
+&lt;strong&gt;특정 프로세스와 통신하기 위해선 반드시 해당 프로세스가 할당받은 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;에 데이터를 전송&lt;/strong&gt;해야 한다. 때문에 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt; 통신은 어떤 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;가 보내는지는 크게 중요하지 않으며, 어떤 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;로 보내는지가 중요하다.&lt;/p&gt;
+&lt;p&gt;웹 통신에서의 기본&lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;는 아래와 같다.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;포트&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;내용&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;80&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;HTTP 기본 포트&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;443&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;HTTPS 기본 포트&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;아마 이러한 숫자를 처음 볼 수도 있는데, 대부분의 웹 사이트 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;에는 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;를 확인할 수 없다. 사이트가 &lt;strong&gt;각 프로토콜의 기본 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;로 서비스될 경우, &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;에서 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;를 생략&lt;/strong&gt;할 수 있다. 즉, &lt;code&gt;https://naver.com&lt;/code&gt;의 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;번호는 &lt;code&gt;443&lt;/code&gt;이지만, &lt;code&gt;443&lt;/code&gt;은 HTTPS의 기본 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;이므로 생략된다. 만약, &lt;code&gt;443&lt;/code&gt;이 아닌 &lt;code&gt;8080&lt;/code&gt;, &lt;code&gt;9200&lt;/code&gt;과 같은 &lt;strong&gt;임의의 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;로 서비스를 제공할 경우, &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;를 반드시 명시해야하므로 생략이 불가능&lt;/strong&gt;하다. 이 경우 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;은 &lt;code&gt;https://naver.com:8080&lt;/code&gt;이 될 것이다.&lt;br&gt;
+위와 같은 이유로, 대부분의 웹 사이트는 서비스하는 프로토콜에 맞는 기본 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;를 사용한다.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;는 &lt;strong&gt;0 ~ 65535&lt;/strong&gt;의 범위를 가지며, 크게 세 가지로 구분할 수 있다.&lt;/p&gt;
+&lt;h3&gt;잘 알려진 포트(well-known Port)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;0 ~ 1023&lt;/strong&gt;의 범위에 해당하는 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;. 이 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;들은 컴퓨터에서 기본적으로 사용되는 주요 프로세스에 기본적으로 할당되는 포트로, ICANN(Internet Corporation for Assigned Names and Numbers, 국제 인터넷주소 관리기구)에 의해 통제된다.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;포트&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;기능&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;용도&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;20, 21&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;FTP&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;파일 송수신&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;22&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;SFTP&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;파일 암호화 송수신&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;23&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Telnet&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;터미널 통신&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;25&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;SMTP&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;메일 전송&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;53&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;DNS&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;DNS 통신&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;67&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;DHCP&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;DHCP 통신&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;80&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;HTTP&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;HTML 통신&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;443&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;HTTPS&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;HTML 암호화 통신&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;어디까지나 초기에 지정되는 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;이므로, 추후 &lt;strong&gt;사용자의 의도에 따라 비어있는 다른 포트로 변경&lt;/strong&gt;할 수도 있다. 즉, 초기값일뿐, 강제는 아니다.&lt;/p&gt;
+&lt;h3&gt;등록된 포트(registered Port)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;1024 ~ 49151&lt;/strong&gt;의 범위에 해당하는 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;. 이 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;들은 컴퓨터의 기본 프로세스는 아니지만, 주요 프로그램들이 기본으로 사용하고자 ICANN에 등록한 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;다. &lt;span class=&quot;amber-400&quot;&gt;잘 알려진 포트&lt;/span&gt;와 마찬가지로 프로그램의 설정을 통해 &lt;strong&gt;사용자의 의도에 따라 비어있는 다른 포트로 변경&lt;/strong&gt;할 수 있다.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;포트&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;기능&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;용도&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;1433&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;MSSQL&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;MSSQL DB 통신&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;3306&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;MySQL&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;MySQL DB 통신&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;3389&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;RDP&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;원격 데스크톱 접근 (Windows)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;5432&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;PostgreSQL&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;PostgreSQL DB 통신&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;8080&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;HTTP 통신(Tomcat 등)&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;HTTP 통신 (80포트 대용)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;27017&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;MongoDB&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;MongoDB 통신&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;주로 &lt;span class=&quot;primary&quot;&gt;DB&lt;/span&gt;같은 개발 관련 프로그램들이 많이 등록돼있다.&lt;/p&gt;
+&lt;h4&gt;왜? 하필 개발 관련 프로그램들만?&lt;/h4&gt;
+&lt;p&gt;개발 관련 프로그램들은 그 특성 상 통신의 방식이 &lt;strong&gt;항상 일정&lt;/strong&gt;해야 한다. 만약 DB의 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;가 기동할 때마다 수시로 변경된다면 어떨까? 이유를 막론하고 DB가 재기동될 경우, 개발자는 DB가 사용 중인 임의의 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;를 추적하여 프로그램의 DB 통신 코드를 변경해야하는 매우 불합리한 상황이 발생하게 된다.&lt;/p&gt;
+&lt;p&gt;이에 비해 게임이나 IDE 같은 일반적인 프로그램들은 굳이 통신의 방식이 일정할 필요는 없다. 어찌됐든 &lt;strong&gt;서버에 정보를 요청하는 순간, 서버는 자연스레 내 통신 정보를 알게되기 때문&lt;/strong&gt;이다. 서버는 요청했던 경로로 다시 데이터를 반환해주면 된다. 어떤 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;가 보내는지는 별로 중요하지 않는 이유가 여기에 있다.&lt;/p&gt;
+&lt;h3&gt;동적 포트(dynamic Port)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;49152 ~ 65535&lt;/strong&gt;의 범위에 해당하는 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;. 대다수의 프로그램들은 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt; 기본값이 지정되지 않는 경우가 대부분이다. 이러한 프로그램들은 &lt;span class=&quot;amber-400&quot;&gt;동적 포트&lt;/span&gt; 중 사용 가능한 임의의 빈 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;를 자동으로 점유한다. 때문에 ICANN이 관리하지도 않으며, 특정 프로그램이 고유한 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;로 등록되어있지도 않다. 자유석을 생각하면 편하다.&lt;/p&gt;
+&lt;h3&gt;Path(경로)&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;상의 &lt;span class=&quot;cyan-400&quot;&gt;posts&lt;/span&gt; 부분. 웹 사이트의 하위 경로를 의미한다. &lt;span class=&quot;cyan-400&quot;&gt;경로&lt;/span&gt;는 &lt;code&gt;/&lt;/code&gt;로 구분하며, 경로 입력을 통해 서버 내의 원하는 자원에 접근할 수 있다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://rwb0104.github.io&quot;&gt;https://rwb0104.github.io&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;posts
+&lt;ul&gt;
+&lt;li&gt;index.html&lt;/li&gt;
+&lt;li&gt;A1000
+&lt;ul&gt;
+&lt;li&gt;index.html&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;A1001
+&lt;ul&gt;
+&lt;li&gt;index.html&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;uri-url-urn
+&lt;ul&gt;
+&lt;li&gt;index.html&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;project
+&lt;ul&gt;
+&lt;li&gt;index.html&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;index.html&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;위 트리는 이 블로그의 단편적인 디렉토리 예시다. 이 중 해당 게시물에 접근하려면 &lt;span class=&quot;cyan-400&quot;&gt;경로&lt;/span&gt;는 &lt;code&gt;/posts/uri-url-urn/index.html&lt;/code&gt;와 같이 구성할 수 있다. &lt;span class=&quot;primary&quot;&gt;index.html은 생략이 가능&lt;/span&gt;하므로 &lt;code&gt;/posts/uri-url-urn&lt;/code&gt;로 접근해도 무방하다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;아시나요?&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;index.html&lt;/strong&gt; 경로의 기본 HTML을 의미함. 더이상의 하위 경로를 표시하지 않을 경우, 해당 경로의 index.html를 응답한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&quot;cyan-400&quot;&gt;경로&lt;/span&gt;는 서버의 구조에 따라 결정되므로, 사이트마다 천차만별이다.&lt;/p&gt;
+&lt;h3&gt;Query String(쿼리 문자열)&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;상의 &lt;span class=&quot;teal-400&quot;&gt;?category=WEB&amp;#x26;page=1&lt;/span&gt; 부분. 해당 &lt;span class=&quot;cyan-400&quot;&gt;경로&lt;/span&gt;에 임의의 데이터를 같이 전송할 때 사용한다.&lt;br&gt;
+&lt;span class=&quot;primary&quot;&gt;key=value&lt;/span&gt; 형태로 이루어지며, 각 &lt;code&gt;key&lt;/code&gt;는 &lt;span class=&quot;purple-400&quot;&gt;Parameter(파라미터)&lt;/span&gt;라 칭한다. 첫 &lt;span class=&quot;purple-400&quot;&gt;파라미터&lt;/span&gt;는 &lt;code&gt;?&lt;/code&gt;로 시작하며, 이후 각 &lt;span class=&quot;purple-400&quot;&gt;파라미터&lt;/span&gt;들은 &lt;code&gt;&amp;#x26;&lt;/code&gt;으로 구분된다. 즉 &lt;code&gt;?key1=value1&amp;#x26;key2=value2&amp;#x26;key3=value3&lt;/code&gt;과 같은 양식으로 전개된다.&lt;/p&gt;
+&lt;p&gt;임의의 키워드를 전달하여 페이지의 동작을 제어할 수 있다. &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt; 중 &lt;strong&gt;사용자의 니즈가 가장 활발하게 반영&lt;/strong&gt;되는 부분. &lt;span class=&quot;teal-400&quot;&gt;쿼리 문자열&lt;/span&gt;은 각각의 &lt;code&gt;key&lt;/code&gt;에 대한 역할을 정의해야 하므로, 개발자가 각 &lt;span class=&quot;purple-400&quot;&gt;파라미터&lt;/span&gt;의 &lt;code&gt;key&lt;/code&gt;가 동작하는 로직을 작성했을 때 그 의미가 있다.&lt;/p&gt;
+&lt;h2&gt;URN 구조&lt;/h2&gt;
+&lt;p&gt;지금까지 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;에 대해선 상당히 장황하게 설명했지만, &lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;의 경우 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;보다 역사가 짧다. 또한 &lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;이 상당수 활성화된 후 생긴 탓에, 현재까지도 비주류를 면치 못 해 구현된 예시도 그리 많지 않은게 현실이다.&lt;br&gt;
+&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;이 위치만 바뀌어도 찾을 수 없다는 단점은, 오히려 제공중인 데이터를 은닉하는 측면 등 상황에 따라 오히려 이득이기도 하다. 즉, &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;의 단점이 사용에 있어서 크리티컬하지 않는다는 것이다. 이는 곳 &lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;의 장점이 현재 구축된 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;체계를 갈아 엎을 정도로 매력적이지 않다는 주장이 된다.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;은 아래와 같은 구조로 이루어진다. 각 요소는 &lt;code&gt;:&lt;/code&gt;으로 구분한다.&lt;/p&gt;
+&lt;p class=&quot;large&quot; align=&quot;center&quot;&gt;&lt;span class=&quot;lightBlue-400&quot;&gt;urn&lt;/span&gt;:&lt;span class=&quot;green-400&quot;&gt;isbn&lt;/span&gt;:&lt;span class=&quot;yellow-400&quot;&gt;1234567890&lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;Protocol(프로토콜)&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;상의 &lt;span class=&quot;lightBlue-400&quot;&gt;urn&lt;/span&gt; 부분. &lt;code&gt;urn&lt;/code&gt;으로 시작하면 &lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;체계로 보면 된다.&lt;/p&gt;
+&lt;h3&gt;NID(Namespace Identifier, 네임스페이스 지시자)&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;상의 &lt;span class=&quot;green-400&quot;&gt;isbn&lt;/span&gt; 부분. &lt;strong&gt;자원이 저장된 저장소&lt;/strong&gt;를 표시한다.&lt;br&gt;
+&lt;code&gt;isbn&lt;/code&gt;은 서지정보유통지원시스템으로 도서 일련번호에 대한 정보를 저장하는 저장소이다. 즉, &lt;code&gt;isbn&lt;/code&gt;을 &lt;span class=&quot;green-400&quot;&gt;NID&lt;/span&gt;로 지정하면 도서 관련 자원을 식별할 수 있다.&lt;/p&gt;
+&lt;h3&gt;NSS(Namespace Specific String, 네임스페이스 특정 문자)&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;상의 &lt;span class=&quot;yellow-400&quot;&gt;1234567890&lt;/span&gt; 부분. &lt;strong&gt;자원을 식별할 수 있는 고유값&lt;/strong&gt;이다.&lt;br&gt;
+&lt;span class=&quot;green-400&quot;&gt;NID&lt;/span&gt;가 &lt;code&gt;isbn&lt;/code&gt;으로 지정되어 있으므로, ISBN의 일련번호가 1234567890인 도서를 식별하는 &lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;이라 볼 수 있다.&lt;/p&gt;
+</description>
+		<pubDate>2021-05-28T18:30:17.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/05/29/uri-url-urn/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/05/29/uri-url-urn/</guid>
+		<category>WEB</category>
+		<category>WEB</category>
+		<category>WEB(웹)</category>
+		<category>URI</category>
+		<category>URL</category>
+		<category>URN</category>
+	</item>
+	<item>
+		<title>Unsupported major.minor version 에러 해결하기 (+Servlet 404 에러)</title>
+		<description>&lt;h1&gt;Unsupported major.minor version&lt;/h1&gt;
+&lt;p&gt;간혹 JAVA 프로그램을 실행하다보면 &lt;span class=&quot;error&quot;&gt;Unsupported major.minor version 52&lt;/span&gt;(숫자는 class 버전에 따라 다름) 오류가 출력되면서 정상적으로 동작하지 않는 오류가 발생한다.&lt;br&gt;
+&lt;span class=&quot;error&quot;&gt;Unsupported major.minor version&lt;/span&gt; 오류는 직역하면 &quot;지원하지 않는 주/부 버전&quot;이다. JAVA 버전관련 오류라고 보면 된다.&lt;/p&gt;
+&lt;h1&gt;원인&lt;/h1&gt;
+&lt;p&gt;JAVA는 컴파일 언어로, 개발자가 작성한 코드는 &lt;code&gt;.java&lt;/code&gt; 파일이다. 이를 컴파일하면 JVM(Java Virtual Machine, 자바 가상머신)이 읽을 수 있는 &lt;code&gt;.class&lt;/code&gt; 파일로 번역한다. 코딩은 사람이 이해할 수 있는 언어로 작성하고, 실제 동작은 컴파일을 통해 컴퓨터가 이해할 수 있는 언어를 사용하는 셈이다.&lt;br&gt;
+JAVA는 작성일 기준으로 16까지 릴리즈됐다. JAVA의 역사가 짧지 않고, 이 시간동안 크고작은 버전 업데이트가 지속적으로 이루어졌다.&lt;br&gt;
+문제는 이 과정에서 생긴 호환성 문제다. 1.5 버전으로 컴파일한 &lt;code&gt;.class&lt;/code&gt; 파일을 1.8 버전의 환경에서 구동한다거나, 그 반대의 경우가 그 예시다. 다행스럽게도, JAVA는 하위 버전에 대한 호환성을 보장한다. 1.8 버전의 환경에서는 1.8 이하로 컴파일된 &lt;code&gt;.class&lt;/code&gt; 파일의 실행을 보장한다. 하지만 반대로 상위 버전에 대한 호환성은 제공하지 않는다. 그도 그럴 것이, 호환성을 지키기 위해선, 각 버전 간의 구성을 알맞게 변환해야 하는데, 아직 개발되지 않은 미래 버전의 구성을 알 순 없는 노릇이니...&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;프로그램 JAVA 버전&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;PC JAVA 버전&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;Unsupported 오류 발생여부&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;해결책&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;14&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1.8&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;O&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;JAVA 14 버전 이상으로 업그레이드&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;1.6&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;1.7&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;X&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;칼퇴근&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;즉, &lt;span class=&quot;green-A400&quot;&gt;Unsupported major.minor version 오류는 내가 실행하려는 JAVA 코드가 내 PC의 JAVA 환경보다 높은 버전에서 컴파일된 경우 발생&lt;/span&gt;한다.&lt;/p&gt;
+&lt;h1&gt;해결&lt;/h1&gt;
+&lt;p&gt;결과적으로, JAVA 버전을 동등 혹은 그 이상의 상위버전으로 업그레이드하면 된다. 크게 두 가지 방법이 있다.&lt;/p&gt;
+&lt;h2&gt;프로그램 코드의 버전 다운그레이드&lt;/h2&gt;
+&lt;p&gt;만약 본인이 온전한 프로그램 코드를 갖고 있을 경우, 시도해볼 수 있는 방법이다.&lt;br&gt;
+&lt;span class=&quot;green-A400&quot;&gt;JAVA 버전을 다운그레이드하고 컴파일을 진행&lt;/span&gt;하면, 프로그램의 JAVA 버전이 낮아져 기존의 버전보다 훨씬 낮은 버전의 환경에서 구동이 가능하다.&lt;/p&gt;
+&lt;p&gt;단, 조건이 있다. JAVA 버전이 업그레이드됨에 따라 여러 신규 패턴, 문법 등이 추가됐다. 만약 &lt;span class=&quot;red-A400&quot;&gt;1.8 버전부터 새로 생긴 기능을 적극적으로 활용했다면, 1.7 이하의 버전에선 컴파일 오류가 발생&lt;/span&gt;한다.&lt;br&gt;
+그도 그럴것이, 1.8 부터 생긴 기능은 1.7에서는 구현되지 않은 기능이기 때문.&lt;/p&gt;
+&lt;p&gt;이 경우 프로그램의 코드를 좀더 범용적인 방식으로 리팩토링해야한다.&lt;/p&gt;
+&lt;h2&gt;PC의 버전 업그레이드&lt;/h2&gt;
+&lt;p&gt;만약 본인이 &lt;code&gt;.class&lt;/code&gt; 파일만 갖고있다거나, 상기한 문제로 다운그레이드가 어려울 경우 혹은 간단한 방법을 찾을 경우 시도해볼 수 있는 방법이다.
+&lt;span class=&quot;green-A400&quot;&gt;PC의 JAVA 버전을 업그레이드하고 프로그램을 실행&lt;/span&gt;하면 된다.&lt;/p&gt;
+&lt;p&gt;JAVA는 하위 호환성을 지키기 때문에, 별다른 조건이 존재하지 않는다.&lt;/p&gt;
+&lt;h1&gt;아니 버전 맞췄다고 아ㅋㅋ&lt;/h1&gt;
+&lt;p&gt;톰캣을 사용하다보면, 이 오류가 뜨는 경우가 있다. 그런데 간혹 PC에 설치된 JAVA 버전에 맞게 컴파일을 해줬음에도 오류가 사라지지 않는 현상이 발생하기도 한다.&lt;br&gt;
+이 경우 동반되는 증상이, Servlet Context에 접근할 경우, 첫 접속시 500 에러(Unsupported major.minor version 오류로 인해 발생)가 발생하고, 이후부터는 404 에러만 발생한다. 이러한 현상을 겪어보지 않았거나, 경험이 적은 개발자가 이러한 문제에 부딪히면 십중팔구 고생한다. 원인인 Unsupported major.minor version 오류가 보이지 않아 Servlet 동작의 404 오류와 관련된 정보를 검색하거나 질문하기 때문. 당연히 이러한 사정을 모르는 다른 사람들은 404 오류에 관한 답변을 줄 수 밖에 없다. 이런 경우 정말 난감하기 그지없다. 절대 경험담이라서가 아니다.&lt;/p&gt;
+&lt;p&gt;혹시 위 처럼 정상적인 Servlet(서블릿)임에도 불구하고 404 오류가 뜰 경우 아래의 환경변수에서 JRE_HOME이 설정돼있는지 확인해보자.&lt;br&gt;
+간혹 개발 프로그램 중 임의로 JRE_HOME을 설정해버리는 프로그램이 존재한다. 문제는 여기서 발생하는데, JAVA_HOME과 JRE_HOME 환경변수가 둘 다 설정되어있을 경우, &lt;span class=&quot;red-A400&quot;&gt;톰캣은 JRE_HOME을 우선&lt;/span&gt;한다. 즉 JRE의 버전이 적용된다.&lt;/p&gt;
+&lt;p&gt;예를 들어, JAVA_HOME이 1.8 버전, JRE_HOME이 1.6 버전이라 가정하자. 컴파일은 반드시 JDK가 필요하므로 JAVA_HOME의 버전인 1.8로 컴파일이 수행된다. 그러나 톰캣 실행 시, JRE_HOME을 우선하는 특징으로 인해 1.6 버전으로 실행된다. 결과적으로 &lt;strong&gt;1.8 버전으로 컴파일된 코드를 1.6으로 실행하는 셈&lt;/strong&gt;이니, 버전이 맞지 않아 오류가 발생한다.&lt;/p&gt;
+</description>
+		<pubDate>2021-05-29T17:16:35.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/05/30/unsupported-version-error/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/05/30/unsupported-version-error/</guid>
+		<category>JAVA</category>
+		<category>JAVA</category>
+		<category>JAVA</category>
+		<category>WAS</category>
+		<category>Tomcat(톰캣)</category>
+		<category>오류 해결책</category>
 	</item>
 	<item>
 		<title>[JAVA] 백준 알고리즘 1005번 ACM Craft</title>
@@ -1727,668 +2428,13 @@ N&lt;sub&gt;3&lt;/sub&gt; = 4 -&gt; &lt;code&gt;f(4)&lt;/code&gt; 부터 &lt;cod
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 </description>
 		<pubDate>2021-05-31T16:27:56.000Z</pubDate>
-		<link>https://rwb0104.github.io/posts/A1005/</link>
-		<guid isPermaLink="true">https://rwb0104.github.io/posts/A1005/</guid>
+		<link>https://rwb0104.github.io/posts/2021/06/01/A1005/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/06/01/A1005/</guid>
 		<category>알고리즘</category>
 		<category>알고리즘</category>
 		<category>백준</category>
 		<category>알고리즘</category>
 		<category>JAVA(자바)</category>
 		<category>위상정렬</category>
-	</item>
-	<item>
-		<title>도메인이란?</title>
-		<description>&lt;h1&gt;Domain(도메인)이란?&lt;/h1&gt;
-&lt;p&gt;도메인을 이해하기 위해선, IP에 대해 짚고 넘어가야 한다.&lt;br&gt;
-인터넷에 연결된 모든 디바이스(컴퓨터, 스마트폰, 공유기 등)는 &lt;span class=&quot;blue-500&quot;&gt;고유한 12자리 숫자로 구성된 IP주소&lt;/span&gt;를 가진다.&lt;br&gt;
-IP를 유동성으로 나누면 크게 유동 IP, 고정 IP로 분류할 수 있다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&quot;primary&quot;&gt;유동 IP&lt;/span&gt;: 임의의 시점마다 IP주소가 갱신되는 IP. 갱신 주기는 일정하지 않음. 대부분의 인터넷 회선에 적용됨.&lt;/li&gt;
-&lt;li&gt;&lt;span class=&quot;primary&quot;&gt;고정 IP&lt;/span&gt;: 회선에 고정된 IP를 부여하며, 해당 회선의 IP는 갱신되지 않음. 부가서비스 형태로 제공되며, 쇼핑몰이나 회사 등 지속적으로 시스템을 운영해야 할 경우 적합함.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;우리가 원하는 장소에 방문하기 위해 주소를 찾듯이, &lt;span class=&quot;green-500&quot;&gt;특정 서버에서 운영하는 웹 사이트를 방문하기 위해선 해당 서버의 주소인 IP가 필요&lt;/span&gt;하다.&lt;br&gt;
-불행히도, IP는 불규칙적인 숫자로 이루어져있어, 사람이 쉽게 기억하기 다소 어렵다. 이러한 불편함을 해소하기 위한 것이 Domain(도메인)이다.&lt;/p&gt;
-&lt;p&gt;도메인은 &lt;span class=&quot;pink-400&quot;&gt;SLD(서브도메인)&lt;/span&gt;, &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt;, &lt;span class=&quot;pink-400&quot;&gt;TLD(최상위 도메인)&lt;/span&gt;으로 구분되며, 해당 도메인의 정보는 1차적으로 각 로컬 DNS 서버가 관리하며, 최종적으로는 TLD를 관리하는 Root DNS에서 관리한다.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;도메인에 대한 자세한 내용은 이전에 작성된 &lt;a href=&quot;/posts/uri-url-urn&quot;&gt;URI? URL? URN? 리소스 식별자 구분하기&lt;/a&gt;를 참조한다.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1&gt;그래서 도메인을 왜 쓰는데?&lt;/h1&gt;
-&lt;p&gt;우리가 흔히 &lt;span class=&quot;green-A700&quot;&gt;네이버&lt;/span&gt;라고 부르는 사이트의 실제 IP는 &lt;a href=&quot;http://125.209.222.141&quot;&gt;125.209.222.141&lt;/a&gt;이다. 하지만 우리들 중 그 누구도 저런 IP로 &lt;span class=&quot;green-A700&quot;&gt;네이버&lt;/span&gt;에 접속하지 않는다. 대신 우리는 &lt;a href=&quot;https://www.naver.com&quot;&gt;https://www.naver.com&lt;/a&gt;이라는 도메인으로 접속한다. 이유는 간단하다. 주소 자체에 &lt;span class=&quot;green-A700&quot;&gt;naver&lt;/span&gt;라는 키워드가 포함되어 있으므로 기억하기 쉽기 때문이다.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt;은 숫자가 아닌, 문자 형태로 이루어진 주소다. 문자이므로, 주소에 의미를 부여하기 용이하다. 사용자가 주소를 기억하기 쉬워 주소에 대한 접근성을 높여준다.&lt;br&gt;
-생성한 &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt;에 원하는 IP를 연결하면 &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt; 주소를 통해서도 해당 IP에 접근할 수 있다.
-&lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt; 제공 업체에 따라, 영숫자 뿐만 아니라 한글과 같은 유니코드 문자도 지원하므로, 딱딱한 IP 대신 개성있는 주소를 사용할 수 있는 것이다.&lt;/p&gt;
-&lt;h1&gt;도메인의 원리&lt;/h1&gt;
-&lt;p&gt;여기서 의문점이 한 가지 생긴다. IP &lt;a href=&quot;http://125.209.222.141&quot;&gt;125.209.222.141&lt;/a&gt;와 &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt; &lt;a href=&quot;https://www.naver.com&quot;&gt;https://www.naver.com&lt;/a&gt;가 &lt;span class=&quot;green-A700&quot;&gt;네이버&lt;/span&gt;를 가리키는 주소인건 알겠는데, 인터넷은 과연 두 주소의 연결고리를 어떻게 아는 걸까?&lt;/p&gt;
-&lt;p&gt;이는 &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt;의 동작 원리를 보면 알 수 있다. &lt;code&gt;rwb0104.github.io&lt;/code&gt; &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt;에 접근하는 과정을 예시로 보자.&lt;/p&gt;
-&lt;p&gt;-- 사진 --&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;HTTP 통신을 통해 &lt;code&gt;rwb0104.github.io&lt;/code&gt;에 접근을 시도한다.&lt;/li&gt;
-&lt;li&gt;네트워크에 지정된 로컬 DNS에게 &lt;code&gt;rwb0104.github.io&lt;/code&gt;의 정보를 요청한다.
-&lt;ul&gt;
-&lt;li&gt;만약 로컬 DNS가 해당 도메인의 정보를 보유하고 있을 경우, 즉시 정보를 제공한다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;rwb0104.github.io&lt;/code&gt;에 대한 정보가 없을 경우, 근접한 Root DNS에 해당 도메인의 정보를 요청한다.&lt;/li&gt;
-&lt;li&gt;Root DNS가 &lt;code&gt;.io&lt;/code&gt; TLD를 관리하는 DNS 서버의 정보를 로컬 DNS에 제공한다.&lt;/li&gt;
-&lt;li&gt;로컬 DNS가 &lt;code&gt;rwb0104.github.io&lt;/code&gt;를 관리하는 TLD의 DNS 서버에 해당 정보를 요청한다.&lt;/li&gt;
-&lt;li&gt;TLD DNS 서버가 &lt;code&gt;rwb0104.github.io&lt;/code&gt;에 대한 정보(IP 등)을 제공한다.&lt;/li&gt;
-&lt;li&gt;로컬 DNS가 &lt;code&gt;rwb0104.github.io&lt;/code&gt;의 IP를 알고 있으므로, 이를 통해 해당 사이트에 접근할 수 있다.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;기본적으로 &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt;은 반드시 하나의 IP와 연결된다. 이런 특징 덕분에 &lt;span class=&quot;pink-400&quot;&gt;도메인&lt;/span&gt;은 항상 특정한 하나의 IP만을 반환한다.&lt;/p&gt;
-</description>
-		<pubDate>2021-05-22T03:52:51.000Z</pubDate>
-		<link>https://rwb0104.github.io/posts/about-domain/</link>
-		<guid isPermaLink="true">https://rwb0104.github.io/posts/about-domain/</guid>
-		<category>WEB</category>
-		<category>WEB</category>
-		<category>WEB(웹)</category>
-		<category>Domain(도메인)</category>
-	</item>
-	<item>
-		<title>Jekyll에서 Next.js로</title>
-		<description>&lt;h1&gt;Bye, Jekyll!&lt;/h1&gt;
-&lt;div&gt;
-	&lt;img src=&quot;https://user-images.githubusercontent.com/50317129/119211743-e44a7600-baee-11eb-85d0-f21c1f68debc.png&quot; /&gt;
-&lt;/div&gt;
-&lt;p&gt;기존에 &lt;a href=&quot;http://jekyllrb-ko.github.io/&quot; target=&quot;_blank&quot; class=&quot;pink-500&quot;&gt;Jekyll&lt;/a&gt;로 운영하던 블로그를 버리고 React 기반의 &lt;span class=&quot;blue-500&quot;&gt;Next.js&lt;/span&gt;를 통해 블로그를 새로 개발했다.&lt;/p&gt;
-&lt;p&gt;Github Pages를 처음 접했을 때, 호스팅을 반드시 &lt;span class=&quot;pink-500&quot;&gt;Jekyll&lt;/span&gt; 기반으로 해야한다고 착각하고있었다. 사실 조금만 생각해보면 상관 없던건데.&lt;/p&gt;
-&lt;p&gt;최근에 React를 접했는데, 생각보다 꽤나 매력적인 프레임워크라 소소하게나마 뭔가 만들어보고 싶었다.&lt;br&gt;
-블로그가 적절한 프로젝트(?)가 될 것 같았다. 명색이 개발자인데 블로그 하나 정도는 직접 개발해야 할 것 같기도 하고....&lt;/p&gt;
-&lt;h1&gt;굳이 멀쩡한 블로그 놔두고?&lt;/h1&gt;
-&lt;p&gt;한동안 안 하긴 했지만, 지금까진 &lt;span class=&quot;pink-500&quot;&gt;Jekyll&lt;/span&gt; 블로그를 운영하고 있었다. &lt;a href=&quot;http://taylantatli.github.io/Moon/&quot;&gt;Moon Theme&lt;/a&gt;를 적용해서 사용했었는데, 크고작은 불편함이 있었다.&lt;/p&gt;
-&lt;br /&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;b class=&quot;green-500&quot;&gt;Jekyll이라는 생소한 환경&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;Github의 개발언어는 &lt;span class=&quot;red-500&quot;&gt;Ruby&lt;/span&gt;다. 그래서일까, Github Pages의 기본 배포는 &lt;span class=&quot;red-500&quot;&gt;Ruby&lt;/span&gt; 기반 프레임워크인 &lt;span class=&quot;pink-500&quot;&gt;Jekyll&lt;/span&gt;을 따라간다.&lt;br&gt;
-문제는 한국엔 &lt;span class=&quot;pink-500&quot;&gt;Jekyll&lt;/span&gt;은 물론, &lt;span class=&quot;red-500&quot;&gt;Ruby&lt;/span&gt;라는 언어 자체의 수요가 많지 않다. 단순 블로그 하나 운영하기 위해 생판 모르는 언어를 접해야 한다는 점은 무시할 수 없는 디메리트.&lt;/p&gt;
-&lt;p&gt;물론 &lt;span class=&quot;red-500&quot;&gt;Ruby&lt;/span&gt;를 직접적으로 개발하진 않지만 &lt;span class=&quot;pink-500&quot;&gt;Jekyll&lt;/span&gt; 생태계 또한 그리 친숙한 형태는 아니였다.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;b class=&quot;green-500&quot;&gt;타인이 개발한 소스의 이해&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;1번과 같은 문제로, 밑바닥부터 &lt;span class=&quot;pink-500&quot;&gt;Jekyll&lt;/span&gt;을 개발할 수 없었다.&lt;br&gt;
-특정 기능에 대한 소요가 발생할 경우, 현재 테마에 어울리도록 &quot;&lt;strong&gt;잘 디자인&lt;/strong&gt;&quot;하는 것이 중요하다. 하지만 사용자의 입장에서 테마 개발자의 디자인 철학을 이해하는 것은 단순 디자인과는 또 다른 문제. 구조 파악은 덤&lt;br&gt;
-더군다나 내 경우 모자란 실력에 이상한 강박증까지 있어서, 내 스타일로 작성되지 않은 코드의 리딩을 못 한다. 또한, 프로젝트의 블랙박스를 싫어한다. 실력은 없는 주제에 프로젝트 내에 내가 모르는 코드 덩어리가 있는 걸 굉장히 싫어한다. 디자인 감각이 좋지도 못 해서 결과물도 기존 테마와 이질적인 무언가가 나온다.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;b class=&quot;green-500&quot;&gt;편리한 사용자 확장성, 불편한 개발자 확장성&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;블로그나, 웹 페이지, PPT 같은 환경에서 &lt;span class=&quot;grenn-500&quot;&gt;테마&lt;/span&gt;를 사용하는 이유는 뭘까? 귀찮지만 중요한 디자인에 대한 투자를 과감히 패스하면서도 준수한 디자인 퍼포먼스를 내기 위함이다. 물론 취지는 좋다. 어디까지나 &lt;strong&gt;단순히 해당 테마가 의도한 방향에 맞을 때만.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;다들 비슷한 경험이 있었을 것이다. 테마 혹은 템플릿을 사용하면서 필요에 따라 커스터마이징이 필요할 경우가 그렇다.&lt;br&gt;
-대부분의 테마는 결과물이 테마가 추구하는 디자인 철학과 상통할 때 그 빛을 발한다. 다시 말해, 그 의도가 손상될 경우 결과물의 퀄리티는 급락한다.&lt;br&gt;
-이 뿐만 아니라, &lt;span class=&quot;red-500&quot;&gt;필요에 따라 기존의 요소(소스코드, 플러그인 등)을 제거할 경우 그 의존성을 파악하기 힘들어 리스크&lt;/span&gt;가 크다.&lt;/p&gt;
-&lt;p&gt;일례로, 위에서 언급한 &lt;span class=&quot;lightBlue-500&quot;&gt;Moon Theme&lt;/span&gt;의 경우, JQuery에 의존성을 갖고 있다.&lt;br&gt;
-근래 웹 개발의 JQuery에 대한 비관적인 평을 생각한다면, 이는 큰 디메리트로 다가온다. 제거 작업으로 인한 공수 또한 무시할 수 없을 것이고.&lt;br&gt;
-물론 당시의 개발 트렌드를 무시할 수 없으며, &lt;strong&gt;개발&lt;/strong&gt;은 그 중에서도 트렌드의 주기가 매우 빠른 편이다. 이로 미루어 볼 때, 결과론적인 얘기다. 그럼에도 불구하고, &lt;strong&gt;사용자가 의도하지 않은 결함&lt;/strong&gt;이라는 사실은 불변하다.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;b class=&quot;green-500&quot;&gt;개발 욕구&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;정적 블로그의 경우 백엔드 영역이 거의 전무한데다, 복잡한 비즈니스 로직도 필요 없기 때문에 개발 난이도가 상대적으로 낮다고 판단했다. 즉, 원한다면 내가 직접 개발한 블로그를 사용하는게 그리 어렵지 않다.&lt;br&gt;
-위에서 언급했듯이, 직접 개발한 블로그를 사용하는 것이 좀 더 개발자스럽다. 난이도 또한 공부 중인 React를 적용하기도 적합하고.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1&gt;Hello, Next.js!&lt;/h1&gt;
-&lt;p&gt;React로 블로그를 만들 땐 주로 &lt;a href=&quot;https://nextjs.org/&quot; target=&quot;_blank&quot; class=&quot;blue-500&quot;&gt;Next.js&lt;/a&gt; 혹은 &lt;a href=&quot;https://www.gatsbyjs.com/&quot; target=&quot;_blank&quot; class=&quot;deepPurple-400&quot;&gt;Gatsby.js&lt;/a&gt;를 사용한다. 이번에 개발한 블로그는 &lt;span class=&quot;blue-500&quot;&gt;Next.js&lt;/span&gt;를 활용했다.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;blue-500&quot;&gt;Next.js&lt;/span&gt;는 &lt;span class=&quot;red-500&quot;&gt;Ruby&lt;/span&gt;의 &lt;span class=&quot;pink-500&quot;&gt;Jekyll&lt;/span&gt; 프레임워크와 그 결이 비슷하다. &lt;span class=&quot;pink-500&quot;&gt;Jekyll&lt;/span&gt;는 &lt;strong&gt;프레임워크 자체에 구조 스키마를 정함으로써 React의 Component와 유사하게 동작&lt;/strong&gt;한다. 그 당시의 난 React라는 걸 접하지도 않은 상황에서, React의 Component 방식으로 블로그를 구성했던 것이다. 말 그대로 낫 놓고 기역자도 모른 셈.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;blue-500&quot;&gt;Next.js&lt;/span&gt; 역시 라이브러리 자체에 정적 웹을 구성하고 빌드할 수 있는 환경이 구축되어 있어, 쉽게 사용이 가능하다. 여러 사용자들이 개발한 다수의 플러그인은 덤.&lt;br&gt;
-덕분에 정적 블로그를 밑바닥에서부터 개발할 수 있었다. 나름대로 디자인 한다고 하긴 했는데, 역시 디자인은 어렵다.&lt;br&gt;
-&lt;span class=&quot;blue-500&quot;&gt;Next.js&lt;/span&gt;와 &lt;span class=&quot;deepPurple-500&quot;&gt;Gatsby.js&lt;/span&gt;에 대한 내용은 나중에 따로 다룰 예정이다.&lt;/p&gt;
-&lt;p&gt;아직 해야할 것들이 남아있다. sitemap 생성기도 붙여야 하고, 연관 게시물 기능도 필요하다. 아직 다듬어지지 않은 자잘한 요소들도 있고. 역시 규모에 상관없이 무언가를 퍼블리싱하는건 정말 힘든 것 같다.&lt;br&gt;
-적어도 이번 블로그는 내 노력으로 내가 개발한 거니, 꾸준히 운영할 수 있었음 한다.&lt;/p&gt;
-</description>
-		<pubDate>2021-05-21T06:09:33.000Z</pubDate>
-		<link>https://rwb0104.github.io/posts/jekyll-to-nextjs/</link>
-		<guid isPermaLink="true">https://rwb0104.github.io/posts/jekyll-to-nextjs/</guid>
-		<category>잡담</category>
-		<category>잡담</category>
-		<category>React(리액트)</category>
-		<category>Next.js</category>
-		<category>개발 블로그</category>
-		<category>Jekyll</category>
-		<category>Next.js</category>
-	</item>
-	<item>
-		<title>Tomcat(톰캣) 현재 콘솔창에서 구동하기</title>
-		<description>&lt;h1&gt;왜 자꾸 꺼지는거야!&lt;/h1&gt;
-&lt;p&gt;오늘도 어느때와 다름없이 톰캣을 구동하는 A씨. 어제까지만 해도 잘 되던 톰캣이 무슨 오류가 있는지 구동 중에 바로 꺼져버린다. 꺼지기 직전의 순간 무슨 오류가 뜬 거 같은데..... 너무 빨라서 도통 확인할 수가 없다. 할 수 없이 일일이 로그를 찾아보며 오류를 수정하는 A씨. 건드린 것도 없는데, 왜 이러는 걸까?&lt;/p&gt;
-&lt;h1&gt;왜?&lt;/h1&gt;
-&lt;p&gt;톰캣이 콘솔 형태로 실행되는 것은 맞지만, 실행되는 프로세스를 보면 살짝 다르다. &lt;code&gt;startup.bat&lt;/code&gt;을 실행하면 cmd창이 뜬 뒤 꺼지면서 곧바로 Tomcat 창이 표시된다. &lt;span class=&quot;primary&quot;&gt;톰캣을 구동하면 항상 새로운 창이 뜨기 때문에, 톰캣이 오류로 인해 동작이 중지되면 창이 곧바로 닫히게 된다.&lt;/span&gt;&lt;/p&gt;
-&lt;h1&gt;해결책?&lt;/h1&gt;
-&lt;p&gt;그렇다고 해결책이 없는 건 아니고, &lt;code&gt;startup.bat&lt;/code&gt;의 간단한 수정을 통해 톰캣이 &lt;span class=&quot;primary&quot;&gt;현재 창에서 동작&lt;/span&gt;하도록 수정할 수 있다.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;startup.bat&lt;/code&gt;을 메모장으로 열면, 맨 아래에 &lt;code&gt;call &quot;%EXECUTABLE%&quot; run %CMD_LINE_ARGS%&lt;/code&gt; 구문이 존재한다. 여기서 가운데 &lt;code&gt;run&lt;/code&gt;을 &lt;code&gt;start&lt;/code&gt;로 변경한다.&lt;/p&gt;
-&lt;p&gt;즉 &lt;code&gt;call &quot;%EXECUTABLE%&quot; start %CMD_LINE_ARGS%&lt;/code&gt;로 구문을 변경하고 저장하면 된다.&lt;/p&gt;
-&lt;p&gt;이후 &lt;code&gt;startup.bat&lt;/code&gt;을 클릭하여 실행하지 말고, &lt;code&gt;cmd&lt;/code&gt;창 하나를 킨 다음에, 해당 콘솔에서 &lt;code&gt;startup.bat&lt;/code&gt;을 호출하면 새 창이 뜨지 않고 호출한 콘솔에서 톰캣이 구동된다.&lt;br&gt;
-톰캣이 종료돼도 콘솔창이 꺼지지 않으므로, 편하게 메시지를 확인할 수 있다.&lt;/p&gt;
-</description>
-		<pubDate>2021-05-26T07:32:16.000Z</pubDate>
-		<link>https://rwb0104.github.io/posts/tomcat-current-window/</link>
-		<guid isPermaLink="true">https://rwb0104.github.io/posts/tomcat-current-window/</guid>
-		<category>WAS</category>
-		<category>WAS</category>
-		<category>WAS</category>
-		<category>Tomcat(톰캣)</category>
-		<category>Console(콘솔)</category>
-	</item>
-	<item>
-		<title>Tomcat(톰캣) 콘솔창 한글 인코딩 깨짐 현상 해결하기</title>
-		<description>&lt;h1&gt;와장창!&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/50317129/119212087-342a3c80-baf1-11eb-89bc-06829a5f7c16.png&quot; alt=&quot;Encoding Broken&quot;&gt;&lt;/p&gt;
-&lt;p&gt;톰캣을 구동하다보면 심심치않게 마주하는 오류(?)는 아니고 현상.&lt;br&gt;
-Windows Console의 기본 인코딩과 Tomcat이 출력하는 인코딩이 서로 달라서 생긴다.&lt;/p&gt;
-&lt;h1&gt;도대체 왜?&lt;/h1&gt;
-&lt;p&gt;실력 좋은 개발자가 아니더라도, 컴퓨터와 친분이 있다면 언어가 깨짐은 곧 인코딩의 불일치라는 걸 개괄적으로 이해하고 있다. 이러한 현상이 일어나는 이유는 아래와 같은데,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&quot;primary&quot;&gt;Windows Console&lt;/span&gt;: Windows OS 설정 언어의 기본 인코딩 (한국어는 &lt;strong&gt;EUC-KR&lt;/strong&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;span class=&quot;primary&quot;&gt;Tomcat Console&lt;/span&gt;: 설정파일의 인코딩 (&lt;strong&gt;기본 UTF-8&lt;/strong&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;이 처럼, 기본 인코딩이 서로 다르다.&lt;/p&gt;
-&lt;h1&gt;해결책&lt;/h1&gt;
-&lt;p&gt;이를 해결하는 방법은 크게 두 가지가 존재한다. 개인적으로 &lt;span class=&quot;red-300&quot;&gt;두 번째 방법을 추천&lt;/span&gt;한다.&lt;/p&gt;
-&lt;h3&gt;Windows Console 인코딩 변경하기&lt;/h3&gt;
-&lt;p&gt;첫 번째로, Windows Console의 인코딩을 변경한다. Windows 10 기준으로 OS의 기본 콘솔은 &lt;span class=&quot;green-500&quot;&gt;cmd&lt;/span&gt;와 &lt;span class=&quot;green-500&quot;&gt;PowerShell&lt;/span&gt; 두 가지다. &lt;strong&gt;사용할 콘솔의 기본 인코딩을 EUC-KR에서 UTF-8로 변경&lt;/strong&gt;해주면 된다.&lt;/p&gt;
-&lt;p&gt;애석하게도, 두 콘솔 모두 인코딩을 변경하는 옵션을 제공하지 않는다. 그렇다고 방법이 없는 건 아니고, 레지스트리 수정을 통해 문제를 해결할 수 있다.&lt;/p&gt;
-&lt;br /&gt;
-&lt;ol&gt;
-&lt;li&gt;작업표시줄에서 &lt;code&gt;regedit&lt;/code&gt;을 입력하여 &lt;span class=&quot;blue-500&quot;&gt;레지스트리 편집기&lt;/span&gt;를 띄운다.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;HKEY_CURRENT_USER\Console&lt;/code&gt; 경로에 접근한다. 사용자 계정에 설치된 콘솔들이 출력된다. (cmd, PowerShell, Git 등)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/50317129/119212160-83706d00-baf1-11eb-92c8-b41458950f20.png&quot; alt=&quot;Registry&quot;&gt;&lt;/p&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;인코딩을 변경하려는 콘솔의 폴더를 클릭한다.
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;%SystemRoot%_system32_cmd.exe&lt;/strong&gt;: cmd&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;%SystemRoot%_System32_WindowsPowerShell_v1.0_powershell.exe&lt;/strong&gt;: 32비트 PowerShell&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;%SystemRoot%_SysWOW64_WindowsPowerShell_v1.0_powershell.exe&lt;/strong&gt;: 64비트 PowerShell&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;CodePage&lt;/code&gt; 키를 더블클릭하여 편집을 수행한다.
-&lt;code&gt;CodePage&lt;/code&gt;가 없을 경우, 오른쪽 마우스 버튼을 클릭하여 새 DWORD(32비트) 키를 동일한 이름으로 생성한다.&lt;/li&gt;
-&lt;li&gt;값 데이터를 10진수 &lt;code&gt;65001&lt;/code&gt;로 변경한다.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/50317129/119212198-ab5fd080-baf1-11eb-981b-82599148c8f8.png&quot; alt=&quot;Registry&quot;&gt;&lt;/p&gt;
-&lt;ol start=&quot;6&quot;&gt;
-&lt;li&gt;앞으로 실행되는 Windows Console은 해당 인코딩이 적용된다.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;이렇게 하면 Windows Console과 Tomcat의 기본 인코딩이 UTF-8로 서로 일치하므로, 한글이 정상적으로 출력된다.&lt;br&gt;
-하지만 이 방법은 Windows Console의 인코딩을 바꾸므로, 차후 해당 &lt;span class=&quot;red-500&quot;&gt;콘솔을 통해 다른 작업이나 프로그램이 실행될 경우 엉뚱한 프로그램의 한글이 깨질 우려&lt;/span&gt;가 있다.&lt;br&gt;
-(대부분은 OS 언어의 기본 인코딩을 따라가도록 설계함)&lt;/p&gt;
-&lt;p&gt;Windows Console은 범용적으로 사용되는 프로그램이므로, 다른 작업에 영향을 줄 수 있다. 내가 이 방법을 굳이 추천하지 않는 이유이기도 하다.&lt;/p&gt;
-&lt;h3&gt;Tomcat Console 인코딩 변경하기&lt;/h3&gt;
-&lt;p&gt;두 번째로, Tomcat Console의 인코딩을 변경한다. 첫 번째 방법보다 이 방법이 나은 이유는, Tomcat이라는 제한적인 용도의 콘솔에만 영향을 미치기 때문. 어차피 Tomcat Console의 인코딩이 불일치해서 생기는 문제이므로, 이쪽을 바꾸는게 상식적으로도 맞다.&lt;/p&gt;
-&lt;p&gt;대부분 마찬가지로 위 방법처럼 레지스트리를 수정하라고 안내할텐데, Tomcat은 굳이 그렇게 바꿔줄 필요 없다.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;%TOMCAT_HOME%\conf\logging.properties&lt;/code&gt;을 연다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;java.util.logging.ConsoleHandler.encoding&lt;/strong&gt;의 값을 &lt;strong&gt;EUC-KR&lt;/strong&gt;로 변경한다.
-별다른 설정이 없었다면, UTF-8이 기본으로 설정되어 있다.&lt;/li&gt;
-&lt;li&gt;앞으로 실행되는 Tomcat은 해당 인코딩이 적용된다.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Tomcat을 실행하면 한글이 정상적으로 출력된다.&lt;/p&gt;
-</description>
-		<pubDate>2021-05-22T03:52:51.000Z</pubDate>
-		<link>https://rwb0104.github.io/posts/tomcat-encoding-euckr/</link>
-		<guid isPermaLink="true">https://rwb0104.github.io/posts/tomcat-encoding-euckr/</guid>
-		<category>WAS</category>
-		<category>WAS</category>
-		<category>WAS</category>
-		<category>Tomcat(톰캣)</category>
-		<category>Console(콘솔)</category>
-	</item>
-	<item>
-		<title>Unsupported major.minor version 에러 해결하기 (+Servlet 404 에러)</title>
-		<description>&lt;h1&gt;Unsupported major.minor version&lt;/h1&gt;
-&lt;p&gt;간혹 JAVA 프로그램을 실행하다보면 &lt;span class=&quot;error&quot;&gt;Unsupported major.minor version 52&lt;/span&gt;(숫자는 class 버전에 따라 다름) 오류가 출력되면서 정상적으로 동작하지 않는 오류가 발생한다.&lt;br&gt;
-&lt;span class=&quot;error&quot;&gt;Unsupported major.minor version&lt;/span&gt; 오류는 직역하면 &quot;지원하지 않는 주/부 버전&quot;이다. JAVA 버전관련 오류라고 보면 된다.&lt;/p&gt;
-&lt;h1&gt;원인&lt;/h1&gt;
-&lt;p&gt;JAVA는 컴파일 언어로, 개발자가 작성한 코드는 &lt;code&gt;.java&lt;/code&gt; 파일이다. 이를 컴파일하면 JVM(Java Virtual Machine, 자바 가상머신)이 읽을 수 있는 &lt;code&gt;.class&lt;/code&gt; 파일로 번역한다. 코딩은 사람이 이해할 수 있는 언어로 작성하고, 실제 동작은 컴파일을 통해 컴퓨터가 이해할 수 있는 언어를 사용하는 셈이다.&lt;br&gt;
-JAVA는 작성일 기준으로 16까지 릴리즈됐다. JAVA의 역사가 짧지 않고, 이 시간동안 크고작은 버전 업데이트가 지속적으로 이루어졌다.&lt;br&gt;
-문제는 이 과정에서 생긴 호환성 문제다. 1.5 버전으로 컴파일한 &lt;code&gt;.class&lt;/code&gt; 파일을 1.8 버전의 환경에서 구동한다거나, 그 반대의 경우가 그 예시다. 다행스럽게도, JAVA는 하위 버전에 대한 호환성을 보장한다. 1.8 버전의 환경에서는 1.8 이하로 컴파일된 &lt;code&gt;.class&lt;/code&gt; 파일의 실행을 보장한다. 하지만 반대로 상위 버전에 대한 호환성은 제공하지 않는다. 그도 그럴 것이, 호환성을 지키기 위해선, 각 버전 간의 구성을 알맞게 변환해야 하는데, 아직 개발되지 않은 미래 버전의 구성을 알 순 없는 노릇이니...&lt;/p&gt;
-&lt;p&gt;즉, &lt;span class=&quot;green-A400&quot;&gt;Unsupported major.minor version 오류는 내가 실행하려는 JAVA 코드가 내 PC의 JAVA 환경보다 높은 버전에서 컴파일된 경우 발생&lt;/span&gt;한다.&lt;/p&gt;
-&lt;h1&gt;해결&lt;/h1&gt;
-&lt;p&gt;결과적으로, JAVA 버전을 동등 혹은 그 이상의 상위버전으로 업그레이드하면 된다.&lt;/p&gt;
-&lt;p&gt;| 프로그램 JAVA 버전 | PC JAVA 버전 | Unsupported 오류 발생여부 | 해결책 |
-| :------: | :---------: |
-| 14 | 1.8 | O | JAVA 14 버전 이상으로 업그레이드 |
-| 12 | 1.7 | X | 칼퇴근 |&lt;/p&gt;
-&lt;p&gt;크게 두 가지 방법이 있다.&lt;/p&gt;
-&lt;h2&gt;프로그램 코드의 버전 다운그레이드&lt;/h2&gt;
-&lt;p&gt;만약 본인이 온전한 프로그램 코드를 갖고 있을 경우, 시도해볼 수 있는 방법이다.&lt;br&gt;
-&lt;span class=&quot;green-A400&quot;&gt;JAVA 버전을 다운그레이드하고 컴파일을 진행&lt;/span&gt;하면, 프로그램의 JAVA 버전이 낮아져 기존의 버전보다 훨씬 낮은 버전의 환경에서 구동이 가능하다.&lt;/p&gt;
-&lt;p&gt;단, 조건이 있다. JAVA 버전이 업그레이드됨에 따라 여러 신규 패턴, 문법 등이 추가됐다. 만약 &lt;span class=&quot;red-A400&quot;&gt;1.8 버전부터 새로 생긴 기능을 적극적으로 활용했다면, 1.7 이하의 버전에선 컴파일 오류가 발생&lt;/span&gt;한다.&lt;br&gt;
-그도 그럴것이, 1.8 부터 생긴 기능은 1.7에서는 구현되지 않은 기능이기 때문.&lt;/p&gt;
-&lt;p&gt;이 경우 프로그램의 코드를 좀더 범용적인 방식으로 리팩토링해야한다.&lt;/p&gt;
-&lt;h2&gt;PC의 버전 업그레이드&lt;/h2&gt;
-&lt;p&gt;만약 본인이 &lt;code&gt;.class&lt;/code&gt; 파일만 갖고있다거나, 상기한 문제로 다운그레이드가 어려울 경우 혹은 간단한 방법을 찾을 경우 시도해볼 수 있는 방법이다.
-&lt;span class=&quot;green-A400&quot;&gt;PC의 JAVA 버전을 업그레이드하고 프로그램을 실행&lt;/span&gt;하면 된다.&lt;/p&gt;
-&lt;p&gt;JAVA는 하위 호환성을 지키기 때문에, 별다른 조건이 존재하지 않는다.&lt;/p&gt;
-&lt;h1&gt;아니 버전 맞췄다고 아ㅋㅋ&lt;/h1&gt;
-&lt;p&gt;톰캣을 사용하다보면, 이 오류가 뜨는 경우가 있다. 그런데 간혹 PC에 설치된 JAVA 버전에 맞게 컴파일을 해줬음에도 오류가 사라지지 않는 현상이 발생하기도 한다.&lt;br&gt;
-이 경우 동반되는 증상이, Servlet Context에 접근할 경우, 첫 접속시 500 에러(Unsupported major.minor version 오류로 인해 발생)가 발생하고, 이후부터는 404 에러만 발생한다. 이러한 현상을 겪어보지 않았거나, 경험이 적은 개발자가 이러한 문제에 부딪히면 십중팔구 고생한다. 원인인 Unsupported major.minor version 오류가 보이지 않아 Servlet 동작의 404 오류와 관련된 정보를 검색하거나 질문하기 때문. 당연히 이러한 사정을 모르는 다른 사람들은 404 오류에 관한 답변을 줄 수 밖에 없다. 이런 경우 정말 난감하기 그지없다. 절대 경험담이라서가 아니다.&lt;/p&gt;
-&lt;p&gt;혹시 위 처럼 정상적인 Servlet(서블릿)임에도 불구하고 404 오류가 뜰 경우 아래의 환경변수에서 JRE_HOME이 설정돼있는지 확인해보자.&lt;br&gt;
-간혹 개발 프로그램 중 임의로 JRE_HOME을 설정해버리는 프로그램이 존재한다. 문제는 여기서 발생하는데, JAVA_HOME과 JRE_HOME 환경변수가 둘 다 설정되어있을 경우, &lt;span class=&quot;red-A400&quot;&gt;톰캣은 JRE_HOME을 우선&lt;/span&gt;한다. 즉 JRE의 버전이 적용된다.&lt;/p&gt;
-&lt;p&gt;예를 들어, JAVA_HOME이 1.8 버전, JRE_HOME이 1.6 버전이라 가정하자. 컴파일은 반드시 JDK가 필요하므로 JAVA_HOME의 버전인 1.8로 컴파일이 수행된다. 그러나 톰캣 실행 시, JRE_HOME을 우선하는 특징으로 인해 1.6 버전으로 실행된다. 결과적으로 &lt;strong&gt;1.8 버전으로 컴파일된 코드를 1.6으로 실행하는 셈&lt;/strong&gt;이니, 버전이 맞지 않아 오류가 발생한다.&lt;/p&gt;
-</description>
-		<pubDate>2021-05-29T17:16:35.000Z</pubDate>
-		<link>https://rwb0104.github.io/posts/unsupported-version-error/</link>
-		<guid isPermaLink="true">https://rwb0104.github.io/posts/unsupported-version-error/</guid>
-		<category>JAVA</category>
-		<category>JAVA</category>
-		<category>JAVA</category>
-		<category>WAS</category>
-		<category>Tomcat(톰캣)</category>
-		<category>오류 해결책</category>
-	</item>
-	<item>
-		<title>URI? URL? URN? 리소스 식별자 구분하기</title>
-		<description>&lt;h2&gt;Table of Contents&lt;/h2&gt;
-&lt;h1&gt;URL! URI... URN??&lt;/h1&gt;
-&lt;p&gt;우리가 인터넷 상에서 &lt;strong&gt;특정한 데이터&lt;/strong&gt;에 접근할 때 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;이라는 것을 활용하여 접근한다.&lt;br&gt;
-원하는 자료의 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;을 얻으면, 브라우저 같은 HTTP 통신 프로그램에 해당 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;을 호출하여 응답을 얻는 것이다.&lt;/p&gt;
-&lt;p&gt;개발자나, 굳이 개발자가 아니더라도 관련 정보를 찾다보면 심심치않게 &lt;span class=&quot;primary&quot;&gt;URI&lt;/span&gt;라는 용어를 접하게 된다.&lt;br&gt;
-I와 L의 오묘한 유사성 때문에 아예 &lt;span class=&quot;primary&quot;&gt;URI&lt;/span&gt;를 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;로 오독하는가 하면, 오타라고 생각하는 사람도 더러 있을 것이다.&lt;br&gt;
-하지만 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;과 &lt;span class=&quot;primary&quot;&gt;URI&lt;/span&gt;는 그 의미가 비슷하면서도 살짝 다르다.&lt;/p&gt;
-&lt;p&gt;누구나 알고있는 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;과 아리까리한 &lt;span class=&quot;primary&quot;&gt;URI&lt;/span&gt;, 생소한 &lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;. 이들에 대해 알아보자&lt;/p&gt;
-&lt;h1&gt;UR* 톱아보기&lt;/h1&gt;
-&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URI&lt;/span&gt;, &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;, &lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;은 구조상 서로 연관이 있다.&lt;/p&gt;
-&lt;h2&gt;URI(Uniform Resource Identifier, 통합 자원 식별자)&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URI&lt;/span&gt;는 우리말로 &lt;strong&gt;통합 자원 식별자&lt;/strong&gt;라고 한다. &lt;span class=&quot;primary&quot;&gt;URI&lt;/span&gt;는 앞서 말한 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;, &lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;을 포함하는 상위 개념으로, &lt;span class=&quot;orange-400&quot;&gt;인터넷 상에 존재하는 &lt;strong&gt;자원을 구분&lt;/strong&gt;하는 식별자&lt;/span&gt;라 할 수 있다. 웹 상에서 자원을 식별하는 모든 수단이 곧 &lt;span class=&quot;primary&quot;&gt;URI&lt;/span&gt;이라 할 수 있다.&lt;/p&gt;
-&lt;h2&gt;URL(Uniform Resource Locater, 통합 자원 지시자)&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;은 굳이 우리말로 하자면 &lt;strong&gt;통합 자원 지시자&lt;/strong&gt;라고 할 수 있겠지만, 흔히 인터넷 상에서 &lt;strong&gt;주소&lt;/strong&gt;라 함은 99% 이 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;을 의미한다. 1994년 &lt;strong&gt;RFC-1738&lt;/strong&gt;에 정의되어있다.&lt;br&gt;
-&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;은 &lt;strong&gt;Locater&lt;/strong&gt;라는 키워드에 걸맞게 &lt;span class=&quot;orange-400&quot;&gt;인터넷 상에 존재하는 자원의 &lt;strong&gt;위치&lt;/strong&gt;를 나타내는 식별자&lt;/span&gt;라 할 수 있다. 여기서 &lt;strong&gt;위치&lt;/strong&gt;라는 키워드에 주목하자. &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;은 자원의 위치정보를 가지므로, 어떠한 이유로든 자원의 위치가 변경되면 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;은 자원을 찾을 수 없으며, 변경된 위치를 추적할 수도 없다. 이 때 맞이하게 되는 HTTP 오류가 누구나 알고있는 404 Not Found다.&lt;br&gt;
-당장 내가 이 게시물의 이름을 한 글자만 변경해도, 지금까지의 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;은 아무 쓸모가 없어지며, 사용자들 또한 해당 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;로 이 게시물에 접근할 수 없다. 또한, 이 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;을 통해 원래 있던 게시물의 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;을 논리적으로 유추할 수도 없다.&lt;/p&gt;
-&lt;h2&gt;URN(Uniform Resource Name, 통합 자원 이름)&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;은 &lt;strong&gt;통합 자원 이름&lt;/strong&gt;이다. 눈치가 빠른 분들은 아시겠지만, &lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;은 &lt;span class=&quot;orange-400&quot;&gt;인터넷 상에 존재하는 자원의 &lt;strong&gt;이름&lt;/strong&gt;을 나타내는 식별자&lt;/span&gt;다. 자원의 이름은 고유한 값을 가지므로, 인터넷 상의 수 많은 자원들 중 특정 자원을 식별할 수 있는 것이다.&lt;br&gt;
-&lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;은 대부분 위에 언급한 두 개념에 비해 생소할 것이다. 그도 그럴 것이, &lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;은 위 두 개념보다 훨씬 뒤에 나온 개념이기 때문이다. 1997년 &lt;strong&gt;RFC-2141&lt;/strong&gt;에 정의되어있다. &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;보다 3년 뒤에 출범하여 그 역사가 상대적으로 짧다.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;의 치명적인 단점은 &lt;strong&gt;위치&lt;/strong&gt;정보 외에 다른 정보를 저장하지 않는다. 이 상황에서 해당 자원을 찾아야 한다면? 안타깝게도 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;만으로는 찾아낼 수 없다. 구글링해서 운 좋게 찾아낸다면 모를까.&lt;br&gt;
-반면 &lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;을 사용한다면 어떨까? 위치가 아무리 변경된다 하더라도, 자원의 고유한 이름을 통해 찾기 때문에 자원이 웹 상에서 완전히 삭제된 게 아니라면 손쉽게 찾아낼 수 있을 것이다.&lt;/p&gt;
-&lt;h2&gt;정리&lt;/h2&gt;
-&lt;p&gt;난 어려운 개념을 이해할 때 현실세계와 연관지어 이해하는 걸 좋아한다. 위 세 개념을 현실에서 특정 사람의 신원을 확인하는 과정과 접목해서 정리하면 아래와 같이 정리할 수 있을 것 같다.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;center&quot;&gt;구분&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;현실&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;값&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;자원&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;나 자신&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;나&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;URI&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;나를 식별할 수 있는 모든 식별자&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;URL&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;내가 사는 주소&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;서울특별시 A구 가동&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;URN&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;내 주민등록번호&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;000000-0000000&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;span class=&quot;small red-A400&quot;&gt;※ URN은 모든 자원의 고유값이므로, 사람과 연관지었을 때, 중복 가능성이 있는 이름 보다는 고유값인 주민등록번호가 더 적합하다.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;예를 들어, 내 정보가 위와 같다고 가정해보자. 내가 사는 주소 및 내 주민등록번호 모두 내 신원을 확인할 수 있는 방식(&lt;span class=&quot;primary&quot;&gt;URI&lt;/span&gt;)이므로, 나를 찾기에 적합하다.&lt;br&gt;
-만약 내 주소(&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;)를 통해 확인할 경우, 내가 이사(자원의 이동)를 가게 되면 해당 주소엔 아무것도 없으며, 날 찾을 수도 없다(404 HTTP 에러). 또한, 내가 예전에 살던 주소만으로 내가 이사간 주소를 유추해낼 수도 없을 것이다.&lt;/p&gt;
-&lt;p&gt;반면, 내 주민등록번호(&lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;)을 통해 확인할 경우, 내 주민등록번호와 매칭되는 사람을 찾는 것으로 나를 식별할 수 있다. 이 과정에서 내가 어디에 있는지는 전혀 중요치 않은 것이다. 주민등록번호 자체가 말소(자원 삭제)되지 않는 한, 내가 어디에서 무엇을 하고있든 내 신원을 확인할 수 있다.&lt;/p&gt;
-&lt;h1&gt;구조&lt;/h1&gt;
-&lt;p&gt;그렇다면 이들은 어떻게 생겼는지 알아보자. &lt;span class=&quot;primary&quot;&gt;URI&lt;/span&gt;는 자원의 식별자를 포괄하여 지칭하는 개념 그 자체이므로, 구조라고 할 건 없다. 하위 개념인 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;, &lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;에 대해 알아보자.&lt;/p&gt;
-&lt;h2&gt;URL 구조&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;은 아래와 같은 구조로 이루어진다. 매우 익숙할 것이다.&lt;/p&gt;
-&lt;p class=&quot;large&quot; align=&quot;center&quot;&gt;&lt;span class=&quot;lightBlue-400&quot;&gt;https&lt;/span&gt;://&lt;span class=&quot;green-400&quot;&gt;rwb0104&lt;/span&gt;.&lt;span class=&quot;yellow-400&quot;&gt;github&lt;/span&gt;.&lt;span class=&quot;pink-400&quot;&gt;com&lt;/span&gt;:&lt;span class=&quot;amber-400&quot;&gt;443&lt;/span&gt;/&lt;span class=&quot;cyan-400&quot;&gt;posts&lt;/span&gt;&lt;span class=&quot;teal-400&quot;&gt;?category=WEB&amp;page=1&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;구조별로 색상을 입혔으며, 순서대로 기술한다.&lt;/p&gt;
-&lt;h3&gt;Protocol(프로토콜)&lt;/h3&gt;
-&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;상의 &lt;span class=&quot;lightBlue-400&quot;&gt;https&lt;/span&gt; 부분.&lt;/p&gt;
-&lt;p&gt;통신규약을 의미한다. 작성일 기준으로, 이 규약엔 계층별로 많은 &lt;span class=&quot;lightBlue-400&quot;&gt;프로토콜&lt;/span&gt;이 존재하는데, 웹 통신을 수행할 땐 크게 두 가지로 나뉜다.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;center&quot;&gt;구분&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;내용&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;HTTP&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;W3 상에서의 HTML 문서 통신규약&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;HTTPS&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;암호화된 HTTP 통신 규약&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;현재는 포털, 쇼핑몰같은 대형 비즈니스 사이트나 블로그, 카페 등 중소규모의 개인 사이트까지 &lt;span class=&quot;red-A400&quot;&gt;HTTPS의 사용이 반 강제적으로 권장&lt;/span&gt;되어 있다. 특히 전자상거래가 접목된 비즈니스 사이트의 경우 필수로 적용해야 한다. 더군다나 &lt;span class=&quot;red-A400&quot;&gt;HTTPS가 적용되지 않는 사이트(localhost 제외)에 접근할 경우 브라우저 측에서 보안 관련 경고 메시지&lt;/span&gt;를 띄우니, 규모에 관계없이 웹 사이트를 운영할 경우 HTTPS는 필수로 적용하는 편이다.&lt;/p&gt;
-&lt;h3&gt;SLD(Second Level Domain, 서브도메인, 호스트)&lt;/h3&gt;
-&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;상의 &lt;span class=&quot;green-400&quot;&gt;rwb0104&lt;/span&gt; 부분.&lt;/p&gt;
-&lt;p&gt;도메인 앞에 붙으며, &lt;span class=&quot;green-400&quot;&gt;서브도메인&lt;/span&gt;을 통해 하나의 &lt;span class=&quot;yellow-400&quot;&gt;도메인&lt;/span&gt;으로 다중 서비스를 제공할 수 있다. 하나의 &lt;span class=&quot;yellow-400&quot;&gt;도메인&lt;/span&gt;에 여러 &lt;span class=&quot;green-400&quot;&gt;서브도메인&lt;/span&gt;을 생성할 수 있으며, 우리가 흔히 아는 &lt;code&gt;www&lt;/code&gt; 외에도 &lt;code&gt;dev&lt;/code&gt;, &lt;code&gt;admin&lt;/code&gt;, &lt;code&gt;m&lt;/code&gt; 용도에 따라 다양한 문자열을 지정할 수 있다.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;center&quot;&gt;URL&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;내용&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://naver.com&quot;&gt;naver.com&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;기본 네이버 홈페이지. 각 플랫폼(데스크탑, 모바일 등)에 가장 적합한 사이트로 리다이렉트&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.naver.com&quot;&gt;www.naver.com&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;데스크탑용 네이버 홈페이지&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://m.naver.com&quot;&gt;m.naver.com&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;모바일용 네이버 홈페이지&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://map.naver.com&quot;&gt;map.naver.com&lt;/a&gt;&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;네이버 지도&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;위는 네이버 서비스의 &lt;span class=&quot;green-400&quot;&gt;서브도메인&lt;/span&gt;으로, &lt;code&gt;naver.com&lt;/code&gt; &lt;span class=&quot;yellow-400&quot;&gt;도메인&lt;/span&gt;을 중심으로 각기 다른 서비스를 제공하는 것을 확인할 수 있다.&lt;/p&gt;
-&lt;h3&gt;Domain(도메인)&lt;/h3&gt;
-&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;상의 &lt;span class=&quot;yellow-400&quot;&gt;github&lt;/span&gt; 부분.&lt;/p&gt;
-&lt;p&gt;URL의 중심이 되는 부분으로, 제공하는 웹 서비스의 아이덴티티 역할을 겸한다. 때문에 &lt;span class=&quot;yellow-400&quot;&gt;도메인&lt;/span&gt;에는 대부분 해당 웹 서비스의 이름이 들어간다.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;center&quot;&gt;서비스&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;URL&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;네이버&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://naver.com&quot;&gt;naver.com&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;다음&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.daum.com&quot;&gt;www.daum.com&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;GitHub&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://github.com&quot;&gt;github.com&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;Instagram&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://instagram.com&quot;&gt;instagram.com&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;대부분의 서비스가 &lt;span class=&quot;yellow-400&quot;&gt;도메인&lt;/span&gt;으로 서비스의 이름을 사용하고 있다.&lt;/p&gt;
-&lt;h3&gt;TLD(Top Level Domain, 최상위 도메인)&lt;/h3&gt;
-&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;상의 &lt;span class=&quot;pink-400&quot;&gt;com&lt;/span&gt; 부분.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;pink-400&quot;&gt;최상위 도메인&lt;/span&gt;이란, 앞서 언급한 &lt;span class=&quot;green-400&quot;&gt;서브도메인&lt;/span&gt;, &lt;span class=&quot;yellow-400&quot;&gt;도메인&lt;/span&gt;을 관리하는 업체 혹은 기관이라고 볼 수 있다.&lt;br&gt;
-앞서 언급한 개념의 경우, 중복되지 않는 선에서 사용자가 임의로 지정할 수 있다. 하지만 &lt;span class=&quot;pink-400&quot;&gt;최상위 도메인&lt;/span&gt;의 경우 현재 운영 중인 업체나 기관 중 하나를 &lt;strong&gt;선택&lt;/strong&gt;해서 등록해야 한다. &lt;span class=&quot;pink-400&quot;&gt;최상위 도메인&lt;/span&gt;을 선택할 경우, 당신의 도메인은 해당 &lt;span class=&quot;pink-400&quot;&gt;최상위 도메인&lt;/span&gt;을 운영하는 곳에서 관리하게 된다.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;pink-400&quot;&gt;최상위 도메인&lt;/span&gt;은 운영 주체에 따라 두 가지로 나뉜다.&lt;/p&gt;
-&lt;h4&gt;ccTLD(country code TLD, 국가 코드 최상위 도메인)&lt;/h4&gt;
-&lt;p&gt;국가를 나타내는 &lt;span class=&quot;pink-400&quot;&gt;최상위 도메인&lt;/span&gt;이다.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;center&quot;&gt;ccTLD&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;내용&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;.kr&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;한국(KISA)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;.us&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;미국(LLC)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;.jp&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;일본&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;.io&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;영국령 인도양&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;span class=&quot;pink-400&quot;&gt;ccTLD&lt;/span&gt;는 위 표와 같이 국가 코드 형태이며, 각 국가기관이 직접 관리한다. 즉, &lt;code&gt;.kr&lt;/code&gt;을 가진 모든 도메인은 &lt;strong&gt;한국의 KISA(한국 인터넷 진흥원)에서 관리&lt;/strong&gt;한다.&lt;/p&gt;
-&lt;h4&gt;gTLD(generic TLD, 일반 최상위 도메인)&lt;/h4&gt;
-&lt;p&gt;사이트 혹은 사이트를 소유한 조직, 기관의 특성에 따라 사용하는 &lt;span class=&quot;pink-400&quot;&gt;최상위 도메인&lt;/span&gt;이다.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;center&quot;&gt;gTLD&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;내용&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;.com&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;영리 단체 및 기관&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;.net&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;네트워크 관리기관&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;.org&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;비영리 기관&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;.gov&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;정부 기관&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;span class=&quot;pink-400&quot;&gt;gTLD&lt;/span&gt;는 위 표와 같이 다양한 종류가 있으며, 그 중 몇몇은 자주 접했을 것이다. 정부기관이 왜 여기있나 생각할 수도 있는데, &lt;span class=&quot;pink-400&quot;&gt;ccTLD&lt;/span&gt;는 &lt;strong&gt;국가 코드&lt;/strong&gt;만 해당된다. 국가 예하의 정부기관, 군사조직 등은 구분 상 &lt;span class=&quot;pink-400&quot;&gt;gTLD&lt;/span&gt;로 분류된다.&lt;br&gt;
-마찬가지로, 각 &lt;span class=&quot;pink-400&quot;&gt;최상위 도메인&lt;/span&gt;은 &lt;strong&gt;해당 &lt;span class=&quot;pink-400&quot;&gt;최상위 도메인&lt;/span&gt;을 소유한 기관 혹은 기업에서 관리&lt;/strong&gt;한다.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;현재 운영 중인 &lt;span class=&quot;pink-400&quot;&gt;최상위 도메인&lt;/span&gt;은 &lt;a href=&quot;https://www.iana.org/domains/root/db&quot;&gt;IANA&lt;/a&gt;에서 확인할 수 있다.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;여담으로, &lt;span class=&quot;pink-400&quot;&gt;최상위 도메인&lt;/span&gt;에 중복된 &lt;span class=&quot;yellow-400&quot;&gt;도메인&lt;/span&gt;을 등록할 수 없다. 예를 들어, 내가 &lt;code&gt;aaa.com&lt;/code&gt; URL을 등록한다고 가정해보자.&lt;br&gt;
-우선 제일 먼저 &lt;code&gt;.com&lt;/code&gt;을 관리하는 업체에 &lt;code&gt;aaa&lt;/code&gt;라는 &lt;span class=&quot;yellow-400&quot;&gt;도메인&lt;/span&gt;을 등록해야 한다. 하지만, 이미 누군가가 &lt;code&gt;aaa.com&lt;/code&gt;을 등록했다면 해당 소유주가 &lt;span class=&quot;yellow-400&quot;&gt;도메인&lt;/span&gt;의 소유권을 포기하기 전까진 &lt;code&gt;aaa.com&lt;/code&gt; &lt;span class=&quot;yellow-400&quot;&gt;도메인&lt;/span&gt;을 소유할 수 없다.&lt;br&gt;
-물론 &lt;code&gt;.com&lt;/code&gt;이 아닌 &lt;code&gt;.kr&lt;/code&gt;이나 &lt;code&gt;.net&lt;/code&gt;에는 등록할 수 있다. 하지만 &lt;code&gt;socket.io&lt;/code&gt; 처럼 &lt;span class=&quot;yellow-400&quot;&gt;도메인&lt;/span&gt;과 &lt;span class=&quot;pink-400&quot;&gt;최상위 도메인&lt;/span&gt;까지 의미론적으로 구성했다면, 이러한 상황이 달갑지 않을 것이다. 때문에 일전에 이슈됐던 &lt;span class=&quot;primary&quot;&gt;덮죽 상표권 선점&lt;/span&gt;과 비슷한 일이 일어나기도 한다.&lt;/p&gt;
-&lt;h2&gt;Port(포트)&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;상의 &lt;span class=&quot;amber-400&quot;&gt;443&lt;/span&gt; 부분. 앞에 반드시 &lt;code&gt;:&lt;/code&gt;이 붙는다.&lt;/p&gt;
-&lt;p&gt;인터넷에 연결된 모든 디바이스는 사용하는 네트워크의 IP를 할당받는다. 할당받은 IP 내에서 해당 디바이스가 수행 중인 모든 프로세스의 통신이 이루어진다. &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;는 프로세스의 데이터가 IO되는 통로다. 작업 시, 각 프로세스 별로 고유한 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;를 할당받으며, 하나의 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;는 반드시 하나의 프로세스와 1:1 매칭된다. 반면, 하나의 프로세스는 여러 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;를 할당받을 수 있다.&lt;br&gt;
-&lt;strong&gt;특정 프로세스와 통신하기 위해선 반드시 해당 프로세스가 할당받은 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;에 데이터를 전송&lt;/strong&gt;해야 한다. 때문에 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt; 통신은 어떤 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;가 보내는지는 크게 중요하지 않으며, 어떤 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;로 보내는지가 중요하다.&lt;/p&gt;
-&lt;p&gt;웹 통신에서의 기본&lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;는 아래와 같다.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;center&quot;&gt;포트&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;내용&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;80&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;HTTP 기본 포트&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;443&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;HTTPS 기본 포트&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;아마 이러한 숫자를 처음 볼 수도 있는데, 대부분의 웹 사이트 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;에는 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;를 확인할 수 없다. 사이트가 &lt;strong&gt;각 프로토콜의 기본 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;로 서비스될 경우, &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;에서 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;를 생략&lt;/strong&gt;할 수 있다. 즉, &lt;code&gt;https://naver.com&lt;/code&gt;의 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;번호는 &lt;code&gt;443&lt;/code&gt;이지만, &lt;code&gt;443&lt;/code&gt;은 HTTPS의 기본 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;이므로 생략된다. 만약, &lt;code&gt;443&lt;/code&gt;이 아닌 &lt;code&gt;8080&lt;/code&gt;, &lt;code&gt;9200&lt;/code&gt;과 같은 &lt;strong&gt;임의의 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;로 서비스를 제공할 경우, &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;를 반드시 명시해야하므로 생략이 불가능&lt;/strong&gt;하다. 이 경우 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;은 &lt;code&gt;https://naver.com:8080&lt;/code&gt;이 될 것이다.&lt;br&gt;
-위와 같은 이유로, 대부분의 웹 사이트는 서비스하는 프로토콜에 맞는 기본 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;를 사용한다.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;는 &lt;strong&gt;0 ~ 65535&lt;/strong&gt;의 범위를 가지며, 크게 세 가지로 구분할 수 있다.&lt;/p&gt;
-&lt;h3&gt;잘 알려진 포트(well-known Port)&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;0 ~ 1023&lt;/strong&gt;의 범위에 해당하는 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;. 이 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;들은 컴퓨터에서 기본적으로 사용되는 주요 프로세스에 기본적으로 할당되는 포트로, ICANN(Internet Corporation for Assigned Names and Numbers, 국제 인터넷주소 관리기구)에 의해 통제된다.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;center&quot;&gt;포트&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;기능&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;용도&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;20, 21&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;FTP&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;파일 송수신&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;22&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;SFTP&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;파일 암호화 송수신&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;23&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;Telnet&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;터미널 통신&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;25&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;SMTP&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;메일 전송&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;53&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;DNS&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;DNS 통신&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;67&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;DHCP&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;DHCP 통신&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;80&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;HTTP&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;HTML 통신&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;443&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;HTTPS&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;HTML 암호화 통신&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;어디까지나 초기에 지정되는 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;이므로, 추후 &lt;strong&gt;사용자의 의도에 따라 비어있는 다른 포트로 변경&lt;/strong&gt;할 수도 있다. 즉, 초기값일뿐, 강제는 아니다.&lt;/p&gt;
-&lt;h3&gt;등록된 포트(registered Port)&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;1024 ~ 49151&lt;/strong&gt;의 범위에 해당하는 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;. 이 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;들은 컴퓨터의 기본 프로세스는 아니지만, 주요 프로그램들이 기본으로 사용하고자 ICANN에 등록한 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;다. &lt;span class=&quot;amber-400&quot;&gt;잘 알려진 포트&lt;/span&gt;와 마찬가지로 프로그램의 설정을 통해 &lt;strong&gt;사용자의 의도에 따라 비어있는 다른 포트로 변경&lt;/strong&gt;할 수 있다.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;center&quot;&gt;포트&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;기능&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;용도&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;1433&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;MSSQL&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;MSSQL DB 통신&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;3306&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;MySQL&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;MySQL DB 통신&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;3389&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;RDP&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;원격 데스크톱 접근 (Windows)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;5432&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;PostgreSQL&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;PostgreSQL DB 통신&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;8080&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;HTTP 통신(Tomcat 등)&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;HTTP 통신 (80포트 대용)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;27017&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;MongoDB&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;MongoDB 통신&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;주로 &lt;span class=&quot;primary&quot;&gt;DB&lt;/span&gt;같은 개발 관련 프로그램들이 많이 등록돼있다.&lt;/p&gt;
-&lt;h4&gt;왜? 하필 개발 관련 프로그램들만?&lt;/h4&gt;
-&lt;p&gt;개발 관련 프로그램들은 그 특성 상 통신의 방식이 &lt;strong&gt;항상 일정&lt;/strong&gt;해야 한다. 만약 DB의 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;가 기동할 때마다 수시로 변경된다면 어떨까? 이유를 막론하고 DB가 재기동될 경우, 개발자는 DB가 사용 중인 임의의 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;를 추적하여 프로그램의 DB 통신 코드를 변경해야하는 매우 불합리한 상황이 발생하게 된다.&lt;/p&gt;
-&lt;p&gt;이에 비해 게임이나 IDE 같은 일반적인 프로그램들은 굳이 통신의 방식이 일정할 필요는 없다. 어찌됐든 &lt;strong&gt;서버에 정보를 요청하는 순간, 서버는 자연스레 내 통신 정보를 알게되기 때문&lt;/strong&gt;이다. 서버는 요청했던 경로로 다시 데이터를 반환해주면 된다. 어떤 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;가 보내는지는 별로 중요하지 않는 이유가 여기에 있다.&lt;/p&gt;
-&lt;h3&gt;동적 포트(dynamic Port)&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;49152 ~ 65535&lt;/strong&gt;의 범위에 해당하는 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;. 대다수의 프로그램들은 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt; 기본값이 지정되지 않는 경우가 대부분이다. 이러한 프로그램들은 &lt;span class=&quot;amber-400&quot;&gt;동적 포트&lt;/span&gt; 중 사용 가능한 임의의 빈 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;를 자동으로 점유한다. 때문에 ICANN이 관리하지도 않으며, 특정 프로그램이 고유한 &lt;span class=&quot;amber-400&quot;&gt;포트&lt;/span&gt;로 등록되어있지도 않다. 자유석을 생각하면 편하다.&lt;/p&gt;
-&lt;h3&gt;Path(경로)&lt;/h3&gt;
-&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;상의 &lt;span class=&quot;cyan-400&quot;&gt;posts&lt;/span&gt; 부분. 웹 사이트의 하위 경로를 의미한다. &lt;span class=&quot;cyan-400&quot;&gt;경로&lt;/span&gt;는 &lt;code&gt;/&lt;/code&gt;로 구분하며, 경로 입력을 통해 서버 내의 원하는 자원에 접근할 수 있다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://rwb0104.github.io&quot;&gt;https://rwb0104.github.io&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;posts
-&lt;ul&gt;
-&lt;li&gt;index.html&lt;/li&gt;
-&lt;li&gt;A1000
-&lt;ul&gt;
-&lt;li&gt;index.html&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;A1001
-&lt;ul&gt;
-&lt;li&gt;index.html&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;uri-url-urn
-&lt;ul&gt;
-&lt;li&gt;index.html&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;project
-&lt;ul&gt;
-&lt;li&gt;index.html&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;index.html&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;위 트리는 이 블로그의 단편적인 디렉토리 예시다. 이 중 해당 게시물에 접근하려면 &lt;span class=&quot;cyan-400&quot;&gt;경로&lt;/span&gt;는 &lt;code&gt;/posts/uri-url-urn/index.html&lt;/code&gt;와 같이 구성할 수 있다. &lt;span class=&quot;primary&quot;&gt;index.html은 생략이 가능&lt;/span&gt;하므로 &lt;code&gt;/posts/uri-url-urn&lt;/code&gt;로 접근해도 무방하다.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;아시나요?&lt;/strong&gt;&lt;br&gt;
-&lt;strong&gt;index.html&lt;/strong&gt; 경로의 기본 HTML을 의미함. 더이상의 하위 경로를 표시하지 않을 경우, 해당 경로의 index.html를 응답한다.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;span class=&quot;cyan-400&quot;&gt;경로&lt;/span&gt;는 서버의 구조에 따라 결정되므로, 사이트마다 천차만별이다.&lt;/p&gt;
-&lt;h3&gt;Query String(쿼리 문자열)&lt;/h3&gt;
-&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;상의 &lt;span class=&quot;teal-400&quot;&gt;?category=WEB&amp;#x26;page=1&lt;/span&gt; 부분. 해당 &lt;span class=&quot;cyan-400&quot;&gt;경로&lt;/span&gt;에 임의의 데이터를 같이 전송할 때 사용한다.&lt;br&gt;
-&lt;span class=&quot;primary&quot;&gt;key=value&lt;/span&gt; 형태로 이루어지며, 각 &lt;code&gt;key&lt;/code&gt;는 &lt;span class=&quot;purple-400&quot;&gt;Parameter(파라미터)&lt;/span&gt;라 칭한다. 첫 &lt;span class=&quot;purple-400&quot;&gt;파라미터&lt;/span&gt;는 &lt;code&gt;?&lt;/code&gt;로 시작하며, 이후 각 &lt;span class=&quot;purple-400&quot;&gt;파라미터&lt;/span&gt;들은 &lt;code&gt;&amp;#x26;&lt;/code&gt;으로 구분된다. 즉 &lt;code&gt;?key1=value1&amp;#x26;key2=value2&amp;#x26;key3=value3&lt;/code&gt;과 같은 양식으로 전개된다.&lt;/p&gt;
-&lt;p&gt;임의의 키워드를 전달하여 페이지의 동작을 제어할 수 있다. &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt; 중 &lt;strong&gt;사용자의 니즈가 가장 활발하게 반영&lt;/strong&gt;되는 부분. &lt;span class=&quot;teal-400&quot;&gt;쿼리 문자열&lt;/span&gt;은 각각의 &lt;code&gt;key&lt;/code&gt;에 대한 역할을 정의해야 하므로, 개발자가 각 &lt;span class=&quot;purple-400&quot;&gt;파라미터&lt;/span&gt;의 &lt;code&gt;key&lt;/code&gt;가 동작하는 로직을 작성했을 때 그 의미가 있다.&lt;/p&gt;
-&lt;h2&gt;URN 구조&lt;/h2&gt;
-&lt;p&gt;지금까지 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;에 대해선 상당히 장황하게 설명했지만, &lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;의 경우 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;보다 역사가 짧다. 또한 &lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;이 상당수 활성화된 후 생긴 탓에, 현재까지도 비주류를 면치 못 해 구현된 예시도 그리 많지 않은게 현실이다.&lt;br&gt;
-&lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;이 위치만 바뀌어도 찾을 수 없다는 단점은, 오히려 제공중인 데이터를 은닉하는 측면 등 상황에 따라 오히려 이득이기도 하다. 즉, &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;의 단점이 사용에 있어서 크리티컬하지 않는다는 것이다. 이는 곳 &lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;의 장점이 현재 구축된 &lt;span class=&quot;primary&quot;&gt;URL&lt;/span&gt;체계를 갈아 엎을 정도로 매력적이지 않다는 주장이 된다.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;은 아래와 같은 구조로 이루어진다. 각 요소는 &lt;code&gt;:&lt;/code&gt;으로 구분한다.&lt;/p&gt;
-&lt;p class=&quot;large&quot; align=&quot;center&quot;&gt;&lt;span class=&quot;lightBlue-400&quot;&gt;urn&lt;/span&gt;:&lt;span class=&quot;green-400&quot;&gt;isbn&lt;/span&gt;:&lt;span class=&quot;yellow-400&quot;&gt;1234567890&lt;/span&gt;&lt;/p&gt;
-&lt;h3&gt;Protocol(프로토콜)&lt;/h3&gt;
-&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;상의 &lt;span class=&quot;lightBlue-400&quot;&gt;urn&lt;/span&gt; 부분. &lt;code&gt;urn&lt;/code&gt;으로 시작하면 &lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;체계로 보면 된다.&lt;/p&gt;
-&lt;h3&gt;NID(Namespace Identifier, 네임스페이스 지시자)&lt;/h3&gt;
-&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;상의 &lt;span class=&quot;green-400&quot;&gt;isbn&lt;/span&gt; 부분. &lt;strong&gt;자원이 저장된 저장소&lt;/strong&gt;를 표시한다.&lt;br&gt;
-&lt;code&gt;isbn&lt;/code&gt;은 서지정보유통지원시스템으로 도서 일련번호에 대한 정보를 저장하는 저장소이다. 즉, &lt;code&gt;isbn&lt;/code&gt;을 &lt;span class=&quot;green-400&quot;&gt;NID&lt;/span&gt;로 지정하면 도서 관련 자원을 식별할 수 있다.&lt;/p&gt;
-&lt;h3&gt;NSS(Namespace Specific String, 네임스페이스 특정 문자)&lt;/h3&gt;
-&lt;p&gt;&lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;상의 &lt;span class=&quot;yellow-400&quot;&gt;1234567890&lt;/span&gt; 부분. &lt;strong&gt;자원을 식별할 수 있는 고유값&lt;/strong&gt;이다.&lt;br&gt;
-&lt;span class=&quot;green-400&quot;&gt;NID&lt;/span&gt;가 &lt;code&gt;isbn&lt;/code&gt;으로 지정되어 있으므로, ISBN의 일련번호가 1234567890인 도서를 식별하는 &lt;span class=&quot;primary&quot;&gt;URN&lt;/span&gt;이라 볼 수 있다.&lt;/p&gt;
-</description>
-		<pubDate>2021-05-28T18:30:17.000Z</pubDate>
-		<link>https://rwb0104.github.io/posts/uri-url-urn/</link>
-		<guid isPermaLink="true">https://rwb0104.github.io/posts/uri-url-urn/</guid>
-		<category>WEB</category>
-		<category>WEB</category>
-		<category>WEB(웹)</category>
-		<category>URI</category>
-		<category>URL</category>
-		<category>URN</category>
 	</item>
 </rss>

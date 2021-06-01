@@ -1,0 +1,2879 @@
+<!DOCTYPE html><html lang="ko"><head><link rel="icon" href="/favicons/favicon.ico"/><link rel="shortcut icon" href="/favicons/favicon.ico"/><meta name="google-site-verification" content="4NW8SDMGP89T6Sldqnv7ldyklb-kQkq0hq9tOdGgLsM"/><meta name="viewport" content="width=device-width"/><meta charSet="utf-8"/><title>백준 알고리즘 시작하기 - Kapoo</title><meta name="description" content="코딩 테스트 및 개인 실력 향상을 위해 백준 알고리즘을 차례로 풀어보기로 했다. 그냥 풀기만 하면 분명히 나중에 어떻게 풀었는지 까먹을테니, 이해한 내용을 포스팅하며 풀이를 진행한다. 풀이의 규칙은 아래와 같다."/><meta property="og:site_name" content="Kapoo"/><meta property="og:title" content="백준 알고리즘 시작하기"/><meta property="og:description" content="코딩 테스트 및 개인 실력 향상을 위해 백준 알고리즘을 차례로 풀어보기로 했다. 그냥 풀기만 하면 분명히 나중에 어떻게 풀었는지 까먹을테니, 이해한 내용을 포스팅하며 풀이를 진행한다. 풀이의 규칙은 아래와 같다."/><meta property="og:type" content="website"/><meta property="og:url" content="https://rwb0104.github.io/posts/2021/05/21/start-beakjoon/"/><meta property="og:image" content="https://user-images.githubusercontent.com/50317129/120028591-d5ece480-c02f-11eb-88f0-e14fc647dd81.png"/><meta property="og:locale" content="ko_KR"/><link rel="canonical" href="https://rwb0104.github.io/posts/2021/05/21/start-beakjoon/"/><meta name="next-head-count" content="12"/><link rel="preload" href="/_next/static/css/3698a96e087d62aeb0e1.css" as="style"/><link rel="stylesheet" href="/_next/static/css/3698a96e087d62aeb0e1.css" data-n-g=""/><noscript data-n-css=""></noscript><link rel="preload" href="/_next/static/chunks/webpack-e8d31e5d8211df09d935.js" as="script"/><link rel="preload" href="/_next/static/chunks/framework-6ff532a7be3ee3e264f2.js" as="script"/><link rel="preload" href="/_next/static/chunks/433-24ec5d7c7c484d4d525c.js" as="script"/><link rel="preload" href="/_next/static/chunks/573-1a428ff62d6402014c56.js" as="script"/><link rel="preload" href="/_next/static/chunks/main-7080815fe6487a7f4e05.js" as="script"/><link rel="preload" href="/_next/static/chunks/0a301732-836e7d8acda45c546016.js" as="script"/><link rel="preload" href="/_next/static/chunks/598-50fc99edcf172d0552b6.js" as="script"/><link rel="preload" href="/_next/static/chunks/470-a23b6bc125b4b2f380d5.js" as="script"/><link rel="preload" href="/_next/static/chunks/442-9a74cfe8ecae82c0ebaf.js" as="script"/><link rel="preload" href="/_next/static/chunks/578-7f3988690ed960853c3e.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/_app-cff56d7a683da9ae2483.js" as="script"/><link rel="preload" href="/_next/static/chunks/631-e32fbaeb906398a2fc70.js" as="script"/><link rel="preload" href="/_next/static/chunks/775-aa6d5e094dbc2b8927b3.js" as="script"/><link rel="preload" href="/_next/static/chunks/883-186e6d96d92be83fb7e0.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/posts/%5B...slug%5D-50081d04fb10210fef1d.js" as="script"/><style id="jss-server-side">.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+}
+.MuiSvgIcon-colorPrimary {
+  color: #2196f3;
+}
+.MuiSvgIcon-colorSecondary {
+  color: #3d5afe;
+}
+.MuiSvgIcon-colorAction {
+  color: #fff;
+}
+.MuiSvgIcon-colorError {
+  color: #f44336;
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(255, 255, 255, 0.3);
+}
+.MuiSvgIcon-fontSizeInherit {
+  font-size: inherit;
+}
+.MuiSvgIcon-fontSizeSmall {
+  font-size: 1.25rem;
+}
+.MuiSvgIcon-fontSizeLarge {
+  font-size: 2.1875rem;
+}
+.MuiPaper-root {
+  color: #fff;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #424242;
+}
+.MuiPaper-rounded {
+  border-radius: 4px;
+}
+.MuiPaper-outlined {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.MuiPaper-elevation0 {
+  box-shadow: none;
+}
+.MuiPaper-elevation1 {
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation2 {
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation3 {
+  box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation4 {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation5 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation6 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation7 {
+  box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation8 {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation9 {
+  box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation10 {
+  box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation11 {
+  box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation12 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation13 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation14 {
+  box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation15 {
+  box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation16 {
+  box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation17 {
+  box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation18 {
+  box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation19 {
+  box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation20 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation21 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation22 {
+  box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation23 {
+  box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation24 {
+  box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
+}
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+@media print {
+  .MuiButtonBase-root {
+    color-adjust: exact;
+  }
+}
+  .MuiIconButton-root {
+    flex: 0 0 auto;
+    color: #fff;
+    padding: 12px;
+    overflow: visible;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+  }
+  .MuiIconButton-root:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+  .MuiIconButton-root.Mui-disabled {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+  }
+@media (hover: none) {
+  .MuiIconButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-edgeStart {
+    margin-left: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
+    margin-left: -3px;
+  }
+  .MuiIconButton-edgeEnd {
+    margin-right: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
+    margin-right: -3px;
+  }
+  .MuiIconButton-colorInherit {
+    color: inherit;
+  }
+  .MuiIconButton-colorPrimary {
+    color: #2196f3;
+  }
+  .MuiIconButton-colorPrimary:hover {
+    background-color: rgba(33, 150, 243, 0.08);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-colorSecondary {
+    color: #3d5afe;
+  }
+  .MuiIconButton-colorSecondary:hover {
+    background-color: rgba(61, 90, 254, 0.08);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-sizeSmall {
+    padding: 3px;
+    font-size: 1.125rem;
+  }
+  .MuiIconButton-label {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiAppBar-root {
+    width: 100%;
+    display: flex;
+    z-index: 1100;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .MuiAppBar-positionFixed {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: fixed;
+  }
+@media print {
+  .MuiAppBar-positionFixed {
+    position: absolute;
+  }
+}
+  .MuiAppBar-positionAbsolute {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: absolute;
+  }
+  .MuiAppBar-positionSticky {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: sticky;
+  }
+  .MuiAppBar-positionStatic {
+    position: static;
+  }
+  .MuiAppBar-positionRelative {
+    position: relative;
+  }
+  .MuiAppBar-colorDefault {
+    color: #fff;
+    background-color: #212121;
+  }
+  .MuiAppBar-colorPrimary {
+    color: #fff;
+    background-color: #2196f3;
+  }
+  .MuiAppBar-colorSecondary {
+    color: #fff;
+    background-color: #3d5afe;
+  }
+  .MuiAppBar-colorInherit {
+    color: inherit;
+  }
+  .MuiAppBar-colorTransparent {
+    color: inherit;
+    background-color: transparent;
+  }
+  .MuiAvatar-root {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    font-size: 1.25rem;
+    align-items: center;
+    flex-shrink: 0;
+    font-family: 나눔스퀘어라운드, sans-serif;
+    line-height: 1;
+    user-select: none;
+    border-radius: 50%;
+    justify-content: center;
+  }
+  .MuiAvatar-colorDefault {
+    color: #020d1d;
+    background-color: #757575;
+  }
+  .MuiAvatar-rounded {
+    border-radius: 4px;
+  }
+  .MuiAvatar-square {
+    border-radius: 0;
+  }
+  .MuiAvatar-img {
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+    text-indent: 10000px;
+  }
+  .MuiAvatar-fallback {
+    width: 75%;
+    height: 75%;
+  }
+
+  .jss4 {  }
+  .jss17 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  }
+  .jss18 {
+    position: absolute;
+  }
+  .jss19 {  }
+  .jss20 {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .jss27 {  }
+  .jss28 {  }
+  .jss31 {  }
+  .jss33 {
+    display: flex;
+    align-items: center;
+  }
+  .jss34 {
+    flex-grow: 1;
+  }
+  .jss35 {  }
+  .jss36 {
+    flex-grow: 1;
+  }
+  .jss38 {  }
+  .jss47 {  }
+  .jss48 {
+    display: flex;
+    align-items: center;
+  }
+  .jss49 {
+    flex-grow: 1;
+  }
+  .jss50 {  }
+  .jss51 {
+    flex-grow: 1;
+  }
+  .jss52 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .jss53 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .jss54 {
+    display: flex;
+    justify-content: center;
+  }
+  .jss55 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .jss56 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .jss57 {
+    display: flex;
+    justify-content: center;
+  }
+  .jss58 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .jss59 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .jss60 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .MuiTypography-root {
+    margin: 0;
+  }
+  .MuiTypography-body2 {
+    font-size: 0.875rem;
+    font-family: 나눔스퀘어라운드, sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+  }
+  .MuiTypography-body1 {
+    font-size: 1rem;
+    font-family: 나눔스퀘어라운드, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .MuiTypography-caption {
+    font-size: 0.75rem;
+    font-family: 나눔스퀘어라운드, sans-serif;
+    font-weight: 400;
+    line-height: 1.66;
+  }
+  .MuiTypography-button {
+    font-size: 0.875rem;
+    font-family: 나눔스퀘어라운드, sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    text-transform: uppercase;
+  }
+  .MuiTypography-h1 {
+    font-size: 6rem;
+    font-family: 나눔스퀘어라운드, sans-serif;
+    font-weight: 300;
+    line-height: 1.167;
+  }
+  .MuiTypography-h2 {
+    font-size: 3.75rem;
+    font-family: 나눔스퀘어라운드, sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  .MuiTypography-h3 {
+    font-size: 3rem;
+    font-family: 나눔스퀘어라운드, sans-serif;
+    font-weight: 400;
+    line-height: 1.167;
+  }
+  .MuiTypography-h4 {
+    font-size: 2.125rem;
+    font-family: 나눔스퀘어라운드, sans-serif;
+    font-weight: 400;
+    line-height: 1.235;
+  }
+  .MuiTypography-h5 {
+    font-size: 1.5rem;
+    font-family: 나눔스퀘어라운드, sans-serif;
+    font-weight: 400;
+    line-height: 1.334;
+  }
+  .MuiTypography-h6 {
+    font-size: 1.25rem;
+    font-family: 나눔스퀘어라운드, sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+  .MuiTypography-subtitle1 {
+    font-size: 1rem;
+    font-family: 나눔스퀘어라운드, sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+  }
+  .MuiTypography-subtitle2 {
+    font-size: 0.875rem;
+    font-family: 나눔스퀘어라운드, sans-serif;
+    font-weight: 500;
+    line-height: 1.57;
+  }
+  .MuiTypography-overline {
+    font-size: 0.75rem;
+    font-family: 나눔스퀘어라운드, sans-serif;
+    font-weight: 400;
+    line-height: 2.66;
+    text-transform: uppercase;
+  }
+  .MuiTypography-srOnly {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+  }
+  .MuiTypography-alignLeft {
+    text-align: left;
+  }
+  .MuiTypography-alignCenter {
+    text-align: center;
+  }
+  .MuiTypography-alignRight {
+    text-align: right;
+  }
+  .MuiTypography-alignJustify {
+    text-align: justify;
+  }
+  .MuiTypography-noWrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .MuiTypography-gutterBottom {
+    margin-bottom: 0.35em;
+  }
+  .MuiTypography-paragraph {
+    margin-bottom: 16px;
+  }
+  .MuiTypography-colorInherit {
+    color: inherit;
+  }
+  .MuiTypography-colorPrimary {
+    color: #2196f3;
+  }
+  .MuiTypography-colorSecondary {
+    color: #3d5afe;
+  }
+  .MuiTypography-colorTextPrimary {
+    color: #fff;
+  }
+  .MuiTypography-colorTextSecondary {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .MuiTypography-colorError {
+    color: #f44336;
+  }
+  .MuiTypography-displayInline {
+    display: inline;
+  }
+  .MuiTypography-displayBlock {
+    display: block;
+  }
+  .MuiButton-root {
+    color: #fff;
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: 나눔스퀘어라운드, sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+  .MuiButton-root:hover {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+  .MuiButton-root.Mui-disabled {
+    color: rgba(255, 255, 255, 0.3);
+  }
+@media (hover: none) {
+  .MuiButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-root:hover.Mui-disabled {
+    background-color: transparent;
+  }
+  .MuiButton-label {
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiButton-text {
+    padding: 6px 8px;
+  }
+  .MuiButton-textPrimary {
+    color: #2196f3;
+  }
+  .MuiButton-textPrimary:hover {
+    background-color: rgba(33, 150, 243, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-textPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-textSecondary {
+    color: #3d5afe;
+  }
+  .MuiButton-textSecondary:hover {
+    background-color: rgba(61, 90, 254, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-textSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlined {
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    padding: 5px 15px;
+  }
+  .MuiButton-outlined.Mui-disabled {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  .MuiButton-outlinedPrimary {
+    color: #2196f3;
+    border: 1px solid rgba(33, 150, 243, 0.5);
+  }
+  .MuiButton-outlinedPrimary:hover {
+    border: 1px solid #2196f3;
+    background-color: rgba(33, 150, 243, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlinedSecondary {
+    color: #3d5afe;
+    border: 1px solid rgba(61, 90, 254, 0.5);
+  }
+  .MuiButton-outlinedSecondary:hover {
+    border: 1px solid #3d5afe;
+    background-color: rgba(61, 90, 254, 0.08);
+  }
+  .MuiButton-outlinedSecondary.Mui-disabled {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-contained {
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+  .MuiButton-contained:hover {
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+    background-color: #d5d5d5;
+  }
+  .MuiButton-contained.Mui-focusVisible {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained:active {
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained.Mui-disabled {
+    color: rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+@media (hover: none) {
+  .MuiButton-contained:hover {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+}
+  .MuiButton-contained:hover.Mui-disabled {
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+  .MuiButton-containedPrimary {
+    color: #fff;
+    background-color: #2196f3;
+  }
+  .MuiButton-containedPrimary:hover {
+    background-color: #1976d2;
+  }
+@media (hover: none) {
+  .MuiButton-containedPrimary:hover {
+    background-color: #2196f3;
+  }
+}
+  .MuiButton-containedSecondary {
+    color: #fff;
+    background-color: #3d5afe;
+  }
+  .MuiButton-containedSecondary:hover {
+    background-color: #304ffe;
+  }
+@media (hover: none) {
+  .MuiButton-containedSecondary:hover {
+    background-color: #3d5afe;
+  }
+}
+  .MuiButton-disableElevation {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation:hover {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation.Mui-focusVisible {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation:active {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation.Mui-disabled {
+    box-shadow: none;
+  }
+  .MuiButton-colorInherit {
+    color: inherit;
+    border-color: currentColor;
+  }
+  .MuiButton-textSizeSmall {
+    padding: 4px 5px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-textSizeLarge {
+    padding: 8px 11px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-outlinedSizeSmall {
+    padding: 3px 9px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-outlinedSizeLarge {
+    padding: 7px 21px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-containedSizeSmall {
+    padding: 4px 10px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-containedSizeLarge {
+    padding: 8px 22px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-fullWidth {
+    width: 100%;
+  }
+  .MuiButton-startIcon {
+    display: inherit;
+    margin-left: -4px;
+    margin-right: 8px;
+  }
+  .MuiButton-startIcon.MuiButton-iconSizeSmall {
+    margin-left: -2px;
+  }
+  .MuiButton-endIcon {
+    display: inherit;
+    margin-left: 8px;
+    margin-right: -4px;
+  }
+  .MuiButton-endIcon.MuiButton-iconSizeSmall {
+    margin-right: -2px;
+  }
+  .MuiButton-iconSizeSmall > *:first-child {
+    font-size: 18px;
+  }
+  .MuiButton-iconSizeMedium > *:first-child {
+    font-size: 20px;
+  }
+  .MuiButton-iconSizeLarge > *:first-child {
+    font-size: 22px;
+  }
+  .MuiContainer-root {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+@media (min-width:600px) {
+  .MuiContainer-root {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiContainer-disableGutters {
+    padding-left: 0;
+    padding-right: 0;
+  }
+@media (min-width:600px) {
+  .MuiContainer-fixed {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-fixed {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-fixed {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-fixed {
+    max-width: 1920px;
+  }
+}
+@media (min-width:0px) {
+  .MuiContainer-maxWidthXs {
+    max-width: 444px;
+  }
+}
+@media (min-width:600px) {
+  .MuiContainer-maxWidthSm {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-maxWidthMd {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-maxWidthLg {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-maxWidthXl {
+    max-width: 1920px;
+  }
+}
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+strong, b {
+  font-weight: 700;
+}
+body {
+  color: #fff;
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: 나눔스퀘어라운드, sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  background-color: #020d1d;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+body::backdrop {
+  background-color: #020d1d;
+}
+*::-webkit-scrollbar, *::-webkit-scrollbar-thumb {
+  width: 6px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background-clip: padding-box;
+}
+*::-webkit-scrollbar-thumb {
+  color: #404040;
+  box-shadow: inset 0 0 0 10px;
+}
+  .MuiDivider-root {
+    border: none;
+    height: 1px;
+    margin: 0;
+    flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+  .MuiDivider-absolute {
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+  }
+  .MuiDivider-inset {
+    margin-left: 72px;
+  }
+  .MuiDivider-light {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+  .MuiDivider-middle {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .MuiDivider-vertical {
+    width: 1px;
+    height: 100%;
+  }
+  .MuiDivider-flexItem {
+    height: auto;
+    align-self: stretch;
+  }
+  .MuiFab-root {
+    color: rgba(0, 0, 0, 0.87);
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    font-size: 0.875rem;
+    min-width: 0;
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+    box-sizing: border-box;
+    min-height: 36px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: 나눔스퀘어라운드, sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 50%;
+    text-transform: uppercase;
+    background-color: #e0e0e0;
+  }
+  .MuiFab-root:active {
+    box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+  }
+  .MuiFab-root:hover {
+    text-decoration: none;
+    background-color: #d5d5d5;
+  }
+  .MuiFab-root.Mui-focusVisible {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  }
+  .MuiFab-root.Mui-disabled {
+    color: rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+@media (hover: none) {
+  .MuiFab-root:hover {
+    background-color: #e0e0e0;
+  }
+}
+  .MuiFab-root:hover.Mui-disabled {
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+  .MuiFab-label {
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiFab-primary {
+    color: #fff;
+    background-color: #2196f3;
+  }
+  .MuiFab-primary:hover {
+    background-color: #1976d2;
+  }
+@media (hover: none) {
+  .MuiFab-primary:hover {
+    background-color: #2196f3;
+  }
+}
+  .MuiFab-secondary {
+    color: #fff;
+    background-color: #3d5afe;
+  }
+  .MuiFab-secondary:hover {
+    background-color: #304ffe;
+  }
+@media (hover: none) {
+  .MuiFab-secondary:hover {
+    background-color: #3d5afe;
+  }
+}
+  .MuiFab-extended {
+    width: auto;
+    height: 48px;
+    padding: 0 16px;
+    min-width: 48px;
+    min-height: auto;
+    border-radius: 24px;
+  }
+  .MuiFab-extended.MuiFab-sizeSmall {
+    width: auto;
+    height: 34px;
+    padding: 0 8px;
+    min-width: 34px;
+    border-radius: 17px;
+  }
+  .MuiFab-extended.MuiFab-sizeMedium {
+    width: auto;
+    height: 40px;
+    padding: 0 16px;
+    min-width: 40px;
+    border-radius: 20px;
+  }
+  .MuiFab-colorInherit {
+    color: inherit;
+  }
+  .MuiFab-sizeSmall {
+    width: 40px;
+    height: 40px;
+  }
+  .MuiFab-sizeMedium {
+    width: 48px;
+    height: 48px;
+  }
+  .MuiGrid-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  .MuiGrid-item {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .MuiGrid-zeroMinWidth {
+    min-width: 0;
+  }
+  .MuiGrid-direction-xs-column {
+    flex-direction: column;
+  }
+  .MuiGrid-direction-xs-column-reverse {
+    flex-direction: column-reverse;
+  }
+  .MuiGrid-direction-xs-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .MuiGrid-wrap-xs-nowrap {
+    flex-wrap: nowrap;
+  }
+  .MuiGrid-wrap-xs-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+  .MuiGrid-align-items-xs-center {
+    align-items: center;
+  }
+  .MuiGrid-align-items-xs-flex-start {
+    align-items: flex-start;
+  }
+  .MuiGrid-align-items-xs-flex-end {
+    align-items: flex-end;
+  }
+  .MuiGrid-align-items-xs-baseline {
+    align-items: baseline;
+  }
+  .MuiGrid-align-content-xs-center {
+    align-content: center;
+  }
+  .MuiGrid-align-content-xs-flex-start {
+    align-content: flex-start;
+  }
+  .MuiGrid-align-content-xs-flex-end {
+    align-content: flex-end;
+  }
+  .MuiGrid-align-content-xs-space-between {
+    align-content: space-between;
+  }
+  .MuiGrid-align-content-xs-space-around {
+    align-content: space-around;
+  }
+  .MuiGrid-justify-xs-center {
+    justify-content: center;
+  }
+  .MuiGrid-justify-xs-flex-end {
+    justify-content: flex-end;
+  }
+  .MuiGrid-justify-xs-space-between {
+    justify-content: space-between;
+  }
+  .MuiGrid-justify-xs-space-around {
+    justify-content: space-around;
+  }
+  .MuiGrid-justify-xs-space-evenly {
+    justify-content: space-evenly;
+  }
+  .MuiGrid-spacing-xs-1 {
+    width: calc(100% + 8px);
+    margin: -4px;
+  }
+  .MuiGrid-spacing-xs-1 > .MuiGrid-item {
+    padding: 4px;
+  }
+  .MuiGrid-spacing-xs-2 {
+    width: calc(100% + 16px);
+    margin: -8px;
+  }
+  .MuiGrid-spacing-xs-2 > .MuiGrid-item {
+    padding: 8px;
+  }
+  .MuiGrid-spacing-xs-3 {
+    width: calc(100% + 24px);
+    margin: -12px;
+  }
+  .MuiGrid-spacing-xs-3 > .MuiGrid-item {
+    padding: 12px;
+  }
+  .MuiGrid-spacing-xs-4 {
+    width: calc(100% + 32px);
+    margin: -16px;
+  }
+  .MuiGrid-spacing-xs-4 > .MuiGrid-item {
+    padding: 16px;
+  }
+  .MuiGrid-spacing-xs-5 {
+    width: calc(100% + 40px);
+    margin: -20px;
+  }
+  .MuiGrid-spacing-xs-5 > .MuiGrid-item {
+    padding: 20px;
+  }
+  .MuiGrid-spacing-xs-6 {
+    width: calc(100% + 48px);
+    margin: -24px;
+  }
+  .MuiGrid-spacing-xs-6 > .MuiGrid-item {
+    padding: 24px;
+  }
+  .MuiGrid-spacing-xs-7 {
+    width: calc(100% + 56px);
+    margin: -28px;
+  }
+  .MuiGrid-spacing-xs-7 > .MuiGrid-item {
+    padding: 28px;
+  }
+  .MuiGrid-spacing-xs-8 {
+    width: calc(100% + 64px);
+    margin: -32px;
+  }
+  .MuiGrid-spacing-xs-8 > .MuiGrid-item {
+    padding: 32px;
+  }
+  .MuiGrid-spacing-xs-9 {
+    width: calc(100% + 72px);
+    margin: -36px;
+  }
+  .MuiGrid-spacing-xs-9 > .MuiGrid-item {
+    padding: 36px;
+  }
+  .MuiGrid-spacing-xs-10 {
+    width: calc(100% + 80px);
+    margin: -40px;
+  }
+  .MuiGrid-spacing-xs-10 > .MuiGrid-item {
+    padding: 40px;
+  }
+  .MuiGrid-grid-xs-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-xs-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-xs-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-xs-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-xs-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-xs-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-xs-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-xs-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-xs-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-xs-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-xs-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-xs-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-xs-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-xs-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+@media (min-width:600px) {
+  .MuiGrid-grid-sm-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-sm-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-sm-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-sm-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-sm-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-sm-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-sm-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-sm-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-sm-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-sm-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-sm-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-sm-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-sm-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-sm-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:960px) {
+  .MuiGrid-grid-md-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-md-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-md-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-md-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-md-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-md-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-md-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-md-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-md-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-md-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-md-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-md-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-md-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-md-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1280px) {
+  .MuiGrid-grid-lg-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-lg-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-lg-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-lg-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-lg-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-lg-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-lg-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-lg-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-lg-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-lg-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-lg-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-lg-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-lg-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-lg-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1920px) {
+  .MuiGrid-grid-xl-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-xl-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-xl-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-xl-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-xl-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-xl-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-xl-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-xl-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-xl-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-xl-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-xl-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-xl-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-xl-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-xl-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+  .MuiGridList-root {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    list-style: none;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .MuiGridListTile-root {
+    box-sizing: border-box;
+    flex-shrink: 0;
+  }
+  .MuiGridListTile-tile {
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+  }
+  .MuiGridListTile-imgFullHeight {
+    left: 50%;
+    height: 100%;
+    position: relative;
+    transform: translateX(-50%);
+  }
+  .MuiGridListTile-imgFullWidth {
+    top: 50%;
+    width: 100%;
+    position: relative;
+    transform: translateY(-50%);
+  }
+  .MuiGridListTileBar-root {
+    left: 0;
+    right: 0;
+    height: 48px;
+    display: flex;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    font-family: 나눔스퀘어라운드, sans-serif;
+  }
+  .MuiGridListTileBar-titlePositionBottom {
+    bottom: 0;
+  }
+  .MuiGridListTileBar-titlePositionTop {
+    top: 0;
+  }
+  .MuiGridListTileBar-rootSubtitle {
+    height: 68px;
+  }
+  .MuiGridListTileBar-titleWrap {
+    color: #fff;
+    overflow: hidden;
+    flex-grow: 1;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .MuiGridListTileBar-titleWrapActionPosLeft {
+    margin-left: 0;
+  }
+  .MuiGridListTileBar-titleWrapActionPosRight {
+    margin-right: 0;
+  }
+  .MuiGridListTileBar-title {
+    overflow: hidden;
+    font-size: 1rem;
+    line-height: 24px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .MuiGridListTileBar-subtitle {
+    overflow: hidden;
+    font-size: 0.75rem;
+    line-height: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .MuiGridListTileBar-actionIconActionPosLeft {
+    order: -1;
+  }
+  .MuiLink-underlineNone {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover:hover {
+    text-decoration: underline;
+  }
+  .MuiLink-underlineAlways {
+    text-decoration: underline;
+  }
+  .MuiLink-button {
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiLink-button::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiLink-button.Mui-focusVisible {
+    outline: auto;
+  }
+  .MuiToolbar-root {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  .MuiToolbar-gutters {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+@media (min-width:600px) {
+  .MuiToolbar-gutters {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiToolbar-regular {
+    min-height: 56px;
+  }
+@media (min-width:0px) and (orientation: landscape) {
+  .MuiToolbar-regular {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .MuiToolbar-regular {
+    min-height: 64px;
+  }
+}
+  .MuiToolbar-dense {
+    min-height: 48px;
+  }
+  .jss1 {
+    z-index: 1201;
+    flex-grow: 1;
+    background: linear-gradient(to right, #000000CC, #434343CC);;
+    backdrop-filter: blur(5px) saturate(180%);
+    -webkit-backdrop-filter: blur(5px) saturate(180%);
+  }
+  .jss2 {
+    min-height: 64px;
+  }
+  .jss3 {
+    display: flex;
+  }
+  .jss5 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .jss6 {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .jss7 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .jss8 {
+    width: 100%;
+    height: calc(100vh - 64px);
+  }
+@media (max-width:959.95px) {
+  .jss8 {
+    height: calc(100vh - 136px);
+  }
+}
+  .jss9 {
+    top: 0;
+    clip: rect(0, auto, auto, 0);
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .jss10 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url(https://user-images.githubusercontent.com/50317129/120028591-d5ece480-c02f-11eb-88f0-e14fc647dd81.png);
+    background-repeat: no-repeat;
+    -o-background-size: cover;
+    background-position: center;
+    -moz-background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    -webkit-background-size: cover;
+  }
+  .jss11 {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+  }
+  .jss12 {
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 60px;
+  }
+  .jss13 {
+    color: white;
+    font-family: Blacksword, sans-serif;
+    font-weight: bold;
+    margin-bottom: 60px;
+  }
+  .jss13 span {
+    display: inline-block;
+  }
+  .jss14 {
+    color: white;
+  }
+  .jss15 {
+    color: white;
+    width: 100%;
+    padding: 20px;
+  }
+  .jss15 svg {
+    width: 50px;
+    height: 50px;
+  }
+@media (max-width:959.95px) {
+  .jss15 svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+  .jss16 {
+    opacity: 0;
+  }
+  .jss21 {
+    font-size: 1.5rem;
+    font-family: 나눔스퀘어라운드, sans-serif;
+    line-height: 1.75;
+    margin-bottom: 160px;
+  }
+  .jss21 .center {
+    text-align: center;
+  }
+  .jss21 .small {
+    font-size: 1.25rem;
+  }
+  .jss21 .large {
+    font-size: 1.75rem;
+  }
+  .jss21 .primary {
+    color: #1976d2;
+  }
+  .jss21 .secondary {
+    color: #304ffe;
+  }
+  .jss21 .error {
+    color: #d32f2f;
+  }
+  .jss21 .warning {
+    color: #f57c00;
+  }
+  .jss21 .info {
+    color: #f57c00;
+  }
+  .jss21 .success {
+    color: #f57c00;
+  }
+  .jss21 .red-50 {
+    color: #ffebee;
+  }
+  .jss21 .red-100 {
+    color: #ffcdd2;
+  }
+  .jss21 .red-200 {
+    color: #ef9a9a;
+  }
+  .jss21 .red-300 {
+    color: #e57373;
+  }
+  .jss21 .red-400 {
+    color: #ef5350;
+  }
+  .jss21 .red-500 {
+    color: #f44336;
+  }
+  .jss21 .red-600 {
+    color: #e53935;
+  }
+  .jss21 .red-700 {
+    color: #d32f2f;
+  }
+  .jss21 .red-800 {
+    color: #c62828;
+  }
+  .jss21 .red-900 {
+    color: #b71c1c;
+  }
+  .jss21 .red-A100 {
+    color: #ff8a80;
+  }
+  .jss21 .red-A200 {
+    color: #ff5252;
+  }
+  .jss21 .red-A400 {
+    color: #ff1744;
+  }
+  .jss21 .red-A700 {
+    color: #d50000;
+  }
+  .jss21 .pink-50 {
+    color: #fce4ec;
+  }
+  .jss21 .pink-100 {
+    color: #f8bbd0;
+  }
+  .jss21 .pink-200 {
+    color: #f48fb1;
+  }
+  .jss21 .pink-300 {
+    color: #f06292;
+  }
+  .jss21 .pink-400 {
+    color: #ec407a;
+  }
+  .jss21 .pink-500 {
+    color: #e91e63;
+  }
+  .jss21 .pink-600 {
+    color: #d81b60;
+  }
+  .jss21 .pink-700 {
+    color: #c2185b;
+  }
+  .jss21 .pink-800 {
+    color: #ad1457;
+  }
+  .jss21 .pink-900 {
+    color: #880e4f;
+  }
+  .jss21 .pink-A100 {
+    color: #ff80ab;
+  }
+  .jss21 .pink-A200 {
+    color: #ff4081;
+  }
+  .jss21 .pink-A400 {
+    color: #f50057;
+  }
+  .jss21 .pink-A700 {
+    color: #c51162;
+  }
+  .jss21 .purple-50 {
+    color: #f3e5f5;
+  }
+  .jss21 .purple-100 {
+    color: #e1bee7;
+  }
+  .jss21 .purple-200 {
+    color: #ce93d8;
+  }
+  .jss21 .purple-300 {
+    color: #ba68c8;
+  }
+  .jss21 .purple-400 {
+    color: #ab47bc;
+  }
+  .jss21 .purple-500 {
+    color: #9c27b0;
+  }
+  .jss21 .purple-600 {
+    color: #8e24aa;
+  }
+  .jss21 .purple-700 {
+    color: #7b1fa2;
+  }
+  .jss21 .purple-800 {
+    color: #6a1b9a;
+  }
+  .jss21 .purple-900 {
+    color: #4a148c;
+  }
+  .jss21 .purple-A100 {
+    color: #ea80fc;
+  }
+  .jss21 .purple-A200 {
+    color: #e040fb;
+  }
+  .jss21 .purple-A400 {
+    color: #d500f9;
+  }
+  .jss21 .purple-A700 {
+    color: #aa00ff;
+  }
+  .jss21 .deepPurple-50 {
+    color: #ede7f6;
+  }
+  .jss21 .deepPurple-100 {
+    color: #d1c4e9;
+  }
+  .jss21 .deepPurple-200 {
+    color: #b39ddb;
+  }
+  .jss21 .deepPurple-300 {
+    color: #9575cd;
+  }
+  .jss21 .deepPurple-400 {
+    color: #7e57c2;
+  }
+  .jss21 .deepPurple-500 {
+    color: #673ab7;
+  }
+  .jss21 .deepPurple-600 {
+    color: #5e35b1;
+  }
+  .jss21 .deepPurple-700 {
+    color: #512da8;
+  }
+  .jss21 .deepPurple-800 {
+    color: #4527a0;
+  }
+  .jss21 .deepPurple-900 {
+    color: #311b92;
+  }
+  .jss21 .deepPurple-A100 {
+    color: #b388ff;
+  }
+  .jss21 .deepPurple-A200 {
+    color: #7c4dff;
+  }
+  .jss21 .deepPurple-A400 {
+    color: #651fff;
+  }
+  .jss21 .deepPurple-A700 {
+    color: #6200ea;
+  }
+  .jss21 .indigo-50 {
+    color: #e8eaf6;
+  }
+  .jss21 .indigo-100 {
+    color: #c5cae9;
+  }
+  .jss21 .indigo-200 {
+    color: #9fa8da;
+  }
+  .jss21 .indigo-300 {
+    color: #7986cb;
+  }
+  .jss21 .indigo-400 {
+    color: #5c6bc0;
+  }
+  .jss21 .indigo-500 {
+    color: #3f51b5;
+  }
+  .jss21 .indigo-600 {
+    color: #3949ab;
+  }
+  .jss21 .indigo-700 {
+    color: #303f9f;
+  }
+  .jss21 .indigo-800 {
+    color: #283593;
+  }
+  .jss21 .indigo-900 {
+    color: #1a237e;
+  }
+  .jss21 .indigo-A100 {
+    color: #8c9eff;
+  }
+  .jss21 .indigo-A200 {
+    color: #536dfe;
+  }
+  .jss21 .indigo-A400 {
+    color: #3d5afe;
+  }
+  .jss21 .indigo-A700 {
+    color: #304ffe;
+  }
+  .jss21 .blue-50 {
+    color: #e3f2fd;
+  }
+  .jss21 .blue-100 {
+    color: #bbdefb;
+  }
+  .jss21 .blue-200 {
+    color: #90caf9;
+  }
+  .jss21 .blue-300 {
+    color: #64b5f6;
+  }
+  .jss21 .blue-400 {
+    color: #42a5f5;
+  }
+  .jss21 .blue-500 {
+    color: #2196f3;
+  }
+  .jss21 .blue-600 {
+    color: #1e88e5;
+  }
+  .jss21 .blue-700 {
+    color: #1976d2;
+  }
+  .jss21 .blue-800 {
+    color: #1565c0;
+  }
+  .jss21 .blue-900 {
+    color: #0d47a1;
+  }
+  .jss21 .blue-A100 {
+    color: #82b1ff;
+  }
+  .jss21 .blue-A200 {
+    color: #448aff;
+  }
+  .jss21 .blue-A400 {
+    color: #2979ff;
+  }
+  .jss21 .blue-A700 {
+    color: #2962ff;
+  }
+  .jss21 .lightBlue-50 {
+    color: #e1f5fe;
+  }
+  .jss21 .lightBlue-100 {
+    color: #b3e5fc;
+  }
+  .jss21 .lightBlue-200 {
+    color: #81d4fa;
+  }
+  .jss21 .lightBlue-300 {
+    color: #4fc3f7;
+  }
+  .jss21 .lightBlue-400 {
+    color: #29b6f6;
+  }
+  .jss21 .lightBlue-500 {
+    color: #03a9f4;
+  }
+  .jss21 .lightBlue-600 {
+    color: #039be5;
+  }
+  .jss21 .lightBlue-700 {
+    color: #0288d1;
+  }
+  .jss21 .lightBlue-800 {
+    color: #0277bd;
+  }
+  .jss21 .lightBlue-900 {
+    color: #01579b;
+  }
+  .jss21 .lightBlue-A100 {
+    color: #80d8ff;
+  }
+  .jss21 .lightBlue-A200 {
+    color: #40c4ff;
+  }
+  .jss21 .lightBlue-A400 {
+    color: #00b0ff;
+  }
+  .jss21 .lightBlue-A700 {
+    color: #0091ea;
+  }
+  .jss21 .cyan-50 {
+    color: #e0f7fa;
+  }
+  .jss21 .cyan-100 {
+    color: #b2ebf2;
+  }
+  .jss21 .cyan-200 {
+    color: #80deea;
+  }
+  .jss21 .cyan-300 {
+    color: #4dd0e1;
+  }
+  .jss21 .cyan-400 {
+    color: #26c6da;
+  }
+  .jss21 .cyan-500 {
+    color: #00bcd4;
+  }
+  .jss21 .cyan-600 {
+    color: #00acc1;
+  }
+  .jss21 .cyan-700 {
+    color: #0097a7;
+  }
+  .jss21 .cyan-800 {
+    color: #00838f;
+  }
+  .jss21 .cyan-900 {
+    color: #006064;
+  }
+  .jss21 .cyan-A100 {
+    color: #84ffff;
+  }
+  .jss21 .cyan-A200 {
+    color: #18ffff;
+  }
+  .jss21 .cyan-A400 {
+    color: #00e5ff;
+  }
+  .jss21 .cyan-A700 {
+    color: #00b8d4;
+  }
+  .jss21 .teal-50 {
+    color: #e0f2f1;
+  }
+  .jss21 .teal-100 {
+    color: #b2dfdb;
+  }
+  .jss21 .teal-200 {
+    color: #80cbc4;
+  }
+  .jss21 .teal-300 {
+    color: #4db6ac;
+  }
+  .jss21 .teal-400 {
+    color: #26a69a;
+  }
+  .jss21 .teal-500 {
+    color: #009688;
+  }
+  .jss21 .teal-600 {
+    color: #00897b;
+  }
+  .jss21 .teal-700 {
+    color: #00796b;
+  }
+  .jss21 .teal-800 {
+    color: #00695c;
+  }
+  .jss21 .teal-900 {
+    color: #004d40;
+  }
+  .jss21 .teal-A100 {
+    color: #a7ffeb;
+  }
+  .jss21 .teal-A200 {
+    color: #64ffda;
+  }
+  .jss21 .teal-A400 {
+    color: #1de9b6;
+  }
+  .jss21 .teal-A700 {
+    color: #00bfa5;
+  }
+  .jss21 .green-50 {
+    color: #e8f5e9;
+  }
+  .jss21 .green-100 {
+    color: #c8e6c9;
+  }
+  .jss21 .green-200 {
+    color: #a5d6a7;
+  }
+  .jss21 .green-300 {
+    color: #81c784;
+  }
+  .jss21 .green-400 {
+    color: #66bb6a;
+  }
+  .jss21 .green-500 {
+    color: #4caf50;
+  }
+  .jss21 .green-600 {
+    color: #43a047;
+  }
+  .jss21 .green-700 {
+    color: #388e3c;
+  }
+  .jss21 .green-800 {
+    color: #2e7d32;
+  }
+  .jss21 .green-900 {
+    color: #1b5e20;
+  }
+  .jss21 .green-A100 {
+    color: #b9f6ca;
+  }
+  .jss21 .green-A200 {
+    color: #69f0ae;
+  }
+  .jss21 .green-A400 {
+    color: #00e676;
+  }
+  .jss21 .green-A700 {
+    color: #00c853;
+  }
+  .jss21 .lightGreen-50 {
+    color: #f1f8e9;
+  }
+  .jss21 .lightGreen-100 {
+    color: #dcedc8;
+  }
+  .jss21 .lightGreen-200 {
+    color: #c5e1a5;
+  }
+  .jss21 .lightGreen-300 {
+    color: #aed581;
+  }
+  .jss21 .lightGreen-400 {
+    color: #9ccc65;
+  }
+  .jss21 .lightGreen-500 {
+    color: #8bc34a;
+  }
+  .jss21 .lightGreen-600 {
+    color: #7cb342;
+  }
+  .jss21 .lightGreen-700 {
+    color: #689f38;
+  }
+  .jss21 .lightGreen-800 {
+    color: #558b2f;
+  }
+  .jss21 .lightGreen-900 {
+    color: #33691e;
+  }
+  .jss21 .lightGreen-A100 {
+    color: #ccff90;
+  }
+  .jss21 .lightGreen-A200 {
+    color: #b2ff59;
+  }
+  .jss21 .lightGreen-A400 {
+    color: #76ff03;
+  }
+  .jss21 .lightGreen-A700 {
+    color: #64dd17;
+  }
+  .jss21 .lime-50 {
+    color: #f9fbe7;
+  }
+  .jss21 .lime-100 {
+    color: #f0f4c3;
+  }
+  .jss21 .lime-200 {
+    color: #e6ee9c;
+  }
+  .jss21 .lime-300 {
+    color: #dce775;
+  }
+  .jss21 .lime-400 {
+    color: #d4e157;
+  }
+  .jss21 .lime-500 {
+    color: #cddc39;
+  }
+  .jss21 .lime-600 {
+    color: #c0ca33;
+  }
+  .jss21 .lime-700 {
+    color: #afb42b;
+  }
+  .jss21 .lime-800 {
+    color: #9e9d24;
+  }
+  .jss21 .lime-900 {
+    color: #827717;
+  }
+  .jss21 .lime-A100 {
+    color: #f4ff81;
+  }
+  .jss21 .lime-A200 {
+    color: #eeff41;
+  }
+  .jss21 .lime-A400 {
+    color: #c6ff00;
+  }
+  .jss21 .lime-A700 {
+    color: #aeea00;
+  }
+  .jss21 .yellow-50 {
+    color: #fffde7;
+  }
+  .jss21 .yellow-100 {
+    color: #fff9c4;
+  }
+  .jss21 .yellow-200 {
+    color: #fff59d;
+  }
+  .jss21 .yellow-300 {
+    color: #fff176;
+  }
+  .jss21 .yellow-400 {
+    color: #ffee58;
+  }
+  .jss21 .yellow-500 {
+    color: #ffeb3b;
+  }
+  .jss21 .yellow-600 {
+    color: #fdd835;
+  }
+  .jss21 .yellow-700 {
+    color: #fbc02d;
+  }
+  .jss21 .yellow-800 {
+    color: #f9a825;
+  }
+  .jss21 .yellow-900 {
+    color: #f57f17;
+  }
+  .jss21 .yellow-A100 {
+    color: #ffff8d;
+  }
+  .jss21 .yellow-A200 {
+    color: #ffff00;
+  }
+  .jss21 .yellow-A400 {
+    color: #ffea00;
+  }
+  .jss21 .yellow-A700 {
+    color: #ffd600;
+  }
+  .jss21 .amber-50 {
+    color: #fff8e1;
+  }
+  .jss21 .amber-100 {
+    color: #ffecb3;
+  }
+  .jss21 .amber-200 {
+    color: #ffe082;
+  }
+  .jss21 .amber-300 {
+    color: #ffd54f;
+  }
+  .jss21 .amber-400 {
+    color: #ffca28;
+  }
+  .jss21 .amber-500 {
+    color: #ffc107;
+  }
+  .jss21 .amber-600 {
+    color: #ffb300;
+  }
+  .jss21 .amber-700 {
+    color: #ffa000;
+  }
+  .jss21 .amber-800 {
+    color: #ff8f00;
+  }
+  .jss21 .amber-900 {
+    color: #ff6f00;
+  }
+  .jss21 .amber-A100 {
+    color: #ffe57f;
+  }
+  .jss21 .amber-A200 {
+    color: #ffd740;
+  }
+  .jss21 .amber-A400 {
+    color: #ffc400;
+  }
+  .jss21 .amber-A700 {
+    color: #ffab00;
+  }
+  .jss21 .orange-50 {
+    color: #fff3e0;
+  }
+  .jss21 .orange-100 {
+    color: #ffe0b2;
+  }
+  .jss21 .orange-200 {
+    color: #ffcc80;
+  }
+  .jss21 .orange-300 {
+    color: #ffb74d;
+  }
+  .jss21 .orange-400 {
+    color: #ffa726;
+  }
+  .jss21 .orange-500 {
+    color: #ff9800;
+  }
+  .jss21 .orange-600 {
+    color: #fb8c00;
+  }
+  .jss21 .orange-700 {
+    color: #f57c00;
+  }
+  .jss21 .orange-800 {
+    color: #ef6c00;
+  }
+  .jss21 .orange-900 {
+    color: #e65100;
+  }
+  .jss21 .orange-A100 {
+    color: #ffd180;
+  }
+  .jss21 .orange-A200 {
+    color: #ffab40;
+  }
+  .jss21 .orange-A400 {
+    color: #ff9100;
+  }
+  .jss21 .orange-A700 {
+    color: #ff6d00;
+  }
+  .jss21 .deepOrange-50 {
+    color: #fbe9e7;
+  }
+  .jss21 .deepOrange-100 {
+    color: #ffccbc;
+  }
+  .jss21 .deepOrange-200 {
+    color: #ffab91;
+  }
+  .jss21 .deepOrange-300 {
+    color: #ff8a65;
+  }
+  .jss21 .deepOrange-400 {
+    color: #ff7043;
+  }
+  .jss21 .deepOrange-500 {
+    color: #ff5722;
+  }
+  .jss21 .deepOrange-600 {
+    color: #f4511e;
+  }
+  .jss21 .deepOrange-700 {
+    color: #e64a19;
+  }
+  .jss21 .deepOrange-800 {
+    color: #d84315;
+  }
+  .jss21 .deepOrange-900 {
+    color: #bf360c;
+  }
+  .jss21 .deepOrange-A100 {
+    color: #ff9e80;
+  }
+  .jss21 .deepOrange-A200 {
+    color: #ff6e40;
+  }
+  .jss21 .deepOrange-A400 {
+    color: #ff3d00;
+  }
+  .jss21 .deepOrange-A700 {
+    color: #dd2c00;
+  }
+  .jss21 .brown-50 {
+    color: #efebe9;
+  }
+  .jss21 .brown-100 {
+    color: #d7ccc8;
+  }
+  .jss21 .brown-200 {
+    color: #bcaaa4;
+  }
+  .jss21 .brown-300 {
+    color: #a1887f;
+  }
+  .jss21 .brown-400 {
+    color: #8d6e63;
+  }
+  .jss21 .brown-500 {
+    color: #795548;
+  }
+  .jss21 .brown-600 {
+    color: #6d4c41;
+  }
+  .jss21 .brown-700 {
+    color: #5d4037;
+  }
+  .jss21 .brown-800 {
+    color: #4e342e;
+  }
+  .jss21 .brown-900 {
+    color: #3e2723;
+  }
+  .jss21 .brown-A100 {
+    color: #d7ccc8;
+  }
+  .jss21 .brown-A200 {
+    color: #bcaaa4;
+  }
+  .jss21 .brown-A400 {
+    color: #8d6e63;
+  }
+  .jss21 .brown-A700 {
+    color: #5d4037;
+  }
+  .jss21 .grey-50 {
+    color: #fafafa;
+  }
+  .jss21 .grey-100 {
+    color: #f5f5f5;
+  }
+  .jss21 .grey-200 {
+    color: #eeeeee;
+  }
+  .jss21 .grey-300 {
+    color: #e0e0e0;
+  }
+  .jss21 .grey-400 {
+    color: #bdbdbd;
+  }
+  .jss21 .grey-500 {
+    color: #9e9e9e;
+  }
+  .jss21 .grey-600 {
+    color: #757575;
+  }
+  .jss21 .grey-700 {
+    color: #616161;
+  }
+  .jss21 .grey-800 {
+    color: #424242;
+  }
+  .jss21 .grey-900 {
+    color: #212121;
+  }
+  .jss21 .grey-A100 {
+    color: #d5d5d5;
+  }
+  .jss21 .grey-A200 {
+    color: #aaaaaa;
+  }
+  .jss21 .grey-A400 {
+    color: #303030;
+  }
+  .jss21 .grey-A700 {
+    color: #616161;
+  }
+  .jss21 .blueGrey-50 {
+    color: #eceff1;
+  }
+  .jss21 .blueGrey-100 {
+    color: #cfd8dc;
+  }
+  .jss21 .blueGrey-200 {
+    color: #b0bec5;
+  }
+  .jss21 .blueGrey-300 {
+    color: #90a4ae;
+  }
+  .jss21 .blueGrey-400 {
+    color: #78909c;
+  }
+  .jss21 .blueGrey-500 {
+    color: #607d8b;
+  }
+  .jss21 .blueGrey-600 {
+    color: #546e7a;
+  }
+  .jss21 .blueGrey-700 {
+    color: #455a64;
+  }
+  .jss21 .blueGrey-800 {
+    color: #37474f;
+  }
+  .jss21 .blueGrey-900 {
+    color: #263238;
+  }
+  .jss21 .blueGrey-A100 {
+    color: #cfd8dc;
+  }
+  .jss21 .blueGrey-A200 {
+    color: #b0bec5;
+  }
+  .jss21 .blueGrey-A400 {
+    color: #78909c;
+  }
+  .jss21 .blueGrey-A700 {
+    color: #455a64;
+  }
+  .jss21 .MuiDivider-root {
+    border: none;
+    height: 1px;
+    margin: 0;
+    flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+  .jss21 h1, .jss21 h2, .jss21 h3, .jss21 h4, .jss21 h5, .jss21 h6 {
+    margin-top: 80px;
+  }
+  .jss21 h1, .jss21 h2, .jss21 h3 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  .jss21 a {
+    color: #29b6f6;
+  }
+  .jss21 blockquote {
+    color: #AAA;
+    padding: 15px 25px;
+    font-style: italic;
+    margin-top: 64px;
+    border-left: 4px solid #ff9800;
+    margin-bottom: 64px;
+    background-color: #222;
+  }
+  .jss21 img {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .jss21 p span {
+    word-break: break-word;
+  }
+  .jss21 strong {
+    word-break: break-word;
+  }
+  .jss21 table {
+    margin: auto;
+    display: block;
+    padding: 0;
+    overflow: auto;
+    font-size: 1rem;
+    margin-top: 56px;
+    margin-bottom: 56px;
+    border-collapse: collapse;
+  }
+  .jss21 code:not([class*='language-']) {
+    color: white;
+    padding: 5px;
+    font-size: 0.75em;
+    word-break: break-word;
+    font-family: Hack, 나눔스퀘어라운드, monospace;
+    margin-left: 8px;
+    user-select: text;
+    margin-right: 8px;
+    border-radius: 5px;
+    -ms-user-select: text;
+    -moz-user-select: text;
+    background-color: #303f9f;
+    -webkit-user-select: text;
+  }
+  .jss21 code[class*='language-'], .jss21 pre[class*='language-'] {
+    color: #ccc;
+    hyphens: none;
+    tab-size: 4;
+    font-size: 16px;
+    word-wrap: normal;
+    background: none;
+    text-align: left;
+    word-break: normal;
+    -ms-hyphens: none;
+    font-family: Hack, 나눔스퀘어라운드, monospace;
+    line-height: 1.5;
+    white-space: pre;
+    -moz-hyphens: none;
+    word-spacing: normal;
+    -moz-tab-size: 4;
+    -webkit-hyphens: none;
+  }
+  .jss21 pre[class*='language-'] {
+    margin: .5em 0;
+    padding: 1em;
+    overflow: auto;
+  }
+  .jss21 :not(pre) > code[class*='language-'], .jss21 pre[class*='language-'] {
+    background: #020213;
+    border-radius: 10px;
+  }
+  .jss21 :not(pre) > code[class*='language-'] {
+    padding: .1em;
+    white-space: normal;
+    border-radius: .3em;
+  }
+  .jss21 .token.comment, .jss21 .token.block-comment, .jss21 .token.prolog, .jss21 .token.doctype, .jss21 .token.cdata {
+    color: #00c800;
+  }
+  .jss21 .token.punctuation {
+    color: #ccc;
+  }
+  .jss21 .token.tag, .jss21 .token.attr-name, .jss21 .token.namespace, .jss21 .token.deleted {
+    color: #e2777a;
+  }
+  .jss21 .token.function-name {
+    color: #6196cc;
+  }
+  .jss21 .token.boolean, .jss21 .token.number, .jss21 .token.function {
+    color: #f08d49;
+  }
+  .jss21 .token.property, .jss21 .token.class-name, .jss21 .token.constant, .jss21 .token.symbol {
+    color: #f8c555;
+  }
+  .jss21 .token.selector, .jss21 .token.important, .jss21 .token.atrule, .jss21 .token.keyword, .jss21 .token.builtin {
+    color: #cc99cd;
+  }
+  .jss21 .token.string, .jss21 .token.char, .jss21 .token.attr-value, .jss21 .token.regex, .jss21 .token.variable {
+    color: #7ec699;
+  }
+  .jss21 .token.operator, .jss21 .token.entity, .jss21 .token.url {
+    color: #67cdcc;
+  }
+  .jss21 .token.important, .jss21 .token.bold {
+    font-weight: bold;
+  }
+  .jss21 .token.italic {
+    font-style: italic;
+  }
+  .jss21 .token.entity {
+    cursor: help;
+  }
+  .jss21 .token.inserted {
+    color: green;
+  }
+  .jss21 a.head-link {
+    margin-right: 8px;
+    text-decoration: none;
+  }
+  .jss21 table tr {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #333333;
+    background-color: transparent;
+  }
+  .jss21 table tr:nth-child(2n) {
+    background-color: #041733;
+  }
+  .jss21 table tr th {
+    border: 1px solid #333333;
+    margin: 0;
+    padding: 6px 13px;
+    word-break: keep-all;
+    font-weight: bold;
+  }
+  .jss21 table tr td {
+    border: 1px solid #333333;
+    margin: 0;
+    padding: 6px 13px;
+    word-break: keep-all;
+  }
+  .jss21 table tr th :first-child, .jss21 table tr td :first-child {
+    margin-top: 0;
+  }
+  .jss21 table tr th :last-child, .jss21 table tr td :last-child {
+    margin-bottom: 0;
+  }
+  .jss21 blockquote > :first-child {
+    margin-top: 0;
+  }
+  .jss21 blockquote > :last-child {
+    margin-bottom: 0;
+  }
+  .jss21 .remark-highlight * {
+    user-select: text;
+    -ms-user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+  }
+  .jss22 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .jss23 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .jss24 {
+    cursor: pointer;
+    flex-wrap: nowrap;
+    transform: translateZ(0);
+  }
+  .jss25:hover img {
+    transform: translateY(-50%) scale(1.2);
+    transition: 0.5s;
+  }
+  .jss25 .MuiGridListTileBar-title {
+    transition: 0.5s;
+  }
+  .jss25:hover .MuiGridListTileBar-title {
+    color: #1976d2;
+    transition: 0.5s;
+  }
+  .jss26 {
+    transition: 0.5s;
+  }
+  .jss29 {
+    margin-bottom: 40px;
+  }
+  .jss30 {
+    margin-right: 24px;
+  }
+  .jss32 {
+    height: 100%;
+  }
+  .jss37 {
+    margin-top: 80px;
+  }
+  .jss39 {
+    margin-top: 160px;
+    padding-bottom: 80px;
+  }
+  .jss40 {
+    margin-top: 80px;
+  }
+  .jss40 > div {
+    margin-bottom: 40px;
+  }
+  .jss41 {
+    animation: rotate 5s linear infinite;
+    transform-origin: 50% 50%;
+  }
+  .jss42 {
+    color: #CCCCCC;
+    font-family: 나눔스퀘어라운드, sans-serif;
+    font-weight: bold;
+    margin-bottom: 24px;
+  }
+  .jss43 {
+    color: #CCCCCC;
+  }
+  .jss45 {
+    border: 3px solid white;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .jss46 {
+    color: #CCCCCC;
+    margin: 8px;
+  }
+  .jss61 {
+    color: #eeeeee;
+    right: 50px;
+    bottom: 50px;
+    position: fixed;
+    background-color: #424242;
+  }
+  .jss61:hover {
+    background-color: #616161;
+  }
+  .jss61 svg {
+    color: #fb8c00;
+  }
+@media (min-width:960px) {
+  .jss61 span {
+    margin-left: 8px;
+  }
+}
+@media (max-width:959.95px) {
+  .jss61 {
+    right: 20px;
+    bottom: 70px;
+  }
+}
+  .jss62 {
+    color: #212121;
+    right: 50px;
+    bottom: 50px;
+    position: fixed;
+    background-color: #eeeeee;
+  }
+  .jss62:hover {
+    background-color: #e0e0e0;
+  }
+  .jss62 svg {
+    color: #1e88e5;
+  }
+@media (min-width:960px) {
+  .jss62 span {
+    margin-left: 8px;
+  }
+}
+@media (max-width:959.95px) {
+  .jss62 {
+    right: 20px;
+    bottom: 70px;
+  }
+}
+  .jss63 {
+    height: 24px;
+  }</style></head><body><div id="__next"><header class="MuiBox-root jss4"><header class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary jss1 mui-fixed MuiPaper-elevation4"><div class="MuiToolbar-root MuiToolbar-regular jss2 MuiToolbar-gutters"><div class="MuiContainer-root jss3 MuiContainer-maxWidthLg"></div></div></header></header><div class="MuiBox-root jss17 jss8" id="top"><div class="MuiBox-root jss18 jss9"><div class="MuiBox-root jss19 jss10"></div></div><div class="MuiBox-root jss20 jss11"><h3 class="MuiTypography-root jss14 MuiTypography-h3 MuiTypography-alignCenter" up="h3" down="h5"><div class="react-reveal">[알고리즘]</div></h3><h2 class="MuiTypography-root jss12 MuiTypography-h2 MuiTypography-alignCenter" up="h2" down="h4"><div class="react-reveal">백준 알고리즘 시작하기</div></h2><h4 class="MuiTypography-root jss14 MuiTypography-h4 MuiTypography-alignCenter" up="h4" down="h6"><div class="react-reveal">2021-05-21 Fri 21:22:31</div></h4></div><button class="MuiButtonBase-root jss15" tabindex="0" type="button"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></button><hr class="MuiDivider-root jss16"/></div><div class="MuiContainer-root MuiContainer-maxWidthMd"><div class="jss21"><h1 id="백준-알고리즘"><a href="#%EB%B0%B1%EC%A4%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="head-link"><span>🔗</span></a>백준 알고리즘</h1>
+<p>코딩 테스트 및 개인 실력 향상을 위해 백준 알고리즘을 차례로 풀어보기로 했다.</p>
+<p>그냥 풀기만 하면 분명히 나중에 어떻게 풀었는지 까먹을테니, 이해한 내용을 포스팅하며 풀이를 진행한다.</p>
+<p>풀이의 규칙은 아래와 같다.</p>
+<ol>
+<li>가급적 문제번호 순서대로 진행한다.</li>
+<li>기본 언어는 <span class="orange-A400">JAVA</span>로 진행한다.</li>
+<li>원리는 과하다 싶을 정도로 최대한 자세하게 적는다.</li>
+<li>번은 개인주의야</li>
+<li>숏코딩을 지양하고, 이해하기 쉽도록 성능이 허락하는 선에서 풀어 쓴다.</li>
+<li>주석을 적극 활용한다.</li>
+<li>채점결과가 반드시 <b class="green-A400">맞았습니다!!</b>인 코드를 기준으로 한다.</li>
+<li>풀이에 제시되는 코드는 그대로 복사해도 알고리즘 풀이가 가능하도록 코딩한다.</li>
+<li>신명호는 놔둔다.</li>
+</ol>
+</div><article class="MuiBox-root jss27"><h1 class="MuiTypography-root jss22 MuiTypography-body1">◎ 연관 게시물</h1><div class="MuiBox-root jss28 jss23"><ul class="MuiGridList-root jss24" style="margin:-2px"><li class="MuiGridListTile-root jss25" style="width:40%;height:184px;padding:2px"><div class="MuiGridListTile-tile"><img src="https://user-images.githubusercontent.com/50317129/120028591-d5ece480-c02f-11eb-88f0-e14fc647dd81.png" class="jss26"/><div class="MuiGridListTileBar-root MuiGridListTileBar-titlePositionBottom"><div class="MuiGridListTileBar-titleWrap"><div class="MuiGridListTileBar-title">[JAVA] 백준 알고리즘 1005번 ACM Craft</div></div></div></div></li><li class="MuiGridListTile-root jss25" style="width:40%;height:184px;padding:2px"><div class="MuiGridListTile-tile"><img src="https://user-images.githubusercontent.com/50317129/120028591-d5ece480-c02f-11eb-88f0-e14fc647dd81.png" class="jss26"/><div class="MuiGridListTileBar-root MuiGridListTileBar-titlePositionBottom"><div class="MuiGridListTileBar-titleWrap"><div class="MuiGridListTileBar-title">[JAVA] 백준 알고리즘 1004번 어린 왕자</div></div></div></div></li><li class="MuiGridListTile-root jss25" style="width:40%;height:184px;padding:2px"><div class="MuiGridListTile-tile"><img src="https://user-images.githubusercontent.com/50317129/120028591-d5ece480-c02f-11eb-88f0-e14fc647dd81.png" class="jss26"/><div class="MuiGridListTileBar-root MuiGridListTileBar-titlePositionBottom"><div class="MuiGridListTileBar-titleWrap"><div class="MuiGridListTileBar-title">[JAVA] 백준 알고리즘 1003번 피보나치 함수</div></div></div></div></li><li class="MuiGridListTile-root jss25" style="width:40%;height:184px;padding:2px"><div class="MuiGridListTile-tile"><img src="https://user-images.githubusercontent.com/50317129/120028591-d5ece480-c02f-11eb-88f0-e14fc647dd81.png" class="jss26"/><div class="MuiGridListTileBar-root MuiGridListTileBar-titlePositionBottom"><div class="MuiGridListTileBar-titleWrap"><div class="MuiGridListTileBar-title">[JAVA] 백준 알고리즘 1002번 터렛</div></div></div></div></li><li class="MuiGridListTile-root jss25" style="width:40%;height:184px;padding:2px"><div class="MuiGridListTile-tile"><img src="https://user-images.githubusercontent.com/50317129/120028591-d5ece480-c02f-11eb-88f0-e14fc647dd81.png" class="jss26"/><div class="MuiGridListTileBar-root MuiGridListTileBar-titlePositionBottom"><div class="MuiGridListTileBar-titleWrap"><div class="MuiGridListTileBar-title">[JAVA] 백준 알고리즘 1001번 A - B</div></div></div></div></li><li class="MuiGridListTile-root jss25" style="width:40%;height:184px;padding:2px"><div class="MuiGridListTile-tile"><img src="https://user-images.githubusercontent.com/50317129/120028591-d5ece480-c02f-11eb-88f0-e14fc647dd81.png" class="jss26"/><div class="MuiGridListTileBar-root MuiGridListTileBar-titlePositionBottom"><div class="MuiGridListTileBar-titleWrap"><div class="MuiGridListTileBar-title">[JAVA] 백준 알고리즘 1000번 A + B</div></div></div></div></li></ul></div></article><article class="MuiBox-root jss31 jss29"><sub class="MuiTypography-root jss30 MuiTypography-body1 MuiTypography-colorPrimary">#<!-- -->백준</sub><sub class="MuiTypography-root jss30 MuiTypography-body1 MuiTypography-colorPrimary">#<!-- -->알고리즘</sub><sub class="MuiTypography-root jss30 MuiTypography-body1 MuiTypography-colorPrimary">#<!-- -->JAVA(자바)</sub></article><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 MuiGrid-justify-xs-space-between"><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss32 MuiButton-outlinedPrimary MuiButton-fullWidth" tabindex="0" type="button"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path></svg></span>Jekyll에서 Next.js로</span></button></div><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss32 MuiButton-outlinedPrimary MuiButton-fullWidth" tabindex="0" type="button"><span class="MuiButton-label">[JAVA] 백준 알고리즘 1000번 A + B<span class="MuiButton-endIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg></span></span></button></div></div><div class="MuiBox-root jss33 jss5"><div class="MuiBox-root jss34"><hr class="MuiDivider-root"/></div><div class="MuiBox-root jss35"><div class="MuiAvatar-root MuiAvatar-circle jss6"><img alt="RWB" src="/assets/images/profile.jpg" class="MuiAvatar-img"/></div></div><div class="MuiBox-root jss36"><hr class="MuiDivider-root"/></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-flex-end"><div class="MuiGrid-root MuiGrid-item"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss7 MuiButton-fullWidth" tabindex="0" type="button"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span>목록</span></button></div></div><article class="MuiBox-root jss38 jss37" id="utterances"></article></div><footer class="MuiBox-root jss47 jss39"><div class="MuiBox-root jss48"><div class="MuiBox-root jss49"><hr class="MuiDivider-root"/></div><div class="MuiBox-root jss50"><img src="/assets/images/logo.png" width="84" class="jss41"/></div><div class="MuiBox-root jss51"><hr class="MuiDivider-root"/></div></div><div class="MuiContainer-root MuiContainer-maxWidthMd"><div class="MuiGrid-root jss40 MuiGrid-container MuiGrid-spacing-xs-3"><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"><div class="MuiBox-root jss52"><h4 class="MuiTypography-root jss42 MuiTypography-h4" up="h4" down="h5">Developed by RWB at 2021.</h4></div></div><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4"><h4 class="MuiTypography-root jss42 MuiTypography-h4 MuiTypography-alignCenter" up="h4" down="h5">Kapoo</h4><div class="MuiBox-root jss53"><h6 class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-alignLeft" up="subtitle2" down="caption">🔗 <a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss44 MuiTypography-colorPrimary" href="https://rwb0104.github.io/">https://rwb0104.github.io/</a></h6><h6 class="MuiTypography-root jss43 MuiTypography-subtitle2 MuiTypography-alignLeft" up="subtitle2" down="caption">314159265359번째 알파카의 개발 낙서장</h6></div></div><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4"><h4 class="MuiTypography-root jss42 MuiTypography-h4 MuiTypography-alignCenter" up="h4" down="h5">Contact Me</h4><div class="MuiBox-root jss54"><div class="MuiBox-root jss55"><button class="MuiButtonBase-root MuiIconButton-root jss45" tabindex="0" type="button" style="background-color:#EA4335;color:white"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"></path></svg></svg></span></button><h6 class="MuiTypography-root jss46 MuiTypography-subtitle2 MuiTypography-alignCenter" up="subtitle2" down="caption">Mail</h6></div><div class="MuiBox-root jss56"><button class="MuiButtonBase-root MuiIconButton-root jss45" tabindex="0" type="button" style="background-color:#181717;color:white"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span></button><h6 class="MuiTypography-root jss46 MuiTypography-subtitle2 MuiTypography-alignCenter" up="subtitle2" down="caption">Github</h6></div></div></div><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4"><h4 class="MuiTypography-root jss42 MuiTypography-h4 MuiTypography-alignCenter" up="h4" down="h5">Associated</h4><div class="MuiBox-root jss57"><div class="MuiBox-root jss58"><button class="MuiButtonBase-root MuiIconButton-root jss45" tabindex="0" type="button" style="background-color:#181717;color:#61DAFB"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z"></path></svg></svg></span></button><h6 class="MuiTypography-root jss46 MuiTypography-subtitle2 MuiTypography-alignCenter" up="subtitle2" down="caption">with Develop</h6></div><div class="MuiBox-root jss59"><button class="MuiButtonBase-root MuiIconButton-root jss45" tabindex="0" type="button" style="background-color:#0081CB;color:white"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 2.475v10.39l3 1.733V7.67l6 3.465 6-3.465v3.465l-6 3.463v3.464l6 3.463 9-5.195V9.402l-3 1.733v3.463l-6 3.464-3-1.732 6-3.465V2.475L9 7.67 0 2.475zm24 0l-3 1.73V7.67l3-1.732V2.474Z"></path></svg></svg></span></button><h6 class="MuiTypography-root jss46 MuiTypography-subtitle2 MuiTypography-alignCenter" up="subtitle2" down="caption">with Design</h6></div><div class="MuiBox-root jss60"><button class="MuiButtonBase-root MuiIconButton-root jss45" tabindex="0" type="button" style="background-color:#181717;color:white"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span></button><h6 class="MuiTypography-root jss46 MuiTypography-subtitle2 MuiTypography-alignCenter" up="subtitle2" down="caption">with Publish</h6></div></div></div></div></div></footer><button class="MuiButtonBase-root MuiFab-root jss61 MuiFab-extended" tabindex="0" type="button" style="opacity:0"><span class="MuiFab-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.79 1.42-1.41zM4 10.5H1v2h3v-2zm9-9.95h-2V3.5h2V.55zm7.45 3.91l-1.41-1.41-1.79 1.79 1.41 1.41 1.79-1.79zm-3.21 13.7l1.79 1.8 1.41-1.41-1.8-1.79-1.4 1.4zM20 10.5v2h3v-2h-3zm-8-5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm-1 16.95h2V19.5h-2v2.95zm-7.45-3.91l1.41 1.41 1.79-1.8-1.41-1.41-1.79 1.8z"></path></svg><span class="MuiTypography-root MuiTypography-button">라이트 모드 활성화</span></span></button></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"page":{"type":"posts","prev":{"title":"Jekyll에서 Next.js로","excerpt":"Jekyll에서 Next.js로의 블로그 이동기","coverImage":"https://user-images.githubusercontent.com/50317129/119211732-cf6de280-baee-11eb-8539-f2f5344fecb1.png","date":"2021-05-21T15:09:33","type":"posts","category":"잡담","tag":["React(리액트)","Next.js","개발 블로그","Jekyll","Next.js"],"comment":true,"publish":true,"slug":"2021-05-21-jekyll-to-nextjs","content":"\r\n# Bye, Jekyll!\r\n\r\n\u003cdiv\u003e\r\n\t\u003cimg src=\"https://user-images.githubusercontent.com/50317129/119211743-e44a7600-baee-11eb-85d0-f21c1f68debc.png\" /\u003e\r\n\u003c/div\u003e\r\n\r\n기존에 \u003ca href=\"http://jekyllrb-ko.github.io/\" target=\"_blank\" class=\"pink-500\"\u003eJekyll\u003c/a\u003e로 운영하던 블로그를 버리고 React 기반의 \u003cspan class=\"blue-500\"\u003eNext.js\u003c/span\u003e를 통해 블로그를 새로 개발했다.\r\n\r\nGithub Pages를 처음 접했을 때, 호스팅을 반드시 \u003cspan class=\"pink-500\"\u003eJekyll\u003c/span\u003e 기반으로 해야한다고 착각하고있었다. 사실 조금만 생각해보면 상관 없던건데.\r\n\r\n최근에 React를 접했는데, 생각보다 꽤나 매력적인 프레임워크라 소소하게나마 뭔가 만들어보고 싶었다.  \r\n블로그가 적절한 프로젝트(?)가 될 것 같았다. 명색이 개발자인데 블로그 하나 정도는 직접 개발해야 할 것 같기도 하고....\r\n\r\n# 굳이 멀쩡한 블로그 놔두고?\r\n\r\n한동안 안 하긴 했지만, 지금까진 \u003cspan class=\"pink-500\"\u003eJekyll\u003c/span\u003e 블로그를 운영하고 있었다. [Moon Theme](http://taylantatli.github.io/Moon/)를 적용해서 사용했었는데, 크고작은 불편함이 있었다.\r\n\r\n\u003cbr /\u003e\r\n\r\n1. \u003cb class=\"green-500\"\u003eJekyll이라는 생소한 환경\u003c/b\u003e\r\n\r\n\tGithub의 개발언어는 \u003cspan class=\"red-500\"\u003eRuby\u003c/span\u003e다. 그래서일까, Github Pages의 기본 배포는 \u003cspan class=\"red-500\"\u003eRuby\u003c/span\u003e 기반 프레임워크인 \u003cspan class=\"pink-500\"\u003eJekyll\u003c/span\u003e을 따라간다.  \r\n\t문제는 한국엔 \u003cspan class=\"pink-500\"\u003eJekyll\u003c/span\u003e은 물론, \u003cspan class=\"red-500\"\u003eRuby\u003c/span\u003e라는 언어 자체의 수요가 많지 않다. 단순 블로그 하나 운영하기 위해 생판 모르는 언어를 접해야 한다는 점은 무시할 수 없는 디메리트.\r\n\r\n\t물론 \u003cspan class=\"red-500\"\u003eRuby\u003c/span\u003e를 직접적으로 개발하진 않지만 \u003cspan class=\"pink-500\"\u003eJekyll\u003c/span\u003e 생태계 또한 그리 친숙한 형태는 아니였다.\r\n\r\n2. \u003cb class=\"green-500\"\u003e타인이 개발한 소스의 이해\u003c/b\u003e\r\n\r\n\t1번과 같은 문제로, 밑바닥부터 \u003cspan class=\"pink-500\"\u003eJekyll\u003c/span\u003e을 개발할 수 없었다.  \r\n\t특정 기능에 대한 소요가 발생할 경우, 현재 테마에 어울리도록 \"**잘 디자인**\"하는 것이 중요하다. 하지만 사용자의 입장에서 테마 개발자의 디자인 철학을 이해하는 것은 단순 디자인과는 또 다른 문제. 구조 파악은 덤  \r\n\t더군다나 내 경우 모자란 실력에 이상한 강박증까지 있어서, 내 스타일로 작성되지 않은 코드의 리딩을 못 한다. 또한, 프로젝트의 블랙박스를 싫어한다. 실력은 없는 주제에 프로젝트 내에 내가 모르는 코드 덩어리가 있는 걸 굉장히 싫어한다. 디자인 감각이 좋지도 못 해서 결과물도 기존 테마와 이질적인 무언가가 나온다.\r\n\r\n3. \u003cb class=\"green-500\"\u003e편리한 사용자 확장성, 불편한 개발자 확장성\u003c/b\u003e\r\n\r\n\t블로그나, 웹 페이지, PPT 같은 환경에서 \u003cspan class=\"grenn-500\"\u003e테마\u003c/span\u003e를 사용하는 이유는 뭘까? 귀찮지만 중요한 디자인에 대한 투자를 과감히 패스하면서도 준수한 디자인 퍼포먼스를 내기 위함이다. 물론 취지는 좋다. 어디까지나 **단순히 해당 테마가 의도한 방향에 맞을 때만.**\r\n\r\n\t다들 비슷한 경험이 있었을 것이다. 테마 혹은 템플릿을 사용하면서 필요에 따라 커스터마이징이 필요할 경우가 그렇다.  \r\n\t대부분의 테마는 결과물이 테마가 추구하는 디자인 철학과 상통할 때 그 빛을 발한다. 다시 말해, 그 의도가 손상될 경우 결과물의 퀄리티는 급락한다.  \r\n\t이 뿐만 아니라, \u003cspan class=\"red-500\"\u003e필요에 따라 기존의 요소(소스코드, 플러그인 등)을 제거할 경우 그 의존성을 파악하기 힘들어 리스크\u003c/span\u003e가 크다.\r\n\r\n\t일례로, 위에서 언급한 \u003cspan class=\"lightBlue-500\"\u003eMoon Theme\u003c/span\u003e의 경우, JQuery에 의존성을 갖고 있다.  \r\n\t근래 웹 개발의 JQuery에 대한 비관적인 평을 생각한다면, 이는 큰 디메리트로 다가온다. 제거 작업으로 인한 공수 또한 무시할 수 없을 것이고.  \r\n\t물론 당시의 개발 트렌드를 무시할 수 없으며, **개발**은 그 중에서도 트렌드의 주기가 매우 빠른 편이다. 이로 미루어 볼 때, 결과론적인 얘기다. 그럼에도 불구하고, **사용자가 의도하지 않은 결함**이라는 사실은 불변하다.\r\n\r\n4. \u003cb class=\"green-500\"\u003e개발 욕구\u003c/b\u003e\r\n\r\n\t정적 블로그의 경우 백엔드 영역이 거의 전무한데다, 복잡한 비즈니스 로직도 필요 없기 때문에 개발 난이도가 상대적으로 낮다고 판단했다. 즉, 원한다면 내가 직접 개발한 블로그를 사용하는게 그리 어렵지 않다.  \r\n\t위에서 언급했듯이, 직접 개발한 블로그를 사용하는 것이 좀 더 개발자스럽다. 난이도 또한 공부 중인 React를 적용하기도 적합하고.\r\n\r\n# Hello, Next.js!\r\n\r\nReact로 블로그를 만들 땐 주로 \u003ca href=\"https://nextjs.org/\" target=\"_blank\" class=\"blue-500\"\u003eNext.js\u003c/a\u003e 혹은 \u003ca href=\"https://www.gatsbyjs.com/\" target=\"_blank\" class=\"deepPurple-400\"\u003eGatsby.js\u003c/a\u003e를 사용한다. 이번에 개발한 블로그는 \u003cspan class=\"blue-500\"\u003eNext.js\u003c/span\u003e를 활용했다.\r\n\r\n\u003cspan class=\"blue-500\"\u003eNext.js\u003c/span\u003e는 \u003cspan class=\"red-500\"\u003eRuby\u003c/span\u003e의 \u003cspan class=\"pink-500\"\u003eJekyll\u003c/span\u003e 프레임워크와 그 결이 비슷하다. \u003cspan class=\"pink-500\"\u003eJekyll\u003c/span\u003e는 **프레임워크 자체에 구조 스키마를 정함으로써 React의 Component와 유사하게 동작**한다. 그 당시의 난 React라는 걸 접하지도 않은 상황에서, React의 Component 방식으로 블로그를 구성했던 것이다. 말 그대로 낫 놓고 기역자도 모른 셈.\r\n\r\n\u003cspan class=\"blue-500\"\u003eNext.js\u003c/span\u003e 역시 라이브러리 자체에 정적 웹을 구성하고 빌드할 수 있는 환경이 구축되어 있어, 쉽게 사용이 가능하다. 여러 사용자들이 개발한 다수의 플러그인은 덤.  \r\n덕분에 정적 블로그를 밑바닥에서부터 개발할 수 있었다. 나름대로 디자인 한다고 하긴 했는데, 역시 디자인은 어렵다.  \r\n\u003cspan class=\"blue-500\"\u003eNext.js\u003c/span\u003e와 \u003cspan class=\"deepPurple-500\"\u003eGatsby.js\u003c/span\u003e에 대한 내용은 나중에 따로 다룰 예정이다.\r\n\r\n아직 해야할 것들이 남아있다. sitemap 생성기도 붙여야 하고, 연관 게시물 기능도 필요하다. 아직 다듬어지지 않은 자잘한 요소들도 있고. 역시 규모에 상관없이 무언가를 퍼블리싱하는건 정말 힘든 것 같다.  \r\n적어도 이번 블로그는 내 노력으로 내가 개발한 거니, 꾸준히 운영할 수 있었음 한다."},"next":{"title":"[JAVA] 백준 알고리즘 1000번 A + B","excerpt":"두 정수 A와 B를 입력받은 다음, A + B를 출력하는 프로그램을 작성하시오.","coverImage":"https://user-images.githubusercontent.com/50317129/120028591-d5ece480-c02f-11eb-88f0-e14fc647dd81.png","date":"2021-05-21T21:38:17","type":"posts","category":"알고리즘","tag":["백준","알고리즘","JAVA(자바)"],"group":"백준 알고리즘","comment":true,"publish":true,"slug":"2021-05-21-A1000","content":"\r\n# A + B\r\n\r\n![JAVA](https://shields.io/badge/java-JDK%2014-lightgray?logo=java\u0026style=plastic\u0026logoColor=white\u0026labelColor=orange)\r\n\r\n🔗 [전체 1000번 문제](https://www.acmicpc.net/problem/1000)\r\n\r\n## 조건\r\n\r\n| 시간제한 | 메모리 제한 |\r\n| :------: | :---------: |\r\n|   2초    |    128MB    |\r\n\r\n## 문제\r\n\r\n두 정수 A와 B를 입력받은 다음, A + B를 출력하는 프로그램을 작성하시오.\r\n\r\n## 입력\r\n\r\n첫째 줄에 A와 B가 주어진다. `(0 \u003c A, B \u003c 10)`\r\n\r\n## 출력\r\n\r\n첫째 줄에 A + B를 출력한다.\r\n\r\n## 케이스\r\n\r\n+ 입력\r\n\r\n\t1 2\r\n\r\n+ 출력\r\n\r\n\t3\r\n\r\n# 풀이\r\n\r\n알고리즘이라고 하기 뭐한 기초적인 연산 알고리즘\r\nScanner로 두 숫자를 입력받아 덧셈한 결과를 출력한다.\r\n\r\n## 전체 소스\r\n\r\n``` java\r\nimport java.util.Scanner;\r\n\r\n/**\r\n * 백준 전체 1000 문제 알고리즘 클래스\r\n *\r\n * @author RWB\r\n * @since 2021.04.21 Wed 21:38:17\r\n */\r\npublic class Main\r\n{\r\n\t/**\r\n\t * 메인 함수\r\n\t *\r\n\t * @param args: [String[]] 매개변수\r\n\t */\r\n\tpublic static void main(String[] args)\r\n\t{\r\n\t\tScanner scanner = new Scanner(System.in);\r\n\r\n\t\tint a = scanner.nextInt();\r\n\t\tint b = scanner.nextInt();\r\n\r\n\t\tscanner.close();\r\n\r\n\t\tSystem.out.println(a + b);\r\n\t}\r\n}\r\n```"}},"group":[{"title":"[JAVA] 백준 알고리즘 1005번 ACM Craft","excerpt":"서기 2012년! 드디어 2년간 수많은 국민들을 기다리게 한 게임 ACM Craft(Association of Construction Mananger Craft)가 발매되었다. 이 게임은 지금까지 나온 게임들과는 다르게 ACM Craft는 다이나믹한 게임 진행을 위해 건물을 짓는 순서가 정해져있지 않다. 즉, 첫 번째 게임과 두 번째 게임이 건물을 짓는 순서가 다를 수도 있다. 매 게임시작 시 건물을 짓는 순서가 주어진다. 또한 모든 건물은 각각 건설을 시작하여 완성이 될 때까지 Delay가 존재한다.","coverImage":"https://user-images.githubusercontent.com/50317129/120028591-d5ece480-c02f-11eb-88f0-e14fc647dd81.png","date":"2021-06-01T01:27:56","type":"posts","category":"알고리즘","tag":["백준","알고리즘","JAVA(자바)","위상정렬"],"group":"백준 알고리즘","comment":true,"publish":true,"slug":"2021-06-01-A1005","content":"\r\n# ACM Craft\r\n\r\n![JAVA](https://shields.io/badge/java-JDK%2014-lightgray?logo=java\u0026style=plastic\u0026logoColor=white\u0026labelColor=orange)\r\n\r\n🔗 [전체 1005번 문제](https://www.acmicpc.net/problem/1005)\r\n\r\n# 조건\r\n\r\n| 시간제한 | 메모리 제한 |\r\n| :------: | :---------: |\r\n|   1초    |    512MB    |\r\n\r\n## 문제\r\n\r\n서기 2012년! 드디어 2년간 수많은 국민들을 기다리게 한 게임 ACM Craft(Association of Construction Mananger Craft)가 발매되었다.\r\n\r\n이 게임은 지금까지 나온 게임들과는 다르게 ACM Craft는 다이나믹한 게임 진행을 위해 건물을 짓는 순서가 정해져있지 않다. 즉, 첫 번째 게임과 두 번째 게임이 건물을 짓는 순서가 다를 수도 있다. 매 게임시작 시 건물을 짓는 순서가 주어진다. 또한 모든 건물은 각각 건설을 시작하여 완성이 될 때까지 Delay가 존재한다.\r\n\r\n\u003cp align=\"center\"\u003e\r\n\t\u003cimg src=\"https://user-images.githubusercontent.com/50317129/120219763-b1cf1480-c276-11eb-8131-a3471db1cfc4.png\" width=\"1024px\" /\u003e\r\n\u003c/p\u003e\r\n\r\n위의 예시를 보자.\r\n\r\n이번 게임에서는 다음과 같이 건설 순서 규칙이 주어졌다. 1번 건물의 건설이 완료된다면 2번과 3번의 건설을 시작할 수 있다. (동시에 진행이 가능하다.) 그리고 4번 건물을 짓기 위해서는 2번과 3번 건물이 모두 건설 완료되어야지만 4번 건물의 건설을 시작할 수 있다.\r\n\r\n따라서 4번 건물의 건설을 완료하기 위해서는 우선 처음 1번 건물을 건설하는데 10초가 소요된다. 그리고 2번 건물와 3번 건물을 동시에 건설하기 시작하면 2번은 1초 뒤에 건설이 완료되지만 아직 3번 건물이 완료되지 않았으므로 4번 건물을 건설할 수 없다. 3번 건물이 완성되고 나면 그때 4번 건물을 지을 수 있으므로 4번 건물이 완성되기까지는 총 120초가 소요된다.\r\n\r\n프로게이머 최백준은 애인과의 데이트 비용을 마련하기 위해 서강대학교배 ACM Craft 대회에 참가했다! 최백준은 화려한 컨트롤 실력을 가지고 있기 때문에 모든 경기에서 특정 건물만 짓는다면 무조건 게임에서 이길 수 있다. 그러나 매 게임마다 특정 건물을 짓기 위한 순서가 달라지므로 최백준은 좌절하고 있었다. 백준이를 위해 특정 건물을 가장 빨리 지을 때까지 걸리는 최소시간을 알아내는 프로그램을 작성해주자.\r\n\r\n## 입력\r\n\r\n첫째 줄에는 테스트케이스의 갯수 `T`가 주어진다. 각 테스트 케이스는 다음과 같이 주어진다, 첫째 줄에 건물의 갯수 `N`과 건물 간의 건설순서 규칙의 총 갯수 `K`가 주어진다.(전물의 번호는 1번 부터 N번 까지 존재한다.)\r\n\r\n둘째 줄에는 각 건물 당 건설에 걸리는 시간 D가 공백을 사이로 주어진다. 셋째 줄부터 `K + 2`줄 까지 건설순서 `X` `Y`가 주어진다.(이는 건물 X를 지은 다음에 건물 Y를 짓는 것이 가능하다는 의미이다.)\r\n\r\n마지막 줄에는 백준이가 승리하기 위해 건설해야 할 건물의 번호 W가 주어진다.\r\n\r\n## 출력\r\n\r\n건물 W를 건설완료 하는데 드는 최소 시간을 출력한다. 편의상 건물을 짓는 명령을 내리는 데는 시간이 소요되지 않는다고 가정한다.  \r\n건설순서는 모든 건물이 건설 가능하도록 주어진다.\r\n\r\n## 제한\r\n\r\n* `2 ≤ N ≤ 1,000`\r\n* `1 ≤ K ≤ 100,000`\r\n* `1 ≤ X, Y, W ≤ N`\r\n* `0 ≤ D ≤ 100,000)` D는 정수\r\n\r\n## 케이스\r\n\r\n### 예제 1\r\n\r\n+ 입력\r\n\r\n\t2  \r\n\t4 4  \r\n\t10 1 100 10  \r\n\t1 2  \r\n\t1 3  \r\n\t2 4  \r\n\t3 4  \r\n\t4  \r\n\t8 8  \r\n\t10 20 1 5 8 7 1 43  \r\n\t1 2  \r\n\t1 3  \r\n\t2 4  \r\n\t2 5  \r\n\t3 6  \r\n\t5 7  \r\n\t6 7  \r\n\t7 8  \r\n\t7\r\n\r\n+ 출력\r\n\r\n\t120  \r\n\t39\r\n\r\n### 예제 2\r\n\r\n+ 입력\r\n\r\n\t5  \r\n\t3 2  \r\n\t1 2 3  \r\n\t3 2  \r\n\t2 1  \r\n\t1  \r\n\t4 3  \r\n\t5 5 5 5  \r\n\t1 2  \r\n\t1 3  \r\n\t2 3  \r\n\t4  \r\n\t5 10  \r\n\t100000 99999 99997 99994 99990  \r\n\t4 5  \r\n\t3 5  \r\n\t3 4  \r\n\t2 5  \r\n\t2 4  \r\n\t2 3  \r\n\t1 5  \r\n\t1 4  \r\n\t1 3  \r\n\t1 2  \r\n\t4  \r\n\t4 3  \r\n\t1 1 1 1  \r\n\t1 2  \r\n\t3 2  \r\n\t1 4  \r\n\t4  \r\n\t7 8  \r\n\t0 0 0 0 0 0 0  \r\n\t1 2  \r\n\t1 3  \r\n\t2 4  \r\n\t3 4  \r\n\t4 5  \r\n\t4 6  \r\n\t5 7  \r\n\t6 7  \r\n\t7\r\n\r\n+ 출력\r\n\r\n\t6  \r\n\t5  \r\n\t399990  \r\n\t2  \r\n\t0\r\n\r\n# 풀이\r\n\r\n문제는 이해가 되는데, 이를 코딩으로 풀어내기가 어려웠던 알고리즘. \u003cspan class=\"primary\"\u003e위상정렬\u003c/span\u003e 알고리즘에 대한 이해가 있어야한다.  \r\n문제의 경우, 스타크래프트의 건물 테크트리랑 비슷한 개념으로 접근하면 된다. 군수공장을 짓기 위해선 병영을 지어야하는 것처럼, 요구 트리가 있는 건물의 경우 해당 건물을 반드시 완료해야 하며, 하나의 건물이 여러 요구 트리를 가질 경우도 존재한다. 물론 이 경우 요구하는 건물들을 **모두** 건설한 뒤에 건설 가능하다. 요구하는 건물들 중 하나만 건설하면 충족되는게 아니다.\r\n\r\n\u003cspan class=\"primary\"\u003e위상정렬\u003c/span\u003e은 \u003cspan class=\"green-A400\"\u003e순서가 정해진 작업을 수행할 때, 이 순서를 결정하는 알고리즘\u003c/span\u003e이다. \u003cspan class=\"primary\"\u003e위상정렬\u003c/span\u003e은 반드시 DAG(Directed Acyclic Graph, 유향 비순환 그래프) 형태여야 한다. 즉, 순서를 도식화했을 때 반드시 \u003cspan class=\"red-A400\"\u003e시작/도착점이 존재\u003c/span\u003e해야 한다. 시작/도착점이 구분되지 않는 순환 형태일 경우 위상정렬을 적용할 수 없다.\r\n\r\n위상정렬은 순서를 정하는 알고리즘이고, 순서도의 형태에 따라 여러가지의 답이 나올 수 있다. 이 문제는 최적의 답을 도출하기 위해 각 **건물을 건설하는데 필요한 요구 건물**과 **건설 시간**을 적용했다.\r\n\r\n다음 건물을 건설하기 위해선 요구 건물을 모두 건설해야하므로 요구 건물의 건설시간이 가장 많은 건물이 다음 순서가 된다.\r\n\r\n\u003cp align=\"center\"\u003e\r\n\t\u003cimg src=\"https://user-images.githubusercontent.com/50317129/120219453-3b321700-c276-11eb-9029-ec105c694854.png\" width=\"1024px\" /\u003e\r\n\u003c/p\u003e\r\n\r\n예시 1번의 두 번째 케이스를 예시로 하여 위상정렬을 도식화하면 위 사진과 같다.\r\n\r\n|  노드  |   1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |\r\n| :----: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |\r\n| 진입선 |   0   |   1   |   1   |   1   |   1   |   1   |   2   |   1   |\r\n|  시간  |  10   |  20   |   1   |   5   |   8   |   7   |   1   |  43   |\r\n\r\n위 표는 도식를 수치화하여 정리한 것이다.\r\n\r\n\u003cbr /\u003e\r\n\r\n\u003cspan class=\"large orange-A400\"\u003e1. 순서의 시작점(진입선이 없는 점)을 찾는다. 시작점이 여러개일 경우 시작점 중 무작위로 하나를 선택해도 무방하다. (위 예시는 시작점이 하나)\u003c/span\u003e\r\n\r\n\u003cp align=\"center\"\u003e\r\n\t\u003cimg src=\"https://user-images.githubusercontent.com/50317129/120219469-4127f800-c276-11eb-91c8-db36e543c217.png\" width=\"1024px\" /\u003e\r\n\u003c/p\u003e\r\n\r\n\u003cbr /\u003e\r\n\r\n\u003cspan class=\"large orange-A400\"\u003e2. 시작점 1을 큐에 넣고, 시작점에 연결된 진출선을 전부 제거한다.\u003c/span\u003e\r\n\r\n\u003cp align=\"center\"\u003e\r\n\t\u003cimg src=\"https://user-images.githubusercontent.com/50317129/120219471-438a5200-c276-11eb-9cd3-ca5f31dfb19b.png\" width=\"1024px\" /\u003e\r\n\u003c/p\u003e\r\n\r\n|  노드  |   1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |\r\n| :----: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |\r\n| 진입선 |   -   |   0   |   0   |   1   |   1   |   1   |   2   |   1   |\r\n|  시간  |  10   |  20   |   1   |   5   |   8   |   7   |   1   |  43   |\r\n\r\n|  큐   |   1   |\r\n| :---: | :---: |\r\n\r\n이 과정에서 2와 3이 새로운 시작점이 된 것을 확인할 수 있다.\r\n\r\n1을 건설하는데 걸리는 시간은 1초.\r\n\r\n\u003cbr /\u003e\r\n\r\n\u003cspan class=\"large orange-A400\"\u003e3. 2에 대해 2번 과정을 적용한다.\u003c/span\u003e\r\n\r\n\u003cp align=\"center\"\u003e\r\n\t\u003cimg src=\"https://user-images.githubusercontent.com/50317129/120219484-45ecac00-c276-11eb-8114-a6c4c8b17036.png\" width=\"1024px\" /\u003e\r\n\u003c/p\u003e\r\n\r\n|  노드  |   1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |\r\n| :----: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |\r\n| 진입선 |   -   |   -   |   0   |   0   |   0   |   1   |   2   |   1   |\r\n|  시간  |  10   |  20   |   1   |   5   |   8   |   7   |   1   |  43   |\r\n\r\n|  큐   |   1   |   2   |\r\n| :---: | :---: | :---: |\r\n\r\n4와 5의 진입선이 0이 된다. 즉, 4와 5를 건설할 수 있게 된다.\r\n\r\n2를 건설하는데는 `10(1) + 20(2)`로 총 30초가 소요된다.\r\n\r\n\u003cbr /\u003e\r\n\r\n\u003cspan class=\"large orange-A400\"\u003e4. 3에 대해 2번 과정을 적용한다.\u003c/span\u003e\r\n\r\n\u003cp align=\"center\"\u003e\r\n\t\u003cimg src=\"https://user-images.githubusercontent.com/50317129/120219493-48e79c80-c276-11eb-8f48-cf132cab8f5c.png\" width=\"1024px\" /\u003e\r\n\u003c/p\u003e\r\n\r\n|  노드  |   1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |\r\n| :----: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |\r\n| 진입선 |   -   |   -   |   -   |   0   |   0   |   0   |   2   |   1   |\r\n|  시간  |  10   |  20   |   1   |   5   |   8   |   7   |   1   |  43   |\r\n\r\n|  큐   |   1   |   2   |   3   |\r\n| :---: | :---: | :---: | :---: |\r\n\r\n6의 진입선이 0이 된다. 6을 건설할 수 있게 된다.\r\n\r\n3의 건설시간은 `10(1) + 1(3)`으로 총 11초.\r\n\r\n\u003cbr /\u003e\r\n\r\n\u003cspan class=\"large orange-A400\"\u003e5. 4에 대해 2번 과정을 적용한다.\u003c/span\u003e\r\n\r\n\u003cp align=\"center\"\u003e\r\n\t\u003cimg src=\"https://user-images.githubusercontent.com/50317129/120219504-4be28d00-c276-11eb-9b40-07c5ea51cbd9.png\" width=\"1024px\" /\u003e\r\n\u003c/p\u003e\r\n\r\n|  노드  |   1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |\r\n| :----: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |\r\n| 진입선 |   -   |   -   |   -   |   -   |   0   |   0   |   2   |   1   |\r\n|  시간  |  10   |  20   |   1   |   5   |   8   |   7   |   1   |  43   |\r\n\r\n|  큐   |   1   |   2   |   3   |   4   |\r\n| :---: | :---: | :---: | :---: | :---: |\r\n\r\n4는 진출선이 없으므로 큐에만 추가된다.\r\n\r\n4의 건설시간은 `10(1) + 20(2) + 5(4)`로 총 35초\r\n\r\n\u003cbr /\u003e\r\n\r\n\u003cspan class=\"large orange-A400\"\u003e6. 5에 대해 2번 과정을 적용한다.\u003c/span\u003e\r\n\r\n\u003cp align=\"center\"\u003e\r\n\t\u003cimg src=\"https://user-images.githubusercontent.com/50317129/120219509-4edd7d80-c276-11eb-9c5f-fc17d373bf50.png\" width=\"1024px\" /\u003e\r\n\u003c/p\u003e\r\n\r\n|  노드  |   1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |\r\n| :----: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |\r\n| 진입선 |   -   |   -   |   -   |   -   |   -   |   0   |   1   |   1   |\r\n|  시간  |  10   |  20   |   1   |   5   |   8   |   7   |   1   |  43   |\r\n\r\n|  큐   |   1   |   2   |   3   |   4   |   5   |\r\n| :---: | :---: | :---: | :---: | :---: | :---: |\r\n\r\n7이 5와 6에 연결되어 있으므로, 7의 진입선은 1이 된다. 아직 7을 건설할 수 없다.\r\n\r\n5의 건설시간은 `10(1) + 20(2) + 8(5)`로 총 38초\r\n\r\n\u003cbr /\u003e\r\n\r\n\u003cspan class=\"large orange-A400\"\u003e7. 6에 대해 2번 과정을 적용한다.\u003c/span\u003e\r\n\r\n\u003cp align=\"center\"\u003e\r\n\t\u003cimg src=\"https://user-images.githubusercontent.com/50317129/120219520-53099b00-c276-11eb-9c99-060dcd2039d8.png\" width=\"1024px\" /\u003e\r\n\u003c/p\u003e\r\n\r\n|  노드  |   1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |\r\n| :----: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |\r\n| 진입선 |   -   |   -   |   -   |   -   |   -   |   -   |   0   |   1   |\r\n|  시간  |  10   |  20   |   1   |   5   |   8   |   7   |   1   |  43   |\r\n\r\n|  큐   |   1   |   2   |   3   |   4   |   5   |   6   |\r\n| :---: | :---: | :---: | :---: | :---: | :---: | :---: |\r\n\r\n7의 진입선이 0이 된다. 7을 건설할 수 있게 된다.\r\n\r\n6의 건설시간은 `10(1) + 1(3) + 7(6)`으로 총 18초.\r\n\r\n\u003cbr /\u003e\r\n\r\n\u003cspan class=\"large orange-A400\"\u003e8. 7에 대해 2번 과정을 적용한다.\u003c/span\u003e\r\n\r\n\u003cp align=\"center\"\u003e\r\n\t\u003cimg src=\"https://user-images.githubusercontent.com/50317129/120219527-56048b80-c276-11eb-866b-9b411445b22b.png\" width=\"1024px\" /\u003e\r\n\u003c/p\u003e\r\n\r\n|  노드  |   1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |\r\n| :----: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |\r\n| 진입선 |   -   |   -   |   -   |   -   |   -   |   -   |   -   |   0   |\r\n|  시간  |  10   |  20   |   1   |   5   |   8   |   7   |   1   |  43   |\r\n\r\n|  큐   |   1   |   2   |   3   |   4   |   5   |   6   |   7   |\r\n| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |\r\n\r\n8의 진입선이 0이 된다.\r\n\r\n1 ~ 6까지는 요구 건물이 하나였지만, 7은 두개이다. 앞서 언급했듯이, 5와 6 중 건설시간이 더 긴 것을 기준으로 계산해야한다.\r\n\r\n즉, 7의 건설시간은 `10(1) + 20(2) + 8(5) + 1(7)`로 총 39초\r\n\r\n5번을 기준으로 계산하므로, \u003cspan class=\"red-A400\"\u003e6번과 중간인 3번은 계산에서 제외\u003c/span\u003e된다. 만약, 3의 건설시간을 1초에서 4초로 증가시켜도 결과에 영향을 미치지 않는다. 3의 건설시간을 무시하기 때문이다. 단, 3의 건설시간이 너무 커지게되면 5보다 6의 건설시간이 같이 커지게 되어 결과에 영향을 미치게 된다.\r\n\r\n\u003cbr /\u003e\r\n\r\n\u003cspan class=\"large orange-A400\"\u003e9. 8에 대해 2번 과정을 적용한다.\u003c/span\u003e\r\n\r\n\u003cp align=\"center\"\u003e\r\n\t\u003cimg src=\"https://user-images.githubusercontent.com/50317129/120219535-58ff7c00-c276-11eb-907c-2a90cc84c596.png\" width=\"1024px\" /\u003e\r\n\u003c/p\u003e\r\n\r\n|  노드  |   1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |\r\n| :----: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |\r\n| 진입선 |   -   |   -   |   -   |   -   |   -   |   -   |   -   |   -   |\r\n|  시간  |  10   |  20   |   1   |   5   |   8   |   7   |   1   |  43   |\r\n\r\n|  큐   |   1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |\r\n| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |\r\n\r\n문제는 7에 대한 건설시간을 요구하고 있으므로 8은 무시해도 무방하다. \r\n8의 건설시간은 `10(1) + 20(2) + 8(5) + 1(7) + 43(8)`로 총 82초\r\n\r\n## 전체 소스\r\n\r\n`time`, `matrix`, `link`의 배열 크기가 `N + 1`이다. 별다른 이유는 아니고, 건물은 1번부터 시작하는데 배열은 0번부터 시작한다. 이러한 차이에서 오는 혼란을 방지하기 위해 건물이 총 4개면 배열의 크기를 5로(0, 1, 2, 3, 4, 5)로 지정하여 0을 제외하고 1부터 사용한다.\r\n\r\n``` java\r\nimport java.util.LinkedList;\r\nimport java.util.Queue;\r\nimport java.util.Scanner;\r\n\r\n/**\r\n * 백준 전체 1005 문제 알고리즘 클래스\r\n *\r\n * @author RWB\r\n * @since 2021.05.31 Mon 19:11:58\r\n */\r\npublic class Main\r\n{\r\n\t/**\r\n\t * 메인 함수\r\n\t *\r\n\t * @param args: [String[]] 매개변수\r\n\t */\r\n\tpublic static void main(String[] args)\r\n\t{\r\n\t\tScanner scanner = new Scanner(System.in);\r\n\t\t\r\n\t\tStringBuilder builder = new StringBuilder();\r\n\t\t\r\n\t\t// 케이스 갯수\r\n\t\tint T = scanner.nextInt();\r\n\t\t\r\n\t\tfor (int i = 0; i \u003c T; i++)\r\n\t\t{\r\n\t\t\t// 건물 갯수\r\n\t\t\tint N = scanner.nextInt();\r\n\t\t\t\r\n\t\t\t// 규칙(건설시간) 갯수\r\n\t\t\tint K = scanner.nextInt();\r\n\t\t\t\r\n\t\t\t// 건물별 건설시간 배열\r\n\t\t\tint[] time = new int[N + 1];\r\n\t\t\t\r\n\t\t\t// 건물별 연결여부 배열\r\n\t\t\tboolean[][] maxtrix = new boolean[N + 1][N + 1];\r\n\t\t\t\r\n\t\t\t// 건물별 연결 갯수 배열\r\n\t\t\tint[] link = new int[N + 1];\r\n\t\t\t\r\n\t\t\tfor (int j = 1; j \u003c N + 1; j++)\r\n\t\t\t{\r\n\t\t\t\ttime[j] = scanner.nextInt();\r\n\t\t\t}\r\n\t\t\t\r\n\t\t\tfor (int j = 0; j \u003c K; j++)\r\n\t\t\t{\r\n\t\t\t\t// 하위 건물\r\n\t\t\t\tint X = scanner.nextInt();\r\n\t\t\t\t\r\n\t\t\t\t// 상위 건물\r\n\t\t\t\tint Y = scanner.nextInt();\r\n\t\t\t\t\r\n\t\t\t\tmaxtrix[X][Y] = true;\r\n\t\t\t\tlink[Y]++;\r\n\t\t\t}\r\n\t\t\t\r\n\t\t\t// 목표 건물\r\n\t\t\tint W = scanner.nextInt();\r\n\t\t\t\r\n\t\t\tbuilder.append(calcTopologicalSort(time, maxtrix, link)[W]).append(\"\\n\");\r\n\t\t}\r\n\t\t\r\n\t\tSystem.out.println(builder.toString());\r\n\t\t\r\n\t\tscanner.close();\r\n\t}\r\n\t\r\n\t/**\r\n\t * 위상정렬 결과 반환 함수\r\n\t *\r\n\t * @param time: [int[]] 건물별 건설시간\r\n\t * @param matrix: [boolean[][]] 건물별 연결여부\r\n\t * @param link: [int[]] 건물별 연결 갯수\r\n\t *\r\n\t * @return [int[]] 건물별 종 건설시간 배열\r\n\t */\r\n\tprivate static int[] calcTopologicalSort(int[] time, boolean[][] matrix, int[] link)\r\n\t{\r\n\t\tQueue\u003cInteger\u003e queue = new LinkedList\u003c\u003e();\r\n\t\t\r\n\t\tint[] result = new int[link.length];\r\n\t\t\r\n\t\tfor (int i = 1; i \u003c link.length; i++)\r\n\t\t{\r\n\t\t\t// 요구 건물이 없는 건물일 경우\r\n\t\t\tif (link[i] == 0)\r\n\t\t\t{\r\n\t\t\t\tresult[i] = time[i];\r\n\t\t\t\tqueue.add(i);\r\n\t\t\t}\r\n\t\t}\r\n\t\t\r\n\t\twhile (!queue.isEmpty())\r\n\t\t{\r\n\t\t\t// 하위 건물\r\n\t\t\tint prev = queue.poll();\r\n\t\t\t\r\n\t\t\tfor (int i = 1; i \u003c link.length; i++)\r\n\t\t\t{\r\n\t\t\t\t// 하위 건물 건설을 요구 하는 건물일 경우\r\n\t\t\t\tif (matrix[prev][i])\r\n\t\t\t\t{\r\n\t\t\t\t\tresult[i] = Math.max(result[i], result[prev] + time[i]);\r\n\t\t\t\t\t\r\n\t\t\t\t\t// 해당 건물의 요구 건물 갯수 1 감소\r\n\t\t\t\t\t--link[i];\r\n\t\t\t\t\t\r\n\t\t\t\t\t// 요구 건물이 없는 건물일 경우\r\n\t\t\t\t\tif (link[i] == 0)\r\n\t\t\t\t\t{\r\n\t\t\t\t\t\tqueue.add(i);\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t\t\r\n\t\treturn result;\r\n\t}\r\n}\r\n```"},{"title":"[JAVA] 백준 알고리즘 1004번 어린 왕자","excerpt":"어린 왕자는 소혹성 B-664에서 자신이 사랑하는 한 송이 장미를 위해 살아간다. 어느 날 장미가 위험에 빠지게 된 것을 알게 된 어린 왕자는, 장미를 구하기 위해 은하수를 따라 긴 여행을 하기 시작했다. 하지만 어린 왕자의 우주선은 그렇게 좋지 않아서 행성계 간의 이동을 최대한 피해서 여행해야 한다. 아래의 그림은 어린 왕자가 펼쳐본 은하수 지도의 일부이다.","coverImage":"https://user-images.githubusercontent.com/50317129/120028591-d5ece480-c02f-11eb-88f0-e14fc647dd81.png","date":"2021-05-22T21:42:23","type":"posts","category":"알고리즘","tag":["백준","알고리즘","JAVA(자바)"],"group":"백준 알고리즘","comment":true,"publish":true,"slug":"2021-05-22-A1004","content":"\r\n# 어린 왕자\r\n\r\n![JAVA](https://shields.io/badge/java-JDK%2014-lightgray?logo=java\u0026style=plastic\u0026logoColor=white\u0026labelColor=orange)\r\n\r\n🔗 [전체 1004번 문제](https://www.acmicpc.net/problem/1004)\r\n\r\n# 조건\r\n\r\n| 시간제한 | 메모리 제한 |\r\n| :------: | :---------: |\r\n|   2초    |    128MB    |\r\n\r\n## 문제\r\n\r\n어린 왕자는 소혹성 B-664에서 자신이 사랑하는 한 송이 장미를 위해 살아간다. 어느 날 장미가 위험에 빠지게 된 것을 알게 된 어린 왕자는, 장미를 구하기 위해 은하수를 따라 긴 여행을 하기 시작했다. 하지만 어린 왕자의 우주선은 그렇게 좋지 않아서 행성계 간의 이동을 최대한 피해서 여행해야 한다. 아래의 그림은 어린 왕자가 펼쳐본 은하수 지도의 일부이다.\r\n\r\n\u003cp align=\"center\"\u003e\r\n\t\u003cimg src=\"https://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/upload/201003/dfcmhrjj_113gw6bcng2_b.gif\" width=\"512px\" /\u003e\r\n\u003c/p\u003e\r\n\r\n빨간 실선은 어린 왕자가 출발점에서 도착점까지 도달하는데 있어서 필요한 행성계 진입/이탈 횟수를 최소화하는 경로이며, 원은 행성계의 경계를 의미한다. 이러한 경로는 여러 개 존재할 수 있지만 적어도 3번의 행성계 진입/이탈이 필요하다는 것을 알 수 있다.\r\n\r\n위와 같은 은하수 지도, 출발점, 도착점이 주어졌을 때 어린 왕자에게 필요한 최소의 행성계 진입/이탈 횟수를 구하는 프로그램을 작성해 보자. (행성계의 경계가 맞닿거나 서로 교차하는 경우는 없다고 가정한다. 또한, 출발점이나 도착점이 행성계 경계에 걸쳐진 경우 역시 입력으로 주어지지 않는다.)\r\n\r\n## 입력\r\n\r\n입력의 첫 줄에는 테스트 케이스의 개수 T가 주어진다. 그 다음 줄부터 각각의 테스트케이스에 대해 첫째 줄에 출발점 (x\u003csub\u003e1\u003c/sub\u003e, y\u003csub\u003e1\u003c/sub\u003e)과 도착점 `(x\u003csub\u003e2\u003c/sub\u003e, y\u003csub\u003e2\u003c/sub\u003e)이 주어진다. 두 번째 줄에는 행성계의 개수 n이 주어지며, 세 번째 줄부터 n줄에 걸쳐 행성계의 중점과 반지름 (c\u003csub\u003ex\u003c/sub\u003e, c\u003csub\u003ey\u003c/sub\u003e, r)이 주어진다. 입력제한은 다음과 같다. (-1000 ≤ x\u003csub\u003e1\u003c/sub\u003e, y\u003csub\u003e1\u003c/sub\u003e, x\u003csub\u003e2\u003c/sub\u003e, y\u003csub\u003e2\u003c/sub\u003e, c\u003csub\u003ex\u003c/sub\u003e, c\u003csub\u003ey\u003c/sub\u003e ≤ 1000, 1 ≤ r ≤ 1000, 1 ≤ n ≤ 50)\r\n\r\n좌표와 반지름은 모두 정수이다.\r\n\r\n## 출력\r\n\r\n각 테스트 케이스에 대해 어린 왕자가 거쳐야 할 최소의 행성계 진입/이탈 횟수를 출력한다.\r\n\r\n## 케이스\r\n\r\n+ 입력\r\n\r\n\t2  \r\n\t-5 1 12 1  \r\n\t7  \r\n\t1 1 8  \r\n\t-3 -1 1  \r\n\t2 2 2  \r\n\t5 5 1  \r\n\t-4 5 1  \r\n\t12 1 1  \r\n\t12 1 2  \r\n\t-5 1 5 1  \r\n\t1  \r\n\t0 0 2\r\n\r\n+ 출력\r\n\r\n\t3  \r\n\t0\r\n\r\n# 풀이\r\n\r\n1002번째 알고리즘의 내용을 응용하면 쉽게 풀 수 있는 문제인 것 같다. 실제로 별다른 레퍼런스를 찾지도 않고 풀 수 있었으니.\r\n\r\n문제를 풀기 전에 몇 가지 집고 넘아갈 게 있다.  \r\n숫자들 때문에 입력의 한 세트를 착각하기 쉽다.\r\n\r\n위 예제를 기준으로 설명하면, 첫 번째 숫자는 세트의 갯수. 본문에서는 `2`이므로, 두 세트를 테스트하므로 결과는 두 줄이 출력된다.  \r\n이후 테스트에 필요한 데이터가 출력된다.\r\n\r\n-5 1 12 1 \u003c= x\u003csub\u003e1\u003c/sub\u003e, y\u003csub\u003e1\u003c/sub\u003e, x\u003csub\u003e2\u003c/sub\u003e, y\u003csub\u003e2\u003c/sub\u003e  \r\n7 \u003c= 행성 갯수  \r\n1 1 8 \u003c= c\u003csub\u003ex1\u003c/sub\u003e, c\u003csub\u003ey1\u003c/sub\u003e, r\u003csub\u003e1\u003c/sub\u003e  \r\n-3 -1 1  \r\n2 2 2  \r\n5 5 1  \r\n-4 5 1  \r\n12 1 1  \r\n12 1 2 \u003c= 행성 갯수만큼 출력됨\r\n\r\n또한, 결과는 행성계의 진입/이탈 횟수를 통틀어서 출력하므로 굳이 진입/이탈을 구분하여 저장할 필요는 없다.\r\n\r\n문제에서 **출발점에서 도착점까지 가는데 통과해야하는 행성계(이하 원, circle)의 최소**를 목적으로 두기 때문에, 반드시 통과해야하는 원만 계산하면 된다.  \r\n출발/도착점이 임의의 원 안에 포함될 경우 반드시 진입/이탈이 일어난다. 따라서, 출발/도착점을 온전히 포함하는 원의 갯수를 계산하면 진입/이탈의 횟수를 구할 수 있다.  \r\n주의할 점이 있는데, **한 원이 출발/도착점을 모두 포함할 경우 계산에서 제외**시켜야 한다.  \r\n하나의 원이 출발/도착점을 전부 포함할 경우, 원 안에서 이동하기 때문에 진입/이탈이 일어나지 않기 때문.  \r\n\r\n-그림-\r\n\r\n원리는 간단하다. 원점과 점의 거리를 계산한다. 계산한 거리가 원의 반지름보다 짧을 경우, 해당 원은 점을 포함하는 셈이다.  \r\n이를 식으로 정리하면 아래와 같다.\r\n\r\n|    변수    |      의미      |\r\n| :--------: | :------------: |\r\n|  `x`, `y`  |   원점 좌표    |\r\n| `xo`, `yo` | 원의 원점 좌표 |\r\n|    `r`     |  원의 반지름   |\r\n\r\n변수는 위 표와 같이 정의하고 식을 전개한다.\r\n\r\n-식-\r\n\r\n위 식을 코드로 표현하면 되는 비교적 간단한 알고리즘이다.\r\n\r\n## 전체 소스\r\n\r\n``` java\r\nimport java.util.Scanner;\r\n\r\n/**\r\n * 백준 전체 1004 문제 알고리즘 클래스\r\n *\r\n * @author RWB\r\n * @since 2021.04.24 Sat 02:15:31\r\n */\r\npublic class Main\r\n{\r\n\t/**\r\n\t * 메인 함수\r\n\t *\r\n\t * @param args: [String[]] 매개변수\r\n\t */\r\n\tpublic static void main(String[] args)\r\n\t{\r\n\t\tScanner scanner = new Scanner(System.in);\r\n\t\t\r\n\t\tint length = scanner.nextInt();\r\n\t\tscanner.nextLine();\r\n\t\t\r\n\t\tfor (int i = 0; i \u003c length; i++)\r\n\t\t{\r\n\t\t\tString base = scanner.nextLine();\r\n\t\t\t\r\n\t\t\tint x_start = Integer.parseInt(base.split(\" \")[0]);\r\n\t\t\tint y_start = Integer.parseInt(base.split(\" \")[1]);\r\n\t\t\t\r\n\t\t\tint x_end = Integer.parseInt(base.split(\" \")[2]);\r\n\t\t\tint y_end = Integer.parseInt(base.split(\" \")[3]);\r\n\t\t\t\r\n\t\t\tint through = 0;\r\n\t\t\t\r\n\t\t\tint count = scanner.nextInt();\r\n\t\t\tscanner.nextLine();\r\n\t\t\t\r\n\t\t\tfor (int j = 0; j \u003c count; j++)\r\n\t\t\t{\r\n\t\t\t\tString circle = scanner.nextLine();\r\n\t\t\t\t\r\n\t\t\t\tint x = Integer.parseInt(circle.split(\" \")[0]);\r\n\t\t\t\tint y = Integer.parseInt(circle.split(\" \")[1]);\r\n\t\t\t\tint r = Integer.parseInt(circle.split(\" \")[2]);\r\n\t\t\t\t\r\n\t\t\t\tboolean hasStartContain = hasContain(x_start, y_start, x, y, r);\r\n\t\t\t\tboolean hasEndContain = hasContain(x_end, y_end, x, y, r);\r\n\t\t\t\t\r\n\t\t\t\t// 해당 행성이 출발 혹은 도착점 중 하나만을 포함할 경우\r\n\t\t\t\tif (!(hasStartContain \u0026\u0026 hasEndContain) \u0026\u0026 (hasStartContain || hasEndContain))\r\n\t\t\t\t{\r\n\t\t\t\t\tthrough++;\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t\t\r\n\t\t\tSystem.out.println(through);\r\n\t\t}\r\n\t\t\r\n\t\tscanner.close();\r\n\t}\r\n\t\r\n\t/**\r\n\t * 출발/도착점 포함 여부 반환 함수\r\n\t *\r\n\t * @param xo: [int] 출발/도착점의 x좌표\r\n\t * @param yo: [int] 출발/도착점의 y좌표\r\n\t * @param x: [int] 행성의 x좌표\r\n\t * @param y: [int] 행성의 y좌표\r\n\t * @param r: [int] 행성의 반지름\r\n\t *\r\n\t * @return [boolean] 출발/도착점 포함 여부\r\n\t */\r\n\tprivate static boolean hasContain(int xo, int yo, int x, int y, int r)\r\n\t{\r\n\t\treturn Math.sqrt(Math.pow(xo - x, 2) + Math.pow(yo - y, 2)) \u003c r;\r\n\t}\r\n}\r\n```"},{"title":"[JAVA] 백준 알고리즘 1003번 피보나치 함수","excerpt":"다음 소스는 N번째 피보나치 수를 구하는 C++ 함수이다.","coverImage":"https://user-images.githubusercontent.com/50317129/120028591-d5ece480-c02f-11eb-88f0-e14fc647dd81.png","date":"2021-05-21T23:29:03","type":"posts","category":"알고리즘","tag":["백준","알고리즘","JAVA(자바)"],"group":"백준 알고리즘","comment":true,"publish":true,"slug":"2021-05-21-A1003","content":"\r\n# 피보나치 함수\r\n\r\n![JAVA](https://shields.io/badge/java-JDK%2014-lightgray?logo=java\u0026style=plastic\u0026logoColor=white\u0026labelColor=orange)\r\n\r\n🔗 [전체 1003번 문제](https://www.acmicpc.net/problem/1003)\r\n\r\n## 조건\r\n\r\n|        시간제한         | 메모리 제한 |\r\n| :---------------------: | :---------: |\r\n| 0.25초 (추가 시간 없음) |    128MB    |\r\n\r\n## 문제\r\n\r\n다음 소스는 N번째 피보나치 수를 구하는 C++ 함수이다.\r\n\r\n``` cpp\r\nint fibonacci(int n) {\r\n    if (n == 0) {\r\n        printf(\"0\");\r\n        return 0;\r\n    } else if (n == 1) {\r\n        printf(\"1\");\r\n        return 1;\r\n    } else {\r\n        return fibonacci(n‐1) + fibonacci(n‐2);\r\n    }\r\n}\r\n```\r\n\r\n`fibonacci(3)`을 호출하면 다음과 같은 일이 일어난다.\r\n\r\n* `fibonacci(3)`은 `fibonacci(2)`와 `fibonacci(1)` (첫 번째 호출)을 호출한다.\r\n* `fibonacci(2)`는 `fibonacci(1)` (두 번째 호출)과 `fibonacci(0)`을 호출한다.\r\n* 두 번째 호출한 `fibonacci(1)`은 1을 출력하고 1을 리턴한다.\r\n* `fibonacci(0)`은 0을 출력하고 0을 리턴한다.\r\n* `fibonacci(2)`는 `fibonacci(1)`과 `fibonacci(0)`의 결과를 얻고, 1을 리턴한다.\r\n* 첫 번째 호출한 `fibonacci(1)`은 1을 출력하고, 1을 리턴한다.\r\n* `fibonacci(3)`은 `fibonacci(2)`와 `fibonacci(1)`의 결과를 얻고, 2를 리턴한다.\r\n\r\n1은 2번 출력되고, 0은 1번 출력된다. N이 주어졌을 때, `fibonacci(N)`을 호출했을 때, 0과 1이 각각 몇 번 출력되는지 구하는 프로그램을 적성하시오.\r\n\r\n## 입력\r\n\r\n첫째 줄에 테스트 케이스의 개수 T가 주어진다.  \r\n각 테스트 케이스는 한 줄로 이루어져 있고, N이 주어진다. N은 40보다 작거나 같은 자연수 또는 0이다.\r\n\r\n## 출력\r\n\r\n각 테스트 케이스마다 0이 출력되는 횟수와 1이 출력되는 횟수를 공백으로 구분해서 출력한다.\r\n\r\n## 케이스\r\n\r\n+ 입력\r\n\r\n\t3  \r\n\t0  \r\n\t1  \r\n\t3\r\n\r\n+ 출력\r\n\r\n\t1 0  \r\n\t0 1  \r\n\t1 2\r\n\r\n# 풀이\r\n\r\n알고리즘 풀면서 느끼는 거지만, 문제가 뭘 말하는 지 이해가 안 되는 경우가 많은 것 같다. 내가 멍청해서 그런건가.\r\n\r\n이 문제를 풀기 위해선, 피보나치 수열에 대한 식을 이해하고 있어야 한다.  \r\n피보나치 수열이 `f()`일 때, `n`번째 피보나치 수열의 식은 `f(n) = f(n - 1) + f(n - 2)`로 정의할 수 있다.\r\n\r\n`n = 0, 1`일 때의 초기값이 정해져있다. (식의 특성 상 초기값이 없으면 계산할 수가 없다.)  \r\n`f(0) = 0`  \r\n`f(1) = 1`  \r\n초기값은 위와 같으며, 실질적으로 `n \u003e= 2` 부터 의미있는 연산이 수행된다.\r\n\r\n다시 문제로 돌아가서, 임의의 수 N이 주어질 경우 `f(N)`을 수행하면서 `f(0)`, `f(1)`이 몇 번 호출되는지를 구하면 된다.  \r\n예를 들어, `N = 4`라고 가정하고 식을 전개하면 아래와 같다.  \r\n`f(4) = f(3) + f(2)`  \r\n위 식에서 `f(3)`은 `f(2) + f(1)`로 치환할 수 있으며, 같은 이유로 `f(2)` 역시 `f(1) + f(0)`으로 치환 가능하다.  \r\n`f(4) = f(2) + f(1) + f(1) + f(0)`  \r\n`= f(1) + f(0) + f(1) + f(1) + f(0)`\r\n\r\n결과적으로 `f(4) = 2(f0) + 3f(1)`로 정리할 수 있다.  \r\n따라서 이 문제의 알고리즘은 `N = 4`일 경우 `2 3`이 출력되어야 한다.\r\n\r\n우선 식을 정리하여 한 눈에 보면 문제 해결에 도움이 될 것 같다.  \r\n피보나치 수열을 쭉 정리하면 아래와 같다.\r\n\r\n|   n   | f(0)의 갯수 | f(1)의 갯수 | f(n)  |\r\n| :---: | :---------: | :---------: | :---: |\r\n|   0   |      1      |      0      |   0   |\r\n|   1   |      0      |      1      |   1   |\r\n|   2   |      1      |      1      |   1   |\r\n|   3   |      1      |      2      |   2   |\r\n|   4   |      2      |      3      |   3   |\r\n|   5   |      3      |      5      |   5   |\r\n|   6   |      5      |      8      |   8   |\r\n|   7   |      8      |     13      |  13   |\r\n|   8   |     13      |     21      |  21   |\r\n|   9   |     21      |     34      |  34   |\r\n\r\n표로 정리하니 어느정도 규칙성이 눈에 보이기 시작한다.\r\n\r\n* N의 `f(1)` 출력 갯수는 `f(N)`과 동일하다.  \r\n* N의 `f(0)` 출력 갯수는 `f(N - 1)`과 동일하다.\r\n\r\n즉, `N = 4`일 경우 알고리즘은 `f(3) f(4)`가 출력되면 된다.\r\n\r\n여기서 단순하게 생각하면 아래와 같이 코드를 짤 수 있다.\r\n\r\n## 완성....?\r\n\r\n``` java\r\nimport java.util.Scanner;\r\n\r\n/**\r\n * 백준 전체 1003 문제 알고리즘 클래스\r\n *\r\n * @author RWB\r\n * @since 2021.04.21 Wed 23:29:03\r\n */\r\npublic class Main\r\n{\r\n\tstatic Integer[][] arr = new Integer[41][2];\r\n\r\n\t/**\r\n\t * 메인 함수\r\n\t *\r\n\t * @param args: [String[]] 매개변수\r\n\t */\r\n\tpublic static void main(String[] args)\r\n\t{\r\n\t\tScanner scanner = new Scanner(System.in);\r\n\r\n\t\t// N = 0일 때, 0이 호출되는 횟수\r\n\t\tarr[0][0] = 1;\r\n\r\n\t\t// N = 0일 때, 1이 호출되는 횟수\r\n\t\tarr[0][1] = 0;\r\n\r\n\t\t// N = 1일 때, 0이 호출되는 횟수\r\n\t\tarr[1][0] = 0;\r\n\r\n\t\t// N = 1일 때, 1이 호출되는 횟수\r\n\t\tarr[1][1] = 1;\r\n\r\n\t\tint length = scanner.nextInt();\r\n\r\n\t\tfor (int i = 0; i \u003c length; i++)\r\n\t\t{\r\n\t\t\tint n = scanner.nextInt();\r\n\r\n\t\t\tint f0 = fibonacci(n - 1);\r\n\t\t\tint f1 = fibonacci(n);\r\n\r\n\t\t\tSystem.out.println(f0 + \" \" + f1);\r\n\t\t}\r\n\t}\r\n\r\n\t/**\r\n\t * 피보나치 값 반환 함수\r\n\t *\r\n\t * @param n: [int] 인덱스\r\n\t *\r\n\t * @return [int] 피보나치 값\r\n\t */\r\n\tprivate static int fibonacci(int n)\r\n\t{\r\n\t\t// 인덱스가 0일 경우\r\n\t\tif (n == 0)\r\n\t\t{\r\n\t\t\treturn 0;\r\n\t\t}\r\n\r\n\t\t// 인덱스가 1일 경우\r\n\t\telse if (n == 1)\r\n\t\t{\r\n\t\t\treturn 1;\r\n\t\t}\r\n\r\n\t\t// 인덱스가 2 이상일 경우 (연산 가능)\r\n\t\telse\r\n\t\t{\r\n\t\t\treturn fibonacci(n - 1) + fibonacci(n - 2);\r\n\t\t}\r\n\t}\r\n}\r\n```\r\n\r\n위 코드는 크게 두 가지 문제가 있는데, 우선 `n = 0, 1`일 때의 처리가 정상적으로 이루어지지 않고 있다.  \r\n`f(1) = f(0) + f(-1)`  \r\nN이 문제되기 이전에 이 코드는 런타임 시간 초과로 실패한다. 왜일까?\r\n\r\n위 코드는 **불필요한 연산을 너무 많이 수행한다.** 피보나치 수열의 특성 상 `f(N)`을 계산할 경우, `f(N - 1)`, `f(N - 2)` ... 등과 같이 N 이하의 피보나치 값까지 전부 계산하게 된다.  \r\n다시 말하면, `f(6)`을 연산할 경우 계산 과정에서 자연스레 `f(4)`, `f(2)` 등의 피보나치 값을 구할 수 있다.\r\n\r\n위 이론을 알고리즘에 적용하면 아래와 같이 응용할 수 있다.  \r\nN을 총 3번 입력한다고 가정하면 N\u003csub\u003e1\u003c/sub\u003e, N\u003csub\u003e2\u003c/sub\u003e, N\u003csub\u003e3\u003c/sub\u003e으로 구분할 수 있다.\r\n\r\nN\u003csub\u003e2\u003c/sub\u003e = 8 -\u003e `f(8)` 부터 `f(0)`까지의 값을 구할 수 있음.  \r\nN\u003csub\u003e3\u003c/sub\u003e = 4 -\u003e `f(4)` 부터 `f(0)`까지의 값을 구할 수 있음.\r\n\r\n피보나치 연산값을 저장하면 N\u003csub\u003en\u003c/sub\u003e \u003e N\u003csub\u003en+1\u003c/sub\u003e일 경우 굳이 **추가적인 연산을 진행하지 않고 이미 저장된 값을 출력**만 함으로써, 런타임 리소스를 줄일 수 있다.\r\n\r\n클래스의 멤버변수로 **Integer 배열을 선언**하여 피보나치 수열값을 저장하고, 알고리즘 연산에 이를 활용하면 될 것 같다.\r\n\r\n\u003e int는 Primitive(자료형) 데이터고, Integer는 Wrapper 클래스다. Wrapper 클래스는 null 입력이 가능하다는 특징이 있으므로, Integer 역시 숫자 이외에 null값을 입력할 수 있다.  \r\nInteger 배열의 초기값은 null로 지정되므로, 배열의 값이 null인 인덱스는 아직 피보나치 수열 계산이 이루어지지 않은 인덱스라고 판단할 수 있다.\r\n\r\n다행히 문제에서 주어진 `N`의 조건은 `0 \u003c= N \u003c= 40`이므로, 배열의 인덱스는 최대 41을 넘지 않음을 알 수 있다.  \r\n(배열은 0부터 시작하므로 40개가 아닌 0을 포함한 41개임에 유의하자)\r\n\r\n이후 피보나치 연산에서 각 과정의 값을 배열에 저장하는 로직을 추가한다.  \r\n배열의 값이 null일 경우, 아직 연산이 진행되지 않았으므로 피보나치 연산을 수행하고 배열에 저장한다.  \r\n반대로, 배열이 특정 숫자값을 가질 경우, 이미 연산이 진행된 인덱스이므로 별도의 연산을 거치지 않고 해당 값을 바로 출력한다.\r\n\r\n## 전체 소스\r\n\r\n``` java\r\npackage all.a1003;\r\n\r\nimport java.util.Scanner;\r\n\r\n/**\r\n * 백준 전체 1003 문제 알고리즘 클래스\r\n *\r\n * @author RWB\r\n * @since 2021.04.21 Wed 23:29:03\r\n */\r\npublic class Main\r\n{\r\n\tstatic Integer[] arr = new Integer[41];\r\n\r\n\t/**\r\n\t * 메인 함수\r\n\t *\r\n\t * @param args: [String[]] 매개변수\r\n\t */\r\n\tpublic static void main(String[] args)\r\n\t{\r\n\t\tScanner scanner = new Scanner(System.in);\r\n\r\n\t\t// 피보나치 수열 초기값 (N = 0)\r\n\t\tarr[0] = 0;\r\n\r\n\t\t// 피보나치 수열 초기값 (N = 1)\r\n\t\tarr[1] = 1;\r\n\r\n\t\tint length = scanner.nextInt();\r\n\r\n\t\tfor (int i = 0; i \u003c length; i++)\r\n\t\t{\r\n\t\t\tint n = scanner.nextInt();\r\n\r\n\t\t\tfibonacci(n);\r\n\r\n\t\t\t// n이 0일 경우\r\n\t\t\tif (n == 0)\r\n\t\t\t{\r\n\t\t\t\tSystem.out.println(\"1 0\");\r\n\t\t\t}\r\n\r\n\t\t\t// n이 1일 경우\r\n\t\t\telse if (n == 1)\r\n\t\t\t{\r\n\t\t\t\tSystem.out.println(\"0 1\");\r\n\t\t\t}\r\n\r\n\t\t\t// 초기값이 아닐 경우\r\n\t\t\telse\r\n\t\t\t{\r\n\t\t\t\tSystem.out.println(new StringBuffer().append(arr[n - 1]).append(\" \").append(arr[n]).toString());\r\n\t\t\t}\r\n\t\t}\r\n\r\n\t\tscanner.close();\r\n\t}\r\n\r\n\t/**\r\n\t * 피보나치 값 반환 함수\r\n\t *\r\n\t * @param n: [int] 인덱스\r\n\t *\r\n\t * @return [int] 피보나치 값\r\n\t */\r\n\tprivate static int fibonacci(int n)\r\n\t{\r\n\t\t// 해당 인덱스의 피보나치가 아직 연산되지 않았을 경우\r\n\t\tif (arr[n] == null)\r\n\t\t{\r\n\t\t\tarr[n] = fibonacci(n - 1) + fibonacci(n - 2);\r\n\t\t}\r\n\r\n\t\treturn arr[n];\r\n\t}\r\n}\r\n```"},{"title":"[JAVA] 백준 알고리즘 1002번 터렛","excerpt":"조규현과 백승환은 터렛에 근무하는 직원이다. 하지만 워낙 존재감이 없어서 인구수는 차지하지 않는다. 다음은 조규현과 백승현의 사진이다.","coverImage":"https://user-images.githubusercontent.com/50317129/120028591-d5ece480-c02f-11eb-88f0-e14fc647dd81.png","date":"2021-05-21T21:56:10","type":"posts","category":"알고리즘","tag":["백준","알고리즘","JAVA(자바)"],"group":"백준 알고리즘","comment":true,"publish":true,"slug":"2021-05-21-A1002","content":"\r\n# 터렛\r\n\r\n![JAVA](https://shields.io/badge/java-JDK%2014-lightgray?logo=java\u0026style=plastic\u0026logoColor=white\u0026labelColor=orange)\r\n\r\n🔗 [전체 1002번 문제](https://www.acmicpc.net/problem/1002)\r\n\r\n## 조건\r\n\r\n| 시간제한 | 메모리 제한 |\r\n| :------: | :---------: |\r\n|   2초    |    128MB    |\r\n\r\n## 문제\r\n\r\n조규현과 백승환은 터렛에 근무하는 직원이다. 하지만 워낙 존재감이 없어서 인구수는 차지하지 않는다. 다음은 조규현과 백승현의 사진이다.\r\n\r\n\u003cp align=\"center\"\u003e\r\n\t\u003cimg src=\"https://www.acmicpc.net/upload/201003/dfcmhrjj_142c3w76qg8_b.jpg\" width=\"128px\" /\u003e\r\n\u003c/p\u003e\r\n\r\n이석원은 조규현과 백승환에게 상대편 마린(류재영)의 위치를 계산하라는 명령을 내렸다. 조규현과 백승환은 각각 자신의 터렛 위치에서 현재 적까지의 거리를 계산했다.  \r\n조규현의 좌표 (x\u003csub\u003e1\u003c/sub\u003e, y\u003csub\u003e2\u003c/sub\u003e)와 백승환의 좌표 (x\u003csub\u003e2\u003c/sub\u003e, y\u003csub\u003e2\u003c/sub\u003e)가 주어지고, 조규현이 계산한 류재명과의 거리 r\u003csub\u003e1\u003c/sub\u003e과 백승환이 계산한 류재명과의 거리 r\u003csub\u003e2\u003c/sub\u003e가 주어졌을 때, 류재명이 있을 수 있는 좌표의 수를 출력하는 프로그램을 작성하시오.\r\n\r\n## 입력\r\n\r\n첫째 줄에 테스트 케이스의 개수 T가 주어진다. 각 테스트 케이스는 다음과 같이 이루어져 있다.  \r\n한 줄에 x\u003csub\u003e1\u003c/sub\u003e, y\u003csub\u003e1\u003c/sub\u003e, r\u003csub\u003e1\u003c/sub\u003e, x\u003csub\u003e2\u003c/sub\u003e, y\u003csub\u003e2\u003c/sub\u003e, r\u003csub\u003e2\u003c/sub\u003e가 주어진다. x\u003csub\u003e1\u003c/sub\u003e, y\u003csub\u003e1\u003c/sub\u003e, x\u003csub\u003e2\u003c/sub\u003e, y\u003csub\u003e2\u003c/sub\u003e는 -10,000보다 크거나 같고, 10,000보다 작거나 같은 점수이고, r\u003csub\u003e1\u003c/sub\u003e, r\u003csub\u003e2\u003c/sub\u003e는 10,000보다 작거나 같은 자연수이다.\r\n\r\n## 출력\r\n\r\n각 테스트 케이스마다 류재명이 있을 수 있는 위치의 수를 출력한다. 만약 류재명이 있을 수 있는 위치의 개수가 무한대일 경우에는 -1을 출력한다.\r\n\r\n## 케이스\r\n\r\n+ 입력\r\n\r\n\t3  \r\n\t0 0 13 40 0 37  \r\n\t0 0 30 0 7 4  \r\n\t1 1 1 1 1 5\r\n\r\n+ 출력\r\n\r\n\t2  \r\n\t1  \r\n\t0\r\n\r\n# 풀이\r\n\r\n예제의 요소를 사람 이름으로 두었으나, 문제 이해에 방해가 되니 간단하게 서술하면 아래와 같다.  \r\n임의의 위치에 있는 점 A, B, C가 존재하며, A와 C의 거리, B와 C의 거리가 주어진다.  \r\n이 때, C가 실제로 위치할 수 있는 점의 갯수를 구하는 것. 즉, 간단하게 **두 원의 접점을 구하는 문제**라고 정의할 수 있다.  \r\n원이 완벽하게 겹칠 경우, **그 수가 무수히 많으므로 -1로 표현**하라는 조건이 포함된다.\r\n\r\n이를 그림으로 표현하면 아래와 같다.  \r\n[대충 원 그림]\r\n\r\n변수는 아래와 같이 정리할 수 있다.\r\n\r\n|   n   | x\u003csub\u003en\u003c/sub\u003e | y\u003csub\u003en\u003c/sub\u003e | r\u003csub\u003en\u003c/sub\u003e |\r\n| :---: | :-----------: | :-----------: | :-----------: |\r\n|   1   |   A의 x좌표   |   A의 y좌표   |  A의 반지름   |\r\n|   2   |   B의 x좌표   |   B의 y좌표   |  B의 반지름   |\r\n\r\n케이스를 세분화하면 총 6가지로 나눌 수 있다.\r\n\r\n1. 두 원이 정확히 겹칠 경우 (-1)\r\n2. 두 원이 서로 겹치면서 인접하지 않는 경우 (0)\r\n3. 두 원이 서로 겹치지 않으면서 인접하지 않는 경우 (0)\r\n4. 두 원이 서로 겹치면서 인접하는 경우 (1)\r\n5. 두 원이 서로 겹치지 않으면서 인접하는 경우 (1)\r\n6. 두 원이 서로 겹치면서 인접하지 않는 경우 (2)\r\n\r\n본 풀이에선 x\u003csub\u003e1\u003c/sub\u003e, y\u003csub\u003e1\u003c/sub\u003e과 x\u003csub\u003e2\u003c/sub\u003e, y\u003csub\u003e2\u003c/sub\u003e의 거리(`distance`) 및 r\u003csub\u003e1\u003c/sub\u003e, r\u003csub\u003e2\u003c/sub\u003e를 합한 길이(`sum`)와 뺀 길이(`sub`)의 절대값을 이용하여 진행한다.\r\n\r\n\u003cp align=\"center\"\u003e\r\n\t\u003cimg src=\"https://latex.codecogs.com/svg.latex?%5Cfn_phv%20%7B%5Ccolor%7BWhite%7D%20distance%20=%20%5Csqrt%7B%28x_%7B1%7D%20-%20x_%7B2%7D%29%5E%7B2%7D%20\u0026plus;%20%28y_%7B1%7D%20-%20y_%7B2%7D%29%5E%7B2%7D%7D%7D\" /\u003e\r\n\u003c/p\u003e\r\n\r\n\u003cp align=\"center\"\u003e\r\n\t\u003cimg src=\"https://latex.codecogs.com/svg.latex?%5Cfn_phv%20%7B%5Ccolor%7BWhite%7D%20sum%20%3D%20r_%7B1%7D%20\u0026plus;%20r_%7B2%7D%7D\" /\u003e\r\n\u003c/p\u003e\r\n\r\n\u003cp align=\"center\"\u003e\r\n\t\u003cimg src=\"https://latex.codecogs.com/svg.latex?%5Cfn_phv%20%7B%5Ccolor%7BWhite%7D%20sub%20%3D%20%5Cleft%20%7C%20r_%7B1%7D%20-%20r_%7B2%7D%20%5Cright%20%7C%7D\" /\u003e\r\n\u003c/p\u003e\r\n\r\n* case 1 - 두 원이 정확히 겹칠 경우\r\n\r\n\t두 원의 위치 및 반지름이 서로 동일한 상황.  \r\n\t`distance`가 0이며, r\u003csub\u003e1\u003c/sub\u003e과 r\u003csub\u003e2\u003c/sub\u003e의 길이가 동일할 경우 성립한다.\r\n\r\n* case 2 - 두 원이 서로 겹치면서 인접하지 않는 경우\r\n\r\n\t두 원의 원점과의 거리가 반지름의 차이보다 짧은 상황.  \r\n\t`distance \u003c sub`일 경우 성립한다.\r\n\r\n* case 3 - 두 원이 서로 겹치지 않으면서 인접하지 않는 경우\r\n\r\n\t두 원의 원점과의 거리가 반지름의 합보다 긴 상황.  \r\n\t`distance \u003e sum`일 경우 성립한다.\r\n\r\n* case 4 - 두 원이 서로 겹치면서 인접하는 경우\r\n\r\n\t두 원의 원점과의 거리가 반지름의 차이와 일치하는 상황.  \r\n\t`distance == sub`일 경우 성립한다.\r\n\r\n* case 5 - 두 원이 서로 겹치지 않으면서 인접하는 경우\r\n\r\n\t두 원의 원점과의 거리가 반지름의 합과 일치하는 상황.  \r\n\t`distance == sum`일 경우 성립한다.\r\n\r\n* case 6 - 두 원이 서로 겹치면서 인접하지 않는 경우\r\n\r\n\t두 원이 서로 적당히 겹치는 상황.  \r\n\t`distance \u003c sum \u0026\u0026 distance \u003e sub`일 경우 성립한다.\r\n\r\n굳이 식으로 표현하지 않아도, 위의 5개 케이스에 부합하지 않는 모든 상황에 적용하면 된다.  \r\n위 케이스들을 `if`문을 사용하여 적절히 표현하면 된다. `switch`문의 경우 하나의 변수를 기준으로 분기를 판단하므로 해당 알고리즘에 적용하기엔 다소 부적절하다.\r\n\r\n## 전체 소스\r\n\r\n``` java\r\nimport java.util.Scanner;\r\n\r\n/**\r\n * 백준 전체 1002 문제 알고리즘 클래스\r\n *\r\n * @author RWB\r\n * @since 2021.04.21 Wed 21:56:10\r\n */\r\npublic class Main\r\n{\r\n\t/**\r\n\t * 메인 함수\r\n\t *\r\n\t * @param args: [String[]] 매개변수\r\n\t */\r\n\tpublic static void main(String[] args)\r\n\t{\r\n\t\tScanner scanner = new Scanner(System.in);\r\n\r\n\t\tint length = scanner.nextInt();\r\n\r\n\t\tfor (int i = 0; i \u003c length; i++)\r\n\t\t{\r\n\t\t\tint x1 = scanner.nextInt();\r\n\t\t\tint y1 = scanner.nextInt();\r\n\t\t\tint r1 = scanner.nextInt();\r\n\r\n\t\t\tint x2 = scanner.nextInt();\r\n\t\t\tint y2 = scanner.nextInt();\r\n\t\t\tint r2 = scanner.nextInt();\r\n\r\n\t\t\tSystem.out.println(calcPoints(x1, y1, r1, x2, y2, r2));\r\n\t\t}\r\n\t}\r\n\r\n\t/**\r\n\t * 접점 갯수 반환 함수\r\n\t *\r\n\t * case 1 - 두 원이 정확히 겹칠 경우 (-1)\r\n\t * case 2 - 두 원이 서로 겹치면서 인접하지 않는 경우 (0)\r\n\t * case 3 - 두 원이 서로 겹치지 않으면서 인접하지 않는 경우 (0)\r\n\t * case 4 - 두 원이 서로 겹치면서 인접하는 경우 (1)\r\n\t * case 5 - 두 원이 서로 겹치지 않으면서 인접하는 경우 (1)\r\n\t * case 6 - 두 원이 서로 겹치면서 인접하지 않는 경우 (2)\r\n\t *\r\n\t * @param x1: [int] A의 x좌표\r\n\t * @param y1: [int] A의 y좌표\r\n\t * @param r1: [int] A와 C 사이의 거리\r\n\t * @param x2: [int] B의 x좌표\r\n\t * @param y2: [int] B의 y좌표\r\n\t * @param r2: [int] B와 C 사이의 거리\r\n\t *\r\n\t * @return [int] 접점 갯수\r\n\t */\r\n\tprivate static int calcPoints(int x1, int y1, int r1, int x2, int y2, int r2)\r\n\t{\r\n\t\t// 두 점 사이의 거리 계산식\r\n\t\tdouble distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));\r\n\r\n\t\tint sum = r1 + r2;\r\n\t\tint sub = Math.abs(r1 - r2);\r\n\r\n\t\t// case 1 - 두 원이 정확히 겹칠 경우\r\n\t\tif (distance == 0 \u0026\u0026 r1 == r2)\r\n\t\t{\r\n\t\t\treturn -1;\r\n\t\t}\r\n\r\n\t\t// case 2 - 두 원이 서로 겹치면서 인접하지 않는 경우\r\n\t\telse if (distance \u003c sub)\r\n\t\t{\r\n\t\t\treturn 0;\r\n\t\t}\r\n\r\n\t\t// case 3 - 두 원이 서로 겹치지 않으면서 인접하지 않는 경우\r\n\t\telse if (distance \u003e sum)\r\n\t\t{\r\n\t\t\treturn 0;\r\n\t\t}\r\n\r\n\t\t// case 4 - 두 원이 서로 겹치면서 인접하는 경우\r\n\t\telse if (distance == sub)\r\n\t\t{\r\n\t\t\treturn 1;\r\n\t\t}\r\n\r\n\t\t// case 5 - 두 원이 서로 겹치지 않으면서 인접하는 경우\r\n\t\telse if (distance == sum)\r\n\t\t{\r\n\t\t\treturn 1;\r\n\t\t}\r\n\r\n\t\t// case 6 - 두 원이 서로 겹치면서 인접하지 않는 경우\r\n\t\telse\r\n\t\t{\r\n\t\t\treturn 2;\r\n\t\t}\r\n\t}\r\n}\r\n```"},{"title":"[JAVA] 백준 알고리즘 1001번 A - B","excerpt":"두 정수 A와 B를 입력받은 다음, A - B를 출력하는 프로그램을 작성하시오.","coverImage":"https://user-images.githubusercontent.com/50317129/120028591-d5ece480-c02f-11eb-88f0-e14fc647dd81.png","date":"2021-05-21T21:51:19","type":"posts","category":"알고리즘","tag":["백준","알고리즘","JAVA(자바)"],"group":"백준 알고리즘","comment":true,"publish":true,"slug":"2021-05-21-A1001","content":"\r\n# A - B\r\n\r\n![JAVA](https://shields.io/badge/java-JDK%2014-lightgray?logo=java\u0026style=plastic\u0026logoColor=white\u0026labelColor=orange)\r\n\r\n🔗 [전체 1001번 문제](https://www.acmicpc.net/problem/1001)\r\n\r\n## 조건\r\n\r\n| 시간제한 | 메모리 제한 |\r\n| :------: | :---------: |\r\n|   2초    |    128MB    |\r\n\r\n## 문제\r\n\r\n두 정수 A와 B를 입력받은 다음, A - B를 출력하는 프로그램을 작성하시오.\r\n\r\n## 입력\r\n\r\n첫째 줄에 A와 B가 주어진다. (0 \u003c A, B \u003c 10)\r\n\r\n## 출력\r\n\r\n첫째 줄에 A - B를 출력한다.\r\n\r\n## 케이스\r\n\r\n+ 입력\r\n\r\n\t3 2\r\n\r\n+ 출력\r\n\r\n\t1\r\n\r\n# 풀이\r\n\r\n1000번 문제에서 연산만 달라지는 뺄셈 알고리즘\r\nScanner로 두 숫자를 입력받아 뺄셈한 결과를 출력한다.\r\n\r\n## 전체 소스\r\n\r\n``` java\r\nimport java.util.Scanner;\r\n\r\n/**\r\n * 백준 전체 1001 문제 알고리즘 클래스\r\n *\r\n * @author RWB\r\n * @since 2021.04.21 Wed 21:51:19\r\n */\r\npublic class Main\r\n{\r\n\t/**\r\n\t * 메인 함수\r\n\t *\r\n\t * @param args: [String[]] 매개변수\r\n\t */\r\n\tpublic static void main(String[] args)\r\n\t{\r\n\t\tScanner scanner = new Scanner(System.in);\r\n\r\n\t\tint a = scanner.nextInt();\r\n\t\tint b = scanner.nextInt();\r\n\r\n\t\tscanner.close();\r\n\r\n\t\tSystem.out.println(a - b);\r\n\t}\r\n}\r\n```"},{"title":"[JAVA] 백준 알고리즘 1000번 A + B","excerpt":"두 정수 A와 B를 입력받은 다음, A + B를 출력하는 프로그램을 작성하시오.","coverImage":"https://user-images.githubusercontent.com/50317129/120028591-d5ece480-c02f-11eb-88f0-e14fc647dd81.png","date":"2021-05-21T21:38:17","type":"posts","category":"알고리즘","tag":["백준","알고리즘","JAVA(자바)"],"group":"백준 알고리즘","comment":true,"publish":true,"slug":"2021-05-21-A1000","content":"\r\n# A + B\r\n\r\n![JAVA](https://shields.io/badge/java-JDK%2014-lightgray?logo=java\u0026style=plastic\u0026logoColor=white\u0026labelColor=orange)\r\n\r\n🔗 [전체 1000번 문제](https://www.acmicpc.net/problem/1000)\r\n\r\n## 조건\r\n\r\n| 시간제한 | 메모리 제한 |\r\n| :------: | :---------: |\r\n|   2초    |    128MB    |\r\n\r\n## 문제\r\n\r\n두 정수 A와 B를 입력받은 다음, A + B를 출력하는 프로그램을 작성하시오.\r\n\r\n## 입력\r\n\r\n첫째 줄에 A와 B가 주어진다. `(0 \u003c A, B \u003c 10)`\r\n\r\n## 출력\r\n\r\n첫째 줄에 A + B를 출력한다.\r\n\r\n## 케이스\r\n\r\n+ 입력\r\n\r\n\t1 2\r\n\r\n+ 출력\r\n\r\n\t3\r\n\r\n# 풀이\r\n\r\n알고리즘이라고 하기 뭐한 기초적인 연산 알고리즘\r\nScanner로 두 숫자를 입력받아 덧셈한 결과를 출력한다.\r\n\r\n## 전체 소스\r\n\r\n``` java\r\nimport java.util.Scanner;\r\n\r\n/**\r\n * 백준 전체 1000 문제 알고리즘 클래스\r\n *\r\n * @author RWB\r\n * @since 2021.04.21 Wed 21:38:17\r\n */\r\npublic class Main\r\n{\r\n\t/**\r\n\t * 메인 함수\r\n\t *\r\n\t * @param args: [String[]] 매개변수\r\n\t */\r\n\tpublic static void main(String[] args)\r\n\t{\r\n\t\tScanner scanner = new Scanner(System.in);\r\n\r\n\t\tint a = scanner.nextInt();\r\n\t\tint b = scanner.nextInt();\r\n\r\n\t\tscanner.close();\r\n\r\n\t\tSystem.out.println(a + b);\r\n\t}\r\n}\r\n```"}],"post":{"title":"백준 알고리즘 시작하기","excerpt":"코딩 테스트 및 개인 실력 향상을 위해 백준 알고리즘을 차례로 풀어보기로 했다. 그냥 풀기만 하면 분명히 나중에 어떻게 풀었는지 까먹을테니, 이해한 내용을 포스팅하며 풀이를 진행한다. 풀이의 규칙은 아래와 같다.","coverImage":"https://user-images.githubusercontent.com/50317129/120028591-d5ece480-c02f-11eb-88f0-e14fc647dd81.png","date":"2021-05-21T21:22:31","type":"posts","category":"알고리즘","tag":["백준","알고리즘","JAVA(자바)"],"group":"백준 알고리즘","comment":true,"publish":true,"slug":"2021-05-21-start-beakjoon","content":"\u003ch1 id=\"백준-알고리즘\"\u003e\u003ca href=\"#%EB%B0%B1%EC%A4%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98\" class=\"head-link\"\u003e\u003cspan\u003e🔗\u003c/span\u003e\u003c/a\u003e백준 알고리즘\u003c/h1\u003e\n\u003cp\u003e코딩 테스트 및 개인 실력 향상을 위해 백준 알고리즘을 차례로 풀어보기로 했다.\u003c/p\u003e\n\u003cp\u003e그냥 풀기만 하면 분명히 나중에 어떻게 풀었는지 까먹을테니, 이해한 내용을 포스팅하며 풀이를 진행한다.\u003c/p\u003e\n\u003cp\u003e풀이의 규칙은 아래와 같다.\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e가급적 문제번호 순서대로 진행한다.\u003c/li\u003e\n\u003cli\u003e기본 언어는 \u003cspan class=\"orange-A400\"\u003eJAVA\u003c/span\u003e로 진행한다.\u003c/li\u003e\n\u003cli\u003e원리는 과하다 싶을 정도로 최대한 자세하게 적는다.\u003c/li\u003e\n\u003cli\u003e번은 개인주의야\u003c/li\u003e\n\u003cli\u003e숏코딩을 지양하고, 이해하기 쉽도록 성능이 허락하는 선에서 풀어 쓴다.\u003c/li\u003e\n\u003cli\u003e주석을 적극 활용한다.\u003c/li\u003e\n\u003cli\u003e채점결과가 반드시 \u003cb class=\"green-A400\"\u003e맞았습니다!!\u003c/b\u003e인 코드를 기준으로 한다.\u003c/li\u003e\n\u003cli\u003e풀이에 제시되는 코드는 그대로 복사해도 알고리즘 풀이가 가능하도록 코딩한다.\u003c/li\u003e\n\u003cli\u003e신명호는 놔둔다.\u003c/li\u003e\n\u003c/ol\u003e\n"}},"__N_SSG":true},"page":"/posts/[...slug]","query":{"slug":["2021","05","21","start-beakjoon"]},"buildId":"1PzHZf8x_CzOXiH8aPBOK","isFallback":false,"gsp":true}</script><script nomodule="" src="/_next/static/chunks/polyfills-8683bd742a84c1edd48c.js"></script><script src="/_next/static/chunks/webpack-e8d31e5d8211df09d935.js" async=""></script><script src="/_next/static/chunks/framework-6ff532a7be3ee3e264f2.js" async=""></script><script src="/_next/static/chunks/433-24ec5d7c7c484d4d525c.js" async=""></script><script src="/_next/static/chunks/573-1a428ff62d6402014c56.js" async=""></script><script src="/_next/static/chunks/main-7080815fe6487a7f4e05.js" async=""></script><script src="/_next/static/chunks/0a301732-836e7d8acda45c546016.js" async=""></script><script src="/_next/static/chunks/598-50fc99edcf172d0552b6.js" async=""></script><script src="/_next/static/chunks/470-a23b6bc125b4b2f380d5.js" async=""></script><script src="/_next/static/chunks/442-9a74cfe8ecae82c0ebaf.js" async=""></script><script src="/_next/static/chunks/578-7f3988690ed960853c3e.js" async=""></script><script src="/_next/static/chunks/pages/_app-cff56d7a683da9ae2483.js" async=""></script><script src="/_next/static/chunks/631-e32fbaeb906398a2fc70.js" async=""></script><script src="/_next/static/chunks/775-aa6d5e094dbc2b8927b3.js" async=""></script><script src="/_next/static/chunks/883-186e6d96d92be83fb7e0.js" async=""></script><script src="/_next/static/chunks/pages/posts/%5B...slug%5D-50081d04fb10210fef1d.js" async=""></script><script src="/_next/static/1PzHZf8x_CzOXiH8aPBOK/_buildManifest.js" async=""></script><script src="/_next/static/1PzHZf8x_CzOXiH8aPBOK/_ssgManifest.js" async=""></script></body></html>

@@ -3,31 +3,25 @@
 	<url>
 		<loc>https://rwb0104.github.io/about/</loc>
 		<priority>1.00</priority>
-		<lastmod>2021-06-01T16:34:40.706Z</lastmod>
+		<lastmod>2021-06-06T14:09:36.878Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
 		<loc>https://rwb0104.github.io/</loc>
 		<priority>1.00</priority>
-		<lastmod>2021-06-01T16:34:40.706Z</lastmod>
+		<lastmod>2021-06-06T14:09:36.878Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
 		<loc>https://rwb0104.github.io/posts/</loc>
 		<priority>1.00</priority>
-		<lastmod>2021-06-01T16:34:40.706Z</lastmod>
-		<changefreq>weekly</changefreq>
-	</url>
-	<url>
-		<loc>https://rwb0104.github.io/posts/[...slug]/</loc>
-		<priority>1.00</priority>
-		<lastmod>2021-06-01T16:34:40.706Z</lastmod>
+		<lastmod>2021-06-06T14:09:36.878Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
 		<loc>https://rwb0104.github.io/projects/</loc>
 		<priority>1.00</priority>
-		<lastmod>2021-06-01T16:34:40.706Z</lastmod>
+		<lastmod>2021-06-06T14:09:36.878Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
@@ -106,6 +100,18 @@
 		<loc>https://rwb0104.github.io/posts/2021/06/01/A1005/</loc>
 		<priority>0.5</priority>
 		<lastmod>2021-05-31T16:27:56.000Z</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>https://rwb0104.github.io/posts/2021/06/03/compiler-interpreter/</loc>
+		<priority>0.5</priority>
+		<lastmod>2021-06-03T08:25:23.000Z</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>https://rwb0104.github.io/posts/2021/06/06/A1006/</loc>
+		<priority>0.5</priority>
+		<lastmod>2021-06-06T13:42:02.000Z</lastmod>
 		<changefreq>monthly</changefreq>
 	</url>
 </urlset>

@@ -6,7 +6,7 @@
 		<link>https://rwb0104.github.io//</link>
 		<atom:link href="https://rwb0104.github.io/feed.xml" rel="self" type="application/rss+xml"/>
 		<pubDate>2021-05-26T14:36:57.000Z</pubDate>
-		<lastBuildDate>2021-06-12T05:02:44.465Z</lastBuildDate>
+		<lastBuildDate>2021-06-12T19:19:49.874Z</lastBuildDate>
 	</channel>
 	<item>
 		<title>[JAVA] 백준 알고리즘 1000번 A + B</title>
@@ -297,5 +297,19 @@
 		<category>JAVA(자바)</category>
 		<category>SILVER</category>
 		<category>SILVER I</category>
+	</item>
+	<item>
+		<title>[JAVA] 백준 알고리즘 1012번 유기농 배추</title>
+		<description></description>
+		<pubDate>2021-06-12T16:42:10.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/06/13/A1012/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/06/13/A1012/</guid>
+		<category>알고리즘</category>
+		<category>백준</category>
+		<category>JAVA(자바)</category>
+		<category>DFS(깊이 우선 탐색)</category>
+		<category>BFS(너비 우선 탐색)</category>
+		<category>SILVER</category>
+		<category>SILVER II</category>
 	</item>
 </rss>

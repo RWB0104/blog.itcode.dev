@@ -6,7 +6,7 @@
 		<link>https://rwb0104.github.io//</link>
 		<atom:link href="https://rwb0104.github.io/feed.xml" rel="self" type="application/rss+xml"/>
 		<pubDate>2021-05-26T14:36:57.000Z</pubDate>
-		<lastBuildDate>2021-06-12T20:06:39.562Z</lastBuildDate>
+		<lastBuildDate>2021-06-13T16:58:09.482Z</lastBuildDate>
 	</channel>
 	<item>
 		<title>[JAVA] 백준 알고리즘 1000번 A + B</title>
@@ -324,5 +324,17 @@
 		<category>정규 표현식</category>
 		<category>GOLD</category>
 		<category>GOLD V</category>
+	</item>
+	<item>
+		<title>split vs StringToken</title>
+		<description>알고리즘을 풀다보면, 필연적으로 입력값 처리를 하게된다. 다양한 케이스에 대응하기 위해, 사용자의 값을 직접 입력받아 이를 처리하게 된다. 이 때, 우리는 십중팔구 이와 같은 상황이 발생한다. 데이터셋을 보내기 위해 데이터의 모음을 구분자(공백 혹은 쉼표)를 통해 하나의 문자열로 합쳐 전달한다.</description>
+		<pubDate>2021-06-13T16:56:01.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/06/14/split-and-stringtoken/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/06/14/split-and-stringtoken/</guid>
+		<category>JAVA</category>
+		<category>JAVA(자바)</category>
+		<category>String(문자열)</category>
+		<category>split</category>
+		<category>StringToken</category>
 	</item>
 </rss>

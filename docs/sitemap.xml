@@ -3,25 +3,25 @@
 	<url>
 		<loc>https://rwb0104.github.io/about/</loc>
 		<priority>1.00</priority>
-		<lastmod>2021-06-12T20:06:39.561Z</lastmod>
+		<lastmod>2021-06-13T16:58:09.481Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
 		<loc>https://rwb0104.github.io/</loc>
 		<priority>1.00</priority>
-		<lastmod>2021-06-12T20:06:39.561Z</lastmod>
+		<lastmod>2021-06-13T16:58:09.481Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
 		<loc>https://rwb0104.github.io/posts/</loc>
 		<priority>1.00</priority>
-		<lastmod>2021-06-12T20:06:39.561Z</lastmod>
+		<lastmod>2021-06-13T16:58:09.481Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
 		<loc>https://rwb0104.github.io/projects/</loc>
 		<priority>1.00</priority>
-		<lastmod>2021-06-12T20:06:39.561Z</lastmod>
+		<lastmod>2021-06-13T16:58:09.481Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
@@ -178,6 +178,12 @@
 		<loc>https://rwb0104.github.io/posts/2021/06/13/A1013/</loc>
 		<priority>0.5</priority>
 		<lastmod>2021-06-12T19:53:32.000Z</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>https://rwb0104.github.io/posts/2021/06/14/split-and-stringtoken/</loc>
+		<priority>0.5</priority>
+		<lastmod>2021-06-13T16:56:01.000Z</lastmod>
 		<changefreq>monthly</changefreq>
 	</url>
 </urlset>

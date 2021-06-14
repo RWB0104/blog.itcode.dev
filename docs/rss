@@ -6,7 +6,7 @@
 		<link>https://rwb0104.github.io//</link>
 		<atom:link href="https://rwb0104.github.io/feed.xml" rel="self" type="application/rss+xml"/>
 		<pubDate>2021-05-26T14:36:57.000Z</pubDate>
-		<lastBuildDate>2021-06-13T16:58:09.482Z</lastBuildDate>
+		<lastBuildDate>2021-06-14T17:30:36.416Z</lastBuildDate>
 	</channel>
 	<item>
 		<title>[JAVA] 백준 알고리즘 1000번 A + B</title>
@@ -324,6 +324,17 @@
 		<category>정규 표현식</category>
 		<category>GOLD</category>
 		<category>GOLD V</category>
+	</item>
+	<item>
+		<title>IntelliJ(인텔리제이) 시작 시 오류(java.net.BindException: Address already in use: bind)</title>
+		<description></description>
+		<pubDate>2021-06-14T12:59:16.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/06/14/intellij-error-onstart/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/06/14/intellij-error-onstart/</guid>
+		<category>JAVA</category>
+		<category>IntelliJ(인텔리제이)</category>
+		<category>Hyper-V</category>
+		<category>오류 해결책</category>
 	</item>
 	<item>
 		<title>split vs StringToken</title>

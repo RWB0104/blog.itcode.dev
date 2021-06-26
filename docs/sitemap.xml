@@ -3,25 +3,25 @@
 	<url>
 		<loc>https://rwb0104.github.io/about/</loc>
 		<priority>1.00</priority>
-		<lastmod>2021-06-26T08:53:23.662Z</lastmod>
+		<lastmod>2021-06-26T09:13:01.179Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
 		<loc>https://rwb0104.github.io/</loc>
 		<priority>1.00</priority>
-		<lastmod>2021-06-26T08:53:23.662Z</lastmod>
+		<lastmod>2021-06-26T09:13:01.179Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
 		<loc>https://rwb0104.github.io/posts/</loc>
 		<priority>1.00</priority>
-		<lastmod>2021-06-26T08:53:23.662Z</lastmod>
+		<lastmod>2021-06-26T09:13:01.179Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
 		<loc>https://rwb0104.github.io/projects/</loc>
 		<priority>1.00</priority>
-		<lastmod>2021-06-26T08:53:23.662Z</lastmod>
+		<lastmod>2021-06-26T09:13:01.179Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
@@ -218,6 +218,12 @@
 	</url>
 	<url>
 		<loc>https://rwb0104.github.io/posts/2021/06/26/A1018/</loc>
+		<priority>0.5</priority>
+		<lastmod>2021-06-26T07:46:20.000Z</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>https://rwb0104.github.io/posts/2021/06/26/A1019/</loc>
 		<priority>0.5</priority>
 		<lastmod>2021-06-26T07:46:20.000Z</lastmod>
 		<changefreq>monthly</changefreq>

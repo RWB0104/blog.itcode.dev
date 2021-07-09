@@ -6,7 +6,7 @@
 		<link>https://rwb0104.github.io//</link>
 		<atom:link href="https://rwb0104.github.io/feed.xml" rel="self" type="application/rss+xml"/>
 		<pubDate>2021-05-26T14:36:57.000Z</pubDate>
-		<lastBuildDate>2021-06-26T09:13:01.180Z</lastBuildDate>
+		<lastBuildDate>2021-07-09T23:41:09.818Z</lastBuildDate>
 	</channel>
 	<item>
 		<title>[백준 / JAVA] 백준 알고리즘 1000번 A + B</title>
@@ -418,14 +418,38 @@
 	</item>
 	<item>
 		<title>[백준 / JAVA] 백준 알고리즘 1019번 책 페이지</title>
-		<description>지민이는 자신의 저택에서 MN개의 단위 정사각형으로 나누어져 있는 M*N 크기의 보드를 찾았다. 어떤 정사각형은 검은색으로 칠해져 있고, 나머지는 흰색으로 칠해져 있다. 지민이는 이 보드를 잘라서 8*8 크기의 체스판으로 만들려고 한다. 체스판은 검은색과 흰색이 번갈아서 칠해져 있어야 한다. 구체적으로, 각 칸이 검은색과 흰색 중 하나로 색칠되어 있고, 변을 공유하는 두 개의 사각형은 다른 색으로 칠해져 있어야 한다. 따라서 이 정의를 따르면 체스판을 색칠하는 경우는 두 가지뿐이다. 하나는 맨 왼쪽 위 칸이 흰색인 경우, 하나는 검은색인 경우이다. 보드가 체스판처럼 칠해져 있다는 보장이 없어서, 지민이는 8 X 8 크기의 체스판으로 잘라낸 후에 몇 개의 정사각형을 다시 칠해야겠다고 생각했다. 당연히 8*8 크기는 아무데서나 골라도 된다. 지민이가 다시 칠해야 하는 정사각형의 최소 개수를 구하는 프로그램을 작성하시오.</description>
-		<pubDate>2021-06-26T07:46:20.000Z</pubDate>
-		<link>https://rwb0104.github.io/posts/2021/06/26/A1019/</link>
-		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/06/26/A1019/</guid>
+		<description>지민이는 전체 페이지의 수가 N인 책이 하나 있다. 첫 페이지는 1페이지이고, 마지막 페이지는 N페이지이다. 각 숫자가 전체 페이지 번호에서 모두 몇 번 나오는지 구해보자.</description>
+		<pubDate>2021-06-28T03:28:50.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/06/28/A1019/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/06/28/A1019/</guid>
 		<category>알고리즘</category>
 		<category>백준</category>
 		<category>JAVA(자바)</category>
 		<category>GOLD</category>
 		<category>GOLD I</category>
+	</item>
+	<item>
+		<title>자료구조가 중요한 까닭</title>
+		<description>혼자 공부하는건 다 좋은데 효율이 떨어진다. 컴퓨터 앞에 앉아있는 시간은 거의 대부분이라 할 수 있지만, 순수하게 공부하는 시간이 얼마나 되냐고 물어보면 눈치보기 바쁘다. 마침 블로그도 새로 개발해서 쓰고 있고, 공부도 할 겸 적절한 스터디에 하나 참가했다. 노트북 팔아버린 뒤로 스터디에 가입하고 싶어도 할 수가 없었던 차에, 노트북 없이도 할 수 있다는 말에 바로 들어갔다.</description>
+		<pubDate>2021-07-09T16:30:56.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/07/10/about-algorithm-chapter01/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/07/10/about-algorithm-chapter01/</guid>
+		<category>알고리즘</category>
+		<category>자료구조</category>
+		<category>누구나 자료 구조와 알고리즘</category>
+		<category>배열</category>
+	</item>
+	<item>
+		<title>알고리즘이 중요한 까닭</title>
+		<description>IT영역에서의 알고리즘이란, 어떤 문제를 해결하는 방법을 형상화한 코드를 의미한다. 알고리즘을 잘 설계한다면, 단순한 로직으로 접근할 때보다 훨씬 빠르게 문제를 처리할 수 있다. 개발에는 정말 다양한 문제와 그보다 더욱 다양한 해결방법이 존재하기 때문에, 복잡한 문제일수록 정교한 알고리즘의 설계가 요구된다.</description>
+		<pubDate>2021-07-09T19:21:37.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/07/10/about-algorithm-chapter02/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/07/10/about-algorithm-chapter02/</guid>
+		<category>알고리즘</category>
+		<category>자료구조</category>
+		<category>누구나 자료 구조와 알고리즘</category>
+		<category>배열</category>
+		<category>정렬</category>
+		<category>이진 검색</category>
 	</item>
 </rss>

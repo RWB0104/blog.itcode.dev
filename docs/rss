@@ -6,7 +6,7 @@
 		<link>https://rwb0104.github.io//</link>
 		<atom:link href="https://rwb0104.github.io/feed.xml" rel="self" type="application/rss+xml"/>
 		<pubDate>2021-05-26T14:36:57.000Z</pubDate>
-		<lastBuildDate>2021-07-09T23:41:09.818Z</lastBuildDate>
+		<lastBuildDate>2021-07-16T12:40:05.986Z</lastBuildDate>
 	</channel>
 	<item>
 		<title>[백준 / JAVA] 백준 알고리즘 1000번 A + B</title>
@@ -451,5 +451,27 @@
 		<category>배열</category>
 		<category>정렬</category>
 		<category>이진 검색</category>
+	</item>
+	<item>
+		<title>빅 오 표기법</title>
+		<description>하나의 문제가 있어도, 이를 해결하는 수 많은 알고리즘이 존재할 수 있다. 어떠한 방법으로든 문제를 해결할 수 있다면 그 자체로 알고리즘이라 불러도 손색이 없지만, 알고리즘이라고 해서 다 같진 않다. 바로 문제를 해결하는 효율성의 차이 때문. 결과적으로 문제를 해결한다고 해도 그냥 무식하게 해결하는 알고리즘이 있는가 하면, 정말 효율적으로 문제를 해결하는 알고리즘도 있다. 그리고 우리는 통상 후자를 알고리즘이라는 명칭에 더 어울린다고 생각할 것이다.</description>
+		<pubDate>2021-07-13T19:21:37.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/07/14/about-algorithm-chapter03/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/07/14/about-algorithm-chapter03/</guid>
+		<category>알고리즘</category>
+		<category>자료구조</category>
+		<category>누구나 자료 구조와 알고리즘</category>
+		<category>빅 오 표기법</category>
+	</item>
+	<item>
+		<title>빅 오로 코드 속도 올리기</title>
+		<description>이전 장에서 빅 오 코드 표기법을 배웠으니, 이를 통해 시간 복잡도를 비교함으로써 알고리즘을 서로 비교할 수 있음을 확인했다. 이 장에서는 버블 정렬 알고리즘을 설계하고, 이를 빅 오 표기법을 통해 어떻게 개선할 수 있는지 확인해본다.</description>
+		<pubDate>2021-07-16T12:39:54.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/07/16/about-algorithm-chapter04/</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/07/16/about-algorithm-chapter04/</guid>
+		<category>알고리즘</category>
+		<category>자료구조</category>
+		<category>누구나 자료 구조와 알고리즘</category>
+		<category>버블 정렬</category>
 	</item>
 </rss>

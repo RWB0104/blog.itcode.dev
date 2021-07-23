@@ -6,7 +6,7 @@
 		<link>https://rwb0104.github.io//</link>
 		<atom:link href="https://rwb0104.github.io/feed.xml" rel="self" type="application/rss+xml"/>
 		<pubDate>2021-05-26T14:36:57.000Z</pubDate>
-		<lastBuildDate>2021-07-23T19:54:55.115Z</lastBuildDate>
+		<lastBuildDate>2021-07-23T19:59:34.854Z</lastBuildDate>
 	</channel>
 	<item>
 		<title>[백준 / JAVA] 백준 알고리즘 1000번 A + B</title>
@@ -475,15 +475,15 @@
 		<category>버블 정렬</category>
 	</item>
 	<item>
-		<title>빅 오로 코드 속도 올리기</title>
+		<title>빅 오를 사용하거나 사용하지 않는 코드 최적화</title>
 		<description>지금까지 알고리즘의 퍼포먼스를 비교하면서 빅 오 표기법을 통해 수치화했다. 하지만 빅 오 표기법도 알고리즘의 퍼포먼스를 측정함에 있어서 완벽함을 보여주진 않는다. 이전 장에서 N(O^2)이나 N(N^2 - N) 모두 빅 오 표기법에선 N(O^2)로 간주한다고 설명했다. 이러한 특성으로 인해, 실제로는 명백한 차이를 보이는 알고리즘임에도 불구하고 빅 오 표기법으론 성능이 거의 동일하게 측정되기도 한다.</description>
-		<pubDate>2021-07-16T12:39:54.000Z</pubDate>
+		<pubDate>2021-07-23T14:42:33.000Z</pubDate>
 		<link>https://rwb0104.github.io/posts/2021/07/23/about-algorithm-chapter05/</link>
 		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/07/23/about-algorithm-chapter05/</guid>
 		<category>알고리즘</category>
 		<category>자료구조</category>
 		<category>누구나 자료 구조와 알고리즘</category>
-		<category>버블 정렬</category>
+		<category>선택 정렬</category>
 	</item>
 	<item>
 		<title>긍정적인 시나리오 최적화</title>
@@ -494,6 +494,6 @@
 		<category>알고리즘</category>
 		<category>자료구조</category>
 		<category>누구나 자료 구조와 알고리즘</category>
-		<category>버블 정렬</category>
+		<category>삽입 정렬</category>
 	</item>
 </rss>

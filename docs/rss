@@ -3,10 +3,10 @@
 	<channel>
 		<title>Kapoo</title>
 		<description>314159265359번째 알파카의 개발 낙서장</description>
-		<link>https://rwb0104.github.io//</link>
+		<link>https://rwb0104.github.io</link>
 		<atom:link href="https://rwb0104.github.io/feed.xml" rel="self" type="application/rss+xml"/>
 		<pubDate>2021-05-26T14:36:57.000Z</pubDate>
-		<lastBuildDate>2021-07-25T11:52:12.693Z</lastBuildDate>
+		<lastBuildDate>2021-07-25T12:39:03.245Z</lastBuildDate>
 	</channel>
 	<item>
 		<title>[백준 / JAVA] 백준 알고리즘 1000번 A + B</title>

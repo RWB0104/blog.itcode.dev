@@ -6,7 +6,7 @@
 		<link>https://rwb0104.github.io</link>
 		<atom:link href="https://rwb0104.github.io/feed.xml" rel="self" type="application/rss+xml"/>
 		<pubDate>2021-05-26T14:36:57.000Z</pubDate>
-		<lastBuildDate>2021-07-25T16:48:09.884Z</lastBuildDate>
+		<lastBuildDate>2021-07-26T13:51:37.081Z</lastBuildDate>
 	</channel>
 	<item>
 		<title>[백준 / JAVA] 백준 알고리즘 1000번 A + B</title>
@@ -72,7 +72,6 @@
 		<category>Next.js</category>
 		<category>개발 블로그</category>
 		<category>Jekyll</category>
-		<category>Next.js</category>
 	</item>
 	<item>
 		<title>백준 알고리즘 시작하기</title>

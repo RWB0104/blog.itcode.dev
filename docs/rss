@@ -6,7 +6,7 @@
 		<link>https://rwb0104.github.io</link>
 		<atom:link href="https://rwb0104.github.io/feed.xml" rel="self" type="application/rss+xml"/>
 		<pubDate>2021-05-26T14:36:57.000Z</pubDate>
-		<lastBuildDate>2021-07-28T14:41:02.309Z</lastBuildDate>
+		<lastBuildDate>2021-07-28T14:47:53.035Z</lastBuildDate>
 	</channel>
 	<item>
 		<title>[백준 / JAVA] 백준 알고리즘 1000번 A + B</title>
@@ -497,7 +497,7 @@
 	</item>
 	<item>
 		<title>블로그 개편기</title>
-		<description></description>
+		<description>이 블로그를 처음 개발한지가 한 5월 쯤으로 기억한다. 4월부터 접한 리액트에 흥미가 생겨 두서없이 만든게 시작이였으니, 결과물은 내 생각보다 훨씬 조잡하지 않았나 생각했다. 다행스럽게(?)도 블로그 또한 그런 내 믿음을 져버리기 싫었는지, 동작 과정에서 크고 작은 문제들을 보여주곤 했다. 동작 자체에 영향을 미칠 정도로 크리티컬한 문제는 아니였다만, 내 신경엔 영향을 미칠 정도로 거슬리는 부분이 몇 가지 있었다. 아무도 관심 없지만 이왕 만든거 이번 포스팅을 통해 블로그의 개선점을 정리해놓고자 한다.</description>
 		<pubDate>2021-07-25T19:54:40.000Z</pubDate>
 		<link>https://rwb0104.github.io/posts/2021/07/26/brand-new</link>
 		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/07/26/brand-new</guid>

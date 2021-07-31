@@ -6,8 +6,30 @@
 		<link>https://rwb0104.github.io</link>
 		<atom:link href="https://rwb0104.github.io/feed.xml" rel="self" type="application/rss+xml"/>
 		<pubDate>2021-05-26T14:36:57.000Z</pubDate>
-		<lastBuildDate>2021-07-28T14:47:53.035Z</lastBuildDate>
+		<lastBuildDate>2021-07-31T03:02:38.885Z</lastBuildDate>
 	</channel>
+	<item>
+		<title>Jekyll에서 Next.js로</title>
+		<description>Jekyll에서 Next.js로의 블로그 이동기</description>
+		<pubDate>2021-05-21T06:09:33.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/05/21/jekyll-to-nextjs</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/05/21/jekyll-to-nextjs</guid>
+		<category>잡담</category>
+		<category>React(리액트)</category>
+		<category>Next.js</category>
+		<category>개발 블로그</category>
+		<category>Jekyll</category>
+	</item>
+	<item>
+		<title>백준 알고리즘 시작하기</title>
+		<description>코딩 테스트 및 개인 실력 향상을 위해 백준 알고리즘을 차례로 풀어보기로 했다. 그냥 풀기만 하면 분명히 나중에 어떻게 풀었는지 까먹을테니, 이해한 내용을 포스팅하며 풀이를 진행한다. 풀이의 규칙은 아래와 같다.</description>
+		<pubDate>2021-05-21T12:22:31.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/05/21/start-beakjoon</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/05/21/start-beakjoon</guid>
+		<category>알고리즘</category>
+		<category>백준</category>
+		<category>JAVA(자바)</category>
+	</item>
 	<item>
 		<title>[백준 / JAVA] 백준 알고리즘 1000번 A + B</title>
 		<description>두 정수 A와 B를 입력받은 다음, A + B를 출력하는 프로그램을 작성하시오.</description>
@@ -62,41 +84,6 @@
 		<category>SILVER III</category>
 	</item>
 	<item>
-		<title>Jekyll에서 Next.js로</title>
-		<description>Jekyll에서 Next.js로의 블로그 이동기</description>
-		<pubDate>2021-05-21T06:09:33.000Z</pubDate>
-		<link>https://rwb0104.github.io/posts/2021/05/21/jekyll-to-nextjs</link>
-		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/05/21/jekyll-to-nextjs</guid>
-		<category>잡담</category>
-		<category>React(리액트)</category>
-		<category>Next.js</category>
-		<category>개발 블로그</category>
-		<category>Jekyll</category>
-	</item>
-	<item>
-		<title>백준 알고리즘 시작하기</title>
-		<description>코딩 테스트 및 개인 실력 향상을 위해 백준 알고리즘을 차례로 풀어보기로 했다. 그냥 풀기만 하면 분명히 나중에 어떻게 풀었는지 까먹을테니, 이해한 내용을 포스팅하며 풀이를 진행한다. 풀이의 규칙은 아래와 같다.</description>
-		<pubDate>2021-05-21T12:22:31.000Z</pubDate>
-		<link>https://rwb0104.github.io/posts/2021/05/21/start-beakjoon</link>
-		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/05/21/start-beakjoon</guid>
-		<category>알고리즘</category>
-		<category>백준</category>
-		<category>JAVA(자바)</category>
-	</item>
-	<item>
-		<title>[백준 / JAVA] 백준 알고리즘 1004번 어린 왕자</title>
-		<description>어린 왕자는 소혹성 B-664에서 자신이 사랑하는 한 송이 장미를 위해 살아간다. 어느 날 장미가 위험에 빠지게 된 것을 알게 된 어린 왕자는, 장미를 구하기 위해 은하수를 따라 긴 여행을 하기 시작했다. 하지만 어린 왕자의 우주선은 그렇게 좋지 않아서 행성계 간의 이동을 최대한 피해서 여행해야 한다. 아래의 그림은 어린 왕자가 펼쳐본 은하수 지도의 일부이다.</description>
-		<pubDate>2021-05-22T12:42:23.000Z</pubDate>
-		<link>https://rwb0104.github.io/posts/2021/05/22/A1004</link>
-		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/05/22/A1004</guid>
-		<category>알고리즘</category>
-		<category>백준</category>
-		<category>JAVA(자바)</category>
-		<category>기하학</category>
-		<category>SILVER</category>
-		<category>SILVER III</category>
-	</item>
-	<item>
 		<title>도메인이란?</title>
 		<description>도메인을 이해하기 위해선, IP에 대해 짚고 넘어가야 한다. 인터넷에 연결된 모든 디바이스(컴퓨터, 스마트폰, 공유기 등)는 고유한 12자리 숫자로 구성된 IP주소를 가진다. IP를 유동성으로 나누면 크게 유동 IP, 고정 IP로 분류할 수 있다. 유동 IP: 임의의 시점마다 IP주소가 갱신되는 IP. 갱신 주기는 일정하지 않음. 대부분의 인터넷 회선에 적용됨. 고정 IP: 회선에 고정된 IP를 부여하며, 해당 회선의 IP는 갱신되지 않음. 부가서비스 형태로 제공되며, 쇼핑몰이나 회사 등 지속적으로 시스템을 운영해야 할 경우 적합함. 우리가 원하는 장소에 방문하기 위해 주소를 찾듯이, 특정 서버에서 운영하는 웹 사이트를 방문하기 위해선 해당 서버의 주소인 IP가 필요하다.</description>
 		<pubDate>2021-05-22T03:52:51.000Z</pubDate>
@@ -115,6 +102,19 @@
 		<category>WAS</category>
 		<category>Tomcat(톰캣)</category>
 		<category>Console(콘솔)</category>
+	</item>
+	<item>
+		<title>[백준 / JAVA] 백준 알고리즘 1004번 어린 왕자</title>
+		<description>어린 왕자는 소혹성 B-664에서 자신이 사랑하는 한 송이 장미를 위해 살아간다. 어느 날 장미가 위험에 빠지게 된 것을 알게 된 어린 왕자는, 장미를 구하기 위해 은하수를 따라 긴 여행을 하기 시작했다. 하지만 어린 왕자의 우주선은 그렇게 좋지 않아서 행성계 간의 이동을 최대한 피해서 여행해야 한다. 아래의 그림은 어린 왕자가 펼쳐본 은하수 지도의 일부이다.</description>
+		<pubDate>2021-05-22T12:42:23.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/05/22/A1004</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/05/22/A1004</guid>
+		<category>알고리즘</category>
+		<category>백준</category>
+		<category>JAVA(자바)</category>
+		<category>기하학</category>
+		<category>SILVER</category>
+		<category>SILVER III</category>
 	</item>
 	<item>
 		<title>Tomcat(톰캣) 현재 콘솔창에서 구동하기</title>
@@ -187,6 +187,17 @@
 		<category>PLATINUM III</category>
 	</item>
 	<item>
+		<title>[Jekyll] GitHub Pages를 이용해 나만의 블로그 만들기 - 1. Jekyll이란?</title>
+		<description>대형 포탈이나 크고 작은 플랫폼을 통해 자신만의 블로그를 만들 수 있다. 이러한 플랫폼을 통한 블로그는 연동된 계정과 버튼 클릭 몇 번으로 만들 수 있을 정도로 쉽고 간편하다. 하지만 이와 같은 블로그는 페이지의 기본 프레임이 정해져있고, 자유로운 커스터마이징이 제한된 편이다. 자신만의 색이나 가치관을 담은 블로그를 만들기 위해선 소위 "기성품"이 아닌 방법을 찾아야하는데, 이는 곧 자신이 직접 웹 페이지를 제작하고 퍼블리싱, 호스팅까지 전반적인 웹 서비스 자체를 구축해야하는 큰 작업으로 이어진다. 어찌어찌 페이지를 제작한다 하더라도, CSS를 통한 디자인이나 JavaScript같은 부가기능은 프레임 제작 이상으로 어렵다. 여기까지는 어떻게 자력으로 했다고 하더라도, 호스팅은 돈이 든다. DB까지 연동한다면 금액은 더욱 커지게 된다. 내가 원한건 단순한 블로그였는데.</description>
+		<pubDate>2021-06-06T14:18:25.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/06/06/jekyll-blog-start</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/06/06/jekyll-blog-start</guid>
+		<category>Jekyll</category>
+		<category>GitHub Pages(깃허브 페이지)</category>
+		<category>Jekyll(지킬)</category>
+		<category>Blog(블로그)</category>
+	</item>
+	<item>
 		<title>[Jekyll] GitHub Pages를 이용해 나만의 블로그 만들기 - 2. GitHub와 친해지기</title>
 		<description>Jekyll은 GitHub를 통해 호스팅한다. 즉, Jekyll로 블로그를 만들기 위해선 GitHub를 조금이나마 알고 있어야 한다. 본문에서는 GitHub의 여러 기능은 제쳐두고, Jekyll 호스팅을 목적을 기준으로 설명한다.</description>
 		<pubDate>2021-06-06T14:29:32.000Z</pubDate>
@@ -209,17 +220,6 @@
 		<category>Jekyll(지킬)</category>
 		<category>Blog(블로그)</category>
 		<category>Git</category>
-	</item>
-	<item>
-		<title>[Jekyll] GitHub Pages를 이용해 나만의 블로그 만들기 - 1. Jekyll이란?</title>
-		<description>대형 포탈이나 크고 작은 플랫폼을 통해 자신만의 블로그를 만들 수 있다. 이러한 플랫폼을 통한 블로그는 연동된 계정과 버튼 클릭 몇 번으로 만들 수 있을 정도로 쉽고 간편하다. 하지만 이와 같은 블로그는 페이지의 기본 프레임이 정해져있고, 자유로운 커스터마이징이 제한된 편이다. 자신만의 색이나 가치관을 담은 블로그를 만들기 위해선 소위 "기성품"이 아닌 방법을 찾아야하는데, 이는 곧 자신이 직접 웹 페이지를 제작하고 퍼블리싱, 호스팅까지 전반적인 웹 서비스 자체를 구축해야하는 큰 작업으로 이어진다. 어찌어찌 페이지를 제작한다 하더라도, CSS를 통한 디자인이나 JavaScript같은 부가기능은 프레임 제작 이상으로 어렵다. 여기까지는 어떻게 자력으로 했다고 하더라도, 호스팅은 돈이 든다. DB까지 연동한다면 금액은 더욱 커지게 된다. 내가 원한건 단순한 블로그였는데.</description>
-		<pubDate>2021-06-06T14:18:25.000Z</pubDate>
-		<link>https://rwb0104.github.io/posts/2021/06/06/jekyll-blog-start</link>
-		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/06/06/jekyll-blog-start</guid>
-		<category>Jekyll</category>
-		<category>GitHub Pages(깃허브 페이지)</category>
-		<category>Jekyll(지킬)</category>
-		<category>Blog(블로그)</category>
 	</item>
 	<item>
 		<title>[Jekyll] GitHub Pages를 이용해 나만의 블로그 만들기 - 4. Jekyll 쇼핑하기</title>
@@ -325,17 +325,6 @@
 		<category>GOLD V</category>
 	</item>
 	<item>
-		<title>IntelliJ(인텔리제이) 시작 시 오류(java.net.BindException: Address already in use: bind)</title>
-		<description></description>
-		<pubDate>2021-06-14T12:59:16.000Z</pubDate>
-		<link>https://rwb0104.github.io/posts/2021/06/14/intellij-error-onstart</link>
-		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/06/14/intellij-error-onstart</guid>
-		<category>JAVA</category>
-		<category>IntelliJ(인텔리제이)</category>
-		<category>Hyper-V</category>
-		<category>오류 해결책</category>
-	</item>
-	<item>
 		<title>[JAVA] split vs StringTokenizer</title>
 		<description>알고리즘을 풀다보면, 필연적으로 입력값 처리를 하게된다. 다양한 케이스에 대응하기 위해, 사용자의 값을 직접 입력받아 이를 처리하게 된다. 이 때, 우리는 십중팔구 이와 같은 상황이 발생한다. 데이터셋을 보내기 위해 데이터의 모음을 구분자(공백 혹은 쉼표)를 통해 하나의 문자열로 합쳐 전달한다.</description>
 		<pubDate>2021-06-13T16:56:01.000Z</pubDate>
@@ -346,6 +335,17 @@
 		<category>String(문자열)</category>
 		<category>split</category>
 		<category>StringTokenizer</category>
+	</item>
+	<item>
+		<title>IntelliJ(인텔리제이) 시작 시 오류(java.net.BindException: Address already in use: bind)</title>
+		<description></description>
+		<pubDate>2021-06-14T12:59:16.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/06/14/intellij-error-onstart</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/06/14/intellij-error-onstart</guid>
+		<category>JAVA</category>
+		<category>IntelliJ(인텔리제이)</category>
+		<category>Hyper-V</category>
+		<category>오류 해결책</category>
 	</item>
 	<item>
 		<title>[백준 / JAVA] 백준 알고리즘 1014번 컨닝</title>
@@ -507,5 +507,27 @@
 		<category>개발 블로그</category>
 		<category>TypeScript</category>
 		<category>SCSS</category>
+	</item>
+	<item>
+		<title>해시 테이블로 매우 빠른 룩업</title>
+		<description>현재까지 다룬 데이터 형식 중 다수의 데이터를 다루는 데 가장 효과적인 형식은 배열일 것이다. 하지만 배열의 경우, 요소별로 단 하나의 값이 들어가는 데 특화되어 있다. 만약 하나의 요소에 두 값을 넣고자 한다면 어떻게 될까? [[A, 1], [B, 2], [C, 3]]과 같은 형태로 나타낼 것이다. 배열의 단점 중 하나는, 값을 빠르게 찾기 위해선 반드시 정렬을 수행해야 한다는 것이다. 하지만 저렇게 배열 안에 또다른 배열이 포함되는 것처럼 배열의 depth가 심해질 경우 구조가 복잡해서 배열을 다루기 점점 난해해진다. 더군다나 배열의 경우 원하는 요소를 탐색하기 위해선 적어도 O(logN) 이상의 시간복잡도를 필요로 한다. 만약, 배열과 같이 특정 데이터의 모음에서 내가 원하는 데이터를 O(1)과 같이 상수 시간으로 탐색할 수 있는 데이터가 있다면 어떨까? 왠지 이 장에서 그 해답을 찾을 수 있을 것 같다.</description>
+		<pubDate>2021-07-29T14:02:27.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/07/29/about-algorithm-chapter07</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/07/29/about-algorithm-chapter07</guid>
+		<category>알고리즘</category>
+		<category>자료구조</category>
+		<category>누구나 자료 구조와 알고리즘</category>
+		<category>해시 테이블</category>
+	</item>
+	<item>
+		<title>스택과 큐로 간결한 코드 생성</title>
+		<description>이 장에서는 스택과 큐에 대해 알아본다. 사실 이 두 자료구조는 배열에 특정한 제약을 건 자료구조다. 제약이라는 개념 때문에 특수한 상황에서만 쓰이지 않을까 싶지만, 오히려 이러한 제약이 주는 규칙으로 인해 굉장히 많은 곳에서 쓰인다. 스택과 큐의 가장 큰 특징은 데이터 처리에 순서가 있다는 점이다. 스택과 큐는 그 제약에 따라 반드시 정해진 순서로 데이터를 처리한다. 이러한 특징 덕에 순서가 필요한 작업들에 유용하게 사용된다. 대표적으로 스케쥴러, 대기 등이 있으며 OS의 인터럽트(Interrupt) 작업에서 스택이 쓰인다.</description>
+		<pubDate>2021-07-31T02:58:37.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/07/31/about-algorithm-chapter08</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/07/31/about-algorithm-chapter08</guid>
+		<category>알고리즘</category>
+		<category>자료구조</category>
+		<category>누구나 자료 구조와 알고리즘</category>
+		<category>해시 테이블</category>
 	</item>
 </rss>

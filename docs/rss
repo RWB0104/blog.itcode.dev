@@ -6,7 +6,7 @@
 		<link>https://rwb0104.github.io</link>
 		<atom:link href="https://rwb0104.github.io/feed.xml" rel="self" type="application/rss+xml"/>
 		<pubDate>2021-05-26T14:36:57.000Z</pubDate>
-		<lastBuildDate>2021-08-01T14:46:02.144Z</lastBuildDate>
+		<lastBuildDate>2021-08-03T16:12:54.902Z</lastBuildDate>
 	</channel>
 	<item>
 		<title>Jekyll에서 Next.js로</title>
@@ -528,6 +528,18 @@
 		<category>알고리즘</category>
 		<category>자료구조</category>
 		<category>누구나 자료 구조와 알고리즘</category>
-		<category>해시 테이블</category>
+		<category>큐</category>
+		<category>스택</category>
+	</item>
+	<item>
+		<title>재귀를 사용한 재귀적 반복</title>
+		<description>컴퓨터 언어에서의 재귀란 자기 자신을 호출함을 의미한다. 알고리즘에서의 재귀는 매우 중요한 개념 중 하나로써, 그 특성 상 복잡한 연산 및 연산에 걸리는 소요 시간을 효과적으로 개선할 수 있다.</description>
+		<pubDate>2021-08-03T15:26:26.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/08/04/about-algorithm-chapter09</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/08/04/about-algorithm-chapter09</guid>
+		<category>알고리즘</category>
+		<category>자료구조</category>
+		<category>누구나 자료 구조와 알고리즘</category>
+		<category>재귀</category>
 	</item>
 </rss>

@@ -6,7 +6,7 @@
 		<link>https://rwb0104.github.io</link>
 		<atom:link href="https://rwb0104.github.io/feed.xml" rel="self" type="application/rss+xml"/>
 		<pubDate>2021-05-26T14:36:57.000Z</pubDate>
-		<lastBuildDate>2021-08-04T15:17:06.105Z</lastBuildDate>
+		<lastBuildDate>2021-08-07T04:16:51.798Z</lastBuildDate>
 	</channel>
 	<item>
 		<title>Jekyll에서 Next.js로</title>
@@ -541,5 +541,14 @@
 		<category>자료구조</category>
 		<category>누구나 자료 구조와 알고리즘</category>
 		<category>재귀</category>
+	</item>
+	<item>
+		<title>객체지향 프로그래밍(Object Oriented Programming)이란?</title>
+		<description></description>
+		<pubDate>2021-08-07T03:06:45.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/08/07/what-is-oop</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/08/07/what-is-oop</guid>
+		<category>CS</category>
+		<category>객체지향</category>
 	</item>
 </rss>

@@ -6,7 +6,7 @@
 		<link>https://rwb0104.github.io</link>
 		<atom:link href="https://rwb0104.github.io/feed.xml" rel="self" type="application/rss+xml"/>
 		<pubDate>2021-05-26T14:36:57.000Z</pubDate>
-		<lastBuildDate>2021-08-07T04:16:51.798Z</lastBuildDate>
+		<lastBuildDate>2021-08-10T15:53:48.407Z</lastBuildDate>
 	</channel>
 	<item>
 		<title>Jekyll에서 Next.js로</title>
@@ -543,12 +543,24 @@
 		<category>재귀</category>
 	</item>
 	<item>
-		<title>객체지향 프로그래밍(Object Oriented Programming)이란?</title>
-		<description></description>
+		<title>[OOP] 객체지향 프로그래밍(Object Oriented Programming)이란?</title>
+		<description>IT 업계에 종사하게 된다면 십중팔구 JAVA, C++, C# 중 하나는 다루게 된다. 국내 IT의 최다 공급이자 수요인 JAVA를 위시한 위 세 가지 언어의 공통점은 전부 객체지향언어라는 점이다. 물론 지금에 이르러서는 함수형이라는 개념도 나왔지만, C의 단순한 절차지향 이래로 나온 객체지향은 프로그래밍의 새로운 관점을 제시했고, 크고 작은 언어들이 알게 모르게 영향을 받았다. 이렇게 영향력이 큰 개념임에도 불구하고 막상 이와 관련된 질문을 받으면 명확하게 답을 내지 못 하기도 한다.</description>
 		<pubDate>2021-08-07T03:06:45.000Z</pubDate>
 		<link>https://rwb0104.github.io/posts/2021/08/07/what-is-oop</link>
 		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/08/07/what-is-oop</guid>
 		<category>CS</category>
 		<category>객체지향</category>
+	</item>
+	<item>
+		<title>[OOP] 객체지향의 특징 - 캡슐화(Encapsulation)와 정보 은닉</title>
+		<description>객체. 즉, 클래스의 내부 변수와 메소드를 하나로 패키징하는 특징이다. 객체에 선언된 변수나 메소드가 구분없이 중구난방으로 접근할 수 있다면 정상적인 객체로 보기 어렵다. 캡슐화와 비슷한 개념으로 정보 은닉이라는 개념이 있다. 정보 은닉은 객체의 내부 구현을 숨김으로써 객체가 반드시 정해진 메소드를 통해 상호작용하도록 유도한다. 이 두 개념은 객체의 응집도와 독립성을 높임으로써 객체의 모듈화를 지향한다. 객체의 모듈화가 잘 이루어져있을 경우 모듈 단위의 재사용이 매우 용이하다. 여러 로직에서 중복되는 코드를 모듈로 대체하면 모듈 내부의 소스만 수정하는 것으로 수정사항을 반영할 수 있다. 이는 곧 간편한 유지보수와 직결된다.</description>
+		<pubDate>2021-08-08T02:05:05.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/08/08/encapulation</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/08/08/encapulation</guid>
+		<category>CS</category>
+		<category>객체지향</category>
+		<category>캡슐화</category>
+		<category>정보 은닉</category>
+		<category>접근제어자</category>
 	</item>
 </rss>

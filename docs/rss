@@ -6,7 +6,7 @@
 		<link>https://rwb0104.github.io</link>
 		<atom:link href="https://rwb0104.github.io/feed.xml" rel="self" type="application/rss+xml"/>
 		<pubDate>2021-05-26T14:36:57.000Z</pubDate>
-		<lastBuildDate>2021-08-11T17:06:58.727Z</lastBuildDate>
+		<lastBuildDate>2021-08-12T16:39:08.730Z</lastBuildDate>
 	</channel>
 	<item>
 		<title>Jekyll에서 Next.js로</title>
@@ -583,5 +583,16 @@
 		<category>CS</category>
 		<category>객체지향</category>
 		<category>다형성</category>
+	</item>
+	<item>
+		<title>[OOP] 객체지향 5원칙(SOLID) - 단일 책임 원칙 (Single Responsibility Principle)</title>
+		<description>올바른 객체지향 설계를 위해 수립한 원칙이 있으며, 이 다섯 가지 원칙을 통틀어 객체지향 5원칙(SOLID)이라 명명한다. 필수로 적용하지는 않지만, 적어도 이 규칙을 준수하면 준수할 수록 올바르게 설계된 객체지향이라 할 수 있다. 이 다섯가지 원칙은 아래와 같다.</description>
+		<pubDate>2021-08-12T16:37:48.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/08/13/single-responsibility-principle</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/08/13/single-responsibility-principle</guid>
+		<category>CS</category>
+		<category>객체지향</category>
+		<category>객체지향 5원칙</category>
+		<category>단일 책임 원칙</category>
 	</item>
 </rss>

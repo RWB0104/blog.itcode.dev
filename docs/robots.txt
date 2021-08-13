@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rwb0104.github.io/sitemap

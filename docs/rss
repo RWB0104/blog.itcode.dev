@@ -6,7 +6,7 @@
 		<link>https://rwb0104.github.io</link>
 		<atom:link href="https://rwb0104.github.io/feed.xml" rel="self" type="application/rss+xml"/>
 		<pubDate>2021-05-26T14:36:57.000Z</pubDate>
-		<lastBuildDate>2021-08-13T19:01:49.163Z</lastBuildDate>
+		<lastBuildDate>2021-08-13T19:04:48.407Z</lastBuildDate>
 	</channel>
 	<item>
 		<title>Jekyll에서 Next.js로</title>
@@ -598,7 +598,7 @@
 	<item>
 		<title>[OOP] 객체지향 5원칙(SOLID) - 개방-폐쇄 원칙 (Open-Closed Principle)</title>
 		<description>객체를 다룸에 있어서 객체의 확장은 개방적으로, 객체의 수정은 폐쇄적으로 대하는 원칙이다. 한 마디로, 보여줄 건 보여주고, 숨길 건 숨긴다는 의미. 좀 더 쉽게 말하자면, 기능이 변하거나 확장 가능하지만, 해당 기능의 코드는 수정하면 안 된다는 뜻이다. 그런데 이 원칙, 말이 좀 이상하다. 기능이 변하는 거 OK. 확장되는 거 OK. 근데 코드를 수정하면 안 된다?? 다소 이해가 되지 않는 요구사항이다. 만약, 객체 하나를 수정한다고 가정하자. 이 때 단순히 해당 객체만 수정하는 것 뿐만 아니라 해당 객체에 의존하는 다른 객체들의 코드까지 줄줄이 고쳐야한다면 좋은 설계로 보기 힘들다. 대표적으로 라이브러리를 생각해보자. 라이브러리를 사용하는 객체의 코드가 변경된다고 해서 라이브러리 코드까지 변경하지 않는다. 이처럼 개방-폐쇄 원칙은 각 객체의 모듈화와 정보 은닉의 올바른 구현을 추구하며, 이를 통해 객체 간의 의존성을 최소화하여 코드 변경에 따른 영향력을 낮추기 위한 원칙이다.</description>
-		<pubDate>2021-08-12T16:37:48.000Z</pubDate>
+		<pubDate>2021-08-13T19:04:40.000Z</pubDate>
 		<link>https://rwb0104.github.io/posts/2021/08/14/open-closed-principle</link>
 		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/08/14/open-closed-principle</guid>
 		<category>CS</category>

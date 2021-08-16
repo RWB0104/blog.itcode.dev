@@ -4,9 +4,9 @@
 		<title>Kapoo</title>
 		<description>314159265359번째 알파카의 개발 낙서장</description>
 		<link>https://rwb0104.github.io</link>
-		<atom:link href="https://rwb0104.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+		<atom:link href="https://rwb0104.github.io/rss.xml" rel="self" type="application/rss+xml"/>
 		<pubDate>2021-05-26T14:36:57.000Z</pubDate>
-		<lastBuildDate>2021-08-16T18:20:49.316Z</lastBuildDate>
+		<lastBuildDate>2021-08-16T18:38:22.826Z</lastBuildDate>
 	</channel>
 	<item>
 		<title>Jekyll에서 Next.js로</title>

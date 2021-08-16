@@ -6,7 +6,7 @@
 		<link>https://rwb0104.github.io</link>
 		<atom:link href="https://rwb0104.github.io/rss.xml" rel="self" type="application/rss+xml"/>
 		<pubDate>2021-05-26T14:36:57.000Z</pubDate>
-		<lastBuildDate>2021-08-16T18:38:22.826Z</lastBuildDate>
+		<lastBuildDate>2021-08-16T19:42:40.984Z</lastBuildDate>
 	</channel>
 	<item>
 		<title>Jekyll에서 Next.js로</title>
@@ -608,8 +608,8 @@
 		<title>[OOP] 객체지향 5원칙(SOLID) - 인터페이스 분리 원칙 (Interface Segregation Principle)</title>
 		<description>리스코프 치환 원칙은 부모 객체와 이를 상속한 자식 객체가 있을 때 부모 객체를 호출하는 동작에서 자식 객체가 부모 객체를 완전히 대체할 수 있다는 원칙이다. 객체지향 언어에선 객체의 상속이 일어난다. 이 과정에서 부모/자식 관계가 정의된다. 자식 객체는 부모 객체의 특성을 가지며, 이를 토대로 확장할 수 있다. 하지만 이 과정에서 무리하거나 객체의 의의와 어긋나는 확장으로 인해 잘못된 방향으로 상속되는 경우가 생긴다. 리스코프 치환 원칙은 올바른 상속을 위해 자식 객체의 확장이 부모 객체의 방향을 온전히 따르도록 권고하는 원칙이다.</description>
 		<pubDate>2021-08-15T04:42:11.000Z</pubDate>
-		<link>https://rwb0104.github.io/posts/2021/08/15/liskov-Subsitution-principle</link>
-		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/08/15/liskov-Subsitution-principle</guid>
+		<link>https://rwb0104.github.io/posts/2021/08/15/liskov-subsitution-principle</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/08/15/liskov-subsitution-principle</guid>
 		<category>CS</category>
 		<category>객체지향</category>
 		<category>객체지향 5원칙</category>

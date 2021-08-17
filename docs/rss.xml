@@ -6,7 +6,7 @@
 		<link>https://rwb0104.github.io</link>
 		<atom:link href="https://rwb0104.github.io/rss.xml" rel="self" type="application/rss+xml"/>
 		<pubDate>2021-05-26T14:36:57.000Z</pubDate>
-		<lastBuildDate>2021-08-17T03:55:50.811Z</lastBuildDate>
+		<lastBuildDate>2021-08-17T16:20:48.297Z</lastBuildDate>
 	</channel>
 	<item>
 		<title>Jekyll에서 Next.js로</title>
@@ -633,5 +633,17 @@
 		<category>CS</category>
 		<category>객체지향</category>
 		<category>객체지향 5원칙</category>
+	</item>
+	<item>
+		<title>[SSL] SSL이란?</title>
+		<description>웹을 배포해본 적이 있다면 SSL에 대해 들어본 적이 있을 것이다. SSL이 적용된 URL의 프로토콜은 https://로 시작하며, http://와 달리 보안(Secure)을 의미하는 s가 붙는다. 지금 이 사이트의 주소도 https://rwb0104.github.io로 SSL이 적용된 걸 확인할 수 있다. NAVER나 Google도 마찬가지. 이 처럼 SSL은 굳이 웹 개발자에게만 친숙한 개념이 아니다. 누구나 인터넷을 사용했다면, 좋든 싫든 모두가 SSL을 접했다고 봐도 무방하다.</description>
+		<pubDate>2021-08-17T15:26:08.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/08/18/about-ssl</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/08/18/about-ssl</guid>
+		<category>WEB</category>
+		<category>CS</category>
+		<category>객체지향</category>
+		<category>SSL</category>
+		<category>TLS</category>
 	</item>
 </rss>

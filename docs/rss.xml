@@ -6,7 +6,7 @@
 		<link>https://rwb0104.github.io</link>
 		<atom:link href="https://rwb0104.github.io/rss.xml" rel="self" type="application/rss+xml"/>
 		<pubDate>2021-05-26T14:36:57.000Z</pubDate>
-		<lastBuildDate>2021-08-17T16:20:48.297Z</lastBuildDate>
+		<lastBuildDate>2021-08-18T15:03:41.449Z</lastBuildDate>
 	</channel>
 	<item>
 		<title>Jekyll에서 Next.js로</title>
@@ -645,5 +645,28 @@
 		<category>객체지향</category>
 		<category>SSL</category>
 		<category>TLS</category>
+	</item>
+	<item>
+		<title>[SSL] SSL 인증서</title>
+		<description>이전 장을 읽었다면 인증서에 대한 언급이 있음을 확인할 수 있다. SSL이 적용되면 서버와 클라이언트가 어떤 식으로 통신하고 암/복호화하여 데이터를 다루는지 설명했지만, 이는 SSL의 원리일 뿐이다. 그렇다면, 해당 도메인에 SSL이 적용되어 https를 사용할 수 있는 이유는 무엇일까?</description>
+		<pubDate>2021-08-18T01:55:24.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/08/18/about-ssl-license</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/08/18/about-ssl-license</guid>
+		<category>WEB</category>
+		<category>CS</category>
+		<category>객체지향</category>
+		<category>SSL</category>
+	</item>
+	<item>
+		<title>[SSL] Freenom을 활용한 무료 도메인 발급하기</title>
+		<description></description>
+		<pubDate>2021-08-18T14:44:43.000Z</pubDate>
+		<link>https://rwb0104.github.io/posts/2021/08/18/freenom-domain</link>
+		<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/08/18/freenom-domain</guid>
+		<category>WEB</category>
+		<category>CS</category>
+		<category>객체지향</category>
+		<category>SSL</category>
+		<category>도메인</category>
 	</item>
 </rss>

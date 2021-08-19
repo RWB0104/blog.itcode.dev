@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://rwb0104.github.io/sitemap
+#DaumWebMasterTool:825d445c0dd4620d3a9b89da9dac57b3626c3666e79290145497eae6314da4a3:sMjT4esKURhn9XiQZcsVNA==

@@ -10,7 +10,7 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next.seo.js</generator>
 		<pubDate>Wed, 26 May 2021 14:36:57 +0900</pubDate>
-		<lastBuildDate>Thu, 19 Aug 2021 12:11:53 +0900</lastBuildDate>
+		<lastBuildDate>Thu, 19 Aug 2021 15:40:00 +0900</lastBuildDate>
 		<item>
 			<title>Jekyll에서 Next.js로</title>
 			<description>Jekyll에서 Next.js로의 블로그 이동기</description>
@@ -671,6 +671,29 @@
 			<category>객체지향</category>
 			<category>SSL</category>
 			<category>도메인</category>
+		</item>
+		<item>
+			<title>[SSL] Tomcat에 SSL 적용하기</title>
+			<description>도메인도 있겠다. 이제 이 도메인을 가지고 SSL 인증서를 발급받아보자. 물론 SSL 인증서 또한 발급받는데 비용이 든다. 대부분의 운영 중인 도메인 업체는 SSL 발급도 병행한다. 테스트 목적이라면 도메인과 마찬가지로 SSL 발급도 부담스러울 것이다. SSL 역시 무료로 발급받을 수 있는 방법이 있으며, 도메인보다 그 방법이 훨씬 많다.</description>
+			<pubDate>Thu, 19 Aug 2021 14:37:21 +0900</pubDate>
+			<link>https://rwb0104.github.io/posts/2021/08/19/lets-encrypt</link>
+			<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/08/19/lets-encrypt</guid>
+			<category>WEB</category>
+			<category>CS</category>
+			<category>객체지향</category>
+			<category>SSL</category>
+		</item>
+		<item>
+			<title>[SSL] Windows 10에서 Let's Encrypt로 SSL 인증서 무료 발급받기</title>
+			<description>SSL 인증서를 받았으니, 이를 적용해보자. 보통 Nginx 같은 웹서버나, Tomcat과 같은 WAS에 적용한다. 이 장에서는 Tomcat 9.0.50을 기준으로 설명한다.</description>
+			<pubDate>Thu, 19 Aug 2021 15:35:21 +0900</pubDate>
+			<link>https://rwb0104.github.io/posts/2021/08/20/apply-ssl</link>
+			<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/08/20/apply-ssl</guid>
+			<category>WEB</category>
+			<category>CS</category>
+			<category>객체지향</category>
+			<category>SSL</category>
+			<category>Tomcat(톰캣)</category>
 		</item>
 	</channel>
 </rss>

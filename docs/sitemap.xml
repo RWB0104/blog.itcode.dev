@@ -3,37 +3,37 @@
 	<url>
 		<loc>https://rwb0104.github.io/404</loc>
 		<priority>0.5</priority>
-		<lastmod>2021-08-25T15:06:50.985Z</lastmod>
+		<lastmod>2021-08-25T16:39:35.227Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
 		<loc>https://rwb0104.github.io/500</loc>
 		<priority>0.5</priority>
-		<lastmod>2021-08-25T15:06:50.985Z</lastmod>
+		<lastmod>2021-08-25T16:39:35.227Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
 		<loc>https://rwb0104.github.io</loc>
 		<priority>0.5</priority>
-		<lastmod>2021-08-25T15:06:50.985Z</lastmod>
+		<lastmod>2021-08-25T16:39:35.227Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
 		<loc>https://rwb0104.github.io/about</loc>
 		<priority>0.5</priority>
-		<lastmod>2021-08-25T15:06:50.985Z</lastmod>
-		<changefreq>weekly</changefreq>
-	</url>
-	<url>
-		<loc>https://rwb0104.github.io/posts</loc>
-		<priority>0.5</priority>
-		<lastmod>2021-08-25T15:06:50.985Z</lastmod>
+		<lastmod>2021-08-25T16:39:35.227Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
 		<loc>https://rwb0104.github.io/projects</loc>
 		<priority>0.5</priority>
-		<lastmod>2021-08-25T15:06:50.985Z</lastmod>
+		<lastmod>2021-08-25T16:39:35.227Z</lastmod>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>https://rwb0104.github.io/posts</loc>
+		<priority>0.5</priority>
+		<lastmod>2021-08-25T16:39:35.227Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
@@ -394,6 +394,12 @@
 		<loc>https://rwb0104.github.io/posts/2021/08/24/a1020</loc>
 		<priority>1.0</priority>
 		<lastmod>2021-08-23T16:17:46.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://rwb0104.github.io/posts/2021/08/26/a1021</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-08-25T16:39:29.000Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 </urlset>

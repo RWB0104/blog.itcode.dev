@@ -10,7 +10,7 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next.seo.js</generator>
 		<pubDate>Wed, 26 May 2021 14:36:57 +0900</pubDate>
-		<lastBuildDate>Wed, 25 Aug 2021 15:06:50 +0900</lastBuildDate>
+		<lastBuildDate>Wed, 25 Aug 2021 16:39:35 +0900</lastBuildDate>
 		<item>
 			<title>Jekyll에서 Next.js로</title>
 			<description>Jekyll에서 Next.js로의 블로그 이동기</description>
@@ -716,6 +716,19 @@
 			<category>Dynamic Programming(동적 프로그래밍)</category>
 			<category>PLATINUM</category>
 			<category>PLATINUM II</category>
+		</item>
+		<item>
+			<title>[백준 / JAVA] 백준 알고리즘 1021번 회전하는 큐</title>
+			<description>지민이는 N개의 원소를 포함하고 있는 양방향 순환 큐를 가지고 있다. 지민이는 이 큐에서 몇 개의 원소를 뽑아내려고 한다. 지민이는 이 큐에서 다음과 같은 3가지 연산을 수행할 수 있다. 큐에 처음에 포함되어 있던 수 N이 주어진다. 그리고 지민이가 뽑아내려고 하는 원소의 위치가 주어진다. (이 위치는 가장 처음 큐에서의 위치이다.) 이때, 그 원소를 주어진 순서대로 뽑아내는데 드는 2번, 3번 연산의 최솟값을 출력하는 프로그램을 작성하시오.</description>
+			<pubDate>Wed, 25 Aug 2021 16:39:29 +0900</pubDate>
+			<link>https://rwb0104.github.io/posts/2021/08/26/a1021</link>
+			<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/08/26/a1021</guid>
+			<category>알고리즘</category>
+			<category>백준</category>
+			<category>JAVA(자바)</category>
+			<category>덱</category>
+			<category>SILVER</category>
+			<category>SILVER IV</category>
 		</item>
 	</channel>
 </rss>

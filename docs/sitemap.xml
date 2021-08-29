@@ -3,37 +3,37 @@
 	<url>
 		<loc>https://rwb0104.github.io/404</loc>
 		<priority>0.5</priority>
-		<lastmod>2021-08-26T16:33:42.153Z</lastmod>
+		<lastmod>2021-08-29T04:55:57.528Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
 		<loc>https://rwb0104.github.io/500</loc>
 		<priority>0.5</priority>
-		<lastmod>2021-08-26T16:33:42.153Z</lastmod>
+		<lastmod>2021-08-29T04:55:57.528Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
 		<loc>https://rwb0104.github.io</loc>
 		<priority>0.5</priority>
-		<lastmod>2021-08-26T16:33:42.153Z</lastmod>
-		<changefreq>weekly</changefreq>
-	</url>
-	<url>
-		<loc>https://rwb0104.github.io/about</loc>
-		<priority>0.5</priority>
-		<lastmod>2021-08-26T16:33:42.153Z</lastmod>
+		<lastmod>2021-08-29T04:55:57.528Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
 		<loc>https://rwb0104.github.io/posts</loc>
 		<priority>0.5</priority>
-		<lastmod>2021-08-26T16:33:42.153Z</lastmod>
+		<lastmod>2021-08-29T04:55:57.528Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
 		<loc>https://rwb0104.github.io/projects</loc>
 		<priority>0.5</priority>
-		<lastmod>2021-08-26T16:33:42.153Z</lastmod>
+		<lastmod>2021-08-29T04:55:57.528Z</lastmod>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>https://rwb0104.github.io/about</loc>
+		<priority>0.5</priority>
+		<lastmod>2021-08-29T04:55:57.528Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
@@ -400,6 +400,12 @@
 		<loc>https://rwb0104.github.io/posts/2021/08/26/a1021</loc>
 		<priority>1.0</priority>
 		<lastmod>2021-08-25T16:39:29.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://rwb0104.github.io/posts/2021/08/29/hello-rasberry</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-08-29T04:41:41.000Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 </urlset>

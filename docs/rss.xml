@@ -10,7 +10,7 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next.seo.js</generator>
 		<pubDate>Wed, 26 May 2021 14:36:57 +0900</pubDate>
-		<lastBuildDate>Thu, 26 Aug 2021 16:33:42 +0900</lastBuildDate>
+		<lastBuildDate>Sun, 29 Aug 2021 04:55:57 +0900</lastBuildDate>
 		<item>
 			<title>Jekyll에서 Next.js로</title>
 			<description>Jekyll에서 Next.js로의 블로그 이동기</description>
@@ -729,6 +729,15 @@
 			<category>덱</category>
 			<category>SILVER</category>
 			<category>SILVER IV</category>
+		</item>
+		<item>
+			<title>[라즈베리파이 4] Hello Rasberry!</title>
+			<description>개발자의 적지않은 수가 클라우드든, 디바이스든 자신만의 서버를 구축하여 다양하게 활용하고 있다. 개발을 하다보면 필연적으로 24시간 언제나 가동되는 서버 비스무리한 것이 필요할 때가 있다. 일례로 GitHub Pages의 경우 정적 페이지만 호스팅해줄 뿐, 백엔드나 DB는 사용할 수가 없어 동적 페이지 호스팅은 불가능하다. 그러나 개인 API 혹은 DB 서버가 존재한다면, 해당 서버와의 통신을 통해 더욱 동적 페이지 호스팅이 가능하다. 웹에서 백엔드가 갖는 역할을 생각해본다면, 개인이 활용 가능한 서버가 있고 없고의 차이는 천지차이가 난다. 나 역시도 개발하는 입장에서 제약없이 사용할 수 있는 서버의 소요가 이전부터 있어왔고, 개인 서버를 구축하기 위한 방안을 모색했다.</description>
+			<pubDate>Sun, 29 Aug 2021 04:41:41 +0900</pubDate>
+			<link>https://rwb0104.github.io/posts/2021/08/29/hello-rasberry</link>
+			<guid isPermaLink="true">https://rwb0104.github.io/posts/2021/08/29/hello-rasberry</guid>
+			<category>알고리즘</category>
+			<category>라즈베리파이</category>
 		</item>
 	</channel>
 </rss>

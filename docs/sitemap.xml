@@ -3,37 +3,37 @@
 	<url>
 		<loc>https://blog.itcode.dev/404</loc>
 		<priority>0.5</priority>
-		<lastmod>2021-09-02T16:33:58.634Z</lastmod>
+		<lastmod>2021-09-06T07:53:18.516Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/500</loc>
 		<priority>0.5</priority>
-		<lastmod>2021-09-02T16:33:58.634Z</lastmod>
+		<lastmod>2021-09-06T07:53:18.516Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev</loc>
 		<priority>0.5</priority>
-		<lastmod>2021-09-02T16:33:58.634Z</lastmod>
+		<lastmod>2021-09-06T07:53:18.516Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/about</loc>
 		<priority>0.5</priority>
-		<lastmod>2021-09-02T16:33:58.634Z</lastmod>
-		<changefreq>weekly</changefreq>
-	</url>
-	<url>
-		<loc>https://blog.itcode.dev/posts</loc>
-		<priority>0.5</priority>
-		<lastmod>2021-09-02T16:33:58.634Z</lastmod>
+		<lastmod>2021-09-06T07:53:18.516Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/projects</loc>
 		<priority>0.5</priority>
-		<lastmod>2021-09-02T16:33:58.634Z</lastmod>
+		<lastmod>2021-09-06T07:53:18.516Z</lastmod>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts</loc>
+		<priority>0.5</priority>
+		<lastmod>2021-09-06T07:53:18.516Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
@@ -418,6 +418,18 @@
 		<loc>https://blog.itcode.dev/posts/2021/09/02/ubuntu-in-tomcat</loc>
 		<priority>1.0</priority>
 		<lastmod>2021-09-02T14:07:19.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/09/04/firewall-with-ufw</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-09-03T16:26:20.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/09/04/raspberry-domain</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-09-04T03:09:04.000Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 </urlset>

@@ -10,7 +10,7 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next.seo.js</generator>
 		<pubDate>Wed, 26 May 2021 14:36:57 +0900</pubDate>
-		<lastBuildDate>Thu, 02 Sep 2021 16:33:58 +0900</lastBuildDate>
+		<lastBuildDate>Mon, 06 Sep 2021 07:53:18 +0900</lastBuildDate>
 		<item>
 			<title>Jekyll에서 Next.js로</title>
 			<description>Jekyll에서 Next.js로의 블로그 이동기</description>
@@ -758,7 +758,26 @@
 			<category>RaspberryPi</category>
 			<category>라즈베리파이</category>
 			<category>Ubuntu</category>
-			<category>Tomcat(톰캣)</category>
+			<category>도메인</category>
+		</item>
+		<item>
+			<title>[Ubuntu] ufw로 방화벽 포트 설정하기</title>
+			<description>모든 건물에는 입구가 존재한다. 일반적인 상황에서, 누구든지 해당 건물에 드나들기 위해선 좋든 싫든 입구를 통과해야한다. 이 입구라는 것이 또 마냥 열려있는 건 아니라서, 필요 시엔 개방되어있다가도 특정 시간에는 폐쇄되기도 한다. 심지어 어떤 곳은 까다롭기 그지없어서, 사람을 가려받기도 한다. 이를테면 보안구역이라던가, 금요일 밤의 클럽이라던가. PC통신도 이와 원리가 별반 다를 바 없다. 보기엔 그냥 막 통신하는 것 같아도, 저마다 할당받은 입구를 통해 PC에 드나든다. PC가 건물이라고 한다면, PC의 입구는 포트(PORT)라 할 수 있다.</description>
+			<pubDate>Fri, 03 Sep 2021 16:26:20 +0900</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/09/04/firewall-with-ufw</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/09/04/firewall-with-ufw</guid>
+			<category>Ubuntu</category>
+			<category>방화벽</category>
+		</item>
+		<item>
+			<title>[라즈베리파이 4] 라즈베리파이에 도메인 입히기</title>
+			<description>지금까지 과정을 거치면서 라즈베리파이에 OS를 설치하고, Tomcat을 구동하여 웹 서버로 동작할 수 있도록 환경을 구축했다. 이제 우리는 라즈베리파이의 IP로 접속하여 웹 사이트를 호스팅할 수 있다. 하지만 정상적인 페이지라면 IP를 입력하여 접속하지 않는다. Domain을 발급받아 IP에 연동하고, 이를 URL 주소로 사용할 것이다. 이 장에서는 Domain을 직접 구입하고 라즈베리파이 서버에 이를 연동한다.</description>
+			<pubDate>Sat, 04 Sep 2021 03:09:04 +0900</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/09/04/raspberry-domain</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/09/04/raspberry-domain</guid>
+			<category>Ubuntu</category>
+			<category>라즈베리파이</category>
+			<category>도메인</category>
 		</item>
 	</channel>
 </rss>

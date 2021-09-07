@@ -1,0 +1,13 @@
+{
+	"name": "kapoo",
+	"short_name": "kapoo",
+	"icons": [{
+		"src": "/favicon.ico",
+		"sizes": "48x48",
+		"type": "image/ico",
+		"density": "1.0"
+	}],
+	"start_url": "/",
+	"display": "standalone",
+	"orientation": "portrait"
+}

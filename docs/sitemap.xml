@@ -3,37 +3,37 @@
 	<url>
 		<loc>https://blog.itcode.dev/404</loc>
 		<priority>0.5</priority>
-		<lastmod>2021-09-07T13:48:19.970Z</lastmod>
+		<lastmod>2021-09-08T13:43:52.692Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/500</loc>
 		<priority>0.5</priority>
-		<lastmod>2021-09-07T13:48:19.970Z</lastmod>
+		<lastmod>2021-09-08T13:43:52.692Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev</loc>
 		<priority>0.5</priority>
-		<lastmod>2021-09-07T13:48:19.970Z</lastmod>
+		<lastmod>2021-09-08T13:43:52.692Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/about</loc>
 		<priority>0.5</priority>
-		<lastmod>2021-09-07T13:48:19.970Z</lastmod>
-		<changefreq>weekly</changefreq>
-	</url>
-	<url>
-		<loc>https://blog.itcode.dev/posts</loc>
-		<priority>0.5</priority>
-		<lastmod>2021-09-07T13:48:19.970Z</lastmod>
+		<lastmod>2021-09-08T13:43:52.692Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/projects</loc>
 		<priority>0.5</priority>
-		<lastmod>2021-09-07T13:48:19.970Z</lastmod>
+		<lastmod>2021-09-08T13:43:52.692Z</lastmod>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts</loc>
+		<priority>0.5</priority>
+		<lastmod>2021-09-08T13:43:52.692Z</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
@@ -433,15 +433,15 @@
 		<changefreq>always</changefreq>
 	</url>
 	<url>
-		<loc>https://blog.itcode.dev/posts/2021/09/06/raspberry-remote</loc>
+		<loc>https://blog.itcode.dev/posts/2021/09/06/raspberry-ssl-domain</loc>
 		<priority>1.0</priority>
 		<lastmod>2021-09-06T07:50:40.000Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
-		<loc>https://blog.itcode.dev/posts/2021/09/06/raspberry-ssl-domain</loc>
+		<loc>https://blog.itcode.dev/posts/2021/09/08/raspberry-remote</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-09-06T07:50:40.000Z</lastmod>
+		<lastmod>2021-09-08T13:40:38.000Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 </urlset>

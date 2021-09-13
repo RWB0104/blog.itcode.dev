@@ -10,7 +10,7 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next.seo.js</generator>
 		<pubDate>Wed, 26 May 2021 14:36:57 +0900</pubDate>
-		<lastBuildDate>Wed, 08 Sep 2021 13:43:52 +0900</lastBuildDate>
+		<lastBuildDate>Mon, 13 Sep 2021 17:13:36 +0900</lastBuildDate>
 		<item>
 			<title>Jekyll에서 Next.js로</title>
 			<description>Jekyll에서 Next.js로의 블로그 이동기</description>
@@ -803,6 +803,18 @@
 			<category>Ubuntu</category>
 			<category>SSH</category>
 			<category>RDP</category>
+		</item>
+		<item>
+			<title>[라즈베리파이 4] MariaDB 구축하기</title>
+			<description>드디어 라즈베리파이 개발환경 구축의 마지막 장이다. DBMS는 다양한 데이터를 저장하는 저장소인 DB(Database)를 관리하는 시스템이다. 필요한 데이터를 DB에 저장하고, 이를 적재적소에 꺼내어 데이터를 다룰 수 있도록 해준다. 웹 서버와 DBMS를 연동하면 사용자의 계정 정보, 설정 등을 저장하고 활용할 수 있다.</description>
+			<pubDate>Mon, 13 Sep 2021 17:04:02 +0900</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/09/14/ubuntu-in-mariadb</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/09/14/ubuntu-in-mariadb</guid>
+			<category>RaspberryPi</category>
+			<category>라즈베리파이</category>
+			<category>Ubuntu</category>
+			<category>MariaDB</category>
+			<category>RDBMS</category>
 		</item>
 	</channel>
 </rss>

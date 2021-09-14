@@ -10,7 +10,7 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next.seo.js</generator>
 		<pubDate>Wed, 26 May 2021 14:36:57 +0900</pubDate>
-		<lastBuildDate>Mon, 13 Sep 2021 17:13:36 +0900</lastBuildDate>
+		<lastBuildDate>Tue, 14 Sep 2021 16:58:16 +0900</lastBuildDate>
 		<item>
 			<title>Jekyll에서 Next.js로</title>
 			<description>Jekyll에서 Next.js로의 블로그 이동기</description>
@@ -815,6 +815,16 @@
 			<category>Ubuntu</category>
 			<category>MariaDB</category>
 			<category>RDBMS</category>
+		</item>
+		<item>
+			<title>[Ubuntu] Ubuntu 원격 프로토콜 보안 강화하기</title>
+			<description>SSH, SFTP와 같은 원격 프로토콜은 서버의 접근성을 향상시켜주지만, 서버의 보안성을 극도로 훼손한다. 공격자가 특정 서버의 IP를 알아냈을 경우, 해당 IP로 SSH 접속 시도를 할 수 있다. 굳이 IP가 아니더라도 해당 IP와 연결된 도메인을 통해서도 얼마든지 가능하다. 특정 도메인의 정보를 DNS서버에 요청하여 IP는 물론 소유자 정보까지 쉽게 취득할 수 있기 때문이다. 따라서 누군가가 내가 접속하려는 서버의 IP 혹은 도메인, SSH 서비스 포트, 계정정보를 알고 있다면 얼마든지 SSH 접속 시도를 하거나 서버에 피해를 줄 수 있다. 외부에 도메인을 공개하는 순간 국내는 물론 외국에서 여러 접속 시도가 들어오기도 한다. 특히 중국에서의 공격이 많이 들어오며, 인터넷에서 이와 관련된 경험담이나 피해사례를 쉽게 찾아볼 수 있다.</description>
+			<pubDate>Tue, 14 Sep 2021 16:53:21 +0900</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/09/15/increase-ubuntu-remote-security</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/09/15/increase-ubuntu-remote-security</guid>
+			<category>Ubuntu</category>
+			<category>SSH</category>
+			<category>SFTP</category>
 		</item>
 	</channel>
 </rss>

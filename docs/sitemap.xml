@@ -2,39 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://blog.itcode.dev/404</loc>
-		<priority>0.5</priority>
-		<lastmod>2021-09-14T16:58:16.660Z</lastmod>
-		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+		<lastmod>2021-09-18T02:14:41.878Z</lastmod>
+		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/500</loc>
-		<priority>0.5</priority>
-		<lastmod>2021-09-14T16:58:16.660Z</lastmod>
-		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+		<lastmod>2021-09-18T02:14:41.878Z</lastmod>
+		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev</loc>
-		<priority>0.5</priority>
-		<lastmod>2021-09-14T16:58:16.660Z</lastmod>
-		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+		<lastmod>2021-09-18T02:14:41.878Z</lastmod>
+		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/about</loc>
-		<priority>0.5</priority>
-		<lastmod>2021-09-14T16:58:16.660Z</lastmod>
-		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+		<lastmod>2021-09-18T02:14:41.878Z</lastmod>
+		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/posts</loc>
-		<priority>0.5</priority>
-		<lastmod>2021-09-14T16:58:16.660Z</lastmod>
-		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+		<lastmod>2021-09-18T02:14:41.878Z</lastmod>
+		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/projects</loc>
-		<priority>0.5</priority>
-		<lastmod>2021-09-14T16:58:16.660Z</lastmod>
-		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+		<lastmod>2021-09-18T02:14:41.878Z</lastmod>
+		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/posts/2021/05/21/jekyll-to-nextjs</loc>

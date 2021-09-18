@@ -3,37 +3,37 @@
 	<url>
 		<loc>https://blog.itcode.dev/404</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-09-18T02:14:41.878Z</lastmod>
+		<lastmod>2021-09-18T04:55:39.118Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/500</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-09-18T02:14:41.878Z</lastmod>
+		<lastmod>2021-09-18T04:55:39.118Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-09-18T02:14:41.878Z</lastmod>
+		<lastmod>2021-09-18T04:55:39.118Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/about</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-09-18T02:14:41.878Z</lastmod>
-		<changefreq>always</changefreq>
-	</url>
-	<url>
-		<loc>https://blog.itcode.dev/posts</loc>
-		<priority>1.0</priority>
-		<lastmod>2021-09-18T02:14:41.878Z</lastmod>
+		<lastmod>2021-09-18T04:55:39.118Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/projects</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-09-18T02:14:41.878Z</lastmod>
+		<lastmod>2021-09-18T04:55:39.118Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-09-18T04:55:39.118Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>

@@ -1,0 +1,1546 @@
+<!DOCTYPE html><html lang="ko"><head><meta name="hash" content="f1814897788"/><link rel="manifest" href="/manifest.json"/><link rel="icon" href="/favicon.ico"/><link rel="shortcut icon" href="/favicon.ico"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-7QYWYNZ90R"></script><script src="/js/ga.js"></script><meta name="viewport" content="width=device-width"/><meta charSet="utf-8"/><script src="/js/content.js"></script><title>[라즈베리파이 4] Let&#x27;s Ecrypt로 Ubuntu 서버에 HTTPS 통신 제공하기 - 𝝅번째 알파카의 개발 낙서장</title><meta name="description" content="이전 장에서 Google Domains를 통해 dev 도메인을 발급받았다. 이 블로그의 주소는 실제로 구입한 https://blog.itcode.dev 도메인이 적용되어있다. dev 도메인은 강화된 보안정책이 적용되어있다. 해당 도메인으로의 모든 HTTP 통신은 반드시 HTTPS 보안 통신으로만 제공된다. 네트워크 계층에서 https 프로토콜로 라우팅하므로 좋든 싫든 HTTPS 서비스를 제공해야만 한다."/><meta property="og:site_name" content="𝝅번째 알파카의 개발 낙서장"/><meta property="og:title" content="[라즈베리파이 4] Let&#x27;s Ecrypt로 Ubuntu 서버에 HTTPS 통신 제공하기 - 𝝅번째 알파카의 개발 낙서장"/><meta property="og:description" content="이전 장에서 Google Domains를 통해 dev 도메인을 발급받았다. 이 블로그의 주소는 실제로 구입한 https://blog.itcode.dev 도메인이 적용되어있다. dev 도메인은 강화된 보안정책이 적용되어있다. 해당 도메인으로의 모든 HTTP 통신은 반드시 HTTPS 보안 통신으로만 제공된다. 네트워크 계층에서 https 프로토콜로 라우팅하므로 좋든 싫든 HTTPS 서비스를 제공해야만 한다."/><meta property="og:type" content="website"/><meta property="og:url" content="https://blog.itcode.dev/posts/2021/09/06/raspberry-ssl-domain"/><meta property="og:image" content="https://user-images.githubusercontent.com/50317129/131238727-666f2aaa-d759-4f62-af73-3856086da73d.png"/><meta property="og:locale" content="ko_KR"/><link rel="canonical" href="https://blog.itcode.dev/posts/2021/09/06/raspberry-ssl-domain"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"/><meta name="next-head-count" content="14"/><link rel="preload" href="/_next/static/css/391f5518ec8645f65829.css" as="style"/><link rel="stylesheet" href="/_next/static/css/391f5518ec8645f65829.css" data-n-g=""/><link rel="preload" href="/_next/static/css/1726f6a4df2c19df75e0.css" as="style"/><link rel="stylesheet" href="/_next/static/css/1726f6a4df2c19df75e0.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-a54b4f32bdc1ef890ddd.js"></script><script src="/_next/static/chunks/webpack-61095c13c5984b221292.js" defer=""></script><script src="/_next/static/chunks/framework-2191d16384373197bc0a.js" defer=""></script><script src="/_next/static/chunks/main-6a8ca7ae20700a66db28.js" defer=""></script><script src="/_next/static/chunks/pages/_app-4e114134695bd9455aad.js" defer=""></script><script src="/_next/static/chunks/33-8c8c1b0f93e2745c6b0a.js" defer=""></script><script src="/_next/static/chunks/pages/posts/%5B...url%5D-6f1434613c6dbe1d51bd.js" defer=""></script><script src="/_next/static/vPD4anJPcPJBy7Kt4Uf7q/_buildManifest.js" defer=""></script><script src="/_next/static/vPD4anJPcPJBy7Kt4Uf7q/_ssgManifest.js" defer=""></script><style id="jss-server-side">.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+}
+.MuiSvgIcon-colorPrimary {
+  color: #ff9800;
+}
+.MuiSvgIcon-colorSecondary {
+  color: #3d5afe;
+}
+.MuiSvgIcon-colorAction {
+  color: #fff;
+}
+.MuiSvgIcon-colorError {
+  color: #f44336;
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(255, 255, 255, 0.3);
+}
+.MuiSvgIcon-fontSizeInherit {
+  font-size: inherit;
+}
+.MuiSvgIcon-fontSizeSmall {
+  font-size: 1.25rem;
+}
+.MuiSvgIcon-fontSizeLarge {
+  font-size: 2.1875rem;
+}
+.MuiPaper-root {
+  color: #fff;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #424242;
+}
+.MuiPaper-rounded {
+  border-radius: 4px;
+}
+.MuiPaper-outlined {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.MuiPaper-elevation0 {
+  box-shadow: none;
+}
+.MuiPaper-elevation1 {
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation2 {
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation3 {
+  box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation4 {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation5 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation6 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation7 {
+  box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation8 {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation9 {
+  box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation10 {
+  box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation11 {
+  box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation12 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation13 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation14 {
+  box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation15 {
+  box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation16 {
+  box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation17 {
+  box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation18 {
+  box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation19 {
+  box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation20 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation21 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation22 {
+  box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation23 {
+  box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation24 {
+  box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
+}
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+@media print {
+  .MuiButtonBase-root {
+    color-adjust: exact;
+  }
+}
+  .MuiIconButton-root {
+    flex: 0 0 auto;
+    color: #fff;
+    padding: 12px;
+    overflow: visible;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+  }
+  .MuiIconButton-root:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+  .MuiIconButton-root.Mui-disabled {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+  }
+@media (hover: none) {
+  .MuiIconButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-edgeStart {
+    margin-left: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
+    margin-left: -3px;
+  }
+  .MuiIconButton-edgeEnd {
+    margin-right: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
+    margin-right: -3px;
+  }
+  .MuiIconButton-colorInherit {
+    color: inherit;
+  }
+  .MuiIconButton-colorPrimary {
+    color: #ff9800;
+  }
+  .MuiIconButton-colorPrimary:hover {
+    background-color: rgba(255, 152, 0, 0.08);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-colorSecondary {
+    color: #3d5afe;
+  }
+  .MuiIconButton-colorSecondary:hover {
+    background-color: rgba(61, 90, 254, 0.08);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-sizeSmall {
+    padding: 3px;
+    font-size: 1.125rem;
+  }
+  .MuiIconButton-label {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiAppBar-root {
+    width: 100%;
+    display: flex;
+    z-index: 1100;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .MuiAppBar-positionFixed {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: fixed;
+  }
+@media print {
+  .MuiAppBar-positionFixed {
+    position: absolute;
+  }
+}
+  .MuiAppBar-positionAbsolute {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: absolute;
+  }
+  .MuiAppBar-positionSticky {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: sticky;
+  }
+  .MuiAppBar-positionStatic {
+    position: static;
+  }
+  .MuiAppBar-positionRelative {
+    position: relative;
+  }
+  .MuiAppBar-colorDefault {
+    color: #fff;
+    background-color: #212121;
+  }
+  .MuiAppBar-colorPrimary {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #ff9800;
+  }
+  .MuiAppBar-colorSecondary {
+    color: #fff;
+    background-color: #3d5afe;
+  }
+  .MuiAppBar-colorInherit {
+    color: inherit;
+  }
+  .MuiAppBar-colorTransparent {
+    color: inherit;
+    background-color: transparent;
+  }
+  .MuiAvatar-root {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    font-size: 1.25rem;
+    align-items: center;
+    flex-shrink: 0;
+    font-family: AppleSDGothicNeo, sans-serif;
+    line-height: 1;
+    user-select: none;
+    border-radius: 50%;
+    justify-content: center;
+  }
+  .MuiAvatar-colorDefault {
+    color: #020D1D;
+    background-color: #757575;
+  }
+  .MuiAvatar-rounded {
+    border-radius: 4px;
+  }
+  .MuiAvatar-square {
+    border-radius: 0;
+  }
+  .MuiAvatar-img {
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+    text-indent: 10000px;
+  }
+  .MuiAvatar-fallback {
+    width: 75%;
+    height: 75%;
+  }
+
+  .jss1 {  }
+  .jss2 {  }
+  .jss3 {  }
+  .jss4 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 5px;
+  }
+  .jss5 {  }
+  .jss6 {  }
+  .jss7 {  }
+  .jss8 {  }
+  .jss9 {  }
+  .jss10 {
+    position: relative;
+  }
+  .jss11 {  }
+  .jss12 {  }
+  .jss13 {  }
+  .jss14 {  }
+  .jss15 {  }
+  .jss16 {  }
+  .jss17 {  }
+  .jss18 {  }
+  .jss19 {  }
+  .jss20 {  }
+  .jss21 {  }
+  .jss22 {  }
+  .jss23 {  }
+  .jss24 {  }
+  .jss25 {  }
+  .jss26 {  }
+  .jss27 {
+    display: grid;
+    align-items: center;
+  }
+  .jss28 {
+    display: grid;
+    align-items: center;
+  }
+  .jss29 {
+    display: grid;
+    align-items: center;
+    grid-column-gap: 10px;
+    grid-template-columns: 40px 1fr;
+  }
+  .jss30 {
+    display: grid;
+    align-items: center;
+  }
+  .jss31 {  }
+  .jss32 {  }
+  .jss33 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .jss34 {  }
+  .jss35 {  }
+  .jss36 {  }
+  .jss37 {  }
+  .jss38 {  }
+  .jss39 {  }
+  .jss40 {  }
+  .jss41 {  }
+  .jss42 {  }
+  .jss43 {  }
+  .MuiTypography-root {
+    margin: 0;
+  }
+  .MuiTypography-body2 {
+    font-size: 0.875rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+  }
+  .MuiTypography-body1 {
+    font-size: 1rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .MuiTypography-caption {
+    font-size: 0.75rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 400;
+    line-height: 1.66;
+  }
+  .MuiTypography-button {
+    font-size: 0.875rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    text-transform: uppercase;
+  }
+  .MuiTypography-h1 {
+    font-size: 6rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 300;
+    line-height: 1.167;
+  }
+  .MuiTypography-h2 {
+    font-size: 3.75rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  .MuiTypography-h3 {
+    font-size: 3rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 400;
+    line-height: 1.167;
+  }
+  .MuiTypography-h4 {
+    font-size: 2.125rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 400;
+    line-height: 1.235;
+  }
+  .MuiTypography-h5 {
+    font-size: 1.5rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 400;
+    line-height: 1.334;
+  }
+  .MuiTypography-h6 {
+    font-size: 1.25rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+  .MuiTypography-subtitle1 {
+    font-size: 1rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+  }
+  .MuiTypography-subtitle2 {
+    font-size: 0.875rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 500;
+    line-height: 1.57;
+  }
+  .MuiTypography-overline {
+    font-size: 0.75rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 400;
+    line-height: 2.66;
+    text-transform: uppercase;
+  }
+  .MuiTypography-srOnly {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+  }
+  .MuiTypography-alignLeft {
+    text-align: left;
+  }
+  .MuiTypography-alignCenter {
+    text-align: center;
+  }
+  .MuiTypography-alignRight {
+    text-align: right;
+  }
+  .MuiTypography-alignJustify {
+    text-align: justify;
+  }
+  .MuiTypography-noWrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .MuiTypography-gutterBottom {
+    margin-bottom: 0.35em;
+  }
+  .MuiTypography-paragraph {
+    margin-bottom: 16px;
+  }
+  .MuiTypography-colorInherit {
+    color: inherit;
+  }
+  .MuiTypography-colorPrimary {
+    color: #ff9800;
+  }
+  .MuiTypography-colorSecondary {
+    color: #3d5afe;
+  }
+  .MuiTypography-colorTextPrimary {
+    color: #fff;
+  }
+  .MuiTypography-colorTextSecondary {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .MuiTypography-colorError {
+    color: #f44336;
+  }
+  .MuiTypography-displayInline {
+    display: inline;
+  }
+  .MuiTypography-displayBlock {
+    display: block;
+  }
+  .MuiButton-root {
+    color: #fff;
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+  .MuiButton-root:hover {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+  .MuiButton-root.Mui-disabled {
+    color: rgba(255, 255, 255, 0.3);
+  }
+@media (hover: none) {
+  .MuiButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-root:hover.Mui-disabled {
+    background-color: transparent;
+  }
+  .MuiButton-label {
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiButton-text {
+    padding: 6px 8px;
+  }
+  .MuiButton-textPrimary {
+    color: #ff9800;
+  }
+  .MuiButton-textPrimary:hover {
+    background-color: rgba(255, 152, 0, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-textPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-textSecondary {
+    color: #3d5afe;
+  }
+  .MuiButton-textSecondary:hover {
+    background-color: rgba(61, 90, 254, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-textSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlined {
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    padding: 5px 15px;
+  }
+  .MuiButton-outlined.Mui-disabled {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  .MuiButton-outlinedPrimary {
+    color: #ff9800;
+    border: 1px solid rgba(255, 152, 0, 0.5);
+  }
+  .MuiButton-outlinedPrimary:hover {
+    border: 1px solid #ff9800;
+    background-color: rgba(255, 152, 0, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlinedSecondary {
+    color: #3d5afe;
+    border: 1px solid rgba(61, 90, 254, 0.5);
+  }
+  .MuiButton-outlinedSecondary:hover {
+    border: 1px solid #3d5afe;
+    background-color: rgba(61, 90, 254, 0.08);
+  }
+  .MuiButton-outlinedSecondary.Mui-disabled {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-contained {
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+  .MuiButton-contained:hover {
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+    background-color: #d5d5d5;
+  }
+  .MuiButton-contained.Mui-focusVisible {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained:active {
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained.Mui-disabled {
+    color: rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+@media (hover: none) {
+  .MuiButton-contained:hover {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+}
+  .MuiButton-contained:hover.Mui-disabled {
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+  .MuiButton-containedPrimary {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #ff9800;
+  }
+  .MuiButton-containedPrimary:hover {
+    background-color: #f57c00;
+  }
+@media (hover: none) {
+  .MuiButton-containedPrimary:hover {
+    background-color: #ff9800;
+  }
+}
+  .MuiButton-containedSecondary {
+    color: #fff;
+    background-color: #3d5afe;
+  }
+  .MuiButton-containedSecondary:hover {
+    background-color: #304ffe;
+  }
+@media (hover: none) {
+  .MuiButton-containedSecondary:hover {
+    background-color: #3d5afe;
+  }
+}
+  .MuiButton-disableElevation {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation:hover {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation.Mui-focusVisible {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation:active {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation.Mui-disabled {
+    box-shadow: none;
+  }
+  .MuiButton-colorInherit {
+    color: inherit;
+    border-color: currentColor;
+  }
+  .MuiButton-textSizeSmall {
+    padding: 4px 5px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-textSizeLarge {
+    padding: 8px 11px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-outlinedSizeSmall {
+    padding: 3px 9px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-outlinedSizeLarge {
+    padding: 7px 21px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-containedSizeSmall {
+    padding: 4px 10px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-containedSizeLarge {
+    padding: 8px 22px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-fullWidth {
+    width: 100%;
+  }
+  .MuiButton-startIcon {
+    display: inherit;
+    margin-left: -4px;
+    margin-right: 8px;
+  }
+  .MuiButton-startIcon.MuiButton-iconSizeSmall {
+    margin-left: -2px;
+  }
+  .MuiButton-endIcon {
+    display: inherit;
+    margin-left: 8px;
+    margin-right: -4px;
+  }
+  .MuiButton-endIcon.MuiButton-iconSizeSmall {
+    margin-right: -2px;
+  }
+  .MuiButton-iconSizeSmall > *:first-child {
+    font-size: 18px;
+  }
+  .MuiButton-iconSizeMedium > *:first-child {
+    font-size: 20px;
+  }
+  .MuiButton-iconSizeLarge > *:first-child {
+    font-size: 22px;
+  }
+  .MuiChip-root {
+    color: #fff;
+    border: none;
+    cursor: default;
+    height: 32px;
+    display: inline-flex;
+    outline: 0;
+    padding: 0;
+    font-size: 0.8125rem;
+    box-sizing: border-box;
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    align-items: center;
+    font-family: AppleSDGothicNeo, sans-serif;
+    white-space: nowrap;
+    border-radius: 16px;
+    vertical-align: middle;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #616161;
+  }
+  .MuiChip-root.Mui-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .MuiChip-root .MuiChip-avatar {
+    color: #e0e0e0;
+    width: 24px;
+    height: 24px;
+    font-size: 0.75rem;
+    margin-left: 5px;
+    margin-right: -6px;
+  }
+  .MuiChip-root .MuiChip-avatarColorPrimary {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #f57c00;
+  }
+  .MuiChip-root .MuiChip-avatarColorSecondary {
+    color: #fff;
+    background-color: #304ffe;
+  }
+  .MuiChip-root .MuiChip-avatarSmall {
+    width: 18px;
+    height: 18px;
+    font-size: 0.625rem;
+    margin-left: 4px;
+    margin-right: -4px;
+  }
+  .MuiChip-sizeSmall {
+    height: 24px;
+  }
+  .MuiChip-colorPrimary {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #ff9800;
+  }
+  .MuiChip-colorSecondary {
+    color: #fff;
+    background-color: #3d5afe;
+  }
+  .MuiChip-clickable {
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiChip-clickable:hover, .MuiChip-clickable:focus {
+    background-color: rgb(109, 109, 109);
+  }
+  .MuiChip-clickable:active {
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+  }
+  .MuiChip-clickableColorPrimary:hover, .MuiChip-clickableColorPrimary:focus {
+    background-color: rgb(255, 160, 20);
+  }
+  .MuiChip-clickableColorSecondary:hover, .MuiChip-clickableColorSecondary:focus {
+    background-color: rgb(76, 103, 254);
+  }
+  .MuiChip-deletable:focus {
+    background-color: rgb(109, 109, 109);
+  }
+  .MuiChip-deletableColorPrimary:focus {
+    background-color: rgb(255, 172, 51);
+  }
+  .MuiChip-deletableColorSecondary:focus {
+    background-color: rgb(99, 123, 254);
+  }
+  .MuiChip-outlined {
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    background-color: transparent;
+  }
+  .MuiChip-clickable.MuiChip-outlined:hover, .MuiChip-clickable.MuiChip-outlined:focus, .MuiChip-deletable.MuiChip-outlined:focus {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+  .MuiChip-outlined .MuiChip-avatar {
+    margin-left: 4px;
+  }
+  .MuiChip-outlined .MuiChip-avatarSmall {
+    margin-left: 2px;
+  }
+  .MuiChip-outlined .MuiChip-icon {
+    margin-left: 4px;
+  }
+  .MuiChip-outlined .MuiChip-iconSmall {
+    margin-left: 2px;
+  }
+  .MuiChip-outlined .MuiChip-deleteIcon {
+    margin-right: 5px;
+  }
+  .MuiChip-outlined .MuiChip-deleteIconSmall {
+    margin-right: 3px;
+  }
+  .MuiChip-outlinedPrimary {
+    color: #ff9800;
+    border: 1px solid #ff9800;
+  }
+  .MuiChip-clickable.MuiChip-outlinedPrimary:hover, .MuiChip-clickable.MuiChip-outlinedPrimary:focus, .MuiChip-deletable.MuiChip-outlinedPrimary:focus {
+    background-color: rgba(255, 152, 0, 0.08);
+  }
+  .MuiChip-outlinedSecondary {
+    color: #3d5afe;
+    border: 1px solid #3d5afe;
+  }
+  .MuiChip-clickable.MuiChip-outlinedSecondary:hover, .MuiChip-clickable.MuiChip-outlinedSecondary:focus, .MuiChip-deletable.MuiChip-outlinedSecondary:focus {
+    background-color: rgba(61, 90, 254, 0.08);
+  }
+  .MuiChip-icon {
+    color: #e0e0e0;
+    margin-left: 5px;
+    margin-right: -6px;
+  }
+  .MuiChip-iconSmall {
+    width: 18px;
+    height: 18px;
+    margin-left: 4px;
+    margin-right: -4px;
+  }
+  .MuiChip-iconColorPrimary {
+    color: inherit;
+  }
+  .MuiChip-iconColorSecondary {
+    color: inherit;
+  }
+  .MuiChip-label {
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-overflow: ellipsis;
+  }
+  .MuiChip-labelSmall {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .MuiChip-deleteIcon {
+    color: rgba(255, 255, 255, 0.26);
+    width: 22px;
+    cursor: pointer;
+    height: 22px;
+    margin: 0 5px 0 -6px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiChip-deleteIcon:hover {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  .MuiChip-deleteIconSmall {
+    width: 16px;
+    height: 16px;
+    margin-left: -4px;
+    margin-right: 4px;
+  }
+  .MuiChip-deleteIconColorPrimary {
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .MuiChip-deleteIconColorPrimary:hover, .MuiChip-deleteIconColorPrimary:active {
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .MuiChip-deleteIconColorSecondary {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .MuiChip-deleteIconColorSecondary:hover, .MuiChip-deleteIconColorSecondary:active {
+    color: #fff;
+  }
+  .MuiChip-deleteIconOutlinedColorPrimary {
+    color: rgba(255, 152, 0, 0.7);
+  }
+  .MuiChip-deleteIconOutlinedColorPrimary:hover, .MuiChip-deleteIconOutlinedColorPrimary:active {
+    color: #ff9800;
+  }
+  .MuiChip-deleteIconOutlinedColorSecondary {
+    color: rgba(61, 90, 254, 0.7);
+  }
+  .MuiChip-deleteIconOutlinedColorSecondary:hover, .MuiChip-deleteIconOutlinedColorSecondary:active {
+    color: #3d5afe;
+  }
+  .MuiContainer-root {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+@media (min-width:600px) {
+  .MuiContainer-root {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiContainer-disableGutters {
+    padding-left: 0;
+    padding-right: 0;
+  }
+@media (min-width:600px) {
+  .MuiContainer-fixed {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-fixed {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-fixed {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-fixed {
+    max-width: 1920px;
+  }
+}
+@media (min-width:0px) {
+  .MuiContainer-maxWidthXs {
+    max-width: 444px;
+  }
+}
+@media (min-width:600px) {
+  .MuiContainer-maxWidthSm {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-maxWidthMd {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-maxWidthLg {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-maxWidthXl {
+    max-width: 1920px;
+  }
+}
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+strong, b {
+  font-weight: 700;
+}
+body {
+  color: #fff;
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: AppleSDGothicNeo, sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  background-color: #020D1D;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+body::backdrop {
+  background-color: #020D1D;
+}
+*::-webkit-scrollbar, *::-webkit-scrollbar-thumb {
+  width: 6px;
+  border: 1px solid transparent;
+  height: 6px;
+  border-radius: 6px;
+  background-clip: padding-box;
+}
+@media (max-width: 960px) {
+  *::-webkit-scrollbar, *::-webkit-scrollbar-thumb {
+    width: 0;
+  }
+}
+*::-webkit-scrollbar-thumb {
+  color: #404040;
+  box-shadow: inset 0 0 0 10px;
+}
+@media print {
+  .MuiDialog-root {
+    position: absolute !important;
+  }
+}
+  .MuiDialog-scrollPaper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .MuiDialog-scrollBody {
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+  }
+  .MuiDialog-scrollBody:after {
+    width: 0;
+    height: 100%;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .MuiDialog-container {
+    height: 100%;
+    outline: 0;
+  }
+@media print {
+  .MuiDialog-container {
+    height: auto;
+  }
+}
+  .MuiDialog-paper {
+    margin: 32px;
+    position: relative;
+    overflow-y: auto;
+  }
+@media print {
+  .MuiDialog-paper {
+    box-shadow: none;
+    overflow-y: visible;
+  }
+}
+  .MuiDialog-paperScrollPaper {
+    display: flex;
+    max-height: calc(100% - 64px);
+    flex-direction: column;
+  }
+  .MuiDialog-paperScrollBody {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+  .MuiDialog-paperWidthFalse {
+    max-width: calc(100% - 64px);
+  }
+  .MuiDialog-paperWidthXs {
+    max-width: 444px;
+  }
+@media (max-width:507.95px) {
+  .MuiDialog-paperWidthXs.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+  .MuiDialog-paperWidthSm {
+    max-width: 600px;
+  }
+@media (max-width:663.95px) {
+  .MuiDialog-paperWidthSm.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+  .MuiDialog-paperWidthMd {
+    max-width: 960px;
+  }
+@media (max-width:1023.95px) {
+  .MuiDialog-paperWidthMd.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+  .MuiDialog-paperWidthLg {
+    max-width: 1280px;
+  }
+@media (max-width:1343.95px) {
+  .MuiDialog-paperWidthLg.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+  .MuiDialog-paperWidthXl {
+    max-width: 1920px;
+  }
+@media (max-width:1983.95px) {
+  .MuiDialog-paperWidthXl.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+  .MuiDialog-paperFullWidth {
+    width: calc(100% - 64px);
+  }
+  .MuiDialog-paperFullScreen {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    max-width: 100%;
+    max-height: none;
+    border-radius: 0;
+  }
+  .MuiDialog-paperFullScreen.MuiDialog-paperScrollBody {
+    margin: 0;
+    max-width: 100%;
+  }
+  .MuiDivider-root {
+    border: none;
+    height: 1px;
+    margin: 0;
+    flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+  .MuiDivider-absolute {
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+  }
+  .MuiDivider-inset {
+    margin-left: 72px;
+  }
+  .MuiDivider-light {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+  .MuiDivider-middle {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .MuiDivider-vertical {
+    width: 1px;
+    height: 100%;
+  }
+  .MuiDivider-flexItem {
+    height: auto;
+    align-self: stretch;
+  }
+  .MuiFab-root {
+    color: rgba(0, 0, 0, 0.87);
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    font-size: 0.875rem;
+    min-width: 0;
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+    box-sizing: border-box;
+    min-height: 36px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 50%;
+    text-transform: uppercase;
+    background-color: #e0e0e0;
+  }
+  .MuiFab-root:active {
+    box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+  }
+  .MuiFab-root:hover {
+    text-decoration: none;
+    background-color: #d5d5d5;
+  }
+  .MuiFab-root.Mui-focusVisible {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  }
+  .MuiFab-root.Mui-disabled {
+    color: rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+@media (hover: none) {
+  .MuiFab-root:hover {
+    background-color: #e0e0e0;
+  }
+}
+  .MuiFab-root:hover.Mui-disabled {
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+  .MuiFab-label {
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiFab-primary {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #ff9800;
+  }
+  .MuiFab-primary:hover {
+    background-color: #f57c00;
+  }
+@media (hover: none) {
+  .MuiFab-primary:hover {
+    background-color: #ff9800;
+  }
+}
+  .MuiFab-secondary {
+    color: #fff;
+    background-color: #3d5afe;
+  }
+  .MuiFab-secondary:hover {
+    background-color: #304ffe;
+  }
+@media (hover: none) {
+  .MuiFab-secondary:hover {
+    background-color: #3d5afe;
+  }
+}
+  .MuiFab-extended {
+    width: auto;
+    height: 48px;
+    padding: 0 16px;
+    min-width: 48px;
+    min-height: auto;
+    border-radius: 24px;
+  }
+  .MuiFab-extended.MuiFab-sizeSmall {
+    width: auto;
+    height: 34px;
+    padding: 0 8px;
+    min-width: 34px;
+    border-radius: 17px;
+  }
+  .MuiFab-extended.MuiFab-sizeMedium {
+    width: auto;
+    height: 40px;
+    padding: 0 16px;
+    min-width: 40px;
+    border-radius: 20px;
+  }
+  .MuiFab-colorInherit {
+    color: inherit;
+  }
+  .MuiFab-sizeSmall {
+    width: 40px;
+    height: 40px;
+  }
+  .MuiFab-sizeMedium {
+    width: 48px;
+    height: 48px;
+  }
+  .MuiToolbar-root {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  .MuiToolbar-gutters {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+@media (min-width:600px) {
+  .MuiToolbar-gutters {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiToolbar-regular {
+    min-height: 56px;
+  }
+@media (min-width:0px) and (orientation: landscape) {
+  .MuiToolbar-regular {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .MuiToolbar-regular {
+    min-height: 64px;
+  }
+}
+  .MuiToolbar-dense {
+    min-height: 48px;
+  }</style></head><body><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"page":{"type":"posts","prev":{"header":{"title":"[라즈베리파이 4] 라즈베리파이에 도메인 입히기","excerpt":"지금까지 과정을 거치면서 라즈베리파이에 OS를 설치하고, Tomcat을 구동하여 웹 서버로 동작할 수 있도록 환경을 구축했다. 이제 우리는 라즈베리파이의 IP로 접속하여 웹 사이트를 호스팅할 수 있다. 하지만 정상적인 페이지라면 IP를 입력하여 접속하지 않는다. Domain을 발급받아 IP에 연동하고, 이를 URL 주소로 사용할 것이다. 이 장에서는 Domain을 직접 구입하고 라즈베리파이 서버에 이를 연동한다.","coverImage":"https://user-images.githubusercontent.com/50317129/131238727-666f2aaa-d759-4f62-af73-3856086da73d.png","date":"2021-09-04T12:09:04","type":"posts","category":"RaspberryPi","tag":["라즈베리파이","Ubuntu","도메인"],"group":"라즈베리파이","comment":true,"publish":true},"name":"2021-09-04-raspberry-domain.md","content":"\r\n# 개요\r\n\r\n지금까지 과정을 거치면서 라즈베리파이에 OS를 설치하고, Tomcat을 구동하여 웹 서버로 동작할 수 있도록 환경을 구축했다.\r\n\r\n이제 우리는 라즈베리파이의 IP로 접속하여 웹 사이트를 호스팅할 수 있다.\r\n\r\n하지만 정상적인 페이지라면 IP를 입력하여 접속하지 않는다. Domain을 발급받아 IP에 연동하고, 이를 URL 주소로 사용할 것이다.\r\n\r\n이 장에서는 Domain을 직접 구입하고 라즈베리파이 서버에 이를 연동한다.\r\n\r\n# 무슨 도메인을 쓰지?\r\n\r\n일전 [게시글](/posts/2021/08/18/freenom-domain)에서 Freenom을 통해 무료로 도메인을 받는 과정에 대해 다룬적이 있다.\r\n\r\n무료도 상관없지만, Freenom은 실 서비스에 사용하기에 매우 부적합하다.\r\n\r\nTLD 중 어떤 걸 사용할까 고민했다. 개인적으론 `io` 도메인의 트렌디함에 끌렸지만, 가비아 기준 도메인 비용이 무려 연 20만원... 반드시 `io`가 필요하지도 않은 마당에 연에 20을 태우는 건 너무 비효율적이라 생각했다.\r\n\r\n원랜 대중적인 `com`으로 하려했으나, 조사 중 `dev`라는 개발자스러운 도메인이 있음을 확인하여 이를 선택하기로 했다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/132054483-01b3e988-376d-444f-9d5e-8415368e0822.png)\r\n\r\n[Google Domains](https://domains.google/)에서 구매하기로 했으며, Google Domains 기준 일반가는 12$다.\r\n\r\n\u003cbr /\u003e\r\n\r\n뭐든지 네이밍이 제일 어렵다. 게임 캐릭터 닉네임을 정하는 것도 그렇고, 변수명을 짓는 것도 그렇다.\r\n\r\n유명한 도메인인 `socket.io`처럼 뭔가 `dev`를 적절히 이용하여 하나의 문장처럼 보이는 도메인을 생성하고 싶었다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/132054569-31a96ab2-652f-4631-849f-759d3c82f823.png)\r\n\r\n\u003cbr /\u003e\r\n\r\n\u003cp class=\"orange-600\" align=\"center\"\u003e단어에 따라 프리미엄가가 붙기도 하며, 단어의 고유화 정도에 따라 같은 프리미엄이라도 가격이 다르게 적용된다.\u003c/p\u003e\r\n\r\n\u003cbr /\u003e\r\n\r\n그렇다고 너무 \u003cspan class=\"amber-600\"\u003e범용적인 단어를 사용하면 프리미엄\u003c/span\u003e이랍시고 가격을 매우 비싸게 받는다.... 일례로 `unix.dev`는 unix라는 보통명사가 들어갔음에도 아직 발급되지 않았는데, 프리미엄 가격이 무려 1,000$가 넘어간다. `webapps.dev`도 매우 비싸긴 마찬가지.\r\n\r\n하지만 여러 단어를 조합해서 만드는 문장은 인식을 잘 못하는지, 찾다보면 꽤 괜찮은 도메인임에도 프리미엄이 붙지 않기도 하다.\r\n\r\n고민끝에 선정한 후보는 아래와 같다.\r\n\r\n* itcode.dev\r\n* mustdo.dev\r\n* imnow.dev\r\n\r\n셋 다 프리미엄이 붙지 않으며, 최대한 도메인에 개발자스러움을 담았다. 원랜 `mustdo.dev`로 하려 했으나, `itcode.dev`의 깔끔함 때문에 막판에 이 쪽으로 선회했다.\r\n\r\n# Google Domains에서 도메인 발급받기\r\n\r\n도메인을 발급받을 수 있는 사이트는 여러군데가 있으나, 이 장에서는 Google Domains를 기준으로 설명한다.\r\n\r\n이유는 그냥 구글이라서.\r\n\r\n## 준비물\r\n\r\n* 서버\r\n* 해외결제를 지원하는 결제수단\r\n\r\n필자가 도메인을 발급받을 때 필요했던 준비물은 위와 같다.\r\n\r\n만약 Google Domains가 아닌 국내 사이트에서 결제한다면 해외결제는 신경쓰지 않아도 된다. Google의 경우 해외 서비스이므로 해외결제가 지원되야 한다.\r\n\r\n## 1. 도메인 결정하기\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/132057934-b103e4ef-157d-46e1-b9aa-52a9b8f273c1.png)\r\n\r\n원하는 도메인을 검색하자.\r\n\r\n도메인을 골랐다면 우측 가운데 [카트] 버튼을 클릭하여 장바구니에 담는다.\r\n\r\n`dev` 도메인과 같이 몇몇 일부 도메인은 \u003cspan class=\"red-400\"\u003eMore secure\u003c/span\u003e 정책이 적용되어 SSL을 강제한다.\r\n\r\n이러한 정책이 적용된 도메인은 \u003cspan class=\"red-600\"\u003eHTTP 서비스가 불가능하며, 반드시 HTTPS 서비스만을 제공\u003c/span\u003e함에 유의하자.\r\n\r\n## 2. 화폐 단위 선택하기\r\n\r\n첫 결제라면 결제할 화폐 단위를 선택해야한다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/132058739-2766fbd9-791c-4e19-971f-7520e46de5b2.png)\r\n\r\n아쉽게도 원화는 지원되지 않으므로, 지원되는 화폐 중 하나를 선택한다.\r\n\r\n이 장에서는 달러($)를 기준으로 수행한다.\r\n\r\n\u003e \u003cspan class=\"yellow-600\"\u003e해외결제의 경우 달러가 수수료 측면에서 이득이다\u003c/span\u003e  \r\n\u003e 필자는 군대 전역 후 카드사 콜센터에서 잠깐 일을 한 적이 있었다. 거기서 얻은 지식 중 하나로, \u003cspan class=\"orange-600\"\u003e해외결제는 달러를 기준으로 환전\u003c/span\u003e한다. 만약 원화 -\u003e 유로로 결제한다면, 실제론 \u003cspan class=\"blue-600\"\u003e원화 -\u003e 달러 -\u003e 유로\u003c/span\u003e로 두 차례 환전이 일어나 수수료 역시 이중으로 나간다.  \r\n\u003e 이는 해외에서 원화를 결제할때도 마찬가지. 해외에서 국내 카드로 원화결제를 수행할 경우 \u003cspan class=\"blue-600\"\u003e원화 -\u003e 달러 -\u003e 원화\u003c/span\u003e라는 해괴한 매커니즘으로 결제되니, 해외결제는 그냥 속편하게 달러로 하자.\r\n\r\n## 3. 사용자 정보 입력\r\n\r\n첫 결재라면 도메인 소유주 정보를 입력받는다. 적절히 입력하자.\r\n\r\n우편번호의 경우 \u003cspan class=\"red-600\"\u003e미국 우편번호만을 입력\u003c/span\u003e받으니, 구글에 그냥 미국 주소 아무거나 쳐서 우편번호 하나 확인하여 입력하자.\r\n\r\n## 4. 도메인 구매\r\n\r\n도메인 구매를 수행한다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/132058813-3eb136bc-d801-40ac-a1c3-83a68478f6e4.png)\r\n\r\n\u003cspan class=\"red-600\"\u003e[Read trademark notice]\u003c/span\u003e는 starcraft라는 브랜드명을 도메인으로 사용함에 따라 관련 약관의 동의를 받는 것이다.\r\n\r\n일반적인 도메인엔 해당 과정이 존재하지 않다.\r\n\r\n* \u003cspan class=\"amber-600\"\u003eRegistration\u003c/span\u003e - 소유 기간 선택 (최소 1년)\r\n* \u003cspan class=\"amber-600\"\u003ePrivacy protection is on\u003c/span\u003e - 도메인 소유주 정보를 숨긴다. 후이즈(WHOIS) 등에서 도메인 정보를 조회할 경우, 소유주에 대한 정보를 숨긴 채 제공한다.\r\n* \u003cspan class=\"amber-600\"\u003eAuto-renew is on\u003c/span\u003e - 도메인 자동 갱신 활성화\r\n* \u003cspan class=\"grey-600\"\u003eCustom email\u003c/span\u003e - 도메인 이메일계정 활성화\r\n\r\nCustom email은 자신의 도메인으로 된 구글 이메일을 만드는 것이다. 즉, `example@starcraft.dev`와 같이 \u003cspan class=\"orange-500\"\u003e자신이 구입한 도메인으로 이메일 아이디를 생성\u003c/span\u003e해주는 서비스다.\r\n\r\n물론 무료는 아니고, 유저당 월 12$ 비용이 청구된다. 도메인 유지 비용이 연 12$임을 감안하면 10배에 달하는 비용이다. 비즈니스 등 반드시 필요한 서비스가 아니라면 해당 서비스는 체크를 해제하자.\r\n\r\n# IP와 도메인 연결하기\r\n\r\n도메인 구입이 완료되면 소유주 정보에 입력한 이메일로 구매 영수증과 함께 안내 메일이 수신된다.\r\n\r\n구입 이후 도메인은 즉시 사용이 가능하다. 이 도메인을 라즈베리파이에 연동하기 위해선 DNS 설정을 통해 \u003cspan class=\"green-600\"\u003e라즈베이파이의 IP와 도메인을 연결\u003c/span\u003e해주면 된다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/132080600-d1083686-ceb4-4046-a6ab-c4a0c7a83f90.png)\r\n\r\nGoogle Domains의 DNS 메뉴에서 DNS 설정을 관리할 수 있다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/132080643-7a92c2ec-8b8a-4428-b4c3-4ba149bb6875.png)\r\n\r\n[맞춤 레코드 관리]를 클릭하여 DNS Record를 추가한다.\r\n\r\n\u003cspan class=\"green-600\"\u003eA Record를 하나 추가하여 데이터에 라즈베리파이의 IP를 입력\u003c/span\u003e하고 저장한다. 수 분 이내로 반영이 완료된다.\r\n\r\n\u003e \u003cb class=\"teal-A400\"\u003e사설 IP 입력? 멈춰!\u003c/b\u003e  \r\n\u003e 공유기 환경을 사용한다면 IP 확인 시 \u003cspan class=\"pink-600\"\u003e192.168.0.xxx\u003c/span\u003e와 같은 사설 IP가 출력될 것이다. A Record엔 사설 IP가 아닌 실제 IP를 입력해야한다. 공유기 설정이나 [findIP](https://www.findip.kr/)에서 확인할 수 있다.\r\n\r\n# 도메인 연동 확인\r\n\r\n``` bash\r\nnslookup [도메인]\r\n```\r\n\r\n윈도우든 Ubuntu든 위 명령어를 입력하여 도메인과 연동된 IP를 확인할 수 있다.\r\n\r\n내가 입력한 IP가 정상적으로 나온다면 성공이다.\r\n\r\n라즈베리파이에서 Tomcat을 기동하고 `example.com:8080`에 접속하여 페이지가 잘 출력되는지 확인하자.\r\n\r\n## 연결이 되지 않아요!\r\n\r\n* `xxx.xxx.xxx.xxx:8080`으로 접속되는지 확인\r\n* 접속이 될 경우 외부에서 문제없이 접속되므로, 도메인에 연결한 IP가 올바른지 확인\r\n* 접속되지 않을 경우 애초에 외부에서 접속되지 않는 것이므로 방화벽이나 포트 통신에 문제가 없는지 확인\r\n* 공유기 환경일 경우 IP주소의 포트포워딩이 설정되어있는지 확인\r\n\r\n# 목표\r\n\r\n* \u003cdel class=\"grey-400\"\u003e라즈베리파이에 Ubuntu 서버를 구축한다.\u003c/del\u003e\r\n* \u003cdel class=\"grey-400\"\u003eTomcat을 구동하여 페이지를 호스팅한다.\u003c/del\u003e\r\n* \u003cdel class=\"grey-400\"\u003e도메인을 입힌다.\u003c/del\u003e\r\n* SSL 인증서를 발급하여 HTTPS 통신을 제공한다.\r\n* SSH, RDP 등의 원격 통신환경을 구축한다.\r\n* MariaDB를 설치하여 DB 통신을 수행한다.\r\n\r\n`dev` 도메인은 반드시 SSL이 필요하다. 더군다나 현재에 배포되는 모든 웹 페이지엔 HTTPS 적용을 거의 강제하다시피 함으로 HTTPS 적용을 목표에 추가한다.","url":["2021-09-04-raspberry-domain","2021","09","04","raspberry-domain"]},"next":{"header":{"title":"[라즈베리파이 4] 원격 환경 구축하기 (SSH, RDP)","excerpt":"이제 얼추 라즈베리파이에 그럴듯한 웹서버 환경이 구축됐다. 하지만 라즈베리파이를 다루기 위해서 기기에 직접 모니터랑 키보드, 마우스를 연결해서 쓰긴 좀 번거롭다. 이 주제에서의 라즈베리파이는 어디까지나 서브로 운영되는 웹서버이므로, 메인 컴퓨터가 될 수 없다. 즉, 개발같은 대부분의 작업은 메인 컴퓨터에서 진행하고, 배포만 서버가 담당하는 방식이다. 이렇게 디바이스가 서로 나뉠 경우, 두 디바이스의 접근이 서로 원활해야한다. 한 마디로, 원격 환경이 필요하다. 이 장에서는 라즈베리파이에 원격 환경을 구축한다. SSH, RDP 통신을 구축함으로써 SSH 혹은 윈도우 PC 어디에서나 라즈베리파이에 접근할 수 있도록 구성한다.","coverImage":"https://user-images.githubusercontent.com/50317129/131238727-666f2aaa-d759-4f62-af73-3856086da73d.png","date":"2021-09-08T22:40:38","type":"posts","category":"RaspberryPi","tag":["라즈베리파이","Ubuntu","SSH","RDP"],"group":"라즈베리파이","comment":true,"publish":true},"name":"2021-09-08-raspberry-remote.md","content":"\r\n# 개요\r\n\r\n이제 얼추 라즈베리파이에 그럴듯한 웹서버 환경이 구축됐다. 하지만 라즈베리파이를 다루기 위해서 기기에 직접 모니터랑 키보드, 마우스를 연결해서 쓰긴 좀 번거롭다.\r\n\r\n이 주제에서의 라즈베리파이는 어디까지나 서브로 운영되는 웹서버이므로, 메인 컴퓨터가 될 수 없다. 즉, 개발같은 대부분의 작업은 메인 컴퓨터에서 진행하고, 배포만 서버가 담당하는 방식이다. 이렇게 디바이스가 서로 나뉠 경우, 두 디바이스의 접근이 서로 원활해야한다.\r\n\r\n한 마디로, 원격 환경이 필요하다. 이 장에서는 \u003cspan class=\"amber-600\"\u003e라즈베리파이에 원격 환경을 구축\u003c/span\u003e한다. \u003cspan class=\"primary\"\u003eSSH\u003c/span\u003e, \u003cspan class=\"primary\"\u003eRDP\u003c/span\u003e 통신을 구축함으로써 SSH 혹은 윈도우 PC 어디에서나 라즈베리파이에 접근할 수 있도록 구성한다.\r\n\r\n# SSH 환경 구축하기\r\n\r\n\u003cspan class=\"primary\"\u003eSSH(Secure SHell)\u003c/span\u003e는 네트워크에 연결된 PC에 로그인하여 원격 PC에서 해당 PC로 명령어를 실행하는 등의 Shell 통신을 수행하는 프로토콜이다.\r\n\r\nSSH 환경을 구축하여 원격으로 Ubuntu Shell에 접근할 수 있다. 이를 통해 원격으로 명령어를 입력하여 Ubuntu를 다룰 수 있다. Windows와 달리 Linux는 거의 모든 프로그램이 명령어 기반으로 동작하므로 어려움없이 Ubuntu를 다룰 수 있다.\r\n\r\n## 준비물\r\n\r\n* openssh-server 패키지\r\n* SSH(22) 서비스 포트 개방\r\n\r\n## OpenSSH Server 패키지 설치\r\n\r\nOpenSSH 패키지는 크게 두 가지가 있는데, 하나는 OpenSSH Client, 다른 하나는 OpenSSH Server다.\r\n\r\n* \u003cspan class=\"teal-500\"\u003eOpenSSH Server\u003c/span\u003e - 해당 OS에 SSH 서비스 환경을 구축함\r\n* \u003cspan class=\"teal-500\"\u003eOpenSSH Client\u003c/span\u003e - 타 PC의 SSH 접속 기능을 추가함\r\n\r\nOpenSSH Server를 설치하여 Ubuntu에 SSH에 접근할 수 있도록 환경을 구성하자.\r\n\r\n``` bash\r\nsudo apt-get install -y openssh-server\r\n```\r\n\r\n설치후 추가로 해야할 작업은 없다.\r\n\r\n## 포트 개방\r\n\r\nSSH가 서비스되는 포트를 개방한다. 기본적으로 22번 포트를 사용한다.\r\n\r\n``` bash\r\nsudo ufw allow 22\r\n```\r\n\r\nufw를 통해 22번 포트를 개방한다.\r\n\r\n## SSH 접속하기\r\n\r\n다른 PC에서 Ubuntu로 접속해보자. Windows 혹은 다른 Linux 기반 OS 등, SSH 프로토콜을 사용할 수 있는 모든 OS 및 프로그램이라면 가능하다.\r\n\r\n``` bash\r\nssh username@xxx.xxx.xxx.xxx\r\n```\r\n\r\n위 명령어를 통해 입력한 IP와 계정명으로 접근을 시도할 수 있다. IP는 라즈베리파이의 IP를, 계정명은 라즈베리파이의 계정명을 입력하면 된다. IP 대신 도메인을 입력해도 된다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/132518427-796d71c2-7331-4a99-8d7f-65eef29344bb.png)\r\n\r\n접속정보가 유효하다면 비밀번호를 입력하여 로그인을 수행해야한다. 로그인이 완료되면 Shell에 명령어를 입력할 수 있으며, 이를 통해 원격지에서도 Ubuntu를 다룰 수 있게된다.\r\n\r\n# RDP 환경 구축하기\r\n\r\n\u003cp class=\"red-500\" align=\"center\"\u003e※ Ubuntu에 UI가 존재하는 Ubuntu Desktop 혹은 이에 준하는 UI 패키지가 설치된 OS에만 적용 가능합니다.\u003c/p\u003e\r\n\r\n비록 Ubuntu가 대부분의 동작을 명령어로만 처리할 수 있긴 하지만, 간혹 몇몇 작업들은 반드시 UI가 필요하기도 하다. 이를테면 브라우저로 리눅스에서의 웹 페이지를 디버깅한다던가, 동영상을 본다던가. 혹시 Oracle DBMS를 설치하고자 한다면 반드시 UI를 사용할 수 있는 환경이 필요하다.\r\n\r\n심지어 우리가 설치한 Ubuntu도 UI가 있는데, 기껏 설치한 UI는 놀리고 SSH만 쓰기도 난감하다. 물론 라즈베리파이에 HDMI를 연결해서 쓰면 된다지만, 그 것도 번거롭긴 마찬가지다.\r\n\r\n내 경우 듀얼모니터를 사용하고 있어서 여건이 나쁘진 않다. 그러나 모니터가 하나라면 라즈베리파이를 연결한 순간 원래 PC는 사용이 제한되버린다.\r\n\r\n\u003cbr /\u003e\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/132518566-fb8858ce-0b0c-4483-9a84-c3dc718f3e5f.png)\r\n\r\nWindows에는 \u003cspan class=\"primary\"\u003e원격 데스크톱 연결\u003c/span\u003e이라는 기능이 존재한다. Windows 간 원격이 가능한 기능으로써, 팀뷰어나 AnyDesk를 생각하면 된다. 일종의 내장 원격 프로그램.\r\n\r\n말로만 들어보면 왠지 Windows 간 통신만 지원할 것 같다. 필자도 그렇게 생각했었다. 하지만 Ubuntu는 내 생각 이상으로 잡다한게 많았다. xrdp 패키지를 설치하면 Windows의 RDP와 통신이 가능하다.\r\n\r\n## 준비물\r\n\r\n* xrdp 패키지\r\n* RDP(3389) 서비스 포트 개방\r\n\r\n## xrdp 패키지 설치\r\n\r\n``` bash\r\nsudo apt-get install -y xrdp\r\n```\r\n\r\n위 명령어를 입력하여 설치한다.\r\n\r\n## 포트 개방\r\n\r\nRDP가 서비스되는 포트를 개방한다. 기본적으로 3389번 포트를 사용한다.\r\n\r\n``` bash\r\nsudo ufw allow 3389\r\n```\r\n\r\nufw를 통해 3389번 포트를 개방한다.\r\n\r\n## RDP 접속하기\r\n\r\n다른 Windows PC에서 Ubuntu로 접속해보자. 시작 프로그램에서 \u003cspan class=\"blue-400\"\u003e[원격 데스크톱 연결]\u003c/span\u003e을 입력하여 프로그램을 실행하자.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/132518999-0293653c-ccef-4181-a084-71022f83fc47.png)\r\n\r\nUbuntu IP를 입력하여 연결한다. 정상적으로 연결되면 Ubuntu의 접속정보를 통해 로그인을 수행한다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/132519253-e4ec536d-d6a4-4fea-8905-50451a892a5b.png)\r\n\r\n접속에 성공하면 원격으로 Ununtu UI를 다룰 수 있게 된다. 하지만 여러 기술적 한계와 효용성으로 인해 성능이 그리 좋지는 않은 것 같다. 끊김 현상이 좀 심한 것으로 보인다.\r\n\r\n## 검은 화면만 나와요!\r\n\r\n분명히 정상적으로 잘 접속했는데, \u003cspan class=\"red-500\"\u003e검은화면만 뜨는 경우가 발생\u003c/span\u003e하기도 한다.\r\n\r\n꽤 유명한 이슈로, 설정 몇 개만 수정하면 해결된다.\r\n\r\n``` bash\r\nsudo vi /etc/xrdp/startwm.sh\r\n\r\n# 파일의 맨 아랫 줄에 아래 내용 추가\r\nunset DBUS_SESSION_BUS_ADDRESS\r\nunset XDG_RUNTIME_DIR\r\n\r\ntest -x /etc/X11/Xsession \u0026\u0026 exec /etc/X11/Xsession\r\nexec /bin/sh /etc/X11/Xsession\r\n\r\n# 파일 저장\r\n:wq\r\n```\r\n\r\n`/etc/xrdp/startwm.sh` 파일에 위 내용을 추가하고 저장하면 된다.\r\n\r\n``` bash\r\nservice xrdp restart\r\n```\r\n\r\n이후 서비스를 재시작하고 시도하면 정상적으로 접속될 것이다.\r\n\r\n# 목표\r\n\r\n* \u003cdel class=\"grey-400\"\u003e라즈베리파이에 Ubuntu 서버를 구축한다.\u003c/del\u003e\r\n* \u003cdel class=\"grey-400\"\u003eTomcat을 구동하여 페이지를 호스팅한다.\u003c/del\u003e\r\n* \u003cdel class=\"grey-400\"\u003e도메인을 입힌다.\u003c/del\u003e\r\n* \u003cdel class=\"grey-400\"\u003eSSL 인증서를 발급하여 HTTPS 통신을 제공한다.\u003c/del\u003e\r\n* \u003cdel class=\"grey-400\"\u003eSSH, RDP 등의 원격 통신환경을 구축한다.\u003c/del\u003e\r\n* MariaDB를 설치하여 DB 통신을 수행한다.\r\n\r\n이로써 어디에서나 라즈베리파이의 Ubuntu에 접속하여 조작할 수 있다. Shell과 UI 둘 다 조작이 가능하므로 필요에 따라 원하는 방식으로 접근하면 될 것이다.","url":["2021-09-08-raspberry-remote","2021","09","08","raspberry-remote"]}},"group":[{"header":{"title":"[라즈베리파이 4] MariaDB 구축하기","excerpt":"드디어 라즈베리파이 개발환경 구축의 마지막 장이다. DBMS는 다양한 데이터를 저장하는 저장소인 DB(Database)를 관리하는 시스템이다. 필요한 데이터를 DB에 저장하고, 이를 적재적소에 꺼내어 데이터를 다룰 수 있도록 해준다. 웹 서버와 DBMS를 연동하면 사용자의 계정 정보, 설정 등을 저장하고 활용할 수 있다.","coverImage":"https://user-images.githubusercontent.com/50317129/131238727-666f2aaa-d759-4f62-af73-3856086da73d.png","date":"2021-09-14T02:04:02","type":"posts","category":"RaspberryPi","tag":["라즈베리파이","Ubuntu","MariaDB","RDBMS"],"group":"라즈베리파이","comment":true,"publish":true},"name":"2021-09-14-ubuntu-in-mariadb.md","content":"\r\n# 개요\r\n\r\n드디어 라즈베리파이 개발환경 구축의 마지막 장이다. 라즈베리파이에 DBMS를 구축한다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/133107200-6b527196-5ee8-41fb-a74d-3faf70e97dda.png)\r\n\r\n\u003cspan class=\"primary\"\u003eDBMS\u003c/span\u003e는 다양한 데이터를 저장하는 저장소인 DB(Database)를 관리하는 시스템이다. 필요한 데이터를 DB에 저장하고, 이를 적재적소에 꺼내어 데이터를 다룰 수 있도록 해준다. 웹 서버와 DBMS를 연동하면 사용자의 계정 정보, 설정 등을 저장하고 활용할 수 있다.\r\n\r\n# if (!storage.equals(\"dbms\"))\r\n\r\nHTTP 소켓 통신은 기본적으로 요청이 끝나는 순간 모든 데이터가 소멸된다. 즉, 내 \u003cspan class=\"red-400\"\u003e브라우저와 웹 사이에서 일어나는 모든 상호작용은 해당 페이지가 닫히는 순간 사라진다\u003c/span\u003e는 뜻이다. 때문에 이러한 데이터들의 보관해야 할 경우 별도의 영구적인 보관소가 필요하다.\r\n\r\n## else if (storage.equals(\"browser\"))\r\n\r\n이를 해소하기 위한 가장 간단한 방법으로, \u003cspan class=\"indigo-400\"\u003e브라우저에선 쿠키와 로컬/세션 스토리지라는 저장소를 제공\u003c/span\u003e한다. JavaScript에서 간단한 API를 통홰 데이터를 저장, 추출할 수 있지만, 주력으로 쓰기엔 여러 제약이 있다.\r\n\r\n1. \u003cspan class=\"red-400\"\u003e용량 제한\u003c/span\u003e이 있으며, 제한 또한 작다.\r\n2. 모든 데이터가 문자열로 저장되므로, \u003cspan class=\"red-400\"\u003e데이터의 형태에 제약\u003c/span\u003e이 생긴다.\r\n3. 브라우저에 저장하므로, \u003cspan class=\"red-400\"\u003e브라우저나 컴퓨터가 바뀌면 데이터가 소실\u003c/span\u003e된다.\r\n4. 동일한 PC의 동일한 브라우저로 다른 사람이 데이터를 저장하면 \u003cspan class=\"red-400\"\u003e이전 데이터는 덮어씌워진다.\u003c/span\u003e\r\n5. 동일한 PC의 동일한 브라우저를 사용하는 \u003cspan class=\"red-400\"\u003e모든 구성원이 데이터에 제약없이 접근, 수정, 삭제\u003c/span\u003e할 수 있다.\r\n6. 저장소에 별도의 \u003cspan class=\"red-400\"\u003e보안장치가 마련되지 않는다.\u003c/span\u003e\r\n\r\n위와 같은 여러 문제점이 존재한다. 데이터의 보안이 제대로 이루어지지도 않으며, 유저별로 데이터를 저장할 수도 없다. 즉, 주요 데이터를 저장하기엔 적합하지 않은 셈.\r\n\r\n## else if (storage.equals(\"system\"))\r\n\r\n즉, 브라우저에 영향을 받지않는 외부의 공간에 데이터를 저장해야한다. 가장 간단한 방법으로 서버 파일시스템 내부에 txt나 csv같은 \u003cspan class=\"indigo-400\"\u003e파일 형태로 저장소를 구성하는 방법\u003c/span\u003e을 생각해볼 수 있다. 하지만 이 경우도 어딘가 하나씩 나사가 빠져있다.\r\n\r\n1. 데이터 쓰기 작업이 \u003cspan class=\"red-400\"\u003e쓰레드에 매우 취약\u003c/span\u003e해진다.\r\n2. 읽기, 쓰기 작업의 경우 \u003cspan class=\"red-400\"\u003e데이터의 검색 로직이 필요\u003c/span\u003e하며, 조건의 복잡도에 따라 검색 로직이 기하급수적으로 복잡해진다.\r\n3. 데이터 검색 시 전체 데이터를 호출해야하며, \u003cspan class=\"red-400\"\u003e데이터의 양이 많아질수록 검색에 요구되는 자원 소요량이 많아진다.\u003c/span\u003e\r\n\r\n쿠키나 브라우저 스토리지가 가진 대다수의 문제들이 해소됐지만, 데이터 관리 영역의 문제들은 여전히 존재하며, 그 규모 또한 무시할 수 없는 수준이다. 즉, 필요한 데이터만을 특정하는 데 많은 자원이 소요되며, 대용량 데이터를 다루는 데 적합하지 않다.\r\n\r\n# else if (storage.equals(\"dbms\"))\r\n\r\nDBMS는 위 저장소들의 문제 대부분을 매우 깔끔하게 해소시켜준다.\r\n\r\n1. \u003cspan class=\"green-A400\"\u003e하나의 DBMS에 여러 저장소\u003c/span\u003e를 생성할 수 있다.\r\n2. \u003cspan class=\"green-A400\"\u003e인가된 요청만 DBMS에 접근\u003c/span\u003e이 가능하다.\r\n3. 데이터의 읽기, 쓰기가 \u003cspan class=\"green-400\"\u003e쓰레드에 구애받지 않는다.\u003c/span\u003e\r\n4. 관계형 데이터베이스(RDBMS)의 경우 \u003cspan class=\"green-400\"\u003eSQL 스크립트\u003c/span\u003e를 통해 데이터의 읽기, 쓰기를 효과적으로 수행할 수 있다.\r\n5. \u003cspan class=\"green-400\"\u003ePL/SQL\u003c/span\u003e을 통해 DBMS 자체적으로 함수나, 스케쥴링을 수행할 수 있다.\r\n\r\n그 밖에도 여러 장점이 있으나, 앞서 언급한 스토리지와 연관된 특징만 나열하면 위와 같이 정리할 수 있다.\r\n\r\n이처럼 DBMS의 존재는 웹 서비스가 좀 더 다채로운 서비스를 제공하는 데 있어서 필수적인 요소나 다름없다.\r\n\r\n# MariaDB 설치하기\r\n\r\n이 장에서는 MariaDB를 설치한다. 여러 DBMS를 사용해봤지만, 대표적인 RDBMS인 ORACLE은 조금 무겁다는 느낌을 받았다. 또한 Linux 환경에 그리 친절하지도 않다. 설치에 반드시 GUI 환경을 요구하거나, 커널 변수의 수정을 요구하는 것은 확실히 부담인 부분. MySQL의 경우 개발진 대부분이 MariaDB로 넘어가기도 했고, 업데이트도 MariaDB가 훨씬 자주 일어나므로 MariaDB의 하위호환이라는 느낌이 강했다.\r\n\r\nNoSQL의 경우 RDBMS와 결이 다르고, 현재 개발 구상 중인 대부분의 서비스가 비정형 데이터를 다루지 않으므로 논외.\r\n\r\n또한 애초에 ORACLE이든 MariaDB든 \u003cspan class=\"orange-600\"\u003eRDBMS는 기본 기능이 거의 비슷\u003c/span\u003e하므로, 단순 데이터 CRUD나 간단한 PL/SQL를 사용하는데 차이가 없다.\r\n\r\n\u003e \u003cb class=\"teal-400\"\u003eCRUD?\u003c/b\u003e  \r\n\u003e Create, Read, Update, Delete의 이니셜로, 데이터에서 할 수 있는 작업인 생성, 읽기, 수정, 삭제를 통칭하는 단어.\r\n\r\n## MariaDB 설치하기\r\n\r\n``` bash\r\nsudo apt-get -y mariadb-server\r\n```\r\n\r\n위 명령어를 입력하여 MariaDB를 설치한다. 간단하다. 이게 끝이다.\r\n\r\n만약 궁금하다면 Linux에 ORACLE 설치 과정을 찾아보라. MariaDB가 얼마나 간단한지 체감할 수 있을 것이다.\r\n\r\n## MariaDB 접속 테스트\r\n\r\n``` bash\r\nsudo mariadb\r\n\r\n# 혹은\r\nsudo mysql\r\n```\r\n\r\n위 명령어를 입력하여 MariaDB에 접속해보자. 비교적 최신 버전(10 이상)이라면 \u003cspan class=\"lightBlue-600\"\u003eMariaDB는 시스템 계정을 MariaDB root 계정과 대응\u003c/span\u003e되도록 설정한다. 위 명령어를 입력하면 별도의 비밀번호 입력 없이 MariaDB를 연결할 수 있다.\r\n\r\n`sudo mysql`을 사용해도 접속할 수 있다. MariaDB와 MySQL의 유사성을 체감할 수 있는 부분.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/133102225-7d63de47-0b70-49e4-9452-c202fad098c4.png)\r\n\r\n위와 같이 접속되면 MariaDB가 정상적으로 동작하는 것이다.\r\n\r\n## Windows에서 MariaDB 관리 툴 설치하기\r\n\r\nDBMS는 Linux와 같이 명령어 기반으로 동작한다. 하지만 모든 명령어 기반이 그렇듯 사용자에게 편안함을 주는 환경이 아니다보니, 명령어를 일일히 치고 있긴 좀 귀찮다. 더군다나 이런 CLI 환경은 데이터 조회할 때 그 단점이 극명하게 드러나는데, 출력한 데이터를 어떻게든 표 형식으로 보여주기 위해 안간힘을 쓴다. 그러나 그 노력에도 불구하고 콘솔은 텍스트가 화면 길이를 넘어갈 경우 강제로 줄바꿈해서 보여준다. 수평 스크롤의 개념이 아예 없어 데이터가 일정량 이상 길어질 경우 극악의 가독성을 보여준다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/133102630-3a33dd50-18d6-4b16-848b-919000c75f2e.png)\r\n\r\n이러한 특징으로 DBMS는 서버에서 돌리더라도 그 관리는 Window같은 GUI 환경에서 관리 툴을 사용하는 것이 보편적이다. 적어도 위와 같은 꼴은 보기 싫다면 더더욱.\r\n\r\nMariaDB 전용 관리 툴은 대표적으로 두 가지가 존재하는데, \u003cspan class=\"lightBlue-600\"\u003eMySQL Workbench\u003c/span\u003e와 \u003cspan class=\"lightBlue-600\"\u003eSQLyog\u003c/span\u003e다. 둘 중 어느 툴을 사용해도 상관없으나, 이 장에서는 MySQL Workbench를 기준으로 설명한다. 이름은 MySQL이라고 명시되어있지만, 앞서 언급했듯이 \u003cspan class=\"green-600\"\u003eMariaDB가 MySQL 기반이므로 잡속 인터페이스가 동일한 모양인지 지장없이 사용\u003c/span\u003e할 수 있다.\r\n\r\nSQLyog는 커뮤니티 버전과 Ultimate 버전이 나누어져 있으며, 커뮤니티 버전에선 일부 심화기능이 제한된다. 데이터베이스의 간편 백업이나 다른 데이터베이스로 연결하여 복사하는 등의 심화적인 기능같은 것들이 대부분이다. DBMS의 기능을 제한하는 것이 아니라 관리 도구 단계에서 제공하는 디테일한 편의기능이므로, 일반적인 DBMS 사용에는 전혀 영향이 없으니 걱정하지 않아도 된다.\r\n\r\n이 사이트에 접속하여 MySQL Workbench를 다운로드한다.\r\n\r\n설치가 완료된다. 아직은 라즈베리파이의 IP를 입력해도 포트가 열려있지 않다면 접근할 수 없을 것이다.\r\n\r\n## MariaDB 외부접속 허용하기\r\n\r\n포트가 막혀있다면 Windows에서 MariaDB로 접속할 수 없다. \u003cspan class=\"primary\"\u003e서비스 포트를 허용하여 외부 통신을 수행\u003c/span\u003e하자.\r\n\r\n우선 서비스하는 포트를 확인하자. MariaDB의 기본 서비스포트는 3306이며, MariaDB에서 아래의 SQL을 입력하면 서비스 포트를 확인할 수 있다.\r\n\r\n``` bash\r\nmariadb -u root -p\r\n```\r\n\r\n콘솔에서 위 명령어를 입력하여 MariaDB로 접근하자.\r\n\r\n``` sql\r\nSHOW GLOBAL VARIABLES LIKE 'PORT';\r\n```\r\n\r\nMariaDB를 접속한 상태에서 위 SQL을 입력하면 포트를 확인할 수 있다. 포트를 변경하지 않았다면 3306이 표시될 것이다.\r\n\r\n``` bash\r\nsudo ufw allow 3306\r\n```\r\n\r\n위 명령어를 입력하여 3306 포트를 허용하자.\r\n\r\n이후 MySQL Workbench에서 접속정보를 입력하고 연결을 시도해보자. 위와 같이 뜬다면 성공이다.\r\n\r\n# 목표\r\n\r\n* \u003cdel class=\"grey-400\"\u003e라즈베리파이에 Ubuntu 서버를 구축한다.\u003c/del\u003e\r\n* \u003cdel class=\"grey-400\"\u003eTomcat을 구동하여 페이지를 호스팅한다.\u003c/del\u003e\r\n* \u003cdel class=\"grey-400\"\u003e도메인을 입힌다.\u003c/del\u003e\r\n* \u003cdel class=\"grey-400\"\u003eSSL 인증서를 발급하여 HTTPS 통신을 제공한다.\u003c/del\u003e\r\n* \u003cdel class=\"grey-400\"\u003eSSH, RDP 등의 원격 통신환경을 구축한다.\u003c/del\u003e\r\n* \u003cdel class=\"grey-400\"\u003eMariaDB를 설치하여 DB 통신을 수행한다.\u003c/del\u003e\r\n\r\n이로써 라즈베리파이의 웹 개발환경의 구축이 끝났다. 이젠 내가 원하는대로 서비스를 개발/배포할 수 있을 것이다.\r\n","url":["2021-09-14-ubuntu-in-mariadb","2021","09","14","ubuntu-in-mariadb"]},{"header":{"title":"[라즈베리파이 4] 원격 환경 구축하기 (SSH, RDP)","excerpt":"이제 얼추 라즈베리파이에 그럴듯한 웹서버 환경이 구축됐다. 하지만 라즈베리파이를 다루기 위해서 기기에 직접 모니터랑 키보드, 마우스를 연결해서 쓰긴 좀 번거롭다. 이 주제에서의 라즈베리파이는 어디까지나 서브로 운영되는 웹서버이므로, 메인 컴퓨터가 될 수 없다. 즉, 개발같은 대부분의 작업은 메인 컴퓨터에서 진행하고, 배포만 서버가 담당하는 방식이다. 이렇게 디바이스가 서로 나뉠 경우, 두 디바이스의 접근이 서로 원활해야한다. 한 마디로, 원격 환경이 필요하다. 이 장에서는 라즈베리파이에 원격 환경을 구축한다. SSH, RDP 통신을 구축함으로써 SSH 혹은 윈도우 PC 어디에서나 라즈베리파이에 접근할 수 있도록 구성한다.","coverImage":"https://user-images.githubusercontent.com/50317129/131238727-666f2aaa-d759-4f62-af73-3856086da73d.png","date":"2021-09-08T22:40:38","type":"posts","category":"RaspberryPi","tag":["라즈베리파이","Ubuntu","SSH","RDP"],"group":"라즈베리파이","comment":true,"publish":true},"name":"2021-09-08-raspberry-remote.md","content":"\r\n# 개요\r\n\r\n이제 얼추 라즈베리파이에 그럴듯한 웹서버 환경이 구축됐다. 하지만 라즈베리파이를 다루기 위해서 기기에 직접 모니터랑 키보드, 마우스를 연결해서 쓰긴 좀 번거롭다.\r\n\r\n이 주제에서의 라즈베리파이는 어디까지나 서브로 운영되는 웹서버이므로, 메인 컴퓨터가 될 수 없다. 즉, 개발같은 대부분의 작업은 메인 컴퓨터에서 진행하고, 배포만 서버가 담당하는 방식이다. 이렇게 디바이스가 서로 나뉠 경우, 두 디바이스의 접근이 서로 원활해야한다.\r\n\r\n한 마디로, 원격 환경이 필요하다. 이 장에서는 \u003cspan class=\"amber-600\"\u003e라즈베리파이에 원격 환경을 구축\u003c/span\u003e한다. \u003cspan class=\"primary\"\u003eSSH\u003c/span\u003e, \u003cspan class=\"primary\"\u003eRDP\u003c/span\u003e 통신을 구축함으로써 SSH 혹은 윈도우 PC 어디에서나 라즈베리파이에 접근할 수 있도록 구성한다.\r\n\r\n# SSH 환경 구축하기\r\n\r\n\u003cspan class=\"primary\"\u003eSSH(Secure SHell)\u003c/span\u003e는 네트워크에 연결된 PC에 로그인하여 원격 PC에서 해당 PC로 명령어를 실행하는 등의 Shell 통신을 수행하는 프로토콜이다.\r\n\r\nSSH 환경을 구축하여 원격으로 Ubuntu Shell에 접근할 수 있다. 이를 통해 원격으로 명령어를 입력하여 Ubuntu를 다룰 수 있다. Windows와 달리 Linux는 거의 모든 프로그램이 명령어 기반으로 동작하므로 어려움없이 Ubuntu를 다룰 수 있다.\r\n\r\n## 준비물\r\n\r\n* openssh-server 패키지\r\n* SSH(22) 서비스 포트 개방\r\n\r\n## OpenSSH Server 패키지 설치\r\n\r\nOpenSSH 패키지는 크게 두 가지가 있는데, 하나는 OpenSSH Client, 다른 하나는 OpenSSH Server다.\r\n\r\n* \u003cspan class=\"teal-500\"\u003eOpenSSH Server\u003c/span\u003e - 해당 OS에 SSH 서비스 환경을 구축함\r\n* \u003cspan class=\"teal-500\"\u003eOpenSSH Client\u003c/span\u003e - 타 PC의 SSH 접속 기능을 추가함\r\n\r\nOpenSSH Server를 설치하여 Ubuntu에 SSH에 접근할 수 있도록 환경을 구성하자.\r\n\r\n``` bash\r\nsudo apt-get install -y openssh-server\r\n```\r\n\r\n설치후 추가로 해야할 작업은 없다.\r\n\r\n## 포트 개방\r\n\r\nSSH가 서비스되는 포트를 개방한다. 기본적으로 22번 포트를 사용한다.\r\n\r\n``` bash\r\nsudo ufw allow 22\r\n```\r\n\r\nufw를 통해 22번 포트를 개방한다.\r\n\r\n## SSH 접속하기\r\n\r\n다른 PC에서 Ubuntu로 접속해보자. Windows 혹은 다른 Linux 기반 OS 등, SSH 프로토콜을 사용할 수 있는 모든 OS 및 프로그램이라면 가능하다.\r\n\r\n``` bash\r\nssh username@xxx.xxx.xxx.xxx\r\n```\r\n\r\n위 명령어를 통해 입력한 IP와 계정명으로 접근을 시도할 수 있다. IP는 라즈베리파이의 IP를, 계정명은 라즈베리파이의 계정명을 입력하면 된다. IP 대신 도메인을 입력해도 된다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/132518427-796d71c2-7331-4a99-8d7f-65eef29344bb.png)\r\n\r\n접속정보가 유효하다면 비밀번호를 입력하여 로그인을 수행해야한다. 로그인이 완료되면 Shell에 명령어를 입력할 수 있으며, 이를 통해 원격지에서도 Ubuntu를 다룰 수 있게된다.\r\n\r\n# RDP 환경 구축하기\r\n\r\n\u003cp class=\"red-500\" align=\"center\"\u003e※ Ubuntu에 UI가 존재하는 Ubuntu Desktop 혹은 이에 준하는 UI 패키지가 설치된 OS에만 적용 가능합니다.\u003c/p\u003e\r\n\r\n비록 Ubuntu가 대부분의 동작을 명령어로만 처리할 수 있긴 하지만, 간혹 몇몇 작업들은 반드시 UI가 필요하기도 하다. 이를테면 브라우저로 리눅스에서의 웹 페이지를 디버깅한다던가, 동영상을 본다던가. 혹시 Oracle DBMS를 설치하고자 한다면 반드시 UI를 사용할 수 있는 환경이 필요하다.\r\n\r\n심지어 우리가 설치한 Ubuntu도 UI가 있는데, 기껏 설치한 UI는 놀리고 SSH만 쓰기도 난감하다. 물론 라즈베리파이에 HDMI를 연결해서 쓰면 된다지만, 그 것도 번거롭긴 마찬가지다.\r\n\r\n내 경우 듀얼모니터를 사용하고 있어서 여건이 나쁘진 않다. 그러나 모니터가 하나라면 라즈베리파이를 연결한 순간 원래 PC는 사용이 제한되버린다.\r\n\r\n\u003cbr /\u003e\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/132518566-fb8858ce-0b0c-4483-9a84-c3dc718f3e5f.png)\r\n\r\nWindows에는 \u003cspan class=\"primary\"\u003e원격 데스크톱 연결\u003c/span\u003e이라는 기능이 존재한다. Windows 간 원격이 가능한 기능으로써, 팀뷰어나 AnyDesk를 생각하면 된다. 일종의 내장 원격 프로그램.\r\n\r\n말로만 들어보면 왠지 Windows 간 통신만 지원할 것 같다. 필자도 그렇게 생각했었다. 하지만 Ubuntu는 내 생각 이상으로 잡다한게 많았다. xrdp 패키지를 설치하면 Windows의 RDP와 통신이 가능하다.\r\n\r\n## 준비물\r\n\r\n* xrdp 패키지\r\n* RDP(3389) 서비스 포트 개방\r\n\r\n## xrdp 패키지 설치\r\n\r\n``` bash\r\nsudo apt-get install -y xrdp\r\n```\r\n\r\n위 명령어를 입력하여 설치한다.\r\n\r\n## 포트 개방\r\n\r\nRDP가 서비스되는 포트를 개방한다. 기본적으로 3389번 포트를 사용한다.\r\n\r\n``` bash\r\nsudo ufw allow 3389\r\n```\r\n\r\nufw를 통해 3389번 포트를 개방한다.\r\n\r\n## RDP 접속하기\r\n\r\n다른 Windows PC에서 Ubuntu로 접속해보자. 시작 프로그램에서 \u003cspan class=\"blue-400\"\u003e[원격 데스크톱 연결]\u003c/span\u003e을 입력하여 프로그램을 실행하자.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/132518999-0293653c-ccef-4181-a084-71022f83fc47.png)\r\n\r\nUbuntu IP를 입력하여 연결한다. 정상적으로 연결되면 Ubuntu의 접속정보를 통해 로그인을 수행한다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/132519253-e4ec536d-d6a4-4fea-8905-50451a892a5b.png)\r\n\r\n접속에 성공하면 원격으로 Ununtu UI를 다룰 수 있게 된다. 하지만 여러 기술적 한계와 효용성으로 인해 성능이 그리 좋지는 않은 것 같다. 끊김 현상이 좀 심한 것으로 보인다.\r\n\r\n## 검은 화면만 나와요!\r\n\r\n분명히 정상적으로 잘 접속했는데, \u003cspan class=\"red-500\"\u003e검은화면만 뜨는 경우가 발생\u003c/span\u003e하기도 한다.\r\n\r\n꽤 유명한 이슈로, 설정 몇 개만 수정하면 해결된다.\r\n\r\n``` bash\r\nsudo vi /etc/xrdp/startwm.sh\r\n\r\n# 파일의 맨 아랫 줄에 아래 내용 추가\r\nunset DBUS_SESSION_BUS_ADDRESS\r\nunset XDG_RUNTIME_DIR\r\n\r\ntest -x /etc/X11/Xsession \u0026\u0026 exec /etc/X11/Xsession\r\nexec /bin/sh /etc/X11/Xsession\r\n\r\n# 파일 저장\r\n:wq\r\n```\r\n\r\n`/etc/xrdp/startwm.sh` 파일에 위 내용을 추가하고 저장하면 된다.\r\n\r\n``` bash\r\nservice xrdp restart\r\n```\r\n\r\n이후 서비스를 재시작하고 시도하면 정상적으로 접속될 것이다.\r\n\r\n# 목표\r\n\r\n* \u003cdel class=\"grey-400\"\u003e라즈베리파이에 Ubuntu 서버를 구축한다.\u003c/del\u003e\r\n* \u003cdel class=\"grey-400\"\u003eTomcat을 구동하여 페이지를 호스팅한다.\u003c/del\u003e\r\n* \u003cdel class=\"grey-400\"\u003e도메인을 입힌다.\u003c/del\u003e\r\n* \u003cdel class=\"grey-400\"\u003eSSL 인증서를 발급하여 HTTPS 통신을 제공한다.\u003c/del\u003e\r\n* \u003cdel class=\"grey-400\"\u003eSSH, RDP 등의 원격 통신환경을 구축한다.\u003c/del\u003e\r\n* MariaDB를 설치하여 DB 통신을 수행한다.\r\n\r\n이로써 어디에서나 라즈베리파이의 Ubuntu에 접속하여 조작할 수 있다. Shell과 UI 둘 다 조작이 가능하므로 필요에 따라 원하는 방식으로 접근하면 될 것이다.","url":["2021-09-08-raspberry-remote","2021","09","08","raspberry-remote"]},{"header":{"title":"[라즈베리파이 4] 라즈베리파이에 도메인 입히기","excerpt":"지금까지 과정을 거치면서 라즈베리파이에 OS를 설치하고, Tomcat을 구동하여 웹 서버로 동작할 수 있도록 환경을 구축했다. 이제 우리는 라즈베리파이의 IP로 접속하여 웹 사이트를 호스팅할 수 있다. 하지만 정상적인 페이지라면 IP를 입력하여 접속하지 않는다. Domain을 발급받아 IP에 연동하고, 이를 URL 주소로 사용할 것이다. 이 장에서는 Domain을 직접 구입하고 라즈베리파이 서버에 이를 연동한다.","coverImage":"https://user-images.githubusercontent.com/50317129/131238727-666f2aaa-d759-4f62-af73-3856086da73d.png","date":"2021-09-04T12:09:04","type":"posts","category":"RaspberryPi","tag":["라즈베리파이","Ubuntu","도메인"],"group":"라즈베리파이","comment":true,"publish":true},"name":"2021-09-04-raspberry-domain.md","content":"\r\n# 개요\r\n\r\n지금까지 과정을 거치면서 라즈베리파이에 OS를 설치하고, Tomcat을 구동하여 웹 서버로 동작할 수 있도록 환경을 구축했다.\r\n\r\n이제 우리는 라즈베리파이의 IP로 접속하여 웹 사이트를 호스팅할 수 있다.\r\n\r\n하지만 정상적인 페이지라면 IP를 입력하여 접속하지 않는다. Domain을 발급받아 IP에 연동하고, 이를 URL 주소로 사용할 것이다.\r\n\r\n이 장에서는 Domain을 직접 구입하고 라즈베리파이 서버에 이를 연동한다.\r\n\r\n# 무슨 도메인을 쓰지?\r\n\r\n일전 [게시글](/posts/2021/08/18/freenom-domain)에서 Freenom을 통해 무료로 도메인을 받는 과정에 대해 다룬적이 있다.\r\n\r\n무료도 상관없지만, Freenom은 실 서비스에 사용하기에 매우 부적합하다.\r\n\r\nTLD 중 어떤 걸 사용할까 고민했다. 개인적으론 `io` 도메인의 트렌디함에 끌렸지만, 가비아 기준 도메인 비용이 무려 연 20만원... 반드시 `io`가 필요하지도 않은 마당에 연에 20을 태우는 건 너무 비효율적이라 생각했다.\r\n\r\n원랜 대중적인 `com`으로 하려했으나, 조사 중 `dev`라는 개발자스러운 도메인이 있음을 확인하여 이를 선택하기로 했다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/132054483-01b3e988-376d-444f-9d5e-8415368e0822.png)\r\n\r\n[Google Domains](https://domains.google/)에서 구매하기로 했으며, Google Domains 기준 일반가는 12$다.\r\n\r\n\u003cbr /\u003e\r\n\r\n뭐든지 네이밍이 제일 어렵다. 게임 캐릭터 닉네임을 정하는 것도 그렇고, 변수명을 짓는 것도 그렇다.\r\n\r\n유명한 도메인인 `socket.io`처럼 뭔가 `dev`를 적절히 이용하여 하나의 문장처럼 보이는 도메인을 생성하고 싶었다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/132054569-31a96ab2-652f-4631-849f-759d3c82f823.png)\r\n\r\n\u003cbr /\u003e\r\n\r\n\u003cp class=\"orange-600\" align=\"center\"\u003e단어에 따라 프리미엄가가 붙기도 하며, 단어의 고유화 정도에 따라 같은 프리미엄이라도 가격이 다르게 적용된다.\u003c/p\u003e\r\n\r\n\u003cbr /\u003e\r\n\r\n그렇다고 너무 \u003cspan class=\"amber-600\"\u003e범용적인 단어를 사용하면 프리미엄\u003c/span\u003e이랍시고 가격을 매우 비싸게 받는다.... 일례로 `unix.dev`는 unix라는 보통명사가 들어갔음에도 아직 발급되지 않았는데, 프리미엄 가격이 무려 1,000$가 넘어간다. `webapps.dev`도 매우 비싸긴 마찬가지.\r\n\r\n하지만 여러 단어를 조합해서 만드는 문장은 인식을 잘 못하는지, 찾다보면 꽤 괜찮은 도메인임에도 프리미엄이 붙지 않기도 하다.\r\n\r\n고민끝에 선정한 후보는 아래와 같다.\r\n\r\n* itcode.dev\r\n* mustdo.dev\r\n* imnow.dev\r\n\r\n셋 다 프리미엄이 붙지 않으며, 최대한 도메인에 개발자스러움을 담았다. 원랜 `mustdo.dev`로 하려 했으나, `itcode.dev`의 깔끔함 때문에 막판에 이 쪽으로 선회했다.\r\n\r\n# Google Domains에서 도메인 발급받기\r\n\r\n도메인을 발급받을 수 있는 사이트는 여러군데가 있으나, 이 장에서는 Google Domains를 기준으로 설명한다.\r\n\r\n이유는 그냥 구글이라서.\r\n\r\n## 준비물\r\n\r\n* 서버\r\n* 해외결제를 지원하는 결제수단\r\n\r\n필자가 도메인을 발급받을 때 필요했던 준비물은 위와 같다.\r\n\r\n만약 Google Domains가 아닌 국내 사이트에서 결제한다면 해외결제는 신경쓰지 않아도 된다. Google의 경우 해외 서비스이므로 해외결제가 지원되야 한다.\r\n\r\n## 1. 도메인 결정하기\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/132057934-b103e4ef-157d-46e1-b9aa-52a9b8f273c1.png)\r\n\r\n원하는 도메인을 검색하자.\r\n\r\n도메인을 골랐다면 우측 가운데 [카트] 버튼을 클릭하여 장바구니에 담는다.\r\n\r\n`dev` 도메인과 같이 몇몇 일부 도메인은 \u003cspan class=\"red-400\"\u003eMore secure\u003c/span\u003e 정책이 적용되어 SSL을 강제한다.\r\n\r\n이러한 정책이 적용된 도메인은 \u003cspan class=\"red-600\"\u003eHTTP 서비스가 불가능하며, 반드시 HTTPS 서비스만을 제공\u003c/span\u003e함에 유의하자.\r\n\r\n## 2. 화폐 단위 선택하기\r\n\r\n첫 결제라면 결제할 화폐 단위를 선택해야한다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/132058739-2766fbd9-791c-4e19-971f-7520e46de5b2.png)\r\n\r\n아쉽게도 원화는 지원되지 않으므로, 지원되는 화폐 중 하나를 선택한다.\r\n\r\n이 장에서는 달러($)를 기준으로 수행한다.\r\n\r\n\u003e \u003cspan class=\"yellow-600\"\u003e해외결제의 경우 달러가 수수료 측면에서 이득이다\u003c/span\u003e  \r\n\u003e 필자는 군대 전역 후 카드사 콜센터에서 잠깐 일을 한 적이 있었다. 거기서 얻은 지식 중 하나로, \u003cspan class=\"orange-600\"\u003e해외결제는 달러를 기준으로 환전\u003c/span\u003e한다. 만약 원화 -\u003e 유로로 결제한다면, 실제론 \u003cspan class=\"blue-600\"\u003e원화 -\u003e 달러 -\u003e 유로\u003c/span\u003e로 두 차례 환전이 일어나 수수료 역시 이중으로 나간다.  \r\n\u003e 이는 해외에서 원화를 결제할때도 마찬가지. 해외에서 국내 카드로 원화결제를 수행할 경우 \u003cspan class=\"blue-600\"\u003e원화 -\u003e 달러 -\u003e 원화\u003c/span\u003e라는 해괴한 매커니즘으로 결제되니, 해외결제는 그냥 속편하게 달러로 하자.\r\n\r\n## 3. 사용자 정보 입력\r\n\r\n첫 결재라면 도메인 소유주 정보를 입력받는다. 적절히 입력하자.\r\n\r\n우편번호의 경우 \u003cspan class=\"red-600\"\u003e미국 우편번호만을 입력\u003c/span\u003e받으니, 구글에 그냥 미국 주소 아무거나 쳐서 우편번호 하나 확인하여 입력하자.\r\n\r\n## 4. 도메인 구매\r\n\r\n도메인 구매를 수행한다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/132058813-3eb136bc-d801-40ac-a1c3-83a68478f6e4.png)\r\n\r\n\u003cspan class=\"red-600\"\u003e[Read trademark notice]\u003c/span\u003e는 starcraft라는 브랜드명을 도메인으로 사용함에 따라 관련 약관의 동의를 받는 것이다.\r\n\r\n일반적인 도메인엔 해당 과정이 존재하지 않다.\r\n\r\n* \u003cspan class=\"amber-600\"\u003eRegistration\u003c/span\u003e - 소유 기간 선택 (최소 1년)\r\n* \u003cspan class=\"amber-600\"\u003ePrivacy protection is on\u003c/span\u003e - 도메인 소유주 정보를 숨긴다. 후이즈(WHOIS) 등에서 도메인 정보를 조회할 경우, 소유주에 대한 정보를 숨긴 채 제공한다.\r\n* \u003cspan class=\"amber-600\"\u003eAuto-renew is on\u003c/span\u003e - 도메인 자동 갱신 활성화\r\n* \u003cspan class=\"grey-600\"\u003eCustom email\u003c/span\u003e - 도메인 이메일계정 활성화\r\n\r\nCustom email은 자신의 도메인으로 된 구글 이메일을 만드는 것이다. 즉, `example@starcraft.dev`와 같이 \u003cspan class=\"orange-500\"\u003e자신이 구입한 도메인으로 이메일 아이디를 생성\u003c/span\u003e해주는 서비스다.\r\n\r\n물론 무료는 아니고, 유저당 월 12$ 비용이 청구된다. 도메인 유지 비용이 연 12$임을 감안하면 10배에 달하는 비용이다. 비즈니스 등 반드시 필요한 서비스가 아니라면 해당 서비스는 체크를 해제하자.\r\n\r\n# IP와 도메인 연결하기\r\n\r\n도메인 구입이 완료되면 소유주 정보에 입력한 이메일로 구매 영수증과 함께 안내 메일이 수신된다.\r\n\r\n구입 이후 도메인은 즉시 사용이 가능하다. 이 도메인을 라즈베리파이에 연동하기 위해선 DNS 설정을 통해 \u003cspan class=\"green-600\"\u003e라즈베이파이의 IP와 도메인을 연결\u003c/span\u003e해주면 된다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/132080600-d1083686-ceb4-4046-a6ab-c4a0c7a83f90.png)\r\n\r\nGoogle Domains의 DNS 메뉴에서 DNS 설정을 관리할 수 있다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/132080643-7a92c2ec-8b8a-4428-b4c3-4ba149bb6875.png)\r\n\r\n[맞춤 레코드 관리]를 클릭하여 DNS Record를 추가한다.\r\n\r\n\u003cspan class=\"green-600\"\u003eA Record를 하나 추가하여 데이터에 라즈베리파이의 IP를 입력\u003c/span\u003e하고 저장한다. 수 분 이내로 반영이 완료된다.\r\n\r\n\u003e \u003cb class=\"teal-A400\"\u003e사설 IP 입력? 멈춰!\u003c/b\u003e  \r\n\u003e 공유기 환경을 사용한다면 IP 확인 시 \u003cspan class=\"pink-600\"\u003e192.168.0.xxx\u003c/span\u003e와 같은 사설 IP가 출력될 것이다. A Record엔 사설 IP가 아닌 실제 IP를 입력해야한다. 공유기 설정이나 [findIP](https://www.findip.kr/)에서 확인할 수 있다.\r\n\r\n# 도메인 연동 확인\r\n\r\n``` bash\r\nnslookup [도메인]\r\n```\r\n\r\n윈도우든 Ubuntu든 위 명령어를 입력하여 도메인과 연동된 IP를 확인할 수 있다.\r\n\r\n내가 입력한 IP가 정상적으로 나온다면 성공이다.\r\n\r\n라즈베리파이에서 Tomcat을 기동하고 `example.com:8080`에 접속하여 페이지가 잘 출력되는지 확인하자.\r\n\r\n## 연결이 되지 않아요!\r\n\r\n* `xxx.xxx.xxx.xxx:8080`으로 접속되는지 확인\r\n* 접속이 될 경우 외부에서 문제없이 접속되므로, 도메인에 연결한 IP가 올바른지 확인\r\n* 접속되지 않을 경우 애초에 외부에서 접속되지 않는 것이므로 방화벽이나 포트 통신에 문제가 없는지 확인\r\n* 공유기 환경일 경우 IP주소의 포트포워딩이 설정되어있는지 확인\r\n\r\n# 목표\r\n\r\n* \u003cdel class=\"grey-400\"\u003e라즈베리파이에 Ubuntu 서버를 구축한다.\u003c/del\u003e\r\n* \u003cdel class=\"grey-400\"\u003eTomcat을 구동하여 페이지를 호스팅한다.\u003c/del\u003e\r\n* \u003cdel class=\"grey-400\"\u003e도메인을 입힌다.\u003c/del\u003e\r\n* SSL 인증서를 발급하여 HTTPS 통신을 제공한다.\r\n* SSH, RDP 등의 원격 통신환경을 구축한다.\r\n* MariaDB를 설치하여 DB 통신을 수행한다.\r\n\r\n`dev` 도메인은 반드시 SSL이 필요하다. 더군다나 현재에 배포되는 모든 웹 페이지엔 HTTPS 적용을 거의 강제하다시피 함으로 HTTPS 적용을 목표에 추가한다.","url":["2021-09-04-raspberry-domain","2021","09","04","raspberry-domain"]},{"header":{"title":"[라즈베리파이 4] Ubuntu에 톰캣 설치하기","excerpt":"OS가 준비되었으므로 본격적으로 웹 서버 환경을 구축해보자. 대표적인 WAS인 Tomcat을 활용하여 페이지를 호스팅한다.","coverImage":"https://user-images.githubusercontent.com/50317129/131238727-666f2aaa-d759-4f62-af73-3856086da73d.png","date":"2021-09-02T23:07:19","type":"posts","category":"RaspberryPi","tag":["라즈베리파이","Ubuntu","도메인"],"group":"라즈베리파이","comment":true,"publish":true},"name":"2021-09-02-ubuntu-in-tomcat.md","content":"\r\n# 개요\r\n\r\nOS가 준비되었으므로 본격적으로 웹 서버 환경을 구축해보자. 대표적인 WAS인 Tomcat을 활용하여 페이지를 호스팅한다.\r\n\r\n* Tomcat 9.0.50\r\n\r\n# 웹 서버 구축하기\r\n\r\n아래의 과정을 통해 Ubuntu 서버에 웹 서버를 구축하자.\r\n\r\n## 1. JAVA 설치\r\n\r\n우리가 사용할 WAS는 Tomcat으로, 구동 시 WAS를 필요로한다.\r\n\r\n``` bash\r\nsudo apt-get install openjdk-15-jdk\r\n```\r\n\r\n원하는 JAVA 버전을 설치한다. 본 문서에서는 최신 버전인 JAVA 15를 설치한다.\r\n\r\n``` bash\r\njava -version\r\n```\r\n\r\n``` output\r\nopenjdk version \"15.0.3\" 2021-04-20\r\nOpenJDK Runtime Environment (build 15.0.3+3-Ubuntu-1)\r\nOpenJDK 64-Bit Server VM (build 15.0.3+3-Ubuntu-1, mixed mode, sharing)\r\n```\r\n\r\n`java -version` 명령어를 수행하여 위와 같은 형식의 결과물이 출력되면 JAVA 설치가 완료된 것이다.\r\n\r\n## 2. 환경변수 설정\r\n\r\nJAVA 환경변수를 설정한다. 자바 컴파일러인 `javac` 명령어 입력 시 실제로 호출되는 파일의 경로를 확인하여 설치 경로를 찾는다.\r\n\r\n``` bash\r\nwhich javac\r\n```\r\n\r\n``` output\r\n/usr/lib/jvm/java-15-openjdk-arm64/bin/javac\r\n```\r\n\r\n`which` 명령어는 명령어의 위치를 찾아주는 명령어다. 이를 입력하여 위치를 확인하면 위와 같은 경로가 나온다. `java-{VERSION}-openjdk-arm64`과 같은 폴더에 설치되어있으며, 버전마다 폴더명이 조금씩 다르다.\r\n\r\n위 경로는 폴더가 아닌, 명령어 파일의 경로다. `JAVA_HOME`은 자바가 설치된 최상위 경로인 `/usr/lib/jvm/java-15-openjdk-arm64`가 된다.\r\n\r\n사용자 설정파일인 `.profile`에 환경변수를 지정한다.\r\n\r\n``` bash\r\nvi ~/.profile\r\n```\r\n\r\n``` input\r\nexport JAVA_HOME=/usr/lib/jvm/java-15-openjdk-arm64\r\nexport PATH=$JAVA_HOME/bin:$PATH\r\n```\r\n\r\n사용자 설정파일을 열어 위 내용을 입력한다. `a` 혹은 `i`를 눌러 작성할 수 있다. 작성 이후 `:wq`를 입력하여 저장하면 된다.\r\n\r\n``` bash\r\nsource ~/.profile\r\n```\r\n\r\n위 명령어를 입력하여 변경된 사용자 설정파일을 갱신한다. 이를 입력하지 않으면 해당 쉘에서는 변경된 환경변수가 반영되지 않는다.\r\n\r\n## 3. Tomcat 설치\r\n\r\n``` bash\r\nsudo apt-get install tomcat9\r\nsudo apt-get install libtcnative-1\r\n```\r\n\r\n`tomcat9`는 Tomcat 9버전이고, `libtcnative-1` 패키지를 설치하여 컴파일없이 Tomcat Native를 활성화할 수 있다.\r\n\r\nTomcat Native 찾다보면 `./configure`, `make` 같은 명령어가 나오기도 하는데, Tomcat Native 모듈을 직접 컴파일하는 방식이니 참고할 것.\r\n\r\n톰캣의 설치 경로는 `/var/lib/tomcat9`다.\r\n\r\n``` bash\r\n# 톰캣 기동\r\nsystemctl start tomcat9\r\n\r\n# 톰캣 정지\r\nsystemctl stop tomcat9\r\n\r\n# 톰캣 재기동\r\nsystemctl restart tomcat9\r\n```\r\n\r\n위 명령어를 통해 톰캣 서비스를 on/off할 수 있다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/131715233-e70c15ac-0e38-48f3-8618-96b63a87ee0e.png)\r\n\r\nTomcat Native 활성화 여부는 로그에서 확인할 수 있으며, 로그에 위와 같은 문구가 출력되면 Tomcat Native가 활성화된 것이다.\r\n\r\n``` bash\r\ncd /var/log/tomcat9\r\n```\r\n\r\nTomcat9 기준 로그는 위와 같으며, `catalina.yyyy-MM-dd.log` 형태의 파일을 열면 확인할 수 있다.\r\n\r\n## 4. 포트 개방\r\n\r\n통신에 사용할 포트를 개방한다.\r\n\r\nUbuntu는 \u003cspan class=\"primary\"\u003eufw\u003c/span\u003e로 방화벽 설정을 쉽게 관리할 수 있다.\r\n\r\n``` bash\r\nsudo apt-get install ufw\r\n```\r\n\r\n위 명령어를 입력하여 ufw를 설치할 수 있다.\r\n\r\n``` bash\r\n# ufw 활성화\r\nsudo ufw enable\r\n\r\n# ufw 비활성화\r\nsudo ufw disable\r\n\r\n# ufw 상태 확인\r\nsudo ufw status verbose\r\n```\r\n\r\nufw를 설치하면 기본적으로 비활성화되어있으므로, `sudo ufw enable` 명령어를 통해 활성화시킨다.\r\n\r\nTomcat의 경우 `8080`을 기본 포트로 사용하므로 해당 포트를 개방한다.\r\n\r\n``` bash\r\nsudo ufw allow 8080\r\n```\r\n\r\n\u003e **ufw를 활용한 방화벽 구성하기**  \r\n\u003e Ubuntu에선 ufw를 통해 방화벽을 쉽게 구성할 수 있으며, [이 게시글](/posts/2021/09/04/firewall-with-ufw)에서 사용법을 확인할 수 있다.\r\n\r\n## 4. 페이지 호스팅 확인\r\n\r\n``` bash\r\nifconfig -a\r\n```\r\n\r\n위 명령어를 입력하면 연결된 IP를 알 수 있으나, 공유기를 사용할 경우 `192.168.0.x`와 같은 사설 IP가 표시된다. 이 경우 공유기 설정에서 들어오는 실제 IP를 확인하자.\r\n\r\n* `eth0` - 이더넷 정보\r\n* `wlan0` - 무선랜 정보\r\n\r\n인터넷 연결 방식에 따라 위와 같이 구분된다. 동일한 방식으로 여러개가 연결되어있다면 숫자가 1씩 늘어난다.\r\n\r\n라즈베리파이의 IP `xxx.xxx.xxx.xxx:8080`에 접속하여 톰캣 페이지가 정상적으로 출력되는지 확인하자.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/131716513-505d0ed5-32ef-423e-b86d-d020253cede0.png)\r\n\r\n별다른 설정을 변경하지 않았을 경우 위와 같은 관리자 페이지가 표시될 것이다.\r\n\r\n만약 정상적으로 출력되지 않는다면 아래 항복을 확인해보자.\r\n\r\n* 인터넷 연결이 정상적인지\r\n* 라즈베리파이에 연결된 IP가 맞는지\r\n* Tomcat 서비스 포트가 개방되어있는지\r\n* Tomcat이 정상적으로 구동되었는지\r\n\r\n# 목표\r\n\r\n* \u003cdel class=\"grey-400\"\u003e라즈베리파이에 Ubuntu 서버를 구축한다.\u003c/del\u003e\r\n* \u003cdel class=\"grey-400\"\u003eTomcat을 구동하여 페이지를 호스팅한다.\u003c/del\u003e\r\n* 도메인을 입힌다.\r\n* SSH, RDP 등의 원격 통신환경을 구축한다.\r\n* MariaDB를 설치하여 DB 통신을 수행한다.","url":["2021-09-02-ubuntu-in-tomcat","2021","09","02","ubuntu-in-tomcat"]},{"header":{"title":"[라즈베리파이 4] 라즈베리파이에 Unbuntu 설치하기","excerpt":"목요일을 기점으로 모든 준비물의 배송이 완료됐다. 클린 상태의 라즈베리파이는 OS가 별도로 깔려있지 않은 FreeDOS 상태이므로, 직접 OS를 설치해야한다. 컴퓨터도 주기적으로 포맷하고, 가상머신도 몇 개 돌려본 나로썬 크게 문제될 건 없지만, 이건 내가 지금까지 다루던 컴퓨터와는 좀 다르다는점이 흠. 한 번도 다뤄보지 않은 장비인데다, 일반적인 데스크탑에 비해 여러 차이점과 제약사항이 있어 그리 순탄하진 않았다.","coverImage":"https://user-images.githubusercontent.com/50317129/131238727-666f2aaa-d759-4f62-af73-3856086da73d.png","date":"2021-08-31T01:51:39","type":"posts","category":"RaspberryPi","tag":["라즈베리파이","Ubuntu"],"group":"라즈베리파이","comment":true,"publish":true},"name":"2021-08-31-ubuntu-in-raspberry.md","content":"\r\n# 개요\r\n\r\n목요일을 기점으로 모든 준비물의 배송이 완료됐다. 클린 상태의 라즈베리파이는 OS가 별도로 깔려있지 않은 FreeDOS 상태이므로, 직접 OS를 설치해야한다. 컴퓨터도 주기적으로 포맷하고, 가상머신도 몇 개 돌려본 나로썬 크게 문제될 건 없지만, 이건 내가 지금까지 다루던 컴퓨터와는 좀 다르다는점이 흠.\r\n\r\n한 번도 다뤄보지 않은 장비인데다, 일반적인 데스크탑에 비해 여러 차이점과 제약사항이 있어 그리 순탄하진 않았다.\r\n\r\n# Rasbian? Ubuntu?\r\n\r\n라즈베리파이는 전용 OS인 \u003cspan class=\"pink-600\"\u003eRaspbian\u003c/span\u003e이 존재한다. Raspbian은 라즈베리파이에 가장 최적화된 OS이므로 라즈베리파이의 네이티브한 영역을 쉽게 다룰 수 있을 것이다.\r\n\r\n하지만 난 라즈베리파이를 다룬다기보단 라즈베리파이를 통해 서버를 구축할 예정이므로, Raspbian보단 훨씬 범용적인 OS가 알맞다. 이를테면 CentOS 같은 거 말이다.\r\n\r\n그 중에서 내가 선택한 OS는 Ubuntu. CentOS는 RHEL에서 인수한 뒤 CentOS의 가장 큰 장점인 RHEL과의 동일성을 아작내놨다. 굳이 쓸 필요가 없어진 셈.\r\n\r\n때문에 이전부터 써보고 싶기도 했고, 한국인에게 가장 친숙한 Linux인 Ubuntu를 설치하고자 한다.\r\n\r\n익숙하지 않은 라즈베리파이로의 설치는 물론 관련 정보들을 쉽게 얻을 수 있을 것이다.\r\n\r\n# 라즈베이파이에 Ubuntu 설치하기\r\n\r\n본격적으로 라즈베리파이에 Ubuntu를 설치해보자.\r\n\r\n## 준비물\r\n\r\n* Raspberry Pi 4 Model B\r\n* 전원 케이블 (5V 3A 이상)\r\n* MicroSD, 리더기 (구형 펌웨어일 경우)\r\n* Micro HDMI, 혹은 HDMI 케이블 (모니터 쓸 경우)\r\n\r\n준비물은 위와 같다.\r\n\r\n원래 기본적으로 라즈베리파이는 MicroSD 이외에는 인식하지 않는다. USB같은 외장 디스크를 인식하려면 펌웨어의 업데이트가 필요하다.\r\n\r\n\u003cspan class=\"red-600\"\u003e2020년 8월 이후 출시된 보드의 경우 펌웨어가 기본적으로 업데이트\u003c/span\u003e된다고 한다. 난 중고로 샀는데, 8월 이전 출시된 보드인지 USB를 바로 인식하지 않았었다.\r\n\r\n펌웨어 업데이트는 OS설치 후 가능하므로, 만약 \u003cspan class=\"red-600\"\u003e구형 보드라면 얄쨜없이 MicroSD가 필요\u003c/span\u003e하니 참고할 것.\r\n\r\n\u003cbr /\u003e\r\n\r\n라즈베리파이는 기본적으로 Micro HDMI라고 하는 작은 단자를 제공한다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/131310544-4fc47a26-b541-45e1-ac8c-4586bcbdc978.png)\r\n\r\n위 사진의 좌측 단자가 일반적으로 알고있는 HDMI, 우측의 작은 단자가 Micro HDMI다. Argon M2 케이스의 경우 Micro HDMI와 연결된 HDMI 단자를 제공해주므로 상관없었으나, 별도의 케이스나 커넥터 없이 모니터를 연결할 경우 위 사진과 같은 \u003cspan class=\"amber-500\"\u003eMicro HDMI to HDMI\u003c/span\u003e 케이블이 필요하니 주의할 것.\r\n\r\n## Ubuntu 설치파일 다운로드\r\n\r\n디스크에 Ubuntu를 설치하기위해 아래 두 파일을 다운로드하자.\r\n\r\n* [이미지 레코더 BalenaEtcher 다운로드](https://www.balena.io/etcher/)\r\n* [Ubuntu ISO 다운로드](https://ubuntu.com/download/raspberry-pi)\r\n\r\n이미지 레코더는 부팅 디스크를 만들어준다. Windows 포맷 USB를 만드는 과정이라고 생각하면 된다.\r\n\r\nUbuntu는 Linux이므로, 위 경로에서 쉽게 다운로드 받을 수 있다.\r\n\r\n* \u003cspan class=\"orange-600\"\u003eUbuntu Server\u003c/span\u003e - CLI 기반 (GUI 없음)\r\n* \u003cspan class=\"orange-600\"\u003eUbuntu Desktop\u003c/span\u003e - GUI 기반 (설치 시 모니터 필요)\r\n\r\n페이지에 접속하면 두 버전을 다운로드 받을 수 있다. Desktop은 우리가 일반적으로 알고있는 GUI 기반의 OS다. Server는 DOS같은 명령어 기반의 CLI OS다. 어떤 걸 설치해도 상관없으나 Linux에 익숙하지 않다면 Desktop을 추천한다. 하지만 \u003cspan class=\"red-500\"\u003eGUI 기반이므로 설치 후 OS 셋팅 시 모니터가 필요함\u003c/span\u003e에 유의하자.\r\n\r\n이 문서에서는 Ubuntu Desktop을 설치한다. Electron 같은 UI 프로그램이나 Ubuntu에서의 웹 페이지 테스트를 위해선 GUI 환경이 필요하다. CLI에선 브라우저를 띄우는 등의 행위가 불가능하기 때문. Ubuntu Server도 추후 관련 프로그램을 설치하여 GUI 환경으로 구동할 수 있다.\r\n\r\n## Ubuntu 부팅 디스크 만들기\r\n\r\n아래의 과정을 통해 부팅 디스크를 만든다. 본문에서는 MicroSD로 진행한다. 디스크 종류가 달라진다고 해서 과정이 달라지지 않으니 걱정하지 않아도 된다.\r\n\r\n### 1. BalenaEtcher 실행\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/131342380-c9c0d006-e4cf-457a-9cbf-66ffcfbf8e4f.png)\r\n\r\nUSB를 꽂고 다운로드받은 \u003cspan class=\"green-400\"\u003eBalenaEtcher를 실행\u003c/span\u003e한다.\r\n\r\n### 2. Ubuntu ISO 선택\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/131342500-b406e9e9-c72f-41f6-aedb-1e1d88f678f7.png)\r\n\r\n다운로드받은 \u003cspan class=\"green-400\"\u003eUbuntu ISO를 선택\u003c/span\u003e한다. 선택한 ISO가 디스크에 기록될 것이다.\r\n\r\nUbuntu Desktop ISO는 용량이 많음에 유의하자.\r\n\r\n### 3. 디스크 드라이브 선택\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/131343798-ae4caaa3-5b39-42cc-8d87-362bde5ad5eb.png)\r\n\r\nISO가 기록될 디스크 드라이브를 선택한다.\r\n\r\n\u003cspan class=\"blue-400\"\u003e[Show hidden]\u003c/span\u003e을 클릭하면 USB 형태의 외장 드라이브 뿐만 아니라, M2 혹은 SATA와 연결된 D드라이브 등도 선택 가능하다. 물론 그럴일은 없겠지만, 시스템 드라이브는 선택 불가능하다.\r\n\r\n### 4. 디스크 기록\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/131343897-2ab71120-ba0e-4a10-9e20-85b7f562f25c.png)\r\n\r\n모든 선택이 완료되면 \u003cspan class=\"blue-400\"\u003e[Flash!]\u003c/span\u003e 버튼을 클릭하여 부팅 디스크를 만든다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/131344037-dd53f8e7-4a66-4e3e-90d5-dd06bdf79904.png)\r\n\r\nSSD같이 Disk I/O가 빠르면 금방 끝나지만, 느리면 수 분의 시간이 걸린다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/131344661-ef5737a7-e2b8-483b-88af-9f79318c6661.png)\r\n\r\n완료되면 위와 같은 화면이 뜬다.\r\n\r\n디스크를 뺐다 껴서 다시 인식시키면 아래 두 디스크가 인식된다.\r\n\r\n* `system-boot` 혹은 `boot` - 부팅 디스크\r\n* 메인 디스크\r\n\r\n이 부팅 디스크를 라즈베리파이에 연결하면 Ubuntu를 사용할 수 있다.\r\n\r\n## 라즈베리파이 연결\r\n\r\n부팅 디스크를 라즈베리파이에 연결하자. MicroSD라면 칩 아래쪽에, USB라면 USB 단자 등 맞는 방식으로 연결하면 된다.\r\n\r\n정상적으로 부팅되면 빨간불과 함께 녹색불이 점멸한다. \u003cspan class=\"red-500\"\u003e빨간불만 뜨면 부팅 중 문제가 있다는 뜻\u003c/span\u003e이다. 이 경우 모니터를 연결해야 자세한 문제를 확인할 수 있다.\r\n\r\n이후 셋팅은 일반적인 Ubuntu 사용과 동일하다. 사용자 생성하고 설정값 지정하고 그런 것들.\r\n\r\n본인이 MicroSD가 아닌 USB로 부팅디스크를 만들었는데, 화면에서 \u003cspan class=\"red-500\"\u003eUSB Stop\u003c/span\u003e이라는 문구가 뜨며 반복적으로 Fail이 뜨면 USB를 인식할 수 없는 구형보드라는 뜻이다. \r\n\r\nMicroSD 정도로 만족하거나, 신형 보드라서 애초에 USB나 SSD를 부팅 디스크로 사용했다면 그냥 쓰면 된다. 하지만 본인의 라즈베리파이의 펌웨어가 구형이고, MicroSD로는 만족할 수 없다면 아래의 과정을 통해 펌웨어 업데이트를 진행해야한다.\r\n\r\n# 펌웨어 업데이트\r\n\r\n\u003cp class=\"red-600\" align=\"center\"\u003eUSB가 인식되는 신형 펌웨어는 수행할 필요 없음\u003c/p\u003e\r\n\r\n라즈베리파이가 USB나 SSD를 부팅 디스크로 인식할 수 있도록 펌웨어를 업데이트한다.\r\n\r\n펌웨어 업데이트는 반드시 라즈베리파이에 OS가 설치된 후에 진행할 수 있다. 즉, 구형 보드에서 SSD로 부팅하려면 MicroSD로 부팅 한 번, 펌웨어 업데이트 후 SSD로 부팅 한 번으로 총 두 개의 부팅 디스크를 만들어야 한다.\r\n\r\n## 1. 패키지 최신화\r\n\r\n먼저, 터미널을 열어 아래 두 명령어를 입력한다.\r\n\r\n``` bash\r\nsudo apt-get update\r\nsudo apt-get upgrade\r\n```\r\n\r\n패키지 저장소 및 설치된 패키지를 최신화한다.\r\n\r\n## 2. 설정값 변경\r\n\r\n업데이트가 완료되면 아래의 명령어를 입력하여 해당 파일의 내용을 변경한다.\r\n\r\n``` bash\r\nsudo vim /etc/default/rpi-eeprom-update\r\n```\r\n\r\n`FIRMWARE_RELEASE_STATUS=\"critical\"` 설정값에서 `critical`을 `stable`로 변경한다.\r\n\r\n즉, `FIRMWARE_RELEASE_STATUS=\"stable\"`로 변경해주면 된다.\r\n\r\n## 3. 부트로더 업데이트\r\n\r\n이제 부트로더를 업데이트한다.\r\n\r\n``` bash\r\nsudo rpi-eeprom-update -d -f /lib/firmware/raspberrypi/bootloader/stable/pieeprom-2020-06-15.bin\r\n```\r\n\r\n해당 경로에 가보면 `2020-06-15` 버전 말고도 `2020-07-16`, `2020-12-11` 등 다양한 버전이 있는데, 대부분 위 버전을 추천하는 것 같다.\r\n\r\n필자는 최신버전을 좋아해서, 버전 중 가장 최신이였던 `2020-12-11`로 업데이트했으나 설정값이 이상하여 결국 상기한 `2020-06-15` 버전으로 다시 업데이트했다. 업데이트는 금방되니 부담가질 필요는 없다.\r\n\r\n## 4. 확인\r\n\r\n``` bash\r\nsudo reboot\r\n```\r\n\r\n부트로더 업데이트가 완료되면 기기를 재부팅한다.\r\n\r\n재부팅이 완료되면 아래의 명령어를 입력하여 USB를 인식할 수 있는지 확인하자.\r\n\r\n``` bash\r\nsudo vcgencmd bootloader_config\r\n```\r\n\r\n``` output\r\n[all]\r\nBOOT_UART=0\r\nWAKE_ON_GPIO=1\r\nPOWER_OFF_ON_HALT=0\r\nDHCP_TIMEOUT=45000\r\nDHCP_REQ_TIMEOUT=4000\r\nTFTP_FILE_TIMEOUT=30000\r\nENABLE_SELF_UPDATE=1\r\nDISABLE_HDMI=0\r\nBOOT_ORDER=0xf41\r\n```\r\n\r\n위 명령어를 입력하면 이와 같은 형식의 설정값이 출력된다. 다른건 상관없고, `BOOT_ORDER`의 값이 `0xf41`라면 정상적으로 업데이트가 완료된 것이다.\r\n\r\n이제 라즈베리파이가 USB를 부팅 디스크로 인식할 수 있다.\r\n\r\n디스크의 값이 아닌 라즈베리파이 기기 자체의 펌웨어가 업데이트된 것이므로, MicroSD에서 USB로 디스크가 바뀌어도 업데이트는 유지된다. 필자는 이걸 몰라서 쓸데없는 고민을 했었다.\r\n\r\n## 5. 부팅 디스크 재생성\r\n\r\n이제 MicroSD의 역할은 모두 끝났다. 나중을 대비해 MicroSD는 고이 모셔두자. 아주 간간히 쓸 일이 생기기도 하고 그런다.\r\n\r\nUSB, SSD 등 원하는 디스크에다 본문의 [부팅 디스크 만들기](#Ubuntu-부팅%20디스크%20만들기) 과정을 다시 수행한다.\r\n\r\n# 설정\r\n\r\nUbuntu 설치가 완료되면, 이후는 우리가 아는 일반적인 OS 셋팅이 진행된다.\r\n\r\nUbuntu Desktop의 경우, 언어, 계정 등의 설정이 추가로 진행된다.\r\n\r\nUbuntu Server의 경우, CLI 환경이므로 별도의 설정이 필요하지 않다. 기본 계정이 생성되며, 아이디와 비밀번호 모두 동일하게 ubuntu다. 로그인 후 바꿔주자. \r\n\r\n# 목표\r\n\r\n* \u003cdel class=\"grey-400\"\u003e라즈베리파이에 Ubuntu 서버를 구축한다.\u003c/del\u003e\r\n* 도메인을 입힌다.\r\n* SSH, RDP 등의 원격 통신환경을 구축한다.\r\n* Tomcat을 구동하여 페이지를 호스팅한다\r\n* MariaDB를 설치하여 DB 통신을 수행한다.","url":["2021-08-31-ubuntu-in-raspberry","2021","08","31","ubuntu-in-raspberry"]},{"header":{"title":"[라즈베리파이 4] Hello Raspberry!","excerpt":"개발자의 적지않은 수가 클라우드든, 디바이스든 자신만의 서버를 구축하여 다양하게 활용하고 있다. 개발을 하다보면 필연적으로 24시간 언제나 가동되는 서버 비스무리한 것이 필요할 때가 있다. 일례로 GitHub Pages의 경우 정적 페이지만 호스팅해줄 뿐, 백엔드나 DB는 사용할 수가 없어 동적 페이지 호스팅은 불가능하다. 그러나 개인 API 혹은 DB 서버가 존재한다면, 해당 서버와의 통신을 통해 더욱 동적 페이지 호스팅이 가능하다. 웹에서 백엔드가 갖는 역할을 생각해본다면, 개인이 활용 가능한 서버가 있고 없고의 차이는 천지차이가 난다. 나 역시도 개발하는 입장에서 제약없이 사용할 수 있는 서버의 소요가 이전부터 있어왔고, 개인 서버를 구축하기 위한 방안을 모색했다.","coverImage":"https://user-images.githubusercontent.com/50317129/131238727-666f2aaa-d759-4f62-af73-3856086da73d.png","date":"2021-08-29T13:41:41","type":"posts","category":"RaspberryPi","tag":["라즈베리파이"],"group":"라즈베리파이","comment":true,"publish":true},"name":"2021-08-29-hello-raspberry.md","content":"\r\n# 서버가 필요해!\r\n\r\n개발자의 적지않은 수가 클라우드든, 디바이스든 자신만의 서버를 구축하여 다양하게 활용하고 있다.\r\n\r\n개발을 하다보면 필연적으로 24시간 언제나 가동되는 서버 비스무리한 것이 필요할 때가 있다. 일례로 GitHub Pages의 경우 정적 페이지만 호스팅해줄 뿐, 백엔드나 DB는 사용할 수가 없어 동적 페이지 호스팅은 불가능하다.\r\n\r\n그러나 개인 API 혹은 DB 서버가 존재한다면, 해당 서버와의 통신을 통해 더욱 동적 페이지 호스팅이 가능하다. 웹에서 백엔드가 갖는 역할을 생각해본다면, 개인이 활용 가능한 서버가 있고 없고의 차이는 천지차이가 난다.\r\n\r\n나 역시도 개발하는 입장에서 제약없이 사용할 수 있는 서버의 소요가 이전부터 있어왔고, 개인 서버를 구축하기 위한 방안을 모색했다.\r\n\r\n# Hello, Raspberry Pi\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/131238727-666f2aaa-d759-4f62-af73-3856086da73d.png)\r\n\r\n많은 선택지가 있었지만, 내가 선택한 방안은 \u003cspan class=\"pink-700\"\u003eRaspberry Pi\u003c/span\u003e를 통해 서버환경을 구축하는 것이였다.\r\n\r\n한창 트렌디한 \u003cspan class=\"orange-500\"\u003eCloud\u003c/span\u003e 플랫폼, 서버 호스팅 서비스도 있었지만, 여러 요인을 비교해본 결과 라즈베이 파이가 적절하다고 생각했다.\r\n\r\n# 왜 하필?\r\n\r\n근래 들어 AWS를 필두로 클라우드 시장이 크게 활성화됐다. 덕분에 국/내외를 막론하고 여러 양질의 클라우드 서비스 제공처가 생겼다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/131238859-18b9cccd-4d6b-4e38-b279-c0faa66d4815.png)\r\n\r\n클라우드 서비스를 활용하면 개인 서버를 쉽게 구축할 수 있겠지만, 그럼에도 불구하고 난 라즈베리 파이를 선택했다.\r\n\r\n크게 비용적 측면, 학구적 측면에서 생각했다.\r\n\r\n## 비용적 측면\r\n\r\n라즈베리 파이를 선택한 가장 큰 이유.\r\n\r\n몇 번 테스트삼아 쓸 것도 아니고, WAS, DB 등 각종 개발 관련 툴을 구동하려는 나로써는 서버의 사양 또한 쉽사리 무시할 수 없는 요소 중 하나다.\r\n\r\n높은 사양은 당연하게도 높은 비용으로 직결된다. 하지만 난 돈이 없다. 그렇다고 마냥 아낄 건 아니다만, 최대한 합리적인 선택지를 취할 필요가 있었다.\r\n\r\n내가 원하는 조건은 아래와 같았다.\r\n\r\n* 하나 이상의 Tomcat을 구동하는데 무리가 없을 것.\r\n* 하나 이상의 DBMS를 구동하는데 무리가 없을 것.\r\n* 최소 100GB 이상의 데이터를 보관할 수 있을 것.\r\n* 최대한 적은 유지비를 요구할 것.\r\n\r\n위 조건을 충족하기 위해선 많은 RAM, 디스크 용량이 필요했다. SSD일 경우 가격은 가격은 더욱 상승할 것이고. 서버에서 컴파일같은 연산 작업의 소요는 거의 없을 것 같아 CPU는 크게 신경쓰지 않았다.\r\n\r\n\u003cspan class=\"orange-500\"\u003eAWS\u003c/span\u003e와 \u003cspan class=\"pink-700\"\u003eRaspberry Pi\u003c/span\u003e를 비교하면 아래와 같이 정리할 수 있다.\r\n\r\n|  구분   | \u003cspan class=\"orange-500\"\u003eAWS LightSail\u003c/span\u003e | \u003cspan class=\"pink-700\"\u003eRaspberry Pi 4 Model B\u003c/span\u003e |\r\n| :-----: | :-------------------------------------------: | :--------------------------------------------------: |\r\n|   CPU   |                     2Core                     |                        4Core                         |\r\n|   RAM   |                      8GB                      |                         8GB                          |\r\n|   VGA   |                       X                       |                    O (Support 4K)                    |\r\n|   SSD   |                     320GB                     |                     256GB (별도)                     |\r\n| Pricing |                40$ / per month                |                   160,000 (영구적)                   |\r\n\r\nCPU와 VGA는 위 조건의 영향을 적게 받으므로 제외하고 본다면 AWS가 우수해보인다. 하지만 AWS는 40$라는 적지않은 돈이 **매 달** 과금된다는 게 문제. 라즈베리 파이가 16만원에 영구적인 소장이 가능함을 감안하면 4개월 이후부터 AWS의 비용이 지속적으로 늘어난다. 환율을 천 원으로 감안했음에도 이 정도다.\r\n\r\nAWS에서 가성비로 호평받는 LightSail이 이정도면 EC2는 볼 필요도 없는 셈.\r\n\r\n장기적인 측면에서 볼 때 비용적으론 라즈베리 파이가 우수하다.\r\n\r\n## 학구적 측면\r\n\r\n서버를 다루고, 새로운 OS를 접한다는 것 자체도 개발자에겐 하나의 스펙으로 작용할 수 있다.\r\n\r\nAWS 역시 클라우드 업계의 대표로, 최근의 회사들은 AWS를 다루는 능력 또한 중요하게 보고있다.\r\n\r\n스펙적인 면을 감안하면 AWS가 훨씬 우세하지만, AWS나 라즈베리파이나 결국 서버의 범주에 들어가므로 서버를 학습하는덴 크게 무리는 없을 것이다.\r\n\r\n라즈베리파이는 처음부터 끝까지 사용자가 직접 구축해야하지만, 이 점이 오히려 학구적으로는 장점으로 작용할 것이다.\r\n\r\n# 장비 목록\r\n\r\n어떤 장비를 구입했는지 살펴보자. 가능한한 중고품을 적극적으로 활용했다.\r\n\r\n|  구분  |          이름          |                          가격                           |\r\n| :----: | :--------------------: | :-----------------------------------------------------: |\r\n| Device | Raspberry Pi 4 Model B | 60,000원 \u003cspan class=\"grey-600\"\u003e(정가 104,000원)\u003c/span\u003e |\r\n|  SSD   | SAMSUNG 256GB M2 SATA  | 31,000원 \u003cspan class=\"grey-600\"\u003e(정가 57,900원)\u003c/span\u003e  |\r\n|  Case  |      Argon ONE M2      |                        59,000원                         |\r\n| Power  |      5V 4A 어댑터      |                        10,200원                         |\r\n|  기타  |    MicroSD, 리더기     |                       총 6,400원                        |\r\n|  총합  |          6종           |                        237,500원                        |\r\n\r\n케이스, SSD 등의 별매품을 구매하는데 비용이 좀 소요됐다. 아마 정가로 샀다면 30만원 정도 되지 않았을까 싶다.\r\n\r\n기기를 6만원주고 샀는데 케이스가 6만원 가까이되는 이 아이러니함. 저 케이스는 중고품이 없어서 어쩔 수 없었다.\r\n\r\n# 실물\r\n\r\n케이스까지 조립해서 구동한 라즈베리파이다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/131309644-69d69416-12e9-4fd6-95fc-3f1909289387.png)\r\n\r\n# 목표\r\n\r\n라즈베리파이 서버의 최종 목표는 아래와 같다.\r\n\r\n* 라즈베리파이에 Ubuntu 서버를 구축한다.\r\n* 도메인을 입힌다.\r\n* SSH, RDP 등의 원격 통신환경을 구축한다.\r\n* Tomcat을 구동하여 페이지를 호스팅한다\r\n* MariaDB를 설치하여 DB 통신을 수행한다.","url":["2021-08-29-hello-raspberry","2021","08","29","hello-raspberry"]}],"data":{"header":{"title":"[라즈베리파이 4] Let's Ecrypt로 Ubuntu 서버에 HTTPS 통신 제공하기","excerpt":"이전 장에서 Google Domains를 통해 dev 도메인을 발급받았다. 이 블로그의 주소는 실제로 구입한 https://blog.itcode.dev 도메인이 적용되어있다. dev 도메인은 강화된 보안정책이 적용되어있다. 해당 도메인으로의 모든 HTTP 통신은 반드시 HTTPS 보안 통신으로만 제공된다. 네트워크 계층에서 https 프로토콜로 라우팅하므로 좋든 싫든 HTTPS 서비스를 제공해야만 한다.","coverImage":"https://user-images.githubusercontent.com/50317129/131238727-666f2aaa-d759-4f62-af73-3856086da73d.png","date":"2021-09-06T16:50:40","type":"posts","category":"RaspberryPi","tag":["라즈베리파이","Ubuntu","Tomcat(톰캣)","SSL"],"group":"라즈베리파이","comment":true,"publish":true},"name":"2021-09-06-raspberry-ssl-domain.md","content":"\u003ch1 id=\"개요\"\u003e개요 \u003ca href=\"#개요\"\u003e🔗\u003c/a\u003e\u003c/h1\u003e\u003cp\u003e이전 장에서 Google Domains를 통해 \u003ccode class=\"inline-code\"\u003edev\u003c/code\u003e 도메인을 발급받았다. 이 블로그의 주소는 실제로 구입한 https://blog.itcode.dev 도메인이 적용되어있다.\u003c/p\u003e\n\u003cp\u003e\u003ccode class=\"inline-code\"\u003edev\u003c/code\u003e 도메인은 강화된 보안정책이 적용되어있다. 해당 도메인으로의 모든 HTTP 통신은 반드시 HTTPS 보안 통신으로만 제공된다. 네트워크 계층에서 https 프로토콜로 라우팅하므로 좋든 싫든 HTTPS 서비스를 제공해야만 한다.\u003c/p\u003e\n\u003cbr /\u003e\n\n\u003cp\u003e이 장에서는 Let's Encrypt로 SSL 인증서를 발급받아 라즈베이파이서버의 Tomcat에 적용한다. 기존의 1:1 도메인 매칭 SSL이 아니라, 여러 서브도메인에 전부 대응 가능한 와일드카드 인증서를 받을 것이다.\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003cb class=\"teal-600\"\u003e와일드카드(Wildcard) 인증서?\u003c/b\u003e\u003cbr\u003e프로그래밍에서의 \u003cspan class=\"primary\"\u003e와일드카드\u003c/span\u003e란 무작위 대상의 허용이란 의미를 가진다. 도메인과 1:1 매칭되는 기존의 인증서와 달리, 와일드카드 인증서는 주체가 \u003ccode class=\"inline-code\"\u003e*.example.com\u003c/code\u003e로 표기되며, 모든 서브도메인에 적용이 가능하다.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003ch1 id=\"Cerbot으로-SSL 인증서 발급하기\"\u003eCerbot으로 SSL 인증서 발급하기 \u003ca href=\"#Cerbot으로-SSL 인증서 발급하기\"\u003e🔗\u003c/a\u003e\u003c/h1\u003e\u003cp\u003eUbuntu 서버에서 SSL 인증서를 발급받아보자. 일반적인 SSL 인증서는 인증 과정에서 웹 서버에 특정 파일을 배포한 뒤, 인증 서버에서 해당 파일의 접근 및 유효성 검증을 통해 도메인의 소유권을 확인한다.\u003cbr\u003e하지만 와일드카드 인증서는 여러 서브도메인에 전부 적용되는 특별한 인증서라 위의 인증방식을 사용하지 않는다. 위의 인증방식은 하나의 도메인의 소유권만 보증하기 때문. \u003cspan class=\"orange-600\"\u003e와일드카드 인증서는 DNS 레코드를 통해 소유권을 인증\u003c/span\u003e한다. DNS 레코드는 도메인의 소유권자만 설정 가능하기 때문.\u003c/p\u003e\n\u003cp\u003e만약, 어떠한 이유로든 도메인의 DNS 설정을 변경할 수 없다면 와일드카드 인증서를 발급받을 수 없다.\u003c/p\u003e\n\u003ch2 id=\"어?-전 윈도우로 하고싶은데....\"\u003e어? 전 윈도우로 하고싶은데.... \u003ca href=\"#어?-전 윈도우로 하고싶은데....\"\u003e🔗\u003c/a\u003e\u003c/h2\u003e\u003cp\u003eDNS 레코드 인증으로 진행하기 때문에 Tomcat에 파일을 배포할 필요가 없어서 아무데서나 진행해도 상관 없다.\u003c/p\u003e\n\u003cp\u003eWindows 환경에서 인증서를 발급받는 방법은 이전에 작성한 게시물 \u003ca href=\"/posts/2021/08/19/lets-encrypt\" target=\"_blank\"\u003e[SSL] Windows 10에서 Let's Encrypt로 SSL 인증서 무료 발급받기\u003c/a\u003e을 참고하길 바란다.\u003c/p\u003e\n\u003ch2 id=\"준비물\"\u003e준비물 \u003ca href=\"#준비물\"\u003e🔗\u003c/a\u003e\u003c/h2\u003e\u003cul\u003e\n\u003cli\u003eUbuntu OS\u003c/li\u003e\n\u003cli\u003eDNS Record 설정 권한\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e필자는 Google Domains에서 도메인을 구입했으므로, Google Domains에서 DNS 설정을 관리할 수 있다. 만약, 가비아나 후이즈, 도레지 등 다른 도메인 사이트에서 도메인을 구매했다면 그 사이트에서 DNS 설정을 할 수 있으니 참고할 것.\u003c/p\u003e\n\u003cp\u003e이 장에서는 Google Domains를 기준으로 진행한다.\u003c/p\u003e\n\u003ch2 id=\"1.-Certbot 설치하기\"\u003e1. Certbot 설치하기 \u003ca href=\"#1.-Certbot 설치하기\"\u003e🔗\u003c/a\u003e\u003c/h2\u003e\u003cp\u003eUbuntu에서 Certbot을 설치한다.\u003c/p\u003e\n\n\t\t\t\t\t\u003cdiv class=\"codeblock\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"top\"\u003e\n\t\t\t\t\t\t\t\u003cp\u003eBASH\u003c/p\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\u003c/div\u003e\n\n\t\t\t\t\t\t\u003cbutton onclick=\"copyCode(this);\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 512\" data-icon=\"clipboard\" class=\"i-clipboard\"\u003e\u003cpath fill=\"currentColor\" d=\"M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z\"\u003e\u003c/path\u003e\u003c/svg\u003e\u003c/button\u003e\n\n\t\t\t\t\t\t\u003cpre class=\"language-bash\"\u003e\u003ctable\u003e\u003ctbody\u003e\u003ctr data-number=0\u003e\u003ctd class=\"line-number\" data-number=\"0\"\u003e0\u003c/td\u003e\u003ctd class=\"line-code\" data-number=0\u003e\u003cspan class=\"token function\"\u003esudo\u003c/span\u003e \u003cspan class=\"token function\"\u003eapt-get\u003c/span\u003e \u003cspan class=\"token function\"\u003einstall\u003c/span\u003e certbot\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/pre\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003ch2 id=\"2.-Certbot으로 인증 수행하기\"\u003e2. Certbot으로 인증 수행하기 \u003ca href=\"#2.-Certbot으로 인증 수행하기\"\u003e🔗\u003c/a\u003e\u003c/h2\u003e\u003cp\u003eCertbot을 수행하여 인증서 발급을 수행한다.\u003c/p\u003e\n\u003cp class=\"red-500\" align=\"center\"\u003e※ 아래의 itcode.dev 도메인은 예시로, 실제로 입력 시엔 직접 사용할 자신의 도메인을 입력한다.\u003c/p\u003e\n\n\n\t\t\t\t\t\u003cdiv class=\"codeblock\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"top\"\u003e\n\t\t\t\t\t\t\t\u003cp\u003eBASH\u003c/p\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\u003c/div\u003e\n\n\t\t\t\t\t\t\u003cbutton onclick=\"copyCode(this);\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 512\" data-icon=\"clipboard\" class=\"i-clipboard\"\u003e\u003cpath fill=\"currentColor\" d=\"M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z\"\u003e\u003c/path\u003e\u003c/svg\u003e\u003c/button\u003e\n\n\t\t\t\t\t\t\u003cpre class=\"language-bash\"\u003e\u003ctable\u003e\u003ctbody\u003e\u003ctr data-number=0\u003e\u003ctd class=\"line-number\" data-number=\"0\"\u003e0\u003c/td\u003e\u003ctd class=\"line-code\" data-number=0\u003e\u003cspan class=\"token function\"\u003esudo\u003c/span\u003e certbot certonly --manual --preferred-challenges dns --email psj2716@gmail.com -d *.itcode.dev\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/pre\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003cul\u003e\n\u003cli\u003e\u003ccode class=\"inline-code\"\u003e--manual\u003c/code\u003e - 수동 설정\u003c/li\u003e\n\u003cli\u003e\u003ccode class=\"inline-code\"\u003e--preferred-challenges\u003c/code\u003e - 인증방식 지정\u003c/li\u003e\n\u003cli\u003e\u003ccode class=\"inline-code\"\u003e--email\u003c/code\u003e 소유주 이메일\u003c/li\u003e\n\u003cli\u003e\u003ccode class=\"inline-code\"\u003e-d\u003c/code\u003e - 도메인 지정\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e위 명령어를 사용하면 별다른 명령어 입력 없이 즉시 인증을 수행할 수 있다. \u003ccode class=\"inline-code\"\u003e-d\u003c/code\u003e의 인자값으로 구입한 도메인을 입력하되, 서브도메인을 \u003ccode class=\"inline-code\"\u003e*\u003c/code\u003e로 지정함을 잊지말자.\u003c/p\u003e\n\n\t\t\t\t\t\u003cdiv class=\"codeblock\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"top\"\u003e\n\t\t\t\t\t\t\t\u003cp\u003eOUTPUT\u003c/p\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\u003c/div\u003e\n\n\t\t\t\t\t\t\u003cbutton onclick=\"copyCode(this);\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 512\" data-icon=\"clipboard\" class=\"i-clipboard\"\u003e\u003cpath fill=\"currentColor\" d=\"M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z\"\u003e\u003c/path\u003e\u003c/svg\u003e\u003c/button\u003e\n\n\t\t\t\t\t\t\u003cpre class=\"language-output\"\u003e\u003ctable\u003e\u003ctbody\u003e\u003ctr data-number=0\u003e\u003ctd class=\"line-number\" data-number=\"0\"\u003e0\u003c/td\u003e\u003ctd class=\"line-code\" data-number=0\u003e- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=1\u003e\u003ctd class=\"line-number\" data-number=\"1\"\u003e1\u003c/td\u003e\u003ctd class=\"line-code\" data-number=1\u003ePlease read the Terms of Service at\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=2\u003e\u003ctd class=\"line-number\" data-number=\"2\"\u003e2\u003c/td\u003e\u003ctd class=\"line-code\" data-number=2\u003ehttps://letsencrypt.org/documents/LE-SA-v1.2-November-15-2017.pdf. You must\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=3\u003e\u003ctd class=\"line-number\" data-number=\"3\"\u003e3\u003c/td\u003e\u003ctd class=\"line-code\" data-number=3\u003eagree in order to register with the ACME server at\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=4\u003e\u003ctd class=\"line-number\" data-number=\"4\"\u003e4\u003c/td\u003e\u003ctd class=\"line-code\" data-number=4\u003ehttps://acme-v02.api.letsencrypt.org/directory\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=5\u003e\u003ctd class=\"line-number\" data-number=\"5\"\u003e5\u003c/td\u003e\u003ctd class=\"line-code\" data-number=5\u003e- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=6\u003e\u003ctd class=\"line-number\" data-number=\"6\"\u003e6\u003c/td\u003e\u003ctd class=\"line-code\" data-number=6\u003e(A)gree/(C)ancel:\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/pre\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003cp\u003e\u003cspan class=\"pink-600\"\u003e서비스 이용 약관에 동의\u003c/span\u003e해달라는 의미로, A를 입력하여 동의한다. 동의하지 않으면 SSL 발급을 진행할 수 없다.\u003c/p\u003e\n\n\t\t\t\t\t\u003cdiv class=\"codeblock\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"top\"\u003e\n\t\t\t\t\t\t\t\u003cp\u003eOUTPUT\u003c/p\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\u003c/div\u003e\n\n\t\t\t\t\t\t\u003cbutton onclick=\"copyCode(this);\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 512\" data-icon=\"clipboard\" class=\"i-clipboard\"\u003e\u003cpath fill=\"currentColor\" d=\"M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z\"\u003e\u003c/path\u003e\u003c/svg\u003e\u003c/button\u003e\n\n\t\t\t\t\t\t\u003cpre class=\"language-output\"\u003e\u003ctable\u003e\u003ctbody\u003e\u003ctr data-number=0\u003e\u003ctd class=\"line-number\" data-number=\"0\"\u003e0\u003c/td\u003e\u003ctd class=\"line-code\" data-number=0\u003e- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=1\u003e\u003ctd class=\"line-number\" data-number=\"1\"\u003e1\u003c/td\u003e\u003ctd class=\"line-code\" data-number=1\u003eWould you be willing to share your email address with the Electronic Frontier\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=2\u003e\u003ctd class=\"line-number\" data-number=\"2\"\u003e2\u003c/td\u003e\u003ctd class=\"line-code\" data-number=2\u003eFoundation, a founding partner of the Let's Encrypt project and the non-profit\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=3\u003e\u003ctd class=\"line-number\" data-number=\"3\"\u003e3\u003c/td\u003e\u003ctd class=\"line-code\" data-number=3\u003eorganization that develops Certbot? We'd like to send you email about our work\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=4\u003e\u003ctd class=\"line-number\" data-number=\"4\"\u003e4\u003c/td\u003e\u003ctd class=\"line-code\" data-number=4\u003eencrypting the web, EFF news, campaigns, and ways to support digital freedom.\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=5\u003e\u003ctd class=\"line-number\" data-number=\"5\"\u003e5\u003c/td\u003e\u003ctd class=\"line-code\" data-number=5\u003e- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=6\u003e\u003ctd class=\"line-number\" data-number=\"6\"\u003e6\u003c/td\u003e\u003ctd class=\"line-code\" data-number=6\u003e(Y)es/(N)o:\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/pre\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003cp\u003eCertbot 개발기관에서 웹 암호화, EFF 뉴스, 이벤트 등의 \u003cspan class=\"pink-600\"\u003e정보를 소유주의 이메일로 발송\u003c/span\u003e하는데 동의하냐는 질문이다.\u003c/p\u003e\n\u003cp\u003e좋으면 Y, 싫으면 N을 입력하자. \u003cspan class=\"red-400\"\u003e동의하지 않아도 SSL 발급엔 지장없다.\u003c/span\u003e\u003c/p\u003e\n\n\t\t\t\t\t\u003cdiv class=\"codeblock\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"top\"\u003e\n\t\t\t\t\t\t\t\u003cp\u003eOUTPUT\u003c/p\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\u003c/div\u003e\n\n\t\t\t\t\t\t\u003cbutton onclick=\"copyCode(this);\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 512\" data-icon=\"clipboard\" class=\"i-clipboard\"\u003e\u003cpath fill=\"currentColor\" d=\"M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z\"\u003e\u003c/path\u003e\u003c/svg\u003e\u003c/button\u003e\n\n\t\t\t\t\t\t\u003cpre class=\"language-output\"\u003e\u003ctable\u003e\u003ctbody\u003e\u003ctr data-number=0\u003e\u003ctd class=\"line-number\" data-number=\"0\"\u003e0\u003c/td\u003e\u003ctd class=\"line-code\" data-number=0\u003e- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=1\u003e\u003ctd class=\"line-number\" data-number=\"1\"\u003e1\u003c/td\u003e\u003ctd class=\"line-code\" data-number=1\u003eNOTE: The IP of this machine will be publicly logged as having requested this\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=2\u003e\u003ctd class=\"line-number\" data-number=\"2\"\u003e2\u003c/td\u003e\u003ctd class=\"line-code\" data-number=2\u003ecertificate. If you're running certbot in manual mode on a machine that is not\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=3\u003e\u003ctd class=\"line-number\" data-number=\"3\"\u003e3\u003c/td\u003e\u003ctd class=\"line-code\" data-number=3\u003eyour server, please ensure you're okay with that.\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=4\u003e\u003ctd class=\"line-number\" data-number=\"4\"\u003e4\u003c/td\u003e\u003ctd class=\"line-code\" data-number=4\u003e\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=5\u003e\u003ctd class=\"line-number\" data-number=\"5\"\u003e5\u003c/td\u003e\u003ctd class=\"line-code\" data-number=5\u003eAre you OK with your IP being logged?\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=6\u003e\u003ctd class=\"line-number\" data-number=\"6\"\u003e6\u003c/td\u003e\u003ctd class=\"line-code\" data-number=6\u003e- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=7\u003e\u003ctd class=\"line-number\" data-number=\"7\"\u003e7\u003c/td\u003e\u003ctd class=\"line-code\" data-number=7\u003e(Y)es/(N)o:\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/pre\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003cp\u003e\u003cspan class=\"pink-600\"\u003eIP 수집에 동의\u003c/span\u003e하냐는 질문으로, Y를 입력하여 동의한다. 동의하지 않으면 SSL 발급을 진행할 수 없다.\u003c/p\u003e\n\n\t\t\t\t\t\u003cdiv class=\"codeblock\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"top\"\u003e\n\t\t\t\t\t\t\t\u003cp\u003eOUTPUT\u003c/p\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\u003c/div\u003e\n\n\t\t\t\t\t\t\u003cbutton onclick=\"copyCode(this);\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 512\" data-icon=\"clipboard\" class=\"i-clipboard\"\u003e\u003cpath fill=\"currentColor\" d=\"M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z\"\u003e\u003c/path\u003e\u003c/svg\u003e\u003c/button\u003e\n\n\t\t\t\t\t\t\u003cpre class=\"language-output\"\u003e\u003ctable\u003e\u003ctbody\u003e\u003ctr data-number=0\u003e\u003ctd class=\"line-number\" data-number=\"0\"\u003e0\u003c/td\u003e\u003ctd class=\"line-code\" data-number=0\u003e- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=1\u003e\u003ctd class=\"line-number\" data-number=\"1\"\u003e1\u003c/td\u003e\u003ctd class=\"line-code\" data-number=1\u003ePlease deploy a DNS TXT record under the name\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=2\u003e\u003ctd class=\"line-number\" data-number=\"2\"\u003e2\u003c/td\u003e\u003ctd class=\"line-code\" data-number=2\u003e_acme-challenge.itcode.dev with the following value:\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=3\u003e\u003ctd class=\"line-number\" data-number=\"3\"\u003e3\u003c/td\u003e\u003ctd class=\"line-code\" data-number=3\u003e\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=4\u003e\u003ctd class=\"line-number\" data-number=\"4\"\u003e4\u003c/td\u003e\u003ctd class=\"line-code\" data-number=4\u003e1sz-pJgM-3jL7mZacyByOO0S2lclAF0QmxtqujRuRHM\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=5\u003e\u003ctd class=\"line-number\" data-number=\"5\"\u003e5\u003c/td\u003e\u003ctd class=\"line-code\" data-number=5\u003e\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=6\u003e\u003ctd class=\"line-number\" data-number=\"6\"\u003e6\u003c/td\u003e\u003ctd class=\"line-code\" data-number=6\u003eBefore continuing, verify the record is deployed.\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=7\u003e\u003ctd class=\"line-number\" data-number=\"7\"\u003e7\u003c/td\u003e\u003ctd class=\"line-code\" data-number=7\u003e- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=8\u003e\u003ctd class=\"line-number\" data-number=\"8\"\u003e8\u003c/td\u003e\u003ctd class=\"line-code\" data-number=8\u003ePress Enter to Continue\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/pre\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003cp\u003ecertbot에서 서브도메인명 \u003ccode class=\"inline-code\"\u003e_acme-challenge\u003c/code\u003e과 랜덤한 문자열을 제공한다. 제시한 도메인 \u003ccode class=\"inline-code\"\u003e_acme-challenge.itcode.dev\u003c/code\u003e의 DNS TXT Record에 제공한 값 \u003ccode class=\"inline-code\"\u003eO3WQbIWv73aOzneZBu_4XAoE9ieZT1ZLdvbX7UPCkyk\u003c/code\u003e을 할당하면 된다.\u003c/p\u003e\n\u003cp\u003e도메인은 사용자가 입력한 값에 따라 달라지니 참고할 것.\u003c/p\u003e\n\u003ch2 id=\"3.-DNS TXT Record 설정\"\u003e3. DNS TXT Record 설정 \u003ca href=\"#3.-DNS TXT Record 설정\"\u003e🔗\u003c/a\u003e\u003c/h2\u003e\u003cp\u003eDNS Record 종류엔 A, CNAME 등 여러 종류가 존재한다. 이 중 TXT 레코드에 값을 할당하면 된다.\u003c/p\u003e\n\u003cp\u003eGoogle Domains의 DNS 설정에서 Record 하나를 추가하고, 타입을 TXT로 설정한다. 이후 certbot에서 제시한 값을 입력한다. 설정한 DNS 정보가 전파되기까지 수 분의 시간이 걸릴 수 있다. Google Domains의 경우 전파속도는 빠른 것 같다.\u003c/p\u003e\n\n\t\t\t\t\t\u003cdiv class=\"codeblock\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"top\"\u003e\n\t\t\t\t\t\t\t\u003cp\u003eBASH\u003c/p\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\u003c/div\u003e\n\n\t\t\t\t\t\t\u003cbutton onclick=\"copyCode(this);\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 512\" data-icon=\"clipboard\" class=\"i-clipboard\"\u003e\u003cpath fill=\"currentColor\" d=\"M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z\"\u003e\u003c/path\u003e\u003c/svg\u003e\u003c/button\u003e\n\n\t\t\t\t\t\t\u003cpre class=\"language-bash\"\u003e\u003ctable\u003e\u003ctbody\u003e\u003ctr data-number=0\u003e\u003ctd class=\"line-number\" data-number=\"0\"\u003e0\u003c/td\u003e\u003ctd class=\"line-code\" data-number=0\u003e\u003cspan class=\"token function\"\u003enslookup\u003c/span\u003e -q\u003cspan class=\"token operator\"\u003e=\u003c/span\u003etxt _acme-challenge.itcode.dev\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/pre\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003cp\u003eTXT Record이므로 브라우저에서 해당 도메인에 접근해도 별다른 내용이 출력되지 않는다. \u003ccode class=\"inline-code\"\u003enslookup\u003c/code\u003e 명령어를 통해 Record의 종류를 지정하여 조회해야한다.\u003c/p\u003e\n\n\t\t\t\t\t\u003cdiv class=\"codeblock\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"top\"\u003e\n\t\t\t\t\t\t\t\u003cp\u003eOUTPUT\u003c/p\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\u003c/div\u003e\n\n\t\t\t\t\t\t\u003cbutton onclick=\"copyCode(this);\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 512\" data-icon=\"clipboard\" class=\"i-clipboard\"\u003e\u003cpath fill=\"currentColor\" d=\"M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z\"\u003e\u003c/path\u003e\u003c/svg\u003e\u003c/button\u003e\n\n\t\t\t\t\t\t\u003cpre class=\"language-output\"\u003e\u003ctable\u003e\u003ctbody\u003e\u003ctr data-number=0\u003e\u003ctd class=\"line-number\" data-number=\"0\"\u003e0\u003c/td\u003e\u003ctd class=\"line-code\" data-number=0\u003eServer:         127.0.0.53\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=1\u003e\u003ctd class=\"line-number\" data-number=\"1\"\u003e1\u003c/td\u003e\u003ctd class=\"line-code\" data-number=1\u003eAddress:        127.0.0.53#53\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=2\u003e\u003ctd class=\"line-number\" data-number=\"2\"\u003e2\u003c/td\u003e\u003ctd class=\"line-code\" data-number=2\u003e\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=3\u003e\u003ctd class=\"line-number\" data-number=\"3\"\u003e3\u003c/td\u003e\u003ctd class=\"line-code\" data-number=3\u003eNon-authoritative answer:\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=4\u003e\u003ctd class=\"line-number\" data-number=\"4\"\u003e4\u003c/td\u003e\u003ctd class=\"line-code\" data-number=4\u003e_acme-challenge.itcode.dev      text = \"1sz-pJgM-3jL7mZacyByOO0S2lclAF0QmxtqujRuRHM\"\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=5\u003e\u003ctd class=\"line-number\" data-number=\"5\"\u003e5\u003c/td\u003e\u003ctd class=\"line-code\" data-number=5\u003e\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=6\u003e\u003ctd class=\"line-number\" data-number=\"6\"\u003e6\u003c/td\u003e\u003ctd class=\"line-code\" data-number=6\u003eAuthoritative answers can be found from:\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/pre\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003cp\u003e위 처럼 해당 도메인의 TXT Record에 입력한 문자열이 나오면 DNS 설정이 전파된 것으로, 인증을 진행할 수 있다. 만약, 값이 나오지 않는다면 시간을 두고 기다리자.\u003c/p\u003e\n\u003cp\u003eEnter를 누르면 인증확인을 시도하는데, DNS 레코드 설정이 완료될 때까지 절대로 진행하지 말자.\u003c/p\u003e\n\u003ch3 id=\"주의점\"\u003e주의점 \u003ca href=\"#주의점\"\u003e🔗\u003c/a\u003e\u003c/h3\u003e\u003cp\u003eDNS TXT Record가 미처 전파되지 않았음에도 불구하고 한국인 특성이 발동하여 certbot에 Enter를 눌러 인증확인 단계로 넘어가는 경우가 왕왕 발생한다.\u003c/p\u003e\n\u003cp\u003e만약, TXT Record가 확인되지 않는다면, 관련 메시지와 함께 인증과정을 다시 시작한다. 문제는 이 때 \u003cspan class=\"red-600\"\u003eTXT Record에 등록할 문자열을 새로 갱신\u003c/span\u003e한다. 즉, DNS TXT Record을 갱신된 값으로 재지정해야한다.\u003c/p\u003e\n\u003cp\u003eDNS 전파가 느리다면 대기시간이 많이 늘어나버리니 주의할 것. 반드시 \u003ccode class=\"inline-code\"\u003enslookup\u003c/code\u003e 명령어를 통해 DNS 적용 여부를 확인하자.\u003c/p\u003e\n\u003ch2 id=\"4.-인증 확인 요청\"\u003e4. 인증 확인 요청 \u003ca href=\"#4.-인증 확인 요청\"\u003e🔗\u003c/a\u003e\u003c/h2\u003e\u003cp\u003eDNS TXT Record가 정상적으로 전파됐다면, 콘솔에서 Enter를 눌러 다음 단계로 넘어간다. certbot이 인증확인을 시도하며, 인증이 완료되면 \u003cspan class=\"blue-600\"\u003e인증서를 발급\u003c/span\u003e해준다.\u003c/p\u003e\n\n\t\t\t\t\t\u003cdiv class=\"codeblock\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"top\"\u003e\n\t\t\t\t\t\t\t\u003cp\u003eBASH\u003c/p\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\u003c/div\u003e\n\n\t\t\t\t\t\t\u003cbutton onclick=\"copyCode(this);\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 512\" data-icon=\"clipboard\" class=\"i-clipboard\"\u003e\u003cpath fill=\"currentColor\" d=\"M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z\"\u003e\u003c/path\u003e\u003c/svg\u003e\u003c/button\u003e\n\n\t\t\t\t\t\t\u003cpre class=\"language-bash\"\u003e\u003ctable\u003e\u003ctbody\u003e\u003ctr data-number=0\u003e\u003ctd class=\"line-number\" data-number=\"0\"\u003e0\u003c/td\u003e\u003ctd class=\"line-code\" data-number=0\u003e\u003cspan class=\"token comment\" data-tag=\"new\"\u003e# itcode.dev는 인증한 도메인 이름\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=1\u003e\u003ctd class=\"line-number\" data-number=\"1\"\u003e1\u003c/td\u003e\u003ctd class=\"line-code\" data-number=1\u003e\u003cspan class=\"token builtin class-name\"\u003ecd\u003c/span\u003e /etc/letsencrypt/live/itcode.dev\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/pre\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003cp\u003e기본적으로 위 경로에 인증서가 생성된다. 마지막 폴더 \u003ccode class=\"inline-code\"\u003eitcode.dev\u003c/code\u003e는 도메인 이름이니, 각자가 입력한 도메인으로 변경하여 입력한다.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode class=\"inline-code\"\u003ecert.pem\u003c/code\u003e - 도메인의 인증서\u003c/li\u003e\n\u003cli\u003e\u003ccode class=\"inline-code\"\u003echain.pem\u003c/code\u003e - 발급기관의 인증서\u003c/li\u003e\n\u003cli\u003e\u003ccode class=\"inline-code\"\u003efullchain.pem\u003c/code\u003e - 도메인과 발급기관의 통합 인증서\u003c/li\u003e\n\u003cli\u003e\u003ccode class=\"inline-code\"\u003eprivkey.pem\u003c/code\u003e - 인증서의 개인키\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eSSL은 도메인의 인증서 뿐만 아니라, 이를 발급해준 CA의 인증서까지 같이 검증한다. 도메인의 인증이 올바르더라도, 이를 발급해준 기관이 이상할 경우 해당 인증서 또한 믿을 수 없기 때문. 일종의 보증서라고 봐도 무방하다.\u003c/p\u003e\n\u003cp\u003e일례로, 한국의 화폐 만원권이 만원의 가치를 가질 수 있는 이유는 한국은행이 이를 보증하기 때문. 반대로 핫한 가상화폐의 경우, 가상화폐의 가치를 보증해주는 기관이 없다. 때문에 가치가 수시로 변동하며, 언제든 그 가치와 기능을 잃을 수 있다.\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003cb class=\"teal-600\"\u003efullchain.pem\u003c/b\u003e의 존재의미\u003cbr\u003e어차피 \u003ccode class=\"inline-code\"\u003ecert.pem\u003c/code\u003e과 \u003ccode class=\"inline-code\"\u003echain.pem\u003c/code\u003e이 제공되는데, 둘의 통합인증서가 무슨 의미가 있냐고 생각할 수 있다. \u003ccode class=\"inline-code\"\u003efullchain.pem\u003c/code\u003e은 두 인증서를 통합함으로써, \u003ccode class=\"inline-code\"\u003ecert.pem\u003c/code\u003e과 \u003ccode class=\"inline-code\"\u003echain.pem\u003c/code\u003e의 매칭여부를 확인할 수 있다.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003ch1 id=\"Tomcat에-SSL 인증서 적용하기\"\u003eTomcat에 SSL 인증서 적용하기 \u003ca href=\"#Tomcat에-SSL 인증서 적용하기\"\u003e🔗\u003c/a\u003e\u003c/h1\u003e\u003cp\u003eTomcat Native 설치여부에 따라 적용방법이 조금씩 달라진다. SSL 인증서는 기본적으로 \u003ccode class=\"inline-code\"\u003epem\u003c/code\u003e 확장자로 제공된다.\u003c/p\u003e\n\u003cp\u003eTomcat Native는 \u003ccode class=\"inline-code\"\u003epem\u003c/code\u003e 확장자 인증서를 바로 인식할 수 있지만, 일반적인 Tomcat은 \u003ccode class=\"inline-code\"\u003epem\u003c/code\u003e을 인식할 수 없어 \u003ccode class=\"inline-code\"\u003ejks\u003c/code\u003e 등 다른 형태의 인증서로 변환해야한다.\u003c/p\u003e\n\u003ch2 id=\"Tomcat-Native 설치\"\u003eTomcat Native 설치 \u003ca href=\"#Tomcat-Native 설치\"\u003e🔗\u003c/a\u003e\u003c/h2\u003e\n\t\t\t\t\t\u003cdiv class=\"codeblock\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"top\"\u003e\n\t\t\t\t\t\t\t\u003cp\u003eBASH\u003c/p\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\u003c/div\u003e\n\n\t\t\t\t\t\t\u003cbutton onclick=\"copyCode(this);\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 512\" data-icon=\"clipboard\" class=\"i-clipboard\"\u003e\u003cpath fill=\"currentColor\" d=\"M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z\"\u003e\u003c/path\u003e\u003c/svg\u003e\u003c/button\u003e\n\n\t\t\t\t\t\t\u003cpre class=\"language-bash\"\u003e\u003ctable\u003e\u003ctbody\u003e\u003ctr data-number=0\u003e\u003ctd class=\"line-number\" data-number=\"0\"\u003e0\u003c/td\u003e\u003ctd class=\"line-code\" data-number=0\u003e\u003cspan class=\"token function\"\u003esudo\u003c/span\u003e \u003cspan class=\"token function\"\u003eapt-get\u003c/span\u003e \u003cspan class=\"token function\"\u003einstall\u003c/span\u003e libtcnative-1\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/pre\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003cp\u003eUbuntu에선 위 라이브러리 설치를 통해 Tomcat Native를 적용할 수 있다.\u003c/p\u003e\n\u003ch2 id=\"Tomcat의-server.xml에 인증서 적용하기\"\u003eTomcat의 server.xml에 인증서 적용하기 \u003ca href=\"#Tomcat의-server.xml에 인증서 적용하기\"\u003e🔗\u003c/a\u003e\u003c/h2\u003e\u003cp\u003e\u003ca href=\"/posts/2021/08/20/apply-ssl#SSL-인증서%20적용하기\" target=\"_blank\"\u003e[SSL] Tomcat에 SSL 적용하기\u003c/a\u003e 게시글에서 자세한 내용을 확인할 수 있다.\u003c/p\u003e\n\u003cp\u003e위 게시글의 방법대로 인증서를 적용하고 Tomcat을 재기동한 뒤 \u003ccode class=\"inline-code\"\u003ehttps://itcode.dev\u003c/code\u003e와 같이 HTTPS 프로토콜을 사용하여 접속을 시도하자. 반드시 접속 전에 HTTPS의 서비스 포트를 확인하자. Tomcat의 기본 HTTPS 포트는 8443이다.\u003c/p\u003e\n\u003cp\u003eHTTPS 접속이 정상적이라면 성공이다. 인증서 정보 또한 확인할 수 있다.\u003c/p\u003e\n\u003ch1 id=\"목표\"\u003e목표 \u003ca href=\"#목표\"\u003e🔗\u003c/a\u003e\u003c/h1\u003e\u003cul\u003e\n\u003cli\u003e\u003cdel class=\"grey-400\"\u003e라즈베리파이에 Ubuntu 서버를 구축한다.\u003c/del\u003e\u003c/li\u003e\n\u003cli\u003e\u003cdel class=\"grey-400\"\u003eTomcat을 구동하여 페이지를 호스팅한다.\u003c/del\u003e\u003c/li\u003e\n\u003cli\u003e\u003cdel class=\"grey-400\"\u003e도메인을 입힌다.\u003c/del\u003e\u003c/li\u003e\n\u003cli\u003e\u003cdel class=\"grey-400\"\u003eSSL 인증서를 발급하여 HTTPS 통신을 제공한다.\u003c/del\u003e\u003c/li\u003e\n\u003cli\u003eSSH, RDP 등의 원격 통신환경을 구축한다.\u003c/li\u003e\n\u003cli\u003eMariaDB를 설치하여 DB 통신을 수행한다.\u003c/li\u003e\n\u003c/ul\u003e\n","url":["2021-09-06-raspberry-ssl-domain","2021","09","06","raspberry-ssl-domain"],"toc":[{"text":"개요","tag":"개요","depth":1},{"text":"Cerbot으로 SSL 인증서 발급하기","tag":"Cerbot으로-SSL 인증서 발급하기","depth":1},{"text":"어? 전 윈도우로 하고싶은데....","tag":"어?-전 윈도우로 하고싶은데....","depth":2},{"text":"준비물","tag":"준비물","depth":2},{"text":"1. Certbot 설치하기","tag":"1.-Certbot 설치하기","depth":2},{"text":"2. Certbot으로 인증 수행하기","tag":"2.-Certbot으로 인증 수행하기","depth":2},{"text":"3. DNS TXT Record 설정","tag":"3.-DNS TXT Record 설정","depth":2},{"text":"주의점","tag":"주의점","depth":3},{"text":"4. 인증 확인 요청","tag":"4.-인증 확인 요청","depth":2},{"text":"Tomcat에 SSL 인증서 적용하기","tag":"Tomcat에-SSL 인증서 적용하기","depth":1},{"text":"Tomcat Native 설치","tag":"Tomcat-Native 설치","depth":2},{"text":"Tomcat의 server.xml에 인증서 적용하기","tag":"Tomcat의-server.xml에 인증서 적용하기","depth":2},{"text":"목표","tag":"목표","depth":1}]},"hash":"f1814897788"},"__N_SSG":true},"page":"/posts/[...url]","query":{"url":["2021","09","06","raspberry-ssl-domain"]},"buildId":"vPD4anJPcPJBy7Kt4Uf7q","isFallback":false,"gsp":true,"scriptLoader":[]}</script><div id="__next"><div class="MuiBox-root jss1 base-layout_root__1Ptru"><header class="MuiBox-root jss2"><header class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary header_bar-dark__2SzeA mui-fixed MuiPaper-elevation4"><div class="MuiToolbar-root MuiToolbar-regular header_toolbar__2DD_T MuiToolbar-gutters"><div class="MuiContainer-root MuiContainer-maxWidthLg"><div class="MuiBox-root jss3 header_inner__14FUw"><svg xmlns="http://www.w3.org/2000/svg" class="react header_logo__2l5K3" viewBox="0 0 3618.6 3618.6" width="48" height="48"><path class="st0" d="M0 0h3618.6v3618.6H0z"></path><circle class="st1" cx="1806.5" cy="1807.1" r="302.6"></circle><path class="st2" d="M1806.5 1191.9c406.2 0 783.6 58.3 1068.1 156.2 342.8 118 553.6 296.9 553.6 458.9 0 168.8-223.4 358.9-591.5 480.8-278.3 92.2-644.6 140.4-1030.2 140.4-395.4 0-769.7-45.2-1051.2-141.4-356.1-121.7-570.6-314.2-570.6-479.8 0-160.7 201.3-338.2 539.3-456 285.6-99.5 672.3-159.1 1082.5-159.1z"></path><path class="st2" d="M1271 1501.3c202.9-351.9 442-649.7 669-847.2 273.5-238 533.8-331.2 674.1-250.3 146.2 84.3 199.3 372.8 121 752.7-59.2 287.2-200.4 628.5-393.1 962.6-197.5 342.5-423.7 644.2-647.6 840-283.3 247.7-557.3 337.3-700.7 254.6-139.2-80.3-192.4-343.3-125.7-695 56.4-297.4 198-662.1 403-1017.4z"></path><path class="st2" d="M1271.5 2119.8c-203.5-351.6-342.1-707.4-399.9-1002.7-69.6-355.8-20.4-627.9 119.8-709 146.1-84.6 422.5 13.5 712.5 271 219.3 194.7 444.4 487.5 637.6 821.3 198.1 342.2 346.6 688.8 404.3 980.5 73.1 369.2 13.9 651.3-129.4 734.2-139.1 80.5-393.5-4.7-664.9-238.2-229.2-197.3-474.5-502.1-680-857.1z"></path></svg><h4 class="MuiTypography-root header_title__1ED08 MuiTypography-h4">𝝅번째 알파카의 개발 낙서장</h4><div class="MuiBox-root jss4 menulist_root__1rZDb"><button class="MuiButtonBase-root MuiIconButton-root menulist_item__2pVJC" tabindex="0" type="button" aria-label="Welcome"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></span></button><button class="MuiButtonBase-root MuiIconButton-root menulist_item__2pVJC" tabindex="0" type="button" aria-label="Posts"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"></path></svg></span></button><button class="MuiButtonBase-root MuiIconButton-root menulist_item__2pVJC" tabindex="0" type="button" aria-label="Projects"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"></path></svg></span></button><button class="MuiButtonBase-root MuiIconButton-root menulist_item__2pVJC" tabindex="0" type="button" aria-label="About"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg></span></button></div></div></div></div></header></header><div class="MuiBox-root jss5 base-layout_main__hyW3q"><section class="MuiBox-root jss6"><div class="MuiBox-root jss7 screener_root__1bpT8"><div class="MuiBox-root jss8 screener_image-wrapper__1H4oX"><div class="screener_image-basic__2aIiL"></div></div><h1 class="MuiTypography-root screener_title__3mYUP MuiTypography-body1 MuiTypography-alignCenter">[라즈베리파이 4] Let&#x27;s Ecrypt로 Ubuntu 서버에 HTTPS 통신 제공하기</h1><h3 class="MuiTypography-root screener_lower__1iaX7 MuiTypography-body1 MuiTypography-alignCenter">RaspberryPi</h3></div><div class="MuiBox-root jss9"><div class="MuiBox-root jss10"><div class="MuiContainer-root MuiContainer-maxWidthMd"><div class="MuiBox-root jss11 contenttoc_toc-dark__OVber"><h2 class="MuiTypography-root MuiTypography-h2 MuiTypography-alignCenter">Table of Contents</h2><div><ul><li><a href="#개요">개요</a></li><li><a href="#Cerbot으로-SSL 인증서 발급하기">Cerbot으로 SSL 인증서 발급하기</a></li><ul><li><a href="#어?-전 윈도우로 하고싶은데....">어? 전 윈도우로 하고싶은데....</a></li><li><a href="#준비물">준비물</a></li><li><a href="#1.-Certbot 설치하기">1. Certbot 설치하기</a></li><li><a href="#2.-Certbot으로 인증 수행하기">2. Certbot으로 인증 수행하기</a></li><li><a href="#3.-DNS TXT Record 설정">3. DNS TXT Record 설정</a></li><ul><li><a href="#주의점">주의점</a></li></ul><li><a href="#4.-인증 확인 요청">4. 인증 확인 요청</a></li></ul><li><a href="#Tomcat에-SSL 인증서 적용하기">Tomcat에 SSL 인증서 적용하기</a></li><ul><li><a href="#Tomcat-Native 설치">Tomcat Native 설치</a></li><li><a href="#Tomcat의-server.xml에 인증서 적용하기">Tomcat의 server.xml에 인증서 적용하기</a></li></ul><li><a href="#목표">목표</a></li></ul></div></div><div class="markdown dark"><h1 id="개요">개요 <a href="#개요">🔗</a></h1><p>이전 장에서 Google Domains를 통해 <code class="inline-code">dev</code> 도메인을 발급받았다. 이 블로그의 주소는 실제로 구입한 https://blog.itcode.dev 도메인이 적용되어있다.</p>
+<p><code class="inline-code">dev</code> 도메인은 강화된 보안정책이 적용되어있다. 해당 도메인으로의 모든 HTTP 통신은 반드시 HTTPS 보안 통신으로만 제공된다. 네트워크 계층에서 https 프로토콜로 라우팅하므로 좋든 싫든 HTTPS 서비스를 제공해야만 한다.</p>
+<br />
+
+<p>이 장에서는 Let's Encrypt로 SSL 인증서를 발급받아 라즈베이파이서버의 Tomcat에 적용한다. 기존의 1:1 도메인 매칭 SSL이 아니라, 여러 서브도메인에 전부 대응 가능한 와일드카드 인증서를 받을 것이다.</p>
+<blockquote>
+<p><b class="teal-600">와일드카드(Wildcard) 인증서?</b><br>프로그래밍에서의 <span class="primary">와일드카드</span>란 무작위 대상의 허용이란 의미를 가진다. 도메인과 1:1 매칭되는 기존의 인증서와 달리, 와일드카드 인증서는 주체가 <code class="inline-code">*.example.com</code>로 표기되며, 모든 서브도메인에 적용이 가능하다.</p>
+</blockquote>
+<h1 id="Cerbot으로-SSL 인증서 발급하기">Cerbot으로 SSL 인증서 발급하기 <a href="#Cerbot으로-SSL 인증서 발급하기">🔗</a></h1><p>Ubuntu 서버에서 SSL 인증서를 발급받아보자. 일반적인 SSL 인증서는 인증 과정에서 웹 서버에 특정 파일을 배포한 뒤, 인증 서버에서 해당 파일의 접근 및 유효성 검증을 통해 도메인의 소유권을 확인한다.<br>하지만 와일드카드 인증서는 여러 서브도메인에 전부 적용되는 특별한 인증서라 위의 인증방식을 사용하지 않는다. 위의 인증방식은 하나의 도메인의 소유권만 보증하기 때문. <span class="orange-600">와일드카드 인증서는 DNS 레코드를 통해 소유권을 인증</span>한다. DNS 레코드는 도메인의 소유권자만 설정 가능하기 때문.</p>
+<p>만약, 어떠한 이유로든 도메인의 DNS 설정을 변경할 수 없다면 와일드카드 인증서를 발급받을 수 없다.</p>
+<h2 id="어?-전 윈도우로 하고싶은데....">어? 전 윈도우로 하고싶은데.... <a href="#어?-전 윈도우로 하고싶은데....">🔗</a></h2><p>DNS 레코드 인증으로 진행하기 때문에 Tomcat에 파일을 배포할 필요가 없어서 아무데서나 진행해도 상관 없다.</p>
+<p>Windows 환경에서 인증서를 발급받는 방법은 이전에 작성한 게시물 <a href="/posts/2021/08/19/lets-encrypt" target="_blank">[SSL] Windows 10에서 Let's Encrypt로 SSL 인증서 무료 발급받기</a>을 참고하길 바란다.</p>
+<h2 id="준비물">준비물 <a href="#준비물">🔗</a></h2><ul>
+<li>Ubuntu OS</li>
+<li>DNS Record 설정 권한</li>
+</ul>
+<p>필자는 Google Domains에서 도메인을 구입했으므로, Google Domains에서 DNS 설정을 관리할 수 있다. 만약, 가비아나 후이즈, 도레지 등 다른 도메인 사이트에서 도메인을 구매했다면 그 사이트에서 DNS 설정을 할 수 있으니 참고할 것.</p>
+<p>이 장에서는 Google Domains를 기준으로 진행한다.</p>
+<h2 id="1.-Certbot 설치하기">1. Certbot 설치하기 <a href="#1.-Certbot 설치하기">🔗</a></h2><p>Ubuntu에서 Certbot을 설치한다.</p>
+
+					<div class="codeblock">
+						<div class="top">
+							<p>BASH</p>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+
+						<button onclick="copyCode(this);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-icon="clipboard" class="i-clipboard"><path fill="currentColor" d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z"></path></svg></button>
+
+						<pre class="language-bash"><table><tbody><tr data-number=0><td class="line-number" data-number="0">0</td><td class="line-code" data-number=0><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> certbot</td></tr></tbody></table></pre>
+					</div>
+				<h2 id="2.-Certbot으로 인증 수행하기">2. Certbot으로 인증 수행하기 <a href="#2.-Certbot으로 인증 수행하기">🔗</a></h2><p>Certbot을 수행하여 인증서 발급을 수행한다.</p>
+<p class="red-500" align="center">※ 아래의 itcode.dev 도메인은 예시로, 실제로 입력 시엔 직접 사용할 자신의 도메인을 입력한다.</p>
+
+
+					<div class="codeblock">
+						<div class="top">
+							<p>BASH</p>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+
+						<button onclick="copyCode(this);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-icon="clipboard" class="i-clipboard"><path fill="currentColor" d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z"></path></svg></button>
+
+						<pre class="language-bash"><table><tbody><tr data-number=0><td class="line-number" data-number="0">0</td><td class="line-code" data-number=0><span class="token function">sudo</span> certbot certonly --manual --preferred-challenges dns --email psj2716@gmail.com -d *.itcode.dev</td></tr></tbody></table></pre>
+					</div>
+				<ul>
+<li><code class="inline-code">--manual</code> - 수동 설정</li>
+<li><code class="inline-code">--preferred-challenges</code> - 인증방식 지정</li>
+<li><code class="inline-code">--email</code> 소유주 이메일</li>
+<li><code class="inline-code">-d</code> - 도메인 지정</li>
+</ul>
+<p>위 명령어를 사용하면 별다른 명령어 입력 없이 즉시 인증을 수행할 수 있다. <code class="inline-code">-d</code>의 인자값으로 구입한 도메인을 입력하되, 서브도메인을 <code class="inline-code">*</code>로 지정함을 잊지말자.</p>
+
+					<div class="codeblock">
+						<div class="top">
+							<p>OUTPUT</p>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+
+						<button onclick="copyCode(this);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-icon="clipboard" class="i-clipboard"><path fill="currentColor" d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z"></path></svg></button>
+
+						<pre class="language-output"><table><tbody><tr data-number=0><td class="line-number" data-number="0">0</td><td class="line-code" data-number=0>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</td></tr>
+<tr data-number=1><td class="line-number" data-number="1">1</td><td class="line-code" data-number=1>Please read the Terms of Service at</td></tr>
+<tr data-number=2><td class="line-number" data-number="2">2</td><td class="line-code" data-number=2>https://letsencrypt.org/documents/LE-SA-v1.2-November-15-2017.pdf. You must</td></tr>
+<tr data-number=3><td class="line-number" data-number="3">3</td><td class="line-code" data-number=3>agree in order to register with the ACME server at</td></tr>
+<tr data-number=4><td class="line-number" data-number="4">4</td><td class="line-code" data-number=4>https://acme-v02.api.letsencrypt.org/directory</td></tr>
+<tr data-number=5><td class="line-number" data-number="5">5</td><td class="line-code" data-number=5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</td></tr>
+<tr data-number=6><td class="line-number" data-number="6">6</td><td class="line-code" data-number=6>(A)gree/(C)ancel:</td></tr></tbody></table></pre>
+					</div>
+				<p><span class="pink-600">서비스 이용 약관에 동의</span>해달라는 의미로, A를 입력하여 동의한다. 동의하지 않으면 SSL 발급을 진행할 수 없다.</p>
+
+					<div class="codeblock">
+						<div class="top">
+							<p>OUTPUT</p>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+
+						<button onclick="copyCode(this);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-icon="clipboard" class="i-clipboard"><path fill="currentColor" d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z"></path></svg></button>
+
+						<pre class="language-output"><table><tbody><tr data-number=0><td class="line-number" data-number="0">0</td><td class="line-code" data-number=0>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</td></tr>
+<tr data-number=1><td class="line-number" data-number="1">1</td><td class="line-code" data-number=1>Would you be willing to share your email address with the Electronic Frontier</td></tr>
+<tr data-number=2><td class="line-number" data-number="2">2</td><td class="line-code" data-number=2>Foundation, a founding partner of the Let's Encrypt project and the non-profit</td></tr>
+<tr data-number=3><td class="line-number" data-number="3">3</td><td class="line-code" data-number=3>organization that develops Certbot? We'd like to send you email about our work</td></tr>
+<tr data-number=4><td class="line-number" data-number="4">4</td><td class="line-code" data-number=4>encrypting the web, EFF news, campaigns, and ways to support digital freedom.</td></tr>
+<tr data-number=5><td class="line-number" data-number="5">5</td><td class="line-code" data-number=5>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</td></tr>
+<tr data-number=6><td class="line-number" data-number="6">6</td><td class="line-code" data-number=6>(Y)es/(N)o:</td></tr></tbody></table></pre>
+					</div>
+				<p>Certbot 개발기관에서 웹 암호화, EFF 뉴스, 이벤트 등의 <span class="pink-600">정보를 소유주의 이메일로 발송</span>하는데 동의하냐는 질문이다.</p>
+<p>좋으면 Y, 싫으면 N을 입력하자. <span class="red-400">동의하지 않아도 SSL 발급엔 지장없다.</span></p>
+
+					<div class="codeblock">
+						<div class="top">
+							<p>OUTPUT</p>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+
+						<button onclick="copyCode(this);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-icon="clipboard" class="i-clipboard"><path fill="currentColor" d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z"></path></svg></button>
+
+						<pre class="language-output"><table><tbody><tr data-number=0><td class="line-number" data-number="0">0</td><td class="line-code" data-number=0>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</td></tr>
+<tr data-number=1><td class="line-number" data-number="1">1</td><td class="line-code" data-number=1>NOTE: The IP of this machine will be publicly logged as having requested this</td></tr>
+<tr data-number=2><td class="line-number" data-number="2">2</td><td class="line-code" data-number=2>certificate. If you're running certbot in manual mode on a machine that is not</td></tr>
+<tr data-number=3><td class="line-number" data-number="3">3</td><td class="line-code" data-number=3>your server, please ensure you're okay with that.</td></tr>
+<tr data-number=4><td class="line-number" data-number="4">4</td><td class="line-code" data-number=4></td></tr>
+<tr data-number=5><td class="line-number" data-number="5">5</td><td class="line-code" data-number=5>Are you OK with your IP being logged?</td></tr>
+<tr data-number=6><td class="line-number" data-number="6">6</td><td class="line-code" data-number=6>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</td></tr>
+<tr data-number=7><td class="line-number" data-number="7">7</td><td class="line-code" data-number=7>(Y)es/(N)o:</td></tr></tbody></table></pre>
+					</div>
+				<p><span class="pink-600">IP 수집에 동의</span>하냐는 질문으로, Y를 입력하여 동의한다. 동의하지 않으면 SSL 발급을 진행할 수 없다.</p>
+
+					<div class="codeblock">
+						<div class="top">
+							<p>OUTPUT</p>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+
+						<button onclick="copyCode(this);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-icon="clipboard" class="i-clipboard"><path fill="currentColor" d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z"></path></svg></button>
+
+						<pre class="language-output"><table><tbody><tr data-number=0><td class="line-number" data-number="0">0</td><td class="line-code" data-number=0>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</td></tr>
+<tr data-number=1><td class="line-number" data-number="1">1</td><td class="line-code" data-number=1>Please deploy a DNS TXT record under the name</td></tr>
+<tr data-number=2><td class="line-number" data-number="2">2</td><td class="line-code" data-number=2>_acme-challenge.itcode.dev with the following value:</td></tr>
+<tr data-number=3><td class="line-number" data-number="3">3</td><td class="line-code" data-number=3></td></tr>
+<tr data-number=4><td class="line-number" data-number="4">4</td><td class="line-code" data-number=4>1sz-pJgM-3jL7mZacyByOO0S2lclAF0QmxtqujRuRHM</td></tr>
+<tr data-number=5><td class="line-number" data-number="5">5</td><td class="line-code" data-number=5></td></tr>
+<tr data-number=6><td class="line-number" data-number="6">6</td><td class="line-code" data-number=6>Before continuing, verify the record is deployed.</td></tr>
+<tr data-number=7><td class="line-number" data-number="7">7</td><td class="line-code" data-number=7>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</td></tr>
+<tr data-number=8><td class="line-number" data-number="8">8</td><td class="line-code" data-number=8>Press Enter to Continue</td></tr></tbody></table></pre>
+					</div>
+				<p>certbot에서 서브도메인명 <code class="inline-code">_acme-challenge</code>과 랜덤한 문자열을 제공한다. 제시한 도메인 <code class="inline-code">_acme-challenge.itcode.dev</code>의 DNS TXT Record에 제공한 값 <code class="inline-code">O3WQbIWv73aOzneZBu_4XAoE9ieZT1ZLdvbX7UPCkyk</code>을 할당하면 된다.</p>
+<p>도메인은 사용자가 입력한 값에 따라 달라지니 참고할 것.</p>
+<h2 id="3.-DNS TXT Record 설정">3. DNS TXT Record 설정 <a href="#3.-DNS TXT Record 설정">🔗</a></h2><p>DNS Record 종류엔 A, CNAME 등 여러 종류가 존재한다. 이 중 TXT 레코드에 값을 할당하면 된다.</p>
+<p>Google Domains의 DNS 설정에서 Record 하나를 추가하고, 타입을 TXT로 설정한다. 이후 certbot에서 제시한 값을 입력한다. 설정한 DNS 정보가 전파되기까지 수 분의 시간이 걸릴 수 있다. Google Domains의 경우 전파속도는 빠른 것 같다.</p>
+
+					<div class="codeblock">
+						<div class="top">
+							<p>BASH</p>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+
+						<button onclick="copyCode(this);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-icon="clipboard" class="i-clipboard"><path fill="currentColor" d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z"></path></svg></button>
+
+						<pre class="language-bash"><table><tbody><tr data-number=0><td class="line-number" data-number="0">0</td><td class="line-code" data-number=0><span class="token function">nslookup</span> -q<span class="token operator">=</span>txt _acme-challenge.itcode.dev</td></tr></tbody></table></pre>
+					</div>
+				<p>TXT Record이므로 브라우저에서 해당 도메인에 접근해도 별다른 내용이 출력되지 않는다. <code class="inline-code">nslookup</code> 명령어를 통해 Record의 종류를 지정하여 조회해야한다.</p>
+
+					<div class="codeblock">
+						<div class="top">
+							<p>OUTPUT</p>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+
+						<button onclick="copyCode(this);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-icon="clipboard" class="i-clipboard"><path fill="currentColor" d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z"></path></svg></button>
+
+						<pre class="language-output"><table><tbody><tr data-number=0><td class="line-number" data-number="0">0</td><td class="line-code" data-number=0>Server:         127.0.0.53</td></tr>
+<tr data-number=1><td class="line-number" data-number="1">1</td><td class="line-code" data-number=1>Address:        127.0.0.53#53</td></tr>
+<tr data-number=2><td class="line-number" data-number="2">2</td><td class="line-code" data-number=2></td></tr>
+<tr data-number=3><td class="line-number" data-number="3">3</td><td class="line-code" data-number=3>Non-authoritative answer:</td></tr>
+<tr data-number=4><td class="line-number" data-number="4">4</td><td class="line-code" data-number=4>_acme-challenge.itcode.dev      text = "1sz-pJgM-3jL7mZacyByOO0S2lclAF0QmxtqujRuRHM"</td></tr>
+<tr data-number=5><td class="line-number" data-number="5">5</td><td class="line-code" data-number=5></td></tr>
+<tr data-number=6><td class="line-number" data-number="6">6</td><td class="line-code" data-number=6>Authoritative answers can be found from:</td></tr></tbody></table></pre>
+					</div>
+				<p>위 처럼 해당 도메인의 TXT Record에 입력한 문자열이 나오면 DNS 설정이 전파된 것으로, 인증을 진행할 수 있다. 만약, 값이 나오지 않는다면 시간을 두고 기다리자.</p>
+<p>Enter를 누르면 인증확인을 시도하는데, DNS 레코드 설정이 완료될 때까지 절대로 진행하지 말자.</p>
+<h3 id="주의점">주의점 <a href="#주의점">🔗</a></h3><p>DNS TXT Record가 미처 전파되지 않았음에도 불구하고 한국인 특성이 발동하여 certbot에 Enter를 눌러 인증확인 단계로 넘어가는 경우가 왕왕 발생한다.</p>
+<p>만약, TXT Record가 확인되지 않는다면, 관련 메시지와 함께 인증과정을 다시 시작한다. 문제는 이 때 <span class="red-600">TXT Record에 등록할 문자열을 새로 갱신</span>한다. 즉, DNS TXT Record을 갱신된 값으로 재지정해야한다.</p>
+<p>DNS 전파가 느리다면 대기시간이 많이 늘어나버리니 주의할 것. 반드시 <code class="inline-code">nslookup</code> 명령어를 통해 DNS 적용 여부를 확인하자.</p>
+<h2 id="4.-인증 확인 요청">4. 인증 확인 요청 <a href="#4.-인증 확인 요청">🔗</a></h2><p>DNS TXT Record가 정상적으로 전파됐다면, 콘솔에서 Enter를 눌러 다음 단계로 넘어간다. certbot이 인증확인을 시도하며, 인증이 완료되면 <span class="blue-600">인증서를 발급</span>해준다.</p>
+
+					<div class="codeblock">
+						<div class="top">
+							<p>BASH</p>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+
+						<button onclick="copyCode(this);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-icon="clipboard" class="i-clipboard"><path fill="currentColor" d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z"></path></svg></button>
+
+						<pre class="language-bash"><table><tbody><tr data-number=0><td class="line-number" data-number="0">0</td><td class="line-code" data-number=0><span class="token comment" data-tag="new"># itcode.dev는 인증한 도메인 이름</span></td></tr>
+<tr data-number=1><td class="line-number" data-number="1">1</td><td class="line-code" data-number=1><span class="token builtin class-name">cd</span> /etc/letsencrypt/live/itcode.dev</td></tr></tbody></table></pre>
+					</div>
+				<p>기본적으로 위 경로에 인증서가 생성된다. 마지막 폴더 <code class="inline-code">itcode.dev</code>는 도메인 이름이니, 각자가 입력한 도메인으로 변경하여 입력한다.</p>
+<ul>
+<li><code class="inline-code">cert.pem</code> - 도메인의 인증서</li>
+<li><code class="inline-code">chain.pem</code> - 발급기관의 인증서</li>
+<li><code class="inline-code">fullchain.pem</code> - 도메인과 발급기관의 통합 인증서</li>
+<li><code class="inline-code">privkey.pem</code> - 인증서의 개인키</li>
+</ul>
+<p>SSL은 도메인의 인증서 뿐만 아니라, 이를 발급해준 CA의 인증서까지 같이 검증한다. 도메인의 인증이 올바르더라도, 이를 발급해준 기관이 이상할 경우 해당 인증서 또한 믿을 수 없기 때문. 일종의 보증서라고 봐도 무방하다.</p>
+<p>일례로, 한국의 화폐 만원권이 만원의 가치를 가질 수 있는 이유는 한국은행이 이를 보증하기 때문. 반대로 핫한 가상화폐의 경우, 가상화폐의 가치를 보증해주는 기관이 없다. 때문에 가치가 수시로 변동하며, 언제든 그 가치와 기능을 잃을 수 있다.</p>
+<blockquote>
+<p><b class="teal-600">fullchain.pem</b>의 존재의미<br>어차피 <code class="inline-code">cert.pem</code>과 <code class="inline-code">chain.pem</code>이 제공되는데, 둘의 통합인증서가 무슨 의미가 있냐고 생각할 수 있다. <code class="inline-code">fullchain.pem</code>은 두 인증서를 통합함으로써, <code class="inline-code">cert.pem</code>과 <code class="inline-code">chain.pem</code>의 매칭여부를 확인할 수 있다.</p>
+</blockquote>
+<h1 id="Tomcat에-SSL 인증서 적용하기">Tomcat에 SSL 인증서 적용하기 <a href="#Tomcat에-SSL 인증서 적용하기">🔗</a></h1><p>Tomcat Native 설치여부에 따라 적용방법이 조금씩 달라진다. SSL 인증서는 기본적으로 <code class="inline-code">pem</code> 확장자로 제공된다.</p>
+<p>Tomcat Native는 <code class="inline-code">pem</code> 확장자 인증서를 바로 인식할 수 있지만, 일반적인 Tomcat은 <code class="inline-code">pem</code>을 인식할 수 없어 <code class="inline-code">jks</code> 등 다른 형태의 인증서로 변환해야한다.</p>
+<h2 id="Tomcat-Native 설치">Tomcat Native 설치 <a href="#Tomcat-Native 설치">🔗</a></h2>
+					<div class="codeblock">
+						<div class="top">
+							<p>BASH</p>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+
+						<button onclick="copyCode(this);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-icon="clipboard" class="i-clipboard"><path fill="currentColor" d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z"></path></svg></button>
+
+						<pre class="language-bash"><table><tbody><tr data-number=0><td class="line-number" data-number="0">0</td><td class="line-code" data-number=0><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> libtcnative-1</td></tr></tbody></table></pre>
+					</div>
+				<p>Ubuntu에선 위 라이브러리 설치를 통해 Tomcat Native를 적용할 수 있다.</p>
+<h2 id="Tomcat의-server.xml에 인증서 적용하기">Tomcat의 server.xml에 인증서 적용하기 <a href="#Tomcat의-server.xml에 인증서 적용하기">🔗</a></h2><p><a href="/posts/2021/08/20/apply-ssl#SSL-인증서%20적용하기" target="_blank">[SSL] Tomcat에 SSL 적용하기</a> 게시글에서 자세한 내용을 확인할 수 있다.</p>
+<p>위 게시글의 방법대로 인증서를 적용하고 Tomcat을 재기동한 뒤 <code class="inline-code">https://itcode.dev</code>와 같이 HTTPS 프로토콜을 사용하여 접속을 시도하자. 반드시 접속 전에 HTTPS의 서비스 포트를 확인하자. Tomcat의 기본 HTTPS 포트는 8443이다.</p>
+<p>HTTPS 접속이 정상적이라면 성공이다. 인증서 정보 또한 확인할 수 있다.</p>
+<h1 id="목표">목표 <a href="#목표">🔗</a></h1><ul>
+<li><del class="grey-400">라즈베리파이에 Ubuntu 서버를 구축한다.</del></li>
+<li><del class="grey-400">Tomcat을 구동하여 페이지를 호스팅한다.</del></li>
+<li><del class="grey-400">도메인을 입힌다.</del></li>
+<li><del class="grey-400">SSL 인증서를 발급하여 HTTPS 통신을 제공한다.</del></li>
+<li>SSH, RDP 등의 원격 통신환경을 구축한다.</li>
+<li>MariaDB를 설치하여 DB 통신을 수행한다.</li>
+</ul>
+</div><article class="MuiBox-root jss12 contentgroup_root__393Yi"><h4 class="MuiTypography-root contentgroup_title__14YEL MuiTypography-h4">🧲 연관 게시물 - <!-- -->라즈베리파이</h4><div class="MuiBox-root jss13 contentgroup_list__1HHxc"><div class="MuiBox-root jss14 contentgroup_item__1sEJk"><button class="MuiButtonBase-root contentgroup_button__1Zz1J" tabindex="0" type="button"><img src="https://user-images.githubusercontent.com/50317129/131238727-666f2aaa-d759-4f62-af73-3856086da73d.png"/><div class="MuiBox-root jss15 contentgroup_label-wrapper__3L-So"><p class="MuiTypography-root contentgroup_label__5f_Ku MuiTypography-body1">[라즈베리파이 4] MariaDB 구축하기</p></div></button></div><div class="MuiBox-root jss16 contentgroup_item__1sEJk"><button class="MuiButtonBase-root contentgroup_button__1Zz1J" tabindex="0" type="button"><img src="https://user-images.githubusercontent.com/50317129/131238727-666f2aaa-d759-4f62-af73-3856086da73d.png"/><div class="MuiBox-root jss17 contentgroup_label-wrapper__3L-So"><p class="MuiTypography-root contentgroup_label__5f_Ku MuiTypography-body1">[라즈베리파이 4] 원격 환경 구축하기 (SSH, RDP)</p></div></button></div><div class="MuiBox-root jss18 contentgroup_item__1sEJk"><button class="MuiButtonBase-root contentgroup_button__1Zz1J" tabindex="0" type="button"><img src="https://user-images.githubusercontent.com/50317129/131238727-666f2aaa-d759-4f62-af73-3856086da73d.png"/><div class="MuiBox-root jss19 contentgroup_label-wrapper__3L-So"><p class="MuiTypography-root contentgroup_label__5f_Ku MuiTypography-body1">[라즈베리파이 4] 라즈베리파이에 도메인 입히기</p></div></button></div><div class="MuiBox-root jss20 contentgroup_item__1sEJk"><button class="MuiButtonBase-root contentgroup_button__1Zz1J" tabindex="0" type="button"><img src="https://user-images.githubusercontent.com/50317129/131238727-666f2aaa-d759-4f62-af73-3856086da73d.png"/><div class="MuiBox-root jss21 contentgroup_label-wrapper__3L-So"><p class="MuiTypography-root contentgroup_label__5f_Ku MuiTypography-body1">[라즈베리파이 4] Ubuntu에 톰캣 설치하기</p></div></button></div><div class="MuiBox-root jss22 contentgroup_item__1sEJk"><button class="MuiButtonBase-root contentgroup_button__1Zz1J" tabindex="0" type="button"><img src="https://user-images.githubusercontent.com/50317129/131238727-666f2aaa-d759-4f62-af73-3856086da73d.png"/><div class="MuiBox-root jss23 contentgroup_label-wrapper__3L-So"><p class="MuiTypography-root contentgroup_label__5f_Ku MuiTypography-body1">[라즈베리파이 4] 라즈베리파이에 Unbuntu 설치하기</p></div></button></div><div class="MuiBox-root jss24 contentgroup_item__1sEJk"><button class="MuiButtonBase-root contentgroup_button__1Zz1J" tabindex="0" type="button"><img src="https://user-images.githubusercontent.com/50317129/131238727-666f2aaa-d759-4f62-af73-3856086da73d.png"/><div class="MuiBox-root jss25 contentgroup_label-wrapper__3L-So"><p class="MuiTypography-root contentgroup_label__5f_Ku MuiTypography-body1">[라즈베리파이 4] Hello Raspberry!</p></div></button></div></div></article><article class="MuiBox-root jss26 contentmeta_root__2CAt-"><div class="MuiBox-root jss27 contentmeta_item__1SXyL"><p class="MuiTypography-root contentmeta_text__1TBw9 MuiTypography-body1">📆 작성일</p><p class="MuiTypography-root contentmeta_text__1TBw9 MuiTypography-body1">2021-09-06 Mon 16:50:40</p></div><div class="MuiBox-root jss28 contentmeta_item__1SXyL"><p class="MuiTypography-root contentmeta_text__1TBw9 MuiTypography-body1">📚 카테고리</p><div class="MuiBox-root jss29"><div class="MuiAvatar-root MuiAvatar-circular"><img alt="RaspberryPi" src="https://user-images.githubusercontent.com/50317129/132937496-a2f0e74f-18c3-43c7-9d94-869690a72e4c.png" class="MuiAvatar-img"/></div><p class="MuiTypography-root contentmeta_link__3BUNg MuiTypography-body1">RaspberryPi</p></div></div><div class="MuiBox-root jss30 contentmeta_item__1SXyL"><p class="MuiTypography-root contentmeta_text__1TBw9 MuiTypography-body1">🏷️ 태그</p><div class="MuiBox-root jss31"><div class="MuiButtonBase-root MuiChip-root contenttags_root__x5Yka MuiChip-clickable" tabindex="0" role="button"><span class="MuiChip-label">라즈베리파이</span></div><div class="MuiButtonBase-root MuiChip-root contenttags_root__x5Yka MuiChip-clickable" tabindex="0" role="button"><span class="MuiChip-label">Ubuntu</span></div><div class="MuiButtonBase-root MuiChip-root contenttags_root__x5Yka MuiChip-clickable" tabindex="0" role="button"><span class="MuiChip-label">Tomcat(톰캣)</span></div><div class="MuiButtonBase-root MuiChip-root contenttags_root__x5Yka MuiChip-clickable" tabindex="0" role="button"><span class="MuiChip-label">SSL</span></div></div></div></article><article class="MuiBox-root jss32 contentmover_root__B7rpT"><div class="MuiBox-root jss33"><button class="MuiButtonBase-root contentmover_button-dark__3zOui" tabindex="0" type="button"><div class="MuiBox-root jss34">[라즈베리파이 4] 라즈베리파이에 도메인 입히기</div></button><button class="MuiButtonBase-root contentmover_button-dark__3zOui" tabindex="0" type="button"><div class="MuiBox-root jss35">[라즈베리파이 4] 원격 환경 구축하기 (SSH, RDP)</div></button></div><hr class="MuiDivider-root contentmover_divider__14jgu"/><div class="MuiBox-root jss36"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined contentmover_menu__E6t4v" tabindex="0" type="button"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span>목록</span></button></div></article><article class="MuiBox-root jss37 utterances_root__33E-l" id="utterances"></article></div></div></div></section><article class="MuiBox-root jss38 loading_root-dark__1hj21" id="loading"><div class="MuiBox-root jss39 loading_logo-wrap__tM-JH"><svg xmlns="http://www.w3.org/2000/svg" class="react loading_logo__1Ukqu" viewBox="0 0 3618.6 3618.6" width="" height=""><path class="st0" d="M0 0h3618.6v3618.6H0z"></path><circle class="st1" cx="1806.5" cy="1807.1" r="302.6"></circle><path class="st2" d="M1806.5 1191.9c406.2 0 783.6 58.3 1068.1 156.2 342.8 118 553.6 296.9 553.6 458.9 0 168.8-223.4 358.9-591.5 480.8-278.3 92.2-644.6 140.4-1030.2 140.4-395.4 0-769.7-45.2-1051.2-141.4-356.1-121.7-570.6-314.2-570.6-479.8 0-160.7 201.3-338.2 539.3-456 285.6-99.5 672.3-159.1 1082.5-159.1z"></path><path class="st2" d="M1271 1501.3c202.9-351.9 442-649.7 669-847.2 273.5-238 533.8-331.2 674.1-250.3 146.2 84.3 199.3 372.8 121 752.7-59.2 287.2-200.4 628.5-393.1 962.6-197.5 342.5-423.7 644.2-647.6 840-283.3 247.7-557.3 337.3-700.7 254.6-139.2-80.3-192.4-343.3-125.7-695 56.4-297.4 198-662.1 403-1017.4z"></path><path class="st2" d="M1271.5 2119.8c-203.5-351.6-342.1-707.4-399.9-1002.7-69.6-355.8-20.4-627.9 119.8-709 146.1-84.6 422.5 13.5 712.5 271 219.3 194.7 444.4 487.5 637.6 821.3 198.1 342.2 346.6 688.8 404.3 980.5 73.1 369.2 13.9 651.3-129.4 734.2-139.1 80.5-393.5-4.7-664.9-238.2-229.2-197.3-474.5-502.1-680-857.1z"></path></svg></div></article><button class="MuiButtonBase-root MuiFab-root theme-switch_switch-light__RM7lW MuiFab-extended" tabindex="0" type="button" aria-label="to Light"><span class="MuiFab-label"><svg class="MuiSvgIcon-root theme-switch_icon-light__2l3wJ" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.79 1.42-1.41zM4 10.5H1v2h3v-2zm9-9.95h-2V3.5h2V.55zm7.45 3.91l-1.41-1.41-1.79 1.79 1.41 1.41 1.79-1.79zm-3.21 13.7l1.79 1.8 1.41-1.41-1.8-1.79-1.4 1.4zM20 10.5v2h3v-2h-3zm-8-5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm-1 16.95h2V19.5h-2v2.95zm-7.45-3.91l1.41 1.41 1.79-1.8-1.41-1.41-1.79 1.8z"></path></svg><span class="MuiBox-root jss40 theme-switch_switch-text__1PmvR">라이트 모드로 보기</span></span></button><footer class="MuiBox-root jss41 footer_root__1UV7X"><div class="MuiBox-root jss42 footer_line__3X56J"><hr class="MuiDivider-root"/><div class="MuiAvatar-root MuiAvatar-circular footer_logo__WzNb4"><img alt="𝝅번째 알파카의 개발 낙서장" src="/img/profile.jpg" class="MuiAvatar-img"/></div><hr class="MuiDivider-root"/></div><div class="MuiBox-root jss43 footer_buttons__3Omuq"><button class="MuiButtonBase-root MuiIconButton-root footer_github__3SNn3" tabindex="0" type="button"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span></button><button class="MuiButtonBase-root MuiIconButton-root footer_mail__C8TMD" tabindex="0" type="button"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg></span></button><button class="MuiButtonBase-root MuiIconButton-root footer_rss__3ZVCK" tabindex="0" type="button"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.18" cy="17.82" r="2.18"></circle><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"></path></svg></span></button></div><p class="MuiTypography-root footer_text__2kr9z MuiTypography-body1 MuiTypography-alignCenter">Copyright ⓒ RWB 2021.05</p><p class="MuiTypography-root footer_text__2kr9z MuiTypography-body1 MuiTypography-alignCenter">f1814897788</p></footer></div></div></div></body></html>

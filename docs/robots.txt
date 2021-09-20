@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://rwb0104.github.io/sitemap.xml
+Sitemap: https://blog.itcode.dev/sitemap
+#DaumWebMasterTool:186d5082ececec6ea227a873a4fd098cc2dca7c9492e696c70df9bc09ae081d9:YfJHQJtQAShxl2gt6DYIQw==

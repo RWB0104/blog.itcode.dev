@@ -10,41 +10,41 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next-seo.js</generator>
 		<pubDate>Wed, 26 May 2021 14:36:57 GMT</pubDate>
-		<lastBuildDate>Tue, 28 Sep 2021 01:37:14 GMT</lastBuildDate>
+		<lastBuildDate>Thu, 07 Oct 2021 17:29:21 GMT</lastBuildDate>
 		<item>
 			<title>./pages/404.tsx</title>
 			<description>./pages/404.tsx</description>
-			<pubDate>Tue, 28 Sep 2021 01:37:14 GMT</pubDate>
+			<pubDate>Thu, 07 Oct 2021 17:29:21 GMT</pubDate>
 			<link>https://blog.itcode.dev/404.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/404.html</guid>
 		</item>
 		<item>
 			<title>./pages/500.tsx</title>
 			<description>./pages/500.tsx</description>
-			<pubDate>Tue, 28 Sep 2021 01:37:14 GMT</pubDate>
+			<pubDate>Thu, 07 Oct 2021 17:29:21 GMT</pubDate>
 			<link>https://blog.itcode.dev/500.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/500.html</guid>
 		</item>
 		<item>
-			<title>./pages/projects/index.tsx</title>
-			<description>./pages/projects/index.tsx</description>
-			<pubDate>Tue, 28 Sep 2021 01:37:14 GMT</pubDate>
-			<link>https://blog.itcode.dev/projects.html</link>
-			<guid isPermaLink="true">https://blog.itcode.dev/projects.html</guid>
+			<title>./pages/about/index.tsx</title>
+			<description>./pages/about/index.tsx</description>
+			<pubDate>Thu, 07 Oct 2021 17:29:21 GMT</pubDate>
+			<link>https://blog.itcode.dev/about.html</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/about.html</guid>
 		</item>
 		<item>
 			<title>./pages/posts/index.tsx</title>
 			<description>./pages/posts/index.tsx</description>
-			<pubDate>Tue, 28 Sep 2021 01:37:14 GMT</pubDate>
+			<pubDate>Thu, 07 Oct 2021 17:29:21 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts.html</guid>
 		</item>
 		<item>
-			<title>./pages/about/index.tsx</title>
-			<description>./pages/about/index.tsx</description>
-			<pubDate>Tue, 28 Sep 2021 01:37:14 GMT</pubDate>
-			<link>https://blog.itcode.dev/about.html</link>
-			<guid isPermaLink="true">https://blog.itcode.dev/about.html</guid>
+			<title>./pages/projects/index.tsx</title>
+			<description>./pages/projects/index.tsx</description>
+			<pubDate>Thu, 07 Oct 2021 17:29:21 GMT</pubDate>
+			<link>https://blog.itcode.dev/projects.html</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/projects.html</guid>
 		</item>
 		<item>
 			<title>Jekyll에서 Next.js로</title>
@@ -882,7 +882,7 @@
 		</item>
 		<item>
 			<title>[NextJS] 블로그 개편기 - 3. SCSS 입히기</title>
-			<description></description>
+			<description>원래 내 블로그는 JS-in-CSS 스타일 방식을 사용하고 있었다. 그 이유는 Material-UI 때문. Material-UI의 공식 예제에서 대놓고 JS-in-CSS 방식으로 설명하기 때문에, React 기초 수준이였던 난 당연히 이렇게 해야하는 줄 알고 있었다. 하지만 개발을 거듭하며, 그 중 몇몇은 복잡한 스타일을 강요받기도 하며 점점 스타일 구문이 비대해지는 컴포넌트가 생겨나기 시작했다. 이에 따라 JS-in-CSS의 단점이 점점 대두되기 시작했다. 대표적인 문제점으로 FOCU(Flash Of Unstyled Content). 스타일 렌더링에 시간이 소요되어, 사용자가 렌더링 이전의 페이지를 보게 되는 현상이다. 내 페이지의 경우 약 1초가 조금 안 되게 FOUC가 발생했는데, 사용자 경험을 극도로 해치는 일이였다. 블로그 개편을 마음먹게 된 가장 큰 이유 역시 이 FOCU 현상 때문이였으며, 관련 정보 조사 결과 CSS-in-CSS의 성능이 월등히 뛰어나다는 점을 확인했다.</description>
 			<pubDate>Fri, 24 Sep 2021 04:17:24 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/09/24/nextjs-reorganization-3.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/09/24/nextjs-reorganization-3.html</guid>

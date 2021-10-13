@@ -3,37 +3,37 @@
 	<url>
 		<loc>https://blog.itcode.dev/404</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-07T17:29:21.310Z</lastmod>
+		<lastmod>2021-10-13T17:09:34.421Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/500</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-07T17:29:21.310Z</lastmod>
+		<lastmod>2021-10-13T17:09:34.421Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-07T17:29:21.310Z</lastmod>
+		<lastmod>2021-10-13T17:09:34.421Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/about</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-07T17:29:21.310Z</lastmod>
+		<lastmod>2021-10-13T17:09:34.421Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/posts</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-07T17:29:21.310Z</lastmod>
+		<lastmod>2021-10-13T17:09:34.421Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/projects</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-07T17:29:21.310Z</lastmod>
+		<lastmod>2021-10-13T17:09:34.421Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
@@ -472,6 +472,12 @@
 		<loc>https://blog.itcode.dev/posts/2021/09/24/nextjs-reorganization-3</loc>
 		<priority>1.0</priority>
 		<lastmod>2021-09-24T04:17:24.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/10/14/oauth2-java-server-1</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-10-13T15:56:31.000Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 </urlset>

@@ -10,39 +10,39 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next-seo.js</generator>
 		<pubDate>Wed, 26 May 2021 14:36:57 GMT</pubDate>
-		<lastBuildDate>Thu, 07 Oct 2021 17:29:21 GMT</lastBuildDate>
+		<lastBuildDate>Wed, 13 Oct 2021 17:09:34 GMT</lastBuildDate>
 		<item>
 			<title>./pages/404.tsx</title>
 			<description>./pages/404.tsx</description>
-			<pubDate>Thu, 07 Oct 2021 17:29:21 GMT</pubDate>
+			<pubDate>Wed, 13 Oct 2021 17:09:34 GMT</pubDate>
 			<link>https://blog.itcode.dev/404</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/404</guid>
 		</item>
 		<item>
 			<title>./pages/500.tsx</title>
 			<description>./pages/500.tsx</description>
-			<pubDate>Thu, 07 Oct 2021 17:29:21 GMT</pubDate>
+			<pubDate>Wed, 13 Oct 2021 17:09:34 GMT</pubDate>
 			<link>https://blog.itcode.dev/500</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/500</guid>
 		</item>
 		<item>
 			<title>./pages/about/index.tsx</title>
 			<description>./pages/about/index.tsx</description>
-			<pubDate>Thu, 07 Oct 2021 17:29:21 GMT</pubDate>
+			<pubDate>Wed, 13 Oct 2021 17:09:34 GMT</pubDate>
 			<link>https://blog.itcode.dev/about</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/about</guid>
 		</item>
 		<item>
 			<title>./pages/posts/index.tsx</title>
 			<description>./pages/posts/index.tsx</description>
-			<pubDate>Thu, 07 Oct 2021 17:29:21 GMT</pubDate>
+			<pubDate>Wed, 13 Oct 2021 17:09:34 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts</guid>
 		</item>
 		<item>
 			<title>./pages/projects/index.tsx</title>
 			<description>./pages/projects/index.tsx</description>
-			<pubDate>Thu, 07 Oct 2021 17:29:21 GMT</pubDate>
+			<pubDate>Wed, 13 Oct 2021 17:09:34 GMT</pubDate>
 			<link>https://blog.itcode.dev/projects</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects</guid>
 		</item>
@@ -890,6 +890,15 @@
 			<category>React</category>
 			<category>SCSS</category>
 			<category>CSS</category>
+		</item>
+		<item>
+			<title>[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 1. OAuth2.0이란?</title>
+			<description>사이트를 돌아다니다보면 로그인이 필요한 사이트를 심심치않게 만나볼 수 있다. 그리고 이런 사이트들은 대부분 "네이버로 로그인하기"와 같은 플랫폼 로그인을 제공한다. 사이트 뿐만 아니라 근래 들어 출시되는 앱 역시 대부분 플랫폼을 통한 인증 서비스를 제공한다. 이를 활용하면 매우 간단한 절차를 통해 회원가입 또는 로그인을 수행할 수 있게 된다. 이러한 서비스는 네이버 뿐만 아니라 Google, 카카오 등 어느정도 규모있는 플랫폼의 대부분은 이러한 "플랫폼으로 로그인하기"와 같은 기능을 제공한다. 이렇게 플랫폼의 정보를 활용하여 타 사이트에서 인증을 수행하는 것을 OAuth 프로토콜이라 한다.</description>
+			<pubDate>Wed, 13 Oct 2021 15:56:31 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/10/14/oauth2-java-server-1</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/10/14/oauth2-java-server-1</guid>
+			<category>JAVA</category>
+			<category>OAuth2.0</category>
 		</item>
 	</channel>
 </rss>

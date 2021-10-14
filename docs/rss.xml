@@ -10,39 +10,39 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next-seo.js</generator>
 		<pubDate>Wed, 26 May 2021 14:36:57 GMT</pubDate>
-		<lastBuildDate>Wed, 13 Oct 2021 17:09:34 GMT</lastBuildDate>
+		<lastBuildDate>Thu, 14 Oct 2021 16:46:38 GMT</lastBuildDate>
 		<item>
 			<title>./pages/404.tsx</title>
 			<description>./pages/404.tsx</description>
-			<pubDate>Wed, 13 Oct 2021 17:09:34 GMT</pubDate>
+			<pubDate>Thu, 14 Oct 2021 16:46:38 GMT</pubDate>
 			<link>https://blog.itcode.dev/404</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/404</guid>
 		</item>
 		<item>
 			<title>./pages/500.tsx</title>
 			<description>./pages/500.tsx</description>
-			<pubDate>Wed, 13 Oct 2021 17:09:34 GMT</pubDate>
+			<pubDate>Thu, 14 Oct 2021 16:46:38 GMT</pubDate>
 			<link>https://blog.itcode.dev/500</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/500</guid>
 		</item>
 		<item>
 			<title>./pages/about/index.tsx</title>
 			<description>./pages/about/index.tsx</description>
-			<pubDate>Wed, 13 Oct 2021 17:09:34 GMT</pubDate>
+			<pubDate>Thu, 14 Oct 2021 16:46:38 GMT</pubDate>
 			<link>https://blog.itcode.dev/about</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/about</guid>
 		</item>
 		<item>
 			<title>./pages/posts/index.tsx</title>
 			<description>./pages/posts/index.tsx</description>
-			<pubDate>Wed, 13 Oct 2021 17:09:34 GMT</pubDate>
+			<pubDate>Thu, 14 Oct 2021 16:46:38 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts</guid>
 		</item>
 		<item>
 			<title>./pages/projects/index.tsx</title>
 			<description>./pages/projects/index.tsx</description>
-			<pubDate>Wed, 13 Oct 2021 17:09:34 GMT</pubDate>
+			<pubDate>Thu, 14 Oct 2021 16:46:38 GMT</pubDate>
 			<link>https://blog.itcode.dev/projects</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects</guid>
 		</item>
@@ -897,6 +897,15 @@
 			<pubDate>Wed, 13 Oct 2021 15:56:31 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/10/14/oauth2-java-server-1</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/10/14/oauth2-java-server-1</guid>
+			<category>JAVA</category>
+			<category>OAuth2.0</category>
+		</item>
+		<item>
+			<title>[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 2. 인증서버 설계하기</title>
+			<description>OAuth2.0 프로토콜에 대한 사전 지식도 얻었으니, 이를 통해 인증서버를 직접 구축해보자. Frontend, Backend 부분으로 나누어 웹 페이지를 통해 소셜 로그인을 수행하고, 직접 구현한 인증서버에서 이를 처리하는 시스템 일체를 구축하는 것이 궁극적인 목표다.</description>
+			<pubDate>Thu, 14 Oct 2021 13:12:25 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/10/14/oauth2-java-server-2</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/10/14/oauth2-java-server-2</guid>
 			<category>JAVA</category>
 			<category>OAuth2.0</category>
 		</item>

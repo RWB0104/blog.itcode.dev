@@ -1,0 +1,1471 @@
+<!DOCTYPE html><html lang="ko"><head><meta name="hash" content="9a45ddb35da"/><link rel="manifest" href="/manifest.json"/><link rel="icon" href="/favicon.ico"/><link rel="shortcut icon" href="/favicon.ico"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-7QYWYNZ90R"></script><script src="/js/ga.js"></script><meta name="viewport" content="width=device-width"/><meta charSet="utf-8"/><script src="/js/content.js"></script><title>[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 2. 인증서버 설계하기 - 𝝅번째 알파카의 개발 낙서장</title><meta name="description" content="OAuth2.0 프로토콜에 대한 사전 지식도 얻었으니, 이를 통해 인증서버를 직접 구축해보자. Frontend, Backend 부분으로 나누어 웹 페이지를 통해 소셜 로그인을 수행하고, 직접 구현한 인증서버에서 이를 처리하는 시스템 일체를 구축하는 것이 궁극적인 목표다."/><meta property="og:site_name" content="𝝅번째 알파카의 개발 낙서장"/><meta property="og:title" content="[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 2. 인증서버 설계하기 - 𝝅번째 알파카의 개발 낙서장"/><meta property="og:description" content="OAuth2.0 프로토콜에 대한 사전 지식도 얻었으니, 이를 통해 인증서버를 직접 구축해보자. Frontend, Backend 부분으로 나누어 웹 페이지를 통해 소셜 로그인을 수행하고, 직접 구현한 인증서버에서 이를 처리하는 시스템 일체를 구축하는 것이 궁극적인 목표다."/><meta property="og:type" content="website"/><meta property="og:url" content="https://blog.itcode.dev/posts/2021/10/14/oauth2-java-server-2"/><meta property="og:image" content="https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png"/><meta property="og:locale" content="ko_KR"/><link rel="canonical" href="https://blog.itcode.dev/posts/2021/10/14/oauth2-java-server-2"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"/><meta name="next-head-count" content="14"/><link rel="preload" href="/_next/static/css/17feece61241a52e8da5.css" as="style"/><link rel="stylesheet" href="/_next/static/css/17feece61241a52e8da5.css" data-n-g=""/><link rel="preload" href="/_next/static/css/1726f6a4df2c19df75e0.css" as="style"/><link rel="stylesheet" href="/_next/static/css/1726f6a4df2c19df75e0.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-a54b4f32bdc1ef890ddd.js"></script><script src="/_next/static/chunks/webpack-61095c13c5984b221292.js" defer=""></script><script src="/_next/static/chunks/framework-2191d16384373197bc0a.js" defer=""></script><script src="/_next/static/chunks/main-6a8ca7ae20700a66db28.js" defer=""></script><script src="/_next/static/chunks/pages/_app-1d83179a3829e8a9ff11.js" defer=""></script><script src="/_next/static/chunks/33-8c8c1b0f93e2745c6b0a.js" defer=""></script><script src="/_next/static/chunks/pages/posts/%5B...url%5D-88d3b0fae6853373ed1a.js" defer=""></script><script src="/_next/static/96a7bJ8cwZvAvjqkOiLaO/_buildManifest.js" defer=""></script><script src="/_next/static/96a7bJ8cwZvAvjqkOiLaO/_ssgManifest.js" defer=""></script><style id="jss-server-side">.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+}
+.MuiSvgIcon-colorPrimary {
+  color: #ff9800;
+}
+.MuiSvgIcon-colorSecondary {
+  color: #3d5afe;
+}
+.MuiSvgIcon-colorAction {
+  color: #fff;
+}
+.MuiSvgIcon-colorError {
+  color: #f44336;
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(255, 255, 255, 0.3);
+}
+.MuiSvgIcon-fontSizeInherit {
+  font-size: inherit;
+}
+.MuiSvgIcon-fontSizeSmall {
+  font-size: 1.25rem;
+}
+.MuiSvgIcon-fontSizeLarge {
+  font-size: 2.1875rem;
+}
+.MuiPaper-root {
+  color: #fff;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #424242;
+}
+.MuiPaper-rounded {
+  border-radius: 4px;
+}
+.MuiPaper-outlined {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.MuiPaper-elevation0 {
+  box-shadow: none;
+}
+.MuiPaper-elevation1 {
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation2 {
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation3 {
+  box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation4 {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation5 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation6 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation7 {
+  box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation8 {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation9 {
+  box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation10 {
+  box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation11 {
+  box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation12 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation13 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation14 {
+  box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation15 {
+  box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation16 {
+  box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation17 {
+  box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation18 {
+  box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation19 {
+  box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation20 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation21 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation22 {
+  box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation23 {
+  box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation24 {
+  box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
+}
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+@media print {
+  .MuiButtonBase-root {
+    color-adjust: exact;
+  }
+}
+  .MuiIconButton-root {
+    flex: 0 0 auto;
+    color: #fff;
+    padding: 12px;
+    overflow: visible;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+  }
+  .MuiIconButton-root:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+  .MuiIconButton-root.Mui-disabled {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+  }
+@media (hover: none) {
+  .MuiIconButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-edgeStart {
+    margin-left: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
+    margin-left: -3px;
+  }
+  .MuiIconButton-edgeEnd {
+    margin-right: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
+    margin-right: -3px;
+  }
+  .MuiIconButton-colorInherit {
+    color: inherit;
+  }
+  .MuiIconButton-colorPrimary {
+    color: #ff9800;
+  }
+  .MuiIconButton-colorPrimary:hover {
+    background-color: rgba(255, 152, 0, 0.08);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-colorSecondary {
+    color: #3d5afe;
+  }
+  .MuiIconButton-colorSecondary:hover {
+    background-color: rgba(61, 90, 254, 0.08);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-sizeSmall {
+    padding: 3px;
+    font-size: 1.125rem;
+  }
+  .MuiIconButton-label {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiAppBar-root {
+    width: 100%;
+    display: flex;
+    z-index: 1100;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .MuiAppBar-positionFixed {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: fixed;
+  }
+@media print {
+  .MuiAppBar-positionFixed {
+    position: absolute;
+  }
+}
+  .MuiAppBar-positionAbsolute {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: absolute;
+  }
+  .MuiAppBar-positionSticky {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: sticky;
+  }
+  .MuiAppBar-positionStatic {
+    position: static;
+  }
+  .MuiAppBar-positionRelative {
+    position: relative;
+  }
+  .MuiAppBar-colorDefault {
+    color: #fff;
+    background-color: #212121;
+  }
+  .MuiAppBar-colorPrimary {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #ff9800;
+  }
+  .MuiAppBar-colorSecondary {
+    color: #fff;
+    background-color: #3d5afe;
+  }
+  .MuiAppBar-colorInherit {
+    color: inherit;
+  }
+  .MuiAppBar-colorTransparent {
+    color: inherit;
+    background-color: transparent;
+  }
+  .MuiAvatar-root {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    font-size: 1.25rem;
+    align-items: center;
+    flex-shrink: 0;
+    font-family: AppleSDGothicNeo, sans-serif;
+    line-height: 1;
+    user-select: none;
+    border-radius: 50%;
+    justify-content: center;
+  }
+  .MuiAvatar-colorDefault {
+    color: #020D1D;
+    background-color: #757575;
+  }
+  .MuiAvatar-rounded {
+    border-radius: 4px;
+  }
+  .MuiAvatar-square {
+    border-radius: 0;
+  }
+  .MuiAvatar-img {
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+    text-indent: 10000px;
+  }
+  .MuiAvatar-fallback {
+    width: 75%;
+    height: 75%;
+  }
+
+  .jss1 {  }
+  .jss2 {  }
+  .jss3 {  }
+  .jss4 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 5px;
+  }
+  .jss5 {  }
+  .jss6 {  }
+  .jss7 {  }
+  .jss8 {  }
+  .jss9 {  }
+  .jss10 {
+    position: relative;
+  }
+  .jss11 {  }
+  .jss12 {  }
+  .jss13 {  }
+  .jss14 {  }
+  .jss15 {  }
+  .jss16 {  }
+  .jss17 {
+    display: grid;
+    align-items: center;
+  }
+  .jss18 {
+    display: grid;
+    align-items: center;
+  }
+  .jss19 {
+    display: grid;
+    align-items: center;
+    grid-column-gap: 10px;
+    grid-template-columns: 40px 1fr;
+  }
+  .jss20 {
+    display: grid;
+    align-items: center;
+  }
+  .jss21 {  }
+  .jss22 {  }
+  .jss23 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .jss24 {  }
+  .jss25 {  }
+  .jss26 {  }
+  .jss27 {  }
+  .jss28 {  }
+  .jss29 {  }
+  .jss30 {  }
+  .jss31 {  }
+  .jss32 {  }
+  .MuiTypography-root {
+    margin: 0;
+  }
+  .MuiTypography-body2 {
+    font-size: 0.875rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+  }
+  .MuiTypography-body1 {
+    font-size: 1rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .MuiTypography-caption {
+    font-size: 0.75rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 400;
+    line-height: 1.66;
+  }
+  .MuiTypography-button {
+    font-size: 0.875rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    text-transform: uppercase;
+  }
+  .MuiTypography-h1 {
+    font-size: 6rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 300;
+    line-height: 1.167;
+  }
+  .MuiTypography-h2 {
+    font-size: 3.75rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  .MuiTypography-h3 {
+    font-size: 3rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 400;
+    line-height: 1.167;
+  }
+  .MuiTypography-h4 {
+    font-size: 2.125rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 400;
+    line-height: 1.235;
+  }
+  .MuiTypography-h5 {
+    font-size: 1.5rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 400;
+    line-height: 1.334;
+  }
+  .MuiTypography-h6 {
+    font-size: 1.25rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+  .MuiTypography-subtitle1 {
+    font-size: 1rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+  }
+  .MuiTypography-subtitle2 {
+    font-size: 0.875rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 500;
+    line-height: 1.57;
+  }
+  .MuiTypography-overline {
+    font-size: 0.75rem;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 400;
+    line-height: 2.66;
+    text-transform: uppercase;
+  }
+  .MuiTypography-srOnly {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+  }
+  .MuiTypography-alignLeft {
+    text-align: left;
+  }
+  .MuiTypography-alignCenter {
+    text-align: center;
+  }
+  .MuiTypography-alignRight {
+    text-align: right;
+  }
+  .MuiTypography-alignJustify {
+    text-align: justify;
+  }
+  .MuiTypography-noWrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .MuiTypography-gutterBottom {
+    margin-bottom: 0.35em;
+  }
+  .MuiTypography-paragraph {
+    margin-bottom: 16px;
+  }
+  .MuiTypography-colorInherit {
+    color: inherit;
+  }
+  .MuiTypography-colorPrimary {
+    color: #ff9800;
+  }
+  .MuiTypography-colorSecondary {
+    color: #3d5afe;
+  }
+  .MuiTypography-colorTextPrimary {
+    color: #fff;
+  }
+  .MuiTypography-colorTextSecondary {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .MuiTypography-colorError {
+    color: #f44336;
+  }
+  .MuiTypography-displayInline {
+    display: inline;
+  }
+  .MuiTypography-displayBlock {
+    display: block;
+  }
+  .MuiButton-root {
+    color: #fff;
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+  .MuiButton-root:hover {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+  .MuiButton-root.Mui-disabled {
+    color: rgba(255, 255, 255, 0.3);
+  }
+@media (hover: none) {
+  .MuiButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-root:hover.Mui-disabled {
+    background-color: transparent;
+  }
+  .MuiButton-label {
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiButton-text {
+    padding: 6px 8px;
+  }
+  .MuiButton-textPrimary {
+    color: #ff9800;
+  }
+  .MuiButton-textPrimary:hover {
+    background-color: rgba(255, 152, 0, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-textPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-textSecondary {
+    color: #3d5afe;
+  }
+  .MuiButton-textSecondary:hover {
+    background-color: rgba(61, 90, 254, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-textSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlined {
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    padding: 5px 15px;
+  }
+  .MuiButton-outlined.Mui-disabled {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  .MuiButton-outlinedPrimary {
+    color: #ff9800;
+    border: 1px solid rgba(255, 152, 0, 0.5);
+  }
+  .MuiButton-outlinedPrimary:hover {
+    border: 1px solid #ff9800;
+    background-color: rgba(255, 152, 0, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlinedSecondary {
+    color: #3d5afe;
+    border: 1px solid rgba(61, 90, 254, 0.5);
+  }
+  .MuiButton-outlinedSecondary:hover {
+    border: 1px solid #3d5afe;
+    background-color: rgba(61, 90, 254, 0.08);
+  }
+  .MuiButton-outlinedSecondary.Mui-disabled {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-contained {
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+  .MuiButton-contained:hover {
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+    background-color: #d5d5d5;
+  }
+  .MuiButton-contained.Mui-focusVisible {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained:active {
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained.Mui-disabled {
+    color: rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+@media (hover: none) {
+  .MuiButton-contained:hover {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+}
+  .MuiButton-contained:hover.Mui-disabled {
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+  .MuiButton-containedPrimary {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #ff9800;
+  }
+  .MuiButton-containedPrimary:hover {
+    background-color: #f57c00;
+  }
+@media (hover: none) {
+  .MuiButton-containedPrimary:hover {
+    background-color: #ff9800;
+  }
+}
+  .MuiButton-containedSecondary {
+    color: #fff;
+    background-color: #3d5afe;
+  }
+  .MuiButton-containedSecondary:hover {
+    background-color: #304ffe;
+  }
+@media (hover: none) {
+  .MuiButton-containedSecondary:hover {
+    background-color: #3d5afe;
+  }
+}
+  .MuiButton-disableElevation {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation:hover {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation.Mui-focusVisible {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation:active {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation.Mui-disabled {
+    box-shadow: none;
+  }
+  .MuiButton-colorInherit {
+    color: inherit;
+    border-color: currentColor;
+  }
+  .MuiButton-textSizeSmall {
+    padding: 4px 5px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-textSizeLarge {
+    padding: 8px 11px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-outlinedSizeSmall {
+    padding: 3px 9px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-outlinedSizeLarge {
+    padding: 7px 21px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-containedSizeSmall {
+    padding: 4px 10px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-containedSizeLarge {
+    padding: 8px 22px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-fullWidth {
+    width: 100%;
+  }
+  .MuiButton-startIcon {
+    display: inherit;
+    margin-left: -4px;
+    margin-right: 8px;
+  }
+  .MuiButton-startIcon.MuiButton-iconSizeSmall {
+    margin-left: -2px;
+  }
+  .MuiButton-endIcon {
+    display: inherit;
+    margin-left: 8px;
+    margin-right: -4px;
+  }
+  .MuiButton-endIcon.MuiButton-iconSizeSmall {
+    margin-right: -2px;
+  }
+  .MuiButton-iconSizeSmall > *:first-child {
+    font-size: 18px;
+  }
+  .MuiButton-iconSizeMedium > *:first-child {
+    font-size: 20px;
+  }
+  .MuiButton-iconSizeLarge > *:first-child {
+    font-size: 22px;
+  }
+  .MuiChip-root {
+    color: #fff;
+    border: none;
+    cursor: default;
+    height: 32px;
+    display: inline-flex;
+    outline: 0;
+    padding: 0;
+    font-size: 0.8125rem;
+    box-sizing: border-box;
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    align-items: center;
+    font-family: AppleSDGothicNeo, sans-serif;
+    white-space: nowrap;
+    border-radius: 16px;
+    vertical-align: middle;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #616161;
+  }
+  .MuiChip-root.Mui-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .MuiChip-root .MuiChip-avatar {
+    color: #e0e0e0;
+    width: 24px;
+    height: 24px;
+    font-size: 0.75rem;
+    margin-left: 5px;
+    margin-right: -6px;
+  }
+  .MuiChip-root .MuiChip-avatarColorPrimary {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #f57c00;
+  }
+  .MuiChip-root .MuiChip-avatarColorSecondary {
+    color: #fff;
+    background-color: #304ffe;
+  }
+  .MuiChip-root .MuiChip-avatarSmall {
+    width: 18px;
+    height: 18px;
+    font-size: 0.625rem;
+    margin-left: 4px;
+    margin-right: -4px;
+  }
+  .MuiChip-sizeSmall {
+    height: 24px;
+  }
+  .MuiChip-colorPrimary {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #ff9800;
+  }
+  .MuiChip-colorSecondary {
+    color: #fff;
+    background-color: #3d5afe;
+  }
+  .MuiChip-clickable {
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiChip-clickable:hover, .MuiChip-clickable:focus {
+    background-color: rgb(109, 109, 109);
+  }
+  .MuiChip-clickable:active {
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+  }
+  .MuiChip-clickableColorPrimary:hover, .MuiChip-clickableColorPrimary:focus {
+    background-color: rgb(255, 160, 20);
+  }
+  .MuiChip-clickableColorSecondary:hover, .MuiChip-clickableColorSecondary:focus {
+    background-color: rgb(76, 103, 254);
+  }
+  .MuiChip-deletable:focus {
+    background-color: rgb(109, 109, 109);
+  }
+  .MuiChip-deletableColorPrimary:focus {
+    background-color: rgb(255, 172, 51);
+  }
+  .MuiChip-deletableColorSecondary:focus {
+    background-color: rgb(99, 123, 254);
+  }
+  .MuiChip-outlined {
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    background-color: transparent;
+  }
+  .MuiChip-clickable.MuiChip-outlined:hover, .MuiChip-clickable.MuiChip-outlined:focus, .MuiChip-deletable.MuiChip-outlined:focus {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+  .MuiChip-outlined .MuiChip-avatar {
+    margin-left: 4px;
+  }
+  .MuiChip-outlined .MuiChip-avatarSmall {
+    margin-left: 2px;
+  }
+  .MuiChip-outlined .MuiChip-icon {
+    margin-left: 4px;
+  }
+  .MuiChip-outlined .MuiChip-iconSmall {
+    margin-left: 2px;
+  }
+  .MuiChip-outlined .MuiChip-deleteIcon {
+    margin-right: 5px;
+  }
+  .MuiChip-outlined .MuiChip-deleteIconSmall {
+    margin-right: 3px;
+  }
+  .MuiChip-outlinedPrimary {
+    color: #ff9800;
+    border: 1px solid #ff9800;
+  }
+  .MuiChip-clickable.MuiChip-outlinedPrimary:hover, .MuiChip-clickable.MuiChip-outlinedPrimary:focus, .MuiChip-deletable.MuiChip-outlinedPrimary:focus {
+    background-color: rgba(255, 152, 0, 0.08);
+  }
+  .MuiChip-outlinedSecondary {
+    color: #3d5afe;
+    border: 1px solid #3d5afe;
+  }
+  .MuiChip-clickable.MuiChip-outlinedSecondary:hover, .MuiChip-clickable.MuiChip-outlinedSecondary:focus, .MuiChip-deletable.MuiChip-outlinedSecondary:focus {
+    background-color: rgba(61, 90, 254, 0.08);
+  }
+  .MuiChip-icon {
+    color: #e0e0e0;
+    margin-left: 5px;
+    margin-right: -6px;
+  }
+  .MuiChip-iconSmall {
+    width: 18px;
+    height: 18px;
+    margin-left: 4px;
+    margin-right: -4px;
+  }
+  .MuiChip-iconColorPrimary {
+    color: inherit;
+  }
+  .MuiChip-iconColorSecondary {
+    color: inherit;
+  }
+  .MuiChip-label {
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-overflow: ellipsis;
+  }
+  .MuiChip-labelSmall {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .MuiChip-deleteIcon {
+    color: rgba(255, 255, 255, 0.26);
+    width: 22px;
+    cursor: pointer;
+    height: 22px;
+    margin: 0 5px 0 -6px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiChip-deleteIcon:hover {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  .MuiChip-deleteIconSmall {
+    width: 16px;
+    height: 16px;
+    margin-left: -4px;
+    margin-right: 4px;
+  }
+  .MuiChip-deleteIconColorPrimary {
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .MuiChip-deleteIconColorPrimary:hover, .MuiChip-deleteIconColorPrimary:active {
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .MuiChip-deleteIconColorSecondary {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .MuiChip-deleteIconColorSecondary:hover, .MuiChip-deleteIconColorSecondary:active {
+    color: #fff;
+  }
+  .MuiChip-deleteIconOutlinedColorPrimary {
+    color: rgba(255, 152, 0, 0.7);
+  }
+  .MuiChip-deleteIconOutlinedColorPrimary:hover, .MuiChip-deleteIconOutlinedColorPrimary:active {
+    color: #ff9800;
+  }
+  .MuiChip-deleteIconOutlinedColorSecondary {
+    color: rgba(61, 90, 254, 0.7);
+  }
+  .MuiChip-deleteIconOutlinedColorSecondary:hover, .MuiChip-deleteIconOutlinedColorSecondary:active {
+    color: #3d5afe;
+  }
+  .MuiContainer-root {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+@media (min-width:600px) {
+  .MuiContainer-root {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiContainer-disableGutters {
+    padding-left: 0;
+    padding-right: 0;
+  }
+@media (min-width:600px) {
+  .MuiContainer-fixed {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-fixed {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-fixed {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-fixed {
+    max-width: 1920px;
+  }
+}
+@media (min-width:0px) {
+  .MuiContainer-maxWidthXs {
+    max-width: 444px;
+  }
+}
+@media (min-width:600px) {
+  .MuiContainer-maxWidthSm {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-maxWidthMd {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-maxWidthLg {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-maxWidthXl {
+    max-width: 1920px;
+  }
+}
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+strong, b {
+  font-weight: 700;
+}
+body {
+  color: #fff;
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: AppleSDGothicNeo, sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  background-color: #020D1D;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+body::backdrop {
+  background-color: #020D1D;
+}
+*::-webkit-scrollbar, *::-webkit-scrollbar-thumb {
+  width: 6px;
+  border: 1px solid transparent;
+  height: 6px;
+  border-radius: 6px;
+  background-clip: padding-box;
+}
+@media (max-width: 960px) {
+  *::-webkit-scrollbar, *::-webkit-scrollbar-thumb {
+    width: 0;
+  }
+}
+*::-webkit-scrollbar-thumb {
+  color: #404040;
+  box-shadow: inset 0 0 0 10px;
+}
+@media print {
+  .MuiDialog-root {
+    position: absolute !important;
+  }
+}
+  .MuiDialog-scrollPaper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .MuiDialog-scrollBody {
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+  }
+  .MuiDialog-scrollBody:after {
+    width: 0;
+    height: 100%;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .MuiDialog-container {
+    height: 100%;
+    outline: 0;
+  }
+@media print {
+  .MuiDialog-container {
+    height: auto;
+  }
+}
+  .MuiDialog-paper {
+    margin: 32px;
+    position: relative;
+    overflow-y: auto;
+  }
+@media print {
+  .MuiDialog-paper {
+    box-shadow: none;
+    overflow-y: visible;
+  }
+}
+  .MuiDialog-paperScrollPaper {
+    display: flex;
+    max-height: calc(100% - 64px);
+    flex-direction: column;
+  }
+  .MuiDialog-paperScrollBody {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+  .MuiDialog-paperWidthFalse {
+    max-width: calc(100% - 64px);
+  }
+  .MuiDialog-paperWidthXs {
+    max-width: 444px;
+  }
+@media (max-width:507.95px) {
+  .MuiDialog-paperWidthXs.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+  .MuiDialog-paperWidthSm {
+    max-width: 600px;
+  }
+@media (max-width:663.95px) {
+  .MuiDialog-paperWidthSm.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+  .MuiDialog-paperWidthMd {
+    max-width: 960px;
+  }
+@media (max-width:1023.95px) {
+  .MuiDialog-paperWidthMd.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+  .MuiDialog-paperWidthLg {
+    max-width: 1280px;
+  }
+@media (max-width:1343.95px) {
+  .MuiDialog-paperWidthLg.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+  .MuiDialog-paperWidthXl {
+    max-width: 1920px;
+  }
+@media (max-width:1983.95px) {
+  .MuiDialog-paperWidthXl.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+  .MuiDialog-paperFullWidth {
+    width: calc(100% - 64px);
+  }
+  .MuiDialog-paperFullScreen {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    max-width: 100%;
+    max-height: none;
+    border-radius: 0;
+  }
+  .MuiDialog-paperFullScreen.MuiDialog-paperScrollBody {
+    margin: 0;
+    max-width: 100%;
+  }
+  .MuiDivider-root {
+    border: none;
+    height: 1px;
+    margin: 0;
+    flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+  .MuiDivider-absolute {
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+  }
+  .MuiDivider-inset {
+    margin-left: 72px;
+  }
+  .MuiDivider-light {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+  .MuiDivider-middle {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .MuiDivider-vertical {
+    width: 1px;
+    height: 100%;
+  }
+  .MuiDivider-flexItem {
+    height: auto;
+    align-self: stretch;
+  }
+  .MuiFab-root {
+    color: rgba(0, 0, 0, 0.87);
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    font-size: 0.875rem;
+    min-width: 0;
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+    box-sizing: border-box;
+    min-height: 36px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: AppleSDGothicNeo, sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 50%;
+    text-transform: uppercase;
+    background-color: #e0e0e0;
+  }
+  .MuiFab-root:active {
+    box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+  }
+  .MuiFab-root:hover {
+    text-decoration: none;
+    background-color: #d5d5d5;
+  }
+  .MuiFab-root.Mui-focusVisible {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  }
+  .MuiFab-root.Mui-disabled {
+    color: rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+@media (hover: none) {
+  .MuiFab-root:hover {
+    background-color: #e0e0e0;
+  }
+}
+  .MuiFab-root:hover.Mui-disabled {
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+  .MuiFab-label {
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiFab-primary {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #ff9800;
+  }
+  .MuiFab-primary:hover {
+    background-color: #f57c00;
+  }
+@media (hover: none) {
+  .MuiFab-primary:hover {
+    background-color: #ff9800;
+  }
+}
+  .MuiFab-secondary {
+    color: #fff;
+    background-color: #3d5afe;
+  }
+  .MuiFab-secondary:hover {
+    background-color: #304ffe;
+  }
+@media (hover: none) {
+  .MuiFab-secondary:hover {
+    background-color: #3d5afe;
+  }
+}
+  .MuiFab-extended {
+    width: auto;
+    height: 48px;
+    padding: 0 16px;
+    min-width: 48px;
+    min-height: auto;
+    border-radius: 24px;
+  }
+  .MuiFab-extended.MuiFab-sizeSmall {
+    width: auto;
+    height: 34px;
+    padding: 0 8px;
+    min-width: 34px;
+    border-radius: 17px;
+  }
+  .MuiFab-extended.MuiFab-sizeMedium {
+    width: auto;
+    height: 40px;
+    padding: 0 16px;
+    min-width: 40px;
+    border-radius: 20px;
+  }
+  .MuiFab-colorInherit {
+    color: inherit;
+  }
+  .MuiFab-sizeSmall {
+    width: 40px;
+    height: 40px;
+  }
+  .MuiFab-sizeMedium {
+    width: 48px;
+    height: 48px;
+  }
+  .MuiToolbar-root {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  .MuiToolbar-gutters {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+@media (min-width:600px) {
+  .MuiToolbar-gutters {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiToolbar-regular {
+    min-height: 56px;
+  }
+@media (min-width:0px) and (orientation: landscape) {
+  .MuiToolbar-regular {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .MuiToolbar-regular {
+    min-height: 64px;
+  }
+}
+  .MuiToolbar-dense {
+    min-height: 48px;
+  }</style></head><body><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"page":{"type":"posts","prev":{"header":{"title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 1. OAuth2.0이란?","excerpt":"사이트를 돌아다니다보면 로그인이 필요한 사이트를 심심치않게 만나볼 수 있다. 그리고 이런 사이트들은 대부분 \"네이버로 로그인하기\"와 같은 플랫폼 로그인을 제공한다. 사이트 뿐만 아니라 근래 들어 출시되는 앱 역시 대부분 플랫폼을 통한 인증 서비스를 제공한다. 이를 활용하면 매우 간단한 절차를 통해 회원가입 또는 로그인을 수행할 수 있게 된다. 이러한 서비스는 네이버 뿐만 아니라 Google, 카카오 등 어느정도 규모있는 플랫폼의 대부분은 이러한 \"플랫폼으로 로그인하기\"와 같은 기능을 제공한다. 이렇게 플랫폼의 정보를 활용하여 타 사이트에서 인증을 수행하는 것을 OAuth 프로토콜이라 한다.","coverImage":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","date":"2021-10-14T00:56:31","type":"posts","category":"JAVA","tag":["JAVA","OAuth2.0"],"group":"OAuth2.0 인증서버 구축기","comment":true,"publish":true},"name":"2021-10-14-oauth2-java-server-1.md","content":"\r\n# 개요\r\n\r\n사이트를 돌아다니다보면 로그인이 필요한 사이트를 심심치않게 만나볼 수 있다. 그리고 이런 사이트들은 대부분 \"네이버로 로그인하기\"와 같은 플랫폼 로그인을 제공한다. 사이트 뿐만 아니라 근래 들어 출시되는 앱 역시 대부분 플랫폼을 통한 인증 서비스를 제공한다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/137170074-d678c0e1-d30a-4d38-91e5-543344e18ec3.png)\r\n\r\n이를 활용하면 매우 간단한 절차를 통해 회원가입 또는 로그인을 수행할 수 있게 된다. 이러한 서비스는 네이버 뿐만 아니라 Google, 카카오 등 어느정도 규모있는 플랫폼의 대부분은 이러한 \"플랫폼으로 로그인하기\"와 같은 기능을 제공한다.\r\n\r\n이렇게 플랫폼의 정보를 활용하여 타 사이트에서 인증을 수행하는 것을 OAuth 프로토콜이라 한다.\r\n\r\n# OAuth\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/137171256-3ca820ec-1435-4103-bc34-9c922832886c.png)\r\n\r\nOAuth는 Open Authentication의 약자로, 인증을 위한 표준 프로토콜이다.\r\n\r\n이전의 인증 방식은 사이트 혹은 애플리케이션에 직접 회원가입을 수행하여 내 정보를 제공하고, 비밀번호를 통해 인증하는 비밀번호 인증 방식을 취한다. 물론 이 비밀번호 인증 방식은 인터넷의 초창기부터 지금까지 사용하는 기법이지만, 그렇다고 문제가 아주 없는 것은 아니였다.\r\n\r\n* 서비스마다 운영되는 중구난방적인 인증 시스템\r\n* 사이트의 신뢰성 문제\r\n* 인터넷을 사용할수록 과적되는 인증 정보\r\n\r\nOAuth 이전에는 이렇다할 인증 표준이 존재하지 않았다. 표준이 없다보니 인증 시스템은 서비스마다 개성이 넘처흘렀다. 사이트마다 요구하는 정보, 방식이 천차만별로 다르니 사용자 입장에서는 매우 혼란스러울 것이다.\r\n\r\n그래도 이 점은 나름 사이트를 구분할 수 있는 일종의 척도(?)가 되기도 한다만, 더 큰 문제는 해당 사이트를 신뢰할만한 지표가 전혀 없다는 것이다. 내 정보를 왜 가져가는지, 어떻게 보관하는지 알 길이 없는 사용자들은 울며 겨자먹기로 서비스에게 내 정보를 제공하게 된다.\r\n\r\n이런 사이트들을 조금만 돌아다니면서 상호작용을 하다보면, 나도 모르는 새에 계정정보가 쌓여있을 것이다. 인증의 주체가 되는 \"나\"는 하나인데, 인증 표준의 부재로 인해 각 서비스마다 나 자신을 인증하기 위한 여러 방법을 소유하게되는 것이다.\r\n\r\n\u003cbr /\u003e\r\n\r\n이러한 비효율성을 타파하기 위해 Twitter 주도하에 인증 표준이 설립되었고, 이 것이 OAuth의 시초다. OAuth 라는 표준 프로토콜이 정의됨에 따라 각 서비스는 공통된 인터페이스로 사용자에게 인증을 요구할 수 있고, 사용자 역시 익숙하고 신뢰성있는 대형 플랫폼에 인증 정보를 입력하기 때문에 보안적인 측면은 물론, 절차 또한 간소화되는 이점을 가지게 된다.\r\n\r\nOAuth는 1.0을 시작으로, 1.0에 세션 고정 공격이라는 보안 취약점이 발견됨에 따라 현재는 2.0을 사용하고 있다.\r\n\r\n\u003e \u003cb class=\"orange-400\"\u003eOAuth1.0의 몰락\u003c/b\u003e  \r\n\u003e OAuth1.0은 \u003cspan class=\"primary\"\u003e세션 고정 공격\u003c/span\u003e이라는 보안 취약점을 가지고 있다. 이를 해결하기 위해 OAuth2.0에서는 이러한 문제들이 해결되었으며, OAuth2.0은 OAuth1.0을 완전히 대체한다.\r\n\r\nOAuth2.0은 그 방식에 따라 4가지 방식으로 구분한다.\r\n\r\n이를 설명하기 앞서 OAuth에서 사용하는 키워드에 대해 알아보자\r\n\r\n|      키워드      |                             의미                             |\r\n| :--------------: | :----------------------------------------------------------: |\r\n|       User       |                            사용자                            |\r\n|     Consumer     |               OAuth를 제공하는 서비스 (웹 등)                |\r\n| Service Provider |                OAuth 서비스 제공자 (NAVER 등)                |\r\n|   Access Token   | Consumer가 Service Provider의 자원에 접근하기 위한 인증 코드 |\r\n|  Refresh Token   |             Access Token을 재발급하기 위한 코드              |\r\n\r\n아마 대부분 User의 범주에 속해있을 것이다. 여기서 궁극적으로 구축할 서비스는 Consumer가 된다.\r\n\r\n간혹 Service Provider는 인증 서버와 자원 서버로 분리해서 다루기도 한다.\r\n\r\nNAVER, Google과 같은 플랫폼은 Service Provider가 되며, 인증 절차를 통해 Access Token과 Refresh Token을 전달받게 된다.\r\n\r\n# OAuth Workflow\r\n\r\nOAuth2.0은 구현 방식에 따라 4가지 방식으로 구분된다.\r\n\r\n## 인가 코드 승인 (Authorization Code Grant)\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/137179813-de61fd8a-bbe6-4824-afdf-3652cde164bc.png)\r\n\r\n* 사용자가 Service Provider에 직접 인증을 수행\r\n* 인증에 성공하면 Consumer Frontend는 인가 코드를 전달받음\r\n* Consumer는 인가 코드를 Service Provider에 전달하여 Access, Refresh Token을 반환받음\r\n* Token 반환 이전에 인가 코드를 받는 과정이 추가되어 높은 수준의 보안을 제공함\r\n* Consumer의 Backend에서 Token 교환이 일어나므로 중간에 이를 탈취하기 어려움\r\n* 웹에서 사용되는 가장 보편적인 인증 형태로, 이 프로젝트 또한 인가 코드 승인 형태가 적용됨\r\n\r\n``` input\r\nGET /auth\r\nHost: oauth2.example.com\r\n\r\nresponse_type=code\r\n\u0026client_id=asj2y93bdjen3\r\n\u0026redirect_url=https://oauth2.example.com/callback\r\n\u0026state=6b773c55-b688-4a77-adaf-0bd25f4c4111\r\n\u0026scope=email,profile\r\n```\r\n\r\n|     구분      |           필수 여부            |                내용                 |\r\n| :-----------: | :----------------------------: | :---------------------------------: |\r\n| response_type | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e |  응답 타입으로, 값은 `code`로 고정  |\r\n|   client_id   | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e | Service Provider에서 제공한 API KEY |\r\n| redirect_url  | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e |            응답 반환 URL            |\r\n|     state     |               N                |      임의로 생성한 고유 상태값      |\r\n|     scope     |               N                |              요청 권한              |\r\n\r\n\u003cbr /\u003e\r\n\u003cbr /\u003e\r\n\r\n``` output\r\nGET /callback\r\nHost: oauth2.example.com\r\n\r\ncode=dfnY865gHjUbnknt57yGV\r\n\u0026state=6b773c55-b688-4a77-adaf-0bd25f4c4111\r\n```\r\n\r\n| 구분  |            내용             |\r\n| :---: | :-------------------------: |\r\n| code  |          인가 코드          |\r\n| state | 요청에서 전달한 고유 상태값 |\r\n\r\n`state`는 Consumer Backend에서 임의로 생성한 상태값으로, 통상 UUID를 하나 생성하여 사용한다.\r\n\r\n`code`와 입력했던 `state`가 반환된다. `code`를 통해 Service Provider에 요청하여 Access Token으로 교환할 수 있다.\r\n\r\n## 암시적 승인 (Implicit Grant)\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/137179833-fe688388-0d29-47c0-b4db-c4a42b26dccd.png)\r\n\r\n* 인가 코드 승인과 달리, 인증 성공 시 Consumer는 Token을 직접 전달받음\r\n* 각 플랫폼에서 제공되는 JavaScript SDK를 사용하여 구현\r\n* 인가 코드 승인에 비해 서버가 필요하지 않아 구현이 간단함\r\n* Token이 GET 방식으로 URL 파라미터에 담겨 전달되므로 보안에 취약하다.\r\n\r\n``` input\r\nGET /auth\r\nHost: oauth2.example.com\r\n\r\nresponse_type=token\r\n\u0026client_id=asj2y93bdjen3\r\n\u0026redirect_url=https://oauth2.example.com/callback\r\n\u0026state=97c66e11-d0e0-4c86-833c-e08bed40748d\r\n\u0026scope=email,profile\r\n```\r\n\r\n|     구분      |           필수 여부            |                 내용                 |\r\n| :-----------: | :----------------------------: | :----------------------------------: |\r\n| response_type | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e | 응답 타입으로, 값은 `token`으로 고정 |\r\n|   client_id   | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e | Service Provider에서 제공한 API KEY  |\r\n| redirect_url  | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e |            응답 반환 URL             |\r\n|     state     |               N                |      임의로 생성한 고유 상태값       |\r\n|     scope     |               N                |              요청 권한               |\r\n\r\n\u003cbr /\u003e\r\n\u003cbr /\u003e\r\n\r\n``` output\r\nGET /callback\r\nHost: oauth2.example.com\r\n\r\n#access_token=kr40FkgksmGS92lffkGls\r\n\u0026token_type=Bearer\r\n\u0026expires_in=3600\r\n\u0026state=97c66e11-d0e0-4c86-833c-e08bed40748d\r\n```\r\n\r\n|     구분     |                  내용                  |\r\n| :----------: | :------------------------------------: |\r\n| access_token |               접근 토큰                |\r\n|  token_type  | 접근 토큰의 타입으로, 통상 Bearer 사용 |\r\n|  expires_in  |           토큰 유효기간 (초)           |\r\n|    state     |      요청에서 전달한 고유 상태값       |\r\n\r\n인가 코드 승인과 달리, 요청에 Access Token이 포함되어 전달된다.\r\n\r\n\u003e \u003cb class=\"orange-400\"\u003e파라미터가 왜 \u003c/b\u003e`#`\u003cb class=\"orange-400\"\u003e으로 시작하지?\u003c/b\u003e  \r\n\u003e `#`은 URI Fragment라는 식별자다. 해당 식별자는 URL 접근 시 서버에 전달되지 않기 때문에 보안적인 측면에서 이점을 가져가기 위한 조치다.\r\n\r\n## 리소스 소유자 암호 자격 승인 (Resource Owner Password Credentials Grant)\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/137179866-29962644-c0a7-42f8-a397-7b3b1c361082.png)\r\n\r\n* Service Provider에 ID, PW를 전달하여 Token을 전달받음\r\n* 보안 구조가 비밀번호 기반의 인증 뿐이므로 이를 구현하는 Consumer는 신뢰성이 매우 높아야 함\r\n\r\n``` input\r\nPOST /auth\r\nHost: oauth2.example.com\r\n\r\ngrant_type=password\r\n\u0026client_id=asj2y93bdjen3\r\n\u0026username=username123\r\n\u0026password=password123\r\n\u0026scope=email,profile\r\n```\r\n\r\n|    구분    |           필수 여부            |                내용                 |\r\n| :--------: | :----------------------------: | :---------------------------------: |\r\n| grant_type | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e |  승인 타입으로, `password`로 고정   |\r\n| client_id  | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e | Service Provider에서 제공한 API KEY |\r\n|  username  | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e |               아이디                |\r\n|  password  | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e |              비밀번호               |\r\n|   scope    |               N                |              요청 권한              |\r\n\r\n\u003cbr /\u003e\r\n\u003cbr /\u003e\r\n\r\n``` json\r\n{\r\n    \"access_token\": \"dGkdi93ns2kdkV9dkA3\",\r\n    \"token_type\": \"Bearer\",\r\n    \"expires_in\": 3600,\r\n    \"scope\": \"email,profile\"\r\n}\r\n```\r\n\r\n|     구분     |                  내용                  |\r\n| :----------: | :------------------------------------: |\r\n| access_token |               접근 토큰                |\r\n|  token_type  | 접근 토큰의 타입으로, 통상 Bearer 사용 |\r\n|  expires_in  |           토큰 유효기간 (초)           |\r\n|    scope     |               요청 권한                |\r\n\r\n## 클라이언트 자격 승인 (Client Credentials Grant)\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/137179894-94e8f974-27cd-44b1-9c36-5e1d3dc69377.png)\r\n\r\n* 사용자가 Access Token을 외부 저장소에서 받아 인증하는 형식\r\n* 클라이언트 자체가 인증 수단이므로 절차가 매우 간소함\r\n* 통상 자기 자신의 정보만을 호출함\r\n\r\n``` input\r\nGET /auth\r\nHost: oauth2.example.com\r\n\r\ngrant_type=client_credentials\r\n\u0026client_id=asj2y93bdjen3\r\n\u0026client_secret=https://oauth2.example.com/callback\r\n\u0026scope=email,profile\r\n```\r\n\r\n|     구분      |           필수 여부            |                      내용                       |\r\n| :-----------: | :----------------------------: | :---------------------------------------------: |\r\n|  grant_type   | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e | 응답 타입으로, 값은 `client_credentials`로 고정 |\r\n|   client_id   | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e |       Service Provider에서 제공한 API KEY       |\r\n| client_secret | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e |   Service Provider에서 제공한 API Secret KEY    |\r\n|     scope     |               N                |                    요청 권한                    |\r\n\r\n\u003cbr /\u003e\r\n\u003cbr /\u003e\r\n\r\n``` json\r\n{\r\n    \"access_token\": \"dGkdi93ns2kdkV9dkA3\",\r\n    \"token_type\": \"Bearer\",\r\n    \"expires_in\": 3600,\r\n\t\"scope\": \"email,profile\"\r\n}\r\n```\r\n\r\n|     구분     |                  내용                  |\r\n| :----------: | :------------------------------------: |\r\n| access_token |               접근 토큰                |\r\n|  token_type  | 접근 토큰의 타입으로, 통상 Bearer 사용 |\r\n|  expires_in  |           토큰 유효기간 (초)           |\r\n|    scope     |               요청 권한                |\r\n\r\n# 정리\r\n\r\n* OAuth2.0은 인증을 위한 표준 프로토콜으로, OAuth 프로토콜을 준수하는 서비스는 기본적으로 공통된 API를 사용해서 인증을 수행할 수 있다.\r\n* OAuth 프로토콜을 통해 인증 절차는 간소화하고, 보안 수준은 강화할 수 있다.\r\n* OAuth의 방식은 4가지로 구분되며, 보편적으로 인가 코드 승인 방식을 사용한다.\r\n* 암시적 승인은 Serverless 서비스나 앱에서 주로 사용된다.\r\n* 나머지 방식은 특수한 환경에서 사용된다.\r\n\r\n다음 장에서는 구축할 시스템의 구성에 대해 다룬다.\r\n\r\n# 참고\r\n\r\n* [IT위키 - OAuth](https://itwiki.kr/w/OAuth)\r\n* [Microsoft OAuth](https://docs.microsoft.com/ko-kr/azure/active-directory/develop/active-directory-v2-protocols)\r\n* [RFC6749](https://datatracker.ietf.org/doc/html/rfc6749)","url":["2021-10-14-oauth2-java-server-1","2021","10","14","oauth2-java-server-1"]},"next":null},"group":[{"header":{"title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 1. OAuth2.0이란?","excerpt":"사이트를 돌아다니다보면 로그인이 필요한 사이트를 심심치않게 만나볼 수 있다. 그리고 이런 사이트들은 대부분 \"네이버로 로그인하기\"와 같은 플랫폼 로그인을 제공한다. 사이트 뿐만 아니라 근래 들어 출시되는 앱 역시 대부분 플랫폼을 통한 인증 서비스를 제공한다. 이를 활용하면 매우 간단한 절차를 통해 회원가입 또는 로그인을 수행할 수 있게 된다. 이러한 서비스는 네이버 뿐만 아니라 Google, 카카오 등 어느정도 규모있는 플랫폼의 대부분은 이러한 \"플랫폼으로 로그인하기\"와 같은 기능을 제공한다. 이렇게 플랫폼의 정보를 활용하여 타 사이트에서 인증을 수행하는 것을 OAuth 프로토콜이라 한다.","coverImage":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","date":"2021-10-14T00:56:31","type":"posts","category":"JAVA","tag":["JAVA","OAuth2.0"],"group":"OAuth2.0 인증서버 구축기","comment":true,"publish":true},"name":"2021-10-14-oauth2-java-server-1.md","content":"\r\n# 개요\r\n\r\n사이트를 돌아다니다보면 로그인이 필요한 사이트를 심심치않게 만나볼 수 있다. 그리고 이런 사이트들은 대부분 \"네이버로 로그인하기\"와 같은 플랫폼 로그인을 제공한다. 사이트 뿐만 아니라 근래 들어 출시되는 앱 역시 대부분 플랫폼을 통한 인증 서비스를 제공한다.\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/137170074-d678c0e1-d30a-4d38-91e5-543344e18ec3.png)\r\n\r\n이를 활용하면 매우 간단한 절차를 통해 회원가입 또는 로그인을 수행할 수 있게 된다. 이러한 서비스는 네이버 뿐만 아니라 Google, 카카오 등 어느정도 규모있는 플랫폼의 대부분은 이러한 \"플랫폼으로 로그인하기\"와 같은 기능을 제공한다.\r\n\r\n이렇게 플랫폼의 정보를 활용하여 타 사이트에서 인증을 수행하는 것을 OAuth 프로토콜이라 한다.\r\n\r\n# OAuth\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/137171256-3ca820ec-1435-4103-bc34-9c922832886c.png)\r\n\r\nOAuth는 Open Authentication의 약자로, 인증을 위한 표준 프로토콜이다.\r\n\r\n이전의 인증 방식은 사이트 혹은 애플리케이션에 직접 회원가입을 수행하여 내 정보를 제공하고, 비밀번호를 통해 인증하는 비밀번호 인증 방식을 취한다. 물론 이 비밀번호 인증 방식은 인터넷의 초창기부터 지금까지 사용하는 기법이지만, 그렇다고 문제가 아주 없는 것은 아니였다.\r\n\r\n* 서비스마다 운영되는 중구난방적인 인증 시스템\r\n* 사이트의 신뢰성 문제\r\n* 인터넷을 사용할수록 과적되는 인증 정보\r\n\r\nOAuth 이전에는 이렇다할 인증 표준이 존재하지 않았다. 표준이 없다보니 인증 시스템은 서비스마다 개성이 넘처흘렀다. 사이트마다 요구하는 정보, 방식이 천차만별로 다르니 사용자 입장에서는 매우 혼란스러울 것이다.\r\n\r\n그래도 이 점은 나름 사이트를 구분할 수 있는 일종의 척도(?)가 되기도 한다만, 더 큰 문제는 해당 사이트를 신뢰할만한 지표가 전혀 없다는 것이다. 내 정보를 왜 가져가는지, 어떻게 보관하는지 알 길이 없는 사용자들은 울며 겨자먹기로 서비스에게 내 정보를 제공하게 된다.\r\n\r\n이런 사이트들을 조금만 돌아다니면서 상호작용을 하다보면, 나도 모르는 새에 계정정보가 쌓여있을 것이다. 인증의 주체가 되는 \"나\"는 하나인데, 인증 표준의 부재로 인해 각 서비스마다 나 자신을 인증하기 위한 여러 방법을 소유하게되는 것이다.\r\n\r\n\u003cbr /\u003e\r\n\r\n이러한 비효율성을 타파하기 위해 Twitter 주도하에 인증 표준이 설립되었고, 이 것이 OAuth의 시초다. OAuth 라는 표준 프로토콜이 정의됨에 따라 각 서비스는 공통된 인터페이스로 사용자에게 인증을 요구할 수 있고, 사용자 역시 익숙하고 신뢰성있는 대형 플랫폼에 인증 정보를 입력하기 때문에 보안적인 측면은 물론, 절차 또한 간소화되는 이점을 가지게 된다.\r\n\r\nOAuth는 1.0을 시작으로, 1.0에 세션 고정 공격이라는 보안 취약점이 발견됨에 따라 현재는 2.0을 사용하고 있다.\r\n\r\n\u003e \u003cb class=\"orange-400\"\u003eOAuth1.0의 몰락\u003c/b\u003e  \r\n\u003e OAuth1.0은 \u003cspan class=\"primary\"\u003e세션 고정 공격\u003c/span\u003e이라는 보안 취약점을 가지고 있다. 이를 해결하기 위해 OAuth2.0에서는 이러한 문제들이 해결되었으며, OAuth2.0은 OAuth1.0을 완전히 대체한다.\r\n\r\nOAuth2.0은 그 방식에 따라 4가지 방식으로 구분한다.\r\n\r\n이를 설명하기 앞서 OAuth에서 사용하는 키워드에 대해 알아보자\r\n\r\n|      키워드      |                             의미                             |\r\n| :--------------: | :----------------------------------------------------------: |\r\n|       User       |                            사용자                            |\r\n|     Consumer     |               OAuth를 제공하는 서비스 (웹 등)                |\r\n| Service Provider |                OAuth 서비스 제공자 (NAVER 등)                |\r\n|   Access Token   | Consumer가 Service Provider의 자원에 접근하기 위한 인증 코드 |\r\n|  Refresh Token   |             Access Token을 재발급하기 위한 코드              |\r\n\r\n아마 대부분 User의 범주에 속해있을 것이다. 여기서 궁극적으로 구축할 서비스는 Consumer가 된다.\r\n\r\n간혹 Service Provider는 인증 서버와 자원 서버로 분리해서 다루기도 한다.\r\n\r\nNAVER, Google과 같은 플랫폼은 Service Provider가 되며, 인증 절차를 통해 Access Token과 Refresh Token을 전달받게 된다.\r\n\r\n# OAuth Workflow\r\n\r\nOAuth2.0은 구현 방식에 따라 4가지 방식으로 구분된다.\r\n\r\n## 인가 코드 승인 (Authorization Code Grant)\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/137179813-de61fd8a-bbe6-4824-afdf-3652cde164bc.png)\r\n\r\n* 사용자가 Service Provider에 직접 인증을 수행\r\n* 인증에 성공하면 Consumer Frontend는 인가 코드를 전달받음\r\n* Consumer는 인가 코드를 Service Provider에 전달하여 Access, Refresh Token을 반환받음\r\n* Token 반환 이전에 인가 코드를 받는 과정이 추가되어 높은 수준의 보안을 제공함\r\n* Consumer의 Backend에서 Token 교환이 일어나므로 중간에 이를 탈취하기 어려움\r\n* 웹에서 사용되는 가장 보편적인 인증 형태로, 이 프로젝트 또한 인가 코드 승인 형태가 적용됨\r\n\r\n``` input\r\nGET /auth\r\nHost: oauth2.example.com\r\n\r\nresponse_type=code\r\n\u0026client_id=asj2y93bdjen3\r\n\u0026redirect_url=https://oauth2.example.com/callback\r\n\u0026state=6b773c55-b688-4a77-adaf-0bd25f4c4111\r\n\u0026scope=email,profile\r\n```\r\n\r\n|     구분      |           필수 여부            |                내용                 |\r\n| :-----------: | :----------------------------: | :---------------------------------: |\r\n| response_type | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e |  응답 타입으로, 값은 `code`로 고정  |\r\n|   client_id   | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e | Service Provider에서 제공한 API KEY |\r\n| redirect_url  | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e |            응답 반환 URL            |\r\n|     state     |               N                |      임의로 생성한 고유 상태값      |\r\n|     scope     |               N                |              요청 권한              |\r\n\r\n\u003cbr /\u003e\r\n\u003cbr /\u003e\r\n\r\n``` output\r\nGET /callback\r\nHost: oauth2.example.com\r\n\r\ncode=dfnY865gHjUbnknt57yGV\r\n\u0026state=6b773c55-b688-4a77-adaf-0bd25f4c4111\r\n```\r\n\r\n| 구분  |            내용             |\r\n| :---: | :-------------------------: |\r\n| code  |          인가 코드          |\r\n| state | 요청에서 전달한 고유 상태값 |\r\n\r\n`state`는 Consumer Backend에서 임의로 생성한 상태값으로, 통상 UUID를 하나 생성하여 사용한다.\r\n\r\n`code`와 입력했던 `state`가 반환된다. `code`를 통해 Service Provider에 요청하여 Access Token으로 교환할 수 있다.\r\n\r\n## 암시적 승인 (Implicit Grant)\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/137179833-fe688388-0d29-47c0-b4db-c4a42b26dccd.png)\r\n\r\n* 인가 코드 승인과 달리, 인증 성공 시 Consumer는 Token을 직접 전달받음\r\n* 각 플랫폼에서 제공되는 JavaScript SDK를 사용하여 구현\r\n* 인가 코드 승인에 비해 서버가 필요하지 않아 구현이 간단함\r\n* Token이 GET 방식으로 URL 파라미터에 담겨 전달되므로 보안에 취약하다.\r\n\r\n``` input\r\nGET /auth\r\nHost: oauth2.example.com\r\n\r\nresponse_type=token\r\n\u0026client_id=asj2y93bdjen3\r\n\u0026redirect_url=https://oauth2.example.com/callback\r\n\u0026state=97c66e11-d0e0-4c86-833c-e08bed40748d\r\n\u0026scope=email,profile\r\n```\r\n\r\n|     구분      |           필수 여부            |                 내용                 |\r\n| :-----------: | :----------------------------: | :----------------------------------: |\r\n| response_type | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e | 응답 타입으로, 값은 `token`으로 고정 |\r\n|   client_id   | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e | Service Provider에서 제공한 API KEY  |\r\n| redirect_url  | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e |            응답 반환 URL             |\r\n|     state     |               N                |      임의로 생성한 고유 상태값       |\r\n|     scope     |               N                |              요청 권한               |\r\n\r\n\u003cbr /\u003e\r\n\u003cbr /\u003e\r\n\r\n``` output\r\nGET /callback\r\nHost: oauth2.example.com\r\n\r\n#access_token=kr40FkgksmGS92lffkGls\r\n\u0026token_type=Bearer\r\n\u0026expires_in=3600\r\n\u0026state=97c66e11-d0e0-4c86-833c-e08bed40748d\r\n```\r\n\r\n|     구분     |                  내용                  |\r\n| :----------: | :------------------------------------: |\r\n| access_token |               접근 토큰                |\r\n|  token_type  | 접근 토큰의 타입으로, 통상 Bearer 사용 |\r\n|  expires_in  |           토큰 유효기간 (초)           |\r\n|    state     |      요청에서 전달한 고유 상태값       |\r\n\r\n인가 코드 승인과 달리, 요청에 Access Token이 포함되어 전달된다.\r\n\r\n\u003e \u003cb class=\"orange-400\"\u003e파라미터가 왜 \u003c/b\u003e`#`\u003cb class=\"orange-400\"\u003e으로 시작하지?\u003c/b\u003e  \r\n\u003e `#`은 URI Fragment라는 식별자다. 해당 식별자는 URL 접근 시 서버에 전달되지 않기 때문에 보안적인 측면에서 이점을 가져가기 위한 조치다.\r\n\r\n## 리소스 소유자 암호 자격 승인 (Resource Owner Password Credentials Grant)\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/137179866-29962644-c0a7-42f8-a397-7b3b1c361082.png)\r\n\r\n* Service Provider에 ID, PW를 전달하여 Token을 전달받음\r\n* 보안 구조가 비밀번호 기반의 인증 뿐이므로 이를 구현하는 Consumer는 신뢰성이 매우 높아야 함\r\n\r\n``` input\r\nPOST /auth\r\nHost: oauth2.example.com\r\n\r\ngrant_type=password\r\n\u0026client_id=asj2y93bdjen3\r\n\u0026username=username123\r\n\u0026password=password123\r\n\u0026scope=email,profile\r\n```\r\n\r\n|    구분    |           필수 여부            |                내용                 |\r\n| :--------: | :----------------------------: | :---------------------------------: |\r\n| grant_type | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e |  승인 타입으로, `password`로 고정   |\r\n| client_id  | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e | Service Provider에서 제공한 API KEY |\r\n|  username  | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e |               아이디                |\r\n|  password  | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e |              비밀번호               |\r\n|   scope    |               N                |              요청 권한              |\r\n\r\n\u003cbr /\u003e\r\n\u003cbr /\u003e\r\n\r\n``` json\r\n{\r\n    \"access_token\": \"dGkdi93ns2kdkV9dkA3\",\r\n    \"token_type\": \"Bearer\",\r\n    \"expires_in\": 3600,\r\n    \"scope\": \"email,profile\"\r\n}\r\n```\r\n\r\n|     구분     |                  내용                  |\r\n| :----------: | :------------------------------------: |\r\n| access_token |               접근 토큰                |\r\n|  token_type  | 접근 토큰의 타입으로, 통상 Bearer 사용 |\r\n|  expires_in  |           토큰 유효기간 (초)           |\r\n|    scope     |               요청 권한                |\r\n\r\n## 클라이언트 자격 승인 (Client Credentials Grant)\r\n\r\n![image](https://user-images.githubusercontent.com/50317129/137179894-94e8f974-27cd-44b1-9c36-5e1d3dc69377.png)\r\n\r\n* 사용자가 Access Token을 외부 저장소에서 받아 인증하는 형식\r\n* 클라이언트 자체가 인증 수단이므로 절차가 매우 간소함\r\n* 통상 자기 자신의 정보만을 호출함\r\n\r\n``` input\r\nGET /auth\r\nHost: oauth2.example.com\r\n\r\ngrant_type=client_credentials\r\n\u0026client_id=asj2y93bdjen3\r\n\u0026client_secret=https://oauth2.example.com/callback\r\n\u0026scope=email,profile\r\n```\r\n\r\n|     구분      |           필수 여부            |                      내용                       |\r\n| :-----------: | :----------------------------: | :---------------------------------------------: |\r\n|  grant_type   | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e | 응답 타입으로, 값은 `client_credentials`로 고정 |\r\n|   client_id   | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e |       Service Provider에서 제공한 API KEY       |\r\n| client_secret | \u003cspan class=\"red-400\"\u003eY\u003c/span\u003e |   Service Provider에서 제공한 API Secret KEY    |\r\n|     scope     |               N                |                    요청 권한                    |\r\n\r\n\u003cbr /\u003e\r\n\u003cbr /\u003e\r\n\r\n``` json\r\n{\r\n    \"access_token\": \"dGkdi93ns2kdkV9dkA3\",\r\n    \"token_type\": \"Bearer\",\r\n    \"expires_in\": 3600,\r\n\t\"scope\": \"email,profile\"\r\n}\r\n```\r\n\r\n|     구분     |                  내용                  |\r\n| :----------: | :------------------------------------: |\r\n| access_token |               접근 토큰                |\r\n|  token_type  | 접근 토큰의 타입으로, 통상 Bearer 사용 |\r\n|  expires_in  |           토큰 유효기간 (초)           |\r\n|    scope     |               요청 권한                |\r\n\r\n# 정리\r\n\r\n* OAuth2.0은 인증을 위한 표준 프로토콜으로, OAuth 프로토콜을 준수하는 서비스는 기본적으로 공통된 API를 사용해서 인증을 수행할 수 있다.\r\n* OAuth 프로토콜을 통해 인증 절차는 간소화하고, 보안 수준은 강화할 수 있다.\r\n* OAuth의 방식은 4가지로 구분되며, 보편적으로 인가 코드 승인 방식을 사용한다.\r\n* 암시적 승인은 Serverless 서비스나 앱에서 주로 사용된다.\r\n* 나머지 방식은 특수한 환경에서 사용된다.\r\n\r\n다음 장에서는 구축할 시스템의 구성에 대해 다룬다.\r\n\r\n# 참고\r\n\r\n* [IT위키 - OAuth](https://itwiki.kr/w/OAuth)\r\n* [Microsoft OAuth](https://docs.microsoft.com/ko-kr/azure/active-directory/develop/active-directory-v2-protocols)\r\n* [RFC6749](https://datatracker.ietf.org/doc/html/rfc6749)","url":["2021-10-14-oauth2-java-server-1","2021","10","14","oauth2-java-server-1"]}],"data":{"header":{"title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 2. 인증서버 설계하기","excerpt":"OAuth2.0 프로토콜에 대한 사전 지식도 얻었으니, 이를 통해 인증서버를 직접 구축해보자. Frontend, Backend 부분으로 나누어 웹 페이지를 통해 소셜 로그인을 수행하고, 직접 구현한 인증서버에서 이를 처리하는 시스템 일체를 구축하는 것이 궁극적인 목표다.","coverImage":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","date":"2021-10-14T22:12:25","type":"posts","category":"JAVA","tag":["JAVA","OAuth2.0"],"group":"OAuth2.0 인증서버 구축기","comment":true,"publish":true},"name":"2021-10-14-oauth2-java-server-2.md","content":"\u003ch1 id=\"개요\"\u003e개요 \u003ca href=\"#개요\"\u003e🔗\u003c/a\u003e\u003c/h1\u003e\u003cp\u003eOAuth2.0 프로토콜에 대한 사전 지식도 얻었으니, 이를 통해 인증서버를 직접 구축해보자.\u003c/p\u003e\n\u003cp\u003eFrontend, Backend 부분으로 나누어 웹 페이지를 통해 \u003cspan class=\"red-400\"\u003e소셜 로그인을 수행\u003c/span\u003e하고, 직접 구현한 \u003cspan class=\"red-400\"\u003e인증서버에서 이를 처리하는 시스템 일체를 구축\u003c/span\u003e하는 것이 궁극적인 목표다.\u003c/p\u003e\n\u003cp\u003e인증 서버의 인증 방식은 \u003cspan class=\"primary\"\u003e인가 코드 승인 (Authorization Code Grant)\u003c/span\u003e을 취한다.\u003c/p\u003e\n\u003ch1 id=\"제원\"\u003e제원 \u003ca href=\"#제원\"\u003e🔗\u003c/a\u003e\u003c/h1\u003e\u003cp\u003e웹 페이지인 Frontend와 API 통신의 주체가 되는 인증서버인 Backend로 나뉜다.\u003c/p\u003e\n\u003ch2 id=\"Backend\"\u003eBackend \u003ca href=\"#Backend\"\u003e🔗\u003c/a\u003e\u003c/h2\u003e\u003cp\u003e\u003cb class=\"large green-600\"\u003e💬 Language\u003c/b\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://www.java.com/ko/\" target=\"_blank\"\u003e\u003cimg src=\"http://img.shields.io/badge/java-v16.0.2-007396?logo=java\u0026logoWidth=25\" alt=\"Java\"\u003e\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cb class=\"large green-600\"\u003e🧱 Framework\u003c/b\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://gradle.org/\" target=\"_blank\"\u003e\u003cimg src=\"https://img.shields.io/badge/gradle-02303A?logo=gradle\u0026logoWidth=25\" alt=\"Gradle\"\u003e\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003cimg src=\"https://img.shields.io/badge/jakarta.servlet--api-v5.0.0-blue\" alt=\"jakarta.servlet-api\"\u003e\u003c/li\u003e\n\u003cli\u003e\u003cimg src=\"https://img.shields.io/badge/lombok-v1.18.20-blue\" alt=\"lombok\"\u003e\u003c/li\u003e\n\u003cli\u003e\u003cimg src=\"https://img.shields.io/badge/jjwt-v0.9.1-blue\" alt=\"jjwt\"\u003e\u003c/li\u003e\n\u003cli\u003e\u003cimg src=\"https://img.shields.io/badge/scribejava--apis-v8.3.1-blue\" alt=\"scribejava-apis\"\u003e\u003c/li\u003e\n\u003cli\u003e\u003cimg src=\"https://img.shields.io/badge/jersey--server-v3.0.3-blue\" alt=\"jersey-server\"\u003e\u003c/li\u003e\n\u003cli\u003e\u003cimg src=\"https://img.shields.io/badge/jersey--container--servlet-v3.0.3-blue\" alt=\"jersey-container-servlet\"\u003e\u003c/li\u003e\n\u003cli\u003e\u003cimg src=\"https://img.shields.io/badge/jersey--hk2-v3.0.3-blue\" alt=\"jersey-hk2\"\u003e\u003c/li\u003e\n\u003cli\u003e\u003cimg src=\"https://img.shields.io/badge/jersey--media--json--jackson-v3.0.3-blue\" alt=\"jersey-media-json-jackson\"\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cb class=\"large green-600\"\u003e📦 Publish\u003c/b\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"http://tomcat.apache.org/\" target=\"_blank\"\u003e\u003cimg src=\"http://img.shields.io/badge/Tomcat-v10.0.12-F8DC75?logo=apachetomcat\u0026logoWidth=25\u0026logoColor=FFF\" alt=\"Tomcat\"\u003e\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://www.raspberrypi.org/\" target=\"_blank\"\u003e\u003cimg src=\"http://img.shields.io/badge/RaspberryPi-F00?logo=raspberrypi\u0026logoWidth=25\u0026logoColor=FFF\" alt=\"Raspberry Pi\"\u003e\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eJersey는 RESTful API 프레임워크, scribeJAVA는 OAuth 프레임워크다.\u003c/p\u003e\n\u003cp\u003eJersey 3는 Servlet 5.0 최신 스펙인 \u003ccode class=\"inline-code\"\u003ejakarta.*\u003c/code\u003e을 사용한다. 때문에 이를 구현한 Tomcat 10을 사용한다. Tomcat 10 미만 혹은 \u003ccode class=\"inline-code\"\u003ejakarta.*\u003c/code\u003e을 구현하지 않는 등 \u003cb class=\"red-600\"\u003e최신 서블릿 스펙을 사용할 수 없는 WAS의 경우 이 프로젝트는 배포할 수 없다.\u003c/b\u003e\u003c/p\u003e\n\u003ch2 id=\"Frontend\"\u003eFrontend \u003ca href=\"#Frontend\"\u003e🔗\u003c/a\u003e\u003c/h2\u003e\u003cp\u003e\u003cb class=\"large green-600\"\u003e💬 Language\u003c/b\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://developer.mozilla.org/ko/docs/Web/HTML\" target=\"_blank\"\u003e\u003cimg src=\"http://img.shields.io/badge/HTML5-E34F26?logo=html5\u0026logoWidth=25\u0026logoColor=FFF\" alt=\"HTML5\"\u003e\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://developer.mozilla.org/ko/docs/Web/JavaScript\" target=\"_blank\"\u003e\u003cimg src=\"http://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript\u0026logoWidth=25\u0026logoColor=000\" alt=\"JavaScript\"\u003e\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://developer.mozilla.org/ko/docs/Web/CSS\" target=\"_blank\"\u003e\u003cimg src=\"http://img.shields.io/badge/CSS3-1572B6?logo=css3\u0026logoWidth=25\" alt=\"CSS3\"\u003e\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cb class=\"large green-600\"\u003e🧱 Framework\u003c/b\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://eslint.org/\" target=\"_blank\"\u003e\u003cimg src=\"https://img.shields.io/badge/eslint-%5E7.32.0-4B32C3?logo=eslint\u0026logoWidth=25\" alt=\"eslint\"\u003e\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cb class=\"large green-600\"\u003e📦 Publish\u003c/b\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://pages.github.com/\" target=\"_blank\"\u003e\u003cimg src=\"http://img.shields.io/badge/GitHub%20Pages-000?logo=github\u0026logoWidth=25\u0026logoColor=FFF\" alt=\"GitHub\"\u003e\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e원래는 Raspberry Pi로 배포하고 있었으나, 굳이 그럴 필요가 없어서 GutHub Pages로 배포한다.\u003c/p\u003e\n\u003cp\u003eFrontend는 단순히 인증 서버와의 API 통신 및 정보 표출 정도만 수행하므로, React 같은 복잡한 기술은 최대한 지양하고 최대한 기본 기능으로만 구성했다.\u003c/p\u003e\n\u003ch1 id=\"구성\"\u003e구성 \u003ca href=\"#구성\"\u003e🔗\u003c/a\u003e\u003c/h1\u003e\u003cp\u003e인증서버는 크게 세 부분으로 나눌 수 있다.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode class=\"inline-code\"\u003econtroller\u003c/code\u003e - 지정한 URL의 요청을 받아 process에게 위임한다.\u003c/li\u003e\n\u003cli\u003e\u003ccode class=\"inline-code\"\u003eprocess\u003c/code\u003e - API의 동작을 수행하고, 응답을 생성한다\u003c/li\u003e\n\u003cli\u003e\u003ccode class=\"inline-code\"\u003emodule\u003c/code\u003e - API 동작 수행에 필요한 모듈\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e이는 패키지로 구분한다.\u003c/p\u003e\n\u003ch2 id=\"controller\"\u003econtroller \u003ca href=\"#controller\"\u003e🔗\u003c/a\u003e\u003c/h2\u003e\u003cp\u003eJersey 프레임워크는 \u003ccode class=\"inline-code\"\u003econtroller\u003c/code\u003e 영역에서 동작한다.\u003c/p\u003e\n\u003cp\u003e기존의 Servlet은 RESTful API를 설계하기위해 직접 구현해야할 부분이 존재한다.\u003c/p\u003e\n\u003cp\u003eRESTful API를 효과적으로 설계하기 위해 Jersey 프레임워크를 사용한다.\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"https://user-images.githubusercontent.com/50317129/137264829-4e703edf-e682-4793-a2b1-675056cba087.png\" alt=\"image\"\u003e\u003c/p\u003e\n\u003cp\u003econtroller는 \u003cspan class=\"primary\"\u003e정의된 process로 요청을 전달하고, process가 반환하는 응답을 요청자에게 다시 전달\u003c/span\u003e한다.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eGET \u003ccode class=\"inline-code\"\u003e/login/:platform\u003c/code\u003e - 플랫폼별 인증 URL 반환 API\u003c/li\u003e\n\u003cli\u003ePOST \u003ccode class=\"inline-code\"\u003e/login/:platform\u003c/code\u003e - 플랫폼별 로그인 API\u003c/li\u003e\n\u003cli\u003ePOST \u003ccode class=\"inline-code\"\u003e/login/auto\u003c/code\u003e - 자동 로그인 API\u003c/li\u003e\n\u003cli\u003ePOST \u003ccode class=\"inline-code\"\u003e/logout\u003c/code\u003e - 로그아웃 API\u003c/li\u003e\n\u003cli\u003eGET \u003ccode class=\"inline-code\"\u003e/userinfo\u003c/code\u003e - 유저 정보 반환 API\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e해당 프로젝트에선 위 \u003ccode class=\"inline-code\"\u003econtroller\u003c/code\u003e들이 구현될 것이다.\u003c/p\u003e\n\u003ch2 id=\"process\"\u003eprocess \u003ca href=\"#process\"\u003e🔗\u003c/a\u003e\u003c/h2\u003e\u003cp\u003e\u003ccode class=\"inline-code\"\u003eprocess\u003c/code\u003e에선 실제 로직이 구현되는 영역이다. 이 때 필요하다면 \u003ccode class=\"inline-code\"\u003emodule\u003c/code\u003e을 호출하기도 한다.\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"https://user-images.githubusercontent.com/50317129/137265824-a2652f3c-c32f-42cf-9b5e-8f523530895e.png\" alt=\"image\"\u003e\u003c/p\u003e\n\u003cp\u003e\u003ccode class=\"inline-code\"\u003eprocess\u003c/code\u003e는 \u003cspan class=\"primary\"\u003e수행 결과를 정해진 형식의 JSON을 기반으로 응답 객체\u003c/span\u003e를 만들어 \u003ccode class=\"inline-code\"\u003econtroller\u003c/code\u003e로 반환한다.\u003c/p\u003e\n\n\t\t\t\t\t\u003cdiv class=\"codeblock\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"top\"\u003e\n\t\t\t\t\t\t\t\u003cp\u003eJSON\u003c/p\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\t\u003cdiv\u003e\u003c/div\u003e\n\t\t\t\t\t\t\u003c/div\u003e\n\n\t\t\t\t\t\t\u003cbutton onclick=\"copyCode(this);\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 512\" data-icon=\"clipboard\" class=\"i-clipboard\"\u003e\u003cpath fill=\"currentColor\" d=\"M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z\"\u003e\u003c/path\u003e\u003c/svg\u003e\u003c/button\u003e\n\n\t\t\t\t\t\t\u003cpre class=\"language-json\"\u003e\u003ctable\u003e\u003ctbody\u003e\u003ctr data-number=0\u003e\u003ctd class=\"line-number\" data-number=\"0\"\u003e0\u003c/td\u003e\u003ctd class=\"line-code\" data-number=0\u003e\u003cspan class=\"token punctuation\"\u003e{\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=1\u003e\u003ctd class=\"line-number\" data-number=\"1\"\u003e1\u003c/td\u003e\u003ctd class=\"line-code\" data-number=1\u003e    flag\u003cspan class=\"token operator\"\u003e:\u003c/span\u003e \u003cspan class=\"token boolean\"\u003etrue\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e,\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=2\u003e\u003ctd class=\"line-number\" data-number=\"2\"\u003e2\u003c/td\u003e\u003ctd class=\"line-code\" data-number=2\u003e    title\u003cspan class=\"token operator\"\u003e:\u003c/span\u003e \u003cspan class=\"token string\"\u003e\"success\"\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e,\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=3\u003e\u003ctd class=\"line-number\" data-number=\"3\"\u003e3\u003c/td\u003e\u003ctd class=\"line-code\" data-number=3\u003e    message\u003cspan class=\"token operator\"\u003e:\u003c/span\u003e \u003cspan class=\"token string\"\u003e\"test api response success\"\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e,\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=4\u003e\u003ctd class=\"line-number\" data-number=\"4\"\u003e4\u003c/td\u003e\u003ctd class=\"line-code\" data-number=4\u003e    body\u003cspan class=\"token operator\"\u003e:\u003c/span\u003e \u003cspan class=\"token punctuation\"\u003e{\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=5\u003e\u003ctd class=\"line-number\" data-number=\"5\"\u003e5\u003c/td\u003e\u003ctd class=\"line-code\" data-number=5\u003e        key1\u003cspan class=\"token operator\"\u003e:\u003c/span\u003e \u003cspan class=\"token string\"\u003e\"value1\"\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e,\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=6\u003e\u003ctd class=\"line-number\" data-number=\"6\"\u003e6\u003c/td\u003e\u003ctd class=\"line-code\" data-number=6\u003e        key2\u003cspan class=\"token operator\"\u003e:\u003c/span\u003e \u003cspan class=\"token boolean\"\u003etrue\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e,\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=7\u003e\u003ctd class=\"line-number\" data-number=\"7\"\u003e7\u003c/td\u003e\u003ctd class=\"line-code\" data-number=7\u003e        key3\u003cspan class=\"token operator\"\u003e:\u003c/span\u003e \u003cspan class=\"token number\"\u003e4932\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e,\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=8\u003e\u003ctd class=\"line-number\" data-number=\"8\"\u003e8\u003c/td\u003e\u003ctd class=\"line-code\" data-number=8\u003e        key4\u003cspan class=\"token operator\"\u003e:\u003c/span\u003e \u003cspan class=\"token punctuation\"\u003e[\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=9\u003e\u003ctd class=\"line-number\" data-number=\"9\"\u003e9\u003c/td\u003e\u003ctd class=\"line-code\" data-number=9\u003e            \u003cspan class=\"token string\"\u003e\"A\"\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e,\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=10\u003e\u003ctd class=\"line-number\" data-number=\"10\"\u003e10\u003c/td\u003e\u003ctd class=\"line-code\" data-number=10\u003e            \u003cspan class=\"token string\"\u003e\"B\"\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e,\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=11\u003e\u003ctd class=\"line-number\" data-number=\"11\"\u003e11\u003c/td\u003e\u003ctd class=\"line-code\" data-number=11\u003e            \u003cspan class=\"token string\"\u003e\"C\"\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=12\u003e\u003ctd class=\"line-number\" data-number=\"12\"\u003e12\u003c/td\u003e\u003ctd class=\"line-code\" data-number=12\u003e        \u003cspan class=\"token punctuation\"\u003e]\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e,\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=13\u003e\u003ctd class=\"line-number\" data-number=\"13\"\u003e13\u003c/td\u003e\u003ctd class=\"line-code\" data-number=13\u003e        key5\u003cspan class=\"token operator\"\u003e:\u003c/span\u003e \u003cspan class=\"token number\"\u003e93.203\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=14\u003e\u003ctd class=\"line-number\" data-number=\"14\"\u003e14\u003c/td\u003e\u003ctd class=\"line-code\" data-number=14\u003e    \u003cspan class=\"token punctuation\"\u003e}\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\n\u003ctr data-number=15\u003e\u003ctd class=\"line-number\" data-number=\"15\"\u003e15\u003c/td\u003e\u003ctd class=\"line-code\" data-number=15\u003e\u003cspan class=\"token punctuation\"\u003e}\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/pre\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\n\t\t\t\u003cdiv class=\"table-wrapper\"\u003e\n\t\t\t\t\u003ctable\u003e\n\t\t\t\t\t\u003cthead\u003e\n\t\t\t\t\t\t\u003ctr\u003e\n\u003cth align=\"center\"\u003e파라미터\u003c/th\u003e\n\u003cth align=\"center\"\u003e필수 여부\u003c/th\u003e\n\u003cth align=\"center\"\u003e데이터 형식\u003c/th\u003e\n\u003cth align=\"center\"\u003e내용\u003c/th\u003e\n\u003c/tr\u003e\n\n\t\t\t\t\t\u003c/thead\u003e\n\n\t\t\t\t\t\u003ctbody\u003e\n\t\t\t\t\t\t\u003ctr\u003e\n\u003ctd align=\"center\"\u003eflag\u003c/td\u003e\n\u003ctd align=\"center\"\u003eY\u003c/td\u003e\n\u003ctd align=\"center\"\u003e\u003ccode class=\"inline-code\"\u003eboolean\u003c/code\u003e\u003c/td\u003e\n\u003ctd align=\"center\"\u003e응답 정상 여부\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd align=\"center\"\u003etitle\u003c/td\u003e\n\u003ctd align=\"center\"\u003eY\u003c/td\u003e\n\u003ctd align=\"center\"\u003e\u003ccode class=\"inline-code\"\u003eString\u003c/code\u003e\u003c/td\u003e\n\u003ctd align=\"center\"\u003e응답 제목\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd align=\"center\"\u003emessage\u003c/td\u003e\n\u003ctd align=\"center\"\u003eY\u003c/td\u003e\n\u003ctd align=\"center\"\u003e\u003ccode class=\"inline-code\"\u003eString\u003c/code\u003e\u003c/td\u003e\n\u003ctd align=\"center\"\u003e응답 메세지\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd align=\"center\"\u003ebody\u003c/td\u003e\n\u003ctd align=\"center\"\u003eY\u003c/td\u003e\n\u003ctd align=\"center\"\u003e\u003ccode class=\"inline-code\"\u003eString | Number | boolean | Array | Object\u003c/code\u003e\u003c/td\u003e\n\u003ctd align=\"center\"\u003e응답 정상 여부\u003c/td\u003e\n\u003c/tr\u003e\n\n\t\t\t\t\t\u003c/tbody\u003e\n\t\t\t\t\u003c/table\u003e\n\t\t\t\u003c/div\u003e\n\t\t\u003cp\u003e응답 명세는 위와 같다.\u003c/p\u003e\n\u003cp\u003e\u003ccode class=\"inline-code\"\u003eprocess\u003c/code\u003e는 GET, POST 등 HTTP Method에 따라 나누어 관리한다.\u003c/p\u003e\n\u003ch2 id=\"module\"\u003emodule \u003ca href=\"#module\"\u003e🔗\u003c/a\u003e\u003c/h2\u003e\u003cp\u003emodule은 여러 \u003ccode class=\"inline-code\"\u003eprocess\u003c/code\u003e에서 \u003cspan class=\"primary\"\u003e반복적으로 사용되는 로직의 모듈화를 구현한 객체\u003c/span\u003e다.\u003c/p\u003e\n\u003cp\u003e이 중 핵심 기능인 OAuth의 인증을 처리하는 모듈은 scribeJAVA 기반으로 작성된다.\u003c/p\u003e\n\u003cp\u003e로그인, 사용자 정보 요청 등 인증과 관련된 로직을 수행하는 \u003ccode class=\"inline-code\"\u003eprocess\u003c/code\u003e들은 모두 위 모듈을 호출하여 사용함으로써 중복 코드를 줄이고 유지보수성을 높인다.\u003c/p\u003e\n\u003ch1 id=\"OAuth-모듈\"\u003eOAuth 모듈 \u003ca href=\"#OAuth-모듈\"\u003e🔗\u003c/a\u003e\u003c/h1\u003e\u003cp\u003e이 프로젝트의 Backend에 가장 중요한 역할을 담당하는 모듈로, OAuth 인증을 구현한다.\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"https://user-images.githubusercontent.com/50317129/137314562-675ee988-0dad-4937-93a1-73753c2afee4.png\" alt=\"image\"\u003e\u003c/p\u003e\n\u003cp\u003e요즘은 어느정도 규모있는 플랫폼이라면 OAuth 서비스를 제공한다. 플랫폼은 달라도 OAuth를 준수한다면 모두 공통된 요청 받아 공통된 응답을 제공할 것이다. 공통 프로토콜을 사용하므로, 인증 모듈 하나를 만들어 모든 인증을 거기서 처리하면 될 것이다.\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"https://user-images.githubusercontent.com/50317129/137314573-599b1317-0e46-4698-ac65-04fef57933e8.png\" alt=\"image\"\u003e\u003c/p\u003e\n\u003cp\u003e하지만 문제가 하나 있다. 아무리 공통 프로토콜을 사용한다지만, \u003cspan class=\"red-400\"\u003e플랫폼마다 추가적인 파라미터 혹은 헤더를 요구\u003c/span\u003e하기도 한다. 조건문을 떡칠한다면 모를까, 고작 인증 모듈 하나에서 플랫폼별 요구사항을 하나하나 처리하기엔 문제가 많다. 조건문을 통한 분기 역시 유지보수적인 측면에서 그리 좋은 방식은 아니다.\u003c/p\u003e\n\u003cbr /\u003e\n\u003cbr /\u003e\n\n\u003cp\u003eOAuth는 객체라기보단 일종의 개념에 더 가깝다. 이렇게 추상적인 개념의 형태는 JAVA의 인터페이스 내지는 추상 객체가 적합하다.\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"https://user-images.githubusercontent.com/50317129/137314582-cf0c24f7-5ad3-42f8-a7d7-de19e59c8582.png\" alt=\"image\"\u003e\u003c/p\u003e\n\u003cp\u003e인증 모듈의 경우, 몇몇 플랫폼의 특이 사항으로 인해 문제가 발생하니, 기본적으로는 \u003cspan class=\"blue-600\"\u003e인증 모듈의 공통 로직을 사용하되, 추가적인 요구를 하는 플랫폼에 한해 로직을 변경하는 것이 효율적\u003c/span\u003e일 것이다. 따라서 인증 모듈은 인터페이스보단 추상 객체가 더 어울릴 것이다.\u003c/p\u003e\n\u003cp\u003e이렇게 인증 추상 모듈을 하나 생성하고, 각 소셜 플랫폼마다 인증 모듈을 상속받아 구현하게끔 설계하면 될 것이다.\u003c/p\u003e\n\u003cp\u003e문제가 없는 플랫폼은 기 선언된 인증 모듈의 메서드를 그대로 사용하고, \u003cspan class=\"blue-600\"\u003e추가 요구사항이 있는 플랫폼은 해당 플랫폼의 인증 모듈에서 메서드를 오버라이딩\u003c/span\u003e하여 요구사항에 맞게 재설계한다.\u003c/p\u003e\n\u003ch2 id=\"인증-모듈 기능\"\u003e인증 모듈 기능 \u003ca href=\"#인증-모듈 기능\"\u003e🔗\u003c/a\u003e\u003c/h2\u003e\u003cp\u003e구현해야할 기능은 아래와 같다.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e플랫폼 로그인 URL 생성 로직\u003c/li\u003e\n\u003cli\u003e서비스 로그인 로직 (인가코드 -\u003e Access Token)\u003c/li\u003e\n\u003cli\u003e자동 로그인 로직\u003c/li\u003e\n\u003cli\u003e로그아웃 로직\u003c/li\u003e\n\u003cli\u003e사용자 정보 호출 로직\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e최소한 위 기능이 구현되어야한다.\u003c/p\u003e\n\u003cp\u003e사용자 정보 호출의 경우, 플랫폼마다 주는 응답이 천차만별로 다르다.\u003c/p\u003e\n\u003cp\u003e사용자 정보는 OAuth로 전달받은 Access Token으로 Service Provider에 정보를 요청하여 받을 수 있다. OAuth는 어디까지나 인증을 받기 위한 표준 프로토콜로, \u003cspan class=\"red-400\"\u003e인증 토큰을 통해 수행하는 부가적인 활동에 대해서는 별다른 제약이 없으므로\u003c/span\u003e, Access Token 발급 이후의 API 요청 및 응답은 플랫폼마다 천차만별로 다르다.\u003c/p\u003e\n\u003cp\u003e때문에 사용자 정보 호출 로직의 경우, OAuth 표준 프로토콜에 구애받지 않는다. 이에 대응하기 위해 추상 메서드로 선언하여 각 모듈에서 응답을 정제하여 반환하도록 강제하자.\u003c/p\u003e\n\u003ch1 id=\"구조도\"\u003e구조도 \u003ca href=\"#구조도\"\u003e🔗\u003c/a\u003e\u003c/h1\u003e\u003cp\u003e\u003cimg src=\"https://user-images.githubusercontent.com/50317129/137319720-28a6d25b-6128-4873-bbb4-b0e0f5cce847.png\" alt=\"image\"\u003e\u003c/p\u003e\n\u003cp\u003eOAuth 모듈을 사용하는 API의 구조를 도식화하면 위와 같다.\u003c/p\u003e\n\u003cp\u003eJersey가 URL을 캐치하여 정해진 process로 전달한다. process는 인증을 수행하기 위해 해당 플랫폼의 OAuth 구현체를 호출하여 로직을 수행할 것이다. 이후 결과가 반환되어 사용자에게 전달되는 구조다.\u003c/p\u003e\n\u003ch1 id=\"정리\"\u003e정리 \u003ca href=\"#정리\"\u003e🔗\u003c/a\u003e\u003c/h1\u003e\u003cp\u003e지금까지 인증 서버에 대한 설계를 진행했다. 다음 장엔 기본적인 서버 구축을 진행하며, 특히 Jersey를 통한 RESTful API의 틀을 구축한다.\u003c/p\u003e\n","url":["2021-10-14-oauth2-java-server-2","2021","10","14","oauth2-java-server-2"],"toc":[{"text":"개요","tag":"개요","depth":1},{"text":"제원","tag":"제원","depth":1},{"text":"Backend","tag":"Backend","depth":2},{"text":"Frontend","tag":"Frontend","depth":2},{"text":"구성","tag":"구성","depth":1},{"text":"controller","tag":"controller","depth":2},{"text":"process","tag":"process","depth":2},{"text":"module","tag":"module","depth":2},{"text":"OAuth 모듈","tag":"OAuth-모듈","depth":1},{"text":"인증 모듈 기능","tag":"인증-모듈 기능","depth":2},{"text":"구조도","tag":"구조도","depth":1},{"text":"정리","tag":"정리","depth":1}]},"hash":"9a45ddb35da"},"__N_SSG":true},"page":"/posts/[...url]","query":{"url":["2021","10","14","oauth2-java-server-2"]},"buildId":"96a7bJ8cwZvAvjqkOiLaO","isFallback":false,"gsp":true,"scriptLoader":[]}</script><div id="__next"><div class="MuiBox-root jss1 base-layout_root__1Ptru"><header class="MuiBox-root jss2"><header class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary header_bar-dark__2SzeA mui-fixed MuiPaper-elevation4"><div class="MuiToolbar-root MuiToolbar-regular header_toolbar__2DD_T MuiToolbar-gutters"><div class="MuiContainer-root MuiContainer-maxWidthLg"><div class="MuiBox-root jss3 header_inner__14FUw"><svg xmlns="http://www.w3.org/2000/svg" class="react header_logo__2l5K3" viewBox="0 0 3618.6 3618.6" width="48" height="48"><path class="st0" d="M0 0h3618.6v3618.6H0z"></path><circle class="st1" cx="1806.5" cy="1807.1" r="302.6"></circle><path class="st2" d="M1806.5 1191.9c406.2 0 783.6 58.3 1068.1 156.2 342.8 118 553.6 296.9 553.6 458.9 0 168.8-223.4 358.9-591.5 480.8-278.3 92.2-644.6 140.4-1030.2 140.4-395.4 0-769.7-45.2-1051.2-141.4-356.1-121.7-570.6-314.2-570.6-479.8 0-160.7 201.3-338.2 539.3-456 285.6-99.5 672.3-159.1 1082.5-159.1z"></path><path class="st2" d="M1271 1501.3c202.9-351.9 442-649.7 669-847.2 273.5-238 533.8-331.2 674.1-250.3 146.2 84.3 199.3 372.8 121 752.7-59.2 287.2-200.4 628.5-393.1 962.6-197.5 342.5-423.7 644.2-647.6 840-283.3 247.7-557.3 337.3-700.7 254.6-139.2-80.3-192.4-343.3-125.7-695 56.4-297.4 198-662.1 403-1017.4z"></path><path class="st2" d="M1271.5 2119.8c-203.5-351.6-342.1-707.4-399.9-1002.7-69.6-355.8-20.4-627.9 119.8-709 146.1-84.6 422.5 13.5 712.5 271 219.3 194.7 444.4 487.5 637.6 821.3 198.1 342.2 346.6 688.8 404.3 980.5 73.1 369.2 13.9 651.3-129.4 734.2-139.1 80.5-393.5-4.7-664.9-238.2-229.2-197.3-474.5-502.1-680-857.1z"></path></svg><h4 class="MuiTypography-root header_title__1ED08 MuiTypography-h4">𝝅번째 알파카의 개발 낙서장</h4><div class="MuiBox-root jss4 menulist_root__1rZDb"><button class="MuiButtonBase-root MuiIconButton-root menulist_item__2pVJC" tabindex="0" type="button" aria-label="Welcome"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></span></button><button class="MuiButtonBase-root MuiIconButton-root menulist_item__2pVJC" tabindex="0" type="button" aria-label="Posts"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"></path></svg></span></button><button class="MuiButtonBase-root MuiIconButton-root menulist_item__2pVJC" tabindex="0" type="button" aria-label="Projects"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"></path></svg></span></button><button class="MuiButtonBase-root MuiIconButton-root menulist_item__2pVJC" tabindex="0" type="button" aria-label="About"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg></span></button></div></div></div></div></header></header><div class="MuiBox-root jss5 base-layout_main__hyW3q"><section class="MuiBox-root jss6"><div class="MuiBox-root jss7 screener_root__1bpT8"><div class="MuiBox-root jss8 screener_image-wrapper__1H4oX"><div class="screener_image-basic__2aIiL"></div></div><h1 class="MuiTypography-root screener_title__3mYUP MuiTypography-body1 MuiTypography-alignCenter">[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 2. 인증서버 설계하기</h1><h3 class="MuiTypography-root screener_lower__1iaX7 MuiTypography-body1 MuiTypography-alignCenter">JAVA</h3></div><div class="MuiBox-root jss9"><div class="MuiBox-root jss10"><div class="MuiContainer-root MuiContainer-maxWidthMd"><div class="MuiBox-root jss11 contenttoc_toc-dark__OVber"><h2 class="MuiTypography-root MuiTypography-h2 MuiTypography-alignCenter">Table of Contents</h2><div><ul><li><a href="#개요">개요</a></li><li><a href="#제원">제원</a></li><ul><li><a href="#Backend">Backend</a></li><li><a href="#Frontend">Frontend</a></li></ul><li><a href="#구성">구성</a></li><ul><li><a href="#controller">controller</a></li><li><a href="#process">process</a></li><li><a href="#module">module</a></li></ul><li><a href="#OAuth-모듈">OAuth 모듈</a></li><ul><li><a href="#인증-모듈 기능">인증 모듈 기능</a></li></ul><li><a href="#구조도">구조도</a></li><li><a href="#정리">정리</a></li></ul></div></div><img class="hits_counter__SEbF4" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fblog.itcode.dev%2Fposts%2F2021-10-14-oauth2-java-server-2%2F2021%2F10%2F14%2Foauth2-java-server-2&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=react.svg&amp;icon_color=%2348CAF7&amp;title=hits&amp;edge_flat=false"/><div class="markdown dark"><h1 id="개요">개요 <a href="#개요">🔗</a></h1><p>OAuth2.0 프로토콜에 대한 사전 지식도 얻었으니, 이를 통해 인증서버를 직접 구축해보자.</p>
+<p>Frontend, Backend 부분으로 나누어 웹 페이지를 통해 <span class="red-400">소셜 로그인을 수행</span>하고, 직접 구현한 <span class="red-400">인증서버에서 이를 처리하는 시스템 일체를 구축</span>하는 것이 궁극적인 목표다.</p>
+<p>인증 서버의 인증 방식은 <span class="primary">인가 코드 승인 (Authorization Code Grant)</span>을 취한다.</p>
+<h1 id="제원">제원 <a href="#제원">🔗</a></h1><p>웹 페이지인 Frontend와 API 통신의 주체가 되는 인증서버인 Backend로 나뉜다.</p>
+<h2 id="Backend">Backend <a href="#Backend">🔗</a></h2><p><b class="large green-600">💬 Language</b></p>
+<ul>
+<li><a href="https://www.java.com/ko/" target="_blank"><img src="http://img.shields.io/badge/java-v16.0.2-007396?logo=java&logoWidth=25" alt="Java"></a></li>
+</ul>
+<p><b class="large green-600">🧱 Framework</b></p>
+<ul>
+<li><a href="https://gradle.org/" target="_blank"><img src="https://img.shields.io/badge/gradle-02303A?logo=gradle&logoWidth=25" alt="Gradle"></a></li>
+<li><img src="https://img.shields.io/badge/jakarta.servlet--api-v5.0.0-blue" alt="jakarta.servlet-api"></li>
+<li><img src="https://img.shields.io/badge/lombok-v1.18.20-blue" alt="lombok"></li>
+<li><img src="https://img.shields.io/badge/jjwt-v0.9.1-blue" alt="jjwt"></li>
+<li><img src="https://img.shields.io/badge/scribejava--apis-v8.3.1-blue" alt="scribejava-apis"></li>
+<li><img src="https://img.shields.io/badge/jersey--server-v3.0.3-blue" alt="jersey-server"></li>
+<li><img src="https://img.shields.io/badge/jersey--container--servlet-v3.0.3-blue" alt="jersey-container-servlet"></li>
+<li><img src="https://img.shields.io/badge/jersey--hk2-v3.0.3-blue" alt="jersey-hk2"></li>
+<li><img src="https://img.shields.io/badge/jersey--media--json--jackson-v3.0.3-blue" alt="jersey-media-json-jackson"></li>
+</ul>
+<p><b class="large green-600">📦 Publish</b></p>
+<ul>
+<li><a href="http://tomcat.apache.org/" target="_blank"><img src="http://img.shields.io/badge/Tomcat-v10.0.12-F8DC75?logo=apachetomcat&logoWidth=25&logoColor=FFF" alt="Tomcat"></a></li>
+<li><a href="https://www.raspberrypi.org/" target="_blank"><img src="http://img.shields.io/badge/RaspberryPi-F00?logo=raspberrypi&logoWidth=25&logoColor=FFF" alt="Raspberry Pi"></a></li>
+</ul>
+<p>Jersey는 RESTful API 프레임워크, scribeJAVA는 OAuth 프레임워크다.</p>
+<p>Jersey 3는 Servlet 5.0 최신 스펙인 <code class="inline-code">jakarta.*</code>을 사용한다. 때문에 이를 구현한 Tomcat 10을 사용한다. Tomcat 10 미만 혹은 <code class="inline-code">jakarta.*</code>을 구현하지 않는 등 <b class="red-600">최신 서블릿 스펙을 사용할 수 없는 WAS의 경우 이 프로젝트는 배포할 수 없다.</b></p>
+<h2 id="Frontend">Frontend <a href="#Frontend">🔗</a></h2><p><b class="large green-600">💬 Language</b></p>
+<ul>
+<li><a href="https://developer.mozilla.org/ko/docs/Web/HTML" target="_blank"><img src="http://img.shields.io/badge/HTML5-E34F26?logo=html5&logoWidth=25&logoColor=FFF" alt="HTML5"></a></li>
+<li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript" target="_blank"><img src="http://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoWidth=25&logoColor=000" alt="JavaScript"></a></li>
+<li><a href="https://developer.mozilla.org/ko/docs/Web/CSS" target="_blank"><img src="http://img.shields.io/badge/CSS3-1572B6?logo=css3&logoWidth=25" alt="CSS3"></a></li>
+</ul>
+<p><b class="large green-600">🧱 Framework</b></p>
+<ul>
+<li><a href="https://eslint.org/" target="_blank"><img src="https://img.shields.io/badge/eslint-%5E7.32.0-4B32C3?logo=eslint&logoWidth=25" alt="eslint"></a></li>
+</ul>
+<p><b class="large green-600">📦 Publish</b></p>
+<ul>
+<li><a href="https://pages.github.com/" target="_blank"><img src="http://img.shields.io/badge/GitHub%20Pages-000?logo=github&logoWidth=25&logoColor=FFF" alt="GitHub"></a></li>
+</ul>
+<p>원래는 Raspberry Pi로 배포하고 있었으나, 굳이 그럴 필요가 없어서 GutHub Pages로 배포한다.</p>
+<p>Frontend는 단순히 인증 서버와의 API 통신 및 정보 표출 정도만 수행하므로, React 같은 복잡한 기술은 최대한 지양하고 최대한 기본 기능으로만 구성했다.</p>
+<h1 id="구성">구성 <a href="#구성">🔗</a></h1><p>인증서버는 크게 세 부분으로 나눌 수 있다.</p>
+<ul>
+<li><code class="inline-code">controller</code> - 지정한 URL의 요청을 받아 process에게 위임한다.</li>
+<li><code class="inline-code">process</code> - API의 동작을 수행하고, 응답을 생성한다</li>
+<li><code class="inline-code">module</code> - API 동작 수행에 필요한 모듈</li>
+</ul>
+<p>이는 패키지로 구분한다.</p>
+<h2 id="controller">controller <a href="#controller">🔗</a></h2><p>Jersey 프레임워크는 <code class="inline-code">controller</code> 영역에서 동작한다.</p>
+<p>기존의 Servlet은 RESTful API를 설계하기위해 직접 구현해야할 부분이 존재한다.</p>
+<p>RESTful API를 효과적으로 설계하기 위해 Jersey 프레임워크를 사용한다.</p>
+<p><img src="https://user-images.githubusercontent.com/50317129/137264829-4e703edf-e682-4793-a2b1-675056cba087.png" alt="image"></p>
+<p>controller는 <span class="primary">정의된 process로 요청을 전달하고, process가 반환하는 응답을 요청자에게 다시 전달</span>한다.</p>
+<ul>
+<li>GET <code class="inline-code">/login/:platform</code> - 플랫폼별 인증 URL 반환 API</li>
+<li>POST <code class="inline-code">/login/:platform</code> - 플랫폼별 로그인 API</li>
+<li>POST <code class="inline-code">/login/auto</code> - 자동 로그인 API</li>
+<li>POST <code class="inline-code">/logout</code> - 로그아웃 API</li>
+<li>GET <code class="inline-code">/userinfo</code> - 유저 정보 반환 API</li>
+</ul>
+<p>해당 프로젝트에선 위 <code class="inline-code">controller</code>들이 구현될 것이다.</p>
+<h2 id="process">process <a href="#process">🔗</a></h2><p><code class="inline-code">process</code>에선 실제 로직이 구현되는 영역이다. 이 때 필요하다면 <code class="inline-code">module</code>을 호출하기도 한다.</p>
+<p><img src="https://user-images.githubusercontent.com/50317129/137265824-a2652f3c-c32f-42cf-9b5e-8f523530895e.png" alt="image"></p>
+<p><code class="inline-code">process</code>는 <span class="primary">수행 결과를 정해진 형식의 JSON을 기반으로 응답 객체</span>를 만들어 <code class="inline-code">controller</code>로 반환한다.</p>
+
+					<div class="codeblock">
+						<div class="top">
+							<p>JSON</p>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+
+						<button onclick="copyCode(this);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-icon="clipboard" class="i-clipboard"><path fill="currentColor" d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z"></path></svg></button>
+
+						<pre class="language-json"><table><tbody><tr data-number=0><td class="line-number" data-number="0">0</td><td class="line-code" data-number=0><span class="token punctuation">{</span></td></tr>
+<tr data-number=1><td class="line-number" data-number="1">1</td><td class="line-code" data-number=1>    flag<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span></td></tr>
+<tr data-number=2><td class="line-number" data-number="2">2</td><td class="line-code" data-number=2>    title<span class="token operator">:</span> <span class="token string">"success"</span><span class="token punctuation">,</span></td></tr>
+<tr data-number=3><td class="line-number" data-number="3">3</td><td class="line-code" data-number=3>    message<span class="token operator">:</span> <span class="token string">"test api response success"</span><span class="token punctuation">,</span></td></tr>
+<tr data-number=4><td class="line-number" data-number="4">4</td><td class="line-code" data-number=4>    body<span class="token operator">:</span> <span class="token punctuation">{</span></td></tr>
+<tr data-number=5><td class="line-number" data-number="5">5</td><td class="line-code" data-number=5>        key1<span class="token operator">:</span> <span class="token string">"value1"</span><span class="token punctuation">,</span></td></tr>
+<tr data-number=6><td class="line-number" data-number="6">6</td><td class="line-code" data-number=6>        key2<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span></td></tr>
+<tr data-number=7><td class="line-number" data-number="7">7</td><td class="line-code" data-number=7>        key3<span class="token operator">:</span> <span class="token number">4932</span><span class="token punctuation">,</span></td></tr>
+<tr data-number=8><td class="line-number" data-number="8">8</td><td class="line-code" data-number=8>        key4<span class="token operator">:</span> <span class="token punctuation">[</span></td></tr>
+<tr data-number=9><td class="line-number" data-number="9">9</td><td class="line-code" data-number=9>            <span class="token string">"A"</span><span class="token punctuation">,</span></td></tr>
+<tr data-number=10><td class="line-number" data-number="10">10</td><td class="line-code" data-number=10>            <span class="token string">"B"</span><span class="token punctuation">,</span></td></tr>
+<tr data-number=11><td class="line-number" data-number="11">11</td><td class="line-code" data-number=11>            <span class="token string">"C"</span></td></tr>
+<tr data-number=12><td class="line-number" data-number="12">12</td><td class="line-code" data-number=12>        <span class="token punctuation">]</span><span class="token punctuation">,</span></td></tr>
+<tr data-number=13><td class="line-number" data-number="13">13</td><td class="line-code" data-number=13>        key5<span class="token operator">:</span> <span class="token number">93.203</span></td></tr>
+<tr data-number=14><td class="line-number" data-number="14">14</td><td class="line-code" data-number=14>    <span class="token punctuation">}</span></td></tr>
+<tr data-number=15><td class="line-number" data-number="15">15</td><td class="line-code" data-number=15><span class="token punctuation">}</span></td></tr></tbody></table></pre>
+					</div>
+				
+			<div class="table-wrapper">
+				<table>
+					<thead>
+						<tr>
+<th align="center">파라미터</th>
+<th align="center">필수 여부</th>
+<th align="center">데이터 형식</th>
+<th align="center">내용</th>
+</tr>
+
+					</thead>
+
+					<tbody>
+						<tr>
+<td align="center">flag</td>
+<td align="center">Y</td>
+<td align="center"><code class="inline-code">boolean</code></td>
+<td align="center">응답 정상 여부</td>
+</tr>
+<tr>
+<td align="center">title</td>
+<td align="center">Y</td>
+<td align="center"><code class="inline-code">String</code></td>
+<td align="center">응답 제목</td>
+</tr>
+<tr>
+<td align="center">message</td>
+<td align="center">Y</td>
+<td align="center"><code class="inline-code">String</code></td>
+<td align="center">응답 메세지</td>
+</tr>
+<tr>
+<td align="center">body</td>
+<td align="center">Y</td>
+<td align="center"><code class="inline-code">String | Number | boolean | Array | Object</code></td>
+<td align="center">응답 정상 여부</td>
+</tr>
+
+					</tbody>
+				</table>
+			</div>
+		<p>응답 명세는 위와 같다.</p>
+<p><code class="inline-code">process</code>는 GET, POST 등 HTTP Method에 따라 나누어 관리한다.</p>
+<h2 id="module">module <a href="#module">🔗</a></h2><p>module은 여러 <code class="inline-code">process</code>에서 <span class="primary">반복적으로 사용되는 로직의 모듈화를 구현한 객체</span>다.</p>
+<p>이 중 핵심 기능인 OAuth의 인증을 처리하는 모듈은 scribeJAVA 기반으로 작성된다.</p>
+<p>로그인, 사용자 정보 요청 등 인증과 관련된 로직을 수행하는 <code class="inline-code">process</code>들은 모두 위 모듈을 호출하여 사용함으로써 중복 코드를 줄이고 유지보수성을 높인다.</p>
+<h1 id="OAuth-모듈">OAuth 모듈 <a href="#OAuth-모듈">🔗</a></h1><p>이 프로젝트의 Backend에 가장 중요한 역할을 담당하는 모듈로, OAuth 인증을 구현한다.</p>
+<p><img src="https://user-images.githubusercontent.com/50317129/137314562-675ee988-0dad-4937-93a1-73753c2afee4.png" alt="image"></p>
+<p>요즘은 어느정도 규모있는 플랫폼이라면 OAuth 서비스를 제공한다. 플랫폼은 달라도 OAuth를 준수한다면 모두 공통된 요청 받아 공통된 응답을 제공할 것이다. 공통 프로토콜을 사용하므로, 인증 모듈 하나를 만들어 모든 인증을 거기서 처리하면 될 것이다.</p>
+<p><img src="https://user-images.githubusercontent.com/50317129/137314573-599b1317-0e46-4698-ac65-04fef57933e8.png" alt="image"></p>
+<p>하지만 문제가 하나 있다. 아무리 공통 프로토콜을 사용한다지만, <span class="red-400">플랫폼마다 추가적인 파라미터 혹은 헤더를 요구</span>하기도 한다. 조건문을 떡칠한다면 모를까, 고작 인증 모듈 하나에서 플랫폼별 요구사항을 하나하나 처리하기엔 문제가 많다. 조건문을 통한 분기 역시 유지보수적인 측면에서 그리 좋은 방식은 아니다.</p>
+<br />
+<br />
+
+<p>OAuth는 객체라기보단 일종의 개념에 더 가깝다. 이렇게 추상적인 개념의 형태는 JAVA의 인터페이스 내지는 추상 객체가 적합하다.</p>
+<p><img src="https://user-images.githubusercontent.com/50317129/137314582-cf0c24f7-5ad3-42f8-a7d7-de19e59c8582.png" alt="image"></p>
+<p>인증 모듈의 경우, 몇몇 플랫폼의 특이 사항으로 인해 문제가 발생하니, 기본적으로는 <span class="blue-600">인증 모듈의 공통 로직을 사용하되, 추가적인 요구를 하는 플랫폼에 한해 로직을 변경하는 것이 효율적</span>일 것이다. 따라서 인증 모듈은 인터페이스보단 추상 객체가 더 어울릴 것이다.</p>
+<p>이렇게 인증 추상 모듈을 하나 생성하고, 각 소셜 플랫폼마다 인증 모듈을 상속받아 구현하게끔 설계하면 될 것이다.</p>
+<p>문제가 없는 플랫폼은 기 선언된 인증 모듈의 메서드를 그대로 사용하고, <span class="blue-600">추가 요구사항이 있는 플랫폼은 해당 플랫폼의 인증 모듈에서 메서드를 오버라이딩</span>하여 요구사항에 맞게 재설계한다.</p>
+<h2 id="인증-모듈 기능">인증 모듈 기능 <a href="#인증-모듈 기능">🔗</a></h2><p>구현해야할 기능은 아래와 같다.</p>
+<ul>
+<li>플랫폼 로그인 URL 생성 로직</li>
+<li>서비스 로그인 로직 (인가코드 -> Access Token)</li>
+<li>자동 로그인 로직</li>
+<li>로그아웃 로직</li>
+<li>사용자 정보 호출 로직</li>
+</ul>
+<p>최소한 위 기능이 구현되어야한다.</p>
+<p>사용자 정보 호출의 경우, 플랫폼마다 주는 응답이 천차만별로 다르다.</p>
+<p>사용자 정보는 OAuth로 전달받은 Access Token으로 Service Provider에 정보를 요청하여 받을 수 있다. OAuth는 어디까지나 인증을 받기 위한 표준 프로토콜로, <span class="red-400">인증 토큰을 통해 수행하는 부가적인 활동에 대해서는 별다른 제약이 없으므로</span>, Access Token 발급 이후의 API 요청 및 응답은 플랫폼마다 천차만별로 다르다.</p>
+<p>때문에 사용자 정보 호출 로직의 경우, OAuth 표준 프로토콜에 구애받지 않는다. 이에 대응하기 위해 추상 메서드로 선언하여 각 모듈에서 응답을 정제하여 반환하도록 강제하자.</p>
+<h1 id="구조도">구조도 <a href="#구조도">🔗</a></h1><p><img src="https://user-images.githubusercontent.com/50317129/137319720-28a6d25b-6128-4873-bbb4-b0e0f5cce847.png" alt="image"></p>
+<p>OAuth 모듈을 사용하는 API의 구조를 도식화하면 위와 같다.</p>
+<p>Jersey가 URL을 캐치하여 정해진 process로 전달한다. process는 인증을 수행하기 위해 해당 플랫폼의 OAuth 구현체를 호출하여 로직을 수행할 것이다. 이후 결과가 반환되어 사용자에게 전달되는 구조다.</p>
+<h1 id="정리">정리 <a href="#정리">🔗</a></h1><p>지금까지 인증 서버에 대한 설계를 진행했다. 다음 장엔 기본적인 서버 구축을 진행하며, 특히 Jersey를 통한 RESTful API의 틀을 구축한다.</p>
+</div><article class="MuiBox-root jss12 contentgroup_root__393Yi"><h4 class="MuiTypography-root contentgroup_title__14YEL MuiTypography-h4">🧲 연관 게시물 - <!-- -->OAuth2.0 인증서버 구축기</h4><div class="MuiBox-root jss13 contentgroup_list__1HHxc"><div class="MuiBox-root jss14 contentgroup_item__1sEJk"><button class="MuiButtonBase-root contentgroup_button__1Zz1J" tabindex="0" type="button"><img src="https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png"/><div class="MuiBox-root jss15 contentgroup_label-wrapper__3L-So"><p class="MuiTypography-root contentgroup_label__5f_Ku MuiTypography-body1">[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 1. OAuth2.0이란?</p></div></button></div></div></article><article class="MuiBox-root jss16 contentmeta_root__2CAt-"><div class="MuiBox-root jss17 contentmeta_item__1SXyL"><p class="MuiTypography-root contentmeta_text__1TBw9 MuiTypography-body1">📆 작성일</p><p class="MuiTypography-root contentmeta_text__1TBw9 MuiTypography-body1">2021-10-14 Thu 22:12:25</p></div><div class="MuiBox-root jss18 contentmeta_item__1SXyL"><p class="MuiTypography-root contentmeta_text__1TBw9 MuiTypography-body1">📚 카테고리</p><div class="MuiBox-root jss19"><div class="MuiAvatar-root MuiAvatar-circular"><img alt="JAVA" src="https://user-images.githubusercontent.com/50317129/132937204-99bf52ed-2cea-4530-ad5b-1cc421ebcc94.png" class="MuiAvatar-img"/></div><p class="MuiTypography-root contentmeta_link__3BUNg MuiTypography-body1">JAVA</p></div></div><div class="MuiBox-root jss20 contentmeta_item__1SXyL"><p class="MuiTypography-root contentmeta_text__1TBw9 MuiTypography-body1">🏷️ 태그</p><div class="MuiBox-root jss21"><div class="MuiButtonBase-root MuiChip-root contenttags_root__x5Yka MuiChip-clickable" tabindex="0" role="button"><span class="MuiChip-label">JAVA</span></div><div class="MuiButtonBase-root MuiChip-root contenttags_root__x5Yka MuiChip-clickable" tabindex="0" role="button"><span class="MuiChip-label">OAuth2.0</span></div></div></div></article><article class="MuiBox-root jss22 contentmover_root__B7rpT"><div class="MuiBox-root jss23"><button class="MuiButtonBase-root contentmover_button-dark__3zOui" tabindex="0" type="button"><div class="MuiBox-root jss24">[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 1. OAuth2.0이란?</div></button></div><hr class="MuiDivider-root contentmover_divider__14jgu"/><div class="MuiBox-root jss25"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined contentmover_menu__E6t4v" tabindex="0" type="button"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span>목록</span></button></div></article><article class="MuiBox-root jss26 utterances_root__33E-l" id="utterances"></article></div></div></div></section><article class="MuiBox-root jss27 loading_root-dark__1hj21" id="loading"><div class="MuiBox-root jss28 loading_logo-wrap__tM-JH"><svg xmlns="http://www.w3.org/2000/svg" class="react loading_logo__1Ukqu" viewBox="0 0 3618.6 3618.6" width="" height=""><path class="st0" d="M0 0h3618.6v3618.6H0z"></path><circle class="st1" cx="1806.5" cy="1807.1" r="302.6"></circle><path class="st2" d="M1806.5 1191.9c406.2 0 783.6 58.3 1068.1 156.2 342.8 118 553.6 296.9 553.6 458.9 0 168.8-223.4 358.9-591.5 480.8-278.3 92.2-644.6 140.4-1030.2 140.4-395.4 0-769.7-45.2-1051.2-141.4-356.1-121.7-570.6-314.2-570.6-479.8 0-160.7 201.3-338.2 539.3-456 285.6-99.5 672.3-159.1 1082.5-159.1z"></path><path class="st2" d="M1271 1501.3c202.9-351.9 442-649.7 669-847.2 273.5-238 533.8-331.2 674.1-250.3 146.2 84.3 199.3 372.8 121 752.7-59.2 287.2-200.4 628.5-393.1 962.6-197.5 342.5-423.7 644.2-647.6 840-283.3 247.7-557.3 337.3-700.7 254.6-139.2-80.3-192.4-343.3-125.7-695 56.4-297.4 198-662.1 403-1017.4z"></path><path class="st2" d="M1271.5 2119.8c-203.5-351.6-342.1-707.4-399.9-1002.7-69.6-355.8-20.4-627.9 119.8-709 146.1-84.6 422.5 13.5 712.5 271 219.3 194.7 444.4 487.5 637.6 821.3 198.1 342.2 346.6 688.8 404.3 980.5 73.1 369.2 13.9 651.3-129.4 734.2-139.1 80.5-393.5-4.7-664.9-238.2-229.2-197.3-474.5-502.1-680-857.1z"></path></svg></div></article><button class="MuiButtonBase-root MuiFab-root theme-switch_switch-light__RM7lW MuiFab-extended" tabindex="0" type="button" aria-label="to Light"><span class="MuiFab-label"><svg class="MuiSvgIcon-root theme-switch_icon-light__2l3wJ" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.79 1.42-1.41zM4 10.5H1v2h3v-2zm9-9.95h-2V3.5h2V.55zm7.45 3.91l-1.41-1.41-1.79 1.79 1.41 1.41 1.79-1.79zm-3.21 13.7l1.79 1.8 1.41-1.41-1.8-1.79-1.4 1.4zM20 10.5v2h3v-2h-3zm-8-5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm-1 16.95h2V19.5h-2v2.95zm-7.45-3.91l1.41 1.41 1.79-1.8-1.41-1.41-1.79 1.8z"></path></svg><span class="MuiBox-root jss29 theme-switch_switch-text__1PmvR">라이트 모드로 보기</span></span></button><footer class="MuiBox-root jss30 footer_root__1UV7X"><div class="MuiBox-root jss31 footer_line__3X56J"><hr class="MuiDivider-root"/><div class="MuiAvatar-root MuiAvatar-circular footer_logo__WzNb4"><img alt="𝝅번째 알파카의 개발 낙서장" src="/img/profile.jpg" class="MuiAvatar-img"/></div><hr class="MuiDivider-root"/></div><div class="MuiBox-root jss32 footer_buttons__3Omuq"><button class="MuiButtonBase-root MuiIconButton-root footer_github__3SNn3" tabindex="0" type="button"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></span></button><button class="MuiButtonBase-root MuiIconButton-root footer_mail__C8TMD" tabindex="0" type="button"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg></span></button><button class="MuiButtonBase-root MuiIconButton-root footer_rss__3ZVCK" tabindex="0" type="button"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.18" cy="17.82" r="2.18"></circle><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"></path></svg></span></button></div><img class="hits_counter__SEbF4" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fblog.itcode.dev&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=react.svg&amp;icon_color=%2348CAF7&amp;title=hits&amp;edge_flat=false"/><p class="MuiTypography-root footer_text__2kr9z MuiTypography-body1 MuiTypography-alignCenter">💻 Copyright ⓒ RWB 2021.05</p><p class="MuiTypography-root footer_text__2kr9z MuiTypography-body1 MuiTypography-alignCenter">9a45ddb35da</p></footer></div></div></div></body></html>

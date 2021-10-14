@@ -3,37 +3,37 @@
 	<url>
 		<loc>https://blog.itcode.dev/404.html</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-13T17:09:34.421Z</lastmod>
+		<lastmod>2021-10-14T16:46:38.381Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/500.html</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-13T17:09:34.421Z</lastmod>
+		<lastmod>2021-10-14T16:46:38.382Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-13T17:09:34.421Z</lastmod>
+		<lastmod>2021-10-14T16:46:38.382Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/about.html</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-13T17:09:34.421Z</lastmod>
+		<lastmod>2021-10-14T16:46:38.382Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/posts.html</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-13T17:09:34.421Z</lastmod>
+		<lastmod>2021-10-14T16:46:38.382Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/projects.html</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-13T17:09:34.421Z</lastmod>
+		<lastmod>2021-10-14T16:46:38.382Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
@@ -478,6 +478,12 @@
 		<loc>https://blog.itcode.dev/posts/2021/10/14/oauth2-java-server-1.html</loc>
 		<priority>1.0</priority>
 		<lastmod>2021-10-13T15:56:31.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/10/14/oauth2-java-server-2.html</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-10-14T13:12:25.000Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 </urlset>

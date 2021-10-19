@@ -3,37 +3,37 @@
 	<url>
 		<loc>https://blog.itcode.dev/404</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-14T16:46:38.381Z</lastmod>
+		<lastmod>2021-10-19T16:52:00.621Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/500</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-14T16:46:38.382Z</lastmod>
+		<lastmod>2021-10-19T16:52:00.621Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-14T16:46:38.382Z</lastmod>
+		<lastmod>2021-10-19T16:52:00.621Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/about</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-14T16:46:38.382Z</lastmod>
-		<changefreq>always</changefreq>
-	</url>
-	<url>
-		<loc>https://blog.itcode.dev/posts</loc>
-		<priority>1.0</priority>
-		<lastmod>2021-10-14T16:46:38.382Z</lastmod>
+		<lastmod>2021-10-19T16:52:00.621Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/projects</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-14T16:46:38.382Z</lastmod>
+		<lastmod>2021-10-19T16:52:00.621Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-10-19T16:52:00.621Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
@@ -484,6 +484,12 @@
 		<loc>https://blog.itcode.dev/posts/2021/10/14/oauth2-java-server-2</loc>
 		<priority>1.0</priority>
 		<lastmod>2021-10-14T13:12:25.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/10/20/oauth2-java-server-3</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-10-19T16:26:40.000Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 </urlset>

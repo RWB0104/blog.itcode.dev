@@ -10,41 +10,41 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next-seo.js</generator>
 		<pubDate>Wed, 26 May 2021 14:36:57 GMT</pubDate>
-		<lastBuildDate>Thu, 14 Oct 2021 16:46:38 GMT</lastBuildDate>
+		<lastBuildDate>Tue, 19 Oct 2021 16:52:00 GMT</lastBuildDate>
 		<item>
 			<title>./pages/404.tsx</title>
 			<description>./pages/404.tsx</description>
-			<pubDate>Thu, 14 Oct 2021 16:46:38 GMT</pubDate>
+			<pubDate>Tue, 19 Oct 2021 16:52:00 GMT</pubDate>
 			<link>https://blog.itcode.dev/404</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/404</guid>
 		</item>
 		<item>
 			<title>./pages/500.tsx</title>
 			<description>./pages/500.tsx</description>
-			<pubDate>Thu, 14 Oct 2021 16:46:38 GMT</pubDate>
+			<pubDate>Tue, 19 Oct 2021 16:52:00 GMT</pubDate>
 			<link>https://blog.itcode.dev/500</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/500</guid>
 		</item>
 		<item>
 			<title>./pages/about/index.tsx</title>
 			<description>./pages/about/index.tsx</description>
-			<pubDate>Thu, 14 Oct 2021 16:46:38 GMT</pubDate>
+			<pubDate>Tue, 19 Oct 2021 16:52:00 GMT</pubDate>
 			<link>https://blog.itcode.dev/about</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/about</guid>
 		</item>
 		<item>
-			<title>./pages/posts/index.tsx</title>
-			<description>./pages/posts/index.tsx</description>
-			<pubDate>Thu, 14 Oct 2021 16:46:38 GMT</pubDate>
-			<link>https://blog.itcode.dev/posts</link>
-			<guid isPermaLink="true">https://blog.itcode.dev/posts</guid>
-		</item>
-		<item>
 			<title>./pages/projects/index.tsx</title>
 			<description>./pages/projects/index.tsx</description>
-			<pubDate>Thu, 14 Oct 2021 16:46:38 GMT</pubDate>
+			<pubDate>Tue, 19 Oct 2021 16:52:00 GMT</pubDate>
 			<link>https://blog.itcode.dev/projects</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects</guid>
+		</item>
+		<item>
+			<title>./pages/posts/index.tsx</title>
+			<description>./pages/posts/index.tsx</description>
+			<pubDate>Tue, 19 Oct 2021 16:52:00 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts</guid>
 		</item>
 		<item>
 			<title>Jekyll에서 Next.js로</title>
@@ -908,6 +908,16 @@
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/10/14/oauth2-java-server-2</guid>
 			<category>JAVA</category>
 			<category>OAuth2.0</category>
+		</item>
+		<item>
+			<title>[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 3. scribeJAVA로 OAuth2.0 인증 모듈 구현하기</title>
+			<description>OAuth 라이브러리인 scribeJAVA를 통해 인증 모듈을 구현해보자.</description>
+			<pubDate>Tue, 19 Oct 2021 16:26:40 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/10/20/oauth2-java-server-3</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/10/20/oauth2-java-server-3</guid>
+			<category>JAVA</category>
+			<category>OAuth2.0</category>
+			<category>Jersey</category>
 		</item>
 	</channel>
 </rss>

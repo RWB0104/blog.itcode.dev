@@ -3,37 +3,37 @@
 	<url>
 		<loc>https://blog.itcode.dev/404</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-19T16:52:00.621Z</lastmod>
+		<lastmod>2021-10-22T20:09:38.294Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/500</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-19T16:52:00.621Z</lastmod>
+		<lastmod>2021-10-22T20:09:38.294Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-19T16:52:00.621Z</lastmod>
+		<lastmod>2021-10-22T20:09:38.294Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/about</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-19T16:52:00.621Z</lastmod>
-		<changefreq>always</changefreq>
-	</url>
-	<url>
-		<loc>https://blog.itcode.dev/projects</loc>
-		<priority>1.0</priority>
-		<lastmod>2021-10-19T16:52:00.621Z</lastmod>
+		<lastmod>2021-10-22T20:09:38.294Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/posts</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-19T16:52:00.621Z</lastmod>
+		<lastmod>2021-10-22T20:09:38.294Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/projects</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-10-22T20:09:38.294Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
@@ -490,6 +490,30 @@
 		<loc>https://blog.itcode.dev/posts/2021/10/20/oauth2-java-server-3</loc>
 		<priority>1.0</priority>
 		<lastmod>2021-10-19T16:26:40.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/10/22/oauth2-java-server-4</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-10-22T13:25:16.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/10/23/oauth2-java-server-5</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-10-22T16:51:53.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/10/23/oauth2-java-server-6</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-10-22T18:51:04.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/10/23/oauth2-java-server-7</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-10-22T20:08:46.000Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 </urlset>

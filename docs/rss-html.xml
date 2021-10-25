@@ -10,39 +10,39 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next-seo.js</generator>
 		<pubDate>Wed, 26 May 2021 14:36:57 GMT</pubDate>
-		<lastBuildDate>Fri, 22 Oct 2021 20:09:38 GMT</lastBuildDate>
+		<lastBuildDate>Mon, 25 Oct 2021 17:32:04 GMT</lastBuildDate>
 		<item>
 			<title>./pages/404.tsx</title>
 			<description>./pages/404.tsx</description>
-			<pubDate>Fri, 22 Oct 2021 20:09:38 GMT</pubDate>
+			<pubDate>Mon, 25 Oct 2021 17:32:04 GMT</pubDate>
 			<link>https://blog.itcode.dev/404.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/404.html</guid>
 		</item>
 		<item>
 			<title>./pages/500.tsx</title>
 			<description>./pages/500.tsx</description>
-			<pubDate>Fri, 22 Oct 2021 20:09:38 GMT</pubDate>
+			<pubDate>Mon, 25 Oct 2021 17:32:04 GMT</pubDate>
 			<link>https://blog.itcode.dev/500.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/500.html</guid>
 		</item>
 		<item>
 			<title>./pages/about/index.tsx</title>
 			<description>./pages/about/index.tsx</description>
-			<pubDate>Fri, 22 Oct 2021 20:09:38 GMT</pubDate>
+			<pubDate>Mon, 25 Oct 2021 17:32:04 GMT</pubDate>
 			<link>https://blog.itcode.dev/about.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/about.html</guid>
 		</item>
 		<item>
 			<title>./pages/posts/index.tsx</title>
 			<description>./pages/posts/index.tsx</description>
-			<pubDate>Fri, 22 Oct 2021 20:09:38 GMT</pubDate>
+			<pubDate>Mon, 25 Oct 2021 17:32:04 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts.html</guid>
 		</item>
 		<item>
 			<title>./pages/projects/index.tsx</title>
 			<description>./pages/projects/index.tsx</description>
-			<pubDate>Fri, 22 Oct 2021 20:09:38 GMT</pubDate>
+			<pubDate>Mon, 25 Oct 2021 17:32:04 GMT</pubDate>
 			<link>https://blog.itcode.dev/projects.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects.html</guid>
 		</item>
@@ -921,43 +921,101 @@
 		</item>
 		<item>
 			<title>[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 4. NAVER OAuth 서비스 신청 및 모듈 구현하기</title>
-			<description></description>
+			<description>첫 번째 플랫폼으로, NAVER에 OAuth 서비스를 신청하고 인증 모듈을 구현한다.</description>
 			<pubDate>Fri, 22 Oct 2021 13:25:16 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/10/22/oauth2-java-server-4.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/10/22/oauth2-java-server-4.html</guid>
 			<category>JAVA</category>
 			<category>OAuth2.0</category>
-			<category>Jersey</category>
+			<category>scribeJAVA</category>
 		</item>
 		<item>
 			<title>[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 5. Google OAuth 서비스 신청 및 모듈 구현하기</title>
-			<description></description>
+			<description>두 번째 플랫폼으로, Google에 OAuth 서비스를 신청하고 인증 모듈을 구현한다.</description>
 			<pubDate>Fri, 22 Oct 2021 16:51:53 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/10/23/oauth2-java-server-5.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/10/23/oauth2-java-server-5.html</guid>
 			<category>JAVA</category>
 			<category>OAuth2.0</category>
-			<category>Jersey</category>
+			<category>scribeJAVA</category>
 		</item>
 		<item>
 			<title>[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 6. KAKAO OAuth 서비스 신청 및 모듈 구현하기</title>
-			<description></description>
+			<description>세 번째 플랫폼으로, KAKAO에 OAuth 서비스를 신청하고 인증 모듈을 구현한다.</description>
 			<pubDate>Fri, 22 Oct 2021 18:51:04 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/10/23/oauth2-java-server-6.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/10/23/oauth2-java-server-6.html</guid>
 			<category>JAVA</category>
 			<category>OAuth2.0</category>
-			<category>Jersey</category>
+			<category>scribeJAVA</category>
 		</item>
 		<item>
 			<title>[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 7. GitHub OAuth 서비스 신청 및 모듈 구현하기</title>
-			<description></description>
+			<description>마지막 플랫폼으로, GitHub에 OAuth 서비스를 신청하고 인증 모듈을 구현한다.</description>
 			<pubDate>Fri, 22 Oct 2021 20:08:46 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/10/23/oauth2-java-server-7.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/10/23/oauth2-java-server-7.html</guid>
 			<category>JAVA</category>
 			<category>OAuth2.0</category>
+			<category>scribeJAVA</category>
+		</item>
+		<item>
+			<title>[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 8. 프로세스 구현하기</title>
+			<description>4장부터 7장까지 진행하며 각 플랫폼의 인증 모듈을 구현했다. 이 장에서는 모듈을 사용하는 주체인 프로세스를 구현한다. 프로세스는 HTTP 메소드에 따라 구분하여 관리한다.</description>
+			<pubDate>Sun, 24 Oct 2021 14:58:10 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/10/24/oauth2-java-server-8.html</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/10/24/oauth2-java-server-8.html</guid>
+			<category>JAVA</category>
+			<category>OAuth2.0</category>
+		</item>
+		<item>
+			<title>[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 9. Jersey로 RESTful API 서비스 제공하기</title>
+			<description>이 장에서는 Jersey를 활용하여 RESTful API 서비스를 제공하는 방법에 대해 다룬다. 이 프로젝트는 Jersey를 통해 요청을 받아 응답하므로, 컨트롤러를 구성하기 이전에 Jersey에 대해 잠깐 다루고 넘어간다. 통상 JAVA 서버를 구축하는데 Spring 프레임워크를 많이 사용할 것이다. 그럼에도 굳이 Jersey를 선택하는 이유는 일단 내가 Spring을 잘 모른다. 그것도 그거지만, Spring에 비해 규모가 작고 설정이 간단해서 온전히 RESTful 서버를 구축하는데 집중할 수 있다. Spring 설정의 악랄함은 고사하고, 이 프로젝트의 특성 상 복잡한 로직이나 다채로운 기능을 요구하지 않는다. Spring의 방대한 규모를 온전히 쓰지 못 하므로 배보다 배꼽이 더 크다는 뜻이다.</description>
+			<pubDate>Sun, 24 Oct 2021 15:12:58 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/10/25/oauth2-java-server-9.html</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/10/25/oauth2-java-server-9.html</guid>
+			<category>JAVA</category>
+			<category>OAuth2.0</category>
 			<category>Jersey</category>
+		</item>
+		<item>
+			<title>[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 10. 컨트롤러 구현하기</title>
+			<description>Jersey 라이브러리를 통해 요청을 받아 응답을 반환하는 컨트롤러를 구성해보자. Jersey에 대해 자세히 알아보고 싶다면 이전 글을 참고하자.</description>
+			<pubDate>Sun, 24 Oct 2021 17:24:17 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/10/25/oauth2-java-server-10.html</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/10/25/oauth2-java-server-10.html</guid>
+			<category>JAVA</category>
+			<category>OAuth2.0</category>
+			<category>Jersey</category>
+		</item>
+		<item>
+			<title>[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 11. OAuth 서비스 심사 신청하기</title>
+			<description>OAuth 서비스를 등록하고 인증 서버까지 별도로 구축했지만, 이렇게 했다고 해서 그 즉시 사용 가능한 것은 아니다. 이 장에서는 OAuth 서비스 심사를 신청하여 OAuth 서비스를 온전히 사용할 수 있도록 한다.</description>
+			<pubDate>Mon, 25 Oct 2021 13:41:21 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/10/25/oauth2-java-server-11.html</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/10/25/oauth2-java-server-11.html</guid>
+			<category>JAVA</category>
+			<category>OAuth2.0</category>
+		</item>
+		<item>
+			<title>[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 12. 마치며</title>
+			<description>그 동안 만들어 놓은건 많은데, 정작 정리같은 건 해두지 않았었다. GitHub를 활용하지 않기도 했고, 블로그도 딱히 운영하지 않고 있었으니.. 개인 서버도 샀겠다. 나름의 개발 포트폴리오를 위해 시험삼아 만든 프로젝트다. 개발부터 정리까지 차근차근 작성한 프로젝트는 이게 처음이 아닌가 싶다.</description>
+			<pubDate>Mon, 25 Oct 2021 13:41:21 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/10/25/oauth2-java-server-12.html</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/10/25/oauth2-java-server-12.html</guid>
+			<category>JAVA</category>
+			<category>OAuth2.0</category>
+		</item>
+		<item>
+			<title>[React] 𝝅번째 알파카의 개발 낙서장 프로젝트</title>
+			<description>어쩌다 독학하게 된 React를 유의미하게 써먹기위해 직접 만든 개발 블로그. 정적 블로그를 위한 NextJS를 활용하여 개발했다. Typescript를 사용하고 있으며, SCSS를 통한 CSS-in-CSS 방식으로 디자인을 렌더링한다. 라즈베리파이를 구매하면서 서버 구축을 위해 같이 구입한 도메인 itcode.dev를 적용했다. blog.itcode.dev로, 서브도메인 blog를 사용했다.</description>
+			<pubDate>Mon, 25 Oct 2021 13:41:21 GMT</pubDate>
+			<link>https://blog.itcode.dev/projects/2021/10/26/github-react-blog.html</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/projects/2021/10/26/github-react-blog.html</guid>
+			<category>React</category>
+			<category>NextJS</category>
+			<category>Typescript</category>
+			<category>SCSS</category>
 		</item>
 	</channel>
 </rss>

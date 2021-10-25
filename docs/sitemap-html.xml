@@ -3,37 +3,37 @@
 	<url>
 		<loc>https://blog.itcode.dev/404.html</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-22T20:09:38.294Z</lastmod>
+		<lastmod>2021-10-25T17:32:04.029Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/500.html</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-22T20:09:38.294Z</lastmod>
+		<lastmod>2021-10-25T17:32:04.029Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-22T20:09:38.294Z</lastmod>
+		<lastmod>2021-10-25T17:32:04.029Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/about.html</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-22T20:09:38.294Z</lastmod>
+		<lastmod>2021-10-25T17:32:04.029Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/posts.html</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-22T20:09:38.294Z</lastmod>
+		<lastmod>2021-10-25T17:32:04.029Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/projects.html</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-10-22T20:09:38.294Z</lastmod>
+		<lastmod>2021-10-25T17:32:04.029Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
@@ -514,6 +514,42 @@
 		<loc>https://blog.itcode.dev/posts/2021/10/23/oauth2-java-server-7.html</loc>
 		<priority>1.0</priority>
 		<lastmod>2021-10-22T20:08:46.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/10/24/oauth2-java-server-8.html</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-10-24T14:58:10.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/10/25/oauth2-java-server-9.html</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-10-24T15:12:58.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/10/25/oauth2-java-server-10.html</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-10-24T17:24:17.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/10/25/oauth2-java-server-11.html</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-10-25T13:41:21.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/10/25/oauth2-java-server-12.html</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-10-25T13:41:21.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/projects/2021/10/26/github-react-blog.html</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-10-25T13:41:21.000Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 </urlset>

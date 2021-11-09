@@ -10,39 +10,39 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next-seo.js</generator>
 		<pubDate>Wed, 26 May 2021 14:36:57 GMT</pubDate>
-		<lastBuildDate>Mon, 25 Oct 2021 17:32:04 GMT</lastBuildDate>
+		<lastBuildDate>Tue, 09 Nov 2021 15:10:13 GMT</lastBuildDate>
 		<item>
 			<title>./pages/404.tsx</title>
 			<description>./pages/404.tsx</description>
-			<pubDate>Mon, 25 Oct 2021 17:32:04 GMT</pubDate>
+			<pubDate>Tue, 09 Nov 2021 15:10:13 GMT</pubDate>
 			<link>https://blog.itcode.dev/404.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/404.html</guid>
 		</item>
 		<item>
 			<title>./pages/500.tsx</title>
 			<description>./pages/500.tsx</description>
-			<pubDate>Mon, 25 Oct 2021 17:32:04 GMT</pubDate>
+			<pubDate>Tue, 09 Nov 2021 15:10:13 GMT</pubDate>
 			<link>https://blog.itcode.dev/500.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/500.html</guid>
 		</item>
 		<item>
 			<title>./pages/about/index.tsx</title>
 			<description>./pages/about/index.tsx</description>
-			<pubDate>Mon, 25 Oct 2021 17:32:04 GMT</pubDate>
+			<pubDate>Tue, 09 Nov 2021 15:10:13 GMT</pubDate>
 			<link>https://blog.itcode.dev/about.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/about.html</guid>
 		</item>
 		<item>
 			<title>./pages/posts/index.tsx</title>
 			<description>./pages/posts/index.tsx</description>
-			<pubDate>Mon, 25 Oct 2021 17:32:04 GMT</pubDate>
+			<pubDate>Tue, 09 Nov 2021 15:10:13 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts.html</guid>
 		</item>
 		<item>
 			<title>./pages/projects/index.tsx</title>
 			<description>./pages/projects/index.tsx</description>
-			<pubDate>Mon, 25 Oct 2021 17:32:04 GMT</pubDate>
+			<pubDate>Tue, 09 Nov 2021 15:10:13 GMT</pubDate>
 			<link>https://blog.itcode.dev/projects.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects.html</guid>
 		</item>
@@ -1007,9 +1007,32 @@
 			<category>OAuth2.0</category>
 		</item>
 		<item>
+			<title>[NextJS] 블로그 개편기 - 4. marked를 활용한 마크다운 변환기 구현하기</title>
+			<description>정적 블로그는 마크다운을 적극적으로 사용한다. 일반적인 텍스트 기반에 매우 친숙하면서도 HTML과의 호환성 또한 매우 뛰어나기 때문이다. 기존의 블로그는 Remark, Rehype 플러그인을 사용했다. 여러 플러그인이 있어서 그냥저냥 사용하는덴 매우 편했지만, 사용자가 직접 변환과정을 커스터마이징하는 것이 매우 어려웠다. TOC, 코드블럭, 링크에 추가적인 기능, 디자인을 입히기 위해 HTML 태그를 입히고 싶은데, 관련 API가 없다보니 속절없이 주어진 태그만 그대로 사용할 수 밖에 없었다. 관련 정보를 찾아보던 중 marked 플러그인은 내가 원하는 요소를 충족시켜주는 것 같아, 블로그 개편 과정에서 마크다운 플러그인에도 많은 변화를 주었다. 이 장에서는 marked를 통해 마크다운을 HTML로 변환하는 과정에 대해 다룬다.</description>
+			<pubDate>Thu, 28 Oct 2021 05:36:46 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/10/28/nextjs-reorganization-4.html</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/10/28/nextjs-reorganization-4.html</guid>
+			<category>NextJS</category>
+			<category>React</category>
+			<category>Markdown</category>
+		</item>
+		<item>
+			<title>[NextJS] 블로그 개편기 - 5. marked를 응용하여 코드블럭 디자인 개선하기</title>
+			<description>이전 장에서 marked를 활용하여 이 블로그만의 마크다운 변환기를 구현했다. 이 변환기를 활용하여 밋밋한 코드블럭을 좀 더 IDE 같게 개선해보자.</description>
+			<pubDate>Sun, 07 Nov 2021 12:13:57 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/11/07/nextjs-reorganization-5.html</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/11/07/nextjs-reorganization-5.html</guid>
+			<category>NextJS</category>
+			<category>React</category>
+			<category>Markdown</category>
+			<category>HTML</category>
+			<category>SCSS</category>
+			<category>TypeScript</category>
+		</item>
+		<item>
 			<title>[React] 𝝅번째 알파카의 개발 낙서장 프로젝트</title>
 			<description>어쩌다 독학하게 된 React를 유의미하게 써먹기위해 직접 만든 개발 블로그. 정적 블로그를 위한 NextJS를 활용하여 개발했다. Typescript를 사용하고 있으며, SCSS를 통한 CSS-in-CSS 방식으로 디자인을 렌더링한다. 라즈베리파이를 구매하면서 서버 구축을 위해 같이 구입한 도메인 itcode.dev를 적용했다. blog.itcode.dev로, 서브도메인 blog를 사용했다.</description>
-			<pubDate>Mon, 25 Oct 2021 13:41:21 GMT</pubDate>
+			<pubDate>Mon, 25 Oct 2021 17:37:30 GMT</pubDate>
 			<link>https://blog.itcode.dev/projects/2021/10/26/github-react-blog.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects/2021/10/26/github-react-blog.html</guid>
 			<category>React</category>

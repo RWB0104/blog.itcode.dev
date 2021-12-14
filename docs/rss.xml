@@ -10,39 +10,39 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next-seo.js</generator>
 		<pubDate>Wed, 26 May 2021 14:36:57 GMT</pubDate>
-		<lastBuildDate>Tue, 09 Nov 2021 15:10:13 GMT</lastBuildDate>
+		<lastBuildDate>Tue, 14 Dec 2021 17:09:15 GMT</lastBuildDate>
 		<item>
 			<title>./pages/404.tsx</title>
 			<description>./pages/404.tsx</description>
-			<pubDate>Tue, 09 Nov 2021 15:10:13 GMT</pubDate>
+			<pubDate>Tue, 14 Dec 2021 17:09:15 GMT</pubDate>
 			<link>https://blog.itcode.dev/404</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/404</guid>
 		</item>
 		<item>
 			<title>./pages/500.tsx</title>
 			<description>./pages/500.tsx</description>
-			<pubDate>Tue, 09 Nov 2021 15:10:13 GMT</pubDate>
+			<pubDate>Tue, 14 Dec 2021 17:09:15 GMT</pubDate>
 			<link>https://blog.itcode.dev/500</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/500</guid>
 		</item>
 		<item>
 			<title>./pages/about/index.tsx</title>
 			<description>./pages/about/index.tsx</description>
-			<pubDate>Tue, 09 Nov 2021 15:10:13 GMT</pubDate>
+			<pubDate>Tue, 14 Dec 2021 17:09:15 GMT</pubDate>
 			<link>https://blog.itcode.dev/about</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/about</guid>
 		</item>
 		<item>
 			<title>./pages/posts/index.tsx</title>
 			<description>./pages/posts/index.tsx</description>
-			<pubDate>Tue, 09 Nov 2021 15:10:13 GMT</pubDate>
+			<pubDate>Tue, 14 Dec 2021 17:09:15 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts</guid>
 		</item>
 		<item>
 			<title>./pages/projects/index.tsx</title>
 			<description>./pages/projects/index.tsx</description>
-			<pubDate>Tue, 09 Nov 2021 15:10:13 GMT</pubDate>
+			<pubDate>Tue, 14 Dec 2021 17:09:15 GMT</pubDate>
 			<link>https://blog.itcode.dev/projects</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects</guid>
 		</item>
@@ -1028,6 +1028,210 @@
 			<category>HTML</category>
 			<category>SCSS</category>
 			<category>TypeScript</category>
+		</item>
+		<item>
+			<title>[프로그래머스 / JAVA] Level 1 로또의 최고 순위와 최저 순위 (77484)</title>
+			<description>로또 6/45 (이하 '로또'로 표기)는 1부터 45까지 숫자 중 6개를 찍어서 맞히는 대표적인 복권입니다. 아래는 로또의 순위를 정하는 방식입니다. 로또를 구매한 민우는 당첨 번호 발표일을 학수고대하고 있었습니다. 하지만, 민우의 동생이 로또에 낙서를 하여, 일부 번호를 알아볼 수 없게 되었습니다. 당첨 번호 발표 후, 민우는 자신이 구매했던 로또로 당첨이 가능했던 최고 순위와 최저 순위를 알아보고 싶어 졌습니다.</description>
+			<pubDate>Tue, 14 Dec 2021 00:10:14 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0001</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0001</guid>
+			<category>Programmers</category>
+			<category>프로그래머스</category>
+			<category>알고리즘</category>
+			<category>JAVA(자바)</category>
+			<category>Level 1</category>
+		</item>
+		<item>
+			<title>[프로그래머스 / JAVA] Level 1 신규 아이디 추천 (72410)</title>
+			<description>카카오에 입사한 신입 개발자 네오는 "카카오계정개발팀"에 배치되어, 카카오 서비스에 가입하는 유저들의 아이디를 생성하는 업무를 담당하게 되었습니다. "네오"에게 주어진 첫 업무는 새로 가입하는 유저들이 카카오 아이디 규칙에 맞지 않는 아이디를 입력했을 때, 입력된 아이디와 유사하면서 규칙에 맞는 아이디를 추천해주는 프로그램을 개발하는 것입니다. 다음은 카카오 아이디의 규칙입니다.</description>
+			<pubDate>Tue, 14 Dec 2021 00:11:28 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0002</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0002</guid>
+			<category>Programmers</category>
+			<category>프로그래머스</category>
+			<category>알고리즘</category>
+			<category>JAVA(자바)</category>
+			<category>Level 1</category>
+		</item>
+		<item>
+			<title>[프로그래머스 / JAVA] Level 1 숫자 문자열과 영단어 (81301)</title>
+			<description>네오와 프로도가 숫자놀이를 하고 있습니다. 네오가 프로도에게 숫자를 건넬 때 일부 자릿수를 영단어로 바꾼 카드를 건네주면 프로도는 원래 숫자를 찾는 게임입니다. 다음은 숫자의 일부 자릿수를 영단어로 바꾸는 예시입니다.</description>
+			<pubDate>Tue, 14 Dec 2021 02:21:04 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0003</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0003</guid>
+			<category>Programmers</category>
+			<category>프로그래머스</category>
+			<category>알고리즘</category>
+			<category>JAVA(자바)</category>
+			<category>Level 1</category>
+		</item>
+		<item>
+			<title>[프로그래머스 / JAVA] Level 1 키패드 누르기 (67256)</title>
+			<description>스마트폰 전화 키패드의 각 칸에 다음과 같이 숫자들이 적혀 있습니다. 이 전화 키패드에서 왼손과 오른손의 엄지손가락만을 이용해서 숫자만을 입력하려고 합니다. 맨 처음 왼손 엄지손가락은 `*`키패드에 오른손 엄지손가락은 `#`키패드 위치에서 시작하며, 엄지손가락을 사용하는 규칙은 다음과 같습니다.</description>
+			<pubDate>Tue, 14 Dec 2021 03:46:59 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0004</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0004</guid>
+			<category>Programmers</category>
+			<category>프로그래머스</category>
+			<category>알고리즘</category>
+			<category>JAVA(자바)</category>
+			<category>Level 1</category>
+		</item>
+		<item>
+			<title>[프로그래머스 / JAVA] Level 1 크레인 인형뽑기 게임 (64061)</title>
+			<description>게임개발자인 "죠르디"는 크레인 인형뽑기 기계를 모바일 게임으로 만들려고 합니다. "죠르디"는 게임의 재미를 높이기 위해 화면 구성과 규칙을 다음과 같이 게임 로직에 반영하려고 합니다.</description>
+			<pubDate>Tue, 14 Dec 2021 05:20:05 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0005</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0005</guid>
+			<category>Programmers</category>
+			<category>프로그래머스</category>
+			<category>알고리즘</category>
+			<category>JAVA(자바)</category>
+			<category>Level 1</category>
+		</item>
+		<item>
+			<title>[프로그래머스 / JAVA] Level 1 없는 숫자 더하기 (86051)</title>
+			<description>0부터 9까지의 숫자 중 일부가 들어있는 배열 numbers가 매개변수로 주어집니다. numbers에서 찾을 수 없는 0부터 9까지의 숫자를 모두 찾아 더한 수를 return 하도록 solution 함수를 완성해주세요.</description>
+			<pubDate>Tue, 14 Dec 2021 05:20:05 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0006</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0006</guid>
+			<category>Programmers</category>
+			<category>프로그래머스</category>
+			<category>알고리즘</category>
+			<category>JAVA(자바)</category>
+			<category>Level 1</category>
+		</item>
+		<item>
+			<title>[프로그래머스 / JAVA] Level 1 내적 (70128)</title>
+			<description>길이가 같은 두 1차원 정수 배열 a, b가 매개변수로 주어집니다. a와 b의 내적을 return 하도록 solution 함수를 완성해주세요. 이때, a와 b의 내적은 a[0] * b[0] + a[1] * b[1] + ... + a[n-1] * b[n-1] 입니다. (n은 a, b의 길이)</description>
+			<pubDate>Tue, 14 Dec 2021 05:20:05 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0008</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0008</guid>
+			<category>Programmers</category>
+			<category>프로그래머스</category>
+			<category>알고리즘</category>
+			<category>JAVA(자바)</category>
+			<category>Level 1</category>
+		</item>
+		<item>
+			<title>[프로그래머스 / JAVA] Level 1 K번째수 (42748)</title>
+			<description></description>
+			<pubDate>Tue, 14 Dec 2021 05:20:05 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0011</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0011</guid>
+			<category>Programmers</category>
+			<category>프로그래머스</category>
+			<category>알고리즘</category>
+			<category>JAVA(자바)</category>
+			<category>Level 1</category>
+		</item>
+		<item>
+			<title>[프로그래머스 / JAVA] Level 1 음양 더하기 (76501)</title>
+			<description>어떤 정수들이 있습니다. 이 정수들의 절댓값을 차례대로 담은 정수 배열 absolutes와 이 정수들의 부호를 차례대로 담은 불리언 배열 signs가 매개변수로 주어집니다. 실제 정수들의 합을 구하여 return 하도록 solution 함수를 완성해주세요.</description>
+			<pubDate>Tue, 14 Dec 2021 08:01:15 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0007</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0007</guid>
+			<category>Programmers</category>
+			<category>프로그래머스</category>
+			<category>알고리즘</category>
+			<category>JAVA(자바)</category>
+			<category>Level 1</category>
+		</item>
+		<item>
+			<title>[프로그래머스 / JAVA] Level 1 소수 만들기 (12977)</title>
+			<description>0부터 9까지의 숫자 중 일부가 들어있는 배열 numbers가 매개변수로 주어집니다. numbers에서 찾을 수 없는 0부터 9까지의 숫자를 모두 찾아 더한 수를 return 하도록 solution 함수를 완성해주세요.</description>
+			<pubDate>Tue, 14 Dec 2021 10:06:57 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0009</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0009</guid>
+			<category>Programmers</category>
+			<category>프로그래머스</category>
+			<category>알고리즘</category>
+			<category>JAVA(자바)</category>
+			<category>Level 1</category>
+		</item>
+		<item>
+			<title>[프로그래머스 / JAVA] Level 1 완주하지 못한 선수 (42576)</title>
+			<description>수많은 마라톤 선수들이 마라톤에 참여하였습니다. 단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다. 마라톤에 참여한 선수들의 이름이 담긴 배열 participant와 완주한 선수들의 이름이 담긴 배열 completion이 주어질 때, 완주하지 못한 선수의 이름을 return 하도록 solution 함수를 작성해주세요.</description>
+			<pubDate>Tue, 14 Dec 2021 11:33:25 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0010</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0010</guid>
+			<category>Programmers</category>
+			<category>프로그래머스</category>
+			<category>알고리즘</category>
+			<category>JAVA(자바)</category>
+			<category>Level 1</category>
+		</item>
+		<item>
+			<title>[프로그래머스 / JAVA] Level 1 모의고사 (42840)</title>
+			<description>수포자는 수학을 포기한 사람의 준말입니다. 수포자 삼인방은 모의고사에 수학 문제를 전부 찍으려 합니다. 수포자는 1번 문제부터 마지막 문제까지 다음과 같이 찍습니다. 1번 수포자가 찍는 방식: 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, ... 2번 수포자가 찍는 방식: 2, 1, 2, 3, 2, 4, 2, 5, 2, 1, 2, 3, 2, 4, 2, 5, ... 3번 수포자가 찍는 방식: 3, 3, 1, 1, 2, 2, 4, 4, 5, 5, 3, 3, 1, 1, 2, 2, 4, 4, 5, 5, ... 1번 문제부터 마지막 문제까지의 정답이 순서대로 들은 배열 answers가 주어졌을 때, 가장 많은 문제를 맞힌 사람이 누구인지 배열에 담아 return 하도록 solution 함수를 작성해주세요.</description>
+			<pubDate>Tue, 14 Dec 2021 13:02:01 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0012</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0012</guid>
+			<category>Programmers</category>
+			<category>프로그래머스</category>
+			<category>알고리즘</category>
+			<category>JAVA(자바)</category>
+			<category>Level 1</category>
+		</item>
+		<item>
+			<title>[프로그래머스 / JAVA] Level 1 체육복 (42862)</title>
+			<description>점심시간에 도둑이 들어, 일부 학생이 체육복을 도난당했습니다. 다행히 여벌 체육복이 있는 학생이 이들에게 체육복을 빌려주려 합니다. 학생들의 번호는 체격 순으로 매겨져 있어, 바로 앞번호의 학생이나 바로 뒷번호의 학생에게만 체육복을 빌려줄 수 있습니다. 예를 들어, 4번 학생은 3번 학생이나 5번 학생에게만 체육복을 빌려줄 수 있습니다. 체육복이 없으면 수업을 들을 수 없기 때문에 체육복을 적절히 빌려 최대한 많은 학생이 체육수업을 들어야 합니다.</description>
+			<pubDate>Tue, 14 Dec 2021 13:18:41 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0013</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0013</guid>
+			<category>Programmers</category>
+			<category>프로그래머스</category>
+			<category>알고리즘</category>
+			<category>JAVA(자바)</category>
+			<category>Level 1</category>
+		</item>
+		<item>
+			<title>[프로그래머스 / JAVA] Level 1 모든 레코드 조회하기 (59034)</title>
+			<description>ANIMAL_INS 테이블은 동물 보호소에 들어온 동물의 정보를 담은 테이블입니다. ANIMAL_INS 테이블 구조는 다음과 같으며, ANIMAL_ID, ANIMAL_TYPE, DATETIME, INTAKE_CONDITION, NAME, SEX_UPON_INTAKE는 각각 동물의 아이디, 생물 종, 보호 시작일, 보호 시작 시 상태, 이름, 성별 및 중성화 여부를 나타냅니다.</description>
+			<pubDate>Tue, 14 Dec 2021 16:38:22 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/12/15/programmers-a0014</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/15/programmers-a0014</guid>
+			<category>Programmers</category>
+			<category>프로그래머스</category>
+			<category>알고리즘</category>
+			<category>SQL</category>
+			<category>Level 1</category>
+		</item>
+		<item>
+			<title>[프로그래머스 / JAVA] Level 1 최댓값 구하기 (59415)</title>
+			<description>ANIMAL_INS 테이블은 동물 보호소에 들어온 동물의 정보를 담은 테이블입니다. ANIMAL_INS 테이블 구조는 다음과 같으며, ANIMAL_ID, ANIMAL_TYPE, DATETIME, INTAKE_CONDITION, NAME, SEX_UPON_INTAKE는 각각 동물의 아이디, 생물 종, 보호 시작일, 보호 시작 시 상태, 이름, 성별 및 중성화 여부를 나타냅니다.</description>
+			<pubDate>Tue, 14 Dec 2021 16:41:43 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/12/15/programmers-a0015</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/15/programmers-a0015</guid>
+			<category>Programmers</category>
+			<category>프로그래머스</category>
+			<category>알고리즘</category>
+			<category>SQL</category>
+			<category>Level 1</category>
+		</item>
+		<item>
+			<title>[프로그래머스 / JAVA] Level 1 이름이 없는 동물의 아이디 (59039)</title>
+			<description>ANIMAL_INS 테이블은 동물 보호소에 들어온 동물의 정보를 담은 테이블입니다. ANIMAL_INS 테이블 구조는 다음과 같으며, ANIMAL_ID, ANIMAL_TYPE, DATETIME, INTAKE_CONDITION, NAME, SEX_UPON_INTAKE는 각각 동물의 아이디, 생물 종, 보호 시작일, 보호 시작 시 상태, 이름, 성별 및 중성화 여부를 나타냅니다.</description>
+			<pubDate>Tue, 14 Dec 2021 16:44:37 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/12/15/programmers-a0016</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/15/programmers-a0016</guid>
+			<category>Programmers</category>
+			<category>프로그래머스</category>
+			<category>알고리즘</category>
+			<category>SQL</category>
+			<category>Level 1</category>
+		</item>
+		<item>
+			<title>[프로그래머스 / JAVA] Level 1 폰켓몬 (1845)</title>
+			<description>당신은 폰켓몬을 잡기 위한 오랜 여행 끝에, 홍 박사님의 연구실에 도착했습니다. 홍 박사님은 당신에게 자신의 연구실에 있는 총 N 마리의 폰켓몬 중에서 N/2마리를 가져가도 좋다고 했습니다. 홍 박사님 연구실의 폰켓몬은 종류에 따라 번호를 붙여 구분합니다. 따라서 같은 종류의 폰켓몬은 같은 번호를 가지고 있습니다. 예를 들어 연구실에 총 4마리의 폰켓몬이 있고, 각 폰켓몬의 종류 번호가 [3번, 1번, 2번, 3번]이라면 이는 3번 폰켓몬 두 마리, 1번 폰켓몬 한 마리, 2번 폰켓몬 한 마리가 있음을 나타냅니다. 이때, 4마리의 폰켓몬 중 2마리를 고르는 방법은 다음과 같이 6가지가 있습니다.</description>
+			<pubDate>Tue, 14 Dec 2021 17:01:09 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2021/12/15/programmers-a0017</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/15/programmers-a0017</guid>
+			<category>Programmers</category>
+			<category>프로그래머스</category>
+			<category>알고리즘</category>
+			<category>JAVA(자바)</category>
+			<category>Level 1</category>
 		</item>
 		<item>
 			<title>[React] 𝝅번째 알파카의 개발 낙서장 프로젝트</title>

@@ -10,39 +10,39 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next-seo.js</generator>
 		<pubDate>Wed, 26 May 2021 14:36:57 GMT</pubDate>
-		<lastBuildDate>Sun, 19 Dec 2021 07:19:12 GMT</lastBuildDate>
+		<lastBuildDate>Sun, 19 Dec 2021 08:30:40 GMT</lastBuildDate>
 		<item>
 			<title>./pages/404.tsx</title>
 			<description>./pages/404.tsx</description>
-			<pubDate>Sun, 19 Dec 2021 07:19:12 GMT</pubDate>
+			<pubDate>Sun, 19 Dec 2021 08:30:40 GMT</pubDate>
 			<link>https://blog.itcode.dev/404</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/404</guid>
 		</item>
 		<item>
 			<title>./pages/500.tsx</title>
 			<description>./pages/500.tsx</description>
-			<pubDate>Sun, 19 Dec 2021 07:19:12 GMT</pubDate>
+			<pubDate>Sun, 19 Dec 2021 08:30:40 GMT</pubDate>
 			<link>https://blog.itcode.dev/500</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/500</guid>
 		</item>
 		<item>
 			<title>./pages/about/index.tsx</title>
 			<description>./pages/about/index.tsx</description>
-			<pubDate>Sun, 19 Dec 2021 07:19:12 GMT</pubDate>
+			<pubDate>Sun, 19 Dec 2021 08:30:40 GMT</pubDate>
 			<link>https://blog.itcode.dev/about</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/about</guid>
 		</item>
 		<item>
 			<title>./pages/posts/index.tsx</title>
 			<description>./pages/posts/index.tsx</description>
-			<pubDate>Sun, 19 Dec 2021 07:19:12 GMT</pubDate>
+			<pubDate>Sun, 19 Dec 2021 08:30:40 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts</guid>
 		</item>
 		<item>
 			<title>./pages/projects/index.tsx</title>
 			<description>./pages/projects/index.tsx</description>
-			<pubDate>Sun, 19 Dec 2021 07:19:12 GMT</pubDate>
+			<pubDate>Sun, 19 Dec 2021 08:30:40 GMT</pubDate>
 			<link>https://blog.itcode.dev/projects</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects</guid>
 		</item>
@@ -1035,9 +1035,8 @@
 			<pubDate>Tue, 14 Dec 2021 00:10:14 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0001</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0001</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1047,9 +1046,8 @@
 			<pubDate>Tue, 14 Dec 2021 00:11:28 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0002</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0002</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1059,9 +1057,8 @@
 			<pubDate>Tue, 14 Dec 2021 02:21:04 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0003</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0003</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1071,9 +1068,8 @@
 			<pubDate>Tue, 14 Dec 2021 03:46:59 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0004</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0004</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1083,9 +1079,8 @@
 			<pubDate>Tue, 14 Dec 2021 05:20:05 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0005</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0005</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1095,9 +1090,8 @@
 			<pubDate>Tue, 14 Dec 2021 05:20:05 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0006</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0006</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1107,9 +1101,8 @@
 			<pubDate>Tue, 14 Dec 2021 05:20:05 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0008</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0008</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1119,9 +1112,8 @@
 			<pubDate>Tue, 14 Dec 2021 05:20:05 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0011</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0011</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1131,9 +1123,8 @@
 			<pubDate>Tue, 14 Dec 2021 08:01:15 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0007</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0007</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1143,9 +1134,8 @@
 			<pubDate>Tue, 14 Dec 2021 10:06:57 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0009</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0009</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1155,9 +1145,8 @@
 			<pubDate>Tue, 14 Dec 2021 11:33:25 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0010</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0010</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1167,9 +1156,8 @@
 			<pubDate>Tue, 14 Dec 2021 13:02:01 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0012</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0012</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1179,9 +1167,8 @@
 			<pubDate>Tue, 14 Dec 2021 13:18:41 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/14/programmers-a0013</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/14/programmers-a0013</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1191,9 +1178,8 @@
 			<pubDate>Tue, 14 Dec 2021 16:38:22 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/15/programmers-a0014</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/15/programmers-a0014</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>SQL</category>
 			<category>Level 1</category>
 		</item>
@@ -1203,9 +1189,8 @@
 			<pubDate>Tue, 14 Dec 2021 16:41:43 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/15/programmers-a0015</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/15/programmers-a0015</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>SQL</category>
 			<category>Level 1</category>
 		</item>
@@ -1215,9 +1200,8 @@
 			<pubDate>Tue, 14 Dec 2021 16:44:37 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/15/programmers-a0016</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/15/programmers-a0016</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>SQL</category>
 			<category>Level 1</category>
 		</item>
@@ -1227,9 +1211,8 @@
 			<pubDate>Tue, 14 Dec 2021 17:01:09 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/15/programmers-a0017</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/15/programmers-a0017</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1239,9 +1222,8 @@
 			<pubDate>Wed, 15 Dec 2021 12:17:08 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/15/programmers-a0018</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/15/programmers-a0018</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1251,9 +1233,8 @@
 			<pubDate>Wed, 15 Dec 2021 12:29:31 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/15/programmers-a0019</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/15/programmers-a0019</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1263,9 +1244,8 @@
 			<pubDate>Wed, 15 Dec 2021 12:48:12 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/15/programmers-a0020</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/15/programmers-a0020</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1275,9 +1255,8 @@
 			<pubDate>Wed, 15 Dec 2021 13:10:27 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/15/programmers-a0021</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/15/programmers-a0021</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1287,9 +1266,8 @@
 			<pubDate>Wed, 15 Dec 2021 13:10:27 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/15/programmers-a0022</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/15/programmers-a0022</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1299,9 +1277,8 @@
 			<pubDate>Wed, 15 Dec 2021 13:21:06 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/15/programmers-a0023</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/15/programmers-a0023</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>SQL</category>
 			<category>Level 1</category>
 		</item>
@@ -1311,9 +1288,8 @@
 			<pubDate>Wed, 15 Dec 2021 13:47:44 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/15/programmers-a0024</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/15/programmers-a0024</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1323,9 +1299,8 @@
 			<pubDate>Wed, 15 Dec 2021 13:50:59 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/15/programmers-a0025</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/15/programmers-a0025</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>SQL</category>
 			<category>Level 1</category>
 		</item>
@@ -1335,9 +1310,8 @@
 			<pubDate>Wed, 15 Dec 2021 13:58:49 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/15/programmers-a0026</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/15/programmers-a0026</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1347,9 +1321,8 @@
 			<pubDate>Wed, 15 Dec 2021 14:03:19 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/15/programmers-a0027</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/15/programmers-a0027</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>SQL</category>
 			<category>Level 1</category>
 		</item>
@@ -1359,9 +1332,8 @@
 			<pubDate>Wed, 15 Dec 2021 14:22:00 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/15/programmers-a0028</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/15/programmers-a0028</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1371,9 +1343,8 @@
 			<pubDate>Wed, 15 Dec 2021 14:36:45 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/15/programmers-a0029</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/15/programmers-a0029</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1383,9 +1354,8 @@
 			<pubDate>Wed, 15 Dec 2021 14:58:28 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/15/programmers-a0030</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/15/programmers-a0030</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>SQL</category>
 			<category>Level 1</category>
 		</item>
@@ -1395,9 +1365,8 @@
 			<pubDate>Wed, 15 Dec 2021 15:52:21 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/16/programmers-a0031</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/16/programmers-a0031</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1407,9 +1376,8 @@
 			<pubDate>Wed, 15 Dec 2021 16:02:41 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/16/programmers-a0032</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/16/programmers-a0032</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1419,9 +1387,8 @@
 			<pubDate>Thu, 16 Dec 2021 10:18:27 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/16/programmers-a0033</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/16/programmers-a0033</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1431,9 +1398,8 @@
 			<pubDate>Thu, 16 Dec 2021 10:22:38 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/16/programmers-a0034</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/16/programmers-a0034</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>SQL</category>
 			<category>Level 1</category>
 		</item>
@@ -1443,9 +1409,8 @@
 			<pubDate>Thu, 16 Dec 2021 11:02:11 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/16/programmers-a0035</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/16/programmers-a0035</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1455,9 +1420,8 @@
 			<pubDate>Thu, 16 Dec 2021 11:06:17 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/16/programmers-a0036</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/16/programmers-a0036</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>SQL</category>
 			<category>Level 1</category>
 		</item>
@@ -1467,9 +1431,8 @@
 			<pubDate>Thu, 16 Dec 2021 11:16:27 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/16/programmers-a0037</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/16/programmers-a0037</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1479,9 +1442,8 @@
 			<pubDate>Thu, 16 Dec 2021 11:26:55 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/16/programmers-a0038</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/16/programmers-a0038</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1491,9 +1453,8 @@
 			<pubDate>Thu, 16 Dec 2021 11:31:27 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/16/programmers-a0039</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/16/programmers-a0039</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1503,9 +1464,8 @@
 			<pubDate>Thu, 16 Dec 2021 11:48:21 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/16/programmers-a0040</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/16/programmers-a0040</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1515,9 +1475,8 @@
 			<pubDate>Thu, 16 Dec 2021 12:16:32 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/16/programmers-a0041</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/16/programmers-a0041</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1527,9 +1486,8 @@
 			<pubDate>Thu, 16 Dec 2021 12:31:37 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/16/programmers-a0042</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/16/programmers-a0042</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1539,9 +1497,8 @@
 			<pubDate>Thu, 16 Dec 2021 12:38:44 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/16/programmers-a0043</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/16/programmers-a0043</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1551,9 +1508,8 @@
 			<pubDate>Fri, 17 Dec 2021 09:33:21 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/17/programmers-a0044</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/17/programmers-a0044</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1563,9 +1519,8 @@
 			<pubDate>Fri, 17 Dec 2021 09:44:27 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/17/programmers-a0045</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/17/programmers-a0045</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1575,9 +1530,8 @@
 			<pubDate>Sat, 18 Dec 2021 08:15:21 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/18/programmers-a0046</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/18/programmers-a0046</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1587,9 +1541,8 @@
 			<pubDate>Sat, 18 Dec 2021 08:21:13 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/18/programmers-a0047</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/18/programmers-a0047</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1599,9 +1552,8 @@
 			<pubDate>Sat, 18 Dec 2021 09:05:21 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/18/programmers-a0048</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/18/programmers-a0048</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1611,9 +1563,8 @@
 			<pubDate>Sat, 18 Dec 2021 09:13:33 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/18/programmers-a0049</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/18/programmers-a0049</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1623,9 +1574,8 @@
 			<pubDate>Sat, 18 Dec 2021 09:27:43 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/18/programmers-a0050</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/18/programmers-a0050</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1635,9 +1585,8 @@
 			<pubDate>Sat, 18 Dec 2021 09:31:11 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/18/programmers-a0051</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/18/programmers-a0051</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1647,9 +1596,8 @@
 			<pubDate>Sat, 18 Dec 2021 09:58:31 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/18/programmers-a0052</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/18/programmers-a0052</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1659,9 +1607,8 @@
 			<pubDate>Sat, 18 Dec 2021 11:39:02 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/18/programmers-a0053</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/18/programmers-a0053</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1671,9 +1618,8 @@
 			<pubDate>Sat, 18 Dec 2021 11:46:29 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/18/programmers-a0054</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/18/programmers-a0054</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1683,9 +1629,8 @@
 			<pubDate>Sat, 18 Dec 2021 11:55:40 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/18/programmers-a0055</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/18/programmers-a0055</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1695,9 +1640,8 @@
 			<pubDate>Sat, 18 Dec 2021 11:59:59 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/18/programmers-a0056</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/18/programmers-a0056</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1707,9 +1651,8 @@
 			<pubDate>Sat, 18 Dec 2021 12:30:56 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/18/programmers-a0057</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/18/programmers-a0057</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1719,9 +1662,8 @@
 			<pubDate>Sat, 18 Dec 2021 12:39:51 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/18/programmers-a0058</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/18/programmers-a0058</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1731,9 +1673,8 @@
 			<pubDate>Sat, 18 Dec 2021 12:43:34 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/18/programmers-a0059</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/18/programmers-a0059</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1743,9 +1684,8 @@
 			<pubDate>Sat, 18 Dec 2021 12:48:00 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/18/programmers-a0060</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/18/programmers-a0060</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1755,9 +1695,8 @@
 			<pubDate>Sat, 18 Dec 2021 12:52:30 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/18/programmers-a0061</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/18/programmers-a0061</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1767,9 +1706,8 @@
 			<pubDate>Sat, 18 Dec 2021 12:56:29 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/18/programmers-a0062</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/18/programmers-a0062</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1779,9 +1717,8 @@
 			<pubDate>Sat, 18 Dec 2021 12:56:29 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/18/programmers-a0063</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/18/programmers-a0063</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>
@@ -1791,9 +1728,8 @@
 			<pubDate>Sun, 19 Dec 2021 07:18:31 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/12/19/programmers-a0064</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/12/19/programmers-a0064</guid>
-			<category>Programmers</category>
-			<category>프로그래머스</category>
 			<category>알고리즘</category>
+			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 1</category>
 		</item>

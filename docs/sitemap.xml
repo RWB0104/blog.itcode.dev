@@ -3,37 +3,37 @@
 	<url>
 		<loc>https://blog.itcode.dev/404</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-12-15T16:03:04.394Z</lastmod>
+		<lastmod>2021-12-19T07:19:12.919Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/500</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-12-15T16:03:04.394Z</lastmod>
+		<lastmod>2021-12-19T07:19:12.920Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-12-15T16:03:04.394Z</lastmod>
+		<lastmod>2021-12-19T07:19:12.920Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/about</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-12-15T16:03:04.394Z</lastmod>
+		<lastmod>2021-12-19T07:19:12.920Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/posts</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-12-15T16:03:04.394Z</lastmod>
+		<lastmod>2021-12-19T07:19:12.920Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/projects</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-12-15T16:03:04.394Z</lastmod>
+		<lastmod>2021-12-19T07:19:12.920Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
@@ -748,6 +748,198 @@
 		<loc>https://blog.itcode.dev/posts/2021/12/16/programmers-a0032</loc>
 		<priority>1.0</priority>
 		<lastmod>2021-12-15T16:02:41.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/16/programmers-a0033</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-16T10:18:27.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/16/programmers-a0034</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-16T10:22:38.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/16/programmers-a0035</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-16T11:02:11.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/16/programmers-a0036</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-16T11:06:17.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/16/programmers-a0037</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-16T11:16:27.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/16/programmers-a0038</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-16T11:26:55.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/16/programmers-a0039</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-16T11:31:27.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/16/programmers-a0040</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-16T11:48:21.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/16/programmers-a0041</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-16T12:16:32.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/16/programmers-a0042</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-16T12:31:37.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/16/programmers-a0043</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-16T12:38:44.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/17/programmers-a0044</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-17T09:33:21.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/17/programmers-a0045</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-17T09:44:27.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/18/programmers-a0046</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-18T08:15:21.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/18/programmers-a0047</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-18T08:21:13.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/18/programmers-a0048</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-18T09:05:21.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/18/programmers-a0049</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-18T09:13:33.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/18/programmers-a0050</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-18T09:27:43.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/18/programmers-a0051</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-18T09:31:11.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/18/programmers-a0052</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-18T09:58:31.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/18/programmers-a0053</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-18T11:39:02.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/18/programmers-a0054</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-18T11:46:29.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/18/programmers-a0055</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-18T11:55:40.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/18/programmers-a0056</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-18T11:59:59.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/18/programmers-a0057</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-18T12:30:56.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/18/programmers-a0058</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-18T12:39:51.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/18/programmers-a0059</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-18T12:43:34.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/18/programmers-a0060</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-18T12:48:00.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/18/programmers-a0061</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-18T12:52:30.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/18/programmers-a0062</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-18T12:56:29.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/18/programmers-a0063</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-18T12:56:29.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2021/12/19/programmers-a0064</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-19T07:18:31.000Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>

@@ -10,41 +10,41 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next-seo.js</generator>
 		<pubDate>Wed, 26 May 2021 14:36:57 GMT</pubDate>
-		<lastBuildDate>Thu, 30 Dec 2021 16:44:54 GMT</lastBuildDate>
+		<lastBuildDate>Thu, 30 Dec 2021 16:52:15 GMT</lastBuildDate>
 		<item>
 			<title>./pages/404.tsx</title>
 			<description>./pages/404.tsx</description>
-			<pubDate>Thu, 30 Dec 2021 16:44:54 GMT</pubDate>
+			<pubDate>Thu, 30 Dec 2021 16:52:15 GMT</pubDate>
 			<link>https://blog.itcode.dev/404.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/404.html</guid>
 		</item>
 		<item>
 			<title>./pages/500.tsx</title>
 			<description>./pages/500.tsx</description>
-			<pubDate>Thu, 30 Dec 2021 16:44:54 GMT</pubDate>
+			<pubDate>Thu, 30 Dec 2021 16:52:15 GMT</pubDate>
 			<link>https://blog.itcode.dev/500.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/500.html</guid>
 		</item>
 		<item>
 			<title>./pages/about/index.tsx</title>
 			<description>./pages/about/index.tsx</description>
-			<pubDate>Thu, 30 Dec 2021 16:44:54 GMT</pubDate>
+			<pubDate>Thu, 30 Dec 2021 16:52:15 GMT</pubDate>
 			<link>https://blog.itcode.dev/about.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/about.html</guid>
 		</item>
 		<item>
-			<title>./pages/posts/index.tsx</title>
-			<description>./pages/posts/index.tsx</description>
-			<pubDate>Thu, 30 Dec 2021 16:44:54 GMT</pubDate>
-			<link>https://blog.itcode.dev/posts.html</link>
-			<guid isPermaLink="true">https://blog.itcode.dev/posts.html</guid>
-		</item>
-		<item>
 			<title>./pages/projects/index.tsx</title>
 			<description>./pages/projects/index.tsx</description>
-			<pubDate>Thu, 30 Dec 2021 16:44:54 GMT</pubDate>
+			<pubDate>Thu, 30 Dec 2021 16:52:15 GMT</pubDate>
 			<link>https://blog.itcode.dev/projects.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects.html</guid>
+		</item>
+		<item>
+			<title>./pages/posts/index.tsx</title>
+			<description>./pages/posts/index.tsx</description>
+			<pubDate>Thu, 30 Dec 2021 16:52:15 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts.html</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts.html</guid>
 		</item>
 		<item>
 			<title>Jekyll에서 Next.js로</title>

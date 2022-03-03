@@ -10,41 +10,41 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next-seo.js</generator>
 		<pubDate>Wed, 26 May 2021 14:36:57 GMT</pubDate>
-		<lastBuildDate>Thu, 30 Dec 2021 16:52:15 GMT</lastBuildDate>
+		<lastBuildDate>Thu, 03 Mar 2022 16:50:44 GMT</lastBuildDate>
 		<item>
 			<title>./pages/404.tsx</title>
 			<description>./pages/404.tsx</description>
-			<pubDate>Thu, 30 Dec 2021 16:52:15 GMT</pubDate>
+			<pubDate>Thu, 03 Mar 2022 16:50:44 GMT</pubDate>
 			<link>https://blog.itcode.dev/404.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/404.html</guid>
 		</item>
 		<item>
 			<title>./pages/500.tsx</title>
 			<description>./pages/500.tsx</description>
-			<pubDate>Thu, 30 Dec 2021 16:52:15 GMT</pubDate>
+			<pubDate>Thu, 03 Mar 2022 16:50:44 GMT</pubDate>
 			<link>https://blog.itcode.dev/500.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/500.html</guid>
 		</item>
 		<item>
 			<title>./pages/about/index.tsx</title>
 			<description>./pages/about/index.tsx</description>
-			<pubDate>Thu, 30 Dec 2021 16:52:15 GMT</pubDate>
+			<pubDate>Thu, 03 Mar 2022 16:50:44 GMT</pubDate>
 			<link>https://blog.itcode.dev/about.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/about.html</guid>
 		</item>
 		<item>
-			<title>./pages/projects/index.tsx</title>
-			<description>./pages/projects/index.tsx</description>
-			<pubDate>Thu, 30 Dec 2021 16:52:15 GMT</pubDate>
-			<link>https://blog.itcode.dev/projects.html</link>
-			<guid isPermaLink="true">https://blog.itcode.dev/projects.html</guid>
-		</item>
-		<item>
 			<title>./pages/posts/index.tsx</title>
 			<description>./pages/posts/index.tsx</description>
-			<pubDate>Thu, 30 Dec 2021 16:52:15 GMT</pubDate>
+			<pubDate>Thu, 03 Mar 2022 16:50:44 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts.html</guid>
+		</item>
+		<item>
+			<title>./pages/projects/index.tsx</title>
+			<description>./pages/projects/index.tsx</description>
+			<pubDate>Thu, 03 Mar 2022 16:50:44 GMT</pubDate>
+			<link>https://blog.itcode.dev/projects.html</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/projects.html</guid>
 		</item>
 		<item>
 			<title>Jekyll에서 Next.js로</title>
@@ -1886,6 +1886,42 @@
 			<category>프로그래머스</category>
 			<category>JAVA(자바)</category>
 			<category>Level 2</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 1. 머릿말</title>
+			<description>공간정보, 지리쪽에 업이 있거나 관심있는 사람이 아니라면, GIS라는 단어는 다소 생소한 단어다. 혹자는 GIS가 아니라 GPS 아니냐고 반문하기도 한다. GPS(Global Positioning System)는 3개 이상의 위성 신호를 통해 수신기의 위치를 계산할 수 있는 기법이다. GPS라 하면 흔히 네비게이션을 연상하기 쉽지만, 알게 모르게 GPS는 일상생활에 깊게 녹아들어 있다. 네비게이션, 스마트폰 지도, 배달 플랫폼의 라이더 위치 추적, 드론 군집비행, 군사학 등. GPS는 다양한 영역에 스며들어 그 이로움을 전해준다. 우리는 GPS를 통해, 공간정보라는 디지털 시대에서 공간을 디지털화한다는 것이 어떤 능력을 발휘하는 지 엿볼 수 있다. GIS(Global Information System)는 GPS와 같이 공간정보를 다루는 모든 기술에 대한 포괄적인 기술을 의미한다. GPS 뿐만 아니라, 지도, 좌표계와 같이 공간과 엮이는 모든 기술은 GIS라는 커다란 범주로 묶을 수 있다.</description>
+			<pubDate>Thu, 03 Mar 2022 14:05:35 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2022/03/03/gis-guide-for-programmer-1.html</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2022/03/03/gis-guide-for-programmer-1.html</guid>
+			<category>GIS</category>
+			<category>GeoServer</category>
+			<category>OpenLayers</category>
+			<category>React(리액트)</category>
+			<category>TypeScript</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 2. GIS랑 인사하기</title>
+			<description>여러분들이 GIS를 처음 접했다면, 한 번 물어보고 싶다. 공간이란 뭘로 이루어져 있을까? 한 번 생각해보자. 다양한 답이 나왔을 것이라 생각한다. 무슨 답인지 내가 직접 못 듣는다는 게 좀 아쉽지만. 아마 대부분 추상적인 답이 나왔을 것이라 생각한다.</description>
+			<pubDate>Thu, 03 Mar 2022 14:36:04 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2022/03/03/gis-guide-for-programmer-2.html</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2022/03/03/gis-guide-for-programmer-2.html</guid>
+			<category>GIS</category>
+			<category>GeoServer</category>
+			<category>OpenLayers</category>
+			<category>React(리액트)</category>
+			<category>TypeScript</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 3. 좌표계</title>
+			<description>1986년, NASA에서 우주왕복선 챌린저호를 발사했으나, 발사한 지 약 73초만에 폭발한 안타까운 사고가 있었다. 원인은 어이없게도 단위 실수. 국제적인 표준은 미터법임에도 불구하고, 미국을 포함한 몇몇 국가는 인치법을 표준으로 사용하고 있었다. 이러한 상황에서 우주선의 설계도 중 미터법으로 표기된 부품 O Ring을 인치법으로 제작했기 때문에 일어난 사고였다.</description>
+			<pubDate>Thu, 03 Mar 2022 16:47:29 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2022/03/04/gis-guide-for-programmer-3.html</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2022/03/04/gis-guide-for-programmer-3.html</guid>
+			<category>GIS</category>
+			<category>GeoServer</category>
+			<category>OpenLayers</category>
+			<category>React(리액트)</category>
+			<category>TypeScript</category>
 		</item>
 		<item>
 			<title>[React] 𝝅번째 알파카의 개발 낙서장 프로젝트</title>

@@ -10,41 +10,41 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next-seo.js</generator>
 		<pubDate>Wed, 26 May 2021 14:36:57 GMT</pubDate>
-		<lastBuildDate>Thu, 03 Mar 2022 16:50:44 GMT</lastBuildDate>
+		<lastBuildDate>Mon, 07 Mar 2022 17:34:38 GMT</lastBuildDate>
 		<item>
 			<title>./pages/404.tsx</title>
 			<description>./pages/404.tsx</description>
-			<pubDate>Thu, 03 Mar 2022 16:50:44 GMT</pubDate>
+			<pubDate>Mon, 07 Mar 2022 17:34:38 GMT</pubDate>
 			<link>https://blog.itcode.dev/404</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/404</guid>
 		</item>
 		<item>
 			<title>./pages/500.tsx</title>
 			<description>./pages/500.tsx</description>
-			<pubDate>Thu, 03 Mar 2022 16:50:44 GMT</pubDate>
+			<pubDate>Mon, 07 Mar 2022 17:34:38 GMT</pubDate>
 			<link>https://blog.itcode.dev/500</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/500</guid>
 		</item>
 		<item>
 			<title>./pages/about/index.tsx</title>
 			<description>./pages/about/index.tsx</description>
-			<pubDate>Thu, 03 Mar 2022 16:50:44 GMT</pubDate>
+			<pubDate>Mon, 07 Mar 2022 17:34:38 GMT</pubDate>
 			<link>https://blog.itcode.dev/about</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/about</guid>
 		</item>
 		<item>
-			<title>./pages/posts/index.tsx</title>
-			<description>./pages/posts/index.tsx</description>
-			<pubDate>Thu, 03 Mar 2022 16:50:44 GMT</pubDate>
-			<link>https://blog.itcode.dev/posts</link>
-			<guid isPermaLink="true">https://blog.itcode.dev/posts</guid>
-		</item>
-		<item>
 			<title>./pages/projects/index.tsx</title>
 			<description>./pages/projects/index.tsx</description>
-			<pubDate>Thu, 03 Mar 2022 16:50:44 GMT</pubDate>
+			<pubDate>Mon, 07 Mar 2022 17:34:38 GMT</pubDate>
 			<link>https://blog.itcode.dev/projects</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects</guid>
+		</item>
+		<item>
+			<title>./pages/posts/index.tsx</title>
+			<description>./pages/posts/index.tsx</description>
+			<pubDate>Mon, 07 Mar 2022 17:34:38 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts</guid>
 		</item>
 		<item>
 			<title>Jekyll에서 Next.js로</title>
@@ -643,7 +643,7 @@
 			<category>객체지향 5원칙</category>
 		</item>
 		<item>
-			<title>[OOP] 객체지향 5원칙(SOLID) - 인터페이스 분리 원칙 (Interface Segregation Principle)</title>
+			<title>[OOP] 객체지향 5원칙(SOLID) - 리스코프 치환 원칙 (Liskov Subsitution Principle)</title>
 			<description>리스코프 치환 원칙은 부모 객체와 이를 상속한 자식 객체가 있을 때 부모 객체를 호출하는 동작에서 자식 객체가 부모 객체를 완전히 대체할 수 있다는 원칙이다. 객체지향 언어에선 객체의 상속이 일어난다. 이 과정에서 부모/자식 관계가 정의된다. 자식 객체는 부모 객체의 특성을 가지며, 이를 토대로 확장할 수 있다. 하지만 이 과정에서 무리하거나 객체의 의의와 어긋나는 확장으로 인해 잘못된 방향으로 상속되는 경우가 생긴다. 리스코프 치환 원칙은 올바른 상속을 위해 자식 객체의 확장이 부모 객체의 방향을 온전히 따르도록 권고하는 원칙이다.</description>
 			<pubDate>Sun, 15 Aug 2021 04:42:11 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/08/15/liskov-subsitution-principle</link>
@@ -1888,16 +1888,23 @@
 			<category>Level 2</category>
 		</item>
 		<item>
+			<title>Tomcat 9 vs 10</title>
+			<description>필자는 Jersey 3 라이브러리를 활용하여 API 서버를 구성하고 있다. 코드를 작성하고 올바른 URL을 호출했음에도, 404 오류가 계속 출력됐다. 간단한 테스트 서블릿을 작성하고, 공식 문서와 아무리 비교를 해도 별다른 특이점을 찾을 수 없었다. 알고보니, Jersey 3는 Servlet 5.0을 지원하기 때문에 Servlet 5.0 스펙을 구현한 Tomcat 10 이상부터 구동이 가능하다는 것을 처음 알았다. 지금껏 톰캣의 버전을 크게 신경쓰지 않았으나, 이 계기로 Tomcat 9와 Tomcat 10에 큰 차이가 있다는 것을 깨달았다.</description>
+			<pubDate>Wed, 29 Dec 2021 13:13:12 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2022/02/12/tomcat-9-and-10</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2022/02/12/tomcat-9-and-10</guid>
+			<category>알고리즘</category>
+			<category>JAVA(자바)</category>
+			<category>WAS</category>
+			<category>Tomcat(톰캣)</category>
+		</item>
+		<item>
 			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 1. 머릿말</title>
 			<description>공간정보, 지리쪽에 업이 있거나 관심있는 사람이 아니라면, GIS라는 단어는 다소 생소한 단어다. 혹자는 GIS가 아니라 GPS 아니냐고 반문하기도 한다. GPS(Global Positioning System)는 3개 이상의 위성 신호를 통해 수신기의 위치를 계산할 수 있는 기법이다. GPS라 하면 흔히 네비게이션을 연상하기 쉽지만, 알게 모르게 GPS는 일상생활에 깊게 녹아들어 있다. 네비게이션, 스마트폰 지도, 배달 플랫폼의 라이더 위치 추적, 드론 군집비행, 군사학 등. GPS는 다양한 영역에 스며들어 그 이로움을 전해준다. 우리는 GPS를 통해, 공간정보라는 디지털 시대에서 공간을 디지털화한다는 것이 어떤 능력을 발휘하는 지 엿볼 수 있다. GIS(Global Information System)는 GPS와 같이 공간정보를 다루는 모든 기술에 대한 포괄적인 기술을 의미한다. GPS 뿐만 아니라, 지도, 좌표계와 같이 공간과 엮이는 모든 기술은 GIS라는 커다란 범주로 묶을 수 있다.</description>
 			<pubDate>Thu, 03 Mar 2022 14:05:35 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2022/03/03/gis-guide-for-programmer-1</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2022/03/03/gis-guide-for-programmer-1</guid>
 			<category>GIS</category>
-			<category>GeoServer</category>
-			<category>OpenLayers</category>
-			<category>React(리액트)</category>
-			<category>TypeScript</category>
 		</item>
 		<item>
 			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 2. GIS랑 인사하기</title>
@@ -1906,10 +1913,6 @@
 			<link>https://blog.itcode.dev/posts/2022/03/03/gis-guide-for-programmer-2</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2022/03/03/gis-guide-for-programmer-2</guid>
 			<category>GIS</category>
-			<category>GeoServer</category>
-			<category>OpenLayers</category>
-			<category>React(리액트)</category>
-			<category>TypeScript</category>
 		</item>
 		<item>
 			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 3. 좌표계</title>
@@ -1918,10 +1921,43 @@
 			<link>https://blog.itcode.dev/posts/2022/03/04/gis-guide-for-programmer-3</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2022/03/04/gis-guide-for-programmer-3</guid>
 			<category>GIS</category>
-			<category>GeoServer</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 4. QGIS 체험하기</title>
+			<description>이전에 대부분의 공간정보 데이터는 SHP를 기본으로 제공한다고 언급했었다. 그런데 문제는 이 SHP. 어떻게 여는지 모르겠다. GeoJSON이나 CSV 같은 텍스트 기반 데이터는 어찌됐든 열어서 검증을 해볼 수 있지만, SHP는 그게 안 된다는 말이다. 때문에 SHP를 열어서 조작할 수 있는 일종의 툴이 필요한데, 이미 여러 툴이 있으니 크게 문제되진 않는다. 가장 대표적인 툴은 두 가지가 있다.</description>
+			<pubDate>Fri, 04 Mar 2022 18:05:25 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2022/03/05/gis-guide-for-programmer-4</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2022/03/05/gis-guide-for-programmer-4</guid>
+			<category>GIS</category>
+			<category>QGIS</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 5. OpenLayers</title>
+			<description>OpenLayers는 웹 브라우저에서 지도나 GIS 서비스를 제공하기 위한 JavaScript Library다. GIS 라이브러리 중 진입 장벽은 가장 높지만, 그에 상응하는 강력한 기능을 제공한다.</description>
+			<pubDate>Fri, 04 Mar 2022 18:39:25 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2022/03/05/gis-guide-for-programmer-5</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2022/03/05/gis-guide-for-programmer-5</guid>
+			<category>GIS</category>
 			<category>OpenLayers</category>
-			<category>React(리액트)</category>
-			<category>TypeScript</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 6. 공간정보의 DB화</title>
+			<description>데이터의 CRUD 소요가 있는 서비스는 DB를 사용한다. 서비스 운영에 필요한 데이터를 DB에 저장하고, 이를 적절히 관리, 조작함으로써 서비스의 기능을 제공한다. GIS의 경우, 그 특성상 대용량 데이터를 자주 접하게 된다. 일례로, 전국의 건물 수는 몇백만을 우습게 상회하기 때문. 단순 row가 백만 단위인 것도 문제지만, 건물 정보의 특성 상 column의 갯수 또한 수십 개 정도다. 때문의 데이터의 용량이 매우 커진다.</description>
+			<pubDate>Fri, 04 Mar 2022 19:35:41 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2022/03/05/gis-guide-for-programmer-6</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2022/03/05/gis-guide-for-programmer-6</guid>
+			<category>GIS</category>
+			<category>MariaDB</category>
+			<category>QGIS</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 7. 공간정보 데이터를 관리하는 법. GeoServer</title>
+			<description>이전 장에서 공간정보 데이터를 DB에 넣어봤다. 이제 데이터를 적절한 방법으로 통신할 방법만 마련한다면, DB에 저장한 공간정보 데이터를 웹에서든 앱에서든 자유롭게 활용할 수 있을 것이다. 하지만 누누히 언급했듯이, 공간정보 데이터는 다른 데이터와 엄연한 차별점이 존재한다. 바로 공간 데이터라는 점이다. 공간정보 데이터는 일반적인 텍스트 기반의 데이터가 아니다보니, CRUD에 있어서 굉장히 취약하다. 좀 더 자유로운 통신을 위해 DB에 넣었음에도 CRUD에 전혀 강점이 없는 것. 즉, MyBatis든, JPA든, 일반적인 DB 통신으로는 공간정보 데이터를 온전히 받기가 어렵다.</description>
+			<pubDate>Sun, 06 Mar 2022 16:12:33 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2022/03/07/gis-guide-for-programmer-7</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2022/03/07/gis-guide-for-programmer-7</guid>
+			<category>GIS</category>
+			<category>GeoServer</category>
 		</item>
 		<item>
 			<title>[React] 𝝅번째 알파카의 개발 낙서장 프로젝트</title>

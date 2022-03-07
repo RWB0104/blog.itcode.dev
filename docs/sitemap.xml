@@ -3,37 +3,37 @@
 	<url>
 		<loc>https://blog.itcode.dev/404</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-03-03T16:50:44.582Z</lastmod>
+		<lastmod>2022-03-07T17:34:38.073Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/500</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-03-03T16:50:44.582Z</lastmod>
+		<lastmod>2022-03-07T17:34:38.073Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-03-03T16:50:44.582Z</lastmod>
+		<lastmod>2022-03-07T17:34:38.073Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/about</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-03-03T16:50:44.582Z</lastmod>
-		<changefreq>always</changefreq>
-	</url>
-	<url>
-		<loc>https://blog.itcode.dev/posts</loc>
-		<priority>1.0</priority>
-		<lastmod>2022-03-03T16:50:44.582Z</lastmod>
+		<lastmod>2022-03-07T17:34:38.073Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/projects</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-03-03T16:50:44.582Z</lastmod>
+		<lastmod>2022-03-07T17:34:38.073Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-07T17:34:38.073Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
@@ -1027,6 +1027,12 @@
 		<changefreq>always</changefreq>
 	</url>
 	<url>
+		<loc>https://blog.itcode.dev/posts/2022/02/12/tomcat-9-and-10</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-12-29T13:13:12.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
 		<loc>https://blog.itcode.dev/posts/2022/03/03/gis-guide-for-programmer-1</loc>
 		<priority>1.0</priority>
 		<lastmod>2022-03-03T14:05:35.000Z</lastmod>
@@ -1042,6 +1048,30 @@
 		<loc>https://blog.itcode.dev/posts/2022/03/04/gis-guide-for-programmer-3</loc>
 		<priority>1.0</priority>
 		<lastmod>2022-03-03T16:47:29.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2022/03/05/gis-guide-for-programmer-4</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-04T18:05:25.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2022/03/05/gis-guide-for-programmer-5</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-04T18:39:25.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2022/03/05/gis-guide-for-programmer-6</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-04T19:35:41.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2022/03/07/gis-guide-for-programmer-7</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-06T16:12:33.000Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>

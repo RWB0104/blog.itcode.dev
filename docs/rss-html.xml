@@ -10,39 +10,39 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next-seo.js</generator>
 		<pubDate>Wed, 26 May 2021 14:36:57 GMT</pubDate>
-		<lastBuildDate>Mon, 07 Mar 2022 17:34:38 GMT</lastBuildDate>
+		<lastBuildDate>Wed, 16 Mar 2022 17:20:42 GMT</lastBuildDate>
 		<item>
 			<title>./pages/404.tsx</title>
 			<description>./pages/404.tsx</description>
-			<pubDate>Mon, 07 Mar 2022 17:34:38 GMT</pubDate>
+			<pubDate>Wed, 16 Mar 2022 17:20:42 GMT</pubDate>
 			<link>https://blog.itcode.dev/404.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/404.html</guid>
 		</item>
 		<item>
 			<title>./pages/500.tsx</title>
 			<description>./pages/500.tsx</description>
-			<pubDate>Mon, 07 Mar 2022 17:34:38 GMT</pubDate>
+			<pubDate>Wed, 16 Mar 2022 17:20:42 GMT</pubDate>
 			<link>https://blog.itcode.dev/500.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/500.html</guid>
 		</item>
 		<item>
 			<title>./pages/about/index.tsx</title>
 			<description>./pages/about/index.tsx</description>
-			<pubDate>Mon, 07 Mar 2022 17:34:38 GMT</pubDate>
+			<pubDate>Wed, 16 Mar 2022 17:20:42 GMT</pubDate>
 			<link>https://blog.itcode.dev/about.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/about.html</guid>
 		</item>
 		<item>
 			<title>./pages/projects/index.tsx</title>
 			<description>./pages/projects/index.tsx</description>
-			<pubDate>Mon, 07 Mar 2022 17:34:38 GMT</pubDate>
+			<pubDate>Wed, 16 Mar 2022 17:20:42 GMT</pubDate>
 			<link>https://blog.itcode.dev/projects.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects.html</guid>
 		</item>
 		<item>
 			<title>./pages/posts/index.tsx</title>
 			<description>./pages/posts/index.tsx</description>
-			<pubDate>Mon, 07 Mar 2022 17:34:38 GMT</pubDate>
+			<pubDate>Wed, 16 Mar 2022 17:20:42 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts.html</guid>
 		</item>
@@ -1956,6 +1956,24 @@
 			<pubDate>Sun, 06 Mar 2022 16:12:33 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2022/03/07/gis-guide-for-programmer-7.html</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2022/03/07/gis-guide-for-programmer-7.html</guid>
+			<category>GIS</category>
+			<category>GeoServer</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 8. 공간정보 데이터를 주문하는 법. OGC</title>
+			<description>OpenLayers는 웹 브라우저에서 지도나 GIS 서비스를 제공하기 위한 JavaScript Library다. GIS 라이브러리 중 진입 장벽은 가장 높지만, 그에 상응하는 강력한 기능을 제공한다.</description>
+			<pubDate>Mon, 14 Mar 2022 14:37:32 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2022/03/14/gis-guide-for-programmer-8.html</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2022/03/14/gis-guide-for-programmer-8.html</guid>
+			<category>GIS</category>
+			<category>GeoServer</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 9. 데이터 필터링하기</title>
+			<description>WFS나 WMS를 호출할 때, 좀 더 다채로운 필터링이 필요한 경우가 존재할 수 있다. 특정 영역 밖의 객체를 호출한다거나, 특정 영역에 걸치는 데이터만 호출하는 것, 혹은 다양한 조건을 조합하여 데이터를 조회해야 할 수도 있다.</description>
+			<pubDate>Mon, 14 Mar 2022 16:11:19 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2022/03/15/gis-guide-for-programmer-9.html</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2022/03/15/gis-guide-for-programmer-9.html</guid>
 			<category>GIS</category>
 			<category>GeoServer</category>
 		</item>

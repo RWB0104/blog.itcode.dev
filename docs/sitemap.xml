@@ -3,37 +3,37 @@
 	<url>
 		<loc>https://blog.itcode.dev/404</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-03-07T17:34:38.073Z</lastmod>
+		<lastmod>2022-03-16T17:20:42.884Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/500</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-03-07T17:34:38.073Z</lastmod>
+		<lastmod>2022-03-16T17:20:42.885Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-03-07T17:34:38.073Z</lastmod>
+		<lastmod>2022-03-16T17:20:42.885Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/about</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-03-07T17:34:38.073Z</lastmod>
+		<lastmod>2022-03-16T17:20:42.885Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/projects</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-03-07T17:34:38.073Z</lastmod>
+		<lastmod>2022-03-16T17:20:42.885Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/posts</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-03-07T17:34:38.073Z</lastmod>
+		<lastmod>2022-03-16T17:20:42.885Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
@@ -1072,6 +1072,18 @@
 		<loc>https://blog.itcode.dev/posts/2022/03/07/gis-guide-for-programmer-7</loc>
 		<priority>1.0</priority>
 		<lastmod>2022-03-06T16:12:33.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2022/03/14/gis-guide-for-programmer-8</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-14T14:37:32.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2022/03/15/gis-guide-for-programmer-9</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-14T16:11:19.000Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>

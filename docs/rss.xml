@@ -10,41 +10,41 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next-seo.js</generator>
 		<pubDate>Wed, 26 May 2021 14:36:57 GMT</pubDate>
-		<lastBuildDate>Wed, 16 Mar 2022 17:20:42 GMT</lastBuildDate>
+		<lastBuildDate>Tue, 29 Mar 2022 16:26:56 GMT</lastBuildDate>
 		<item>
 			<title>./pages/404.tsx</title>
 			<description>./pages/404.tsx</description>
-			<pubDate>Wed, 16 Mar 2022 17:20:42 GMT</pubDate>
+			<pubDate>Tue, 29 Mar 2022 16:26:56 GMT</pubDate>
 			<link>https://blog.itcode.dev/404</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/404</guid>
 		</item>
 		<item>
 			<title>./pages/500.tsx</title>
 			<description>./pages/500.tsx</description>
-			<pubDate>Wed, 16 Mar 2022 17:20:42 GMT</pubDate>
+			<pubDate>Tue, 29 Mar 2022 16:26:56 GMT</pubDate>
 			<link>https://blog.itcode.dev/500</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/500</guid>
 		</item>
 		<item>
 			<title>./pages/about/index.tsx</title>
 			<description>./pages/about/index.tsx</description>
-			<pubDate>Wed, 16 Mar 2022 17:20:42 GMT</pubDate>
+			<pubDate>Tue, 29 Mar 2022 16:26:56 GMT</pubDate>
 			<link>https://blog.itcode.dev/about</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/about</guid>
 		</item>
 		<item>
-			<title>./pages/projects/index.tsx</title>
-			<description>./pages/projects/index.tsx</description>
-			<pubDate>Wed, 16 Mar 2022 17:20:42 GMT</pubDate>
-			<link>https://blog.itcode.dev/projects</link>
-			<guid isPermaLink="true">https://blog.itcode.dev/projects</guid>
-		</item>
-		<item>
 			<title>./pages/posts/index.tsx</title>
 			<description>./pages/posts/index.tsx</description>
-			<pubDate>Wed, 16 Mar 2022 17:20:42 GMT</pubDate>
+			<pubDate>Tue, 29 Mar 2022 16:26:56 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts</guid>
+		</item>
+		<item>
+			<title>./pages/projects/index.tsx</title>
+			<description>./pages/projects/index.tsx</description>
+			<pubDate>Tue, 29 Mar 2022 16:26:56 GMT</pubDate>
+			<link>https://blog.itcode.dev/projects</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/projects</guid>
 		</item>
 		<item>
 			<title>Jekyll에서 Next.js로</title>
@@ -1974,6 +1974,33 @@
 			<pubDate>Mon, 14 Mar 2022 16:11:19 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts/2022/03/15/gis-guide-for-programmer-9</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2022/03/15/gis-guide-for-programmer-9</guid>
+			<category>GIS</category>
+			<category>GeoServer</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 10. Open Street Map(OSM) 맵 만들기</title>
+			<description>OSM이란, 전세계 지도 종사자들이 자율적으로 관리하는 세계지도다. 즉, 지도 분야의 오픈 소스라고 생각하면 이해하기 쉽다. 각 국의 기여자들이 지도를 관리하고 있으며, 각 국가의 영역은 해당하는 국가의 언어로 표시된다. 전세계를 대상으로 하는 서비스에도 무리없이 적용 가능하다는 장점이 있다. 단, 한국 기준으로 지도의 퀄리티가 그리 뛰어나진 않다. OpenLayers는 라이브러리 단계에서 OSM을 기본 제공한다. 즉, 별다른 API 호출이나 설정 없이 간단한 코드 몇 줄 만으로도 웹 상에 세계지도를 띄울 수 있다. 이 장에서는 OpenLayers6를 활용하여 웹 상에 OSM을 띄우는 매우 기초적인 방법에 대해 다룬다.</description>
+			<pubDate>Mon, 14 Mar 2022 19:53:00 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2022/03/19/gis-guide-for-programmer-10</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2022/03/19/gis-guide-for-programmer-10</guid>
+			<category>GIS</category>
+			<category>GeoServer</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 11. VWorld 맵 만들기</title>
+			<description>이전 장에서 OSM을 통해 지도를 표시해봤다. 하지만, OSM의 지도는 디테일함이 떨어진다는 무시할 수 없는 단점이 존재한다. OSM은 사용하기 쉬운 세계지도라는 큰 장점이 있음에도, 저 단점 하나로 인해 국내 서비스용 지도로 사용하기 어렵다. 즉, 예제 이상의 실질적인 서비스에 사용하려면 국내 지리에 특화된 지도가 필요하다.</description>
+			<pubDate>Mon, 21 Mar 2022 14:51:45 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2022/03/21/gis-guide-for-programmer-11</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2022/03/21/gis-guide-for-programmer-11</guid>
+			<category>GIS</category>
+			<category>GeoServer</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 12. 맵의 유용한 정보 표시하기</title>
+			<description>이전 장에서 OSM을 통해 지도를 표시해봤다. 하지만, OSM의 지도는 디테일함이 떨어진다는 무시할 수 없는 단점이 존재한다. OSM은 사용하기 쉬운 세계지도라는 큰 장점이 있음에도, 저 단점 하나로 인해 국내 서비스용 지도로 사용하기 어렵다. 즉, 예제 이상의 실질적인 서비스에 사용하려면 국내 지리에 특화된 지도가 필요하다.</description>
+			<pubDate>Mon, 21 Mar 2022 14:51:45 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2022/03/22/gis-guide-for-programmer-12</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2022/03/22/gis-guide-for-programmer-12</guid>
 			<category>GIS</category>
 			<category>GeoServer</category>
 		</item>

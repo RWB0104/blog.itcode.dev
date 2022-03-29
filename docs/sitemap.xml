@@ -3,37 +3,37 @@
 	<url>
 		<loc>https://blog.itcode.dev/404</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-03-16T17:20:42.884Z</lastmod>
+		<lastmod>2022-03-29T16:26:56.099Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/500</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-03-16T17:20:42.885Z</lastmod>
+		<lastmod>2022-03-29T16:26:56.099Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-03-16T17:20:42.885Z</lastmod>
+		<lastmod>2022-03-29T16:26:56.099Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/about</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-03-16T17:20:42.885Z</lastmod>
-		<changefreq>always</changefreq>
-	</url>
-	<url>
-		<loc>https://blog.itcode.dev/projects</loc>
-		<priority>1.0</priority>
-		<lastmod>2022-03-16T17:20:42.885Z</lastmod>
+		<lastmod>2022-03-29T16:26:56.099Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/posts</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-03-16T17:20:42.885Z</lastmod>
+		<lastmod>2022-03-29T16:26:56.099Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/projects</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-29T16:26:56.099Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
@@ -1084,6 +1084,24 @@
 		<loc>https://blog.itcode.dev/posts/2022/03/15/gis-guide-for-programmer-9</loc>
 		<priority>1.0</priority>
 		<lastmod>2022-03-14T16:11:19.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2022/03/19/gis-guide-for-programmer-10</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-14T19:53:00.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2022/03/21/gis-guide-for-programmer-11</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-21T14:51:45.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2022/03/22/gis-guide-for-programmer-12</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-21T14:51:45.000Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>

@@ -10,51 +10,41 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next-seo.js</generator>
 		<pubDate>Wed, 26 May 2021 14:36:57 GMT</pubDate>
-		<lastBuildDate>Tue, 10 May 2022 18:03:44 GMT</lastBuildDate>
+		<lastBuildDate>Wed, 11 May 2022 16:12:12 GMT</lastBuildDate>
 		<item>
 			<title>./pages/404.tsx</title>
 			<description>./pages/404.tsx</description>
-			<pubDate>Tue, 10 May 2022 18:03:44 GMT</pubDate>
+			<pubDate>Wed, 11 May 2022 16:12:12 GMT</pubDate>
 			<link>https://blog.itcode.dev/404</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/404</guid>
 		</item>
 		<item>
 			<title>./pages/index.tsx</title>
 			<description>./pages/index.tsx</description>
-			<pubDate>Tue, 10 May 2022 18:03:44 GMT</pubDate>
+			<pubDate>Wed, 11 May 2022 16:12:12 GMT</pubDate>
 			<link>https://blog.itcode.dev</link>
 			<guid isPermaLink="true">https://blog.itcode.dev</guid>
 		</item>
 		<item>
 			<title>./pages/about/index.tsx</title>
 			<description>./pages/about/index.tsx</description>
-			<pubDate>Tue, 10 May 2022 18:03:44 GMT</pubDate>
+			<pubDate>Wed, 11 May 2022 16:12:12 GMT</pubDate>
 			<link>https://blog.itcode.dev/about</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/about</guid>
 		</item>
 		<item>
 			<title>./pages/posts/index.tsx</title>
 			<description>./pages/posts/index.tsx</description>
-			<pubDate>Tue, 10 May 2022 18:03:44 GMT</pubDate>
+			<pubDate>Wed, 11 May 2022 16:12:12 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts</guid>
 		</item>
 		<item>
 			<title>./pages/projects/index.tsx</title>
 			<description>./pages/projects/index.tsx</description>
-			<pubDate>Tue, 10 May 2022 18:03:44 GMT</pubDate>
+			<pubDate>Wed, 11 May 2022 16:12:12 GMT</pubDate>
 			<link>https://blog.itcode.dev/projects</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects</guid>
-		</item>
-		<item>
-			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 15. WFS를 사용하여 지도에 객체 표시하기</title>
-			<description></description>
-			<pubDate>Sun, 03 Apr 2022 16:56:03 GMT</pubDate>
-			<link>https://blog.itcode.dev/2022/04/07/gis-guide-for-programmer-15</link>
-			<guid isPermaLink="true">https://blog.itcode.dev/2022/04/07/gis-guide-for-programmer-15</guid>
-			<category>GIS</category>
-			<category>GeoServer</category>
-			<category>OpenLayers</category>
 		</item>
 		<item>
 			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 14. 지도에 사용자의 위치 표시하기</title>

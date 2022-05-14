@@ -10,172 +10,48 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next-seo.js</generator>
 		<pubDate>Wed, 26 May 2021 14:36:57 GMT</pubDate>
-		<lastBuildDate>Sat, 14 May 2022 07:25:35 GMT</lastBuildDate>
+		<lastBuildDate>Sat, 14 May 2022 17:50:39 GMT</lastBuildDate>
 		<item>
 			<title>./pages/404.tsx</title>
 			<description>./pages/404.tsx</description>
-			<pubDate>Sat, 14 May 2022 07:25:35 GMT</pubDate>
+			<pubDate>Sat, 14 May 2022 17:50:39 GMT</pubDate>
 			<link>https://blog.itcode.dev/404</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/404</guid>
 		</item>
 		<item>
 			<title>./pages/index.tsx</title>
 			<description>./pages/index.tsx</description>
-			<pubDate>Sat, 14 May 2022 07:25:35 GMT</pubDate>
+			<pubDate>Sat, 14 May 2022 17:50:39 GMT</pubDate>
 			<link>https://blog.itcode.dev</link>
 			<guid isPermaLink="true">https://blog.itcode.dev</guid>
 		</item>
 		<item>
 			<title>./pages/about/index.tsx</title>
 			<description>./pages/about/index.tsx</description>
-			<pubDate>Sat, 14 May 2022 07:25:35 GMT</pubDate>
+			<pubDate>Sat, 14 May 2022 17:50:39 GMT</pubDate>
 			<link>https://blog.itcode.dev/about</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/about</guid>
 		</item>
 		<item>
 			<title>./pages/comments/index.tsx</title>
 			<description>./pages/comments/index.tsx</description>
-			<pubDate>Sat, 14 May 2022 07:25:35 GMT</pubDate>
+			<pubDate>Sat, 14 May 2022 17:50:39 GMT</pubDate>
 			<link>https://blog.itcode.dev/comments</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/comments</guid>
 		</item>
 		<item>
 			<title>./pages/posts/index.tsx</title>
 			<description>./pages/posts/index.tsx</description>
-			<pubDate>Sat, 14 May 2022 07:25:35 GMT</pubDate>
+			<pubDate>Sat, 14 May 2022 17:50:39 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts</guid>
 		</item>
 		<item>
 			<title>./pages/projects/index.tsx</title>
 			<description>./pages/projects/index.tsx</description>
-			<pubDate>Sat, 14 May 2022 07:25:35 GMT</pubDate>
+			<pubDate>Sat, 14 May 2022 17:50:39 GMT</pubDate>
 			<link>https://blog.itcode.dev/projects</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects</guid>
-		</item>
-		<item>
-			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 14. 지도에 사용자의 위치 표시하기</title>
-			<description>사용자의 위치를 기반으로 다양한 서비스를 제공할 수 있겠지만, 그 중에서 가장 기본적인 기능은 사용자의 위치를 지도 상에 직접 표시하는 것이다. 이전 장에서 설명한 지오로케이션을 토대로, OpenLayers를 활용하여 위치를 지도에 표시한다.</description>
-			<pubDate>Sun, 03 Apr 2022 16:56:03 GMT</pubDate>
-			<link>https://blog.itcode.dev/2022/04/04/gis-guide-for-programmer-14</link>
-			<guid isPermaLink="true">https://blog.itcode.dev/2022/04/04/gis-guide-for-programmer-14</guid>
-			<category>GIS</category>
-			<category>OpenLayers</category>
-		</item>
-		<item>
-			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 13. 브라우저에서 사용자 위치정보 수집하기</title>
-			<description>지도 서비스 중에서는 사용자의 위치를 분석하고, 위치에 더욱 적절한 컨텐츠를 제시하기도 한다. 일례로, 배달 어플은 사용자의 위치에 따라 일정 범위 내의 음식점만을 우선으로 보여준다던가 하는 방식이다. 어플리케이션의 경우, 주 구동 기기인 스마트폰의 GPS를 활용할 수 있다. 비슷하게 브라우저는 브라우저 자체적으로 사용자의 동의에 따라 위치정보를 수집하여 활용할 수 있다. 당연하게도 인터넷이 반드시 연결되어야 한다.</description>
-			<pubDate>Sat, 02 Apr 2022 17:50:05 GMT</pubDate>
-			<link>https://blog.itcode.dev/2022/04/03/gis-guide-for-programmer-13</link>
-			<guid isPermaLink="true">https://blog.itcode.dev/2022/04/03/gis-guide-for-programmer-13</guid>
-			<category>GIS</category>
-			<category>OpenLayers</category>
-		</item>
-		<item>
-			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 12. 맵의 유용한 정보 표시하기</title>
-			<description>지도를 다루다보면, 내가 현재 보고있는 영역의 좌표, 지도 상에서 마우스가 위치한 좌표, 줌 레벨 등 다양한 정보를 얻어야할 경우가 생긴다. 이런 니즈를 충족하기 위해, 지도 상에 상태창을 만들어 관련 정보를 출력해주면 필요할 때 유용하게 사용할 수 있을 것이다.</description>
-			<pubDate>Tue, 22 Mar 2022 13:37:21 GMT</pubDate>
-			<link>https://blog.itcode.dev/2022/03/22/gis-guide-for-programmer-12</link>
-			<guid isPermaLink="true">https://blog.itcode.dev/2022/03/22/gis-guide-for-programmer-12</guid>
-			<category>GIS</category>
-			<category>OpenLayers</category>
-		</item>
-		<item>
-			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 11. VWorld 맵 만들기</title>
-			<description>이전 장에서 OSM을 통해 지도를 표시해봤다. 하지만, OSM의 지도는 디테일함이 떨어진다는 무시할 수 없는 단점이 존재한다. OSM은 사용하기 쉬운 세계지도라는 큰 장점이 있음에도, 저 단점 하나로 인해 국내 서비스용 지도로 사용하기 어렵다. 즉, 예제 이상의 실질적인 서비스에 사용하려면 국내 지리에 특화된 지도가 필요하다.</description>
-			<pubDate>Mon, 21 Mar 2022 14:51:45 GMT</pubDate>
-			<link>https://blog.itcode.dev/2022/03/21/gis-guide-for-programmer-11</link>
-			<guid isPermaLink="true">https://blog.itcode.dev/2022/03/21/gis-guide-for-programmer-11</guid>
-			<category>GIS</category>
-			<category>OpenLayers</category>
-		</item>
-		<item>
-			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 10. Open Street Map(OSM) 맵 만들기</title>
-			<description>OSM이란, 전세계 지도 종사자들이 자율적으로 관리하는 세계지도다. 즉, 지도 분야의 오픈 소스라고 생각하면 이해하기 쉽다. 각 국의 기여자들이 지도를 관리하고 있으며, 각 국가의 영역은 해당하는 국가의 언어로 표시된다. 전세계를 대상으로 하는 서비스에도 무리없이 적용 가능하다는 장점이 있다. 단, 한국 기준으로 지도의 퀄리티가 그리 뛰어나진 않다. OpenLayers는 라이브러리 단계에서 OSM을 기본 제공한다. 즉, 별다른 API 호출이나 설정 없이 간단한 코드 몇 줄 만으로도 웹 상에 세계지도를 띄울 수 있다. 이 장에서는 OpenLayers6를 활용하여 웹 상에 OSM을 띄우는 매우 기초적인 방법에 대해 다룬다.</description>
-			<pubDate>Mon, 14 Mar 2022 19:53:00 GMT</pubDate>
-			<link>https://blog.itcode.dev/2022/03/19/gis-guide-for-programmer-10</link>
-			<guid isPermaLink="true">https://blog.itcode.dev/2022/03/19/gis-guide-for-programmer-10</guid>
-			<category>GIS</category>
-			<category>OpenLayers</category>
-		</item>
-		<item>
-			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 9. 데이터 필터링하기</title>
-			<description>WFS나 WMS를 호출할 때, 좀 더 다채로운 필터링이 필요한 경우가 존재할 수 있다. 특정 영역 밖의 객체를 호출한다거나, 특정 영역에 걸치는 데이터만 호출하는 것, 혹은 다양한 조건을 조합하여 데이터를 조회해야 할 수도 있다.</description>
-			<pubDate>Mon, 14 Mar 2022 16:11:19 GMT</pubDate>
-			<link>https://blog.itcode.dev/2022/03/15/gis-guide-for-programmer-9</link>
-			<guid isPermaLink="true">https://blog.itcode.dev/2022/03/15/gis-guide-for-programmer-9</guid>
-			<category>GIS</category>
-			<category>GeoServer</category>
-		</item>
-		<item>
-			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 8. 공간정보 데이터를 주문하는 법. OGC</title>
-			<description>OpenLayers는 웹 브라우저에서 지도나 GIS 서비스를 제공하기 위한 JavaScript Library다. GIS 라이브러리 중 진입 장벽은 가장 높지만, 그에 상응하는 강력한 기능을 제공한다.</description>
-			<pubDate>Mon, 14 Mar 2022 14:37:32 GMT</pubDate>
-			<link>https://blog.itcode.dev/2022/03/14/gis-guide-for-programmer-8</link>
-			<guid isPermaLink="true">https://blog.itcode.dev/2022/03/14/gis-guide-for-programmer-8</guid>
-			<category>GIS</category>
-			<category>GeoServer</category>
-		</item>
-		<item>
-			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 7. 공간정보 데이터를 관리하는 법. GeoServer</title>
-			<description>이전 장에서 공간정보 데이터를 DB에 넣어봤다. 이제 데이터를 적절한 방법으로 통신할 방법만 마련한다면, DB에 저장한 공간정보 데이터를 웹에서든 앱에서든 자유롭게 활용할 수 있을 것이다. 하지만 누누히 언급했듯이, 공간정보 데이터는 다른 데이터와 엄연한 차별점이 존재한다. 바로 공간 데이터라는 점이다. 공간정보 데이터는 일반적인 텍스트 기반의 데이터가 아니다보니, CRUD에 있어서 굉장히 취약하다. 좀 더 자유로운 통신을 위해 DB에 넣었음에도 CRUD에 전혀 강점이 없는 것. 즉, MyBatis든, JPA든, 일반적인 DB 통신으로는 공간정보 데이터를 온전히 받기가 어렵다.</description>
-			<pubDate>Sun, 06 Mar 2022 16:12:33 GMT</pubDate>
-			<link>https://blog.itcode.dev/2022/03/07/gis-guide-for-programmer-7</link>
-			<guid isPermaLink="true">https://blog.itcode.dev/2022/03/07/gis-guide-for-programmer-7</guid>
-			<category>GIS</category>
-			<category>GeoServer</category>
-		</item>
-		<item>
-			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 6. 공간정보의 DB화</title>
-			<description>데이터의 CRUD 소요가 있는 서비스는 DB를 사용한다. 서비스 운영에 필요한 데이터를 DB에 저장하고, 이를 적절히 관리, 조작함으로써 서비스의 기능을 제공한다. GIS의 경우, 그 특성상 대용량 데이터를 자주 접하게 된다. 일례로, 전국의 건물 수는 몇백만을 우습게 상회하기 때문. 단순 row가 백만 단위인 것도 문제지만, 건물 정보의 특성 상 column의 갯수 또한 수십 개 정도다. 때문의 데이터의 용량이 매우 커진다.</description>
-			<pubDate>Fri, 04 Mar 2022 19:35:41 GMT</pubDate>
-			<link>https://blog.itcode.dev/2022/03/05/gis-guide-for-programmer-6</link>
-			<guid isPermaLink="true">https://blog.itcode.dev/2022/03/05/gis-guide-for-programmer-6</guid>
-			<category>GIS</category>
-			<category>MariaDB</category>
-			<category>QGIS</category>
-		</item>
-		<item>
-			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 5. OpenLayers</title>
-			<description>OpenLayers는 웹 브라우저에서 지도나 GIS 서비스를 제공하기 위한 JavaScript Library다. GIS 라이브러리 중 진입 장벽은 가장 높지만, 그에 상응하는 강력한 기능을 제공한다.</description>
-			<pubDate>Fri, 04 Mar 2022 18:39:25 GMT</pubDate>
-			<link>https://blog.itcode.dev/2022/03/05/gis-guide-for-programmer-5</link>
-			<guid isPermaLink="true">https://blog.itcode.dev/2022/03/05/gis-guide-for-programmer-5</guid>
-			<category>GIS</category>
-			<category>OpenLayers</category>
-		</item>
-		<item>
-			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 4. QGIS 체험하기</title>
-			<description>이전에 대부분의 공간정보 데이터는 SHP를 기본으로 제공한다고 언급했었다. 그런데 문제는 이 SHP. 어떻게 여는지 모르겠다. GeoJSON이나 CSV 같은 텍스트 기반 데이터는 어찌됐든 열어서 검증을 해볼 수 있지만, SHP는 그게 안 된다는 말이다. 때문에 SHP를 열어서 조작할 수 있는 일종의 툴이 필요한데, 이미 여러 툴이 있으니 크게 문제되진 않는다. 가장 대표적인 툴은 두 가지가 있다.</description>
-			<pubDate>Fri, 04 Mar 2022 18:05:25 GMT</pubDate>
-			<link>https://blog.itcode.dev/2022/03/05/gis-guide-for-programmer-4</link>
-			<guid isPermaLink="true">https://blog.itcode.dev/2022/03/05/gis-guide-for-programmer-4</guid>
-			<category>GIS</category>
-			<category>QGIS</category>
-		</item>
-		<item>
-			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 3. 좌표계</title>
-			<description>1986년, NASA에서 우주왕복선 챌린저호를 발사했으나, 발사한 지 약 73초만에 폭발한 안타까운 사고가 있었다. 원인은 어이없게도 단위 실수. 국제적인 표준은 미터법임에도 불구하고, 미국을 포함한 몇몇 국가는 인치법을 표준으로 사용하고 있었다. 이러한 상황에서 우주선의 설계도 중 미터법으로 표기된 부품 O Ring을 인치법으로 제작했기 때문에 일어난 사고였다.</description>
-			<pubDate>Thu, 03 Mar 2022 16:47:29 GMT</pubDate>
-			<link>https://blog.itcode.dev/2022/03/04/gis-guide-for-programmer-3</link>
-			<guid isPermaLink="true">https://blog.itcode.dev/2022/03/04/gis-guide-for-programmer-3</guid>
-			<category>GIS</category>
-		</item>
-		<item>
-			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 2. GIS랑 인사하기</title>
-			<description>여러분들이 GIS를 처음 접했다면, 한 번 물어보고 싶다. 공간이란 뭘로 이루어져 있을까? 한 번 생각해보자. 다양한 답이 나왔을 것이라 생각한다. 무슨 답인지 내가 직접 못 듣는다는 게 좀 아쉽지만. 아마 대부분 추상적인 답이 나왔을 것이라 생각한다.</description>
-			<pubDate>Thu, 03 Mar 2022 14:36:04 GMT</pubDate>
-			<link>https://blog.itcode.dev/2022/03/03/gis-guide-for-programmer-2</link>
-			<guid isPermaLink="true">https://blog.itcode.dev/2022/03/03/gis-guide-for-programmer-2</guid>
-			<category>GIS</category>
-		</item>
-		<item>
-			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 1. 머릿말</title>
-			<description>공간정보, 지리쪽에 업이 있거나 관심있는 사람이 아니라면, GIS라는 단어는 다소 생소한 단어다. 혹자는 GIS가 아니라 GPS 아니냐고 반문하기도 한다. GPS(Global Positioning System)는 3개 이상의 위성 신호를 통해 수신기의 위치를 계산할 수 있는 기법이다. GPS라 하면 흔히 네비게이션을 연상하기 쉽지만, 알게 모르게 GPS는 일상생활에 깊게 녹아들어 있다. 네비게이션, 스마트폰 지도, 배달 플랫폼의 라이더 위치 추적, 드론 군집비행, 군사학 등. GPS는 다양한 영역에 스며들어 그 이로움을 전해준다. 우리는 GPS를 통해, 공간정보라는 디지털 시대에서 공간을 디지털화한다는 것이 어떤 능력을 발휘하는 지 엿볼 수 있다. GIS(Global Information System)는 GPS와 같이 공간정보를 다루는 모든 기술에 대한 포괄적인 기술을 의미한다. GPS 뿐만 아니라, 지도, 좌표계와 같이 공간과 엮이는 모든 기술은 GIS라는 커다란 범주로 묶을 수 있다.</description>
-			<pubDate>Thu, 03 Mar 2022 14:05:35 GMT</pubDate>
-			<link>https://blog.itcode.dev/2022/03/03/gis-guide-for-programmer-1</link>
-			<guid isPermaLink="true">https://blog.itcode.dev/2022/03/03/gis-guide-for-programmer-1</guid>
-			<category>GIS</category>
 		</item>
 		<item>
 			<title>Tomcat 9 vs 10</title>
@@ -2028,6 +1904,130 @@
 			<category>Next.js</category>
 			<category>개발 블로그</category>
 			<category>Jekyll</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 14. 지도에 사용자의 위치 표시하기</title>
+			<description>사용자의 위치를 기반으로 다양한 서비스를 제공할 수 있겠지만, 그 중에서 가장 기본적인 기능은 사용자의 위치를 지도 상에 직접 표시하는 것이다. 이전 장에서 설명한 지오로케이션을 토대로, OpenLayers를 활용하여 위치를 지도에 표시한다.</description>
+			<pubDate>Sun, 03 Apr 2022 16:56:03 GMT</pubDate>
+			<link>https://blog.itcode.dev/2022/04/04/gis-guide-for-programmer-14</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/2022/04/04/gis-guide-for-programmer-14</guid>
+			<category>GIS</category>
+			<category>OpenLayers</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 13. 브라우저에서 사용자 위치정보 수집하기</title>
+			<description>지도 서비스 중에서는 사용자의 위치를 분석하고, 위치에 더욱 적절한 컨텐츠를 제시하기도 한다. 일례로, 배달 어플은 사용자의 위치에 따라 일정 범위 내의 음식점만을 우선으로 보여준다던가 하는 방식이다. 어플리케이션의 경우, 주 구동 기기인 스마트폰의 GPS를 활용할 수 있다. 비슷하게 브라우저는 브라우저 자체적으로 사용자의 동의에 따라 위치정보를 수집하여 활용할 수 있다. 당연하게도 인터넷이 반드시 연결되어야 한다.</description>
+			<pubDate>Sat, 02 Apr 2022 17:50:05 GMT</pubDate>
+			<link>https://blog.itcode.dev/2022/04/03/gis-guide-for-programmer-13</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/2022/04/03/gis-guide-for-programmer-13</guid>
+			<category>GIS</category>
+			<category>OpenLayers</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 12. 맵의 유용한 정보 표시하기</title>
+			<description>지도를 다루다보면, 내가 현재 보고있는 영역의 좌표, 지도 상에서 마우스가 위치한 좌표, 줌 레벨 등 다양한 정보를 얻어야할 경우가 생긴다. 이런 니즈를 충족하기 위해, 지도 상에 상태창을 만들어 관련 정보를 출력해주면 필요할 때 유용하게 사용할 수 있을 것이다.</description>
+			<pubDate>Tue, 22 Mar 2022 13:37:21 GMT</pubDate>
+			<link>https://blog.itcode.dev/2022/03/22/gis-guide-for-programmer-12</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/2022/03/22/gis-guide-for-programmer-12</guid>
+			<category>GIS</category>
+			<category>OpenLayers</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 11. VWorld 맵 만들기</title>
+			<description>이전 장에서 OSM을 통해 지도를 표시해봤다. 하지만, OSM의 지도는 디테일함이 떨어진다는 무시할 수 없는 단점이 존재한다. OSM은 사용하기 쉬운 세계지도라는 큰 장점이 있음에도, 저 단점 하나로 인해 국내 서비스용 지도로 사용하기 어렵다. 즉, 예제 이상의 실질적인 서비스에 사용하려면 국내 지리에 특화된 지도가 필요하다.</description>
+			<pubDate>Mon, 21 Mar 2022 14:51:45 GMT</pubDate>
+			<link>https://blog.itcode.dev/2022/03/21/gis-guide-for-programmer-11</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/2022/03/21/gis-guide-for-programmer-11</guid>
+			<category>GIS</category>
+			<category>OpenLayers</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 10. Open Street Map(OSM) 맵 만들기</title>
+			<description>OSM이란, 전세계 지도 종사자들이 자율적으로 관리하는 세계지도다. 즉, 지도 분야의 오픈 소스라고 생각하면 이해하기 쉽다. 각 국의 기여자들이 지도를 관리하고 있으며, 각 국가의 영역은 해당하는 국가의 언어로 표시된다. 전세계를 대상으로 하는 서비스에도 무리없이 적용 가능하다는 장점이 있다. 단, 한국 기준으로 지도의 퀄리티가 그리 뛰어나진 않다. OpenLayers는 라이브러리 단계에서 OSM을 기본 제공한다. 즉, 별다른 API 호출이나 설정 없이 간단한 코드 몇 줄 만으로도 웹 상에 세계지도를 띄울 수 있다. 이 장에서는 OpenLayers6를 활용하여 웹 상에 OSM을 띄우는 매우 기초적인 방법에 대해 다룬다.</description>
+			<pubDate>Mon, 14 Mar 2022 19:53:00 GMT</pubDate>
+			<link>https://blog.itcode.dev/2022/03/19/gis-guide-for-programmer-10</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/2022/03/19/gis-guide-for-programmer-10</guid>
+			<category>GIS</category>
+			<category>OpenLayers</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 9. 데이터 필터링하기</title>
+			<description>WFS나 WMS를 호출할 때, 좀 더 다채로운 필터링이 필요한 경우가 존재할 수 있다. 특정 영역 밖의 객체를 호출한다거나, 특정 영역에 걸치는 데이터만 호출하는 것, 혹은 다양한 조건을 조합하여 데이터를 조회해야 할 수도 있다.</description>
+			<pubDate>Mon, 14 Mar 2022 16:11:19 GMT</pubDate>
+			<link>https://blog.itcode.dev/2022/03/15/gis-guide-for-programmer-9</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/2022/03/15/gis-guide-for-programmer-9</guid>
+			<category>GIS</category>
+			<category>GeoServer</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 8. 공간정보 데이터를 주문하는 법. OGC</title>
+			<description>OpenLayers는 웹 브라우저에서 지도나 GIS 서비스를 제공하기 위한 JavaScript Library다. GIS 라이브러리 중 진입 장벽은 가장 높지만, 그에 상응하는 강력한 기능을 제공한다.</description>
+			<pubDate>Mon, 14 Mar 2022 14:37:32 GMT</pubDate>
+			<link>https://blog.itcode.dev/2022/03/14/gis-guide-for-programmer-8</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/2022/03/14/gis-guide-for-programmer-8</guid>
+			<category>GIS</category>
+			<category>GeoServer</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 7. 공간정보 데이터를 관리하는 법. GeoServer</title>
+			<description>이전 장에서 공간정보 데이터를 DB에 넣어봤다. 이제 데이터를 적절한 방법으로 통신할 방법만 마련한다면, DB에 저장한 공간정보 데이터를 웹에서든 앱에서든 자유롭게 활용할 수 있을 것이다. 하지만 누누히 언급했듯이, 공간정보 데이터는 다른 데이터와 엄연한 차별점이 존재한다. 바로 공간 데이터라는 점이다. 공간정보 데이터는 일반적인 텍스트 기반의 데이터가 아니다보니, CRUD에 있어서 굉장히 취약하다. 좀 더 자유로운 통신을 위해 DB에 넣었음에도 CRUD에 전혀 강점이 없는 것. 즉, MyBatis든, JPA든, 일반적인 DB 통신으로는 공간정보 데이터를 온전히 받기가 어렵다.</description>
+			<pubDate>Sun, 06 Mar 2022 16:12:33 GMT</pubDate>
+			<link>https://blog.itcode.dev/2022/03/07/gis-guide-for-programmer-7</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/2022/03/07/gis-guide-for-programmer-7</guid>
+			<category>GIS</category>
+			<category>GeoServer</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 6. 공간정보의 DB화</title>
+			<description>데이터의 CRUD 소요가 있는 서비스는 DB를 사용한다. 서비스 운영에 필요한 데이터를 DB에 저장하고, 이를 적절히 관리, 조작함으로써 서비스의 기능을 제공한다. GIS의 경우, 그 특성상 대용량 데이터를 자주 접하게 된다. 일례로, 전국의 건물 수는 몇백만을 우습게 상회하기 때문. 단순 row가 백만 단위인 것도 문제지만, 건물 정보의 특성 상 column의 갯수 또한 수십 개 정도다. 때문의 데이터의 용량이 매우 커진다.</description>
+			<pubDate>Fri, 04 Mar 2022 19:35:41 GMT</pubDate>
+			<link>https://blog.itcode.dev/2022/03/05/gis-guide-for-programmer-6</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/2022/03/05/gis-guide-for-programmer-6</guid>
+			<category>GIS</category>
+			<category>MariaDB</category>
+			<category>QGIS</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 5. OpenLayers</title>
+			<description>OpenLayers는 웹 브라우저에서 지도나 GIS 서비스를 제공하기 위한 JavaScript Library다. GIS 라이브러리 중 진입 장벽은 가장 높지만, 그에 상응하는 강력한 기능을 제공한다.</description>
+			<pubDate>Fri, 04 Mar 2022 18:39:25 GMT</pubDate>
+			<link>https://blog.itcode.dev/2022/03/05/gis-guide-for-programmer-5</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/2022/03/05/gis-guide-for-programmer-5</guid>
+			<category>GIS</category>
+			<category>OpenLayers</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 4. QGIS 체험하기</title>
+			<description>이전에 대부분의 공간정보 데이터는 SHP를 기본으로 제공한다고 언급했었다. 그런데 문제는 이 SHP. 어떻게 여는지 모르겠다. GeoJSON이나 CSV 같은 텍스트 기반 데이터는 어찌됐든 열어서 검증을 해볼 수 있지만, SHP는 그게 안 된다는 말이다. 때문에 SHP를 열어서 조작할 수 있는 일종의 툴이 필요한데, 이미 여러 툴이 있으니 크게 문제되진 않는다. 가장 대표적인 툴은 두 가지가 있다.</description>
+			<pubDate>Fri, 04 Mar 2022 18:05:25 GMT</pubDate>
+			<link>https://blog.itcode.dev/2022/03/05/gis-guide-for-programmer-4</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/2022/03/05/gis-guide-for-programmer-4</guid>
+			<category>GIS</category>
+			<category>QGIS</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 3. 좌표계</title>
+			<description>1986년, NASA에서 우주왕복선 챌린저호를 발사했으나, 발사한 지 약 73초만에 폭발한 안타까운 사고가 있었다. 원인은 어이없게도 단위 실수. 국제적인 표준은 미터법임에도 불구하고, 미국을 포함한 몇몇 국가는 인치법을 표준으로 사용하고 있었다. 이러한 상황에서 우주선의 설계도 중 미터법으로 표기된 부품 O Ring을 인치법으로 제작했기 때문에 일어난 사고였다.</description>
+			<pubDate>Thu, 03 Mar 2022 16:47:29 GMT</pubDate>
+			<link>https://blog.itcode.dev/2022/03/04/gis-guide-for-programmer-3</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/2022/03/04/gis-guide-for-programmer-3</guid>
+			<category>GIS</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 2. GIS랑 인사하기</title>
+			<description>여러분들이 GIS를 처음 접했다면, 한 번 물어보고 싶다. 공간이란 뭘로 이루어져 있을까? 한 번 생각해보자. 다양한 답이 나왔을 것이라 생각한다. 무슨 답인지 내가 직접 못 듣는다는 게 좀 아쉽지만. 아마 대부분 추상적인 답이 나왔을 것이라 생각한다.</description>
+			<pubDate>Thu, 03 Mar 2022 14:36:04 GMT</pubDate>
+			<link>https://blog.itcode.dev/2022/03/03/gis-guide-for-programmer-2</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/2022/03/03/gis-guide-for-programmer-2</guid>
+			<category>GIS</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 1. 머릿말</title>
+			<description>공간정보, 지리쪽에 업이 있거나 관심있는 사람이 아니라면, GIS라는 단어는 다소 생소한 단어다. 혹자는 GIS가 아니라 GPS 아니냐고 반문하기도 한다. GPS(Global Positioning System)는 3개 이상의 위성 신호를 통해 수신기의 위치를 계산할 수 있는 기법이다. GPS라 하면 흔히 네비게이션을 연상하기 쉽지만, 알게 모르게 GPS는 일상생활에 깊게 녹아들어 있다. 네비게이션, 스마트폰 지도, 배달 플랫폼의 라이더 위치 추적, 드론 군집비행, 군사학 등. GPS는 다양한 영역에 스며들어 그 이로움을 전해준다. 우리는 GPS를 통해, 공간정보라는 디지털 시대에서 공간을 디지털화한다는 것이 어떤 능력을 발휘하는 지 엿볼 수 있다. GIS(Global Information System)는 GPS와 같이 공간정보를 다루는 모든 기술에 대한 포괄적인 기술을 의미한다. GPS 뿐만 아니라, 지도, 좌표계와 같이 공간과 엮이는 모든 기술은 GIS라는 커다란 범주로 묶을 수 있다.</description>
+			<pubDate>Thu, 03 Mar 2022 14:05:35 GMT</pubDate>
+			<link>https://blog.itcode.dev/2022/03/03/gis-guide-for-programmer-1</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/2022/03/03/gis-guide-for-programmer-1</guid>
+			<category>GIS</category>
 		</item>
 		<item>
 			<title>[React] 𝝅번째 알파카의 개발 낙서장 프로젝트</title>

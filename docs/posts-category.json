@@ -1,7 +1,7 @@
 {
     "list": [
         {
-            "count": 180,
+            "count": 166,
             "name": "All"
         },
         {
@@ -15,10 +15,6 @@
         {
             "count": 10,
             "name": "CS"
-        },
-        {
-            "count": 14,
-            "name": "GIS"
         },
         {
             "count": 15,

@@ -4,10 +4,9 @@
             "header": {
                 "title": "Tomcat 9 vs 10",
                 "excerpt": "필자는 Jersey 3 라이브러리를 활용하여 API 서버를 구성하고 있다. 코드를 작성하고 올바른 URL을 호출했음에도, 404 오류가 계속 출력됐다. 간단한 테스트 서블릿을 작성하고, 공식 문서와 아무리 비교를 해도 별다른 특이점을 찾을 수 없었다. 알고보니, Jersey 3는 Servlet 5.0을 지원하기 때문에 Servlet 5.0 스펙을 구현한 Tomcat 10 이상부터 구동이 가능하다는 것을 처음 알았다. 지금껏 톰캣의 버전을 크게 신경쓰지 않았으나, 이 계기로 Tomcat 9와 Tomcat 10에 큰 차이가 있다는 것을 깨달았다.",
-                "coverImage": "https://user-images.githubusercontent.com/50317129/145976356-6b5d1430-31c0-4c34-829e-6be8f747ab19.png",
-                "date": "2021-12-29T22:13:12+09:00",
+                "coverImage": "https://user-images.githubusercontent.com/50317129/168463019-ff20eb0d-7fa5-4866-9086-77b1df7a4a78.png",
+                "date": "2022-02-12T19:20:41+09:00",
                 "type": "posts",
-                "category": "알고리즘",
                 "tag": [
                     "JAVA(자바)",
                     "WAS",

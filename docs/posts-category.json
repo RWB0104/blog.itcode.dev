@@ -5,7 +5,7 @@
             "name": "All"
         },
         {
-            "count": 111,
+            "count": 110,
             "name": "알고리즘"
         },
         {
@@ -39,6 +39,9 @@
         {
             "count": 2,
             "name": "Ubuntu"
+        },
+        {
+            "count": 1
         },
         {
             "count": 2,

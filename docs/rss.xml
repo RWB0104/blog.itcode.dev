@@ -10,56 +10,56 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next-seo.js</generator>
 		<pubDate>Wed, 26 May 2021 14:36:57 GMT</pubDate>
-		<lastBuildDate>Sat, 14 May 2022 17:50:39 GMT</lastBuildDate>
+		<lastBuildDate>Sun, 15 May 2022 17:14:43 GMT</lastBuildDate>
 		<item>
 			<title>./pages/404.tsx</title>
 			<description>./pages/404.tsx</description>
-			<pubDate>Sat, 14 May 2022 17:50:39 GMT</pubDate>
+			<pubDate>Sun, 15 May 2022 17:14:43 GMT</pubDate>
 			<link>https://blog.itcode.dev/404</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/404</guid>
 		</item>
 		<item>
 			<title>./pages/index.tsx</title>
 			<description>./pages/index.tsx</description>
-			<pubDate>Sat, 14 May 2022 17:50:39 GMT</pubDate>
+			<pubDate>Sun, 15 May 2022 17:14:43 GMT</pubDate>
 			<link>https://blog.itcode.dev</link>
 			<guid isPermaLink="true">https://blog.itcode.dev</guid>
 		</item>
 		<item>
 			<title>./pages/about/index.tsx</title>
 			<description>./pages/about/index.tsx</description>
-			<pubDate>Sat, 14 May 2022 17:50:39 GMT</pubDate>
+			<pubDate>Sun, 15 May 2022 17:14:43 GMT</pubDate>
 			<link>https://blog.itcode.dev/about</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/about</guid>
 		</item>
 		<item>
 			<title>./pages/comments/index.tsx</title>
 			<description>./pages/comments/index.tsx</description>
-			<pubDate>Sat, 14 May 2022 17:50:39 GMT</pubDate>
+			<pubDate>Sun, 15 May 2022 17:14:43 GMT</pubDate>
 			<link>https://blog.itcode.dev/comments</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/comments</guid>
 		</item>
 		<item>
 			<title>./pages/posts/index.tsx</title>
 			<description>./pages/posts/index.tsx</description>
-			<pubDate>Sat, 14 May 2022 17:50:39 GMT</pubDate>
+			<pubDate>Sun, 15 May 2022 17:14:43 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts</guid>
 		</item>
 		<item>
 			<title>./pages/projects/index.tsx</title>
 			<description>./pages/projects/index.tsx</description>
-			<pubDate>Sat, 14 May 2022 17:50:39 GMT</pubDate>
+			<pubDate>Sun, 15 May 2022 17:14:43 GMT</pubDate>
 			<link>https://blog.itcode.dev/projects</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects</guid>
 		</item>
 		<item>
 			<title>Tomcat 9 vs 10</title>
 			<description>필자는 Jersey 3 라이브러리를 활용하여 API 서버를 구성하고 있다. 코드를 작성하고 올바른 URL을 호출했음에도, 404 오류가 계속 출력됐다. 간단한 테스트 서블릿을 작성하고, 공식 문서와 아무리 비교를 해도 별다른 특이점을 찾을 수 없었다. 알고보니, Jersey 3는 Servlet 5.0을 지원하기 때문에 Servlet 5.0 스펙을 구현한 Tomcat 10 이상부터 구동이 가능하다는 것을 처음 알았다. 지금껏 톰캣의 버전을 크게 신경쓰지 않았으나, 이 계기로 Tomcat 9와 Tomcat 10에 큰 차이가 있다는 것을 깨달았다.</description>
-			<pubDate>Wed, 29 Dec 2021 13:13:12 GMT</pubDate>
+			<pubDate>Sat, 12 Feb 2022 10:20:41 GMT</pubDate>
 			<link>https://blog.itcode.dev/2022/02/12/tomcat-9-and-10</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/2022/02/12/tomcat-9-and-10</guid>
-			<category>알고리즘</category>
+			<category>undefined</category>
 			<category>JAVA(자바)</category>
 			<category>WAS</category>
 			<category>Tomcat(톰캣)</category>
@@ -1904,6 +1904,30 @@
 			<category>Next.js</category>
 			<category>개발 블로그</category>
 			<category>Jekyll</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 15. WMS를 사용하여 지도에 이미지 표시하기</title>
+			<description>이 장에선 WFS를 통해 지도에 이미지를 표시하는 방법에 대해 다룬다. 이전 장의 WFS는 공간정보 데이터를 GeoJSON으로 받아 직접 객체로 표시하지만, WMS는 객체를 GeoServer에서 이미지로 렌더링한 이미지를 받아 표시한다. 즉, GeoServer로 부터 직접 Tile Map을 받아 표현한다고 생각하면 된다.</description>
+			<pubDate>Sun, 15 May 2022 17:13:10 GMT</pubDate>
+			<link>https://blog.itcode.dev/2022/05/16/gis-guide-for-programmer-16</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/2022/05/16/gis-guide-for-programmer-16</guid>
+			<category>GIS</category>
+			<category>GeoServer</category>
+			<category>OpenLayers</category>
+			<category>OGC</category>
+			<category>WMS</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 15. WFS를 사용하여 지도에 객체 표시하기</title>
+			<description>지금까지는 온전히 OpenLayers만의 기능이였다면, 이 장부터 슬슬 GeoServer와의 연동을 다루게 된다. 그 중 첫 번째로 다룰 기능은, WFS다. GeoServer에서 WFS는 지정한 요소의 정보를 GeoJSON의 형태로 반환해준다. 이 정보를 적절히 활용하여 지도에 표시할 수 있다. 이러한 기능을 통해 직접 관리하거나 가공한 데이터를 지도에 표시할 수 있다.</description>
+			<pubDate>Sat, 14 May 2022 17:48:50 GMT</pubDate>
+			<link>https://blog.itcode.dev/2022/05/15/gis-guide-for-programmer-15</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/2022/05/15/gis-guide-for-programmer-15</guid>
+			<category>GIS</category>
+			<category>GeoServer</category>
+			<category>OpenLayers</category>
+			<category>OGC</category>
+			<category>WFS</category>
 		</item>
 		<item>
 			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 14. 지도에 사용자의 위치 표시하기</title>

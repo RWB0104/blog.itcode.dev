@@ -3,43 +3,43 @@
 	<url>
 		<loc>https://blog.itcode.dev/404</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-05-14T17:50:39.535Z</lastmod>
+		<lastmod>2022-05-15T17:14:43.576Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-05-14T17:50:39.535Z</lastmod>
+		<lastmod>2022-05-15T17:14:43.576Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/about</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-05-14T17:50:39.535Z</lastmod>
+		<lastmod>2022-05-15T17:14:43.576Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/comments</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-05-14T17:50:39.535Z</lastmod>
+		<lastmod>2022-05-15T17:14:43.576Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/posts</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-05-14T17:50:39.535Z</lastmod>
+		<lastmod>2022-05-15T17:14:43.576Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/projects</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-05-14T17:50:39.535Z</lastmod>
+		<lastmod>2022-05-15T17:14:43.576Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/posts/2022/02/12/tomcat-9-and-10</loc>
 		<priority>1.0</priority>
-		<lastmod>2021-12-29T13:13:12.000Z</lastmod>
+		<lastmod>2022-02-12T10:20:41.000Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
@@ -1030,6 +1030,18 @@
 		<loc>https://blog.itcode.dev/posts/2021/05/21/jekyll-to-nextjs</loc>
 		<priority>1.0</priority>
 		<lastmod>2021-05-21T06:09:33.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/projects/2022/05/16/gis-guide-for-programmer-16</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-05-15T17:13:10.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/projects/2022/05/15/gis-guide-for-programmer-15</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-05-14T17:48:50.000Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>

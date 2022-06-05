@@ -10,46 +10,46 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next-seo.js</generator>
 		<pubDate>Wed, 26 May 2021 14:36:57 GMT</pubDate>
-		<lastBuildDate>Wed, 01 Jun 2022 15:58:38 GMT</lastBuildDate>
+		<lastBuildDate>Sun, 05 Jun 2022 19:24:35 GMT</lastBuildDate>
 		<item>
 			<title>./pages/404.tsx</title>
 			<description>./pages/404.tsx</description>
-			<pubDate>Wed, 01 Jun 2022 15:58:38 GMT</pubDate>
+			<pubDate>Sun, 05 Jun 2022 19:24:35 GMT</pubDate>
 			<link>https://blog.itcode.dev/404</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/404</guid>
 		</item>
 		<item>
 			<title>./pages/index.tsx</title>
 			<description>./pages/index.tsx</description>
-			<pubDate>Wed, 01 Jun 2022 15:58:38 GMT</pubDate>
+			<pubDate>Sun, 05 Jun 2022 19:24:35 GMT</pubDate>
 			<link>https://blog.itcode.dev</link>
 			<guid isPermaLink="true">https://blog.itcode.dev</guid>
 		</item>
 		<item>
 			<title>./pages/about/index.tsx</title>
 			<description>./pages/about/index.tsx</description>
-			<pubDate>Wed, 01 Jun 2022 15:58:38 GMT</pubDate>
+			<pubDate>Sun, 05 Jun 2022 19:24:35 GMT</pubDate>
 			<link>https://blog.itcode.dev/about</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/about</guid>
 		</item>
 		<item>
 			<title>./pages/comments/index.tsx</title>
 			<description>./pages/comments/index.tsx</description>
-			<pubDate>Wed, 01 Jun 2022 15:58:38 GMT</pubDate>
+			<pubDate>Sun, 05 Jun 2022 19:24:35 GMT</pubDate>
 			<link>https://blog.itcode.dev/comments</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/comments</guid>
 		</item>
 		<item>
 			<title>./pages/posts/index.tsx</title>
 			<description>./pages/posts/index.tsx</description>
-			<pubDate>Wed, 01 Jun 2022 15:58:38 GMT</pubDate>
+			<pubDate>Sun, 05 Jun 2022 19:24:35 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts</guid>
 		</item>
 		<item>
 			<title>./pages/projects/index.tsx</title>
 			<description>./pages/projects/index.tsx</description>
-			<pubDate>Wed, 01 Jun 2022 15:58:38 GMT</pubDate>
+			<pubDate>Sun, 05 Jun 2022 19:24:35 GMT</pubDate>
 			<link>https://blog.itcode.dev/projects</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects</guid>
 		</item>
@@ -1903,6 +1903,16 @@
 			<category>Next.js</category>
 			<category>개발 블로그</category>
 			<category>Jekyll</category>
+		</item>
+		<item>
+			<title>블로그 3차 리뉴얼</title>
+			<description>Next.js로 블로그를 다시 만든 뒤에, 새로운 글 작성 이외에 별다른 유지보수는 하지 않았었다. 나름의 이유는 있었던 것이, 일단 당장 쓰는 데 큰 문제가 없었고, 귀찮기도 했다. 적절한 컴포넌트를 구상하고 배치하는 게 여간 귀찮은 일이 아니기도 했고. 내 블로그에 몇 가지 문제점이 있었는데, 그 중 하나가 About 페이지에 아무 것도 없다는 점이다. 뭔가 나름의 블로그 소개를 작성하려고 했는데, 마땅한 아이디어가 없었기 때문. 그러다 문득, 괜찮은 아이디어가 하나 떠올랐는데, "About 페이지에 커밋 리스트를 표시해주면 괜찮지 않을까?"란 생각이였다. 나쁘지 않은 생각이였으므로 개발에 들어갔으나, 갑자기 블로그의 못난 부분들이 거슬리기 시작했다. 갑자기 못난 부분들이 보이는 게 너무나도 참을 수 없던 나는, 그렇게 예정에도 없던 블로그 리뉴얼 작업을 시작했다.</description>
+			<pubDate>Sun, 05 Jun 2022 14:01:19 GMT</pubDate>
+			<link>https://blog.itcode.dev/projects/2022/06/05/blog-renewal</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/projects/2022/06/05/blog-renewal</guid>
+			<category>React</category>
+			<category>Next.js</category>
+			<category>개발 블로그</category>
 		</item>
 		<item>
 			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 25. WebGL로 초대용량 데이터 표시하기</title>

@@ -10,48 +10,59 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next-seo.js</generator>
 		<pubDate>Wed, 26 May 2021 14:36:57 GMT</pubDate>
-		<lastBuildDate>Fri, 10 Jun 2022 16:17:36 GMT</lastBuildDate>
+		<lastBuildDate>Sun, 12 Jun 2022 16:59:16 GMT</lastBuildDate>
 		<item>
 			<title>./pages/404.tsx</title>
 			<description>./pages/404.tsx</description>
-			<pubDate>Fri, 10 Jun 2022 16:17:36 GMT</pubDate>
+			<pubDate>Sun, 12 Jun 2022 16:59:16 GMT</pubDate>
 			<link>https://blog.itcode.dev/404</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/404</guid>
 		</item>
 		<item>
 			<title>./pages/index.tsx</title>
 			<description>./pages/index.tsx</description>
-			<pubDate>Fri, 10 Jun 2022 16:17:36 GMT</pubDate>
+			<pubDate>Sun, 12 Jun 2022 16:59:16 GMT</pubDate>
 			<link>https://blog.itcode.dev</link>
 			<guid isPermaLink="true">https://blog.itcode.dev</guid>
 		</item>
 		<item>
 			<title>./pages/about/index.tsx</title>
 			<description>./pages/about/index.tsx</description>
-			<pubDate>Fri, 10 Jun 2022 16:17:36 GMT</pubDate>
+			<pubDate>Sun, 12 Jun 2022 16:59:16 GMT</pubDate>
 			<link>https://blog.itcode.dev/about</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/about</guid>
 		</item>
 		<item>
 			<title>./pages/comments/index.tsx</title>
 			<description>./pages/comments/index.tsx</description>
-			<pubDate>Fri, 10 Jun 2022 16:17:36 GMT</pubDate>
+			<pubDate>Sun, 12 Jun 2022 16:59:16 GMT</pubDate>
 			<link>https://blog.itcode.dev/comments</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/comments</guid>
 		</item>
 		<item>
 			<title>./pages/posts/index.tsx</title>
 			<description>./pages/posts/index.tsx</description>
-			<pubDate>Fri, 10 Jun 2022 16:17:36 GMT</pubDate>
+			<pubDate>Sun, 12 Jun 2022 16:59:16 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts</guid>
 		</item>
 		<item>
 			<title>./pages/projects/index.tsx</title>
 			<description>./pages/projects/index.tsx</description>
-			<pubDate>Fri, 10 Jun 2022 16:17:36 GMT</pubDate>
+			<pubDate>Sun, 12 Jun 2022 16:59:16 GMT</pubDate>
 			<link>https://blog.itcode.dev/projects</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects</guid>
+		</item>
+		<item>
+			<title>렌더링 삼형제 CSR, SSR, SSG</title>
+			<description>인터넷 역사가 이어지며 발전을 거듭할수록, 인터넷의 대명사인 웹 또한 거대해지고 있다. 초기 시절, 정적 데이터 기반의 단순 페이지만 보여주는데 그쳤던 웹은 이젠 대규모 비즈니스 로직을 무리없이 수행한다. 이러한 흐름에 따라, 웹의 기본 단위인 페이지의 비중도 따라 점점 커지고 있다. 우리는 하루에도 수십 개의 페이지를 향유한다. 사용자는 단순히 "페이지를 본다"는 활동을 하지만, 모든 일이 그렇듯이 그 이면에는 보이지 않는 여러 동작이 존재한다. 그 중 사용자에게 페이지를 보여주기 위해, 이 페이지를 렌더링. 즉, 그리는 로직에 대한 많은 고민이 이루어지게 된다. 페이지를 좀 더 빠르고, 효율적으로 보여줌은 우수한 페이지 UX로 이어지기 때문이다.</description>
+			<pubDate>Sun, 12 Jun 2022 14:11:05 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2022/06/12/csr-ssr-ssg</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2022/06/12/csr-ssr-ssg</guid>
+			<category>WEB</category>
+			<category>CSR</category>
+			<category>SSR</category>
+			<category>SSG</category>
 		</item>
 		<item>
 			<title>Tomcat 9 vs 10</title>

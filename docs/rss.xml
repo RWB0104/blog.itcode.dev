@@ -10,48 +10,57 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next-seo.js</generator>
 		<pubDate>Wed, 26 May 2021 14:36:57 GMT</pubDate>
-		<lastBuildDate>Wed, 06 Jul 2022 16:11:21 GMT</lastBuildDate>
+		<lastBuildDate>Mon, 25 Jul 2022 16:10:44 GMT</lastBuildDate>
 		<item>
 			<title>./pages/404.tsx</title>
 			<description>./pages/404.tsx</description>
-			<pubDate>Wed, 06 Jul 2022 16:11:21 GMT</pubDate>
+			<pubDate>Mon, 25 Jul 2022 16:10:44 GMT</pubDate>
 			<link>https://blog.itcode.dev/404</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/404</guid>
 		</item>
 		<item>
 			<title>./pages/index.tsx</title>
 			<description>./pages/index.tsx</description>
-			<pubDate>Wed, 06 Jul 2022 16:11:21 GMT</pubDate>
+			<pubDate>Mon, 25 Jul 2022 16:10:44 GMT</pubDate>
 			<link>https://blog.itcode.dev</link>
 			<guid isPermaLink="true">https://blog.itcode.dev</guid>
 		</item>
 		<item>
 			<title>./pages/about/index.tsx</title>
 			<description>./pages/about/index.tsx</description>
-			<pubDate>Wed, 06 Jul 2022 16:11:21 GMT</pubDate>
+			<pubDate>Mon, 25 Jul 2022 16:10:44 GMT</pubDate>
 			<link>https://blog.itcode.dev/about</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/about</guid>
 		</item>
 		<item>
 			<title>./pages/comments/index.tsx</title>
 			<description>./pages/comments/index.tsx</description>
-			<pubDate>Wed, 06 Jul 2022 16:11:21 GMT</pubDate>
+			<pubDate>Mon, 25 Jul 2022 16:10:44 GMT</pubDate>
 			<link>https://blog.itcode.dev/comments</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/comments</guid>
 		</item>
 		<item>
 			<title>./pages/posts/index.tsx</title>
 			<description>./pages/posts/index.tsx</description>
-			<pubDate>Wed, 06 Jul 2022 16:11:21 GMT</pubDate>
+			<pubDate>Mon, 25 Jul 2022 16:10:44 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts</guid>
 		</item>
 		<item>
 			<title>./pages/projects/index.tsx</title>
 			<description>./pages/projects/index.tsx</description>
-			<pubDate>Wed, 06 Jul 2022 16:11:21 GMT</pubDate>
+			<pubDate>Mon, 25 Jul 2022 16:10:44 GMT</pubDate>
 			<link>https://blog.itcode.dev/projects</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects</guid>
+		</item>
+		<item>
+			<title>심심해서 쓰는 Tesla Model 3 렌트 후기</title>
+			<description>제주도 갈끄니까~~~~~~</description>
+			<pubDate>Sun, 25 Jul 2202 16:06:39 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2022/07/25/tesla-model3</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2022/07/25/tesla-model3</guid>
+			<category>잡담</category>
+			<category>Tesla</category>
 		</item>
 		<item>
 			<title>렌더링 삼형제 CSR, SSR, SSG</title>

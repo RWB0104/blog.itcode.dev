@@ -3,37 +3,43 @@
 	<url>
 		<loc>https://blog.itcode.dev/404</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-07-06T16:11:21.791Z</lastmod>
+		<lastmod>2022-07-25T16:10:44.607Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-07-06T16:11:21.791Z</lastmod>
+		<lastmod>2022-07-25T16:10:44.607Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/about</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-07-06T16:11:21.791Z</lastmod>
+		<lastmod>2022-07-25T16:10:44.607Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/comments</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-07-06T16:11:21.791Z</lastmod>
+		<lastmod>2022-07-25T16:10:44.607Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/posts</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-07-06T16:11:21.791Z</lastmod>
+		<lastmod>2022-07-25T16:10:44.607Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/projects</loc>
 		<priority>1.0</priority>
-		<lastmod>2022-07-06T16:11:21.791Z</lastmod>
+		<lastmod>2022-07-25T16:10:44.607Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2022/07/25/tesla-model3</loc>
+		<priority>1.0</priority>
+		<lastmod>2202-07-25T16:06:39.000Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>

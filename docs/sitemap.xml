@@ -3,37 +3,43 @@
 	<url>
 		<loc>https://blog.itcode.dev/404</loc>
 		<priority>1.0</priority>
-		<lastmod>2023-02-02T17:52:12.244Z</lastmod>
+		<lastmod>2023-02-03T17:10:21.802Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev</loc>
 		<priority>1.0</priority>
-		<lastmod>2023-02-02T17:52:12.248Z</lastmod>
+		<lastmod>2023-02-03T17:10:21.816Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/about</loc>
 		<priority>1.0</priority>
-		<lastmod>2023-02-02T17:52:12.248Z</lastmod>
+		<lastmod>2023-02-03T17:10:21.816Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/comments</loc>
 		<priority>1.0</priority>
-		<lastmod>2023-02-02T17:52:12.248Z</lastmod>
+		<lastmod>2023-02-03T17:10:21.816Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/posts</loc>
 		<priority>1.0</priority>
-		<lastmod>2023-02-02T17:52:12.248Z</lastmod>
+		<lastmod>2023-02-03T17:10:21.816Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>
 		<loc>https://blog.itcode.dev/projects</loc>
 		<priority>1.0</priority>
-		<lastmod>2023-02-02T17:52:12.248Z</lastmod>
+		<lastmod>2023-02-03T17:10:21.816Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://blog.itcode.dev/posts/2023/02/04/recoil-duplicated-key</loc>
+		<priority>1.0</priority>
+		<lastmod>2023-02-03T16:56:31.000Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 	<url>

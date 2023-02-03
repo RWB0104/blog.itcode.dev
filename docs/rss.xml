@@ -10,48 +10,58 @@
 		<webMaster>psj2716@gmail.com</webMaster>
 		<generator>Kapoo's next-seo.js</generator>
 		<pubDate>Wed, 26 May 2021 23:36:57 GMT</pubDate>
-		<lastBuildDate>Thu, 02 Feb 2023 17:52:12 GMT</lastBuildDate>
+		<lastBuildDate>Fri, 03 Feb 2023 17:10:21 GMT</lastBuildDate>
 		<item>
 			<title>./pages/404.tsx</title>
 			<description>./pages/404.tsx</description>
-			<pubDate>Thu, 02 Feb 2023 17:52:12 GMT</pubDate>
+			<pubDate>Fri, 03 Feb 2023 17:10:21 GMT</pubDate>
 			<link>https://blog.itcode.dev/404</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/404</guid>
 		</item>
 		<item>
 			<title>./pages/index.tsx</title>
 			<description>./pages/index.tsx</description>
-			<pubDate>Thu, 02 Feb 2023 17:52:12 GMT</pubDate>
+			<pubDate>Fri, 03 Feb 2023 17:10:21 GMT</pubDate>
 			<link>https://blog.itcode.dev</link>
 			<guid isPermaLink="true">https://blog.itcode.dev</guid>
 		</item>
 		<item>
 			<title>./pages/about/index.tsx</title>
 			<description>./pages/about/index.tsx</description>
-			<pubDate>Thu, 02 Feb 2023 17:52:12 GMT</pubDate>
+			<pubDate>Fri, 03 Feb 2023 17:10:21 GMT</pubDate>
 			<link>https://blog.itcode.dev/about</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/about</guid>
 		</item>
 		<item>
 			<title>./pages/comments/index.tsx</title>
 			<description>./pages/comments/index.tsx</description>
-			<pubDate>Thu, 02 Feb 2023 17:52:12 GMT</pubDate>
+			<pubDate>Fri, 03 Feb 2023 17:10:21 GMT</pubDate>
 			<link>https://blog.itcode.dev/comments</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/comments</guid>
 		</item>
 		<item>
 			<title>./pages/posts/index.tsx</title>
 			<description>./pages/posts/index.tsx</description>
-			<pubDate>Thu, 02 Feb 2023 17:52:12 GMT</pubDate>
+			<pubDate>Fri, 03 Feb 2023 17:10:21 GMT</pubDate>
 			<link>https://blog.itcode.dev/posts</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts</guid>
 		</item>
 		<item>
 			<title>./pages/projects/index.tsx</title>
 			<description>./pages/projects/index.tsx</description>
-			<pubDate>Thu, 02 Feb 2023 17:52:12 GMT</pubDate>
+			<pubDate>Fri, 03 Feb 2023 17:10:21 GMT</pubDate>
 			<link>https://blog.itcode.dev/projects</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects</guid>
+		</item>
+		<item>
+			<title>[recoil] Duplicate atom key 오류 해결하기</title>
+			<description>React와 상태관리는 떼놓을 수 없는 존재다. 좀 더 효율적이고 스마트한 상태관리를 위한 많은 시도가 있어왔는데, recoil도 그 중 하나다. recoil은 선발주자인 Redux, mobx와 달리 간편하면서도 강력한 기능 덕분에 많은 사랑을 받는 라이브러리다. 나 또한 React 개발 시 애용하기도 하고.</description>
+			<pubDate>Fri, 03 Feb 2023 16:56:31 GMT</pubDate>
+			<link>https://blog.itcode.dev/posts/2023/02/04/recoil-duplicated-key</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2023/02/04/recoil-duplicated-key</guid>
+			<category>React</category>
+			<category>Web</category>
+			<category>recoil</category>
 		</item>
 		<item>
 			<title>심심해서 쓰는 Tesla Model 3 렌트 후기</title>

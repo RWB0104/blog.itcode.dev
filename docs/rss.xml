@@ -5,7 +5,7 @@
 		<description>𝝅번째 알파카의 우당탕탕 개발 기록</description>
 		<generator>blog.itcode.dev SEO</generator>
 		<language>ko-KR</language>
-		<lastBuildDate>2023-09-04T15:56:20.817Z</lastBuildDate>
+		<lastBuildDate>2023-09-08T18:17:14.982Z</lastBuildDate>
 		<link>https://blog.itcode.dev</link>
 		<managingEditor>psj2716@mensakorea.org</managingEditor>
 		<pubDate>2021-05-26T23:36:57.000Z</pubDate>
@@ -14,7 +14,7 @@
 		<item>
 			<title>방명록</title>
 			<description>💝 두근대며 읽어보는 중...</description>
-			<pubDate>2023-09-04T15:56:20.816Z</pubDate>
+			<pubDate>2023-09-08T18:17:14.981Z</pubDate>
 			<link>https://blog.itcode.dev/comments</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/comments</guid>
 			<category/>
@@ -22,7 +22,7 @@
 		<item>
 			<title>홈</title>
 			<description>🦙 𝝅번째 알파카의 우당탕탕 개발 기록</description>
-			<pubDate>2023-09-04T15:56:20.816Z</pubDate>
+			<pubDate>2023-09-08T18:17:14.981Z</pubDate>
 			<link>https://blog.itcode.dev/</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/</guid>
 			<category/>
@@ -30,7 +30,7 @@
 		<item>
 			<title>게시글</title>
 			<description>✒️ 뭔가 끄적끄적 쓰는 중...</description>
-			<pubDate>2023-09-04T15:56:20.816Z</pubDate>
+			<pubDate>2023-09-08T18:17:14.981Z</pubDate>
 			<link>https://blog.itcode.dev/posts</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts</guid>
 			<category/>
@@ -38,7 +38,7 @@
 		<item>
 			<title>프로젝트</title>
 			<description>🖥️ 무언가 뚝딱뚝딱 하는 중...</description>
-			<pubDate>2023-09-04T15:56:20.816Z</pubDate>
+			<pubDate>2023-09-08T18:17:14.981Z</pubDate>
 			<link>https://blog.itcode.dev/projects</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects</guid>
 			<category/>
@@ -1394,6 +1394,14 @@
 			<link>https://blog.itcode.dev/posts/2021/05/21/jekyll-to-nextjs</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/05/21/jekyll-to-nextjs</guid>
 			<category>잡담</category>
+		</item>
+		<item>
+			<title>정신차려보니 블로그를 4번이나 갈아 엎은 건에 대하여</title>
+			<description>블로그 마음에 안 든다고 세 번째 갈아엎은지가 얼마 안 된 거 같은데, 눈 떠보니 어느새 네 차례나 갈아엎고 있는 나를 봤다. 블로그 마지막 글이 거의 반 년 전 글인데, 토이 프로젝트 개발하느라 블로그에 거의 신경을 안 썼다. 더군다나, 3차 개편 이후로 여러 프론트 기술을 습득하게 됐다. 이 때문에 덩달아 내 눈도 높아져버린 탓에, 블로그의 UI가 너무 마음에 들지 않았던 것도 한 몫했다. 다행히 써둔 글들도 꽤 있었고, 그 중엔 나름 효자라 불릴만한 게시글도 몇 개 있어서 방문자가 감소하지는 않았다.</description>
+			<pubDate>2023-09-09T03:00:59.000Z</pubDate>
+			<link>https://blog.itcode.dev/projects/2023/09/09/4th-renewal</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/projects/2023/09/09/4th-renewal</guid>
+			<category>React</category>
 		</item>
 		<item>
 			<title>Rollup.js로 React 컴포넌트 라이브러리 개발기</title>

@@ -5,7 +5,7 @@
 		<description>𝝅번째 알파카의 우당탕탕 개발 기록</description>
 		<generator>blog.itcode.dev SEO</generator>
 		<language>ko-KR</language>
-		<lastBuildDate>2023-09-09T19:11:11.723Z</lastBuildDate>
+		<lastBuildDate>2023-09-17T15:20:38.500Z</lastBuildDate>
 		<link>https://blog.itcode.dev</link>
 		<managingEditor>psj2716@mensakorea.org</managingEditor>
 		<pubDate>2021-05-26T23:36:57.000Z</pubDate>
@@ -14,7 +14,7 @@
 		<item>
 			<title>방명록</title>
 			<description>💝 두근대며 읽어보는 중...</description>
-			<pubDate>2023-09-09T19:11:11.722Z</pubDate>
+			<pubDate>2023-09-17T15:20:38.499Z</pubDate>
 			<link>https://blog.itcode.dev/comments</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/comments</guid>
 			<category/>
@@ -22,7 +22,7 @@
 		<item>
 			<title>홈</title>
 			<description>🦙 𝝅번째 알파카의 우당탕탕 개발 기록</description>
-			<pubDate>2023-09-09T19:11:11.722Z</pubDate>
+			<pubDate>2023-09-17T15:20:38.499Z</pubDate>
 			<link>https://blog.itcode.dev/</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/</guid>
 			<category/>
@@ -30,7 +30,7 @@
 		<item>
 			<title>게시글</title>
 			<description>✒️ 뭔가 끄적끄적 쓰는 중...</description>
-			<pubDate>2023-09-09T19:11:11.722Z</pubDate>
+			<pubDate>2023-09-17T15:20:38.499Z</pubDate>
 			<link>https://blog.itcode.dev/posts</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts</guid>
 			<category/>
@@ -38,7 +38,7 @@
 		<item>
 			<title>프로젝트</title>
 			<description>🖥️ 무언가 뚝딱뚝딱 하는 중...</description>
-			<pubDate>2023-09-09T19:11:11.722Z</pubDate>
+			<pubDate>2023-09-17T15:20:38.499Z</pubDate>
 			<link>https://blog.itcode.dev/projects</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects</guid>
 			<category/>
@@ -1394,6 +1394,14 @@
 			<link>https://blog.itcode.dev/posts/2021/05/21/jekyll-to-nextjs</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/05/21/jekyll-to-nextjs</guid>
 			<category>잡담</category>
+		</item>
+		<item>
+			<title>파이딧 개발기</title>
+			<description>일반적으로 사이트에서 글을 작성할 때, HTML 기반의 에디터를 많이 사용한다. 하지만 개발과 관련된 사이트라면, 마크다운 기반의 에디터를 사용하는 것을 심심치않게 볼 수 있다. 내 블로그 또한 웹에서 작성하진 않지만, 마크다운을 기반으로 게시글을 작성하고 있다. 글을 직관적으로 작성할 수 있으면서도, HTML과의 호환이 뛰어나서 웹으로 표현하는데도 무리가 없다. 이를 보조하는 다양한 플러그인은 덤. 블로그 컨텐츠의 미려한 디자인을 위해 렌더링 코드를 추가하여 사용하고 있다. 예를들면, 코드블럭 같은 것들이 그렇다.</description>
+			<pubDate>2023-09-17T21:57:46.000Z</pubDate>
+			<link>https://blog.itcode.dev/projects/2023/09/17/piedit</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/projects/2023/09/17/piedit</guid>
+			<category>React</category>
 		</item>
 		<item>
 			<title>정신차려보니 블로그를 4번이나 갈아 엎은 건에 대하여</title>

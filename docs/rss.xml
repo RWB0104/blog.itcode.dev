@@ -5,7 +5,7 @@
 		<description>𝝅번째 알파카의 우당탕탕 개발 기록</description>
 		<generator>blog.itcode.dev SEO</generator>
 		<language>ko-KR</language>
-		<lastBuildDate>2023-09-20T11:07:00.687Z</lastBuildDate>
+		<lastBuildDate>2023-09-21T03:58:53.928Z</lastBuildDate>
 		<link>https://blog.itcode.dev</link>
 		<managingEditor>psj2716@mensakorea.org</managingEditor>
 		<pubDate>2021-05-26T23:36:57.000Z</pubDate>
@@ -14,7 +14,7 @@
 		<item>
 			<title>방명록</title>
 			<description>💝 두근대며 읽어보는 중...</description>
-			<pubDate>2023-09-20T11:07:00.686Z</pubDate>
+			<pubDate>2023-09-21T03:58:53.927Z</pubDate>
 			<link>https://blog.itcode.dev/comments</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/comments</guid>
 			<category/>
@@ -22,7 +22,7 @@
 		<item>
 			<title>홈</title>
 			<description>🦙 𝝅번째 알파카의 우당탕탕 개발 기록</description>
-			<pubDate>2023-09-20T11:07:00.686Z</pubDate>
+			<pubDate>2023-09-21T03:58:53.927Z</pubDate>
 			<link>https://blog.itcode.dev/</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/</guid>
 			<category/>
@@ -30,7 +30,7 @@
 		<item>
 			<title>게시글</title>
 			<description>✒️ 뭔가 끄적끄적 쓰는 중...</description>
-			<pubDate>2023-09-20T11:07:00.686Z</pubDate>
+			<pubDate>2023-09-21T03:58:53.927Z</pubDate>
 			<link>https://blog.itcode.dev/posts</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts</guid>
 			<category/>
@@ -38,7 +38,7 @@
 		<item>
 			<title>프로젝트</title>
 			<description>🖥️ 무언가 뚝딱뚝딱 하는 중...</description>
-			<pubDate>2023-09-20T11:07:00.686Z</pubDate>
+			<pubDate>2023-09-21T03:58:53.927Z</pubDate>
 			<link>https://blog.itcode.dev/projects</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects</guid>
 			<category/>
@@ -972,7 +972,7 @@
 			<category>WEB</category>
 		</item>
 		<item>
-			<title>[OOP] 객체지향 5원칙(SOLID) - 의존성 역전 원칙 (Dependency Inversion Principle)</title>
+			<title>[OOP] 객체지향 5원칙(SOLID) - 의존성 역전 원칙 DIP (Dependency Inversion Principle)</title>
 			<description>의존성 역전 원칙이란 객체는 저수준 모듈보다 고수준 모듈에 의존해야한다는 원칙이다. 말이 좀 어렵다. 고수준 모듈은 뭐고, 저수준 모듈은 또 뭐란 말인가? 고/저수준 모델의 정의는 위와 같다. 위 정의를 의존성 역전 원칙에 대입하면, 객체는 객체보다 인터페이스에 의존해야한다로 치환할 수 있다. 즉, 가급적 객체의 상속은 인터페이스를 통해 이루어져야 한다는 의미로 해석할 수 있다.</description>
 			<pubDate>2021-08-17T03:06:35.000Z</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/08/17/dependency-inversion-principle</link>
@@ -980,7 +980,7 @@
 			<category>CS</category>
 		</item>
 		<item>
-			<title>[OOP] 객체지향 5원칙(SOLID) - 인터페이스 분리 원칙 (Interface Segregation Principle)</title>
+			<title>[OOP] 객체지향 5원칙(SOLID) - 인터페이스 분리 원칙 ISP (Interface Segregation Principle)</title>
 			<description>인터페이스 분리 원칙이란 객체는 자신이 호출하지 않는 메소드에 의존하지 않아야한다는 원칙이다. 구현할 객체에게 무의미한 메소드의 구현을 방지하기 위해 반드시 필요한 메소드만을 상속/구현하도록 권고한다. 만약 상속할 객체의 규모가 너무 크다면, 해당 객체의 메소드를 작은 인터페이스로 나누는 것이 좋다. 위 그림은 규모가 너무 큰 객체를 상속했을 때 발생하는 문제와, 이를 인터페이스로 분리하여 해결하는 방법을 도식한 것이다. 왼쪽과 오른쪽 객체가 가운데 객체를 각각 상속할 경우, 왼쪽 객체는 필요한 메소드가 모두 구현되기 때문에 아무런 문제가 없다. 그러나 오른쪽 객체의 경우, Method1을 제외한 나머지 메소드는 필요가 없다. 하지만 이를 상속했기 때문에, 좋든 싫든 해당 메소드를 가지고 있거나, 최악의 경우 필요 없는 메소드를 구현까지 해야만한다. 하지만 상속 대상인 객체의 메소드를 각 동작별로 구분해 인터페이스를 만들어보자. 각 객체가 필요한 인터페이스만을 상속하여 구현하면 되므로 각자가 필요한 메소드만을 가지게 된다. 이 것이 인터페이스 분리 원칙이 지향하는 바다.</description>
 			<pubDate>2021-08-16T19:24:57.000Z</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/08/16/interface-segregation-principle</link>
@@ -988,7 +988,7 @@
 			<category>CS</category>
 		</item>
 		<item>
-			<title>[OOP] 객체지향 5원칙(SOLID) - 리스코프 치환 원칙 (Liskov Subsitution Principle)</title>
+			<title>[OOP] 객체지향 5원칙(SOLID) - 리스코프 치환 원칙 LSP (Liskov Subsitution Principle)</title>
 			<description>리스코프 치환 원칙은 부모 객체와 이를 상속한 자식 객체가 있을 때 부모 객체를 호출하는 동작에서 자식 객체가 부모 객체를 완전히 대체할 수 있다는 원칙이다. 객체지향 언어에선 객체의 상속이 일어난다. 이 과정에서 부모/자식 관계가 정의된다. 자식 객체는 부모 객체의 특성을 가지며, 이를 토대로 확장할 수 있다. 하지만 이 과정에서 무리하거나 객체의 의의와 어긋나는 확장으로 인해 잘못된 방향으로 상속되는 경우가 생긴다. 리스코프 치환 원칙은 올바른 상속을 위해 자식 객체의 확장이 부모 객체의 방향을 온전히 따르도록 권고하는 원칙이다.</description>
 			<pubDate>2021-08-15T13:42:11.000Z</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/08/15/liskov-subsitution-principle</link>
@@ -996,7 +996,7 @@
 			<category>CS</category>
 		</item>
 		<item>
-			<title>[OOP] 객체지향 5원칙(SOLID) - 개방-폐쇄 원칙 (Open-Closed Principle)</title>
+			<title>[OOP] 객체지향 5원칙(SOLID) - 개방-폐쇄 원칙 OCP (Open-Closed Principle)</title>
 			<description>개방 폐쇄 원칙이란 객체를 다룸에 있어서 객체의 확장은 개방적으로, 객체의 수정은 폐쇄적으로 대하는 원칙이다. 한 마디로, 보여줄 건 보여주고, 숨길 건 숨긴다는 의미. 좀 더 쉽게 말하자면, 기능이 변하거나 확장 가능하지만, 해당 기능의 코드는 수정하면 안 된다는 뜻이다. 그런데 이 원칙, 말이 좀 이상하다. 기능이 변하는 거 OK. 확장되는 거 OK. 근데 코드를 수정하면 안 된다?? 다소 이해가 되지 않는 요구사항이다. 만약, 객체 하나를 수정한다고 가정하자. 이 때 단순히 해당 객체만 수정하는 것 뿐만 아니라 해당 객체에 의존하는 다른 객체들의 코드까지 줄줄이 고쳐야한다면 좋은 설계로 보기 힘들다. 대표적으로 라이브러리를 생각해보자. 라이브러리를 사용하는 객체의 코드가 변경된다고 해서 라이브러리 코드까지 변경하지 않는다. 이처럼 개방-폐쇄 원칙은 각 객체의 모듈화와 정보 은닉의 올바른 구현을 추구하며, 이를 통해 객체 간의 의존성을 최소화하여 코드 변경에 따른 영향력을 낮추기 위한 원칙이다.</description>
 			<pubDate>2021-08-14T04:04:40.000Z</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/08/14/open-closed-principle</link>
@@ -1004,7 +1004,7 @@
 			<category>CS</category>
 		</item>
 		<item>
-			<title>[OOP] 객체지향 5원칙(SOLID) - 단일 책임 원칙 (Single Responsibility Principle)</title>
+			<title>[OOP] 객체지향 5원칙(SOLID) - 단일 책임 원칙 SRP(Single Responsibility Principle)</title>
 			<description>올바른 객체지향 설계를 위해 수립한 원칙이 있으며, 이 다섯 가지 원칙을 통틀어 객체지향 5원칙(SOLID)이라 명명한다. 필수로 적용하지는 않지만, 적어도 이 규칙을 준수하면 준수할 수록 올바르게 설계된 객체지향이라 할 수 있다. 이 다섯가지 원칙은 아래와 같다.</description>
 			<pubDate>2021-08-13T01:37:48.000Z</pubDate>
 			<link>https://blog.itcode.dev/posts/2021/08/13/single-responsibility-principle</link>

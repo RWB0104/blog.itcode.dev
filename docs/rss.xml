@@ -5,7 +5,7 @@
 		<description>𝝅번째 알파카의 우당탕탕 개발 기록</description>
 		<generator>blog.itcode.dev SEO</generator>
 		<language>ko-KR</language>
-		<lastBuildDate>2023-09-23T12:04:34.489Z</lastBuildDate>
+		<lastBuildDate>2023-09-23T19:22:55.032Z</lastBuildDate>
 		<link>https://blog.itcode.dev</link>
 		<managingEditor>psj2716@mensakorea.org</managingEditor>
 		<pubDate>2021-05-26T23:36:57.000Z</pubDate>
@@ -14,7 +14,7 @@
 		<item>
 			<title>방명록</title>
 			<description>💝 두근대며 읽어보는 중...</description>
-			<pubDate>2023-09-23T12:04:34.489Z</pubDate>
+			<pubDate>2023-09-23T19:22:55.032Z</pubDate>
 			<link>https://blog.itcode.dev/comments</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/comments</guid>
 			<category/>
@@ -22,7 +22,7 @@
 		<item>
 			<title>홈</title>
 			<description>🦙 𝝅번째 알파카의 우당탕탕 개발 기록</description>
-			<pubDate>2023-09-23T12:04:34.489Z</pubDate>
+			<pubDate>2023-09-23T19:22:55.032Z</pubDate>
 			<link>https://blog.itcode.dev/</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/</guid>
 			<category/>
@@ -30,7 +30,7 @@
 		<item>
 			<title>게시글</title>
 			<description>✒️ 뭔가 끄적끄적 쓰는 중...</description>
-			<pubDate>2023-09-23T12:04:34.489Z</pubDate>
+			<pubDate>2023-09-23T19:22:55.032Z</pubDate>
 			<link>https://blog.itcode.dev/posts</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts</guid>
 			<category/>
@@ -38,7 +38,7 @@
 		<item>
 			<title>프로젝트</title>
 			<description>🖥️ 무언가 뚝딱뚝딱 하는 중...</description>
-			<pubDate>2023-09-23T12:04:34.489Z</pubDate>
+			<pubDate>2023-09-23T19:22:55.032Z</pubDate>
 			<link>https://blog.itcode.dev/projects</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects</guid>
 			<category/>
@@ -1402,6 +1402,14 @@
 			<link>https://blog.itcode.dev/posts/2021/05/21/jekyll-to-nextjs</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2021/05/21/jekyll-to-nextjs</guid>
 			<category>잡담</category>
+		</item>
+		<item>
+			<title>OpenLayers를 여행하는 개발자를 위한 안내서 - 26. 실전! OpenLayers6 Sandbox를 내 GeoServer로 구동하기</title>
+			<description>이 시리즈를 쭉 정독했다면, 코드와 함께 예시로 보여주는 OpenLayers6 Sandbox를 봤을 것이다. 해당 사이트는 코드의 결과를 직관적으로 보여주기 위해 만든 예시 사이트다. 코드로 보는 것보다, 직접 구현된 결과물을 보는 것이 이해가 훨씬 빠를거라 생각했다. 예시 사이트를 보여주는 것도 좋지만, 자신이 직접 GeoServer를 구축하고 이를 예시 사이트에 연결하는 방법을 알려준다면, 더 자유롭게 탐구를 할 수 있지 않을까 싶었다. 이 장에선, 내가 직접 예시 사이트에 사용한 데이터 일체와 GeoServer의 구축 방식을 제공하여, OpenLayers6 Sandbox 사이트를 내 GeoServer로 연결하여 구축해본다.</description>
+			<pubDate>2023-09-23T19:18:43.000Z</pubDate>
+			<link>https://blog.itcode.dev/projects/2023/09/24/gis-guide-for-programmer-26</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/projects/2023/09/24/gis-guide-for-programmer-26</guid>
+			<category>GIS</category>
 		</item>
 		<item>
 			<title>파이딧 개발기</title>

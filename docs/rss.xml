@@ -5,7 +5,7 @@
 		<description>𝝅번째 알파카의 우당탕탕 개발 기록</description>
 		<generator>blog.itcode.dev SEO</generator>
 		<language>ko-KR</language>
-		<lastBuildDate>2023-09-21T03:58:53.928Z</lastBuildDate>
+		<lastBuildDate>2023-09-23T11:45:40.853Z</lastBuildDate>
 		<link>https://blog.itcode.dev</link>
 		<managingEditor>psj2716@mensakorea.org</managingEditor>
 		<pubDate>2021-05-26T23:36:57.000Z</pubDate>
@@ -14,7 +14,7 @@
 		<item>
 			<title>방명록</title>
 			<description>💝 두근대며 읽어보는 중...</description>
-			<pubDate>2023-09-21T03:58:53.927Z</pubDate>
+			<pubDate>2023-09-23T11:45:40.852Z</pubDate>
 			<link>https://blog.itcode.dev/comments</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/comments</guid>
 			<category/>
@@ -22,7 +22,7 @@
 		<item>
 			<title>홈</title>
 			<description>🦙 𝝅번째 알파카의 우당탕탕 개발 기록</description>
-			<pubDate>2023-09-21T03:58:53.927Z</pubDate>
+			<pubDate>2023-09-23T11:45:40.852Z</pubDate>
 			<link>https://blog.itcode.dev/</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/</guid>
 			<category/>
@@ -30,7 +30,7 @@
 		<item>
 			<title>게시글</title>
 			<description>✒️ 뭔가 끄적끄적 쓰는 중...</description>
-			<pubDate>2023-09-21T03:58:53.927Z</pubDate>
+			<pubDate>2023-09-23T11:45:40.852Z</pubDate>
 			<link>https://blog.itcode.dev/posts</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts</guid>
 			<category/>
@@ -38,10 +38,18 @@
 		<item>
 			<title>프로젝트</title>
 			<description>🖥️ 무언가 뚝딱뚝딱 하는 중...</description>
-			<pubDate>2023-09-21T03:58:53.927Z</pubDate>
+			<pubDate>2023-09-23T11:45:40.852Z</pubDate>
 			<link>https://blog.itcode.dev/projects</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects</guid>
 			<category/>
+		</item>
+		<item>
+			<title>[Next.js] Next.js 13 알아보기</title>
+			<description>React 프로젝트를 하면, 십중팔구는 `Next.js`를 쓰게 된다. 최근에 블로그를 개편하면서 `create-next-app`을 돌렸는데, 13버전으로 업데이트 되면서 눈에 띄는 변경점이 있는 듯 하다. 그 중 몇몇 변경점은 기존 사용법과 상이해져서 쓰는데 살짝 애를 좀 먹었는데, 이러한 변경점에 대해 다뤄보고자 한다.</description>
+			<pubDate>2023-09-23T20:41:27.000Z</pubDate>
+			<link>https://blog.itcode.dev/posts/2023/09/23/nextjs13</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2023/09/23/nextjs13</guid>
+			<category>React</category>
 		</item>
 		<item>
 			<title>[recoil] Duplicate atom key 오류 해결하기</title>

@@ -5,7 +5,7 @@
 		<description>𝝅번째 알파카의 우당탕탕 개발 기록</description>
 		<generator>blog.itcode.dev SEO</generator>
 		<language>ko-KR</language>
-		<lastBuildDate>2023-09-24T16:28:45.960Z</lastBuildDate>
+		<lastBuildDate>2023-09-25T17:11:26.682Z</lastBuildDate>
 		<link>https://blog.itcode.dev</link>
 		<managingEditor>psj2716@mensakorea.org</managingEditor>
 		<pubDate>2021-05-26T23:36:57.000Z</pubDate>
@@ -14,7 +14,7 @@
 		<item>
 			<title>방명록</title>
 			<description>💝 두근대며 읽어보는 중...</description>
-			<pubDate>2023-09-24T16:28:45.960Z</pubDate>
+			<pubDate>2023-09-25T17:11:26.681Z</pubDate>
 			<link>https://blog.itcode.dev/comments</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/comments</guid>
 			<category/>
@@ -22,7 +22,7 @@
 		<item>
 			<title>홈</title>
 			<description>🦙 𝝅번째 알파카의 우당탕탕 개발 기록</description>
-			<pubDate>2023-09-24T16:28:45.960Z</pubDate>
+			<pubDate>2023-09-25T17:11:26.681Z</pubDate>
 			<link>https://blog.itcode.dev/</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/</guid>
 			<category/>
@@ -30,7 +30,7 @@
 		<item>
 			<title>게시글</title>
 			<description>✒️ 뭔가 끄적끄적 쓰는 중...</description>
-			<pubDate>2023-09-24T16:28:45.960Z</pubDate>
+			<pubDate>2023-09-25T17:11:26.681Z</pubDate>
 			<link>https://blog.itcode.dev/posts</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts</guid>
 			<category/>
@@ -38,10 +38,18 @@
 		<item>
 			<title>프로젝트</title>
 			<description>🖥️ 무언가 뚝딱뚝딱 하는 중...</description>
-			<pubDate>2023-09-24T16:28:45.960Z</pubDate>
+			<pubDate>2023-09-25T17:11:26.681Z</pubDate>
 			<link>https://blog.itcode.dev/projects</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects</guid>
 			<category/>
+		</item>
+		<item>
+			<title>[TypeScript] 마크다운 TOC 만들기</title>
+			<description>글의 요소 중엔 목차라는 개념이 존재한다. TOC(Table Of Content)라고도 한다. 목차를 통해 독자는 글의 전반적인 내용과 짜임새를 파악할 수 있으며, 원할 경우 필요한 부분만 취사선택을 하도록 유도할 수도 있다. 독자를 위해서도, 글을 위해서도 좋은 장치인 셈이다.</description>
+			<pubDate>2023-09-26T01:53:00.000Z</pubDate>
+			<link>https://blog.itcode.dev/posts/2023/09/26/markdown-toc</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2023/09/26/markdown-toc</guid>
+			<category>TypeScript</category>
 		</item>
 		<item>
 			<title>[Next.js] Next.js 13 알아보기</title>

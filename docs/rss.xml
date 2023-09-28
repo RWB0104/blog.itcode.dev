@@ -5,7 +5,7 @@
 		<description>𝝅번째 알파카의 우당탕탕 개발 기록</description>
 		<generator>blog.itcode.dev SEO</generator>
 		<language>ko-KR</language>
-		<lastBuildDate>2023-09-28T05:12:02.795Z</lastBuildDate>
+		<lastBuildDate>2023-09-28T08:11:27.791Z</lastBuildDate>
 		<link>https://blog.itcode.dev</link>
 		<managingEditor>psj2716@mensakorea.org</managingEditor>
 		<pubDate>2021-05-26T23:36:57.000Z</pubDate>
@@ -14,7 +14,7 @@
 		<item>
 			<title>방명록</title>
 			<description>💝 두근대며 읽어보는 중...</description>
-			<pubDate>2023-09-28T05:12:02.794Z</pubDate>
+			<pubDate>2023-09-28T08:11:27.790Z</pubDate>
 			<link>https://blog.itcode.dev/comments</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/comments</guid>
 			<category/>
@@ -22,7 +22,7 @@
 		<item>
 			<title>홈</title>
 			<description>🦙 𝝅번째 알파카의 우당탕탕 개발 기록</description>
-			<pubDate>2023-09-28T05:12:02.794Z</pubDate>
+			<pubDate>2023-09-28T08:11:27.790Z</pubDate>
 			<link>https://blog.itcode.dev/</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/</guid>
 			<category/>
@@ -30,7 +30,7 @@
 		<item>
 			<title>게시글</title>
 			<description>✒️ 뭔가 끄적끄적 쓰는 중...</description>
-			<pubDate>2023-09-28T05:12:02.794Z</pubDate>
+			<pubDate>2023-09-28T08:11:27.790Z</pubDate>
 			<link>https://blog.itcode.dev/posts</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts</guid>
 			<category/>
@@ -38,13 +38,13 @@
 		<item>
 			<title>프로젝트</title>
 			<description>🖥️ 무언가 뚝딱뚝딱 하는 중...</description>
-			<pubDate>2023-09-28T05:12:02.794Z</pubDate>
+			<pubDate>2023-09-28T08:11:27.790Z</pubDate>
 			<link>https://blog.itcode.dev/projects</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects</guid>
 			<category/>
 		</item>
 		<item>
-			<title>[GitHub Actions] 삼가 수동배포의 명복을 GitHub Action빔 - 1. CI/CD</title>
+			<title>[GitHub Actions] 삼가 수동배포의 명복을 GitHub Actions빔 - 1. CI/CD</title>
 			<description>하나의 프로그램이 나오기 위해선 여러 과정을 거친다. 프로그램의 규모에 따라 더 많은 인력, 더 많은 과정과 일정이 동반된다. 하지만 그 어떤 프로그램이라도 결과는 빌드와 배포 하나로 귀속된다. 한낮 텍스트들과 에셋들이 빌드를 거쳐 하나의 프로그램으로 완성되고, 배포를 통해 사람들에게 쓰여진다. 모든 프로그램의 목표인 셈이다. 그에 걸맞게 빌드와 배포에 대한 중요성 역시 매우 크다. 그에 맞게 빌드/배포는 마냥 쉬운 일이 아니다. 프로그램의 규모가 커질수록, 시간은 그 이상으로 걸리게 된다.</description>
 			<pubDate>2023-09-28T03:54:54.000Z</pubDate>
 			<link>https://blog.itcode.dev/posts/2023/09/28/github-actions-1</link>

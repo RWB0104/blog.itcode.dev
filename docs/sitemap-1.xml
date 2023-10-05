@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<changefreq>always</changefreq>
+		<lastmod>2021-10-22T22:25:16.000Z</lastmod>
+		<loc>https://blog.itcode.dev/posts/2021/10/22/oauth2-java-server-4</loc>
+		<priority>1</priority>
+	</url>
+	<url>
+		<changefreq>always</changefreq>
 		<lastmod>2021-10-20T01:26:40.000Z</lastmod>
 		<loc>https://blog.itcode.dev/posts/2021/10/20/oauth2-java-server-3</loc>
 		<priority>1</priority>
@@ -592,12 +598,6 @@
 		<changefreq>always</changefreq>
 		<lastmod>2022-03-14T14:37:32.000Z</lastmod>
 		<loc>https://blog.itcode.dev/projects/2022/03/14/gis-guide-for-programmer-8</loc>
-		<priority>1</priority>
-	</url>
-	<url>
-		<changefreq>always</changefreq>
-		<lastmod>2022-03-06T16:12:33.000Z</lastmod>
-		<loc>https://blog.itcode.dev/projects/2022/03/07/gis-guide-for-programmer-7</loc>
 		<priority>1</priority>
 	</url>
 </urlset>

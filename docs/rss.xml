@@ -5,7 +5,7 @@
 		<description>𝝅번째 알파카의 우당탕탕 개발 기록</description>
 		<generator>blog.itcode.dev SEO</generator>
 		<language>ko-KR</language>
-		<lastBuildDate>2023-10-04T13:28:33.554Z</lastBuildDate>
+		<lastBuildDate>2023-10-05T14:32:41.990Z</lastBuildDate>
 		<link>https://blog.itcode.dev</link>
 		<managingEditor>psj2716@mensakorea.org</managingEditor>
 		<pubDate>2021-05-26T23:36:57.000Z</pubDate>
@@ -14,7 +14,7 @@
 		<item>
 			<title>방명록</title>
 			<description>💝 두근대며 읽어보는 중...</description>
-			<pubDate>2023-10-04T13:28:33.553Z</pubDate>
+			<pubDate>2023-10-05T14:32:41.989Z</pubDate>
 			<link>https://blog.itcode.dev/comments</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/comments</guid>
 			<category/>
@@ -22,7 +22,7 @@
 		<item>
 			<title>홈</title>
 			<description>🦙 𝝅번째 알파카의 우당탕탕 개발 기록</description>
-			<pubDate>2023-10-04T13:28:33.553Z</pubDate>
+			<pubDate>2023-10-05T14:32:41.989Z</pubDate>
 			<link>https://blog.itcode.dev/</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/</guid>
 			<category/>
@@ -30,7 +30,7 @@
 		<item>
 			<title>게시글</title>
 			<description>✒️ 뭔가 끄적끄적 쓰는 중...</description>
-			<pubDate>2023-10-04T13:28:33.553Z</pubDate>
+			<pubDate>2023-10-05T14:32:41.989Z</pubDate>
 			<link>https://blog.itcode.dev/posts</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts</guid>
 			<category/>
@@ -38,10 +38,18 @@
 		<item>
 			<title>프로젝트</title>
 			<description>🖥️ 무언가 뚝딱뚝딱 하는 중...</description>
-			<pubDate>2023-10-04T13:28:33.553Z</pubDate>
+			<pubDate>2023-10-05T14:32:41.989Z</pubDate>
 			<link>https://blog.itcode.dev/projects</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects</guid>
 			<category/>
+		</item>
+		<item>
+			<title>Google Analytics API를 활용하여 블로그의 인기 게시글을 표현하는 갹스러운 방법</title>
+			<description>게시글이 중심인 사이트를 보면, 대부분 조회수에 기반한 인기 게시글을 보여주는 기능을 제공해준다. 각 게시글마다 조회수를 저장하고, 이를 통해 가장 많은 조회수 혹은 이에 기반한 특정 조건을 만족하는 게시글을 보여주는 방식이다. 하지만, 내 블로그. 조회수 저장같은 건 없다. Serverless 방식이기 때문. GitHub를 통해 정적 호스팅만을 수행할 뿐, 서버에 그 이상의 어떤 연산도 기대할 수 없는 구조다. 때문에 능동적인 방문자수 계산은 불가능한 상황이다.</description>
+			<pubDate>2023-10-05T14:08:50.000Z</pubDate>
+			<link>https://blog.itcode.dev/posts/2023/10/05/hot-posts-with-ga4</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2023/10/05/hot-posts-with-ga4</guid>
+			<category>WEB</category>
 		</item>
 		<item>
 			<title>[GitHub Actions] 삼가 수동배포의 명복을 GitHub Actions빔 - 1. CI/CD</title>

@@ -2,27 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<changefreq>daily</changefreq>
-		<lastmod>2023-10-06T18:40:12.234Z</lastmod>
+		<lastmod>2023-10-25T16:24:28.000Z</lastmod>
 		<loc>https://blog.itcode.dev/comments</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<changefreq>daily</changefreq>
-		<lastmod>2023-10-06T18:40:12.234Z</lastmod>
+		<lastmod>2023-10-25T16:24:28.000Z</lastmod>
 		<loc>https://blog.itcode.dev/</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<changefreq>daily</changefreq>
-		<lastmod>2023-10-06T18:40:12.234Z</lastmod>
+		<lastmod>2023-10-25T16:24:28.000Z</lastmod>
 		<loc>https://blog.itcode.dev/posts</loc>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<changefreq>daily</changefreq>
-		<lastmod>2023-10-06T18:40:12.234Z</lastmod>
+		<lastmod>2023-10-25T16:24:28.000Z</lastmod>
 		<loc>https://blog.itcode.dev/projects</loc>
 		<priority>0.5</priority>
+	</url>
+	<url>
+		<changefreq>always</changefreq>
+		<lastmod>2023-10-25T16:20:14.682Z</lastmod>
+		<loc>https://blog.itcode.dev/posts/2023/10/26/github-actions-2</loc>
+		<priority>1</priority>
 	</url>
 	<url>
 		<changefreq>always</changefreq>
@@ -592,12 +598,6 @@
 		<changefreq>always</changefreq>
 		<lastmod>2021-10-22T18:51:04.000Z</lastmod>
 		<loc>https://blog.itcode.dev/posts/2021/10/23/oauth2-java-server-6</loc>
-		<priority>1</priority>
-	</url>
-	<url>
-		<changefreq>always</changefreq>
-		<lastmod>2021-10-22T16:51:53.000Z</lastmod>
-		<loc>https://blog.itcode.dev/posts/2021/10/23/oauth2-java-server-5</loc>
 		<priority>1</priority>
 	</url>
 </urlset>

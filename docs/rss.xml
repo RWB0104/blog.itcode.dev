@@ -5,7 +5,7 @@
 		<description>𝝅번째 알파카의 우당탕탕 개발 기록</description>
 		<generator>blog.itcode.dev SEO</generator>
 		<language>ko-KR</language>
-		<lastBuildDate>2023-10-28T03:27:42.788Z</lastBuildDate>
+		<lastBuildDate>2023-10-28T18:01:32.512Z</lastBuildDate>
 		<link>https://blog.itcode.dev</link>
 		<managingEditor>psj2716@mensakorea.org</managingEditor>
 		<pubDate>2021-05-26T23:36:57.000Z</pubDate>
@@ -14,7 +14,7 @@
 		<item>
 			<title>방명록</title>
 			<description>💝 두근대며 읽어보는 중...</description>
-			<pubDate>2023-10-28T03:27:42.787Z</pubDate>
+			<pubDate>2023-10-28T18:01:32.512Z</pubDate>
 			<link>https://blog.itcode.dev/comments</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/comments</guid>
 			<category/>
@@ -22,7 +22,7 @@
 		<item>
 			<title>홈</title>
 			<description>🦙 𝝅번째 알파카의 우당탕탕 개발 기록</description>
-			<pubDate>2023-10-28T03:27:42.787Z</pubDate>
+			<pubDate>2023-10-28T18:01:32.512Z</pubDate>
 			<link>https://blog.itcode.dev/</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/</guid>
 			<category/>
@@ -30,7 +30,7 @@
 		<item>
 			<title>게시글</title>
 			<description>✒️ 뭔가 끄적끄적 쓰는 중...</description>
-			<pubDate>2023-10-28T03:27:42.787Z</pubDate>
+			<pubDate>2023-10-28T18:01:32.512Z</pubDate>
 			<link>https://blog.itcode.dev/posts</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts</guid>
 			<category/>
@@ -38,14 +38,22 @@
 		<item>
 			<title>프로젝트</title>
 			<description>🖥️ 무언가 뚝딱뚝딱 하는 중...</description>
-			<pubDate>2023-10-28T03:27:42.787Z</pubDate>
+			<pubDate>2023-10-28T18:01:32.512Z</pubDate>
 			<link>https://blog.itcode.dev/projects</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/projects</guid>
 			<category/>
 		</item>
 		<item>
-			<title>[GitHub Actions] 삼가 수동배포의 명복을 GitHub Actions빔 - 2. GitHub Actions 이벤트 트리거링</title>
+			<title>[GitHub Actions] 삼가 수동배포의 명복을 GitHub Actions빔 - 3. GitHub Actions를 구동하는 방법. Events(이벤트)</title>
 			<description>GitHub. Git 호스팅 관리 서비스의 대표주자라 할 수 있으며, 대부분의 개발자들이 사용하는 글로벌한 서비스다. 오픈소스 진영에서 시작한 GitHub는 2018년, MicroSoft에 인수되기까지한다. 이러한 GitHub의 성공에는 소스코드 저장소 관리 기능을 기반으로 다양한 서비를 제공했기 때문일 것이다. 그 중에서는 GitHub Actions이라는 기능도 있으며, 별다른 비용 없이 CI/CD 파이프라인을 구축할 수 있다.</description>
+			<pubDate>2023-10-28T17:58:29.306Z</pubDate>
+			<link>https://blog.itcode.dev/posts/2023/10/29/github-actions-3</link>
+			<guid isPermaLink="true">https://blog.itcode.dev/posts/2023/10/29/github-actions-3</guid>
+			<category>TypeScript</category>
+		</item>
+		<item>
+			<title>[GitHub Actions] 삼가 수동배포의 명복을 GitHub Actions빔 - 2. GitHub Actions 알아보기</title>
+			<description>우리는 이전 장에서 CI/CD가 무엇인지와, 이를 제공하는 대표적인 서비스 중 하나로 GitHub Actions이 있음을 확인했다. 그럼 GitHub Actions은 정확히 어떻게 CI/CD 서비스를 제공한다는걸까? GitHub Actions에 대해 알아보자.</description>
 			<pubDate>2023-10-25T16:20:14.682Z</pubDate>
 			<link>https://blog.itcode.dev/posts/2023/10/26/github-actions-2</link>
 			<guid isPermaLink="true">https://blog.itcode.dev/posts/2023/10/26/github-actions-2</guid>

@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<changefreq>always</changefreq>
+		<lastmod>2022-03-14T19:53:00.000Z</lastmod>
+		<loc>https://blog.itcode.dev/projects/2022/03/19/gis-guide-for-programmer-10</loc>
+		<priority>1</priority>
+	</url>
+	<url>
+		<changefreq>always</changefreq>
 		<lastmod>2022-03-14T16:11:19.000Z</lastmod>
 		<loc>https://blog.itcode.dev/projects/2022/03/15/gis-guide-for-programmer-9</loc>
 		<priority>1</priority>

@@ -1,42 +1,88 @@
-1:HL["/_next/static/media/17d789ad52fa3db3-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-2:HL["/_next/static/media/53595b3b2a2bc7fe-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-3:HL["/_next/static/media/6e5e69ce8a001790-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-4:HL["/_next/static/css/7e72925424d61cb2.css","style",{"crossOrigin":""}]
-5:HL["/_next/static/css/f661f8399e37b45e.css","style",{"crossOrigin":""}]
-6:HL["/_next/static/css/5bd1cfb45e9495b4.css","style",{"crossOrigin":""}]
-0:["ohLfXJiVJiSguL2CG6Bpu",[[["",{"children":[["markdown","posts/2021/10/24/oauth2-java-server-8","c"],{"children":["__PAGE__?{\"markdown\":[\"posts\",\"2021\",\"10\",\"24\",\"oauth2-java-server-8\"]}",{}]}]},"$undefined","$undefined",true],"$L7",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/7e72925424d61cb2.css","precedence":"next","crossOrigin":""}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/f661f8399e37b45e.css","precedence":"next","crossOrigin":""}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/5bd1cfb45e9495b4.css","precedence":"next","crossOrigin":""}]],"$L8"]]]]
-9:HL["/_next/static/css/86391cacb09421ad.css","style",{"crossOrigin":""}]
-a:I[46544,["912","static/chunks/912-79acab5e8493ca50.js","14","static/chunks/14-2df9062aa7ee4596.js","690","static/chunks/690-8578563e9852d8ce.js","4","static/chunks/4-ce0deb4c1b4e499e.js","185","static/chunks/app/layout-21fc97f2746b88f3.js"],""]
-b:I[39587,["912","static/chunks/912-79acab5e8493ca50.js","14","static/chunks/14-2df9062aa7ee4596.js","690","static/chunks/690-8578563e9852d8ce.js","4","static/chunks/4-ce0deb4c1b4e499e.js","185","static/chunks/app/layout-21fc97f2746b88f3.js"],""]
-c:I[37151,["912","static/chunks/912-79acab5e8493ca50.js","14","static/chunks/14-2df9062aa7ee4596.js","690","static/chunks/690-8578563e9852d8ce.js","4","static/chunks/4-ce0deb4c1b4e499e.js","185","static/chunks/app/layout-21fc97f2746b88f3.js"],""]
-d:I[38310,[],""]
-e:I[7717,[],""]
-f:I[69229,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-10:I[48602,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-11:I[97750,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-12:I[26360,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","288","static/chunks/288-dd82034089bf753f.js","602","static/chunks/602-c635d1995b986cae.js","160","static/chunks/app/not-found-9607d7058a6a4733.js"],""]
-13:I[17318,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","288","static/chunks/288-dd82034089bf753f.js","602","static/chunks/602-c635d1995b986cae.js","160","static/chunks/app/not-found-9607d7058a6a4733.js"],""]
-15:I[42815,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-16:I[68310,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-17:I[47921,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-18:I[66521,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-19:I[88634,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-1a:I[95879,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-1b:I[90992,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-1c:I[4393,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-1d:I[48186,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-1e:I[73961,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-1f:I[26102,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-32:I[70839,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-33:I[1739,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-34:I[95990,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-35:I[36712,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-3c:I[9667,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-3d:I[98278,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-3e:I[31594,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-3f:I[79705,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-40:I[13709,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-20:T5e8,package global.module;
+2:I[96815,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+3:I[77224,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+4:I[96525,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+5:I[32911,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+6:I[94103,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+7:I[914,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+8:I[85737,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+9:I[66304,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+a:I[13239,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+b:I[84246,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+c:I[29027,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+d:I[97747,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+f:I[91012,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+10:I[13205,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+11:I[14148,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+12:I[10536,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+13:I[94120,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+14:I[12760,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+15:I[92928,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+16:I[30667,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+17:I[58789,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+18:I[51444,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+19:I[45488,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+1a:I[78074,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+1b:I[66024,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+1c:I[1573,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+1d:I[63615,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+1e:I[61260,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+1f:I[23845,[],""]
+21:I[23979,[],""]
+22:"$Sreact.suspense"
+23:I[72990,["286","static/chunks/286-5f2793dfa337861d.js","693","static/chunks/693-ba2d04fe6893373f.js","185","static/chunks/app/layout-04286cb809ef2438.js"],""]
+24:I[41043,["286","static/chunks/286-5f2793dfa337861d.js","693","static/chunks/693-ba2d04fe6893373f.js","185","static/chunks/app/layout-04286cb809ef2438.js"],""]
+25:I[64073,["286","static/chunks/286-5f2793dfa337861d.js","693","static/chunks/693-ba2d04fe6893373f.js","185","static/chunks/app/layout-04286cb809ef2438.js"],""]
+26:I[90838,["286","static/chunks/286-5f2793dfa337861d.js","693","static/chunks/693-ba2d04fe6893373f.js","185","static/chunks/app/layout-04286cb809ef2438.js"],""]
+e:T9dbe,
+# 개요
+
+4장부터 7장까지 진행하며 각 플랫폼의 인증 모듈을 구현했다. 이 장에서는 모듈을 사용하는 주체인 프로세스를 구현한다.
+
+프로세스는 HTTP 메소드에 따라 구분하여 관리한다.
+
+
+
+
+
+
+
+
+
+
+# 구조
+
+계정 관련 동작 이외엔 없으므로, 대분류는 `account` 하나 뿐이다.
+
+작업에 필요한 HTTP 메소는 `GET`, `POST`, `PUT`, `DELETE`이므로, 아래와 같이 구분한다.
+
+* `AccountGetProcess` - 계정 GET 프로세스 클래스
+* `AccountPostProcess` - 계정 POST 프로세스 클래스
+* `AccountPutProcess` - 계정 PUT 프로세스 클래스
+* `AccountDeleteProcess` - 계정 DELETE 프로세스 클래스
+
+`GET` 메소드에 사용하는 로직은 `AccountGetProcess`에 포함되는 식으로 구성한다.
+
+
+
+
+
+
+
+
+
+
+# 프로세스 구현
+
+
+
+
+
+## Process 추상 클래스 구현
+
+여러 프로세스에 공통 로직을 적용하기 위해, 모든 프로세스 객체에 상속할 Process 추상 클래스를 구현한다.
+
+``` java
+package global.module;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -90,61 +136,102 @@ abstract public class Process
 				};
 	}
 }
-21:T5e8,package global.module;
+```
 
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import oauth.account.module.AuthModule;
-import oauth.account.module.GithubAuthModule;
-import oauth.account.module.GoogleAuthModule;
-import oauth.account.module.KakaoAuthModule;
-import oauth.account.module.NaverAuthModule;
+서블릿 객체인 `HttpServletRequest`, `HttpServletResponse`에 쉽게 접근하기 위해 `protected` 접근 제어자로 각 지역변수를 선언한다.
 
-/**
- * 프로세스 추상 클래스
- *
- * @author RWB
- * @since 2021.09.30 Thu 01:14:25
- */
-abstract public class Process
+생성자 사용 시 반드시 `HttpServletRequest`, `HttpServletResponse`를 인수로 주도록 강제한다.
+
+이를 통해 `Process`를 상속하는 모든 하위 프로세스 클래스는 반드시 서블릿 객체를 인수로 받아야하며, 프로세스 내부에서 `request`, `response`로 서블릿 객체에 접근할 수 있다.
+
+<br />
+
+`getAuthModule`은 <span class="blue-400">각 플랫폼 이름에 따라 해당하는 인스턴스를 반환</span>하는 메서드다. 인증 모듈은 주로 프로세스에서 많이 사용하게 되므로, `Process`에 선언하여 이를 상속하는 모든 프로세스 클래스가 해당 메서드에 접근할 수 있도록 구성한다.
+
+이러한 구성으로 동일한 프로세스에서 플랫폼별로 `AuthModule` 객체를 호출하여 플랫폼별로 선언한 메서드를 사용할 수 있다.
+
+
+
+
+
+## GET 프로세스 구현
+
+계정 프로세스 중 `GET`에 해당하는 동작이 집합된 프로세스 클래스를 구현한다.
+
+* 인증 URL 응답 반환 메서드
+* 사용자 정보 응답 반환 메서드
+
+`GET`에 해당하는 동작은 위 두 메서드다. 단순히 데이터를 받아오는 작업들로 구성되어있다.
+
+
+
+### 인증 URL 응답 반환 메서드
+
+<span class="blue-400">플랫폼 로그인을 위한 인증 URL을 반환</span>하는 메서드다.
+
+`AuthModule`의 `getAuthorizationUrl` 메서드를 통해 URL를 얻고, 이 내용을 담아 응답 객체로 만들어 반환한다.
+
+``` java
+public Response getAuthorizationUrlResponse(String platform)
 {
-	protected HttpServletRequest request;
-	protected HttpServletResponse response;
+	Response response;
 	
-	/**
-	 * 생성자 메서드
-	 *
-	 * @param request: [HttpServletRequest] HttpServletResponse 객체
-	 * @param response: [HttpServletResponse] HttpServletResponse 객체
-	 */
-	protected Process(HttpServletRequest request, HttpServletResponse response)
+	ResponseBean<String> responseBean = new ResponseBean<>();
+	
+	// 인증 URL 응답 생성 시도
+	try
 	{
-		this.request = request;
-		this.response = response;
+		String state = UUID.randomUUID().toString();
+		
+		request.getSession().setAttribute("state", state);
+		
+		AuthModule authModule = getAuthModule(platform);
+		
+		responseBean.setFlag(true);
+		responseBean.setTitle("success");
+		responseBean.setMessage(Util.builder(platform, " authrorization url response success"));
+		responseBean.setBody(authModule.getAuthorizationUrl(state));
+		
+		response = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();
 	}
 	
-	/**
-	 * 인증 모듈 반환 메서드
-	 *
-	 * @param platform: [String] 플랫폼
-	 *
-	 * @return [AuthModule] AuthModule 객체
-	 *
-	 * @throws NullPointerException 유효하지 않은 플랫폼
-	 */
-	protected AuthModule getAuthModule(String platform) throws NullPointerException
+	// 예외
+	catch (Exception e)
 	{
-		return switch (platform)
-				{
-					case "naver" -> NaverAuthModule.getInstance();
-					case "google" -> GoogleAuthModule.getInstance();
-					case "kakao" -> KakaoAuthModule.getInstance();
-					case "github" -> GithubAuthModule.getInstance();
-					default -> throw new NullPointerException(Util.builder("'", platform, "' is invalid platform"));
-				};
+		e.printStackTrace();
+		
+		responseBean.setFlag(false);
+		responseBean.setTitle(e.getClass().getSimpleName());
+		responseBean.setMessage(e.getMessage());
+		responseBean.setBody(null);
+		
+		response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();
 	}
+	
+	return response;
 }
-22:T549,public Response getUserInfoResponse(String accessCookie)
+```
+
+동일한 세션인지 확인하기 위해 프로세스 수행 시 `state`를 생성하여 `getAuthorizationUrl`에 전달한다. 해당 메서드가 반환하는 URL에 전달한 `state`가 URL 파라미터로 입력되어있을 것이다.
+
+해당 `state`를 세션 애트리뷰트에도 등록한다.
+
+플랫폼 로그인은 여러 창을 거치기 때문에, 요청 하이재킹이 매우 쉽다. 이 과정에서 세션 정보가 손상되기 쉬우므로 `state`를 통해 로그인 과정 전체가 동일한 세션에서 이루어지고 있는지 검증할 수 있다.
+
+만약 URL의 `state`와 세션의 `state`가 일치하지 않거나, 세션 정보가 아예 없다면 정상적인 로그인 절차가 아니라고 판단할 수 있다.
+
+추후 이 세션값은 Access Token을 받아 로그인 작업을 수행할 때 사용한다.
+
+
+
+### 사용자 정보 응답 반환 메서드
+
+<span class="blue-400">Access Token을 통해 사용자 응답</span>을 받는 메서드다.
+
+`AuthModule`의 `getUserInfoBean` 메서드를 통해 `UserInfoBean` 객체를 얻고, 이 내용을 담아 응답 객체로 만들어 반환한다.
+
+``` java
+public Response getUserInfoResponse(String accessCookie)
 {
 	Response response;
 	
@@ -191,54 +278,18 @@ abstract public class Process
 	
 	return response;
 }
-23:T549,public Response getUserInfoResponse(String accessCookie)
-{
-	Response response;
-	
-	ResponseBean<UserInfoBean> responseBean = new ResponseBean<>();
-	
-	// 사용자 정보 응답 생성 시도
-	try
-	{
-		Jws<Claims> jws = JwtModule.openJwt(accessCookie);
-		
-		String accessToken = jws.getBody().get("access", String.class);
-		String platform = jws.getBody().get("platform", String.class);
-		
-		AuthModule authModule = getAuthModule(platform);
-		
-		com.github.scribejava.core.model.Response userInfoResponse = authModule.getUserInfo(accessToken);
-		
-		// 응답이 정상적이지 않을 경우
-		if (userInfoResponse.getCode() != 200)
-		{
-			throw new OAuthResponseException(userInfoResponse);
-		}
-		
-		responseBean.setFlag(true);
-		responseBean.setTitle("success");
-		responseBean.setMessage("user info response success");
-		responseBean.setBody(authModule.getUserInfoBean(userInfoResponse.getBody()));
-		
-		response = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();
-	}
-	
-	// 예외
-	catch (Exception e)
-	{
-		e.printStackTrace();
-		
-		responseBean.setFlag(false);
-		responseBean.setTitle(e.getClass().getSimpleName());
-		responseBean.setMessage(e.getMessage());
-		responseBean.setBody(null);
-		
-		response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();
-	}
-	
-	return response;
-}
-24:Tea3,package oauth.account.process;
+```
+
+추후 설명하겠지만, <span class="green-600">로그인 시 Access Token과 Refresh Token을 각각 플랫폼과 함께 JWT로 생성</span>하여 access, refresh 쿠키로 저장한다.
+
+각 JWT 쿠키에 플랫폼 정보가 있으므로, access 쿠키만 있어도 Access Token와 그 플랫폼을 찾을 수 있다.
+
+
+
+### 전체 코드
+
+``` java
+package oauth.account.process;
 
 import com.github.scribejava.core.model.OAuthResponseException;
 import global.bean.ResponseBean;
@@ -376,145 +427,34 @@ public class AccountGetProcess extends Process
 		return response;
 	}
 }
-25:Tea3,package oauth.account.process;
+```
 
-import com.github.scribejava.core.model.OAuthResponseException;
-import global.bean.ResponseBean;
-import global.module.JwtModule;
-import global.module.Process;
-import global.module.Util;
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.Jws;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import jakarta.ws.rs.core.MediaType;
-import jakarta.ws.rs.core.Response;
-import oauth.account.bean.UserInfoBean;
-import oauth.account.module.AuthModule;
 
-import java.util.UUID;
 
-/**
- * 계정 GET 프로세스 클래스
- *
- * @author RWB
- * @since 2021.09.30 Thu 21:00:48
- */
-public class AccountGetProcess extends Process
-{
-	/**
-	 * 생성자 메서드
-	 *
-	 * @param request: [HttpServletRequest] HttpServletRequest 객체
-	 * @param response: [HttpServletResponse] HttpServletResponse 객체
-	 */
-	public AccountGetProcess(HttpServletRequest request, HttpServletResponse response)
-	{
-		super(request, response);
-	}
-	
-	/**
-	 * 인증 URL 응답 반환 메서드
-	 *
-	 * @param platform: [String] 플랫폼
-	 *
-	 * @return [Response] 응답 객체
-	 */
-	public Response getAuthorizationUrlResponse(String platform)
-	{
-		Response response;
-		
-		ResponseBean<String> responseBean = new ResponseBean<>();
-		
-		// 인증 URL 응답 생성 시도
-		try
-		{
-			String state = UUID.randomUUID().toString();
-			
-			request.getSession().setAttribute("state", state);
-			
-			AuthModule authModule = getAuthModule(platform);
-			
-			responseBean.setFlag(true);
-			responseBean.setTitle("success");
-			responseBean.setMessage(Util.builder(platform, " authrorization url response success"));
-			responseBean.setBody(authModule.getAuthorizationUrl(state));
-			
-			response = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();
-		}
-		
-		// 예외
-		catch (Exception e)
-		{
-			e.printStackTrace();
-			
-			responseBean.setFlag(false);
-			responseBean.setTitle(e.getClass().getSimpleName());
-			responseBean.setMessage(e.getMessage());
-			responseBean.setBody(null);
-			
-			response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();
-		}
-		
-		return response;
-	}
-	
-	/**
-	 * 사용자 정보 응답 반환 메서드
-	 *
-	 * @param accessCookie: [String] 접근 토큰 쿠키
-	 *
-	 * @return [Response] 응답 객체
-	 */
-	public Response getUserInfoResponse(String accessCookie)
-	{
-		Response response;
-		
-		ResponseBean<UserInfoBean> responseBean = new ResponseBean<>();
-		
-		// 사용자 정보 응답 생성 시도
-		try
-		{
-			Jws<Claims> jws = JwtModule.openJwt(accessCookie);
-			
-			String accessToken = jws.getBody().get("access", String.class);
-			String platform = jws.getBody().get("platform", String.class);
-			
-			AuthModule authModule = getAuthModule(platform);
-			
-			com.github.scribejava.core.model.Response userInfoResponse = authModule.getUserInfo(accessToken);
-			
-			// 응답이 정상적이지 않을 경우
-			if (userInfoResponse.getCode() != 200)
-			{
-				throw new OAuthResponseException(userInfoResponse);
-			}
-			
-			responseBean.setFlag(true);
-			responseBean.setTitle("success");
-			responseBean.setMessage("user info response success");
-			responseBean.setBody(authModule.getUserInfoBean(userInfoResponse.getBody()));
-			
-			response = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();
-		}
-		
-		// 예외
-		catch (Exception e)
-		{
-			e.printStackTrace();
-			
-			responseBean.setFlag(false);
-			responseBean.setTitle(e.getClass().getSimpleName());
-			responseBean.setMessage(e.getMessage());
-			responseBean.setBody(null);
-			
-			response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();
-		}
-		
-		return response;
-	}
-}
-26:T861,public Response postLoginResponse(String platform, String code, String state)
+
+
+## POST 프로세스 구현
+
+계정 프로세스 중 `POST`에 해당하는 동작이 집합된 프로세스 클래스를 구현한다.
+
+* 로그인 응답 반환 메서드
+* 자동 로그인 응답 반환 메서드
+* 로그아웃 응답 반환 메서드
+
+`POST`에 해당하는 동작은 위 두 메서드다. 주로 로그인/로그아웃 작업으로 구성되어있다.
+
+
+
+### 로그인 응답 반환 메서드
+
+플랫폼 로그인 이후 발급되는 `code`를 통해 <span class="blue-400">Access Token으로 교환하여 로그인을 수행</span>하는 메서드다.
+
+`AuthModule`의 `getAccessToken` 메서드를 통해 `OAuth2AccessToken` 객체를 반환받아 Access Token, Refresh Token을 추출한다.
+
+이 토큰들을 JWT 쿠키로 만들어 로그인 절차를 수행한다.
+
+``` java
+public Response postLoginResponse(String platform, String code, String state)
 {
 	Response response;
 	
@@ -583,76 +523,69 @@ public class AccountGetProcess extends Process
 	
 	return response;
 }
-27:T861,public Response postLoginResponse(String platform, String code, String state)
+```
+
+`AccountGetProcess`의 `getAuthorizationUrlResponse` 동작 중 세션 애트리뷰트에 `state`를 입력했었는데, 여기서 그 <span class="orange-500">세션값을 통해 검증을 수행</span>한다.
+
+URL을 통해 인수로 받은 `state`와 세션의 `state`를 추출하여 비교하고, 동일하지 않을 경우 예외를 발생시킨다. 중간에 URL을 탈취해서 전혀 다른 `code`를 삽입하여 요청을 보내도 이를 방지할 수 있는 보안책인 셈이다.
+
+Access Token과 Refresh Token을 전달받아 JWT 쿠키로 만든다.
+
+<br />
+
+* Access Token JWT
+
+``` json
 {
-	Response response;
-	
-	ResponseBean<String> responseBean = new ResponseBean<>();
-	
-	HttpSession session = request.getSession();
-	
-	// 로그인 응답 생성 시도
-	try
-	{
-		Object sessionState = Objects.requireNonNull(session.getAttribute("state"));
-		
-		// 고유 상태값이 일치하지 않을 경우
-		if (!state.equals(sessionState))
-		{
-			throw new BadAttributeValueExpException("state is mismatched");
-		}
-		
-		AuthModule authModule = getAuthModule(platform);
-		
-		OAuth2AccessToken oAuth2AccessToken = authModule.getAccessToken(code);
-		
-		String accessToken = oAuth2AccessToken.getAccessToken();
-		String refreshToken = oAuth2AccessToken.getRefreshToken();
-		
-		HashMap<String, Object> accessMap = new HashMap<>();
-		accessMap.put("access", accessToken);
-		accessMap.put("platform", platform);
-		
-		HashMap<String, Object> refreshMap = new HashMap<>();
-		refreshMap.put("refresh", refreshToken);
-		refreshMap.put("platform", platform);
-		
-		String accessJwt = JwtModule.generateJwt(state, accessMap);
-		String refreshJwt = JwtModule.generateJwt(state, refreshMap);
-		
-		NewCookie accessCookie = new NewCookie("access", accessJwt, "/oauth2", ".itcode.dev", "access token", -1, true, true);
-		NewCookie refreshCookie = new NewCookie("refresh", refreshJwt, "/oauth2", ".itcode.dev", "refresh token", refreshToken == null ? 0 : 86400 * 7 + 3600 * 9, true, true);
-		
-		responseBean.setFlag(true);
-		responseBean.setTitle("success");
-		responseBean.setMessage("authorized success");
-		responseBean.setBody(null);
-		
-		response = Response.ok(responseBean, MediaType.APPLICATION_JSON).cookie(accessCookie, refreshCookie).build();
-	}
-	
-	// 예외
-	catch (Exception e)
-	{
-		e.printStackTrace();
-		
-		responseBean.setFlag(false);
-		responseBean.setTitle(e.getClass().getSimpleName());
-		responseBean.setMessage(e.getMessage());
-		responseBean.setBody(null);
-		
-		response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();
-	}
-	
-	// 시도 후
-	finally
-	{
-		session.invalidate();
-	}
-	
-	return response;
+	"iss": "oauth2",
+	"sub": "auth",
+	"aud": "c9159786-40bf-4cf2-8c93-f683d1070137",
+	"access": "{ACCESS_TOKEN}",
+	"platform": "naver",
+	"exp": 1634986011,
+	"nbf": 1634982411,
+	"iat": 1634982411,
+	"jti": "c9159786-40bf-4cf2-8c93-f683d1070137"
 }
-28:Tbcc,public Response postAutoLoginResponse(String accessCookie, String refreshCookie)
+```
+
+* Refresh Token JWT
+
+``` json
+{
+	"iss": "oauth2",
+	"sub": "auth",
+	"aud": "c9159786-40bf-4cf2-8c93-f683d1070137",
+	"refresh": "{REFRESH_TOKEN}",
+	"platform": "naver",
+	"exp": 1634986011,
+	"nbf": 1634982411,
+	"iat": 1634982411,
+	"jti": "c9159786-40bf-4cf2-8c93-f683d1070137"
+}
+```
+
+<br />
+
+JWT의 내용은 위와 같다. 쿠키에 해당 JWT를 담아 생성한다. <span class="green-400">access 쿠키는 세션 쿠키로 생성하여 브라우저 종료 시 즉시 쿠키가 즉시 소멸</span>되도록 구성하고, <span class="green-400">refresh 쿠키는 어느 정도 보관기간을 두어 추후 다시 사용할 수 있도록 구성</span>한다.
+
+쿠키 도메인은 `.itcode.dev`로 지정되어있는데, 그 이유는 프론트엔드와 백엔드가 전혀 다른 환경에서 동작하기 때문이다.
+
+* Frontend - `project.itcode.dev`
+* Backend - `api.itcode.dev`
+
+브라우저의 보안정책으로 다른 도메인에 쿠키를 생성할 수 없다. 때문에 `.itcode.dev`로 지정하여 모든 서브 도메인에 적용하도록 구성했다.
+
+만약 도메인을 지정하지 않으면 자동으로 `api.itcode.dev`를 대상으로 쿠키를 발급한다. 따라서 `project.itcode.dev` 도메인 서비스에서는 쿠키에 접근할 수 없다.
+
+
+
+### 자동 로그인 응답 반환 메서드
+
+만약 이전에 로그인을 수행한 이력이 있어, <span class="blue-400">access, refresh 쿠키를 이미 가지고 있을 경우 이를 활용하여 자동 로그인을 수행</span>하는 메서드다.
+
+``` java
+public Response postAutoLoginResponse(String accessCookie, String refreshCookie)
 {
 	Response response;
 	
@@ -740,95 +673,68 @@ public class AccountGetProcess extends Process
 	
 	return response;
 }
-29:Tbcc,public Response postAutoLoginResponse(String accessCookie, String refreshCookie)
+```
+
+access 쿠키가 이미 있을 경우, 이미 인증 정보가 있기 때문에 별다른 동작을 취하지 않고 넘어간다.
+
+만약 access 쿠키는 없고 <span class="orange-400">refresh 쿠키만 있다면, 이를 통해 Access Token을 재발급받아 인증 정보를 갱신</span>하여 자동으로 로그인을 수행한다.
+
+로그인 로직 자체는 기존 로그인 메서드와 동일하며, Access Token만 Refresh Token을 통해 갱신하여 사용한다.
+
+
+
+### 로그아웃 응답 반환 메서드
+
+<span class="blue-400">인증 정보를 제거</span>하여 로그아웃을 수행하는 메서드.
+
+``` java
+public Response postLogoutResponse()
 {
 	Response response;
-	
+
 	ResponseBean<String> responseBean = new ResponseBean<>();
-	
-	// 자동 로그인 시도
+
+	// 로그아웃 응답 생성 시도
 	try
 	{
-		// 접근 토큰 쿠키가 있을 경우
-		if (accessCookie != null)
-		{
-			responseBean.setFlag(true);
-			responseBean.setTitle("success");
-			responseBean.setMessage("auto authorized success");
-			responseBean.setBody(null);
-			
-			response = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();
-		}
-		
-		// 리프레쉬 토큰 쿠키가 없을 경우
-		else if (refreshCookie == null)
-		{
-			responseBean.setFlag(false);
-			responseBean.setTitle("fail");
-			responseBean.setMessage("refresh token is empty");
-			responseBean.setBody(null);
-			
-			response = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();
-		}
-		
-		// 리프레쉬 토큰 쿠키가 있을 경우
-		else
-		{
-			Jws<Claims> refreshJws = JwtModule.openJwt(refreshCookie);
-			
-			String refreshToken = refreshJws.getBody().get("refresh", String.class);
-			String platform = refreshJws.getBody().get("platform", String.class);
-			
-			AuthModule authModule = getAuthModule(platform);
-			
-			OAuth2AccessToken oAuth2AccessToken = authModule.getRefreshAccessToken(refreshToken);
-			
-			String accessToken = oAuth2AccessToken.getAccessToken();
-			
-			HashMap<String, Object> accessMap = new HashMap<>();
-			accessMap.put("access", accessToken);
-			accessMap.put("platform", platform);
-			
-			HashMap<String, Object> refreshMap = new HashMap<>();
-			refreshMap.put("refresh", refreshToken);
-			refreshMap.put("platform", platform);
-			
-			String uuid = UUID.randomUUID().toString();
-			
-			String accessJwt = JwtModule.generateJwt(uuid, accessMap);
-			String refreshJwt = JwtModule.generateJwt(uuid, refreshMap);
-			
-			NewCookie newAccessCookie = new NewCookie("access", accessJwt, "/oauth2", ".itcode.dev", "access token", -1, true, true);
-			NewCookie newRefreshCookie = new NewCookie("refresh", refreshJwt, "/oauth2", ".itcode.dev", "refresh token", 86400 * 7 + 3600 * 9, true, true);
-			
-			responseBean.setFlag(true);
-			responseBean.setTitle("success");
-			responseBean.setMessage("auto authorized success");
-			responseBean.setBody(null);
-			
-			response = Response.ok(responseBean, MediaType.APPLICATION_JSON).cookie(newAccessCookie, newRefreshCookie).build();
-		}
+		NewCookie accessCookie = new NewCookie("access", null, "/oauth2", ".itcode.dev", "access token", 0, true, true);
+		NewCookie refreshCookie = new NewCookie("refresh", null, "/oauth2", ".itcode.dev", "refresh token", 0, true, true);
+
+		responseBean.setFlag(true);
+		responseBean.setTitle("success");
+		responseBean.setMessage("logout success");
+		responseBean.setBody(null);
+
+		response = Response.ok(responseBean, MediaType.APPLICATION_JSON).cookie(accessCookie, refreshCookie).build();
 	}
-	
+
 	// 예외
 	catch (Exception e)
 	{
 		e.printStackTrace();
-		
+
 		responseBean.setFlag(false);
 		responseBean.setTitle(e.getClass().getSimpleName());
 		responseBean.setMessage(e.getMessage());
 		responseBean.setBody(null);
-		
-		NewCookie newAccessCookie = new NewCookie("access", null, "/oauth2", ".itcode.dev", "access token", 0, true, true);
-		NewCookie newRefreshCookie = new NewCookie("refresh", null, "/oauth2", ".itcode.dev", "refresh token", 0, true, true);
-		
-		response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).cookie(newAccessCookie, newRefreshCookie).build();
+
+		response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();
 	}
-	
+
 	return response;
 }
-2a:T1f60,package oauth.account.process;
+```
+
+인증정보는 쿠키 기반이다. 서버에서 쿠키 생성 시 보안을 위해 `HttpOnly` 옵션을 활성화했기 때문에 JavaScript에선 access, refresh 쿠키를 다룰 수 없다.
+
+서버에서 쿠키 만료시간을 0으로 덮어씌워 인증쿠키를 제거한다.
+
+
+
+### 전체 코드
+
+``` java
+package oauth.account.process;
 
 import com.github.scribejava.core.model.OAuth2AccessToken;
 import global.bean.ResponseBean;
@@ -1085,264 +991,28 @@ public class AccountPostProcess extends Process
 		return response;
 	}
 }
-2b:T1f60,package oauth.account.process;
+```
 
-import com.github.scribejava.core.model.OAuth2AccessToken;
-import global.bean.ResponseBean;
-import global.module.JwtModule;
-import global.module.Process;
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.Jws;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
-import jakarta.ws.rs.core.MediaType;
-import jakarta.ws.rs.core.NewCookie;
-import jakarta.ws.rs.core.Response;
-import oauth.account.module.AuthModule;
 
-import javax.management.BadAttributeValueExpException;
-import java.util.HashMap;
-import java.util.Objects;
-import java.util.UUID;
 
-/**
- * 계정 POST 프로세스 클래스
- *
- * @author RWB
- * @since 2021.10.02 Sat 00:53:52
- */
-public class AccountPostProcess extends Process
-{
-	/**
-	 * 생성자 메서드
-	 *
-	 * @param request: [HttpServletRequest] HttpServletRequest 객체
-	 * @param response: [HttpServletResponse] HttpServletResponse 객체
-	 */
-	public AccountPostProcess(HttpServletRequest request, HttpServletResponse response)
-	{
-		super(request, response);
-	}
-	
-	/**
-	 * 로그인 응답 반환 메서드
-	 *
-	 * @param platform: [String] 플랫폼
-	 * @param code: [String] 인증 코드
-	 * @param state: [String] 고유 상태값
-	 *
-	 * @return [Response] 응답 객체
-	 */
-	public Response postLoginResponse(String platform, String code, String state)
-	{
-		Response response;
-		
-		ResponseBean<String> responseBean = new ResponseBean<>();
-		
-		HttpSession session = request.getSession();
-		
-		// 로그인 응답 생성 시도
-		try
-		{
-			Object sessionState = Objects.requireNonNull(session.getAttribute("state"));
-			
-			// 고유 상태값이 일치하지 않을 경우
-			if (!state.equals(sessionState))
-			{
-				throw new BadAttributeValueExpException("state is mismatched");
-			}
-			
-			AuthModule authModule = getAuthModule(platform);
-			
-			OAuth2AccessToken oAuth2AccessToken = authModule.getAccessToken(code);
-			
-			String accessToken = oAuth2AccessToken.getAccessToken();
-			String refreshToken = oAuth2AccessToken.getRefreshToken();
-			
-			HashMap<String, Object> accessMap = new HashMap<>();
-			accessMap.put("access", accessToken);
-			accessMap.put("platform", platform);
-			
-			HashMap<String, Object> refreshMap = new HashMap<>();
-			refreshMap.put("refresh", refreshToken);
-			refreshMap.put("platform", platform);
-			
-			String accessJwt = JwtModule.generateJwt(state, accessMap);
-			String refreshJwt = JwtModule.generateJwt(state, refreshMap);
-			
-			NewCookie accessCookie = new NewCookie("access", accessJwt, "/oauth2", ".itcode.dev", "access token", -1, true, true);
-			NewCookie refreshCookie = new NewCookie("refresh", refreshJwt, "/oauth2", ".itcode.dev", "refresh token", refreshToken == null ? 0 : 86400 * 7 + 3600 * 9, true, true);
-			
-			responseBean.setFlag(true);
-			responseBean.setTitle("success");
-			responseBean.setMessage("authorized success");
-			responseBean.setBody(null);
-			
-			response = Response.ok(responseBean, MediaType.APPLICATION_JSON).cookie(accessCookie, refreshCookie).build();
-		}
-		
-		// 예외
-		catch (Exception e)
-		{
-			e.printStackTrace();
-			
-			responseBean.setFlag(false);
-			responseBean.setTitle(e.getClass().getSimpleName());
-			responseBean.setMessage(e.getMessage());
-			responseBean.setBody(null);
-			
-			response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();
-		}
-		
-		// 시도 후
-		finally
-		{
-			session.invalidate();
-		}
-		
-		return response;
-	}
-	
-	/**
-	 * 자동 로그인 응답 반환 메서드
-	 *
-	 * @param accessCookie: [String] 접근 토큰 쿠키
-	 * @param refreshCookie: [String] 리프레쉬 토큰 쿠키
-	 *
-	 * @return [Response] 응답 객체
-	 */
-	public Response postAutoLoginResponse(String accessCookie, String refreshCookie)
-	{
-		Response response;
-		
-		ResponseBean<String> responseBean = new ResponseBean<>();
-		
-		// 자동 로그인 시도
-		try
-		{
-			// 접근 토큰 쿠키가 있을 경우
-			if (accessCookie != null)
-			{
-				responseBean.setFlag(true);
-				responseBean.setTitle("success");
-				responseBean.setMessage("auto authorized success");
-				responseBean.setBody(null);
-				
-				response = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();
-			}
-			
-			// 리프레쉬 토큰 쿠키가 없을 경우
-			else if (refreshCookie == null)
-			{
-				responseBean.setFlag(false);
-				responseBean.setTitle("fail");
-				responseBean.setMessage("refresh token is empty");
-				responseBean.setBody(null);
-				
-				response = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();
-			}
-			
-			// 리프레쉬 토큰 쿠키가 있을 경우
-			else
-			{
-				Jws<Claims> refreshJws = JwtModule.openJwt(refreshCookie);
-				
-				String refreshToken = refreshJws.getBody().get("refresh", String.class);
-				String platform = refreshJws.getBody().get("platform", String.class);
-				
-				AuthModule authModule = getAuthModule(platform);
-				
-				OAuth2AccessToken oAuth2AccessToken = authModule.getRefreshAccessToken(refreshToken);
-				
-				String accessToken = oAuth2AccessToken.getAccessToken();
-				
-				HashMap<String, Object> accessMap = new HashMap<>();
-				accessMap.put("access", accessToken);
-				accessMap.put("platform", platform);
-				
-				HashMap<String, Object> refreshMap = new HashMap<>();
-				refreshMap.put("refresh", refreshToken);
-				refreshMap.put("platform", platform);
-				
-				String uuid = UUID.randomUUID().toString();
-				
-				String accessJwt = JwtModule.generateJwt(uuid, accessMap);
-				String refreshJwt = JwtModule.generateJwt(uuid, refreshMap);
-				
-				NewCookie newAccessCookie = new NewCookie("access", accessJwt, "/oauth2", ".itcode.dev", "access token", -1, true, true);
-				NewCookie newRefreshCookie = new NewCookie("refresh", refreshJwt, "/oauth2", ".itcode.dev", "refresh token", 86400 * 7 + 3600 * 9, true, true);
-				
-				responseBean.setFlag(true);
-				responseBean.setTitle("success");
-				responseBean.setMessage("auto authorized success");
-				responseBean.setBody(null);
-				
-				response = Response.ok(responseBean, MediaType.APPLICATION_JSON).cookie(newAccessCookie, newRefreshCookie).build();
-			}
-		}
-		
-		// 예외
-		catch (Exception e)
-		{
-			e.printStackTrace();
-			
-			responseBean.setFlag(false);
-			responseBean.setTitle(e.getClass().getSimpleName());
-			responseBean.setMessage(e.getMessage());
-			responseBean.setBody(null);
-			
-			NewCookie newAccessCookie = new NewCookie("access", null, "/oauth2", ".itcode.dev", "access token", 0, true, true);
-			NewCookie newRefreshCookie = new NewCookie("refresh", null, "/oauth2", ".itcode.dev", "refresh token", 0, true, true);
-			
-			response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).cookie(newAccessCookie, newRefreshCookie).build();
-		}
-		
-		return response;
-	}
-	
-	/**
-	 * 로그아웃 응답 반환 메서드
-	 *
-	 * @return [Response] 응답 객체
-	 */
-	public Response postLogoutResponse()
-	{
-		Response response;
-		
-		ResponseBean<String> responseBean = new ResponseBean<>();
-		
-		// 로그아웃 응답 생성 시도
-		try
-		{
-			NewCookie accessCookie = new NewCookie("access", null, "/oauth2", ".itcode.dev", "access token", 0, true, true);
-			NewCookie refreshCookie = new NewCookie("refresh", null, "/oauth2", ".itcode.dev", "refresh token", 0, true, true);
-			
-			responseBean.setFlag(true);
-			responseBean.setTitle("success");
-			responseBean.setMessage("logout success");
-			responseBean.setBody(null);
-			
-			response = Response.ok(responseBean, MediaType.APPLICATION_JSON).cookie(accessCookie, refreshCookie).build();
-		}
-		
-		// 예외
-		catch (Exception e)
-		{
-			e.printStackTrace();
-			
-			responseBean.setFlag(false);
-			responseBean.setTitle(e.getClass().getSimpleName());
-			responseBean.setMessage(e.getMessage());
-			responseBean.setBody(null);
-			
-			response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();
-		}
-		
-		return response;
-	}
-}
-2c:T5b9,public Response putUpdateAuthorizationUrl(String accessCookie)
+
+
+## PUT 프로세스 구현
+
+계정 프로세스 중 `PUT`에 해당하는 동작이 집합된 프로세스를 구현한다.
+
+* 정보 제공 동의 갱신 URL 응답 반환 메서드
+
+`PUT`에 해당하는 메서드는 하나다. 데이터를 수정하는 작업들로 구성되어있다.
+
+
+
+### 정보 제공 동의 갱신 URL 응답 반환 메서드
+
+<span class="blue-400">정보 제공 동의를 새로 갱신하는 URL을 반환</span>하는 메서드다.
+
+``` java
+public Response putUpdateAuthorizationUrl(String accessCookie)
 {
 	Response response;
 
@@ -1399,64 +1069,24 @@ public class AccountPostProcess extends Process
 
 	return response;
 }
-2d:T5b9,public Response putUpdateAuthorizationUrl(String accessCookie)
-{
-	Response response;
+```
 
-	ResponseBean<String> responseBean = new ResponseBean<>();
+첫 로그인 시, 서비스가 요구하는 정보에 대해 동의/거부하는 절차를 거친다. 이후 유저 정보 요청 시, 이 정보 제공 동의 여부에 의거하여 동의한 정보만을 제공한다.
 
-	// 정보 제공 동의 갱신 URL 응답 생성 시도
-	try
-	{
-		String state = UUID.randomUUID().toString();
+만약 서비스 운영 도중 요구 정보가 변경되어 추가적인 정보가 필요하다면, 정보 제공 동의를 갱신할 필요가 있다.
 
-		Jws<Claims> jws = JwtModule.openJwt(accessCookie);
+서비스는 반환받은 URL로 리다이렉션하여 동의를 갱신한 뒤 갱신된 정보가 반영된 `code`를 반환한다. 이후의 과정은 로그인과 동일한 과정을 거친다.
 
-		String platform = jws.getBody().get("platform", String.class);
+<br />
 
-		AuthModule authModule = getAuthModule(platform);
+즉, <span class="blue-400">정보 제공 동의는 새로운 정보를 갱신하여 로그인을 다시 수행하는 것과 동일</span>하다.
 
-		String url = authModule.getUpdateAuthorizationUrl(state);
 
-		// URL이 null일 경우
-		if (url == null)
-		{
-			responseBean.setFlag(false);
-			responseBean.setTitle("skipped");
-			responseBean.setMessage(Util.builder(platform, " doesn't need that service"));
-			responseBean.setBody(null);
-		}
 
-		// URL이 유효할 경우
-		else
-		{
-			request.getSession().setAttribute("state", state);
+### 전체 코드
 
-			responseBean.setFlag(true);
-			responseBean.setTitle("success");
-			responseBean.setMessage(Util.builder(platform, " reauthrorization url response success"));
-			responseBean.setBody(url);
-		}
-
-		response = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();
-	}
-
-	// 예외
-	catch (Exception e)
-	{
-		e.printStackTrace();
-
-		responseBean.setFlag(false);
-		responseBean.setTitle(e.getClass().getSimpleName());
-		responseBean.setMessage(e.getMessage());
-		responseBean.setBody(null);
-
-		response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();
-	}
-
-	return response;
-}
-2e:Ta30,package oauth.account.process;
+``` java
+package oauth.account.process;
 
 import global.bean.ResponseBean;
 import global.module.JwtModule;
@@ -1556,107 +1186,85 @@ public class AccountPutProcess extends Process
 		return response;
 	}
 }
-2f:Ta30,package oauth.account.process;
+```
 
-import global.bean.ResponseBean;
-import global.module.JwtModule;
-import global.module.Process;
-import global.module.Util;
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.Jws;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import jakarta.ws.rs.core.MediaType;
-import jakarta.ws.rs.core.Response;
-import oauth.account.module.AuthModule;
 
-import java.util.UUID;
 
-/**
- * 계정 PUT 프로세스 클래스
- *
- * @author RWB
- * @since 2021.10.19 Tue 21:56:32
- */
-public class AccountPutProcess extends Process
+
+
+## DELETE 프로세스 구현
+
+계정 프로세스 중 `DELETE`에 해당하는 동작이 집합된 프로세스를 구현한다.
+
+* 연동 해제 응답 반환 메서드
+
+`DELETE`에 해당하는 메서드는 하나다. 주로 데이터를 삭제하는 작업들로 구성되어있다.
+
+
+
+### 연동 해제 응답 반환 메서드
+
+<span class="blue-400">플랫폼과의 연동을 완전히 해제하고 로그아웃을 수행</span>하는 메서드다.
+
+``` java
+public Response deleteInfoResponse(String accessCookie)
 {
-	/**
-	 * 생성자 메서드
-	 *
-	 * @param request: [HttpServletRequest] HttpServletRequest 객체
-	 * @param response: [HttpServletResponse] HttpServletResponse 객체
-	 */
-	public AccountPutProcess(HttpServletRequest request, HttpServletResponse response)
+	Response response;
+
+	ResponseBean<String> responseBean = new ResponseBean<>();
+
+	// 연동 해제 응답 생성 시도
+	try
 	{
-		super(request, response);
+		Jws<Claims> jws = JwtModule.openJwt(accessCookie);
+
+		String accessToken = jws.getBody().get("access", String.class);
+		String platform = jws.getBody().get("platform", String.class);
+
+		AuthModule authModule = getAuthModule(platform);
+
+		// 연동 해제에 성공할 경우
+		if (authModule.deleteInfo(accessToken))
+		{
+			response = new AccountPostProcess(request, this.response).postLogoutResponse();
+		}
+
+		// 아닐 경우
+		else
+		{
+			throw new RequestAuthenticationException("revoke fail");
+		}
 	}
-	
-	/**
-	 * 정보 제공 동의 갱신 URL 응답 반환 메서드
-	 *
-	 * @param accessCookie: [String] 접근 토큰 쿠키
-	 *
-	 * @return [Response] 응답 객체
-	 */
-	public Response putUpdateAuthorizationUrl(String accessCookie)
+
+	// 예외
+	catch (Exception e)
 	{
-		Response response;
-		
-		ResponseBean<String> responseBean = new ResponseBean<>();
-		
-		// 정보 제공 동의 갱신 URL 응답 생성 시도
-		try
-		{
-			String state = UUID.randomUUID().toString();
-			
-			Jws<Claims> jws = JwtModule.openJwt(accessCookie);
-			
-			String platform = jws.getBody().get("platform", String.class);
-			
-			AuthModule authModule = getAuthModule(platform);
-			
-			String url = authModule.getUpdateAuthorizationUrl(state);
-			
-			// URL이 null일 경우
-			if (url == null)
-			{
-				responseBean.setFlag(false);
-				responseBean.setTitle("skipped");
-				responseBean.setMessage(Util.builder(platform, " doesn't need that service"));
-				responseBean.setBody(null);
-			}
-			
-			// URL이 유효할 경우
-			else
-			{
-				request.getSession().setAttribute("state", state);
-				
-				responseBean.setFlag(true);
-				responseBean.setTitle("success");
-				responseBean.setMessage(Util.builder(platform, " reauthrorization url response success"));
-				responseBean.setBody(url);
-			}
-			
-			response = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();
-		}
-		
-		// 예외
-		catch (Exception e)
-		{
-			e.printStackTrace();
-			
-			responseBean.setFlag(false);
-			responseBean.setTitle(e.getClass().getSimpleName());
-			responseBean.setMessage(e.getMessage());
-			responseBean.setBody(null);
-			
-			response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();
-		}
-		
-		return response;
+		e.printStackTrace();
+
+		responseBean.setFlag(false);
+		responseBean.setTitle(e.getClass().getSimpleName());
+		responseBean.setMessage(e.getMessage());
+		responseBean.setBody(null);
+
+		response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();
 	}
+
+	return response;
 }
-30:T89a,package oauth.account.process;
+```
+
+플랫폼과의 연동을 해제하면 발급받았던 Access Token과 Refresh Token이 만료되어 더 이상 제 기능을 할 수 없게 된다.
+
+보통 회원탈퇴 시 이루어지는 과정이지만, 이 프로젝트는 별도의 회원가입이랄게 따로 없으므로, 자동으로 로그아웃을 시키는 것으로 끝난다.
+
+추후 재로그인 시 처음 로그인하는 것과 동일한 과정을 거치게 된다.
+
+
+
+### 전체 코드
+
+``` java
+package oauth.account.process;
 
 import global.bean.ResponseBean;
 import global.module.JwtModule;
@@ -1741,97 +1349,24 @@ public class AccountDeleteProcess extends Process
 		return response;
 	}
 }
-31:T89a,package oauth.account.process;
+```
 
-import global.bean.ResponseBean;
-import global.module.JwtModule;
-import global.module.Process;
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.Jws;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import jakarta.ws.rs.core.MediaType;
-import jakarta.ws.rs.core.Response;
-import oauth.account.module.AuthModule;
-import org.glassfish.jersey.client.authentication.RequestAuthenticationException;
 
-/**
- * 계정 DELETE 프로세스 클래스
- *
- * @author RWB
- * @since 2021.10.02 Sat 00:53:52
- */
-public class AccountDeleteProcess extends Process
-{
-	/**
-	 * 생성자 메서드
-	 *
-	 * @param request: [HttpServletRequest] HttpServletRequest 객체
-	 * @param response: [HttpServletResponse] HttpServletResponse 객체
-	 */
-	public AccountDeleteProcess(HttpServletRequest request, HttpServletResponse response)
-	{
-		super(request, response);
-	}
-	
-	/**
-	 * 연동 해제 응답 반환 메서드
-	 *
-	 * @param accessCookie: [String] 접근 토큰 쿠키
-	 *
-	 * @return [Response] 응답 객체
-	 */
-	public Response deleteInfoResponse(String accessCookie)
-	{
-		Response response;
-		
-		ResponseBean<String> responseBean = new ResponseBean<>();
-		
-		// 연동 해제 응답 생성 시도
-		try
-		{
-			Jws<Claims> jws = JwtModule.openJwt(accessCookie);
-			
-			String accessToken = jws.getBody().get("access", String.class);
-			String platform = jws.getBody().get("platform", String.class);
-			
-			AuthModule authModule = getAuthModule(platform);
-			
-			// 연동 해제에 성공할 경우
-			if (authModule.deleteInfo(accessToken))
-			{
-				response = new AccountPostProcess(request, this.response).postLogoutResponse();
-			}
-			
-			// 아닐 경우
-			else
-			{
-				throw new RequestAuthenticationException("revoke fail");
-			}
-		}
-		
-		// 예외
-		catch (Exception e)
-		{
-			e.printStackTrace();
-			
-			responseBean.setFlag(false);
-			responseBean.setTitle(e.getClass().getSimpleName());
-			responseBean.setMessage(e.getMessage());
-			responseBean.setBody(null);
-			
-			response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();
-		}
-		
-		return response;
-	}
-}
-37:{"category":"JAVA","coverImage":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","date":1635088378000,"excerpt":"이 장에서는 Jersey를 활용하여 RESTful API 서비스를 제공하는 방법에 대해 다룬다. 이 프로젝트는 Jersey를 통해 요청을 받아 응답하므로, 컨트롤러를 구성하기 이전에 Jersey에 대해 잠깐 다루고 넘어간다. 통상 JAVA 서버를 구축하는데 Spring 프레임워크를 많이 사용할 것이다. 그럼에도 굳이 Jersey를 선택하는 이유는 일단 내가 Spring을 잘 모른다. 그것도 그거지만, Spring에 비해 규모가 작고 설정이 간단해서 온전히 RESTful 서버를 구축하는데 집중할 수 있다. Spring 설정의 악랄함은 고사하고, 이 프로젝트의 특성 상 복잡한 로직이나 다채로운 기능을 요구하지 않는다. Spring의 방대한 규모를 온전히 쓰지 못 하므로 배보다 배꼽이 더 크다는 뜻이다.","group":"OAuth2.0 인증서버 구축기","title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 9. Jersey로 RESTful API 서비스 제공하기","type":"posts"}
-38:["2021","10","25","oauth2-java-server-9"]
-36:{"frontmatter":"$37","names":"$38","url":"/posts/2021/10/25/oauth2-java-server-9"}
-3a:{"category":"JAVA","coverImage":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","date":1634933326000,"excerpt":"마지막 플랫폼으로, GitHub에 OAuth 서비스를 신청하고 인증 모듈을 구현한다.","group":"OAuth2.0 인증서버 구축기","title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 7. GitHub OAuth 서비스 신청 및 모듈 구현하기","type":"posts"}
-3b:["2021","10","23","oauth2-java-server-7"]
-39:{"frontmatter":"$3a","names":"$3b","url":"/posts/2021/10/23/oauth2-java-server-7"}
-7:[null,["$","html",null,{"lang":"ko","children":[["$","head",null,{"children":["$","script",null,{"crossOrigin":"anonymous","src":"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5522045122225064","async":true}]}],["$","body",null,{"children":["$","$La",null,{"children":["$","$Lb",null,{"children":["$","$Lc",null,{"children":["$","$Ld",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Le",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","$Lf",null,{"alignItems":"center","data-component":"NotFoundTemplate","height":"100vh","justifyContent":"center","padding":2,"spacing":2,"width":"100%","children":[["$","$L10",null,{"iconName":"notFound","maxWidth":400,"width":"100%"}],["$","$L11",null,{"href":"/","children":["$","$L12",null,{"color":"inherit","size":"large","startIcon":["$","$L13",null,{}],"variant":"outlined","children":"이 방엔 아무것도 없어보인다."}]}]]}],"notFoundStyles":[],"childProp":{"current":["$","$Ld",null,{"parallelRouterKey":"children","segmentPath":["children",["markdown","posts/2021/10/24/oauth2-java-server-8","c"],"children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Le",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$L14",["$","$L15",null,{"data-component":"PageTemplate","children":[["$","$L16",null,{}],["$","$L15",null,{"component":"main","children":[["$","$L17",null,{"type":"posts"}],["$","$Lf",null,{"alignItems":"center","data-component":"ViewTemplate","spacing":10,"children":[["$","$L18",null,{"cover":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","children":["$","$Lf",null,{"alignItems":"center","data-component":"ScreenerBox","height":"100%","justifyContent":"center","padding":4,"position":"relative","width":"100%","children":[["$","$Lf",null,{"direction":"row","spacing":3,"children":[["$","$L15",null,{"bgcolor":"dodgerblue","boxShadow":"5px 5px 5px black","width":5}],["$","$Lf",null,{"children":[["$","$L19",null,{"className":"ScreenerBox_text__EQeKY","color":"white","fontWeight":"bold","variant":"h4","children":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 8. 프로세스 구현하기"}],["$","$L19",null,{"className":"ScreenerBox_text__EQeKY","color":"dodgerblue","variant":"h6","children":"게시글"}],["$","$L19",null,{"className":"ScreenerBox_text__EQeKY","color":"white","variant":"h6","children":"⏰ 2021-10-24 14:58:10"}]]}]]}],["$","$Lf",null,{"alignItems":"center","bottom":50,"position":"absolute","spacing":2,"children":[["$","$Lf",null,{"border":"5px solid white","borderRadius":100,"height":50,"padding":1,"position":"relative","width":31,"children":["$","$L15",null,{"bgcolor":"white","borderRadius":100,"className":"ScreenerBox_icon__Qvdqx","height":10,"position":"absolute","width":5}]}],["$","$L19",null,{"color":"white","children":"D O W N"}]]}]]}]}],["$","$L1a",null,{"data-component":"ViewGroupTemplate","children":["$","$L1b",null,{"frontmatter":{"title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 8. 프로세스 구현하기","excerpt":"4장부터 7장까지 진행하며 각 플랫폼의 인증 모듈을 구현했다. 이 장에서는 모듈을 사용하는 주체인 프로세스를 구현한다. 프로세스는 HTTP 메소드에 따라 구분하여 관리한다.","coverImage":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","date":1635087490000,"type":"posts","category":"JAVA","tag":["JAVA","OAuth2.0"],"group":"OAuth2.0 인증서버 구축기","comment":"trueㄴ","publish":true},"group":[{"frontmatter":{"category":"JAVA","coverImage":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","date":1635169281000,"excerpt":"OAuth 서비스를 등록하고 인증 서버까지 별도로 구축했지만, 이렇게 했다고 해서 그 즉시 사용 가능한 것은 아니다. 이 장에서는 OAuth 서비스 심사를 신청하여 OAuth 서비스를 온전히 사용할 수 있도록 한다.","group":"OAuth2.0 인증서버 구축기","title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 11. OAuth 서비스 심사 신청하기","type":"posts"},"names":["2021","10","25","oauth2-java-server-11"],"url":"/posts/2021/10/25/oauth2-java-server-11"},{"frontmatter":{"category":"JAVA","coverImage":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","date":1635169281000,"excerpt":"그 동안 만들어 놓은건 많은데, 정작 정리같은 건 해두지 않았었다. GitHub를 활용하지 않기도 했고, 블로그도 딱히 운영하지 않고 있었으니.. 개인 서버도 샀겠다. 나름의 개발 포트폴리오를 위해 시험삼아 만든 프로젝트다. 개발부터 정리까지 차근차근 작성한 프로젝트는 이게 처음이 아닌가 싶다.","group":"OAuth2.0 인증서버 구축기","title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 12. 마치며","type":"posts"},"names":["2021","10","25","oauth2-java-server-12"],"url":"/posts/2021/10/25/oauth2-java-server-12"},{"frontmatter":{"category":"JAVA","coverImage":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","date":1635096257000,"excerpt":"Jersey 라이브러리를 통해 요청을 받아 응답을 반환하는 컨트롤러를 구성해보자. Jersey에 대해 자세히 알아보고 싶다면 이전 글을 참고하자.","group":"OAuth2.0 인증서버 구축기","title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 10. 컨트롤러 구현하기","type":"posts"},"names":["2021","10","25","oauth2-java-server-10"],"url":"/posts/2021/10/25/oauth2-java-server-10"},{"frontmatter":{"category":"JAVA","coverImage":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","date":1635088378000,"excerpt":"이 장에서는 Jersey를 활용하여 RESTful API 서비스를 제공하는 방법에 대해 다룬다. 이 프로젝트는 Jersey를 통해 요청을 받아 응답하므로, 컨트롤러를 구성하기 이전에 Jersey에 대해 잠깐 다루고 넘어간다. 통상 JAVA 서버를 구축하는데 Spring 프레임워크를 많이 사용할 것이다. 그럼에도 굳이 Jersey를 선택하는 이유는 일단 내가 Spring을 잘 모른다. 그것도 그거지만, Spring에 비해 규모가 작고 설정이 간단해서 온전히 RESTful 서버를 구축하는데 집중할 수 있다. Spring 설정의 악랄함은 고사하고, 이 프로젝트의 특성 상 복잡한 로직이나 다채로운 기능을 요구하지 않는다. Spring의 방대한 규모를 온전히 쓰지 못 하므로 배보다 배꼽이 더 크다는 뜻이다.","group":"OAuth2.0 인증서버 구축기","title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 9. Jersey로 RESTful API 서비스 제공하기","type":"posts"},"names":["2021","10","25","oauth2-java-server-9"],"url":"/posts/2021/10/25/oauth2-java-server-9"},{"frontmatter":{"category":"JAVA","coverImage":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","date":1635087490000,"excerpt":"4장부터 7장까지 진행하며 각 플랫폼의 인증 모듈을 구현했다. 이 장에서는 모듈을 사용하는 주체인 프로세스를 구현한다. 프로세스는 HTTP 메소드에 따라 구분하여 관리한다.","group":"OAuth2.0 인증서버 구축기","title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 8. 프로세스 구현하기","type":"posts"},"names":["2021","10","24","oauth2-java-server-8"],"url":"/posts/2021/10/24/oauth2-java-server-8"},{"frontmatter":{"category":"JAVA","coverImage":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","date":1634933326000,"excerpt":"마지막 플랫폼으로, GitHub에 OAuth 서비스를 신청하고 인증 모듈을 구현한다.","group":"OAuth2.0 인증서버 구축기","title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 7. GitHub OAuth 서비스 신청 및 모듈 구현하기","type":"posts"},"names":["2021","10","23","oauth2-java-server-7"],"url":"/posts/2021/10/23/oauth2-java-server-7"},{"frontmatter":{"category":"JAVA","coverImage":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","date":1634928664000,"excerpt":"세 번째 플랫폼으로, KAKAO에 OAuth 서비스를 신청하고 인증 모듈을 구현한다.","group":"OAuth2.0 인증서버 구축기","title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 6. KAKAO OAuth 서비스 신청 및 모듈 구현하기","type":"posts"},"names":["2021","10","23","oauth2-java-server-6"],"url":"/posts/2021/10/23/oauth2-java-server-6"},{"frontmatter":{"category":"JAVA","coverImage":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","date":1634921513000,"excerpt":"두 번째 플랫폼으로, Google에 OAuth 서비스를 신청하고 인증 모듈을 구현한다.","group":"OAuth2.0 인증서버 구축기","title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 5. Google OAuth 서비스 신청 및 모듈 구현하기","type":"posts"},"names":["2021","10","23","oauth2-java-server-5"],"url":"/posts/2021/10/23/oauth2-java-server-5"},{"frontmatter":{"category":"JAVA","coverImage":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","date":1634909116000,"excerpt":"첫 번째 플랫폼으로, NAVER에 OAuth 서비스를 신청하고 인증 모듈을 구현한다.","group":"OAuth2.0 인증서버 구축기","title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 4. NAVER OAuth 서비스 신청 및 모듈 구현하기","type":"posts"},"names":["2021","10","22","oauth2-java-server-4"],"url":"/posts/2021/10/22/oauth2-java-server-4"},{"frontmatter":{"category":"JAVA","coverImage":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","date":1634660800000,"excerpt":"OAuth 라이브러리인 scribeJAVA를 통해 인증 모듈을 구현해보자.","group":"OAuth2.0 인증서버 구축기","title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 3. scribeJAVA로 OAuth2.0 인증 모듈 구현하기","type":"posts"},"names":["2021","10","20","oauth2-java-server-3"],"url":"/posts/2021/10/20/oauth2-java-server-3"},{"frontmatter":{"category":"JAVA","coverImage":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","date":1634217145000,"excerpt":"OAuth2.0 프로토콜에 대한 사전 지식도 얻었으니, 이를 통해 인증서버를 직접 구축해보자. Frontend, Backend 부분으로 나누어 웹 페이지를 통해 소셜 로그인을 수행하고, 직접 구현한 인증서버에서 이를 처리하는 시스템 일체를 구축하는 것이 궁극적인 목표다.","group":"OAuth2.0 인증서버 구축기","title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 2. 인증서버 설계하기","type":"posts"},"names":["2021","10","14","oauth2-java-server-2"],"url":"/posts/2021/10/14/oauth2-java-server-2"},{"frontmatter":{"category":"JAVA","coverImage":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","date":1634140591000,"excerpt":"사이트를 돌아다니다보면 로그인이 필요한 사이트를 심심치않게 만나볼 수 있다. 그리고 이런 사이트들은 대부분 \"네이버로 로그인하기\"와 같은 플랫폼 로그인을 제공한다. 사이트 뿐만 아니라 근래 들어 출시되는 앱 역시 대부분 플랫폼을 통한 인증 서비스를 제공한다. 이를 활용하면 매우 간단한 절차를 통해 회원가입 또는 로그인을 수행할 수 있게 된다. 이러한 서비스는 네이버 뿐만 아니라 Google, 카카오 등 어느정도 규모있는 플랫폼의 대부분은 이러한 \"플랫폼으로 로그인하기\"와 같은 기능을 제공한다. 이렇게 플랫폼의 정보를 활용하여 타 사이트에서 인증을 수행하는 것을 OAuth 프로토콜이라 한다.","group":"OAuth2.0 인증서버 구축기","title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 1. OAuth2.0이란?","type":"posts"},"names":["2021","10","14","oauth2-java-server-1"],"url":"/posts/2021/10/14/oauth2-java-server-1"}],"link":"/posts/2021/10/24/oauth2-java-server-8"}]}],["$","$L1a",null,{"data-component":"ViewTocTemplate","children":["$","$L1c",null,{"toc":[{"level":1,"text":"개요"},{"level":1,"text":"구조"},{"level":1,"text":"프로세스 구현"},{"level":2,"text":"Process 추상 클래스 구현"},{"level":2,"text":"GET 프로세스 구현"},{"level":3,"text":"인증 URL 응답 반환 메서드"},{"level":3,"text":"사용자 정보 응답 반환 메서드"},{"level":3,"text":"전체 코드"},{"level":2,"text":"POST 프로세스 구현"},{"level":3,"text":"로그인 응답 반환 메서드"},{"level":3,"text":"자동 로그인 응답 반환 메서드"},{"level":3,"text":"로그아웃 응답 반환 메서드"},{"level":3,"text":"전체 코드"},{"level":2,"text":"PUT 프로세스 구현"},{"level":3,"text":"정보 제공 동의 갱신 URL 응답 반환 메서드"},{"level":3,"text":"전체 코드"},{"level":2,"text":"DELETE 프로세스 구현"},{"level":3,"text":"연동 해제 응답 반환 메서드"},{"level":3,"text":"전체 코드"},{"level":1,"text":"정리"}]}]}],["$","$L1a",null,{"data-component":"ViewContentTemplate","children":[["$","div",null,{"className":"MarkdownViewer_markdown__kFBT_","children":[["$","h1",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h1__mcnqG","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h1","properties":{},"children":[{"type":"text","value":"개요","position":{"start":{"line":2,"column":3,"offset":3},"end":{"line":2,"column":5,"offset":5}}}],"position":{"start":{"line":2,"column":1,"offset":1},"end":{"line":2,"column":5,"offset":5}}},"children":["$","$L11",null,{"href":"#개요","id":"개요","children":["$","$Lf",null,{"children":[["개요"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","2",{"children":["4장부터 7장까지 진행하며 각 플랫폼의 인증 모듈을 구현했다. 이 장에서는 모듈을 사용하는 주체인 프로세스를 구현한다."]}],"\n",["$","p","4",{"children":["프로세스는 HTTP 메소드에 따라 구분하여 관리한다."]}],"\n",["$","h1",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h1__mcnqG","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h1","properties":{},"children":[{"type":"text","value":"구조","position":{"start":{"line":17,"column":3,"offset":117},"end":{"line":17,"column":5,"offset":119}}}],"position":{"start":{"line":17,"column":1,"offset":115},"end":{"line":17,"column":5,"offset":119}}},"children":["$","$L11",null,{"href":"#구조","id":"구조","children":["$","$Lf",null,{"children":[["구조"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","8",{"children":["계정 관련 동작 이외엔 없으므로, 대분류는 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"account","position":{"start":{"line":19,"column":25,"offset":145},"end":{"line":19,"column":34,"offset":154}}}],"position":{"start":{"line":19,"column":25,"offset":145},"end":{"line":19,"column":34,"offset":154}}},"children":["account"]}]," 하나 뿐이다."]}],"\n",["$","p","10",{"children":["작업에 필요한 HTTP 메소는 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"GET","position":{"start":{"line":21,"column":18,"offset":181},"end":{"line":21,"column":23,"offset":186}}}],"position":{"start":{"line":21,"column":18,"offset":181},"end":{"line":21,"column":23,"offset":186}}},"children":["GET"]}],", ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"POST","position":{"start":{"line":21,"column":25,"offset":188},"end":{"line":21,"column":31,"offset":194}}}],"position":{"start":{"line":21,"column":25,"offset":188},"end":{"line":21,"column":31,"offset":194}}},"children":["POST"]}],", ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"PUT","position":{"start":{"line":21,"column":33,"offset":196},"end":{"line":21,"column":38,"offset":201}}}],"position":{"start":{"line":21,"column":33,"offset":196},"end":{"line":21,"column":38,"offset":201}}},"children":["PUT"]}],", ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"DELETE","position":{"start":{"line":21,"column":40,"offset":203},"end":{"line":21,"column":48,"offset":211}}}],"position":{"start":{"line":21,"column":40,"offset":203},"end":{"line":21,"column":48,"offset":211}}},"children":["DELETE"]}],"이므로, 아래와 같이 구분한다."]}],"\n",["$","ul","12",{"children":["\n",["$","li","1",{"children":[["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"AccountGetProcess","position":{"start":{"line":23,"column":3,"offset":232},"end":{"line":23,"column":22,"offset":251}}}],"position":{"start":{"line":23,"column":3,"offset":232},"end":{"line":23,"column":22,"offset":251}}},"children":["AccountGetProcess"]}]," - 계정 GET 프로세스 클래스"]}],"\n",["$","li","3",{"children":[["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"AccountPostProcess","position":{"start":{"line":24,"column":3,"offset":272},"end":{"line":24,"column":23,"offset":292}}}],"position":{"start":{"line":24,"column":3,"offset":272},"end":{"line":24,"column":23,"offset":292}}},"children":["AccountPostProcess"]}]," - 계정 POST 프로세스 클래스"]}],"\n",["$","li","5",{"children":[["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"AccountPutProcess","position":{"start":{"line":25,"column":3,"offset":314},"end":{"line":25,"column":22,"offset":333}}}],"position":{"start":{"line":25,"column":3,"offset":314},"end":{"line":25,"column":22,"offset":333}}},"children":["AccountPutProcess"]}]," - 계정 PUT 프로세스 클래스"]}],"\n",["$","li","7",{"children":[["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"AccountDeleteProcess","position":{"start":{"line":26,"column":3,"offset":354},"end":{"line":26,"column":25,"offset":376}}}],"position":{"start":{"line":26,"column":3,"offset":354},"end":{"line":26,"column":25,"offset":376}}},"children":["AccountDeleteProcess"]}]," - 계정 DELETE 프로세스 클래스"]}],"\n"]}],"\n",["$","p","14",{"children":[["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"GET","position":{"start":{"line":28,"column":1,"offset":399},"end":{"line":28,"column":6,"offset":404}}}],"position":{"start":{"line":28,"column":1,"offset":399},"end":{"line":28,"column":6,"offset":404}}},"children":["GET"]}]," 메소드에 사용하는 로직은 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"AccountGetProcess","position":{"start":{"line":28,"column":21,"offset":419},"end":{"line":28,"column":40,"offset":438}}}],"position":{"start":{"line":28,"column":21,"offset":419},"end":{"line":28,"column":40,"offset":438}}},"children":["AccountGetProcess"]}],"에 포함되는 식으로 구성한다."]}],"\n",["$","h1",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h1__mcnqG","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h1","properties":{},"children":[{"type":"text","value":"프로세스 구현","position":{"start":{"line":39,"column":3,"offset":467},"end":{"line":39,"column":10,"offset":474}}}],"position":{"start":{"line":39,"column":1,"offset":465},"end":{"line":39,"column":10,"offset":474}}},"children":["$","$L11",null,{"href":"#프로세스-구현","id":"프로세스-구현","children":["$","$Lf",null,{"children":[["프로세스 구현"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","h2",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h2__9tbOB","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h2","properties":{},"children":[{"type":"text","value":"Process 추상 클래스 구현","position":{"start":{"line":45,"column":4,"offset":483},"end":{"line":45,"column":21,"offset":500}}}],"position":{"start":{"line":45,"column":1,"offset":480},"end":{"line":45,"column":21,"offset":500}}},"children":["$","$L11",null,{"href":"#process-추상-클래스-구현","id":"process-추상-클래스-구현","children":["$","$Lf",null,{"children":[["Process 추상 클래스 구현"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","20",{"children":["여러 프로세스에 공통 로직을 적용하기 위해, 모든 프로세스 객체에 상속할 Process 추상 클래스를 구현한다."]}],"\n",["$","pre","22",{"children":[["$","$L1f",null,{"languageName":"java","className":"language-java","node":{"type":"element","tagName":"code","properties":{"className":["language-java"]},"children":[{"type":"text","value":"$20"}],"position":{"start":{"line":49,"column":1,"offset":566},"end":{"line":104,"column":4,"offset":2006}}},"children":["$21"]}]]}],"\n",["$","p","24",{"children":["서블릿 객체인 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"HttpServletRequest","position":{"start":{"line":106,"column":9,"offset":2016},"end":{"line":106,"column":29,"offset":2036}}}],"position":{"start":{"line":106,"column":9,"offset":2016},"end":{"line":106,"column":29,"offset":2036}}},"children":["HttpServletRequest"]}],", ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"HttpServletResponse","position":{"start":{"line":106,"column":31,"offset":2038},"end":{"line":106,"column":52,"offset":2059}}}],"position":{"start":{"line":106,"column":31,"offset":2038},"end":{"line":106,"column":52,"offset":2059}}},"children":["HttpServletResponse"]}],"에 쉽게 접근하기 위해 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"protected","position":{"start":{"line":106,"column":65,"offset":2072},"end":{"line":106,"column":76,"offset":2083}}}],"position":{"start":{"line":106,"column":65,"offset":2072},"end":{"line":106,"column":76,"offset":2083}}},"children":["protected"]}]," 접근 제어자로 각 지역변수를 선언한다."]}],"\n",["$","p","26",{"children":["생성자 사용 시 반드시 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"HttpServletRequest","position":{"start":{"line":108,"column":14,"offset":2120},"end":{"line":108,"column":34,"offset":2140}}}],"position":{"start":{"line":108,"column":14,"offset":2120},"end":{"line":108,"column":34,"offset":2140}}},"children":["HttpServletRequest"]}],", ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"HttpServletResponse","position":{"start":{"line":108,"column":36,"offset":2142},"end":{"line":108,"column":57,"offset":2163}}}],"position":{"start":{"line":108,"column":36,"offset":2142},"end":{"line":108,"column":57,"offset":2163}}},"children":["HttpServletResponse"]}],"를 인수로 주도록 강제한다."]}],"\n",["$","p","28",{"children":["이를 통해 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"Process","position":{"start":{"line":110,"column":7,"offset":2186},"end":{"line":110,"column":16,"offset":2195}}}],"position":{"start":{"line":110,"column":7,"offset":2186},"end":{"line":110,"column":16,"offset":2195}}},"children":["Process"]}],"를 상속하는 모든 하위 프로세스 클래스는 반드시 서블릿 객체를 인수로 받아야하며, 프로세스 내부에서 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"request","position":{"start":{"line":110,"column":72,"offset":2251},"end":{"line":110,"column":81,"offset":2260}}}],"position":{"start":{"line":110,"column":72,"offset":2251},"end":{"line":110,"column":81,"offset":2260}}},"children":["request"]}],", ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"response","position":{"start":{"line":110,"column":83,"offset":2262},"end":{"line":110,"column":93,"offset":2272}}}],"position":{"start":{"line":110,"column":83,"offset":2262},"end":{"line":110,"column":93,"offset":2272}}},"children":["response"]}],"로 서블릿 객체에 접근할 수 있다."]}],"\n",["$","br","30",{}],"\n",["$","p","32",{"children":[["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"getAuthModule","position":{"start":{"line":114,"column":1,"offset":2301},"end":{"line":114,"column":16,"offset":2316}}}],"position":{"start":{"line":114,"column":1,"offset":2301},"end":{"line":114,"column":16,"offset":2316}}},"children":["getAuthModule"]}],"은 ",["$","span","2",{"className":"blue-400","children":["각 플랫폼 이름에 따라 해당하는 인스턴스를 반환"]}],"하는 메서드다. 인증 모듈은 주로 프로세스에서 많이 사용하게 되므로, ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"Process","position":{"start":{"line":114,"column":113,"offset":2413},"end":{"line":114,"column":122,"offset":2422}}}],"position":{"start":{"line":114,"column":113,"offset":2413},"end":{"line":114,"column":122,"offset":2422}}},"children":["Process"]}],"에 선언하여 이를 상속하는 모든 프로세스 클래스가 해당 메서드에 접근할 수 있도록 구성한다."]}],"\n",["$","p","34",{"children":["이러한 구성으로 동일한 프로세스에서 플랫폼별로 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"AuthModule","position":{"start":{"line":116,"column":27,"offset":2501},"end":{"line":116,"column":39,"offset":2513}}}],"position":{"start":{"line":116,"column":27,"offset":2501},"end":{"line":116,"column":39,"offset":2513}}},"children":["AuthModule"]}]," 객체를 호출하여 플랫폼별로 선언한 메서드를 사용할 수 있다."]}],"\n",["$","h2",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h2__9tbOB","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h2","properties":{},"children":[{"type":"text","value":"GET 프로세스 구현","position":{"start":{"line":122,"column":4,"offset":2556},"end":{"line":122,"column":15,"offset":2567}}}],"position":{"start":{"line":122,"column":1,"offset":2553},"end":{"line":122,"column":15,"offset":2567}}},"children":["$","$L11",null,{"href":"#get-프로세스-구현","id":"get-프로세스-구현","children":["$","$Lf",null,{"children":[["GET 프로세스 구현"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","38",{"children":["계정 프로세스 중 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"GET","position":{"start":{"line":124,"column":11,"offset":2579},"end":{"line":124,"column":16,"offset":2584}}}],"position":{"start":{"line":124,"column":11,"offset":2579},"end":{"line":124,"column":16,"offset":2584}}},"children":["GET"]}],"에 해당하는 동작이 집합된 프로세스 클래스를 구현한다."]}],"\n",["$","ul","40",{"children":["\n",["$","li","1",{"children":["인증 URL 응답 반환 메서드"]}],"\n",["$","li","3",{"children":["사용자 정보 응답 반환 메서드"]}],"\n"]}],"\n",["$","p","42",{"children":[["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"GET","position":{"start":{"line":129,"column":1,"offset":2655},"end":{"line":129,"column":6,"offset":2660}}}],"position":{"start":{"line":129,"column":1,"offset":2655},"end":{"line":129,"column":6,"offset":2660}}},"children":["GET"]}],"에 해당하는 동작은 위 두 메서드다. 단순히 데이터를 받아오는 작업들로 구성되어있다."]}],"\n",["$","h3",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h3__5jvsC","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h3","properties":{},"children":[{"type":"text","value":"인증 URL 응답 반환 메서드","position":{"start":{"line":133,"column":5,"offset":2715},"end":{"line":133,"column":21,"offset":2731}}}],"position":{"start":{"line":133,"column":1,"offset":2711},"end":{"line":133,"column":21,"offset":2731}}},"children":["$","$L11",null,{"href":"#인증-url-응답-반환-메서드","id":"인증-url-응답-반환-메서드","children":["$","$Lf",null,{"children":[["인증 URL 응답 반환 메서드"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","46",{"children":[["$","span","0",{"className":"blue-400","children":["플랫폼 로그인을 위한 인증 URL을 반환"]}],"하는 메서드다."]}],"\n",["$","p","48",{"children":[["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"AuthModule","position":{"start":{"line":137,"column":1,"offset":2795},"end":{"line":137,"column":13,"offset":2807}}}],"position":{"start":{"line":137,"column":1,"offset":2795},"end":{"line":137,"column":13,"offset":2807}}},"children":["AuthModule"]}],"의 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"getAuthorizationUrl","position":{"start":{"line":137,"column":15,"offset":2809},"end":{"line":137,"column":36,"offset":2830}}}],"position":{"start":{"line":137,"column":15,"offset":2809},"end":{"line":137,"column":36,"offset":2830}}},"children":["getAuthorizationUrl"]}]," 메서드를 통해 URL를 얻고, 이 내용을 담아 응답 객체로 만들어 반환한다."]}],"\n",["$","pre","50",{"children":[["$","$L1f",null,{"languageName":"java","className":"language-java","node":{"type":"element","tagName":"code","properties":{"className":["language-java"]},"children":[{"type":"text","value":"public Response getAuthorizationUrlResponse(String platform)\n{\n\tResponse response;\n\t\n\tResponseBean<String> responseBean = new ResponseBean<>();\n\t\n\t// 인증 URL 응답 생성 시도\n\ttry\n\t{\n\t\tString state = UUID.randomUUID().toString();\n\t\t\n\t\trequest.getSession().setAttribute(\"state\", state);\n\t\t\n\t\tAuthModule authModule = getAuthModule(platform);\n\t\t\n\t\tresponseBean.setFlag(true);\n\t\tresponseBean.setTitle(\"success\");\n\t\tresponseBean.setMessage(Util.builder(platform, \" authrorization url response success\"));\n\t\tresponseBean.setBody(authModule.getAuthorizationUrl(state));\n\t\t\n\t\tresponse = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();\n\t}\n\t\n\t// 예외\n\tcatch (Exception e)\n\t{\n\t\te.printStackTrace();\n\t\t\n\t\tresponseBean.setFlag(false);\n\t\tresponseBean.setTitle(e.getClass().getSimpleName());\n\t\tresponseBean.setMessage(e.getMessage());\n\t\tresponseBean.setBody(null);\n\t\t\n\t\tresponse = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();\n\t}\n\t\n\treturn response;\n}\n"}],"position":{"start":{"line":139,"column":1,"offset":2875},"end":{"line":178,"column":4,"offset":3890}}},"children":["public Response getAuthorizationUrlResponse(String platform)\n{\n\tResponse response;\n\t\n\tResponseBean<String> responseBean = new ResponseBean<>();\n\t\n\t// 인증 URL 응답 생성 시도\n\ttry\n\t{\n\t\tString state = UUID.randomUUID().toString();\n\t\t\n\t\trequest.getSession().setAttribute(\"state\", state);\n\t\t\n\t\tAuthModule authModule = getAuthModule(platform);\n\t\t\n\t\tresponseBean.setFlag(true);\n\t\tresponseBean.setTitle(\"success\");\n\t\tresponseBean.setMessage(Util.builder(platform, \" authrorization url response success\"));\n\t\tresponseBean.setBody(authModule.getAuthorizationUrl(state));\n\t\t\n\t\tresponse = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();\n\t}\n\t\n\t// 예외\n\tcatch (Exception e)\n\t{\n\t\te.printStackTrace();\n\t\t\n\t\tresponseBean.setFlag(false);\n\t\tresponseBean.setTitle(e.getClass().getSimpleName());\n\t\tresponseBean.setMessage(e.getMessage());\n\t\tresponseBean.setBody(null);\n\t\t\n\t\tresponse = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();\n\t}\n\t\n\treturn response;\n}\n"]}]]}],"\n",["$","p","52",{"children":["동일한 세션인지 확인하기 위해 프로세스 수행 시 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"state","position":{"start":{"line":180,"column":28,"offset":3919},"end":{"line":180,"column":35,"offset":3926}}}],"position":{"start":{"line":180,"column":28,"offset":3919},"end":{"line":180,"column":35,"offset":3926}}},"children":["state"]}],"를 생성하여 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"getAuthorizationUrl","position":{"start":{"line":180,"column":42,"offset":3933},"end":{"line":180,"column":63,"offset":3954}}}],"position":{"start":{"line":180,"column":42,"offset":3933},"end":{"line":180,"column":63,"offset":3954}}},"children":["getAuthorizationUrl"]}],"에 전달한다. 해당 메서드가 반환하는 URL에 전달한 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"state","position":{"start":{"line":180,"column":93,"offset":3984},"end":{"line":180,"column":100,"offset":3991}}}],"position":{"start":{"line":180,"column":93,"offset":3984},"end":{"line":180,"column":100,"offset":3991}}},"children":["state"]}],"가 URL 파라미터로 입력되어있을 것이다."]}],"\n",["$","p","54",{"children":["해당 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"state","position":{"start":{"line":182,"column":4,"offset":4019},"end":{"line":182,"column":11,"offset":4026}}}],"position":{"start":{"line":182,"column":4,"offset":4019},"end":{"line":182,"column":11,"offset":4026}}},"children":["state"]}],"를 세션 애트리뷰트에도 등록한다."]}],"\n",["$","p","56",{"children":["플랫폼 로그인은 여러 창을 거치기 때문에, 요청 하이재킹이 매우 쉽다. 이 과정에서 세션 정보가 손상되기 쉬우므로 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"state","position":{"start":{"line":184,"column":65,"offset":4110},"end":{"line":184,"column":72,"offset":4117}}}],"position":{"start":{"line":184,"column":65,"offset":4110},"end":{"line":184,"column":72,"offset":4117}}},"children":["state"]}],"를 통해 로그인 과정 전체가 동일한 세션에서 이루어지고 있는지 검증할 수 있다."]}],"\n",["$","p","58",{"children":["만약 URL의 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"state","position":{"start":{"line":186,"column":9,"offset":4171},"end":{"line":186,"column":16,"offset":4178}}}],"position":{"start":{"line":186,"column":9,"offset":4171},"end":{"line":186,"column":16,"offset":4178}}},"children":["state"]}],"와 세션의 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"state","position":{"start":{"line":186,"column":22,"offset":4184},"end":{"line":186,"column":29,"offset":4191}}}],"position":{"start":{"line":186,"column":22,"offset":4184},"end":{"line":186,"column":29,"offset":4191}}},"children":["state"]}],"가 일치하지 않거나, 세션 정보가 아예 없다면 정상적인 로그인 절차가 아니라고 판단할 수 있다."]}],"\n",["$","p","60",{"children":["추후 이 세션값은 Access Token을 받아 로그인 작업을 수행할 때 사용한다."]}],"\n",["$","h3",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h3__5jvsC","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h3","properties":{},"children":[{"type":"text","value":"사용자 정보 응답 반환 메서드","position":{"start":{"line":192,"column":5,"offset":4300},"end":{"line":192,"column":21,"offset":4316}}}],"position":{"start":{"line":192,"column":1,"offset":4296},"end":{"line":192,"column":21,"offset":4316}}},"children":["$","$L11",null,{"href":"#사용자-정보-응답-반환-메서드","id":"사용자-정보-응답-반환-메서드","children":["$","$Lf",null,{"children":[["사용자 정보 응답 반환 메서드"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","64",{"children":[["$","span","0",{"className":"blue-400","children":["Access Token을 통해 사용자 응답"]}],"을 받는 메서드다."]}],"\n",["$","p","66",{"children":[["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"AuthModule","position":{"start":{"line":196,"column":1,"offset":4383},"end":{"line":196,"column":13,"offset":4395}}}],"position":{"start":{"line":196,"column":1,"offset":4383},"end":{"line":196,"column":13,"offset":4395}}},"children":["AuthModule"]}],"의 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"getUserInfoBean","position":{"start":{"line":196,"column":15,"offset":4397},"end":{"line":196,"column":32,"offset":4414}}}],"position":{"start":{"line":196,"column":15,"offset":4397},"end":{"line":196,"column":32,"offset":4414}}},"children":["getUserInfoBean"]}]," 메서드를 통해 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"UserInfoBean","position":{"start":{"line":196,"column":41,"offset":4423},"end":{"line":196,"column":55,"offset":4437}}}],"position":{"start":{"line":196,"column":41,"offset":4423},"end":{"line":196,"column":55,"offset":4437}}},"children":["UserInfoBean"]}]," 객체를 얻고, 이 내용을 담아 응답 객체로 만들어 반환한다."]}],"\n",["$","pre","68",{"children":[["$","$L1f",null,{"languageName":"java","className":"language-java","node":{"type":"element","tagName":"code","properties":{"className":["language-java"]},"children":[{"type":"text","value":"$22"}],"position":{"start":{"line":198,"column":1,"offset":4473},"end":{"line":246,"column":4,"offset":5788}}},"children":["$23"]}]]}],"\n",["$","p","70",{"children":["추후 설명하겠지만, ",["$","span","1",{"className":"green-600","children":["로그인 시 Access Token과 Refresh Token을 각각 플랫폼과 함께 JWT로 생성"]}],"하여 access, refresh 쿠키로 저장한다."]}],"\n",["$","p","72",{"children":["각 JWT 쿠키에 플랫폼 정보가 있으므로, access 쿠키만 있어도 Access Token와 그 플랫폼을 찾을 수 있다."]}],"\n",["$","h3",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h3__5jvsC","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h3","properties":{},"children":[{"type":"text","value":"전체 코드","position":{"start":{"line":254,"column":5,"offset":5991},"end":{"line":254,"column":10,"offset":5996}}}],"position":{"start":{"line":254,"column":1,"offset":5987},"end":{"line":254,"column":10,"offset":5996}}},"children":["$","$L11",null,{"href":"#전체-코드","id":"전체-코드","children":["$","$Lf",null,{"children":[["전체 코드"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","pre","76",{"children":[["$","$L1f",null,{"languageName":"java","className":"language-java","node":{"type":"element","tagName":"code","properties":{"className":["language-java"]},"children":[{"type":"text","value":"$24"}],"position":{"start":{"line":256,"column":1,"offset":5998},"end":{"line":395,"column":4,"offset":9573}}},"children":["$25"]}]]}],"\n",["$","h2",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h2__9tbOB","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h2","properties":{},"children":[{"type":"text","value":"POST 프로세스 구현","position":{"start":{"line":401,"column":4,"offset":9582},"end":{"line":401,"column":16,"offset":9594}}}],"position":{"start":{"line":401,"column":1,"offset":9579},"end":{"line":401,"column":16,"offset":9594}}},"children":["$","$L11",null,{"href":"#post-프로세스-구현","id":"post-프로세스-구현","children":["$","$Lf",null,{"children":[["POST 프로세스 구현"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","80",{"children":["계정 프로세스 중 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"POST","position":{"start":{"line":403,"column":11,"offset":9606},"end":{"line":403,"column":17,"offset":9612}}}],"position":{"start":{"line":403,"column":11,"offset":9606},"end":{"line":403,"column":17,"offset":9612}}},"children":["POST"]}],"에 해당하는 동작이 집합된 프로세스 클래스를 구현한다."]}],"\n",["$","ul","82",{"children":["\n",["$","li","1",{"children":["로그인 응답 반환 메서드"]}],"\n",["$","li","3",{"children":["자동 로그인 응답 반환 메서드"]}],"\n",["$","li","5",{"children":["로그아웃 응답 반환 메서드"]}],"\n"]}],"\n",["$","p","84",{"children":[["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"POST","position":{"start":{"line":409,"column":1,"offset":9697},"end":{"line":409,"column":7,"offset":9703}}}],"position":{"start":{"line":409,"column":1,"offset":9697},"end":{"line":409,"column":7,"offset":9703}}},"children":["POST"]}],"에 해당하는 동작은 위 두 메서드다. 주로 로그인/로그아웃 작업으로 구성되어있다."]}],"\n",["$","h3",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h3__5jvsC","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h3","properties":{},"children":[{"type":"text","value":"로그인 응답 반환 메서드","position":{"start":{"line":413,"column":5,"offset":9756},"end":{"line":413,"column":18,"offset":9769}}}],"position":{"start":{"line":413,"column":1,"offset":9752},"end":{"line":413,"column":18,"offset":9769}}},"children":["$","$L11",null,{"href":"#로그인-응답-반환-메서드","id":"로그인-응답-반환-메서드","children":["$","$Lf",null,{"children":[["로그인 응답 반환 메서드"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","88",{"children":["플랫폼 로그인 이후 발급되는 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"code","position":{"start":{"line":415,"column":17,"offset":9787},"end":{"line":415,"column":23,"offset":9793}}}],"position":{"start":{"line":415,"column":17,"offset":9787},"end":{"line":415,"column":23,"offset":9793}}},"children":["code"]}],"를 통해 ",["$","span","3",{"className":"blue-400","children":["Access Token으로 교환하여 로그인을 수행"]}],"하는 메서드다."]}],"\n",["$","p","90",{"children":[["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"AuthModule","position":{"start":{"line":417,"column":1,"offset":9865},"end":{"line":417,"column":13,"offset":9877}}}],"position":{"start":{"line":417,"column":1,"offset":9865},"end":{"line":417,"column":13,"offset":9877}}},"children":["AuthModule"]}],"의 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"getAccessToken","position":{"start":{"line":417,"column":15,"offset":9879},"end":{"line":417,"column":31,"offset":9895}}}],"position":{"start":{"line":417,"column":15,"offset":9879},"end":{"line":417,"column":31,"offset":9895}}},"children":["getAccessToken"]}]," 메서드를 통해 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"OAuth2AccessToken","position":{"start":{"line":417,"column":40,"offset":9904},"end":{"line":417,"column":59,"offset":9923}}}],"position":{"start":{"line":417,"column":40,"offset":9904},"end":{"line":417,"column":59,"offset":9923}}},"children":["OAuth2AccessToken"]}]," 객체를 반환받아 Access Token, Refresh Token을 추출한다."]}],"\n",["$","p","92",{"children":["이 토큰들을 JWT 쿠키로 만들어 로그인 절차를 수행한다."]}],"\n",["$","pre","94",{"children":[["$","$L1f",null,{"languageName":"java","className":"language-java","node":{"type":"element","tagName":"code","properties":{"className":["language-java"]},"children":[{"type":"text","value":"$26"}],"position":{"start":{"line":421,"column":1,"offset":10003},"end":{"line":491,"column":4,"offset":12104}}},"children":["$27"]}]]}],"\n",["$","p","96",{"children":[["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"AccountGetProcess","position":{"start":{"line":493,"column":1,"offset":12106},"end":{"line":493,"column":20,"offset":12125}}}],"position":{"start":{"line":493,"column":1,"offset":12106},"end":{"line":493,"column":20,"offset":12125}}},"children":["AccountGetProcess"]}],"의 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"getAuthorizationUrlResponse","position":{"start":{"line":493,"column":22,"offset":12127},"end":{"line":493,"column":51,"offset":12156}}}],"position":{"start":{"line":493,"column":22,"offset":12127},"end":{"line":493,"column":51,"offset":12156}}},"children":["getAuthorizationUrlResponse"]}]," 동작 중 세션 애트리뷰트에 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"state","position":{"start":{"line":493,"column":67,"offset":12172},"end":{"line":493,"column":74,"offset":12179}}}],"position":{"start":{"line":493,"column":67,"offset":12172},"end":{"line":493,"column":74,"offset":12179}}},"children":["state"]}],"를 입력했었는데, 여기서 그 ",["$","span","6",{"className":"orange-500","children":["세션값을 통해 검증을 수행"]}],"한다."]}],"\n",["$","p","98",{"children":["URL을 통해 인수로 받은 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"state","position":{"start":{"line":495,"column":16,"offset":12261},"end":{"line":495,"column":23,"offset":12268}}}],"position":{"start":{"line":495,"column":16,"offset":12261},"end":{"line":495,"column":23,"offset":12268}}},"children":["state"]}],"와 세션의 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"state","position":{"start":{"line":495,"column":29,"offset":12274},"end":{"line":495,"column":36,"offset":12281}}}],"position":{"start":{"line":495,"column":29,"offset":12274},"end":{"line":495,"column":36,"offset":12281}}},"children":["state"]}],"를 추출하여 비교하고, 동일하지 않을 경우 예외를 발생시킨다. 중간에 URL을 탈취해서 전혀 다른 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"code","position":{"start":{"line":495,"column":91,"offset":12336},"end":{"line":495,"column":97,"offset":12342}}}],"position":{"start":{"line":495,"column":91,"offset":12336},"end":{"line":495,"column":97,"offset":12342}}},"children":["code"]}],"를 삽입하여 요청을 보내도 이를 방지할 수 있는 보안책인 셈이다."]}],"\n",["$","p","100",{"children":["Access Token과 Refresh Token을 전달받아 JWT 쿠키로 만든다."]}],"\n",["$","br","102",{}],"\n",["$","ul","104",{"children":["\n",["$","li","1",{"children":["Access Token JWT"]}],"\n"]}],"\n",["$","pre","106",{"children":[["$","$L1f",null,{"languageName":"json","className":"language-json","node":{"type":"element","tagName":"code","properties":{"className":["language-json"]},"children":[{"type":"text","value":"{\n\t\"iss\": \"oauth2\",\n\t\"sub\": \"auth\",\n\t\"aud\": \"c9159786-40bf-4cf2-8c93-f683d1070137\",\n\t\"access\": \"{ACCESS_TOKEN}\",\n\t\"platform\": \"naver\",\n\t\"exp\": 1634986011,\n\t\"nbf\": 1634982411,\n\t\"iat\": 1634982411,\n\t\"jti\": \"c9159786-40bf-4cf2-8c93-f683d1070137\"\n}\n"}],"position":{"start":{"line":503,"column":1,"offset":12456},"end":{"line":515,"column":4,"offset":12712}}},"children":["{\n\t\"iss\": \"oauth2\",\n\t\"sub\": \"auth\",\n\t\"aud\": \"c9159786-40bf-4cf2-8c93-f683d1070137\",\n\t\"access\": \"{ACCESS_TOKEN}\",\n\t\"platform\": \"naver\",\n\t\"exp\": 1634986011,\n\t\"nbf\": 1634982411,\n\t\"iat\": 1634982411,\n\t\"jti\": \"c9159786-40bf-4cf2-8c93-f683d1070137\"\n}\n"]}]]}],"\n",["$","ul","108",{"children":["\n",["$","li","1",{"children":["Refresh Token JWT"]}],"\n"]}],"\n",["$","pre","110",{"children":[["$","$L1f",null,{"languageName":"json","className":"language-json","node":{"type":"element","tagName":"code","properties":{"className":["language-json"]},"children":[{"type":"text","value":"{\n\t\"iss\": \"oauth2\",\n\t\"sub\": \"auth\",\n\t\"aud\": \"c9159786-40bf-4cf2-8c93-f683d1070137\",\n\t\"refresh\": \"{REFRESH_TOKEN}\",\n\t\"platform\": \"naver\",\n\t\"exp\": 1634986011,\n\t\"nbf\": 1634982411,\n\t\"iat\": 1634982411,\n\t\"jti\": \"c9159786-40bf-4cf2-8c93-f683d1070137\"\n}\n"}],"position":{"start":{"line":519,"column":1,"offset":12735},"end":{"line":531,"column":4,"offset":12993}}},"children":["{\n\t\"iss\": \"oauth2\",\n\t\"sub\": \"auth\",\n\t\"aud\": \"c9159786-40bf-4cf2-8c93-f683d1070137\",\n\t\"refresh\": \"{REFRESH_TOKEN}\",\n\t\"platform\": \"naver\",\n\t\"exp\": 1634986011,\n\t\"nbf\": 1634982411,\n\t\"iat\": 1634982411,\n\t\"jti\": \"c9159786-40bf-4cf2-8c93-f683d1070137\"\n}\n"]}]]}],"\n",["$","br","112",{}],"\n",["$","p","114",{"children":["JWT의 내용은 위와 같다. 쿠키에 해당 JWT를 담아 생성한다. ",["$","span","1",{"className":"green-400","children":["access 쿠키는 세션 쿠키로 생성하여 브라우저 종료 시 즉시 쿠키가 즉시 소멸"]}],"되도록 구성하고, ",["$","span","3",{"className":"green-400","children":["refresh 쿠키는 어느 정도 보관기간을 두어 추후 다시 사용할 수 있도록 구성"]}],"한다."]}],"\n",["$","p","116",{"children":["쿠키 도메인은 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":".itcode.dev","position":{"start":{"line":537,"column":9,"offset":13215},"end":{"line":537,"column":22,"offset":13228}}}],"position":{"start":{"line":537,"column":9,"offset":13215},"end":{"line":537,"column":22,"offset":13228}}},"children":[".itcode.dev"]}],"로 지정되어있는데, 그 이유는 프론트엔드와 백엔드가 전혀 다른 환경에서 동작하기 때문이다."]}],"\n",["$","ul","118",{"children":["\n",["$","li","1",{"children":["Frontend - ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"project.itcode.dev","position":{"start":{"line":539,"column":14,"offset":13293},"end":{"line":539,"column":34,"offset":13313}}}],"position":{"start":{"line":539,"column":14,"offset":13293},"end":{"line":539,"column":34,"offset":13313}}},"children":["project.itcode.dev"]}]]}],"\n",["$","li","3",{"children":["Backend - ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"api.itcode.dev","position":{"start":{"line":540,"column":13,"offset":13326},"end":{"line":540,"column":29,"offset":13342}}}],"position":{"start":{"line":540,"column":13,"offset":13326},"end":{"line":540,"column":29,"offset":13342}}},"children":["api.itcode.dev"]}]]}],"\n"]}],"\n",["$","p","120",{"children":["브라우저의 보안정책으로 다른 도메인에 쿠키를 생성할 수 없다. 때문에 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":".itcode.dev","position":{"start":{"line":542,"column":40,"offset":13383},"end":{"line":542,"column":53,"offset":13396}}}],"position":{"start":{"line":542,"column":40,"offset":13383},"end":{"line":542,"column":53,"offset":13396}}},"children":[".itcode.dev"]}],"로 지정하여 모든 서브 도메인에 적용하도록 구성했다."]}],"\n",["$","p","122",{"children":["만약 도메인을 지정하지 않으면 자동으로 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"api.itcode.dev","position":{"start":{"line":544,"column":23,"offset":13449},"end":{"line":544,"column":39,"offset":13465}}}],"position":{"start":{"line":544,"column":23,"offset":13449},"end":{"line":544,"column":39,"offset":13465}}},"children":["api.itcode.dev"]}],"를 대상으로 쿠키를 발급한다. 따라서 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"project.itcode.dev","position":{"start":{"line":544,"column":60,"offset":13486},"end":{"line":544,"column":80,"offset":13506}}}],"position":{"start":{"line":544,"column":60,"offset":13486},"end":{"line":544,"column":80,"offset":13506}}},"children":["project.itcode.dev"]}]," 도메인 서비스에서는 쿠키에 접근할 수 없다."]}],"\n",["$","h3",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h3__5jvsC","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h3","properties":{},"children":[{"type":"text","value":"자동 로그인 응답 반환 메서드","position":{"start":{"line":548,"column":5,"offset":13539},"end":{"line":548,"column":21,"offset":13555}}}],"position":{"start":{"line":548,"column":1,"offset":13535},"end":{"line":548,"column":21,"offset":13555}}},"children":["$","$L11",null,{"href":"#자동-로그인-응답-반환-메서드","id":"자동-로그인-응답-반환-메서드","children":["$","$Lf",null,{"children":[["자동 로그인 응답 반환 메서드"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","126",{"children":["만약 이전에 로그인을 수행한 이력이 있어, ",["$","span","1",{"className":"blue-400","children":["access, refresh 쿠키를 이미 가지고 있을 경우 이를 활용하여 자동 로그인을 수행"]}],"하는 메서드다."]}],"\n",["$","pre","128",{"children":[["$","$L1f",null,{"languageName":"java","className":"language-java","node":{"type":"element","tagName":"code","properties":{"className":["language-java"]},"children":[{"type":"text","value":"$28"}],"position":{"start":{"line":552,"column":1,"offset":13672},"end":{"line":641,"column":4,"offset":16612}}},"children":["$29"]}]]}],"\n",["$","p","130",{"children":["access 쿠키가 이미 있을 경우, 이미 인증 정보가 있기 때문에 별다른 동작을 취하지 않고 넘어간다."]}],"\n",["$","p","132",{"children":["만약 access 쿠키는 없고 ",["$","span","1",{"className":"orange-400","children":["refresh 쿠키만 있다면, 이를 통해 Access Token을 재발급받아 인증 정보를 갱신"]}],"하여 자동으로 로그인을 수행한다."]}],"\n",["$","p","134",{"children":["로그인 로직 자체는 기존 로그인 메서드와 동일하며, Access Token만 Refresh Token을 통해 갱신하여 사용한다."]}],"\n",["$","h3",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h3__5jvsC","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h3","properties":{},"children":[{"type":"text","value":"로그아웃 응답 반환 메서드","position":{"start":{"line":651,"column":5,"offset":16874},"end":{"line":651,"column":19,"offset":16888}}}],"position":{"start":{"line":651,"column":1,"offset":16870},"end":{"line":651,"column":19,"offset":16888}}},"children":["$","$L11",null,{"href":"#로그아웃-응답-반환-메서드","id":"로그아웃-응답-반환-메서드","children":["$","$Lf",null,{"children":[["로그아웃 응답 반환 메서드"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","138",{"children":[["$","span","0",{"className":"blue-400","children":["인증 정보를 제거"]}],"하여 로그아웃을 수행하는 메서드."]}],"\n",["$","pre","140",{"children":[["$","$L1f",null,{"languageName":"java","className":"language-java","node":{"type":"element","tagName":"code","properties":{"className":["language-java"]},"children":[{"type":"text","value":"public Response postLogoutResponse()\n{\n\tResponse response;\n\n\tResponseBean<String> responseBean = new ResponseBean<>();\n\n\t// 로그아웃 응답 생성 시도\n\ttry\n\t{\n\t\tNewCookie accessCookie = new NewCookie(\"access\", null, \"/oauth2\", \".itcode.dev\", \"access token\", 0, true, true);\n\t\tNewCookie refreshCookie = new NewCookie(\"refresh\", null, \"/oauth2\", \".itcode.dev\", \"refresh token\", 0, true, true);\n\n\t\tresponseBean.setFlag(true);\n\t\tresponseBean.setTitle(\"success\");\n\t\tresponseBean.setMessage(\"logout success\");\n\t\tresponseBean.setBody(null);\n\n\t\tresponse = Response.ok(responseBean, MediaType.APPLICATION_JSON).cookie(accessCookie, refreshCookie).build();\n\t}\n\n\t// 예외\n\tcatch (Exception e)\n\t{\n\t\te.printStackTrace();\n\n\t\tresponseBean.setFlag(false);\n\t\tresponseBean.setTitle(e.getClass().getSimpleName());\n\t\tresponseBean.setMessage(e.getMessage());\n\t\tresponseBean.setBody(null);\n\n\t\tresponse = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();\n\t}\n\n\treturn response;\n}\n"}],"position":{"start":{"line":655,"column":1,"offset":16949},"end":{"line":691,"column":4,"offset":17959}}},"children":["public Response postLogoutResponse()\n{\n\tResponse response;\n\n\tResponseBean<String> responseBean = new ResponseBean<>();\n\n\t// 로그아웃 응답 생성 시도\n\ttry\n\t{\n\t\tNewCookie accessCookie = new NewCookie(\"access\", null, \"/oauth2\", \".itcode.dev\", \"access token\", 0, true, true);\n\t\tNewCookie refreshCookie = new NewCookie(\"refresh\", null, \"/oauth2\", \".itcode.dev\", \"refresh token\", 0, true, true);\n\n\t\tresponseBean.setFlag(true);\n\t\tresponseBean.setTitle(\"success\");\n\t\tresponseBean.setMessage(\"logout success\");\n\t\tresponseBean.setBody(null);\n\n\t\tresponse = Response.ok(responseBean, MediaType.APPLICATION_JSON).cookie(accessCookie, refreshCookie).build();\n\t}\n\n\t// 예외\n\tcatch (Exception e)\n\t{\n\t\te.printStackTrace();\n\n\t\tresponseBean.setFlag(false);\n\t\tresponseBean.setTitle(e.getClass().getSimpleName());\n\t\tresponseBean.setMessage(e.getMessage());\n\t\tresponseBean.setBody(null);\n\n\t\tresponse = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();\n\t}\n\n\treturn response;\n}\n"]}]]}],"\n",["$","p","142",{"children":["인증정보는 쿠키 기반이다. 서버에서 쿠키 생성 시 보안을 위해 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"HttpOnly","position":{"start":{"line":693,"column":36,"offset":17996},"end":{"line":693,"column":46,"offset":18006}}}],"position":{"start":{"line":693,"column":36,"offset":17996},"end":{"line":693,"column":46,"offset":18006}}},"children":["HttpOnly"]}]," 옵션을 활성화했기 때문에 JavaScript에선 access, refresh 쿠키를 다룰 수 없다."]}],"\n",["$","p","144",{"children":["서버에서 쿠키 만료시간을 0으로 덮어씌워 인증쿠키를 제거한다."]}],"\n",["$","h3",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h3__5jvsC","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h3","properties":{},"children":[{"type":"text","value":"전체 코드","position":{"start":{"line":699,"column":5,"offset":18106},"end":{"line":699,"column":10,"offset":18111}}}],"position":{"start":{"line":699,"column":1,"offset":18102},"end":{"line":699,"column":10,"offset":18111}}},"children":["$","$L11",null,{"href":"#전체-코드","id":"전체-코드","children":["$","$Lf",null,{"children":[["전체 코드"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","pre","148",{"children":[["$","$L1f",null,{"languageName":"java","className":"language-java","node":{"type":"element","tagName":"code","properties":{"className":["language-java"]},"children":[{"type":"text","value":"$2a"}],"position":{"start":{"line":701,"column":1,"offset":18113},"end":{"line":959,"column":4,"offset":25805}}},"children":["$2b"]}]]}],"\n",["$","h2",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h2__9tbOB","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h2","properties":{},"children":[{"type":"text","value":"PUT 프로세스 구현","position":{"start":{"line":965,"column":4,"offset":25814},"end":{"line":965,"column":15,"offset":25825}}}],"position":{"start":{"line":965,"column":1,"offset":25811},"end":{"line":965,"column":15,"offset":25825}}},"children":["$","$L11",null,{"href":"#put-프로세스-구현","id":"put-프로세스-구현","children":["$","$Lf",null,{"children":[["PUT 프로세스 구현"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","152",{"children":["계정 프로세스 중 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"PUT","position":{"start":{"line":967,"column":11,"offset":25837},"end":{"line":967,"column":16,"offset":25842}}}],"position":{"start":{"line":967,"column":11,"offset":25837},"end":{"line":967,"column":16,"offset":25842}}},"children":["PUT"]}],"에 해당하는 동작이 집합된 프로세스를 구현한다."]}],"\n",["$","ul","154",{"children":["\n",["$","li","1",{"children":["정보 제공 동의 갱신 URL 응답 반환 메서드"]}],"\n"]}],"\n",["$","p","156",{"children":[["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"PUT","position":{"start":{"line":971,"column":1,"offset":25899},"end":{"line":971,"column":6,"offset":25904}}}],"position":{"start":{"line":971,"column":1,"offset":25899},"end":{"line":971,"column":6,"offset":25904}}},"children":["PUT"]}],"에 해당하는 메서드는 하나다. 데이터를 수정하는 작업들로 구성되어있다."]}],"\n",["$","h3",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h3__5jvsC","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h3","properties":{},"children":[{"type":"text","value":"정보 제공 동의 갱신 URL 응답 반환 메서드","position":{"start":{"line":975,"column":5,"offset":25951},"end":{"line":975,"column":30,"offset":25976}}}],"position":{"start":{"line":975,"column":1,"offset":25947},"end":{"line":975,"column":30,"offset":25976}}},"children":["$","$L11",null,{"href":"#정보-제공-동의-갱신-url-응답-반환-메서드","id":"정보-제공-동의-갱신-url-응답-반환-메서드","children":["$","$Lf",null,{"children":[["정보 제공 동의 갱신 URL 응답 반환 메서드"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","160",{"children":[["$","span","0",{"className":"blue-400","children":["정보 제공 동의를 새로 갱신하는 URL을 반환"]}],"하는 메서드다."]}],"\n",["$","pre","162",{"children":[["$","$L1f",null,{"languageName":"java","className":"language-java","node":{"type":"element","tagName":"code","properties":{"className":["language-java"]},"children":[{"type":"text","value":"$2c"}],"position":{"start":{"line":979,"column":1,"offset":26043},"end":{"line":1037,"column":4,"offset":27468}}},"children":["$2d"]}]]}],"\n",["$","p","164",{"children":["첫 로그인 시, 서비스가 요구하는 정보에 대해 동의/거부하는 절차를 거친다. 이후 유저 정보 요청 시, 이 정보 제공 동의 여부에 의거하여 동의한 정보만을 제공한다."]}],"\n",["$","p","166",{"children":["만약 서비스 운영 도중 요구 정보가 변경되어 추가적인 정보가 필요하다면, 정보 제공 동의를 갱신할 필요가 있다."]}],"\n",["$","p","168",{"children":["서비스는 반환받은 URL로 리다이렉션하여 동의를 갱신한 뒤 갱신된 정보가 반영된 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"code","position":{"start":{"line":1043,"column":46,"offset":27673},"end":{"line":1043,"column":52,"offset":27679}}}],"position":{"start":{"line":1043,"column":46,"offset":27673},"end":{"line":1043,"column":52,"offset":27679}}},"children":["code"]}],"를 반환한다. 이후의 과정은 로그인과 동일한 과정을 거친다."]}],"\n",["$","br","170",{}],"\n",["$","p","172",{"children":["즉, ",["$","span","1",{"className":"blue-400","children":["정보 제공 동의는 새로운 정보를 갱신하여 로그인을 다시 수행하는 것과 동일"]}],"하다."]}],"\n",["$","h3",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h3__5jvsC","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h3","properties":{},"children":[{"type":"text","value":"전체 코드","position":{"start":{"line":1051,"column":5,"offset":27807},"end":{"line":1051,"column":10,"offset":27812}}}],"position":{"start":{"line":1051,"column":1,"offset":27803},"end":{"line":1051,"column":10,"offset":27812}}},"children":["$","$L11",null,{"href":"#전체-코드","id":"전체-코드","children":["$","$Lf",null,{"children":[["전체 코드"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","pre","176",{"children":[["$","$L1f",null,{"languageName":"java","className":"language-java","node":{"type":"element","tagName":"code","properties":{"className":["language-java"]},"children":[{"type":"text","value":"$2e"}],"position":{"start":{"line":1053,"column":1,"offset":27814},"end":{"line":1154,"column":4,"offset":30294}}},"children":["$2f"]}]]}],"\n",["$","h2",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h2__9tbOB","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h2","properties":{},"children":[{"type":"text","value":"DELETE 프로세스 구현","position":{"start":{"line":1160,"column":4,"offset":30303},"end":{"line":1160,"column":18,"offset":30317}}}],"position":{"start":{"line":1160,"column":1,"offset":30300},"end":{"line":1160,"column":18,"offset":30317}}},"children":["$","$L11",null,{"href":"#delete-프로세스-구현","id":"delete-프로세스-구현","children":["$","$Lf",null,{"children":[["DELETE 프로세스 구현"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","180",{"children":["계정 프로세스 중 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"DELETE","position":{"start":{"line":1162,"column":11,"offset":30329},"end":{"line":1162,"column":19,"offset":30337}}}],"position":{"start":{"line":1162,"column":11,"offset":30329},"end":{"line":1162,"column":19,"offset":30337}}},"children":["DELETE"]}],"에 해당하는 동작이 집합된 프로세스를 구현한다."]}],"\n",["$","ul","182",{"children":["\n",["$","li","1",{"children":["연동 해제 응답 반환 메서드"]}],"\n"]}],"\n",["$","p","184",{"children":[["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"DELETE","position":{"start":{"line":1166,"column":1,"offset":30384},"end":{"line":1166,"column":9,"offset":30392}}}],"position":{"start":{"line":1166,"column":1,"offset":30384},"end":{"line":1166,"column":9,"offset":30392}}},"children":["DELETE"]}],"에 해당하는 메서드는 하나다. 주로 데이터를 삭제하는 작업들로 구성되어있다."]}],"\n",["$","h3",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h3__5jvsC","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h3","properties":{},"children":[{"type":"text","value":"연동 해제 응답 반환 메서드","position":{"start":{"line":1170,"column":5,"offset":30442},"end":{"line":1170,"column":20,"offset":30457}}}],"position":{"start":{"line":1170,"column":1,"offset":30438},"end":{"line":1170,"column":20,"offset":30457}}},"children":["$","$L11",null,{"href":"#연동-해제-응답-반환-메서드","id":"연동-해제-응답-반환-메서드","children":["$","$Lf",null,{"children":[["연동 해제 응답 반환 메서드"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","188",{"children":[["$","span","0",{"className":"blue-400","children":["플랫폼과의 연동을 완전히 해제하고 로그아웃을 수행"]}],"하는 메서드다."]}],"\n",["$","pre","190",{"children":[["$","$L1f",null,{"languageName":"java","className":"language-java","node":{"type":"element","tagName":"code","properties":{"className":["language-java"]},"children":[{"type":"text","value":"public Response deleteInfoResponse(String accessCookie)\n{\n\tResponse response;\n\n\tResponseBean<String> responseBean = new ResponseBean<>();\n\n\t// 연동 해제 응답 생성 시도\n\ttry\n\t{\n\t\tJws<Claims> jws = JwtModule.openJwt(accessCookie);\n\n\t\tString accessToken = jws.getBody().get(\"access\", String.class);\n\t\tString platform = jws.getBody().get(\"platform\", String.class);\n\n\t\tAuthModule authModule = getAuthModule(platform);\n\n\t\t// 연동 해제에 성공할 경우\n\t\tif (authModule.deleteInfo(accessToken))\n\t\t{\n\t\t\tresponse = new AccountPostProcess(request, this.response).postLogoutResponse();\n\t\t}\n\n\t\t// 아닐 경우\n\t\telse\n\t\t{\n\t\t\tthrow new RequestAuthenticationException(\"revoke fail\");\n\t\t}\n\t}\n\n\t// 예외\n\tcatch (Exception e)\n\t{\n\t\te.printStackTrace();\n\n\t\tresponseBean.setFlag(false);\n\t\tresponseBean.setTitle(e.getClass().getSimpleName());\n\t\tresponseBean.setMessage(e.getMessage());\n\t\tresponseBean.setBody(null);\n\n\t\tresponse = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();\n\t}\n\n\treturn response;\n}\n"}],"position":{"start":{"line":1174,"column":1,"offset":30526},"end":{"line":1219,"column":4,"offset":31545}}},"children":["public Response deleteInfoResponse(String accessCookie)\n{\n\tResponse response;\n\n\tResponseBean<String> responseBean = new ResponseBean<>();\n\n\t// 연동 해제 응답 생성 시도\n\ttry\n\t{\n\t\tJws<Claims> jws = JwtModule.openJwt(accessCookie);\n\n\t\tString accessToken = jws.getBody().get(\"access\", String.class);\n\t\tString platform = jws.getBody().get(\"platform\", String.class);\n\n\t\tAuthModule authModule = getAuthModule(platform);\n\n\t\t// 연동 해제에 성공할 경우\n\t\tif (authModule.deleteInfo(accessToken))\n\t\t{\n\t\t\tresponse = new AccountPostProcess(request, this.response).postLogoutResponse();\n\t\t}\n\n\t\t// 아닐 경우\n\t\telse\n\t\t{\n\t\t\tthrow new RequestAuthenticationException(\"revoke fail\");\n\t\t}\n\t}\n\n\t// 예외\n\tcatch (Exception e)\n\t{\n\t\te.printStackTrace();\n\n\t\tresponseBean.setFlag(false);\n\t\tresponseBean.setTitle(e.getClass().getSimpleName());\n\t\tresponseBean.setMessage(e.getMessage());\n\t\tresponseBean.setBody(null);\n\n\t\tresponse = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();\n\t}\n\n\treturn response;\n}\n"]}]]}],"\n",["$","p","192",{"children":["플랫폼과의 연동을 해제하면 발급받았던 Access Token과 Refresh Token이 만료되어 더 이상 제 기능을 할 수 없게 된다."]}],"\n",["$","p","194",{"children":["보통 회원탈퇴 시 이루어지는 과정이지만, 이 프로젝트는 별도의 회원가입이랄게 따로 없으므로, 자동으로 로그아웃을 시키는 것으로 끝난다."]}],"\n",["$","p","196",{"children":["추후 재로그인 시 처음 로그인하는 것과 동일한 과정을 거치게 된다."]}],"\n",["$","h3",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h3__5jvsC","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h3","properties":{},"children":[{"type":"text","value":"전체 코드","position":{"start":{"line":1229,"column":5,"offset":31747},"end":{"line":1229,"column":10,"offset":31752}}}],"position":{"start":{"line":1229,"column":1,"offset":31743},"end":{"line":1229,"column":10,"offset":31752}}},"children":["$","$L11",null,{"href":"#전체-코드","id":"전체-코드","children":["$","$Lf",null,{"children":[["전체 코드"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","pre","200",{"children":[["$","$L1f",null,{"languageName":"java","className":"language-java","node":{"type":"element","tagName":"code","properties":{"className":["language-java"]},"children":[{"type":"text","value":"$30"}],"position":{"start":{"line":1231,"column":1,"offset":31754},"end":{"line":1317,"column":4,"offset":33836}}},"children":["$31"]}]]}],"\n",["$","h1",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h1__mcnqG","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h1","properties":{},"children":[{"type":"text","value":"정리","position":{"start":{"line":1328,"column":3,"offset":33849},"end":{"line":1328,"column":5,"offset":33851}}}],"position":{"start":{"line":1328,"column":1,"offset":33847},"end":{"line":1328,"column":5,"offset":33851}}},"children":["$","$L11",null,{"href":"#정리","id":"정리","children":["$","$Lf",null,{"children":[["정리"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","204",{"children":["이로써 프로젝트 구현을 완료했다. ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"NaverAuthModule","position":{"start":{"line":1330,"column":20,"offset":33872},"end":{"line":1330,"column":37,"offset":33889}}}],"position":{"start":{"line":1330,"column":20,"offset":33872},"end":{"line":1330,"column":37,"offset":33889}}},"children":["NaverAuthModule"]}],", ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"GoogleAuthModule","position":{"start":{"line":1330,"column":39,"offset":33891},"end":{"line":1330,"column":57,"offset":33909}}}],"position":{"start":{"line":1330,"column":39,"offset":33891},"end":{"line":1330,"column":57,"offset":33909}}},"children":["GoogleAuthModule"]}]," 같은 각기 다른 인증모듈을 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"AuthModule","position":{"start":{"line":1330,"column":73,"offset":33925},"end":{"line":1330,"column":85,"offset":33937}}}],"position":{"start":{"line":1330,"column":73,"offset":33925},"end":{"line":1330,"column":85,"offset":33937}}},"children":["AuthModule"]}],"이라는 상위 객체로 반환받은 덕분에 복잡한 분기나 중복 코드를 막을 수 있었다."]}],"\n",["$","p","206",{"children":["파이프라인이 나눠지는 순간, 이와 연결된 하위 파이프라인까지 강제로 분리되는 경향이 있다. 가장 밑단인 모듈을 적절히 설계한 덕분에, 그 상위 파이프라인들은 하나로 관리할 수 있음을 확인할 수 있다."]}],"\n",["$","p","208",{"children":["다음 장에서는 Jersey를 통한 컨트롤러 구성 방법에 대해 다룬다."]}]]}],["$","$L32",null,{}]]}],["$","$L1a",null,{"data-component":"ViewAdsTemplate","children":["$","$L33",null,{}]}],["$","$L1a",null,{"data-component":"ViewTagTemplate","children":["$","$Lf",null,{"data-component":"ViewTagBox","spacing":2,"children":[["$","$L19",null,{"fontWeight":"bold","children":"🏷️ Related Tag"}],["$","$L15",null,{"width":"100%","children":[["$","$L15","JAVA",{"display":"inline-block","paddingBottom":1,"paddingRight":1,"children":["$","$L34",null,{"label":"# JAVA","size":"medium","variant":"outlined"}]}],["$","$L15","OAuth2.0",{"display":"inline-block","paddingBottom":1,"paddingRight":1,"children":["$","$L34",null,{"label":"# OAuth2.0","size":"medium","variant":"outlined"}]}]]}]]}]}],["$","$L1a",null,{"data-component":"ViewControllTemplate","children":["$","$L35",null,{"next":"$36","prev":"$39","type":"posts"}]}],["$","$L1a",null,{"data-component":"ViewCommentTemplate","children":["$","$Lf",null,{"data-component":"ViewCommentBox","spacing":10,"children":[["$","$Lf",null,{"alignItems":"center","justifyContent":"center","spacing":1,"width":"100%","children":[["$","$L10",null,{"iconName":"heartMessage","width":300}],["$","$L19",null,{"variant":"h5","children":"😍 읽어주셔서 감사합니다!"}],["$","$L19",null,{"variant":"h5","children":["도움이 되셨다면, ",["$","$L19",null,{"color":"hotpink","component":"span","fontWeight":"bold","variant":"inherit","children":"💝공감"}],"이나 ",["$","$L19",null,{"color":"hotpink","component":"span","fontWeight":"bold","variant":"inherit","children":"🗨️댓글"}],"을 달아주시는 건 어떤가요?"]}],["$","$L19",null,{"variant":"h5","children":"블로그 운영에 큰 힘이 됩니다!"}]]}],["$","$Lf",null,{"data-component":"ViewHits","direction":"row","justifyContent":"center","children":["$","img",null,{"alt":"https://blog.itcode.dev/posts/2021/10/24/oauth2-java-server-8","data-component":"Hits","src":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23333333&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23222222&url=https%3A%2F%2Fblog.itcode.dev%2Fposts%2F2021%2F10%2F24%2Foauth2-java-server-8"}]}],["$","$L3c",null,{}]]}]}]]}]]}],["$","$Lf",null,{"alignItems":"center","bottom":20,"data-component":"InteractionBox","direction":"row","position":"fixed","right":20,"spacing":1,"zIndex":10,"children":[["$","$L3d",null,{}],["$","$L3e",null,{}]]}],["$","$L3f",null,{}],["$","$L40",null,{}]]}],null],"segment":"__PAGE__?{\"markdown\":[\"posts\",\"2021\",\"10\",\"24\",\"oauth2-java-server-8\"]}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/86391cacb09421ad.css","precedence":"next","crossOrigin":""}]]}],"segment":["markdown","posts/2021/10/24/oauth2-java-server-8","c"]},"styles":null}]}]}]}]}]]}],null]
-8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 8. 프로세스 구현하기 - 𝝅번째 알파카의 개발 낙서장"}],["$","meta","3",{"name":"description","content":"4장부터 7장까지 진행하며 각 플랫폼의 인증 모듈을 구현했다. 이 장에서는 모듈을 사용하는 주체인 프로세스를 구현한다. 프로세스는 HTTP 메소드에 따라 구분하여 관리한다."}],["$","link","4",{"rel":"author","href":"https://github.com/RWB0104"}],["$","meta","5",{"name":"author","content":"Kapoo"}],["$","link","6",{"rel":"author","href":"https://www.linkedin.com/in/itcode/"}],["$","meta","7",{"name":"author","content":"RWB"}],["$","link","8",{"rel":"manifest","href":"/manifest.webmanifest"}],["$","meta","9",{"name":"keywords","content":"JAVA,OAuth2.0"}],["$","meta","10",{"property":"og:title","content":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 8. 프로세스 구현하기 - 𝝅번째 알파카의 개발 낙서장"}],["$","meta","11",{"property":"og:description","content":"4장부터 7장까지 진행하며 각 플랫폼의 인증 모듈을 구현했다. 이 장에서는 모듈을 사용하는 주체인 프로세스를 구현한다. 프로세스는 HTTP 메소드에 따라 구분하여 관리한다."}],["$","meta","12",{"property":"og:url","content":"https://blog.itcode.dev/posts/2021/10/24/oauth2-java-server-8"}],["$","meta","13",{"property":"og:site_name","content":"𝝅번째 알파카의 개발 낙서장"}],["$","meta","14",{"property":"og:locale","content":"ko-KR"}],["$","meta","15",{"property":"og:image","content":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png"}],["$","meta","16",{"property":"og:type","content":"website"}],["$","meta","17",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","18",{"name":"twitter:title","content":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 8. 프로세스 구현하기 - 𝝅번째 알파카의 개발 낙서장"}],["$","meta","19",{"name":"twitter:description","content":"4장부터 7장까지 진행하며 각 플랫폼의 인증 모듈을 구현했다. 이 장에서는 모듈을 사용하는 주체인 프로세스를 구현한다. 프로세스는 HTTP 메소드에 따라 구분하여 관리한다."}],["$","meta","20",{"name":"twitter:image","content":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png"}],["$","link","21",{"rel":"icon","href":"/favicon.ico"}],["$","link","22",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","23",{"rel":"apple-touch-icon","href":"/favicon.ico"}],["$","meta","24",{"name":"next-size-adjust"}]]
-14:null
+
+
+
+
+
+
+
+
+# 정리
+
+이로써 프로젝트 구현을 완료했다. `NaverAuthModule`, `GoogleAuthModule` 같은 각기 다른 인증모듈을 `AuthModule`이라는 상위 객체로 반환받은 덕분에 복잡한 분기나 중복 코드를 막을 수 있었다.
+
+파이프라인이 나눠지는 순간, 이와 연결된 하위 파이프라인까지 강제로 분리되는 경향이 있다. 가장 밑단인 모듈을 적절히 설계한 덕분에, 그 상위 파이프라인들은 하나로 관리할 수 있음을 확인할 수 있다.
+
+다음 장에서는 Jersey를 통한 컨트롤러 구성 방법에 대해 다룬다.20:["markdown","posts/2021/10/24/oauth2-java-server-8","c"]
+0:["7IBeU94WeU22HW2jieTRd",[[["",{"children":[["markdown","posts/2021/10/24/oauth2-java-server-8","c"],{"children":["__PAGE__?{\"markdown\":[\"posts\",\"2021\",\"10\",\"24\",\"oauth2-java-server-8\"]}",{}]}]},"$undefined","$undefined",true],["",{"children":[["markdown","posts/2021/10/24/oauth2-java-server-8","c"],{"children":["__PAGE__",{},["$L1",["$","$L2",null,{"component":"main","data-component":"PageTemplate","children":[["$","$L3",null,{"title":"𝝅번째 알파카의 개발 낙서장","version":"5.0.0-alpha6"}],[["$","$L4",null,{"src":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","children":["$","$L2",null,{"className":"MarkdownScreenerTemplate_root__dpmgV","data-component":"BaseScreenerTemplate","height":"100%","position":"relative","width":"100%","children":[["$","$L5",null,{"alignItems":"center","height":"100%","justifyContent":"center","padding":2,"position":"relative","width":"100%","children":[["$","$L5",null,{"direction":"row","children":[["$","$L2",null,{"bgcolor":"dodgerblue","boxShadow":"0px 0px 5px black","height":"100%","width":5}],["$","$L5",null,{"color":"white","paddingLeft":2,"paddingRight":2,"children":[["$","$L6",null,{"className":"MarkdownScreenerTemplate_text__5_mNa","fontWeight":"bold","variant":"h5","children":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 8. 프로세스 구현하기"}],["$","$L6",null,{"className":"MarkdownScreenerTemplate_text__5_mNa","children":"⏰ 2021-10-24 (일) 14:58:10"}]]}]]}],["$","$L7",null,{"bottom":"10%","direction":"row","gap":4,"position":"absolute","shareData":{"text":"4장부터 7장까지 진행하며 각 플랫폼의 인증 모듈을 구현했다. 이 장에서는 모듈을 사용하는 주체인 프로세스를 구현한다. 프로세스는 HTTP 메소드에 따라 구분하여 관리한다.","title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 8. 프로세스 구현하기","url":"https://blog.itcode.dev/posts/2021/10/24/oauth2-java-server-8"}}]]}],["$","$L2",null,{"bottom":0,"left":0,"position":"absolute","width":"100%","children":["$","svg",null,{"className":"Wave_waves___Plcn","data-component":"Wave","height":80,"preserveAspectRatio":"none","shapeRendering":"auto","viewBox":"0 24 150 28","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":[["$","defs",null,{"children":["$","path",null,{"d":"M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z","id":"gentle-wave"}]}],["$","g",null,{"className":"Wave_parallax__AGFbj","children":[["$","use",null,{"fill":"$undefined","opacity":"0.7","x":"48","xlinkHref":"#gentle-wave","y":"0"}],["$","use",null,{"fill":"$undefined","opacity":"0.5","x":"48","xlinkHref":"#gentle-wave","y":"3"}],["$","use",null,{"fill":"$undefined","opacity":"0.3","x":"48","xlinkHref":"#gentle-wave","y":"5"}],["$","use",null,{"fill":"$undefined","x":"48","xlinkHref":"#gentle-wave","y":"7"}]]}]]}]}]]}]}],[["$","$L8",null,{"color":"dodgerblue"}],["$","$L9",null,{"children":["$","$L5",null,{"gap":4,"paddingTop":10,"children":[["$","$La",null,{"current":"/posts/2021/10/24/oauth2-java-server-8","groups":[{"title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 9. Jersey로 RESTful API 서비스 제공하기","url":"/posts/2021/10/25/oauth2-java-server-9"},{"title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 12. 마치며","url":"/posts/2021/10/25/oauth2-java-server-12"},{"title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 11. OAuth 서비스 심사 신청하기","url":"/posts/2021/10/25/oauth2-java-server-11"},{"title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 10. 컨트롤러 구현하기","url":"/posts/2021/10/25/oauth2-java-server-10"},{"title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 8. 프로세스 구현하기","url":"/posts/2021/10/24/oauth2-java-server-8"},{"title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 7. GitHub OAuth 서비스 신청 및 모듈 구현하기","url":"/posts/2021/10/23/oauth2-java-server-7"},{"title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 6. KAKAO OAuth 서비스 신청 및 모듈 구현하기","url":"/posts/2021/10/23/oauth2-java-server-6"},{"title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 5. Google OAuth 서비스 신청 및 모듈 구현하기","url":"/posts/2021/10/23/oauth2-java-server-5"},{"title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 4. NAVER OAuth 서비스 신청 및 모듈 구현하기","url":"/posts/2021/10/22/oauth2-java-server-4"},{"title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 3. scribeJAVA로 OAuth2.0 인증 모듈 구현하기","url":"/posts/2021/10/20/oauth2-java-server-3"},{"title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 2. 인증서버 설계하기","url":"/posts/2021/10/14/oauth2-java-server-2"},{"title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 1. OAuth2.0이란?","url":"/posts/2021/10/14/oauth2-java-server-1"}],"thumbnail":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","title":"OAuth2.0 인증서버 구축기"}],["$","$Lb",null,{"list":[{"idx":"1.","level":1,"text":"개요"},{"idx":"2.","level":1,"text":"구조"},{"idx":"3.","level":1,"text":"프로세스 구현"},{"idx":"3.1.","level":2,"text":"Process 추상 클래스 구현"},{"idx":"3.2.","level":2,"text":"GET 프로세스 구현"},{"idx":"3.2.1.","level":3,"text":"인증 URL 응답 반환 메서드"},{"idx":"3.2.2.","level":3,"text":"사용자 정보 응답 반환 메서드"},{"idx":"3.2.3.","level":3,"text":"전체 코드"},{"idx":"3.3.","level":2,"text":"POST 프로세스 구현"},{"idx":"3.3.1.","level":3,"text":"로그인 응답 반환 메서드"},{"idx":"3.3.2.","level":3,"text":"자동 로그인 응답 반환 메서드"},{"idx":"3.3.3.","level":3,"text":"로그아웃 응답 반환 메서드"},{"idx":"3.3.4.","level":3,"text":"전체 코드"},{"idx":"3.4.","level":2,"text":"PUT 프로세스 구현"},{"idx":"3.4.1.","level":3,"text":"정보 제공 동의 갱신 URL 응답 반환 메서드"},{"idx":"3.4.2.","level":3,"text":"전체 코드"},{"idx":"3.5.","level":2,"text":"DELETE 프로세스 구현"},{"idx":"3.5.1.","level":3,"text":"연동 해제 응답 반환 메서드"},{"idx":"3.5.2.","level":3,"text":"전체 코드"},{"idx":"4.","level":1,"text":"정리"}]}],["$","$Lc",null,{"variant":"fullWidth"}],["$","$Ld",null,{"children":"$e"}],["$","$Lc",null,{"variant":"fullWidth"}],["$","$Lf",null,{"tags":["JAVA","OAuth2.0"],"type":"posts"}],["$","$L5",null,{"alignItems":"center","data-component":"LabNameTag","width":"100%","children":["$","$L2",null,{"boxShadow":"0px 0px 10px #00000050","maxWidth":250,"width":"100%","children":["$","$L10",null,{"href":"https://itcode.dev","target":"_blank","children":["$","$L11",null,{"scale":1.1,"children":[["$","$L2",null,{"borderRadius":2,"className":"NameTag_tag__DZCHu","data-component":"NameTag","padding":1,"sx":{"background":"linear-gradient(45deg, #833AB4, #FD2B20, #fCAA43)"},"children":["$","$L5",null,{"borderRadius":2,"color":"white","gap":3,"padding":2,"children":[["$","$L2",null,{"className":"Tile_tile__czq9P","data-component":"Tile","overflow":"hidden","position":"relative","children":["$","$L2",null,{"height":"100%","left":0,"position":"absolute","top":0,"width":"100%","children":["$","$L12",null,{"src":"https://itcode.dev/logo.png"}]}]}],["$","$L2",null,{"borderTop":"1px solid white","width":"100%"}],["$","$L5",null,{"gap":1,"children":[["$","$L6",null,{"color":"inherit","fontWeight":"bold","children":"𝝅번째 알파카의 개발 연구소"}],["$","$L2",null,{"color":"inherit","width":"100%","children":["$","$L6",null,{"variant":"caption","children":"이 카드를 클릭하고 𝝅번째 알파카의 개발 연구소의 다양한 프로젝트를 확인해보세요!"}]}]]}]]}]}],["$","$L13",null,{}]]}]}]}]}],["$","$L14",null,{"next":{"thumbnail":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 10. 컨트롤러 구현하기","url":"/posts/2021/10/25/oauth2-java-server-10"},"prev":{"thumbnail":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 7. GitHub OAuth 서비스 신청 및 모듈 구현하기","url":"/posts/2021/10/23/oauth2-java-server-7"},"type":"posts"}],["$","$L5",null,{"alignItems":"center","justifyContent":"center","width":"100%","children":["$","$L11",null,{"children":["$","$L5",null,{"alignItems":"center","bgcolor":"lemonchiffon","borderRadius":1,"boxShadow":"0px 0px 10px #00000030","component":"div","data-component":"ThanksCard","direction":"row","gap":2,"padding":2,"children":[["$","$L15",null,{"iconName":"love-message-burst","width":100}],["$","$L5",null,{"children":[["$","$L6",null,{"color":"black","variant":"h6","gutterBottom":true,"children":"읽어주셔서 고마워요!"}],["$","$L6",null,{"color":"black","children":["도움이 되셨다면, ",["$","$L6",null,{"color":"hotpink","component":"span","fontWeight":"bold","children":"공감"}],"이나 ",["$","$L6",null,{"color":"dodgerblue","component":"span","fontWeight":"bold","children":"댓글"}],"을 달아주시는 건 어떤가요?"]}],["$","$L6",null,{"color":"black","children":"블로그 운영에 큰 힘이 됩니다."}]]}]]}]}]}],["$","$L7",null,{"direction":"row","gap":4,"iconColor":"inherit","justifyContent":"center","shareData":{"text":"4장부터 7장까지 진행하며 각 플랫폼의 인증 모듈을 구현했다. 이 장에서는 모듈을 사용하는 주체인 프로세스를 구현한다. 프로세스는 HTTP 메소드에 따라 구분하여 관리한다.","title":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 8. 프로세스 구현하기","url":"/posts/2021/10/24/oauth2-java-server-8"}}],["$","$L16",null,{}],["$","$L5",null,{"alignItems":"center","children":["$","img",null,{"alt":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23484848&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23242424&url=https%3A%2F%2Fblog.itcode.dev%2Fposts%2F2021%2F10%2F24%2Foauth2-java-server-8","data-component":"Hits","src":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23484848&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23242424&url=https%3A%2F%2Fblog.itcode.dev%2Fposts%2F2021%2F10%2F24%2Foauth2-java-server-8"}]}]]}]}]]],["$","$L2",null,{"component":"footer","data-component":"Footer","marginTop":10,"children":[["$","$L2",null,{"position":"relative","children":[["$","$L5",null,{"className":"Footer_cloud__btPWK Footer_hour-15__T_I0b","width":"100%","children":["$","svg",null,{"className":"Wave_waves___Plcn","data-component":"Wave","height":40,"preserveAspectRatio":"none","shapeRendering":"auto","viewBox":"0 24 150 28","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":[["$","defs",null,{"children":["$","path",null,{"d":"M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z","id":"gentle-wave"}]}],["$","g",null,{"className":"Wave_parallax__AGFbj","children":[["$","use",null,{"fill":"inherit","opacity":"0.7","x":"48","xlinkHref":"#gentle-wave","y":"0"}],["$","use",null,{"fill":"inherit","opacity":"0.5","x":"48","xlinkHref":"#gentle-wave","y":"3"}],["$","use",null,{"fill":"inherit","opacity":"0.3","x":"48","xlinkHref":"#gentle-wave","y":"5"}],["$","use",null,{"fill":"inherit","x":"48","xlinkHref":"#gentle-wave","y":"7"}]]}]]}]}],["$","$L2",null,{"className":"Footer_sky__FGtTh Footer_hour-15__T_I0b","height":200}],["$","$L2",null,{"bottom":-20,"className":"Footer_ship__VuMth","left":"10%","position":"absolute","children":["$","img",null,{"alt":"icon","height":100,"src":"https://cdn-icons-png.freepik.com/512/6643/6643562.png","width":100}]}],["$","$L2",null,{"bottom":0,"position":"absolute","width":"100%","children":["$","svg",null,{"className":"Wave_waves___Plcn","data-component":"Wave","height":40,"preserveAspectRatio":"none","shapeRendering":"auto","viewBox":"0 24 150 28","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":[["$","defs",null,{"children":["$","path",null,{"d":"M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z","id":"gentle-wave"}]}],["$","g",null,{"className":"Wave_parallax__AGFbj","children":[["$","use",null,{"fill":"#6fb1fc","opacity":"0.7","x":"48","xlinkHref":"#gentle-wave","y":"0"}],["$","use",null,{"fill":"#6fb1fc","opacity":"0.5","x":"48","xlinkHref":"#gentle-wave","y":"3"}],["$","use",null,{"fill":"#6fb1fc","opacity":"0.3","x":"48","xlinkHref":"#gentle-wave","y":"5"}],["$","use",null,{"fill":"#6fb1fc","x":"48","xlinkHref":"#gentle-wave","y":"7"}]]}]]}]}]]}],["$","$L2",null,{"children":["$","$L5",null,{"alignItems":"center","className":"FooterTemplate_footer__97G2c","color":"white","data-component":"FooterTemplate","gap":4,"padding":4,"paddingBottom":8,"paddingTop":8,"children":[["$","$L5",null,{"alignItems":"center","color":"white","children":[["$","$L6",null,{"className":"FooterTemplate_title__Samo8","fontWeight":"bold","variant":"h6","children":"𝝅번째 알파카의 개발 낙서장"}],["$","$L6",null,{"variant":"caption","children":"5.0.0-alpha6"}]]}],["$","$L2",null,{"display":"grid","gap":2,"gridTemplateColumns":"1fr 1fr 1fr","children":[["$","$L10",null,{"data-component":"FooterLinkButton","href":"https://itcode.dev","target":"_blank","children":["$","$L17",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","img",null,{"alt":"itcode.dev","height":"100%","src":"https://itcode.dev/logo-transparent.png","width":"100%"}]}]}]}],["$","$L10",null,{"data-component":"FooterLinkButton","href":"https://github.com/RWB0104","target":"_blank","children":["$","$L17",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L18",null,{}]}]}]}],["$","$L10",null,{"data-component":"FooterLinkButton","href":"mailto:psj2716@mensakorea.org","target":"_blank","children":["$","$L17",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L19",null,{}]}]}]}],["$","$L10",null,{"data-component":"FooterLinkButton","href":"https://www.linkedin.com/in/itcode","target":"_blank","children":["$","$L17",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L1a",null,{}]}]}]}],["$","$L10",null,{"data-component":"FooterLinkButton","href":"/sitemap.xml","target":"_blank","children":["$","$L17",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L1b",null,{}]}]}]}],["$","$L10",null,{"data-component":"FooterLinkButton","href":"/rss.xml","target":"_blank","children":["$","$L17",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L1c",null,{}]}]}]}]]}],["$","$L5",null,{"alignItems":"center","color":"white","children":[["$","$L5",null,{"alignItems":"center","direction":"row","gap":0.5,"children":[["$","$L1d",null,{"fontSize":"inherit","htmlColor":"darkblue"}],["$","$L6",null,{"variant":"caption","children":"Developed by RWB since 2021.05"}]]}],["$","$L5",null,{"alignItems":"center","direction":"row","gap":0.5,"children":[["$","$L1e",null,{"fontSize":"inherit","htmlColor":"crimson"}],["$","$L6",null,{"variant":"caption","children":"5th upgraded at 2024.05"}]]}]]}],["$","img",null,{"alt":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23484848&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23242424&url=https%3A%2F%2Fblog.itcode.dev","data-component":"Hits","src":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23484848&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23242424&url=https%3A%2F%2Fblog.itcode.dev"}]]}]}]]}]]}],null]]},["$","$L1f",null,{"parallelRouterKey":"children","segmentPath":["children","$20","children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L21",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/53da9f19d95a44ac.css","precedence":"next","crossOrigin":""}]]}]]},[null,["$","html",null,{"lang":"ko","children":["$","body",null,{"children":["$","$22",null,{"children":["$","$L23",null,{"children":["$","$L24",null,{"children":[["$","$L1f",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L21",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}],["$","$L25",null,{}],["$","$L26",null,{}]]}]}]}]}]}],null]],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/a3507890a8a83f16.css","precedence":"next","crossOrigin":""}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/6961771bdd90d9c6.css","precedence":"next","crossOrigin":""}]],"$L27"]]]]
+27:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 8. 프로세스 구현하기 - 𝝅번째 알파카의 개발 낙서장"}],["$","meta","3",{"name":"description","content":"4장부터 7장까지 진행하며 각 플랫폼의 인증 모듈을 구현했다. 이 장에서는 모듈을 사용하는 주체인 프로세스를 구현한다. 프로세스는 HTTP 메소드에 따라 구분하여 관리한다."}],["$","meta","4",{"name":"application-name","content":"𝝅번째 알파카의 개발 낙서장"}],["$","link","5",{"rel":"author","href":"https://github.com/RWB0104"}],["$","meta","6",{"name":"author","content":"Kapoo"}],["$","link","7",{"rel":"author","href":"https://www.linkedin.com/in/itcode"}],["$","meta","8",{"name":"author","content":"RWB"}],["$","link","9",{"rel":"manifest","href":"/manifest.webmanifest"}],["$","meta","10",{"name":"generator","content":"Next.js"}],["$","meta","11",{"name":"keywords","content":"JAVA,OAuth2.0"}],["$","meta","12",{"name":"creator","content":"RWB"}],["$","meta","13",{"name":"publisher","content":"GitHub Pages"}],["$","meta","14",{"property":"og:title","content":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 8. 프로세스 구현하기 - 𝝅번째 알파카의 개발 낙서장"}],["$","meta","15",{"property":"og:description","content":"4장부터 7장까지 진행하며 각 플랫폼의 인증 모듈을 구현했다. 이 장에서는 모듈을 사용하는 주체인 프로세스를 구현한다. 프로세스는 HTTP 메소드에 따라 구분하여 관리한다."}],["$","meta","16",{"property":"og:url","content":"https://blog.itcode.dev/posts/2021/10/24/oauth2-java-server-8"}],["$","meta","17",{"property":"og:site_name","content":"𝝅번째 알파카의 개발 낙서장"}],["$","meta","18",{"property":"og:locale","content":"ko-KR"}],["$","meta","19",{"property":"og:image","content":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png"}],["$","meta","20",{"property":"og:type","content":"website"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:title","content":"[OAuth2.0] ScribeJAVA로 OAuth2.0 인증서버 구축하기 - 8. 프로세스 구현하기 - 𝝅번째 알파카의 개발 낙서장"}],["$","meta","23",{"name":"twitter:description","content":"4장부터 7장까지 진행하며 각 플랫폼의 인증 모듈을 구현했다. 이 장에서는 모듈을 사용하는 주체인 프로세스를 구현한다. 프로세스는 HTTP 메소드에 따라 구분하여 관리한다."}],["$","meta","24",{"name":"twitter:image","content":"https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png"}],["$","link","25",{"rel":"icon","href":"/favicon.ico"}],["$","link","26",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","27",{"rel":"apple-touch-icon","href":"/favicon.ico"}],["$","meta","28",{"name":"next-size-adjust"}]]
+1:null

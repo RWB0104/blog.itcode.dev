@@ -1,264 +1,223 @@
-1:HL["/_next/static/media/17d789ad52fa3db3-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-2:HL["/_next/static/media/53595b3b2a2bc7fe-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-3:HL["/_next/static/media/6e5e69ce8a001790-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-4:HL["/_next/static/css/7e72925424d61cb2.css","style",{"crossOrigin":""}]
-5:HL["/_next/static/css/f661f8399e37b45e.css","style",{"crossOrigin":""}]
-6:HL["/_next/static/css/5bd1cfb45e9495b4.css","style",{"crossOrigin":""}]
-0:["ohLfXJiVJiSguL2CG6Bpu",[[["",{"children":[["markdown","posts/2021/11/07/nextjs-reorganization-5","c"],{"children":["__PAGE__?{\"markdown\":[\"posts\",\"2021\",\"11\",\"07\",\"nextjs-reorganization-5\"]}",{}]}]},"$undefined","$undefined",true],"$L7",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/7e72925424d61cb2.css","precedence":"next","crossOrigin":""}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/f661f8399e37b45e.css","precedence":"next","crossOrigin":""}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/5bd1cfb45e9495b4.css","precedence":"next","crossOrigin":""}]],"$L8"]]]]
-9:HL["/_next/static/css/86391cacb09421ad.css","style",{"crossOrigin":""}]
-a:I[46544,["912","static/chunks/912-79acab5e8493ca50.js","14","static/chunks/14-2df9062aa7ee4596.js","690","static/chunks/690-8578563e9852d8ce.js","4","static/chunks/4-ce0deb4c1b4e499e.js","185","static/chunks/app/layout-21fc97f2746b88f3.js"],""]
-b:I[39587,["912","static/chunks/912-79acab5e8493ca50.js","14","static/chunks/14-2df9062aa7ee4596.js","690","static/chunks/690-8578563e9852d8ce.js","4","static/chunks/4-ce0deb4c1b4e499e.js","185","static/chunks/app/layout-21fc97f2746b88f3.js"],""]
-c:I[37151,["912","static/chunks/912-79acab5e8493ca50.js","14","static/chunks/14-2df9062aa7ee4596.js","690","static/chunks/690-8578563e9852d8ce.js","4","static/chunks/4-ce0deb4c1b4e499e.js","185","static/chunks/app/layout-21fc97f2746b88f3.js"],""]
-d:I[38310,[],""]
-e:I[7717,[],""]
-f:I[69229,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-10:I[48602,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-11:I[97750,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-12:I[26360,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","288","static/chunks/288-dd82034089bf753f.js","602","static/chunks/602-c635d1995b986cae.js","160","static/chunks/app/not-found-9607d7058a6a4733.js"],""]
-13:I[17318,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","288","static/chunks/288-dd82034089bf753f.js","602","static/chunks/602-c635d1995b986cae.js","160","static/chunks/app/not-found-9607d7058a6a4733.js"],""]
-15:I[42815,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-16:I[68310,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-17:I[47921,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-18:I[66521,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-19:I[88634,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-1a:I[95879,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-1b:I[90992,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-1c:I[4393,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-1d:I[48186,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-1e:I[73961,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-1f:I[26102,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-20:I[43167,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-21:I[47117,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-104:I[70839,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-105:I[1739,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-106:I[95990,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-107:I[36712,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-10b:I[9667,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-10c:I[98278,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-10d:I[31594,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-10e:I[79705,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-10f:I[13709,["119","static/chunks/301b156a-beaf09af8cb1e5d2.js","912","static/chunks/912-79acab5e8493ca50.js","658","static/chunks/658-f27a2eee618e5742.js","14","static/chunks/14-2df9062aa7ee4596.js","180","static/chunks/180-ac76b8706cc15499.js","288","static/chunks/288-dd82034089bf753f.js","818","static/chunks/818-dd4d6d9e06c7b58b.js","690","static/chunks/690-8578563e9852d8ce.js","121","static/chunks/121-798805bb6a2c84a6.js","619","static/chunks/619-84d3bdf2106743ee.js","602","static/chunks/602-c635d1995b986cae.js","41","static/chunks/41-a0cad4b8844d0c50.js","78","static/chunks/app/%5B...markdown%5D/page-f0506152c7e37d2e.js"],""]
-23:{}
-26:{"align":"center"}
-2a:{"line":113,"column":3,"offset":1770}
-2b:{"line":113,"column":7,"offset":1774}
-29:{"start":"$2a","end":"$2b"}
-28:{"type":"text","value":"파라미터","position":"$29"}
-27:["$28"]
-2d:{"line":113,"column":1,"offset":1768}
-2e:{"line":113,"column":8,"offset":1775}
-2c:{"start":"$2d","end":"$2e"}
-25:{"type":"element","tagName":"th","properties":"$26","children":"$27","position":"$2c"}
-30:{"align":"center"}
-34:{"line":113,"column":12,"offset":1779}
-35:{"line":113,"column":14,"offset":1781}
-33:{"start":"$34","end":"$35"}
-32:{"type":"text","value":"형식","position":"$33"}
-31:["$32"]
-37:{"line":113,"column":8,"offset":1775}
-38:{"line":113,"column":17,"offset":1784}
-36:{"start":"$37","end":"$38"}
-2f:{"type":"element","tagName":"th","properties":"$30","children":"$31","position":"$36"}
-3a:{"align":"center"}
-3e:{"line":113,"column":19,"offset":1786}
-3f:{"line":113,"column":21,"offset":1788}
-3d:{"start":"$3e","end":"$3f"}
-3c:{"type":"text","value":"필수","position":"$3d"}
-3b:["$3c"]
-41:{"line":113,"column":17,"offset":1784}
-42:{"line":113,"column":23,"offset":1790}
-40:{"start":"$41","end":"$42"}
-39:{"type":"element","tagName":"th","properties":"$3a","children":"$3b","position":"$40"}
-44:{"align":"center"}
-48:{"line":113,"column":25,"offset":1792}
-49:{"line":113,"column":27,"offset":1794}
-47:{"start":"$48","end":"$49"}
-46:{"type":"text","value":"내용","position":"$47"}
-45:["$46"]
-4b:{"line":113,"column":23,"offset":1790}
-4c:{"line":113,"column":30,"offset":1797}
-4a:{"start":"$4b","end":"$4c"}
-43:{"type":"element","tagName":"th","properties":"$44","children":"$45","position":"$4a"}
-24:["$25","$2f","$39","$43"]
-4e:{"line":113,"column":1,"offset":1768}
-4f:{"line":113,"column":30,"offset":1797}
-4d:{"start":"$4e","end":"$4f"}
-22:{"type":"element","tagName":"tr","properties":"$23","children":"$24","position":"$4d"}
-51:{}
-54:{"align":"center"}
-57:{}
-5b:{"line":115,"column":4,"offset":1841}
-5c:{"line":115,"column":10,"offset":1847}
-5a:{"start":"$5b","end":"$5c"}
-59:{"type":"text","value":"code","position":"$5a"}
-58:["$59"]
-5e:{"line":115,"column":4,"offset":1841}
-5f:{"line":115,"column":10,"offset":1847}
-5d:{"start":"$5e","end":"$5f"}
-56:{"type":"element","tagName":"code","properties":"$57","children":"$58","position":"$5d"}
-55:["$56"]
-61:{"line":115,"column":1,"offset":1838}
-62:{"line":115,"column":12,"offset":1849}
-60:{"start":"$61","end":"$62"}
-53:{"type":"element","tagName":"td","properties":"$54","children":"$55","position":"$60"}
-64:{"align":"center"}
-67:{}
-6b:{"line":115,"column":14,"offset":1851}
-6c:{"line":115,"column":22,"offset":1859}
-6a:{"start":"$6b","end":"$6c"}
-69:{"type":"text","value":"string","position":"$6a"}
-68:["$69"]
-6e:{"line":115,"column":14,"offset":1851}
-6f:{"line":115,"column":22,"offset":1859}
-6d:{"start":"$6e","end":"$6f"}
-66:{"type":"element","tagName":"code","properties":"$67","children":"$68","position":"$6d"}
-65:["$66"]
-71:{"line":115,"column":12,"offset":1849}
-72:{"line":115,"column":23,"offset":1860}
-70:{"start":"$71","end":"$72"}
-63:{"type":"element","tagName":"td","properties":"$64","children":"$65","position":"$70"}
-74:{"align":"center"}
-78:{"line":115,"column":27,"offset":1864}
-79:{"line":115,"column":28,"offset":1865}
-77:{"start":"$78","end":"$79"}
-76:{"type":"text","value":"Y","position":"$77"}
-75:["$76"]
-7b:{"line":115,"column":23,"offset":1860}
-7c:{"line":115,"column":31,"offset":1868}
-7a:{"start":"$7b","end":"$7c"}
-73:{"type":"element","tagName":"td","properties":"$74","children":"$75","position":"$7a"}
-7e:{"align":"center"}
-82:{"line":115,"column":33,"offset":1870}
-83:{"line":115,"column":35,"offset":1872}
-81:{"start":"$82","end":"$83"}
-80:{"type":"text","value":"코드","position":"$81"}
-7f:["$80"]
-85:{"line":115,"column":31,"offset":1868}
-86:{"line":115,"column":38,"offset":1875}
-84:{"start":"$85","end":"$86"}
-7d:{"type":"element","tagName":"td","properties":"$7e","children":"$7f","position":"$84"}
-52:["$53","$63","$73","$7d"]
-88:{"line":115,"column":1,"offset":1838}
-89:{"line":115,"column":38,"offset":1875}
-87:{"start":"$88","end":"$89"}
-50:{"type":"element","tagName":"tr","properties":"$51","children":"$52","position":"$87"}
-8b:{}
-8e:{"align":"center"}
-91:{}
-95:{"line":116,"column":4,"offset":1879}
-96:{"line":116,"column":10,"offset":1885}
-94:{"start":"$95","end":"$96"}
-93:{"type":"text","value":"lang","position":"$94"}
-92:["$93"]
-98:{"line":116,"column":4,"offset":1879}
-99:{"line":116,"column":10,"offset":1885}
-97:{"start":"$98","end":"$99"}
-90:{"type":"element","tagName":"code","properties":"$91","children":"$92","position":"$97"}
-8f:["$90"]
-9b:{"line":116,"column":1,"offset":1876}
-9c:{"line":116,"column":12,"offset":1887}
-9a:{"start":"$9b","end":"$9c"}
-8d:{"type":"element","tagName":"td","properties":"$8e","children":"$8f","position":"$9a"}
-9e:{"align":"center"}
-a1:{}
-a5:{"line":116,"column":14,"offset":1889}
-a6:{"line":116,"column":22,"offset":1897}
-a4:{"start":"$a5","end":"$a6"}
-a3:{"type":"text","value":"string","position":"$a4"}
-a2:["$a3"]
-a8:{"line":116,"column":14,"offset":1889}
-a9:{"line":116,"column":22,"offset":1897}
-a7:{"start":"$a8","end":"$a9"}
-a0:{"type":"element","tagName":"code","properties":"$a1","children":"$a2","position":"$a7"}
-9f:["$a0"]
-ab:{"line":116,"column":12,"offset":1887}
-ac:{"line":116,"column":23,"offset":1898}
-aa:{"start":"$ab","end":"$ac"}
-9d:{"type":"element","tagName":"td","properties":"$9e","children":"$9f","position":"$aa"}
-ae:{"align":"center"}
-b2:{"line":116,"column":27,"offset":1902}
-b3:{"line":116,"column":28,"offset":1903}
-b1:{"start":"$b2","end":"$b3"}
-b0:{"type":"text","value":"N","position":"$b1"}
-af:["$b0"]
-b5:{"line":116,"column":23,"offset":1898}
-b6:{"line":116,"column":31,"offset":1906}
-b4:{"start":"$b5","end":"$b6"}
-ad:{"type":"element","tagName":"td","properties":"$ae","children":"$af","position":"$b4"}
-b8:{"align":"center"}
-bc:{"line":116,"column":33,"offset":1908}
-bd:{"line":116,"column":35,"offset":1910}
-bb:{"start":"$bc","end":"$bd"}
-ba:{"type":"text","value":"언어","position":"$bb"}
-b9:["$ba"]
-bf:{"line":116,"column":31,"offset":1906}
-c0:{"line":116,"column":38,"offset":1913}
-be:{"start":"$bf","end":"$c0"}
-b7:{"type":"element","tagName":"td","properties":"$b8","children":"$b9","position":"$be"}
-8c:["$8d","$9d","$ad","$b7"]
-c2:{"line":116,"column":1,"offset":1876}
-c3:{"line":116,"column":38,"offset":1913}
-c1:{"start":"$c2","end":"$c3"}
-8a:{"type":"element","tagName":"tr","properties":"$8b","children":"$8c","position":"$c1"}
-c5:{}
-c8:{"align":"center"}
-cc:{"line":118,"column":5,"offset":1919}
-cd:{"line":118,"column":7,"offset":1921}
-cb:{"start":"$cc","end":"$cd"}
-ca:{"type":"text","value":"형식","position":"$cb"}
-c9:["$ca"]
-cf:{"line":118,"column":1,"offset":1915}
-d0:{"line":118,"column":10,"offset":1924}
-ce:{"start":"$cf","end":"$d0"}
-c7:{"type":"element","tagName":"th","properties":"$c8","children":"$c9","position":"$ce"}
-d2:{"align":"center"}
-d6:{"line":118,"column":15,"offset":1929}
-d7:{"line":118,"column":17,"offset":1931}
-d5:{"start":"$d6","end":"$d7"}
-d4:{"type":"text","value":"내용","position":"$d5"}
-d3:["$d4"]
-d9:{"line":118,"column":10,"offset":1924}
-da:{"line":118,"column":23,"offset":1937}
-d8:{"start":"$d9","end":"$da"}
-d1:{"type":"element","tagName":"th","properties":"$d2","children":"$d3","position":"$d8"}
-c6:["$c7","$d1"]
-dc:{"line":118,"column":1,"offset":1915}
-dd:{"line":118,"column":23,"offset":1937}
-db:{"start":"$dc","end":"$dd"}
-c4:{"type":"element","tagName":"tr","properties":"$c5","children":"$c6","position":"$db"}
-df:{}
-e2:{"align":"center"}
-e5:{}
-e9:{"line":120,"column":3,"offset":1967}
-ea:{"line":120,"column":11,"offset":1975}
-e8:{"start":"$e9","end":"$ea"}
-e7:{"type":"text","value":"string","position":"$e8"}
-e6:["$e7"]
-ec:{"line":120,"column":3,"offset":1967}
-ed:{"line":120,"column":11,"offset":1975}
-eb:{"start":"$ec","end":"$ed"}
-e4:{"type":"element","tagName":"code","properties":"$e5","children":"$e6","position":"$eb"}
-e3:["$e4"]
-ef:{"line":120,"column":1,"offset":1965}
-f0:{"line":120,"column":12,"offset":1976}
-ee:{"start":"$ef","end":"$f0"}
-e1:{"type":"element","tagName":"td","properties":"$e2","children":"$e3","position":"$ee"}
-f2:{"align":"center"}
-f6:{"line":120,"column":14,"offset":1978}
-f7:{"line":120,"column":20,"offset":1984}
-f5:{"start":"$f6","end":"$f7"}
-f4:{"type":"text","value":"렌더링 결과","position":"$f5"}
-f3:["$f4"]
-f9:{"line":120,"column":12,"offset":1976}
-fa:{"line":120,"column":22,"offset":1986}
-f8:{"start":"$f9","end":"$fa"}
-f1:{"type":"element","tagName":"td","properties":"$f2","children":"$f3","position":"$f8"}
-e0:["$e1","$f1"]
-fc:{"line":120,"column":1,"offset":1965}
-fd:{"line":120,"column":22,"offset":1986}
-fb:{"start":"$fc","end":"$fd"}
-de:{"type":"element","tagName":"tr","properties":"$df","children":"$e0","position":"$fb"}
-fe:T502,$fd: 18px;
+2:I[96815,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+3:I[77224,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+4:I[96525,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+5:I[32911,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+6:I[94103,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+7:I[914,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+8:I[85737,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+9:I[66304,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+a:I[13239,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+b:I[84246,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+c:I[29027,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+d:I[97747,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+f:I[91012,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+10:I[13205,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+11:I[14148,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+12:I[10536,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+13:I[94120,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+14:I[12760,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+15:I[92928,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+16:I[30667,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+17:I[58789,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+18:I[51444,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+19:I[45488,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+1a:I[78074,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+1b:I[66024,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+1c:I[1573,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+1d:I[63615,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+1e:I[61260,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","694","static/chunks/694-68c4dfad6d18016a.js","78","static/chunks/app/%5B...markdown%5D/page-36adc57b88a6cba9.js"],""]
+1f:I[23845,[],""]
+21:I[23979,[],""]
+22:"$Sreact.suspense"
+23:I[72990,["286","static/chunks/286-5f2793dfa337861d.js","693","static/chunks/693-ba2d04fe6893373f.js","185","static/chunks/app/layout-04286cb809ef2438.js"],""]
+24:I[41043,["286","static/chunks/286-5f2793dfa337861d.js","693","static/chunks/693-ba2d04fe6893373f.js","185","static/chunks/app/layout-04286cb809ef2438.js"],""]
+25:I[64073,["286","static/chunks/286-5f2793dfa337861d.js","693","static/chunks/693-ba2d04fe6893373f.js","185","static/chunks/app/layout-04286cb809ef2438.js"],""]
+26:I[90838,["286","static/chunks/286-5f2793dfa337861d.js","693","static/chunks/693-ba2d04fe6893373f.js","185","static/chunks/app/layout-04286cb809ef2438.js"],""]
+e:T55b3,
+# 개요
+
+이전 장에서 marked를 활용하여 이 블로그만의 마크다운 변환기를 구현했다. 이 변환기를 활용하여 밋밋한 코드블럭을 좀 더 IDE 같게 개선해보자.
+
+
+
+
+
+
+
+
+
+
+# 마크다운의 코드블럭
+
+마크다운은 백틱(backtick)을 통해 코드블럭을 작성한다. 코드블럭의 종류는 인라인(inline) 형태와 블럭(block) 형태가 있다.
+
+
+
+
+
+## 인라인형 코드블럭
+
+인라인형 코드블럭은 백틱을 한 번 사용하여 표기하며, 아래와 같은 특징이 있다.
+
+* 인라인 형태로 글 중간에 삽입하여 이어 쓰는 것이 가능
+* 리스트, 표 등 어느 형태에서든 사용이 가능
+
+`inline code block의 예시`는 이와 같다.
+
+
+
+
+
+## 블럭형 코드블럭
+
+블럭형 코드블럭은 백틱을 세 번 사용하여 표기하며, 아래와 같은 특징이 있다.
+
+* 블럭 형태로 온전히 한 공간을 차지함
+* 공간을 차지하므로, 글 중간에 이어 쓰거나, 리스트나 표에 쓰는 것이 불가능
+* `html`, `markdown` 등의 언어 지정을 지원하므로, 언어별로 디테일한 코드 표현이 가능
+
+``` javascript
+const test = 'block codeblock test';
+
+alert(test);
+```
+
+블럭형 코드블럭의 예시는 위와 같다. GitHub와 같이 마크다운을 지원하는 사이트의 경우, 코드블럭을 통해 해당하는 언어의 하이라이팅을 지원하기도 한다.
+
+
+
+
+
+
+
+
+
+
+# 블럭형 코드블럭 디자인 개선하기
+
+인라인형과 코드형 중에서 블럭형 코드블럭의 디자인을 개선해보자. 블럭형의 경우 인라인형과 달리 블럭 형태로 하나의 구역을 차지하며, 코드를 표기하기 때문에 디자인할 요소가 많은 편이다.
+
+개선할 항목은 아래와 같다.
+
+* 기본적인 디자인 프레임 변경
+* 사용된 언어(JAVA, C# 등) 표시
+* 내용 복사 버튼 추가
+* 라인 숫자 표시
+* 라인별 색상 구분 표시
+* 마우스 오버 시 해당 라인 하이라이팅 구현
+
+순차적으로 기능을 추가해보자
+
+
+
+
+
+## 기본적인 디자인 프레임 변경하기
+
+밋밋한 형태의 코드블럭 디자인을 변경하자. 외국 블로그에서 봤었던 코드블럭 형태 중 이쁘다고 생각했던 디자인을 모티브로 만들었다.
+
+원랜 직접 보면서 디자인하려 했는데, 막상 찾으려고 하니 나오질 않아서 기억속에 어렴풋이 남아있는 디자인을 되짚어보며 구상했다.
+
+![null](https://user-images.githubusercontent.com/50317129/140773168-5d03d708-dfd1-4f96-8aaa-0da1c0ab1a84.png)
+
+위와 같이 창 형태의 디자인을 취하며, 좌측 상단에 매킨토시의 창 컨텍스트가 달려있다.
+
+이미지를 사용할 수도 있겠지만, 태그로 구현할 수 있는건 가급적 태그로 구현하거나 정 여의치 않는다면 SVG로 구현하고자 하는 편이다. 이 디자인의 경우 복잡한 문양이 없으므로 HTML 태그 단계에서 모두 구현할 수 있을 것 같다.
+
+적용할 레이아웃은 위와 같다. 이를 HTML로 나타내면 아래와 같다.
+
+``` html
+<div>
+	<!-- 헤더 -->
+	<div>
+		<div><!-- 적색 버튼 --></div>
+		<div><!-- 황색 버튼 --></div>
+		<div><!-- 녹색 버튼 --></div>
+	</div>
+
+	<pre>
+		<!-- 코드 내용 -->
+	</pre>
+</div>
+```
+
+렌더러가 코드블럭을 위와 같은 디자인으로 렌더링하도록 변경하자.
+
+`marked`에서 블럭형 코드 블럭의 렌더러는 `renderer.code`로 정의된다. 해당 객체의 함수를 오버라이딩하면 된다.
+
+| 파라미터 |   형식   | 필수  | 내용  |
+| :------: | :------: | :---: | :---: |
+|  `code`  | `string` |   Y   | 코드  |
+|  `lang`  | `string` |   N   | 언어  |
+
+|   형식   |    내용     |
+| :------: | :---------: |
+| `string` | 렌더링 결과 |
+
+`renderer.code`의 파라미터와 반환값의 정의는 위 표와 같다. 위 정의에 부합하는 함수를 작성하면 된다.
+
+``` typescript
+loadLanguage([ 'javascript', 'typescript', 'java', 'html', 'css', 'json', 'scss', 'sass', 'sql', 'batch', 'bash' ]);
+
+const renderer = new marked.Renderer();
+
+// 코드블럭 렌더링
+renderer.code = (code: string, lang: string | undefined): string =>
+{
+	// 유효한 언어가 있을 경우
+	if (lang && renderer?.options?.highlight)
+	{
+		code = renderer.options.highlight(code, lang as string) as string;
+
+		const langClass = 'language-' + lang;
+
+		return `
+			<div class="codeblock">
+				<div class="top">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+
+				<pre class="${langClass}">
+					${code}
+				</pre>
+			</div>
+		`;
+	}
+
+	// 없을 경우
+	else
+	{
+		lang = 'unknown';
+
+		const langClass = 'language-' + lang;
+
+		return `
+			<div class="codeblock">
+				<div class="top">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+
+				<pre class="${langClass}">
+					${code}
+				</pre>
+			</div>
+		`;
+	}
+};
+```
+
+위와 같이 함수를 오버라이딩해서 블럭형 코드 블럭의 렌더링 결과를 변경한다.
+
+만약 언어가 같이 표기될 경우 `PrismJS`로 하이라이팅을 적용하고, 언어가 미표기될 경우 텍스트 그대로 코드 블럭에 지정하는 방식이다.
+
+각 태그가 레이아웃대로 위치하도록 스타일 코드를 지정한다.
+
+``` scss
+$fd: 18px;
 $fm: 14px;
 
 pre[class*="language-"],
@@ -349,98 +308,191 @@ code:not([class*="language-"]) {
 		}
 	}
 }
-ff:T502,$fd: 18px;
-$fm: 14px;
+```
 
-pre[class*="language-"],
-code[class*="language-"] {
-	@include gutter;
+레이아웃에 지정된 스타일은 위와 같다.
 
-	background-color: #161d2c;
-	padding: 55px 20px 20px 20px !important;
 
-	border-radius: 10px;
 
-	font-family: Hack, AppleSDGothicNeo, sans-serif;
-	color: white;
 
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	word-wrap: normal;
 
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
+## 사용된 언어 표시하기
 
-	overflow: auto;
-}
+사용된 언어를 표시해주면 사용자가 코드 블럭의 언어를 더욱 쉽게 파악할 수 있을 것이며, 작성자가 일일히 별도로 코드를 안내해주는 수고도 덜 수 있을 것이다.
 
-code:not([class*="language-"]) {
-	color: white;
+블럭형 코드 블럭의 렌더러 함수인 `renderer.code`에서 `lang` 파라미터에 사용된 언어가 할당된다. 우리는 이 파라미터를 통해 사용된 언어를 파악하고, 이를 적절히 사용할 수 있다.
 
-	font-family: Hack, AppleSDGothicNeo, sans-serif;
-	font-size: $fd - 4px;
+위 디자인 기준으로, 헤더 부분에 언어를 표시해주는 것이 좋아보인다.
 
-	display: inline-block;
+``` typescript
+loadLanguage([ 'javascript', 'typescript', 'java', 'html', 'css', 'json', 'scss', 'sass', 'sql', 'batch', 'bash' ]);
 
-	padding: 0px 4px;
-	margin: 0px 3px;
+const renderer = new marked.Renderer();
 
-	border-radius: 5px;
+// 코드블럭 렌더링
+renderer.code = (code: string, lang: string | undefined): string =>
+{
+	// 유효한 언어가 있을 경우
+	if (lang && renderer?.options?.highlight)
+	{
+		code = renderer.options.highlight(code, lang as string) as string;
 
-	@media (max-width: 960px) {
-		font-size: $fm - 4px;
+		const langClass = 'language-' + lang;
+
+		return `
+			<div class="codeblock">
+				<div class="top">
+					<p>${lang.toUpperCase()}</p>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+
+				<pre class="${langClass}">
+					${code}
+				</pre>
+			</div>
+		`;
 	}
-}
 
-.codeblock {
-	position: relative;
+	// 없을 경우
+	else
+	{
+		lang = 'unknown';
 
-	.top {
-		position: absolute;
+		const langClass = 'language-' + lang;
 
-		top: 0px;
-		left: 0px;
+		return `
+			<div class="codeblock">
+				<div class="top">
+					<p>${lang.toUpperCase()}</p>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
 
-		width: 100%;
-		padding: 5px 20px;
+				<pre class="${langClass}">
+					${code}
+				</pre>
+			</div>
+		`;
+	}
+};
+```
 
-		background-color: #2b3445;
+`div.top` 영역에 사용된 언어를 대문자로 표시하도록 구성한다.
 
-		border-top-left-radius: 10px;
-		border-top-right-radius: 10px;
+필요하다면 디자인을 수정해줄 수도 있다. 필자의 경우 폰트 색상 정도만 변경했다.
 
-		display: flex;
-		flex-direction: row;
+``` scss
+.top {
+	/* top scss 생략됨 */
 
-		align-items: center;
+	div {
+		width: 15px;
+		height: 15px;
 
-		div {
-			width: 15px;
-			height: 15px;
+		border-radius: 50%;
 
-			border-radius: 50%;
+		margin: 0px 5px;
 
-			margin: 0px 5px;
+		p {
+			margin: 0px;
+			flex-grow: 1;
 
-			&:nth-child(2) {
-				background-color: #fe5f57;
-			}
+			color: map-get($yellow, "400");
+		}
 
-			&:nth-child(3) {
-				background-color: #ffbd2e;
-			}
+		&:nth-child(2) {
+			background-color: #fe5f57;
+		}
 
-			&:nth-child(4) {
-				background-color: #29c941;
-			}
+		&:nth-child(3) {
+			background-color: #ffbd2e;
+		}
+
+		&:nth-child(4) {
+			background-color: #29c941;
 		}
 	}
 }
-100:T86b,loadLanguage([ 'javascript', 'typescript', 'java', 'html', 'css', 'json', 'scss', 'sass', 'sql', 'batch', 'bash' ]);
+```
+
+`p` 태그의 스타일을 추가한다.
+
+
+
+
+
+## 내용 복사 버튼 추가하기
+
+개발자 친화적인 사이트의 코드블럭 대부분은 코드블럭의 내용을 복사하는 버튼을 제공한다. 이를 통해 사용자는 굳이 내용 전체를 드래그하지 않고도 코드블럭의 내용을 손쉽게 복사할 수 있다.
+
+블럭형 코드블럭 렌더링 시 버튼을 추가하고, 클릭 이벤트에 코드블럭의 내용을 복사하도록 지정하는 스크립트를 추가하면 될 것이다.
+
+``` html
+<button onclick="copyCode(this);">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-icon="clipboard" class="i-clipboard">
+		<path fill="currentColor" d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z"></path>
+	</svg>
+</button>
+```
+
+레이아웃은 위와 같다. 버튼 하나가 추가된다. 버튼 클릭 시, 버튼 레이아웃에 포함된 코드 블럭을 찾아 해당 내용을 클립보드에 저장하는 스크립트가 포함되어있다.
+
+버튼의 아이콘은 SVG로 사용했다.
+
+``` javascript
+/**
+ * 코드 복사 함수
+ *
+ * @param {DOMElement} dom: HTML DOM
+ */
+function copyCode(dom)
+{
+	window.getSelection().selectAllChildren(dom.parentElement.querySelector('pre'));
+	document.execCommand('copy');
+
+	const origin = dom.innerHTML;
+	dom.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-icon="check" class="i-check"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>';
+
+	setTimeout(() => dom.innerHTML = origin, 1000);
+}
+```
+
+코드 복사 메서드인 `copyCode`는 위와 같이 구성했다. 복사 버튼 상위의 가장 가까운 `pre` 태그를 찾아서, 해당 내용을 복사한다. 또한 약 1초 간 버튼의 SVG를 체크 아이콘으로 변경한다.
+
+``` scss
+button {
+	position: absolute;
+
+	top: 50px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+
+	background-color: #1e2739;
+	cursor: pointer;
+
+	border: 1px solid map-get($grey, "600");
+	border-radius: 10px;
+
+	opacity: 0;
+
+	transition: 0.5s;
+
+	&:hover {
+		transition: 0.5s;
+	}
+}
+```
+
+스타일 코드는 이와 같다. 항상 고정적인 위치에 나타나도록 absolute 기반의 레이아웃을 채택했다.
+
+이를 바탕으로 렌더러가 코드 블럭의 렌더링 과정에 추가하자.
+
+``` typescript
+loadLanguage([ 'javascript', 'typescript', 'java', 'html', 'css', 'json', 'scss', 'sass', 'sql', 'batch', 'bash' ]);
 
 const renderer = new marked.Renderer();
 
@@ -505,72 +557,87 @@ renderer.code = (code: string, lang: string | undefined): string =>
 		`;
 	}
 };
-101:T86b,loadLanguage([ 'javascript', 'typescript', 'java', 'html', 'css', 'json', 'scss', 'sass', 'sql', 'batch', 'bash' ]);
+```
 
-const renderer = new marked.Renderer();
+코드블럭에 버튼이 추가된다.
 
-// 코드블럭 렌더링
-renderer.code = (code: string, lang: string | undefined): string =>
-{
-	// 유효한 언어가 있을 경우
-	if (lang && renderer?.options?.highlight)
-	{
-		code = renderer.options.highlight(code, lang as string) as string;
 
-		const langClass = 'language-' + lang;
 
-		return `
-			<div class="codeblock">
-				<div class="top">
-					<p>${lang.toUpperCase()}</p>
-					<div></div>
-					<div></div>
-					<div></div>
-				</div>
 
-				<button onclick="copyCode(this);">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-icon="clipboard" class="i-clipboard">
-						<path fill="currentColor" d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z"></path>
-					</svg>
-				</button>
 
-				<pre class="${langClass}">
-					${code}
-				</pre>
-			</div>
-		`;
+## 라인 숫자 표시하기
+
+간혹 코드를 설명하다보면 코드의 특정 부분을 설명해야할 경우가 생긴다. 이 경우 보통 어느 줄의 코드를 보라는 식으로 안내하지만, 코드 블럭에 라인 숫자가 표시되지 않을 경우, 사용자가 직접 코드의 줄을 찾아 확인해야하는 번거로움이 생긴다. 만약 코드가 페이지를 넘어갈 정도로 길 경우 불편함은 배로 증가하며, 이는 컨텐츠의 질 마저 하락시키는 결과로 이어진다.
+
+사용자가 코드를 읽는데 좀 더 도움을 줄 수 있도록, 라인 숫자를 표시해보자.
+
+``` html
+<table>
+	<tbody>
+		<tr>
+			<td><!-- 라인 넘버 --></td>
+			<td><!-- 코드 --></td>
+		</tr>
+
+		<tr>
+			<td><!-- 라인 넘버 --></td>
+			<td><!-- 코드 --></td>
+		</tr>
+
+		<tr>
+			<td><!-- 라인 넘버 --></td>
+			<td><!-- 코드 --></td>
+		</tr>
+
+		<tr>
+			<td><!-- 라인 넘버 --></td>
+			<td><!-- 코드 --></td>
+		</tr>
+	</tbody>
+</table>
+```
+
+라인 숫자는 코드 라인과 동일한 크기를 가져야한다. 만약 조금이라도 픽셀 차이가 날 경우, 코드 라인이 많아지면 많아질 수록 이격이 발생하게 될 것이다.
+
+이러한 차이를 맞추기 위해서, 테이블 형태의 레이아웃을 채택했다. `tr` 태그를 하나의 라인으로, 아래 두 `td` 태그를 통해 하나는 라인 숫자, 다른 하나는 코드 영역으로 분리한다. 동일한 `tr` 내부의 `td`는 같은 줄에 위치하는 테이블의 특성을 적극 활용하면 레이아웃 CSS에 그리 많은 힘을 들이지 않아도 될 것이다.
+
+``` scss
+table {
+	border-collapse: collapse;
+
+	& td {
+		line-height: $fd + 4px;
+
+		@media (max-width: 960px) {
+			line-height: $fm + 4px;
+		}
 	}
 
-	// 없을 경우
-	else
-	{
-		lang = 'unknown';
+	& td:nth-child(1) {
+		color: #455983;
+		padding-right: 10px;
 
-		const langClass = 'language-' + lang;
+		border-right: 1px solid #455983;
 
-		return `
-			<div class="codeblock">
-				<div class="top">
-					<p>${lang.toUpperCase()}</p>
-					<div></div>
-					<div></div>
-					<div></div>
-				</div>
+		text-align: right;
 
-				<button onclick="copyCode(this);">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-icon="clipboard" class="i-clipboard">
-						<path fill="currentColor" d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z"></path>
-					</svg>
-				</button>
-
-				<pre class="${langClass}">
-					${code}
-				</pre>
-			</div>
-		`;
+		user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
 	}
-};
-102:Tadb,loadLanguage([ 'javascript', 'typescript', 'java', 'html', 'css', 'json', 'scss', 'sass', 'sql', 'batch', 'bash' ]);
+
+	& td:nth-child(2) {
+		width: 100%;
+
+		padding: 0px 20px 0px 10px;
+	}
+}
+```
+
+디자인은 위와 같다. 첫 번째 `td`에 숫자를 표시하고, `border-right` 속성을 통해 구분선을 표시한다. 이를 토대로 코드 블럭 렌더러를 변경하자.
+
+``` typescript
+loadLanguage([ 'javascript', 'typescript', 'java', 'html', 'css', 'json', 'scss', 'sass', 'sql', 'batch', 'bash' ]);
 
 const renderer = new marked.Renderer();
 
@@ -651,90 +718,79 @@ renderer.code = (code: string, lang: string | undefined): string =>
 		`;
 	}
 };
-103:Tadb,loadLanguage([ 'javascript', 'typescript', 'java', 'html', 'css', 'json', 'scss', 'sass', 'sql', 'batch', 'bash' ]);
+```
 
-const renderer = new marked.Renderer();
+`map`을 통해 하나하나 `tr` 태그를 붙이므로, 이 과정에서 라인 숫자의 수를 파악할 수 있다. 첫 번째 `td`에 `map`의 인덱스 `index`가 지정되도록 구성했다. 태그의 의미론적인 측면을 강화하기 위해서 각 `tr`과 `td`의 `data-number` 속성으로 인덱스를 같이 지정한다. 인덱스의 시작이 0임에 주의하자.
 
-// 코드블럭 렌더링
-renderer.code = (code: string, lang: string | undefined): string =>
-{
-	// 유효한 언어가 있을 경우
-	if (lang && renderer?.options?.highlight)
-	{
-		code = renderer.options.highlight(code, lang as string) as string;
+예를 들어, 126번 째 줄은 아래와 같이 렌더링될 것이다.
 
-		const langClass = 'language-' + lang;
+``` html
+<tr data-number="126">
+	<td data-number="126">126</td>
+	<td data-number="126"><!-- code --></td>
+</tr>
+```
 
-		const line = code.split('\n').map((item, index) => `
-			<tr data-line=${index + 1}>
-				<td class="line-number" data-number="${index + 1}">${index + 1}</td>
-				<td class="line-code" data-number=${index + 1}>${item}</td>
-			</tr>`).join('\n').replace(/\t|\\n/, '');
 
-		return `
-			<div class="codeblock">
-				<div class="top">
-					<p>${lang.toUpperCase()}</p>
-					<div></div>
-					<div></div>
-					<div></div>
-				</div>
 
-				<button onclick="copyCode(this);">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-icon="clipboard" class="i-clipboard">
-						<path fill="currentColor" d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z"></path>
-					</svg>
-				</button>
 
-				<pre class="${langClass}">
-					<table>
-						<tbody>${line}</tbody>
-					</table>
-				</pre>
-			</div>
-		`;
+
+## 라인별 색상 구분하기
+
+인터넷에서 빼곡히 적힌 글을 읽다보면 가끔 읽던 글의 위치를 헷갈리기도 한다. 특히 코드의 경우 그 특성 상 문장의 의미가 매우 옅으며 복잡하기 때문에 헷갈리는 정도가 더욱 심해진다.
+
+이러한 피로를 줄이기 위하여 라인별로 색상을 다르게 칠해주면 읽는 과정의 피로도를 줄일 수 있을 것이다. 홀수와 짝수 라인의 색상을 서로 다르게 지정하는 전통적인 방법을 사용할 것이다.
+
+다행히도, 우리는 라인 숫자를 표시하기 위해 하나의 라인을 `tr` 태그로 관리하고 있다. 즉, 홀수 `tr`과 짝수 `tr`의 색상을 다르게 지정해주면 된다. `CSS`의 `nth-child` 선택자를 사용하면 매우 간단하게 해결할 수 있을 것이다.
+
+``` scss
+table {
+	& tr:nth-child(2n) {
+		background-color: #1c2335;
 	}
+}
+```
 
-	// 없을 경우
-	else
-	{
-		lang = 'unknown';
+색상은 기존의 코드 블럭의 디자인에 적절히 어울릴 수 있도록, 기존의 배경색에서 살짝 옅은 색을 지정했다. 짝수 라인의 색상이 살짝 옅어지도록 지정될 것이다.
 
-		const langClass = 'language-' + lang;
 
-		const line = code.split('\n').map((item, index) => `
-			<tr data-line=${index + 1}>
-				<td class="line-number" data-number="${index + 1}">${index + 1}</td>
-				<td class="line-code" data-number=${index + 1}>${item}</td>
-			</tr>`).join('\n').replace(/\t|\\n/, '');
 
-		return `
-			<div class="codeblock">
-				<div class="top">
-					<p>${lang.toUpperCase()}</p>
-					<div></div>
-					<div></div>
-					<div></div>
-				</div>
 
-				<button onclick="copyCode(this);">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-icon="clipboard" class="i-clipboard">
-						<path fill="currentColor" d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z"></path>
-					</svg>
-				</button>
 
-				<pre class="${langClass}">
-					<table>
-						<tbody>${line}</tbody>
-					</table>
-				</pre>
-			</div>
-		`;
+## 마우스 오버 시 해당 라인 하이라이팅하기
+
+코드 블럭에 상호작용 기능을 하나 더 추가해보자. 코드 라인에 마우스를 올렸을 때, 해당 라인에 하이라이팅이 되도록 구현한다. 사용자는 코드 블럭에 마우스를 올림으로써 자신이 읽고 있는 코드의 가독성을 증폭시킬 수 있으며, 코드 블럭과의 상호작용을 통해 컨텐츠의 흥미 또한 이끌어낼 수 있을 것이다.
+
+위와 마찬가지로, `:hover` 선택자를 통해 순수 `CSS` 영역에서 해결할 수 있다.
+
+``` scss
+table {
+	& tr:hover {
+		background-color: #546687;
+
+		& td:first-child {
+			color: white;
+		}
 	}
-};
-109:{"category":"NextJS","coverImage":"https://user-images.githubusercontent.com/50317129/134931033-89954c3d-5e00-4b3b-85aa-54a1dfa29e46.png","date":1635399406000,"excerpt":"정적 블로그는 마크다운을 적극적으로 사용한다. 일반적인 텍스트 기반에 매우 친숙하면서도 HTML과의 호환성 또한 매우 뛰어나기 때문이다. 기존의 블로그는 Remark, Rehype 플러그인을 사용했다. 여러 플러그인이 있어서 그냥저냥 사용하는덴 매우 편했지만, 사용자가 직접 변환과정을 커스터마이징하는 것이 매우 어려웠다. TOC, 코드블럭, 링크에 추가적인 기능, 디자인을 입히기 위해 HTML 태그를 입히고 싶은데, 관련 API가 없다보니 속절없이 주어진 태그만 그대로 사용할 수 밖에 없었다. 관련 정보를 찾아보던 중 marked 플러그인은 내가 원하는 요소를 충족시켜주는 것 같아, 블로그 개편 과정에서 마크다운 플러그인에도 많은 변화를 주었다. 이 장에서는 marked를 통해 마크다운을 HTML로 변환하는 과정에 대해 다룬다.","group":"블로그 개편기","title":"[NextJS] 블로그 개편기 - 4. marked를 활용한 마크다운 변환기 구현하기","type":"posts"}
-10a:["2021","10","28","nextjs-reorganization-4"]
-108:{"frontmatter":"$109","names":"$10a","url":"/posts/2021/10/28/nextjs-reorganization-4"}
-7:[null,["$","html",null,{"lang":"ko","children":[["$","head",null,{"children":["$","script",null,{"crossOrigin":"anonymous","src":"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5522045122225064","async":true}]}],["$","body",null,{"children":["$","$La",null,{"children":["$","$Lb",null,{"children":["$","$Lc",null,{"children":["$","$Ld",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Le",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","$Lf",null,{"alignItems":"center","data-component":"NotFoundTemplate","height":"100vh","justifyContent":"center","padding":2,"spacing":2,"width":"100%","children":[["$","$L10",null,{"iconName":"notFound","maxWidth":400,"width":"100%"}],["$","$L11",null,{"href":"/","children":["$","$L12",null,{"color":"inherit","size":"large","startIcon":["$","$L13",null,{}],"variant":"outlined","children":"이 방엔 아무것도 없어보인다."}]}]]}],"notFoundStyles":[],"childProp":{"current":["$","$Ld",null,{"parallelRouterKey":"children","segmentPath":["children",["markdown","posts/2021/11/07/nextjs-reorganization-5","c"],"children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Le",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$L14",["$","$L15",null,{"data-component":"PageTemplate","children":[["$","$L16",null,{}],["$","$L15",null,{"component":"main","children":[["$","$L17",null,{"type":"posts"}],["$","$Lf",null,{"alignItems":"center","data-component":"ViewTemplate","spacing":10,"children":[["$","$L18",null,{"cover":"https://user-images.githubusercontent.com/50317129/134931033-89954c3d-5e00-4b3b-85aa-54a1dfa29e46.png","children":["$","$Lf",null,{"alignItems":"center","data-component":"ScreenerBox","height":"100%","justifyContent":"center","padding":4,"position":"relative","width":"100%","children":[["$","$Lf",null,{"direction":"row","spacing":3,"children":[["$","$L15",null,{"bgcolor":"dodgerblue","boxShadow":"5px 5px 5px black","width":5}],["$","$Lf",null,{"children":[["$","$L19",null,{"className":"ScreenerBox_text__EQeKY","color":"white","fontWeight":"bold","variant":"h4","children":"[NextJS] 블로그 개편기 - 5. marked를 응용하여 코드블럭 디자인 개선하기"}],["$","$L19",null,{"className":"ScreenerBox_text__EQeKY","color":"dodgerblue","variant":"h6","children":"게시글"}],["$","$L19",null,{"className":"ScreenerBox_text__EQeKY","color":"white","variant":"h6","children":"⏰ 2021-11-07 12:13:57"}]]}]]}],["$","$Lf",null,{"alignItems":"center","bottom":50,"position":"absolute","spacing":2,"children":[["$","$Lf",null,{"border":"5px solid white","borderRadius":100,"height":50,"padding":1,"position":"relative","width":31,"children":["$","$L15",null,{"bgcolor":"white","borderRadius":100,"className":"ScreenerBox_icon__Qvdqx","height":10,"position":"absolute","width":5}]}],["$","$L19",null,{"color":"white","children":"D O W N"}]]}]]}]}],["$","$L1a",null,{"data-component":"ViewGroupTemplate","children":["$","$L1b",null,{"frontmatter":{"title":"[NextJS] 블로그 개편기 - 5. marked를 응용하여 코드블럭 디자인 개선하기","excerpt":"이전 장에서 marked를 활용하여 이 블로그만의 마크다운 변환기를 구현했다. 이 변환기를 활용하여 밋밋한 코드블럭을 좀 더 IDE 같게 개선해보자.","coverImage":"https://user-images.githubusercontent.com/50317129/134931033-89954c3d-5e00-4b3b-85aa-54a1dfa29e46.png","date":1636287237000,"type":"posts","category":"NextJS","tag":["NextJS","React","Markdown","HTML","SCSS","TypeScript"],"group":"블로그 개편기","comment":true,"publish":true},"group":[{"frontmatter":{"category":"NextJS","coverImage":"https://user-images.githubusercontent.com/50317129/134931033-89954c3d-5e00-4b3b-85aa-54a1dfa29e46.png","date":1636287237000,"excerpt":"이전 장에서 marked를 활용하여 이 블로그만의 마크다운 변환기를 구현했다. 이 변환기를 활용하여 밋밋한 코드블럭을 좀 더 IDE 같게 개선해보자.","group":"블로그 개편기","title":"[NextJS] 블로그 개편기 - 5. marked를 응용하여 코드블럭 디자인 개선하기","type":"posts"},"names":["2021","11","07","nextjs-reorganization-5"],"url":"/posts/2021/11/07/nextjs-reorganization-5"},{"frontmatter":{"category":"NextJS","coverImage":"https://user-images.githubusercontent.com/50317129/134931033-89954c3d-5e00-4b3b-85aa-54a1dfa29e46.png","date":1635399406000,"excerpt":"정적 블로그는 마크다운을 적극적으로 사용한다. 일반적인 텍스트 기반에 매우 친숙하면서도 HTML과의 호환성 또한 매우 뛰어나기 때문이다. 기존의 블로그는 Remark, Rehype 플러그인을 사용했다. 여러 플러그인이 있어서 그냥저냥 사용하는덴 매우 편했지만, 사용자가 직접 변환과정을 커스터마이징하는 것이 매우 어려웠다. TOC, 코드블럭, 링크에 추가적인 기능, 디자인을 입히기 위해 HTML 태그를 입히고 싶은데, 관련 API가 없다보니 속절없이 주어진 태그만 그대로 사용할 수 밖에 없었다. 관련 정보를 찾아보던 중 marked 플러그인은 내가 원하는 요소를 충족시켜주는 것 같아, 블로그 개편 과정에서 마크다운 플러그인에도 많은 변화를 주었다. 이 장에서는 marked를 통해 마크다운을 HTML로 변환하는 과정에 대해 다룬다.","group":"블로그 개편기","title":"[NextJS] 블로그 개편기 - 4. marked를 활용한 마크다운 변환기 구현하기","type":"posts"},"names":["2021","10","28","nextjs-reorganization-4"],"url":"/posts/2021/10/28/nextjs-reorganization-4"},{"frontmatter":{"category":"NextJS","coverImage":"https://user-images.githubusercontent.com/50317129/134931033-89954c3d-5e00-4b3b-85aa-54a1dfa29e46.png","date":1632457044000,"excerpt":"원래 내 블로그는 JS-in-CSS 스타일 방식을 사용하고 있었다. 그 이유는 Material-UI 때문. Material-UI의 공식 예제에서 대놓고 JS-in-CSS 방식으로 설명하기 때문에, React 기초 수준이였던 난 당연히 이렇게 해야하는 줄 알고 있었다. 하지만 개발을 거듭하며, 그 중 몇몇은 복잡한 스타일을 강요받기도 하며 점점 스타일 구문이 비대해지는 컴포넌트가 생겨나기 시작했다. 이에 따라 JS-in-CSS의 단점이 점점 대두되기 시작했다. 대표적인 문제점으로 FOCU(Flash Of Unstyled Content). 스타일 렌더링에 시간이 소요되어, 사용자가 렌더링 이전의 페이지를 보게 되는 현상이다. 내 페이지의 경우 약 1초가 조금 안 되게 FOUC가 발생했는데, 사용자 경험을 극도로 해치는 일이였다. 블로그 개편을 마음먹게 된 가장 큰 이유 역시 이 FOCU 현상 때문이였으며, 관련 정보 조사 결과 CSS-in-CSS의 성능이 월등히 뛰어나다는 점을 확인했다.","group":"블로그 개편기","title":"[NextJS] 블로그 개편기 - 3. SCSS 입히기","type":"posts"},"names":["2021","09","24","nextjs-reorganization-3"],"url":"/posts/2021/09/24/nextjs-reorganization-3"},{"frontmatter":{"category":"NextJS","coverImage":"https://user-images.githubusercontent.com/50317129/134931033-89954c3d-5e00-4b3b-85aa-54a1dfa29e46.png","date":1632169821000,"excerpt":"내가 JavaScript를 접하고 기본 개념 정도에 익숙해졌을 때, 개발 커뮤니티에서 전설처럼 들려오던 이야기를 듣게 되었다.","group":"블로그 개편기","title":"[NextJS] 블로그 개편기 - 2. Typescript 입히기","type":"posts"},"names":["2021","09","21","nextjs-reorganization-2"],"url":"/posts/2021/09/21/nextjs-reorganization-2"},{"frontmatter":{"category":"NextJS","coverImage":"https://user-images.githubusercontent.com/50317129/134931033-89954c3d-5e00-4b3b-85aa-54a1dfa29e46.png","date":1632162155000,"excerpt":"인터넷으로 알음알음 React를 배워, 뭣도 모르고 호기롭게 블로그를 개발한지가 5월이였다. 그 때만 해도 이 재밌는 걸 가지고 뭐라도 만들어보고 싶다는 강한 열망에 사로잡혔었는데, 그 때 눈에 보였던 게 개발 블로그였다. 그 때 내가 사용하던 블로그는 Jekyll 기반의 GitHub 블로그였는데, 재밌어보여서 시작했다가 며칠 안 가 관둔지가 1년이 넘었었다. 블로그에 흥미가 떨어진 이유 중 하나가 뭐 좀 할라치면 남이 작성한 코드를 일일히 분석한다는 스트레스였다. 개발 블로그를 보자마자 떠오른 내 머릿속의 흐름은 대충 저랬다.","group":"블로그 개편기","title":"[NextJS] 블로그 개편기 - 1. Record One","type":"posts"},"names":["2021","09","21","nextjs-reorganization-1"],"url":"/posts/2021/09/21/nextjs-reorganization-1"}],"link":"/posts/2021/11/07/nextjs-reorganization-5"}]}],["$","$L1a",null,{"data-component":"ViewTocTemplate","children":["$","$L1c",null,{"toc":[{"level":1,"text":"개요"},{"level":1,"text":"마크다운의 코드블럭"},{"level":2,"text":"인라인형 코드블럭"},{"level":2,"text":"블럭형 코드블럭"},{"level":1,"text":"블럭형 코드블럭 디자인 개선하기"},{"level":2,"text":"기본적인 디자인 프레임 변경하기"},{"level":2,"text":"사용된 언어 표시하기"},{"level":2,"text":"내용 복사 버튼 추가하기"},{"level":2,"text":"라인 숫자 표시하기"},{"level":2,"text":"라인별 색상 구분하기"},{"level":2,"text":"마우스 오버 시 해당 라인 하이라이팅하기"},{"level":1,"text":"정리"}]}]}],["$","$L1a",null,{"data-component":"ViewContentTemplate","children":[["$","div",null,{"className":"MarkdownViewer_markdown__kFBT_","children":[["$","h1",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h1__mcnqG","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h1","properties":{},"children":[{"type":"text","value":"개요","position":{"start":{"line":2,"column":3,"offset":3},"end":{"line":2,"column":5,"offset":5}}}],"position":{"start":{"line":2,"column":1,"offset":1},"end":{"line":2,"column":5,"offset":5}}},"children":["$","$L11",null,{"href":"#개요","id":"개요","children":["$","$Lf",null,{"children":[["개요"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","2",{"children":["이전 장에서 marked를 활용하여 이 블로그만의 마크다운 변환기를 구현했다. 이 변환기를 활용하여 밋밋한 코드블럭을 좀 더 IDE 같게 개선해보자."]}],"\n",["$","h1",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h1__mcnqG","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h1","properties":{},"children":[{"type":"text","value":"마크다운의 코드블럭","position":{"start":{"line":15,"column":3,"offset":103},"end":{"line":15,"column":13,"offset":113}}}],"position":{"start":{"line":15,"column":1,"offset":101},"end":{"line":15,"column":13,"offset":113}}},"children":["$","$L11",null,{"href":"#마크다운의-코드블럭","id":"마크다운의-코드블럭","children":["$","$Lf",null,{"children":[["마크다운의 코드블럭"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","6",{"children":["마크다운은 백틱(backtick)을 통해 코드블럭을 작성한다. 코드블럭의 종류는 인라인(inline) 형태와 블럭(block) 형태가 있다."]}],"\n",["$","h2",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h2__9tbOB","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h2","properties":{},"children":[{"type":"text","value":"인라인형 코드블럭","position":{"start":{"line":23,"column":4,"offset":202},"end":{"line":23,"column":13,"offset":211}}}],"position":{"start":{"line":23,"column":1,"offset":199},"end":{"line":23,"column":13,"offset":211}}},"children":["$","$L11",null,{"href":"#인라인형-코드블럭","id":"인라인형-코드블럭","children":["$","$Lf",null,{"children":[["인라인형 코드블럭"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","10",{"children":["인라인형 코드블럭은 백틱을 한 번 사용하여 표기하며, 아래와 같은 특징이 있다."]}],"\n",["$","ul","12",{"children":["\n",["$","li","1",{"children":["인라인 형태로 글 중간에 삽입하여 이어 쓰는 것이 가능"]}],"\n",["$","li","3",{"children":["리스트, 표 등 어느 형태에서든 사용이 가능"]}],"\n"]}],"\n",["$","p","14",{"children":[["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"inline code block의 예시","position":{"start":{"line":30,"column":1,"offset":320},"end":{"line":30,"column":24,"offset":343}}}],"position":{"start":{"line":30,"column":1,"offset":320},"end":{"line":30,"column":24,"offset":343}}},"children":["inline code block의 예시"]}],"는 이와 같다."]}],"\n",["$","h2",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h2__9tbOB","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h2","properties":{},"children":[{"type":"text","value":"블럭형 코드블럭","position":{"start":{"line":36,"column":4,"offset":360},"end":{"line":36,"column":12,"offset":368}}}],"position":{"start":{"line":36,"column":1,"offset":357},"end":{"line":36,"column":12,"offset":368}}},"children":["$","$L11",null,{"href":"#블럭형-코드블럭","id":"블럭형-코드블럭","children":["$","$Lf",null,{"children":[["블럭형 코드블럭"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","18",{"children":["블럭형 코드블럭은 백틱을 세 번 사용하여 표기하며, 아래와 같은 특징이 있다."]}],"\n",["$","ul","20",{"children":["\n",["$","li","1",{"children":["블럭 형태로 온전히 한 공간을 차지함"]}],"\n",["$","li","3",{"children":["공간을 차지하므로, 글 중간에 이어 쓰거나, 리스트나 표에 쓰는 것이 불가능"]}],"\n",["$","li","5",{"children":[["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"html","position":{"start":{"line":42,"column":3,"offset":485},"end":{"line":42,"column":9,"offset":491}}}],"position":{"start":{"line":42,"column":3,"offset":485},"end":{"line":42,"column":9,"offset":491}}},"children":["html"]}],", ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"markdown","position":{"start":{"line":42,"column":11,"offset":493},"end":{"line":42,"column":21,"offset":503}}}],"position":{"start":{"line":42,"column":11,"offset":493},"end":{"line":42,"column":21,"offset":503}}},"children":["markdown"]}]," 등의 언어 지정을 지원하므로, 언어별로 디테일한 코드 표현이 가능"]}],"\n"]}],"\n",["$","pre","22",{"children":[["$","$L1f",null,{"languageName":"javascript","className":"language-javascript","node":{"type":"element","tagName":"code","properties":{"className":["language-javascript"]},"children":[{"type":"text","value":"const test = 'block codeblock test';\n\nalert(test);\n"}],"position":{"start":{"line":44,"column":1,"offset":542},"end":{"line":48,"column":4,"offset":611}}},"children":["const test = 'block codeblock test';\n\nalert(test);\n"]}]]}],"\n",["$","p","24",{"children":["블럭형 코드블럭의 예시는 위와 같다. GitHub와 같이 마크다운을 지원하는 사이트의 경우, 코드블럭을 통해 해당하는 언어의 하이라이팅을 지원하기도 한다."]}],"\n",["$","h1",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h1__mcnqG","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h1","properties":{},"children":[{"type":"text","value":"블럭형 코드블럭 디자인 개선하기","position":{"start":{"line":61,"column":3,"offset":712},"end":{"line":61,"column":20,"offset":729}}}],"position":{"start":{"line":61,"column":1,"offset":710},"end":{"line":61,"column":20,"offset":729}}},"children":["$","$L11",null,{"href":"#블럭형-코드블럭-디자인-개선하기","id":"블럭형-코드블럭-디자인-개선하기","children":["$","$Lf",null,{"children":[["블럭형 코드블럭 디자인 개선하기"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","28",{"children":["인라인형과 코드형 중에서 블럭형 코드블럭의 디자인을 개선해보자. 블럭형의 경우 인라인형과 달리 블럭 형태로 하나의 구역을 차지하며, 코드를 표기하기 때문에 디자인할 요소가 많은 편이다."]}],"\n",["$","p","30",{"children":["개선할 항목은 아래와 같다."]}],"\n",["$","ul","32",{"children":["\n",["$","li","1",{"children":["기본적인 디자인 프레임 변경"]}],"\n",["$","li","3",{"children":["사용된 언어(JAVA, C# 등) 표시"]}],"\n",["$","li","5",{"children":["내용 복사 버튼 추가"]}],"\n",["$","li","7",{"children":["라인 숫자 표시"]}],"\n",["$","li","9",{"children":["라인별 색상 구분 표시"]}],"\n",["$","li","11",{"children":["마우스 오버 시 해당 라인 하이라이팅 구현"]}],"\n"]}],"\n",["$","p","34",{"children":["순차적으로 기능을 추가해보자"]}],"\n",["$","h2",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h2__9tbOB","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h2","properties":{},"children":[{"type":"text","value":"기본적인 디자인 프레임 변경하기","position":{"start":{"line":80,"column":4,"offset":986},"end":{"line":80,"column":21,"offset":1003}}}],"position":{"start":{"line":80,"column":1,"offset":983},"end":{"line":80,"column":21,"offset":1003}}},"children":["$","$L11",null,{"href":"#기본적인-디자인-프레임-변경하기","id":"기본적인-디자인-프레임-변경하기","children":["$","$Lf",null,{"children":[["기본적인 디자인 프레임 변경하기"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","38",{"children":["밋밋한 형태의 코드블럭 디자인을 변경하자. 외국 블로그에서 봤었던 코드블럭 형태 중 이쁘다고 생각했던 디자인을 모티브로 만들었다."]}],"\n",["$","p","40",{"children":["원랜 직접 보면서 디자인하려 했는데, 막상 찾으려고 하니 나오질 않아서 기억속에 어렴풋이 남아있는 디자인을 되짚어보며 구상했다."]}],"\n",["$","p","42",{"children":[["$","$L20","0",{"src":"https://user-images.githubusercontent.com/50317129/140773168-5d03d708-dfd1-4f96-8aaa-0da1c0ab1a84.png","alt":"null","node":{"type":"element","tagName":"img","properties":{"src":"https://user-images.githubusercontent.com/50317129/140773168-5d03d708-dfd1-4f96-8aaa-0da1c0ab1a84.png","alt":"null"},"children":[],"position":{"start":{"line":86,"column":1,"offset":1152},"end":{"line":86,"column":111,"offset":1262}}}}]]}],"\n",["$","p","44",{"children":["위와 같이 창 형태의 디자인을 취하며, 좌측 상단에 매킨토시의 창 컨텍스트가 달려있다."]}],"\n",["$","p","46",{"children":["이미지를 사용할 수도 있겠지만, 태그로 구현할 수 있는건 가급적 태그로 구현하거나 정 여의치 않는다면 SVG로 구현하고자 하는 편이다. 이 디자인의 경우 복잡한 문양이 없으므로 HTML 태그 단계에서 모두 구현할 수 있을 것 같다."]}],"\n",["$","p","48",{"children":["적용할 레이아웃은 위와 같다. 이를 HTML로 나타내면 아래와 같다."]}],"\n",["$","pre","50",{"children":[["$","$L1f",null,{"languageName":"html","className":"language-html","node":{"type":"element","tagName":"code","properties":{"className":["language-html"]},"children":[{"type":"text","value":"<div>\n\t<!-- 헤더 -->\n\t<div>\n\t\t<div><!-- 적색 버튼 --></div>\n\t\t<div><!-- 황색 버튼 --></div>\n\t\t<div><!-- 녹색 버튼 --></div>\n\t</div>\n\n\t<pre>\n\t\t<!-- 코드 내용 -->\n\t</pre>\n</div>\n"}],"position":{"start":{"line":94,"column":1,"offset":1485},"end":{"line":107,"column":4,"offset":1655}}},"children":["<div>\n\t<!-- 헤더 -->\n\t<div>\n\t\t<div><!-- 적색 버튼 --></div>\n\t\t<div><!-- 황색 버튼 --></div>\n\t\t<div><!-- 녹색 버튼 --></div>\n\t</div>\n\n\t<pre>\n\t\t<!-- 코드 내용 -->\n\t</pre>\n</div>\n"]}]]}],"\n",["$","p","52",{"children":["렌더러가 코드블럭을 위와 같은 디자인으로 렌더링하도록 변경하자."]}],"\n",["$","p","54",{"children":[["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"marked","position":{"start":{"line":111,"column":1,"offset":1694},"end":{"line":111,"column":9,"offset":1702}}}],"position":{"start":{"line":111,"column":1,"offset":1694},"end":{"line":111,"column":9,"offset":1702}}},"children":["marked"]}],"에서 블럭형 코드 블럭의 렌더러는 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"renderer.code","position":{"start":{"line":111,"column":28,"offset":1721},"end":{"line":111,"column":43,"offset":1736}}}],"position":{"start":{"line":111,"column":28,"offset":1721},"end":{"line":111,"column":43,"offset":1736}}},"children":["renderer.code"]}],"로 정의된다. 해당 객체의 함수를 오버라이딩하면 된다."]}],"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",["$","$Lf",null,{"alignItems":"center","data-component":"MarkdownTable","marginBottom":4,"marginTop":4,"children":["$","$L15",null,{"maxWidth":"100%","overflow":"auto","children":["$","table",null,{"className":"MarkdownTable_table__qYC_D","node":{"type":"element","tagName":"table","properties":{},"children":[{"type":"element","tagName":"thead","properties":{},"children":[{"type":"element","tagName":"tr","properties":{},"children":[{"type":"element","tagName":"th","properties":{"align":"center"},"children":[{"type":"text","value":"파라미터","position":{"start":{"line":113,"column":3,"offset":1770},"end":{"line":113,"column":7,"offset":1774}}}],"position":{"start":{"line":113,"column":1,"offset":1768},"end":{"line":113,"column":8,"offset":1775}}},{"type":"element","tagName":"th","properties":{"align":"center"},"children":[{"type":"text","value":"형식","position":{"start":{"line":113,"column":12,"offset":1779},"end":{"line":113,"column":14,"offset":1781}}}],"position":{"start":{"line":113,"column":8,"offset":1775},"end":{"line":113,"column":17,"offset":1784}}},{"type":"element","tagName":"th","properties":{"align":"center"},"children":[{"type":"text","value":"필수","position":{"start":{"line":113,"column":19,"offset":1786},"end":{"line":113,"column":21,"offset":1788}}}],"position":{"start":{"line":113,"column":17,"offset":1784},"end":{"line":113,"column":23,"offset":1790}}},{"type":"element","tagName":"th","properties":{"align":"center"},"children":[{"type":"text","value":"내용","position":{"start":{"line":113,"column":25,"offset":1792},"end":{"line":113,"column":27,"offset":1794}}}],"position":{"start":{"line":113,"column":23,"offset":1790},"end":{"line":113,"column":30,"offset":1797}}}],"position":{"start":{"line":113,"column":1,"offset":1768},"end":{"line":113,"column":30,"offset":1797}}}],"position":{"start":{"line":113,"column":1,"offset":1768},"end":{"line":113,"column":30,"offset":1797}}},{"type":"element","tagName":"tbody","properties":{},"children":[{"type":"element","tagName":"tr","properties":{},"children":[{"type":"element","tagName":"td","properties":{"align":"center"},"children":[{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"code","position":{"start":{"line":115,"column":4,"offset":1841},"end":{"line":115,"column":10,"offset":1847}}}],"position":{"start":{"line":115,"column":4,"offset":1841},"end":{"line":115,"column":10,"offset":1847}}}],"position":{"start":{"line":115,"column":1,"offset":1838},"end":{"line":115,"column":12,"offset":1849}}},{"type":"element","tagName":"td","properties":{"align":"center"},"children":[{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"string","position":{"start":{"line":115,"column":14,"offset":1851},"end":{"line":115,"column":22,"offset":1859}}}],"position":{"start":{"line":115,"column":14,"offset":1851},"end":{"line":115,"column":22,"offset":1859}}}],"position":{"start":{"line":115,"column":12,"offset":1849},"end":{"line":115,"column":23,"offset":1860}}},{"type":"element","tagName":"td","properties":{"align":"center"},"children":[{"type":"text","value":"Y","position":{"start":{"line":115,"column":27,"offset":1864},"end":{"line":115,"column":28,"offset":1865}}}],"position":{"start":{"line":115,"column":23,"offset":1860},"end":{"line":115,"column":31,"offset":1868}}},{"type":"element","tagName":"td","properties":{"align":"center"},"children":[{"type":"text","value":"코드","position":{"start":{"line":115,"column":33,"offset":1870},"end":{"line":115,"column":35,"offset":1872}}}],"position":{"start":{"line":115,"column":31,"offset":1868},"end":{"line":115,"column":38,"offset":1875}}}],"position":{"start":{"line":115,"column":1,"offset":1838},"end":{"line":115,"column":38,"offset":1875}}},{"type":"element","tagName":"tr","properties":{},"children":[{"type":"element","tagName":"td","properties":{"align":"center"},"children":[{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"lang","position":{"start":{"line":116,"column":4,"offset":1879},"end":{"line":116,"column":10,"offset":1885}}}],"position":{"start":{"line":116,"column":4,"offset":1879},"end":{"line":116,"column":10,"offset":1885}}}],"position":{"start":{"line":116,"column":1,"offset":1876},"end":{"line":116,"column":12,"offset":1887}}},{"type":"element","tagName":"td","properties":{"align":"center"},"children":[{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"string","position":{"start":{"line":116,"column":14,"offset":1889},"end":{"line":116,"column":22,"offset":1897}}}],"position":{"start":{"line":116,"column":14,"offset":1889},"end":{"line":116,"column":22,"offset":1897}}}],"position":{"start":{"line":116,"column":12,"offset":1887},"end":{"line":116,"column":23,"offset":1898}}},{"type":"element","tagName":"td","properties":{"align":"center"},"children":[{"type":"text","value":"N","position":{"start":{"line":116,"column":27,"offset":1902},"end":{"line":116,"column":28,"offset":1903}}}],"position":{"start":{"line":116,"column":23,"offset":1898},"end":{"line":116,"column":31,"offset":1906}}},{"type":"element","tagName":"td","properties":{"align":"center"},"children":[{"type":"text","value":"언어","position":{"start":{"line":116,"column":33,"offset":1908},"end":{"line":116,"column":35,"offset":1910}}}],"position":{"start":{"line":116,"column":31,"offset":1906},"end":{"line":116,"column":38,"offset":1913}}}],"position":{"start":{"line":116,"column":1,"offset":1876},"end":{"line":116,"column":38,"offset":1913}}}],"position":{"start":{"line":115,"column":1,"offset":1838},"end":{"line":116,"column":38,"offset":1913}}}],"position":{"start":{"line":113,"column":1,"offset":1768},"end":{"line":116,"column":38,"offset":1913}}},"children":[["$","thead","0",{"children":[["$","$L21","0",{"isHeader":true,"node":"$22","children":[["$","$L15",null,{"component":"th","data-component":"MarkdownCell","padding":"8px 24px","whiteSpace":"nowrap","style":{"textAlign":"center"},"node":"$25","children":["파라미터"]}],["$","$L15",null,{"component":"th","data-component":"MarkdownCell","padding":"8px 24px","whiteSpace":"nowrap","style":{"textAlign":"center"},"node":"$2f","children":["형식"]}],["$","$L15",null,{"component":"th","data-component":"MarkdownCell","padding":"8px 24px","whiteSpace":"nowrap","style":{"textAlign":"center"},"node":"$39","children":["필수"]}],["$","$L15",null,{"component":"th","data-component":"MarkdownCell","padding":"8px 24px","whiteSpace":"nowrap","style":{"textAlign":"center"},"node":"$43","children":["내용"]}]]}]]}],["$","tbody","1",{"children":[["$","$L21","0",{"isHeader":false,"node":"$50","children":[["$","$L15",null,{"component":"td","data-component":"MarkdownCell","padding":"8px 24px","whiteSpace":"nowrap","style":{"textAlign":"center"},"node":"$53","children":[["$","$L1e",null,{"inline":true,"node":"$56","children":["code"]}]]}],["$","$L15",null,{"component":"td","data-component":"MarkdownCell","padding":"8px 24px","whiteSpace":"nowrap","style":{"textAlign":"center"},"node":"$63","children":[["$","$L1e",null,{"inline":true,"node":"$66","children":["string"]}]]}],["$","$L15",null,{"component":"td","data-component":"MarkdownCell","padding":"8px 24px","whiteSpace":"nowrap","style":{"textAlign":"center"},"node":"$73","children":["Y"]}],["$","$L15",null,{"component":"td","data-component":"MarkdownCell","padding":"8px 24px","whiteSpace":"nowrap","style":{"textAlign":"center"},"node":"$7d","children":["코드"]}]]}],["$","$L21","1",{"isHeader":false,"node":"$8a","children":[["$","$L15",null,{"component":"td","data-component":"MarkdownCell","padding":"8px 24px","whiteSpace":"nowrap","style":{"textAlign":"center"},"node":"$8d","children":[["$","$L1e",null,{"inline":true,"node":"$90","children":["lang"]}]]}],["$","$L15",null,{"component":"td","data-component":"MarkdownCell","padding":"8px 24px","whiteSpace":"nowrap","style":{"textAlign":"center"},"node":"$9d","children":[["$","$L1e",null,{"inline":true,"node":"$a0","children":["string"]}]]}],["$","$L15",null,{"component":"td","data-component":"MarkdownCell","padding":"8px 24px","whiteSpace":"nowrap","style":{"textAlign":"center"},"node":"$ad","children":["N"]}],["$","$L15",null,{"component":"td","data-component":"MarkdownCell","padding":"8px 24px","whiteSpace":"nowrap","style":{"textAlign":"center"},"node":"$b7","children":["언어"]}]]}]]}]]}]}]}],"\n\n\n\n\n\n\n\n\n\n\n\n\n\n",["$","$Lf",null,{"alignItems":"center","data-component":"MarkdownTable","marginBottom":4,"marginTop":4,"children":["$","$L15",null,{"maxWidth":"100%","overflow":"auto","children":["$","table",null,{"className":"MarkdownTable_table__qYC_D","node":{"type":"element","tagName":"table","properties":{},"children":[{"type":"element","tagName":"thead","properties":{},"children":[{"type":"element","tagName":"tr","properties":{},"children":[{"type":"element","tagName":"th","properties":{"align":"center"},"children":[{"type":"text","value":"형식","position":{"start":{"line":118,"column":5,"offset":1919},"end":{"line":118,"column":7,"offset":1921}}}],"position":{"start":{"line":118,"column":1,"offset":1915},"end":{"line":118,"column":10,"offset":1924}}},{"type":"element","tagName":"th","properties":{"align":"center"},"children":[{"type":"text","value":"내용","position":{"start":{"line":118,"column":15,"offset":1929},"end":{"line":118,"column":17,"offset":1931}}}],"position":{"start":{"line":118,"column":10,"offset":1924},"end":{"line":118,"column":23,"offset":1937}}}],"position":{"start":{"line":118,"column":1,"offset":1915},"end":{"line":118,"column":23,"offset":1937}}}],"position":{"start":{"line":118,"column":1,"offset":1915},"end":{"line":118,"column":23,"offset":1937}}},{"type":"element","tagName":"tbody","properties":{},"children":[{"type":"element","tagName":"tr","properties":{},"children":[{"type":"element","tagName":"td","properties":{"align":"center"},"children":[{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"string","position":{"start":{"line":120,"column":3,"offset":1967},"end":{"line":120,"column":11,"offset":1975}}}],"position":{"start":{"line":120,"column":3,"offset":1967},"end":{"line":120,"column":11,"offset":1975}}}],"position":{"start":{"line":120,"column":1,"offset":1965},"end":{"line":120,"column":12,"offset":1976}}},{"type":"element","tagName":"td","properties":{"align":"center"},"children":[{"type":"text","value":"렌더링 결과","position":{"start":{"line":120,"column":14,"offset":1978},"end":{"line":120,"column":20,"offset":1984}}}],"position":{"start":{"line":120,"column":12,"offset":1976},"end":{"line":120,"column":22,"offset":1986}}}],"position":{"start":{"line":120,"column":1,"offset":1965},"end":{"line":120,"column":22,"offset":1986}}}],"position":{"start":{"line":120,"column":1,"offset":1965},"end":{"line":120,"column":22,"offset":1986}}}],"position":{"start":{"line":118,"column":1,"offset":1915},"end":{"line":120,"column":22,"offset":1986}}},"children":[["$","thead","0",{"children":[["$","$L21","0",{"isHeader":true,"node":"$c4","children":[["$","$L15",null,{"component":"th","data-component":"MarkdownCell","padding":"8px 24px","whiteSpace":"nowrap","style":{"textAlign":"center"},"node":"$c7","children":["형식"]}],["$","$L15",null,{"component":"th","data-component":"MarkdownCell","padding":"8px 24px","whiteSpace":"nowrap","style":{"textAlign":"center"},"node":"$d1","children":["내용"]}]]}]]}],["$","tbody","1",{"children":[["$","$L21","0",{"isHeader":false,"node":"$de","children":[["$","$L15",null,{"component":"td","data-component":"MarkdownCell","padding":"8px 24px","whiteSpace":"nowrap","style":{"textAlign":"center"},"node":"$e1","children":[["$","$L1e",null,{"inline":true,"node":"$e4","children":["string"]}]]}],["$","$L15",null,{"component":"td","data-component":"MarkdownCell","padding":"8px 24px","whiteSpace":"nowrap","style":{"textAlign":"center"},"node":"$f1","children":["렌더링 결과"]}]]}]]}]]}]}]}],"\n",["$","p","60",{"children":[["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"renderer.code","position":{"start":{"line":122,"column":1,"offset":1988},"end":{"line":122,"column":16,"offset":2003}}}],"position":{"start":{"line":122,"column":1,"offset":1988},"end":{"line":122,"column":16,"offset":2003}}},"children":["renderer.code"]}],"의 파라미터와 반환값의 정의는 위 표와 같다. 위 정의에 부합하는 함수를 작성하면 된다."]}],"\n",["$","pre","62",{"children":[["$","$L1f",null,{"languageName":"typescript","className":"language-typescript","node":{"type":"element","tagName":"code","properties":{"className":["language-typescript"]},"children":[{"type":"text","value":"loadLanguage([ 'javascript', 'typescript', 'java', 'html', 'css', 'json', 'scss', 'sass', 'sql', 'batch', 'bash' ]);\n\nconst renderer = new marked.Renderer();\n\n// 코드블럭 렌더링\nrenderer.code = (code: string, lang: string | undefined): string =>\n{\n\t// 유효한 언어가 있을 경우\n\tif (lang && renderer?.options?.highlight)\n\t{\n\t\tcode = renderer.options.highlight(code, lang as string) as string;\n\n\t\tconst langClass = 'language-' + lang;\n\n\t\treturn `\n\t\t\t<div class=\"codeblock\">\n\t\t\t\t<div class=\"top\">\n\t\t\t\t\t<div></div>\n\t\t\t\t\t<div></div>\n\t\t\t\t\t<div></div>\n\t\t\t\t</div>\n\n\t\t\t\t<pre class=\"${langClass}\">\n\t\t\t\t\t${code}\n\t\t\t\t</pre>\n\t\t\t</div>\n\t\t`;\n\t}\n\n\t// 없을 경우\n\telse\n\t{\n\t\tlang = 'unknown';\n\n\t\tconst langClass = 'language-' + lang;\n\n\t\treturn `\n\t\t\t<div class=\"codeblock\">\n\t\t\t\t<div class=\"top\">\n\t\t\t\t\t<div></div>\n\t\t\t\t\t<div></div>\n\t\t\t\t\t<div></div>\n\t\t\t\t</div>\n\n\t\t\t\t<pre class=\"${langClass}\">\n\t\t\t\t\t${code}\n\t\t\t\t</pre>\n\t\t\t</div>\n\t\t`;\n\t}\n};\n"}],"position":{"start":{"line":124,"column":1,"offset":2054},"end":{"line":176,"column":4,"offset":2965}}},"children":["loadLanguage([ 'javascript', 'typescript', 'java', 'html', 'css', 'json', 'scss', 'sass', 'sql', 'batch', 'bash' ]);\n\nconst renderer = new marked.Renderer();\n\n// 코드블럭 렌더링\nrenderer.code = (code: string, lang: string | undefined): string =>\n{\n\t// 유효한 언어가 있을 경우\n\tif (lang && renderer?.options?.highlight)\n\t{\n\t\tcode = renderer.options.highlight(code, lang as string) as string;\n\n\t\tconst langClass = 'language-' + lang;\n\n\t\treturn `\n\t\t\t<div class=\"codeblock\">\n\t\t\t\t<div class=\"top\">\n\t\t\t\t\t<div></div>\n\t\t\t\t\t<div></div>\n\t\t\t\t\t<div></div>\n\t\t\t\t</div>\n\n\t\t\t\t<pre class=\"${langClass}\">\n\t\t\t\t\t${code}\n\t\t\t\t</pre>\n\t\t\t</div>\n\t\t`;\n\t}\n\n\t// 없을 경우\n\telse\n\t{\n\t\tlang = 'unknown';\n\n\t\tconst langClass = 'language-' + lang;\n\n\t\treturn `\n\t\t\t<div class=\"codeblock\">\n\t\t\t\t<div class=\"top\">\n\t\t\t\t\t<div></div>\n\t\t\t\t\t<div></div>\n\t\t\t\t\t<div></div>\n\t\t\t\t</div>\n\n\t\t\t\t<pre class=\"${langClass}\">\n\t\t\t\t\t${code}\n\t\t\t\t</pre>\n\t\t\t</div>\n\t\t`;\n\t}\n};\n"]}]]}],"\n",["$","p","64",{"children":["위와 같이 함수를 오버라이딩해서 블럭형 코드 블럭의 렌더링 결과를 변경한다."]}],"\n",["$","p","66",{"children":["만약 언어가 같이 표기될 경우 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"PrismJS","position":{"start":{"line":180,"column":18,"offset":3028},"end":{"line":180,"column":27,"offset":3037}}}],"position":{"start":{"line":180,"column":18,"offset":3028},"end":{"line":180,"column":27,"offset":3037}}},"children":["PrismJS"]}],"로 하이라이팅을 적용하고, 언어가 미표기될 경우 텍스트 그대로 코드 블럭에 지정하는 방식이다."]}],"\n",["$","p","68",{"children":["각 태그가 레이아웃대로 위치하도록 스타일 코드를 지정한다."]}],"\n",["$","pre","70",{"children":[["$","$L1f",null,{"languageName":"scss","className":"language-scss","node":{"type":"element","tagName":"code","properties":{"className":["language-scss"]},"children":[{"type":"text","value":"$fe"}],"position":{"start":{"line":184,"column":1,"offset":3125},"end":{"line":276,"column":4,"offset":4419}}},"children":["$ff"]}]]}],"\n",["$","p","72",{"children":["레이아웃에 지정된 스타일은 위와 같다."]}],"\n",["$","h2",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h2__9tbOB","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h2","properties":{},"children":[{"type":"text","value":"사용된 언어 표시하기","position":{"start":{"line":284,"column":4,"offset":4451},"end":{"line":284,"column":15,"offset":4462}}}],"position":{"start":{"line":284,"column":1,"offset":4448},"end":{"line":284,"column":15,"offset":4462}}},"children":["$","$L11",null,{"href":"#사용된-언어-표시하기","id":"사용된-언어-표시하기","children":["$","$Lf",null,{"children":[["사용된 언어 표시하기"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","76",{"children":["사용된 언어를 표시해주면 사용자가 코드 블럭의 언어를 더욱 쉽게 파악할 수 있을 것이며, 작성자가 일일히 별도로 코드를 안내해주는 수고도 덜 수 있을 것이다."]}],"\n",["$","p","78",{"children":["블럭형 코드 블럭의 렌더러 함수인 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"renderer.code","position":{"start":{"line":288,"column":20,"offset":4573},"end":{"line":288,"column":35,"offset":4588}}}],"position":{"start":{"line":288,"column":20,"offset":4573},"end":{"line":288,"column":35,"offset":4588}}},"children":["renderer.code"]}],"에서 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"lang","position":{"start":{"line":288,"column":38,"offset":4591},"end":{"line":288,"column":44,"offset":4597}}}],"position":{"start":{"line":288,"column":38,"offset":4591},"end":{"line":288,"column":44,"offset":4597}}},"children":["lang"]}]," 파라미터에 사용된 언어가 할당된다. 우리는 이 파라미터를 통해 사용된 언어를 파악하고, 이를 적절히 사용할 수 있다."]}],"\n",["$","p","80",{"children":["위 디자인 기준으로, 헤더 부분에 언어를 표시해주는 것이 좋아보인다."]}],"\n",["$","pre","82",{"children":[["$","$L1f",null,{"languageName":"typescript","className":"language-typescript","node":{"type":"element","tagName":"code","properties":{"className":["language-typescript"]},"children":[{"type":"text","value":"loadLanguage([ 'javascript', 'typescript', 'java', 'html', 'css', 'json', 'scss', 'sass', 'sql', 'batch', 'bash' ]);\n\nconst renderer = new marked.Renderer();\n\n// 코드블럭 렌더링\nrenderer.code = (code: string, lang: string | undefined): string =>\n{\n\t// 유효한 언어가 있을 경우\n\tif (lang && renderer?.options?.highlight)\n\t{\n\t\tcode = renderer.options.highlight(code, lang as string) as string;\n\n\t\tconst langClass = 'language-' + lang;\n\n\t\treturn `\n\t\t\t<div class=\"codeblock\">\n\t\t\t\t<div class=\"top\">\n\t\t\t\t\t<p>${lang.toUpperCase()}</p>\n\t\t\t\t\t<div></div>\n\t\t\t\t\t<div></div>\n\t\t\t\t\t<div></div>\n\t\t\t\t</div>\n\n\t\t\t\t<pre class=\"${langClass}\">\n\t\t\t\t\t${code}\n\t\t\t\t</pre>\n\t\t\t</div>\n\t\t`;\n\t}\n\n\t// 없을 경우\n\telse\n\t{\n\t\tlang = 'unknown';\n\n\t\tconst langClass = 'language-' + lang;\n\n\t\treturn `\n\t\t\t<div class=\"codeblock\">\n\t\t\t\t<div class=\"top\">\n\t\t\t\t\t<p>${lang.toUpperCase()}</p>\n\t\t\t\t\t<div></div>\n\t\t\t\t\t<div></div>\n\t\t\t\t\t<div></div>\n\t\t\t\t</div>\n\n\t\t\t\t<pre class=\"${langClass}\">\n\t\t\t\t\t${code}\n\t\t\t\t</pre>\n\t\t\t</div>\n\t\t`;\n\t}\n};\n"}],"position":{"start":{"line":292,"column":1,"offset":4705},"end":{"line":346,"column":4,"offset":5684}}},"children":["loadLanguage([ 'javascript', 'typescript', 'java', 'html', 'css', 'json', 'scss', 'sass', 'sql', 'batch', 'bash' ]);\n\nconst renderer = new marked.Renderer();\n\n// 코드블럭 렌더링\nrenderer.code = (code: string, lang: string | undefined): string =>\n{\n\t// 유효한 언어가 있을 경우\n\tif (lang && renderer?.options?.highlight)\n\t{\n\t\tcode = renderer.options.highlight(code, lang as string) as string;\n\n\t\tconst langClass = 'language-' + lang;\n\n\t\treturn `\n\t\t\t<div class=\"codeblock\">\n\t\t\t\t<div class=\"top\">\n\t\t\t\t\t<p>${lang.toUpperCase()}</p>\n\t\t\t\t\t<div></div>\n\t\t\t\t\t<div></div>\n\t\t\t\t\t<div></div>\n\t\t\t\t</div>\n\n\t\t\t\t<pre class=\"${langClass}\">\n\t\t\t\t\t${code}\n\t\t\t\t</pre>\n\t\t\t</div>\n\t\t`;\n\t}\n\n\t// 없을 경우\n\telse\n\t{\n\t\tlang = 'unknown';\n\n\t\tconst langClass = 'language-' + lang;\n\n\t\treturn `\n\t\t\t<div class=\"codeblock\">\n\t\t\t\t<div class=\"top\">\n\t\t\t\t\t<p>${lang.toUpperCase()}</p>\n\t\t\t\t\t<div></div>\n\t\t\t\t\t<div></div>\n\t\t\t\t\t<div></div>\n\t\t\t\t</div>\n\n\t\t\t\t<pre class=\"${langClass}\">\n\t\t\t\t\t${code}\n\t\t\t\t</pre>\n\t\t\t</div>\n\t\t`;\n\t}\n};\n"]}]]}],"\n",["$","p","84",{"children":[["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"div.top","position":{"start":{"line":348,"column":1,"offset":5686},"end":{"line":348,"column":10,"offset":5695}}}],"position":{"start":{"line":348,"column":1,"offset":5686},"end":{"line":348,"column":10,"offset":5695}}},"children":["div.top"]}]," 영역에 사용된 언어를 대문자로 표시하도록 구성한다."]}],"\n",["$","p","86",{"children":["필요하다면 디자인을 수정해줄 수도 있다. 필자의 경우 폰트 색상 정도만 변경했다."]}],"\n",["$","pre","88",{"children":[["$","$L1f",null,{"languageName":"scss","className":"language-scss","node":{"type":"element","tagName":"code","properties":{"className":["language-scss"]},"children":[{"type":"text","value":".top {\n\t/* top scss 생략됨 */\n\n\tdiv {\n\t\twidth: 15px;\n\t\theight: 15px;\n\n\t\tborder-radius: 50%;\n\n\t\tmargin: 0px 5px;\n\n\t\tp {\n\t\t\tmargin: 0px;\n\t\t\tflex-grow: 1;\n\n\t\t\tcolor: map-get($yellow, \"400\");\n\t\t}\n\n\t\t&:nth-child(2) {\n\t\t\tbackground-color: #fe5f57;\n\t\t}\n\n\t\t&:nth-child(3) {\n\t\t\tbackground-color: #ffbd2e;\n\t\t}\n\n\t\t&:nth-child(4) {\n\t\t\tbackground-color: #29c941;\n\t\t}\n\t}\n}\n"}],"position":{"start":{"line":352,"column":1,"offset":5773},"end":{"line":384,"column":4,"offset":6141}}},"children":[".top {\n\t/* top scss 생략됨 */\n\n\tdiv {\n\t\twidth: 15px;\n\t\theight: 15px;\n\n\t\tborder-radius: 50%;\n\n\t\tmargin: 0px 5px;\n\n\t\tp {\n\t\t\tmargin: 0px;\n\t\t\tflex-grow: 1;\n\n\t\t\tcolor: map-get($yellow, \"400\");\n\t\t}\n\n\t\t&:nth-child(2) {\n\t\t\tbackground-color: #fe5f57;\n\t\t}\n\n\t\t&:nth-child(3) {\n\t\t\tbackground-color: #ffbd2e;\n\t\t}\n\n\t\t&:nth-child(4) {\n\t\t\tbackground-color: #29c941;\n\t\t}\n\t}\n}\n"]}]]}],"\n",["$","p","90",{"children":[["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"p","position":{"start":{"line":386,"column":1,"offset":6143},"end":{"line":386,"column":4,"offset":6146}}}],"position":{"start":{"line":386,"column":1,"offset":6143},"end":{"line":386,"column":4,"offset":6146}}},"children":["p"]}]," 태그의 스타일을 추가한다."]}],"\n",["$","h2",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h2__9tbOB","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h2","properties":{},"children":[{"type":"text","value":"내용 복사 버튼 추가하기","position":{"start":{"line":392,"column":4,"offset":6170},"end":{"line":392,"column":17,"offset":6183}}}],"position":{"start":{"line":392,"column":1,"offset":6167},"end":{"line":392,"column":17,"offset":6183}}},"children":["$","$L11",null,{"href":"#내용-복사-버튼-추가하기","id":"내용-복사-버튼-추가하기","children":["$","$Lf",null,{"children":[["내용 복사 버튼 추가하기"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","94",{"children":["개발자 친화적인 사이트의 코드블럭 대부분은 코드블럭의 내용을 복사하는 버튼을 제공한다. 이를 통해 사용자는 굳이 내용 전체를 드래그하지 않고도 코드블럭의 내용을 손쉽게 복사할 수 있다."]}],"\n",["$","p","96",{"children":["블럭형 코드블럭 렌더링 시 버튼을 추가하고, 클릭 이벤트에 코드블럭의 내용을 복사하도록 지정하는 스크립트를 추가하면 될 것이다."]}],"\n",["$","pre","98",{"children":[["$","$L1f",null,{"languageName":"html","className":"language-html","node":{"type":"element","tagName":"code","properties":{"className":["language-html"]},"children":[{"type":"text","value":"<button onclick=\"copyCode(this);\">\n\t<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 512\" data-icon=\"clipboard\" class=\"i-clipboard\">\n\t\t<path fill=\"currentColor\" d=\"M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z\"></path>\n\t</svg>\n</button>\n"}],"position":{"start":{"line":398,"column":1,"offset":6363},"end":{"line":404,"column":4,"offset":6930}}},"children":["<button onclick=\"copyCode(this);\">\n\t<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 512\" data-icon=\"clipboard\" class=\"i-clipboard\">\n\t\t<path fill=\"currentColor\" d=\"M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z\"></path>\n\t</svg>\n</button>\n"]}]]}],"\n",["$","p","100",{"children":["레이아웃은 위와 같다. 버튼 하나가 추가된다. 버튼 클릭 시, 버튼 레이아웃에 포함된 코드 블럭을 찾아 해당 내용을 클립보드에 저장하는 스크립트가 포함되어있다."]}],"\n",["$","p","102",{"children":["버튼의 아이콘은 SVG로 사용했다."]}],"\n",["$","pre","104",{"children":[["$","$L1f",null,{"languageName":"javascript","className":"language-javascript","node":{"type":"element","tagName":"code","properties":{"className":["language-javascript"]},"children":[{"type":"text","value":"/**\n * 코드 복사 함수\n *\n * @param {DOMElement} dom: HTML DOM\n */\nfunction copyCode(dom)\n{\n\twindow.getSelection().selectAllChildren(dom.parentElement.querySelector('pre'));\n\tdocument.execCommand('copy');\n\n\tconst origin = dom.innerHTML;\n\tdom.innerHTML = '<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\" data-icon=\"check\" class=\"i-check\"><path fill=\"currentColor\" d=\"M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z\"></path></svg>';\n\n\tsetTimeout(() => dom.innerHTML = origin, 1000);\n}\n"}],"position":{"start":{"line":410,"column":1,"offset":7044},"end":{"line":426,"column":4,"offset":7779}}},"children":["/**\n * 코드 복사 함수\n *\n * @param {DOMElement} dom: HTML DOM\n */\nfunction copyCode(dom)\n{\n\twindow.getSelection().selectAllChildren(dom.parentElement.querySelector('pre'));\n\tdocument.execCommand('copy');\n\n\tconst origin = dom.innerHTML;\n\tdom.innerHTML = '<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\" data-icon=\"check\" class=\"i-check\"><path fill=\"currentColor\" d=\"M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z\"></path></svg>';\n\n\tsetTimeout(() => dom.innerHTML = origin, 1000);\n}\n"]}]]}],"\n",["$","p","106",{"children":["코드 복사 메서드인 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"copyCode","position":{"start":{"line":428,"column":12,"offset":7792},"end":{"line":428,"column":22,"offset":7802}}}],"position":{"start":{"line":428,"column":12,"offset":7792},"end":{"line":428,"column":22,"offset":7802}}},"children":["copyCode"]}],"는 위와 같이 구성했다. 복사 버튼 상위의 가장 가까운 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"pre","position":{"start":{"line":428,"column":53,"offset":7833},"end":{"line":428,"column":58,"offset":7838}}}],"position":{"start":{"line":428,"column":53,"offset":7833},"end":{"line":428,"column":58,"offset":7838}}},"children":["pre"]}]," 태그를 찾아서, 해당 내용을 복사한다. 또한 약 1초 간 버튼의 SVG를 체크 아이콘으로 변경한다."]}],"\n",["$","pre","108",{"children":[["$","$L1f",null,{"languageName":"scss","className":"language-scss","node":{"type":"element","tagName":"code","properties":{"className":["language-scss"]},"children":[{"type":"text","value":"button {\n\tposition: absolute;\n\n\ttop: 50px;\n\tright: 20px;\n\twidth: 40px;\n\theight: 40px;\n\n\tbackground-color: #1e2739;\n\tcursor: pointer;\n\n\tborder: 1px solid map-get($grey, \"600\");\n\tborder-radius: 10px;\n\n\topacity: 0;\n\n\ttransition: 0.5s;\n\n\t&:hover {\n\t\ttransition: 0.5s;\n\t}\n}\n"}],"position":{"start":{"line":430,"column":1,"offset":7896},"end":{"line":453,"column":4,"offset":8177}}},"children":["button {\n\tposition: absolute;\n\n\ttop: 50px;\n\tright: 20px;\n\twidth: 40px;\n\theight: 40px;\n\n\tbackground-color: #1e2739;\n\tcursor: pointer;\n\n\tborder: 1px solid map-get($grey, \"600\");\n\tborder-radius: 10px;\n\n\topacity: 0;\n\n\ttransition: 0.5s;\n\n\t&:hover {\n\t\ttransition: 0.5s;\n\t}\n}\n"]}]]}],"\n",["$","p","110",{"children":["스타일 코드는 이와 같다. 항상 고정적인 위치에 나타나도록 absolute 기반의 레이아웃을 채택했다."]}],"\n",["$","p","112",{"children":["이를 바탕으로 렌더러가 코드 블럭의 렌더링 과정에 추가하자."]}],"\n",["$","pre","114",{"children":[["$","$L1f",null,{"languageName":"typescript","className":"language-typescript","node":{"type":"element","tagName":"code","properties":{"className":["language-typescript"]},"children":[{"type":"text","value":"$100"}],"position":{"start":{"line":459,"column":1,"offset":8273},"end":{"line":525,"column":4,"offset":10404}}},"children":["$101"]}]]}],"\n",["$","p","116",{"children":["코드블럭에 버튼이 추가된다."]}],"\n",["$","h2",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h2__9tbOB","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h2","properties":{},"children":[{"type":"text","value":"라인 숫자 표시하기","position":{"start":{"line":533,"column":4,"offset":10430},"end":{"line":533,"column":14,"offset":10440}}}],"position":{"start":{"line":533,"column":1,"offset":10427},"end":{"line":533,"column":14,"offset":10440}}},"children":["$","$L11",null,{"href":"#라인-숫자-표시하기","id":"라인-숫자-표시하기","children":["$","$Lf",null,{"children":[["라인 숫자 표시하기"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","120",{"children":["간혹 코드를 설명하다보면 코드의 특정 부분을 설명해야할 경우가 생긴다. 이 경우 보통 어느 줄의 코드를 보라는 식으로 안내하지만, 코드 블럭에 라인 숫자가 표시되지 않을 경우, 사용자가 직접 코드의 줄을 찾아 확인해야하는 번거로움이 생긴다. 만약 코드가 페이지를 넘어갈 정도로 길 경우 불편함은 배로 증가하며, 이는 컨텐츠의 질 마저 하락시키는 결과로 이어진다."]}],"\n",["$","p","122",{"children":["사용자가 코드를 읽는데 좀 더 도움을 줄 수 있도록, 라인 숫자를 표시해보자."]}],"\n",["$","pre","124",{"children":[["$","$L1f",null,{"languageName":"html","className":"language-html","node":{"type":"element","tagName":"code","properties":{"className":["language-html"]},"children":[{"type":"text","value":"<table>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td><!-- 라인 넘버 --></td>\n\t\t\t<td><!-- 코드 --></td>\n\t\t</tr>\n\n\t\t<tr>\n\t\t\t<td><!-- 라인 넘버 --></td>\n\t\t\t<td><!-- 코드 --></td>\n\t\t</tr>\n\n\t\t<tr>\n\t\t\t<td><!-- 라인 넘버 --></td>\n\t\t\t<td><!-- 코드 --></td>\n\t\t</tr>\n\n\t\t<tr>\n\t\t\t<td><!-- 라인 넘버 --></td>\n\t\t\t<td><!-- 코드 --></td>\n\t\t</tr>\n\t</tbody>\n</table>\n"}],"position":{"start":{"line":539,"column":1,"offset":10691},"end":{"line":563,"column":4,"offset":11006}}},"children":["<table>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td><!-- 라인 넘버 --></td>\n\t\t\t<td><!-- 코드 --></td>\n\t\t</tr>\n\n\t\t<tr>\n\t\t\t<td><!-- 라인 넘버 --></td>\n\t\t\t<td><!-- 코드 --></td>\n\t\t</tr>\n\n\t\t<tr>\n\t\t\t<td><!-- 라인 넘버 --></td>\n\t\t\t<td><!-- 코드 --></td>\n\t\t</tr>\n\n\t\t<tr>\n\t\t\t<td><!-- 라인 넘버 --></td>\n\t\t\t<td><!-- 코드 --></td>\n\t\t</tr>\n\t</tbody>\n</table>\n"]}]]}],"\n",["$","p","126",{"children":["라인 숫자는 코드 라인과 동일한 크기를 가져야한다. 만약 조금이라도 픽셀 차이가 날 경우, 코드 라인이 많아지면 많아질 수록 이격이 발생하게 될 것이다."]}],"\n",["$","p","128",{"children":["이러한 차이를 맞추기 위해서, 테이블 형태의 레이아웃을 채택했다. ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"tr","position":{"start":{"line":567,"column":38,"offset":11132},"end":{"line":567,"column":42,"offset":11136}}}],"position":{"start":{"line":567,"column":38,"offset":11132},"end":{"line":567,"column":42,"offset":11136}}},"children":["tr"]}]," 태그를 하나의 라인으로, 아래 두 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"td","position":{"start":{"line":567,"column":62,"offset":11156},"end":{"line":567,"column":66,"offset":11160}}}],"position":{"start":{"line":567,"column":62,"offset":11156},"end":{"line":567,"column":66,"offset":11160}}},"children":["td"]}]," 태그를 통해 하나는 라인 숫자, 다른 하나는 코드 영역으로 분리한다. 동일한 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"tr","position":{"start":{"line":567,"column":110,"offset":11204},"end":{"line":567,"column":114,"offset":11208}}}],"position":{"start":{"line":567,"column":110,"offset":11204},"end":{"line":567,"column":114,"offset":11208}}},"children":["tr"]}]," 내부의 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"td","position":{"start":{"line":567,"column":119,"offset":11213},"end":{"line":567,"column":123,"offset":11217}}}],"position":{"start":{"line":567,"column":119,"offset":11213},"end":{"line":567,"column":123,"offset":11217}}},"children":["td"]}],"는 같은 줄에 위치하는 테이블의 특성을 적극 활용하면 레이아웃 CSS에 그리 많은 힘을 들이지 않아도 될 것이다."]}],"\n",["$","pre","130",{"children":[["$","$L1f",null,{"languageName":"scss","className":"language-scss","node":{"type":"element","tagName":"code","properties":{"className":["language-scss"]},"children":[{"type":"text","value":"table {\n\tborder-collapse: collapse;\n\n\t& td {\n\t\tline-height: $fd + 4px;\n\n\t\t@media (max-width: 960px) {\n\t\t\tline-height: $fm + 4px;\n\t\t}\n\t}\n\n\t& td:nth-child(1) {\n\t\tcolor: #455983;\n\t\tpadding-right: 10px;\n\n\t\tborder-right: 1px solid #455983;\n\n\t\ttext-align: right;\n\n\t\tuser-select: none;\n\t\t-moz-user-select: none;\n\t\t-webkit-user-select: none;\n\t}\n\n\t& td:nth-child(2) {\n\t\twidth: 100%;\n\n\t\tpadding: 0px 20px 0px 10px;\n\t}\n}\n"}],"position":{"start":{"line":569,"column":1,"offset":11282},"end":{"line":600,"column":4,"offset":11704}}},"children":["table {\n\tborder-collapse: collapse;\n\n\t& td {\n\t\tline-height: $fd + 4px;\n\n\t\t@media (max-width: 960px) {\n\t\t\tline-height: $fm + 4px;\n\t\t}\n\t}\n\n\t& td:nth-child(1) {\n\t\tcolor: #455983;\n\t\tpadding-right: 10px;\n\n\t\tborder-right: 1px solid #455983;\n\n\t\ttext-align: right;\n\n\t\tuser-select: none;\n\t\t-moz-user-select: none;\n\t\t-webkit-user-select: none;\n\t}\n\n\t& td:nth-child(2) {\n\t\twidth: 100%;\n\n\t\tpadding: 0px 20px 0px 10px;\n\t}\n}\n"]}]]}],"\n",["$","p","132",{"children":["디자인은 위와 같다. 첫 번째 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"td","position":{"start":{"line":602,"column":18,"offset":11723},"end":{"line":602,"column":22,"offset":11727}}}],"position":{"start":{"line":602,"column":18,"offset":11723},"end":{"line":602,"column":22,"offset":11727}}},"children":["td"]}],"에 숫자를 표시하고, ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"border-right","position":{"start":{"line":602,"column":34,"offset":11739},"end":{"line":602,"column":48,"offset":11753}}}],"position":{"start":{"line":602,"column":34,"offset":11739},"end":{"line":602,"column":48,"offset":11753}}},"children":["border-right"]}]," 속성을 통해 구분선을 표시한다. 이를 토대로 코드 블럭 렌더러를 변경하자."]}],"\n",["$","pre","134",{"children":[["$","$L1f",null,{"languageName":"typescript","className":"language-typescript","node":{"type":"element","tagName":"code","properties":{"className":["language-typescript"]},"children":[{"type":"text","value":"$102"}],"position":{"start":{"line":604,"column":1,"offset":11797},"end":{"line":686,"column":4,"offset":14552}}},"children":["$103"]}]]}],"\n",["$","p","136",{"children":[["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"map","position":{"start":{"line":688,"column":1,"offset":14554},"end":{"line":688,"column":6,"offset":14559}}}],"position":{"start":{"line":688,"column":1,"offset":14554},"end":{"line":688,"column":6,"offset":14559}}},"children":["map"]}],"을 통해 하나하나 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"tr","position":{"start":{"line":688,"column":16,"offset":14569},"end":{"line":688,"column":20,"offset":14573}}}],"position":{"start":{"line":688,"column":16,"offset":14569},"end":{"line":688,"column":20,"offset":14573}}},"children":["tr"]}]," 태그를 붙이므로, 이 과정에서 라인 숫자의 수를 파악할 수 있다. 첫 번째 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"td","position":{"start":{"line":688,"column":63,"offset":14616},"end":{"line":688,"column":67,"offset":14620}}}],"position":{"start":{"line":688,"column":63,"offset":14616},"end":{"line":688,"column":67,"offset":14620}}},"children":["td"]}],"에 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"map","position":{"start":{"line":688,"column":69,"offset":14622},"end":{"line":688,"column":74,"offset":14627}}}],"position":{"start":{"line":688,"column":69,"offset":14622},"end":{"line":688,"column":74,"offset":14627}}},"children":["map"]}],"의 인덱스 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"index","position":{"start":{"line":688,"column":80,"offset":14633},"end":{"line":688,"column":87,"offset":14640}}}],"position":{"start":{"line":688,"column":80,"offset":14633},"end":{"line":688,"column":87,"offset":14640}}},"children":["index"]}],"가 지정되도록 구성했다. 태그의 의미론적인 측면을 강화하기 위해서 각 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"tr","position":{"start":{"line":688,"column":126,"offset":14679},"end":{"line":688,"column":130,"offset":14683}}}],"position":{"start":{"line":688,"column":126,"offset":14679},"end":{"line":688,"column":130,"offset":14683}}},"children":["tr"]}],"과 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"td","position":{"start":{"line":688,"column":132,"offset":14685},"end":{"line":688,"column":136,"offset":14689}}}],"position":{"start":{"line":688,"column":132,"offset":14685},"end":{"line":688,"column":136,"offset":14689}}},"children":["td"]}],"의 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"data-number","position":{"start":{"line":688,"column":138,"offset":14691},"end":{"line":688,"column":151,"offset":14704}}}],"position":{"start":{"line":688,"column":138,"offset":14691},"end":{"line":688,"column":151,"offset":14704}}},"children":["data-number"]}]," 속성으로 인덱스를 같이 지정한다. 인덱스의 시작이 0임에 주의하자."]}],"\n",["$","p","138",{"children":["예를 들어, 126번 째 줄은 아래와 같이 렌더링될 것이다."]}],"\n",["$","pre","140",{"children":[["$","$L1f",null,{"languageName":"html","className":"language-html","node":{"type":"element","tagName":"code","properties":{"className":["language-html"]},"children":[{"type":"text","value":"<tr data-number=\"126\">\n\t<td data-number=\"126\">126</td>\n\t<td data-number=\"126\"><!-- code --></td>\n</tr>\n"}],"position":{"start":{"line":692,"column":1,"offset":14779},"end":{"line":697,"column":4,"offset":14894}}},"children":["<tr data-number=\"126\">\n\t<td data-number=\"126\">126</td>\n\t<td data-number=\"126\"><!-- code --></td>\n</tr>\n"]}]]}],"\n",["$","h2",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h2__9tbOB","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h2","properties":{},"children":[{"type":"text","value":"라인별 색상 구분하기","position":{"start":{"line":703,"column":4,"offset":14903},"end":{"line":703,"column":15,"offset":14914}}}],"position":{"start":{"line":703,"column":1,"offset":14900},"end":{"line":703,"column":15,"offset":14914}}},"children":["$","$L11",null,{"href":"#라인별-색상-구분하기","id":"라인별-색상-구분하기","children":["$","$Lf",null,{"children":[["라인별 색상 구분하기"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","144",{"children":["인터넷에서 빼곡히 적힌 글을 읽다보면 가끔 읽던 글의 위치를 헷갈리기도 한다. 특히 코드의 경우 그 특성 상 문장의 의미가 매우 옅으며 복잡하기 때문에 헷갈리는 정도가 더욱 심해진다."]}],"\n",["$","p","146",{"children":["이러한 피로를 줄이기 위하여 라인별로 색상을 다르게 칠해주면 읽는 과정의 피로도를 줄일 수 있을 것이다. 홀수와 짝수 라인의 색상을 서로 다르게 지정하는 전통적인 방법을 사용할 것이다."]}],"\n",["$","p","148",{"children":["다행히도, 우리는 라인 숫자를 표시하기 위해 하나의 라인을 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"tr","position":{"start":{"line":709,"column":34,"offset":15158},"end":{"line":709,"column":38,"offset":15162}}}],"position":{"start":{"line":709,"column":34,"offset":15158},"end":{"line":709,"column":38,"offset":15162}}},"children":["tr"]}]," 태그로 관리하고 있다. 즉, 홀수 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"tr","position":{"start":{"line":709,"column":58,"offset":15182},"end":{"line":709,"column":62,"offset":15186}}}],"position":{"start":{"line":709,"column":58,"offset":15182},"end":{"line":709,"column":62,"offset":15186}}},"children":["tr"]}],"과 짝수 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"tr","position":{"start":{"line":709,"column":67,"offset":15191},"end":{"line":709,"column":71,"offset":15195}}}],"position":{"start":{"line":709,"column":67,"offset":15191},"end":{"line":709,"column":71,"offset":15195}}},"children":["tr"]}],"의 색상을 다르게 지정해주면 된다. ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"CSS","position":{"start":{"line":709,"column":91,"offset":15215},"end":{"line":709,"column":96,"offset":15220}}}],"position":{"start":{"line":709,"column":91,"offset":15215},"end":{"line":709,"column":96,"offset":15220}}},"children":["CSS"]}],"의 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"nth-child","position":{"start":{"line":709,"column":98,"offset":15222},"end":{"line":709,"column":109,"offset":15233}}}],"position":{"start":{"line":709,"column":98,"offset":15222},"end":{"line":709,"column":109,"offset":15233}}},"children":["nth-child"]}]," 선택자를 사용하면 매우 간단하게 해결할 수 있을 것이다."]}],"\n",["$","pre","150",{"children":[["$","$L1f",null,{"languageName":"scss","className":"language-scss","node":{"type":"element","tagName":"code","properties":{"className":["language-scss"]},"children":[{"type":"text","value":"table {\n\t& tr:nth-child(2n) {\n\t\tbackground-color: #1c2335;\n\t}\n}\n"}],"position":{"start":{"line":711,"column":1,"offset":15267},"end":{"line":717,"column":4,"offset":15343}}},"children":["table {\n\t& tr:nth-child(2n) {\n\t\tbackground-color: #1c2335;\n\t}\n}\n"]}]]}],"\n",["$","p","152",{"children":["색상은 기존의 코드 블럭의 디자인에 적절히 어울릴 수 있도록, 기존의 배경색에서 살짝 옅은 색을 지정했다. 짝수 라인의 색상이 살짝 옅어지도록 지정될 것이다."]}],"\n",["$","h2",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h2__9tbOB","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h2","properties":{},"children":[{"type":"text","value":"마우스 오버 시 해당 라인 하이라이팅하기","position":{"start":{"line":725,"column":4,"offset":15442},"end":{"line":725,"column":26,"offset":15464}}}],"position":{"start":{"line":725,"column":1,"offset":15439},"end":{"line":725,"column":26,"offset":15464}}},"children":["$","$L11",null,{"href":"#마우스-오버-시-해당-라인-하이라이팅하기","id":"마우스-오버-시-해당-라인-하이라이팅하기","children":["$","$Lf",null,{"children":[["마우스 오버 시 해당 라인 하이라이팅하기"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","156",{"children":["코드 블럭에 상호작용 기능을 하나 더 추가해보자. 코드 라인에 마우스를 올렸을 때, 해당 라인에 하이라이팅이 되도록 구현한다. 사용자는 코드 블럭에 마우스를 올림으로써 자신이 읽고 있는 코드의 가독성을 증폭시킬 수 있으며, 코드 블럭과의 상호작용을 통해 컨텐츠의 흥미 또한 이끌어낼 수 있을 것이다."]}],"\n",["$","p","158",{"children":["위와 마찬가지로, ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":":hover","position":{"start":{"line":729,"column":11,"offset":15645},"end":{"line":729,"column":19,"offset":15653}}}],"position":{"start":{"line":729,"column":11,"offset":15645},"end":{"line":729,"column":19,"offset":15653}}},"children":[":hover"]}]," 선택자를 통해 순수 ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"CSS","position":{"start":{"line":729,"column":31,"offset":15665},"end":{"line":729,"column":36,"offset":15670}}}],"position":{"start":{"line":729,"column":31,"offset":15665},"end":{"line":729,"column":36,"offset":15670}}},"children":["CSS"]}]," 영역에서 해결할 수 있다."]}],"\n",["$","pre","160",{"children":[["$","$L1f",null,{"languageName":"scss","className":"language-scss","node":{"type":"element","tagName":"code","properties":{"className":["language-scss"]},"children":[{"type":"text","value":"table {\n\t& tr:hover {\n\t\tbackground-color: #546687;\n\n\t\t& td:first-child {\n\t\t\tcolor: white;\n\t\t}\n\t}\n}\n"}],"position":{"start":{"line":731,"column":1,"offset":15687},"end":{"line":741,"column":4,"offset":15798}}},"children":["table {\n\t& tr:hover {\n\t\tbackground-color: #546687;\n\n\t\t& td:first-child {\n\t\t\tcolor: white;\n\t\t}\n\t}\n}\n"]}]]}],"\n",["$","p","162",{"children":["이 정도면 될 것이다. ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"tr","position":{"start":{"line":743,"column":14,"offset":15813},"end":{"line":743,"column":18,"offset":15817}}}],"position":{"start":{"line":743,"column":14,"offset":15813},"end":{"line":743,"column":18,"offset":15817}}},"children":["tr"]}]," 태그에 호버링을 할 경우, 해당 라인의 배경색과 라인 숫자를 밝은 색으로 변경한다. ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"transition","position":{"start":{"line":743,"column":66,"offset":15865},"end":{"line":743,"column":78,"offset":15877}}}],"position":{"start":{"line":743,"column":66,"offset":15865},"end":{"line":743,"column":78,"offset":15877}}},"children":["transition"]}]," 속성을 주어 부드러운 시각효과를 기대할 수 있을 것이다."]}],"\n",["$","h1",null,{"className":"MarkdownHeading_heading__oazA9 MarkdownHeading_h1__mcnqG","data-component":"MarkdownHeading","node":{"type":"element","tagName":"h1","properties":{},"children":[{"type":"text","value":"정리","position":{"start":{"line":754,"column":3,"offset":15922},"end":{"line":754,"column":5,"offset":15924}}}],"position":{"start":{"line":754,"column":1,"offset":15920},"end":{"line":754,"column":5,"offset":15924}}},"children":["$","$L11",null,{"href":"#정리","id":"정리","children":["$","$Lf",null,{"children":[["정리"],["$","$L15",null,{"paddingTop":1,"children":["$","$L1d",null,{}]}]]}]}]}],"\n",["$","p","166",{"children":["블로그 개편 과정에서 코드 블럭은 특히 신경을 많이 쓴 부분이였다. 디자인과 기능이 생각한대로 잘 뽑혀줘서 다행이다. ",["$","$L1e",null,{"inline":true,"node":{"type":"element","tagName":"code","properties":{},"children":[{"type":"text","value":"marked","position":{"start":{"line":756,"column":67,"offset":15992},"end":{"line":756,"column":75,"offset":16000}}}],"position":{"start":{"line":756,"column":67,"offset":15992},"end":{"line":756,"column":75,"offset":16000}}},"children":["marked"]}],"를 적용한 이후로 렌더링 과정을 마음대로 커스터미이징할 수 있는 점을 적극 활용했다."]}],"\n",["$","p","168",{"children":["다음은 수식을 표현하는 LaTeX를 적용해보자."]}]]}],["$","$L104",null,{}]]}],["$","$L1a",null,{"data-component":"ViewAdsTemplate","children":["$","$L105",null,{}]}],["$","$L1a",null,{"data-component":"ViewTagTemplate","children":["$","$Lf",null,{"data-component":"ViewTagBox","spacing":2,"children":[["$","$L19",null,{"fontWeight":"bold","children":"🏷️ Related Tag"}],["$","$L15",null,{"width":"100%","children":[["$","$L15","NextJS",{"display":"inline-block","paddingBottom":1,"paddingRight":1,"children":["$","$L106",null,{"label":"# NextJS","size":"medium","variant":"outlined"}]}],["$","$L15","React",{"display":"inline-block","paddingBottom":1,"paddingRight":1,"children":["$","$L106",null,{"label":"# React","size":"medium","variant":"outlined"}]}],["$","$L15","Markdown",{"display":"inline-block","paddingBottom":1,"paddingRight":1,"children":["$","$L106",null,{"label":"# Markdown","size":"medium","variant":"outlined"}]}],["$","$L15","HTML",{"display":"inline-block","paddingBottom":1,"paddingRight":1,"children":["$","$L106",null,{"label":"# HTML","size":"medium","variant":"outlined"}]}],["$","$L15","SCSS",{"display":"inline-block","paddingBottom":1,"paddingRight":1,"children":["$","$L106",null,{"label":"# SCSS","size":"medium","variant":"outlined"}]}],["$","$L15","TypeScript",{"display":"inline-block","paddingBottom":1,"paddingRight":1,"children":["$","$L106",null,{"label":"# TypeScript","size":"medium","variant":"outlined"}]}]]}]]}]}],["$","$L1a",null,{"data-component":"ViewControllTemplate","children":["$","$L107",null,{"next":{"frontmatter":{"category":"알고리즘","coverImage":"https://user-images.githubusercontent.com/50317129/145976356-6b5d1430-31c0-4c34-829e-6be8f747ab19.png","date":1639440614000,"excerpt":"로또 6/45 (이하 '로또'로 표기)는 1부터 45까지 숫자 중 6개를 찍어서 맞히는 대표적인 복권입니다. 아래는 로또의 순위를 정하는 방식입니다. 로또를 구매한 민우는 당첨 번호 발표일을 학수고대하고 있었습니다. 하지만, 민우의 동생이 로또에 낙서를 하여, 일부 번호를 알아볼 수 없게 되었습니다. 당첨 번호 발표 후, 민우는 자신이 구매했던 로또로 당첨이 가능했던 최고 순위와 최저 순위를 알아보고 싶어 졌습니다.","group":"프로그래머스","title":"[프로그래머스 / JAVA] Level 1 로또의 최고 순위와 최저 순위 (77484)","type":"posts"},"names":["2021","12","14","programmers-a0001"],"url":"/posts/2021/12/14/programmers-a0001"},"prev":"$108","type":"posts"}]}],["$","$L1a",null,{"data-component":"ViewCommentTemplate","children":["$","$Lf",null,{"data-component":"ViewCommentBox","spacing":10,"children":[["$","$Lf",null,{"alignItems":"center","justifyContent":"center","spacing":1,"width":"100%","children":[["$","$L10",null,{"iconName":"heartMessage","width":300}],["$","$L19",null,{"variant":"h5","children":"😍 읽어주셔서 감사합니다!"}],["$","$L19",null,{"variant":"h5","children":["도움이 되셨다면, ",["$","$L19",null,{"color":"hotpink","component":"span","fontWeight":"bold","variant":"inherit","children":"💝공감"}],"이나 ",["$","$L19",null,{"color":"hotpink","component":"span","fontWeight":"bold","variant":"inherit","children":"🗨️댓글"}],"을 달아주시는 건 어떤가요?"]}],["$","$L19",null,{"variant":"h5","children":"블로그 운영에 큰 힘이 됩니다!"}]]}],["$","$Lf",null,{"data-component":"ViewHits","direction":"row","justifyContent":"center","children":["$","img",null,{"alt":"https://blog.itcode.dev/posts/2021/11/07/nextjs-reorganization-5","data-component":"Hits","src":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23333333&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23222222&url=https%3A%2F%2Fblog.itcode.dev%2Fposts%2F2021%2F11%2F07%2Fnextjs-reorganization-5"}]}],["$","$L10b",null,{}]]}]}]]}]]}],["$","$Lf",null,{"alignItems":"center","bottom":20,"data-component":"InteractionBox","direction":"row","position":"fixed","right":20,"spacing":1,"zIndex":10,"children":[["$","$L10c",null,{}],["$","$L10d",null,{}]]}],["$","$L10e",null,{}],["$","$L10f",null,{}]]}],null],"segment":"__PAGE__?{\"markdown\":[\"posts\",\"2021\",\"11\",\"07\",\"nextjs-reorganization-5\"]}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/86391cacb09421ad.css","precedence":"next","crossOrigin":""}]]}],"segment":["markdown","posts/2021/11/07/nextjs-reorganization-5","c"]},"styles":null}]}]}]}]}]]}],null]
-8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"[NextJS] 블로그 개편기 - 5. marked를 응용하여 코드블럭 디자인 개선하기 - 𝝅번째 알파카의 개발 낙서장"}],["$","meta","3",{"name":"description","content":"이전 장에서 marked를 활용하여 이 블로그만의 마크다운 변환기를 구현했다. 이 변환기를 활용하여 밋밋한 코드블럭을 좀 더 IDE 같게 개선해보자."}],["$","link","4",{"rel":"author","href":"https://github.com/RWB0104"}],["$","meta","5",{"name":"author","content":"Kapoo"}],["$","link","6",{"rel":"author","href":"https://www.linkedin.com/in/itcode/"}],["$","meta","7",{"name":"author","content":"RWB"}],["$","link","8",{"rel":"manifest","href":"/manifest.webmanifest"}],["$","meta","9",{"name":"keywords","content":"NextJS,React,Markdown,HTML,SCSS,TypeScript"}],["$","meta","10",{"property":"og:title","content":"[NextJS] 블로그 개편기 - 5. marked를 응용하여 코드블럭 디자인 개선하기 - 𝝅번째 알파카의 개발 낙서장"}],["$","meta","11",{"property":"og:description","content":"이전 장에서 marked를 활용하여 이 블로그만의 마크다운 변환기를 구현했다. 이 변환기를 활용하여 밋밋한 코드블럭을 좀 더 IDE 같게 개선해보자."}],["$","meta","12",{"property":"og:url","content":"https://blog.itcode.dev/posts/2021/11/07/nextjs-reorganization-5"}],["$","meta","13",{"property":"og:site_name","content":"𝝅번째 알파카의 개발 낙서장"}],["$","meta","14",{"property":"og:locale","content":"ko-KR"}],["$","meta","15",{"property":"og:image","content":"https://user-images.githubusercontent.com/50317129/134931033-89954c3d-5e00-4b3b-85aa-54a1dfa29e46.png"}],["$","meta","16",{"property":"og:type","content":"website"}],["$","meta","17",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","18",{"name":"twitter:title","content":"[NextJS] 블로그 개편기 - 5. marked를 응용하여 코드블럭 디자인 개선하기 - 𝝅번째 알파카의 개발 낙서장"}],["$","meta","19",{"name":"twitter:description","content":"이전 장에서 marked를 활용하여 이 블로그만의 마크다운 변환기를 구현했다. 이 변환기를 활용하여 밋밋한 코드블럭을 좀 더 IDE 같게 개선해보자."}],["$","meta","20",{"name":"twitter:image","content":"https://user-images.githubusercontent.com/50317129/134931033-89954c3d-5e00-4b3b-85aa-54a1dfa29e46.png"}],["$","link","21",{"rel":"icon","href":"/favicon.ico"}],["$","link","22",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","23",{"rel":"apple-touch-icon","href":"/favicon.ico"}],["$","meta","24",{"name":"next-size-adjust"}]]
-14:null
+}
+```
+
+이 정도면 될 것이다. `tr` 태그에 호버링을 할 경우, 해당 라인의 배경색과 라인 숫자를 밝은 색으로 변경한다. `transition` 속성을 주어 부드러운 시각효과를 기대할 수 있을 것이다.
+
+
+
+
+
+
+
+
+
+
+# 정리
+
+블로그 개편 과정에서 코드 블럭은 특히 신경을 많이 쓴 부분이였다. 디자인과 기능이 생각한대로 잘 뽑혀줘서 다행이다. `marked`를 적용한 이후로 렌더링 과정을 마음대로 커스터미이징할 수 있는 점을 적극 활용했다.
+
+다음은 수식을 표현하는 LaTeX를 적용해보자.20:["markdown","posts/2021/11/07/nextjs-reorganization-5","c"]
+0:["7IBeU94WeU22HW2jieTRd",[[["",{"children":[["markdown","posts/2021/11/07/nextjs-reorganization-5","c"],{"children":["__PAGE__?{\"markdown\":[\"posts\",\"2021\",\"11\",\"07\",\"nextjs-reorganization-5\"]}",{}]}]},"$undefined","$undefined",true],["",{"children":[["markdown","posts/2021/11/07/nextjs-reorganization-5","c"],{"children":["__PAGE__",{},["$L1",["$","$L2",null,{"component":"main","data-component":"PageTemplate","children":[["$","$L3",null,{"title":"𝝅번째 알파카의 개발 낙서장","version":"5.0.0-alpha6"}],[["$","$L4",null,{"src":"https://user-images.githubusercontent.com/50317129/134931033-89954c3d-5e00-4b3b-85aa-54a1dfa29e46.png","children":["$","$L2",null,{"className":"MarkdownScreenerTemplate_root__dpmgV","data-component":"BaseScreenerTemplate","height":"100%","position":"relative","width":"100%","children":[["$","$L5",null,{"alignItems":"center","height":"100%","justifyContent":"center","padding":2,"position":"relative","width":"100%","children":[["$","$L5",null,{"direction":"row","children":[["$","$L2",null,{"bgcolor":"dodgerblue","boxShadow":"0px 0px 5px black","height":"100%","width":5}],["$","$L5",null,{"color":"white","paddingLeft":2,"paddingRight":2,"children":[["$","$L6",null,{"className":"MarkdownScreenerTemplate_text__5_mNa","fontWeight":"bold","variant":"h5","children":"[NextJS] 블로그 개편기 - 5. marked를 응용하여 코드블럭 디자인 개선하기"}],["$","$L6",null,{"className":"MarkdownScreenerTemplate_text__5_mNa","children":"⏰ 2021-11-07 (일) 12:13:57"}]]}]]}],["$","$L7",null,{"bottom":"10%","direction":"row","gap":4,"position":"absolute","shareData":{"text":"이전 장에서 marked를 활용하여 이 블로그만의 마크다운 변환기를 구현했다. 이 변환기를 활용하여 밋밋한 코드블럭을 좀 더 IDE 같게 개선해보자.","title":"[NextJS] 블로그 개편기 - 5. marked를 응용하여 코드블럭 디자인 개선하기","url":"https://blog.itcode.dev/posts/2021/11/07/nextjs-reorganization-5"}}]]}],["$","$L2",null,{"bottom":0,"left":0,"position":"absolute","width":"100%","children":["$","svg",null,{"className":"Wave_waves___Plcn","data-component":"Wave","height":80,"preserveAspectRatio":"none","shapeRendering":"auto","viewBox":"0 24 150 28","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":[["$","defs",null,{"children":["$","path",null,{"d":"M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z","id":"gentle-wave"}]}],["$","g",null,{"className":"Wave_parallax__AGFbj","children":[["$","use",null,{"fill":"$undefined","opacity":"0.7","x":"48","xlinkHref":"#gentle-wave","y":"0"}],["$","use",null,{"fill":"$undefined","opacity":"0.5","x":"48","xlinkHref":"#gentle-wave","y":"3"}],["$","use",null,{"fill":"$undefined","opacity":"0.3","x":"48","xlinkHref":"#gentle-wave","y":"5"}],["$","use",null,{"fill":"$undefined","x":"48","xlinkHref":"#gentle-wave","y":"7"}]]}]]}]}]]}]}],[["$","$L8",null,{"color":"dodgerblue"}],["$","$L9",null,{"children":["$","$L5",null,{"gap":4,"paddingTop":10,"children":[["$","$La",null,{"current":"/posts/2021/11/07/nextjs-reorganization-5","groups":[{"title":"[NextJS] 블로그 개편기 - 5. marked를 응용하여 코드블럭 디자인 개선하기","url":"/posts/2021/11/07/nextjs-reorganization-5"},{"title":"[NextJS] 블로그 개편기 - 4. marked를 활용한 마크다운 변환기 구현하기","url":"/posts/2021/10/28/nextjs-reorganization-4"},{"title":"[NextJS] 블로그 개편기 - 3. SCSS 입히기","url":"/posts/2021/09/24/nextjs-reorganization-3"},{"title":"[NextJS] 블로그 개편기 - 2. Typescript 입히기","url":"/posts/2021/09/21/nextjs-reorganization-2"},{"title":"[NextJS] 블로그 개편기 - 1. Record One","url":"/posts/2021/09/21/nextjs-reorganization-1"}],"thumbnail":"https://user-images.githubusercontent.com/50317129/134931033-89954c3d-5e00-4b3b-85aa-54a1dfa29e46.png","title":"블로그 개편기"}],["$","$Lb",null,{"list":[{"idx":"1.","level":1,"text":"개요"},{"idx":"2.","level":1,"text":"마크다운의 코드블럭"},{"idx":"2.1.","level":2,"text":"인라인형 코드블럭"},{"idx":"2.2.","level":2,"text":"블럭형 코드블럭"},{"idx":"3.","level":1,"text":"블럭형 코드블럭 디자인 개선하기"},{"idx":"3.1.","level":2,"text":"기본적인 디자인 프레임 변경하기"},{"idx":"3.2.","level":2,"text":"사용된 언어 표시하기"},{"idx":"3.3.","level":2,"text":"내용 복사 버튼 추가하기"},{"idx":"3.4.","level":2,"text":"라인 숫자 표시하기"},{"idx":"3.5.","level":2,"text":"라인별 색상 구분하기"},{"idx":"3.6.","level":2,"text":"마우스 오버 시 해당 라인 하이라이팅하기"},{"idx":"4.","level":1,"text":"정리"}]}],["$","$Lc",null,{"variant":"fullWidth"}],["$","$Ld",null,{"children":"$e"}],["$","$Lc",null,{"variant":"fullWidth"}],["$","$Lf",null,{"tags":["NextJS","React","Markdown","HTML","SCSS","TypeScript"],"type":"posts"}],["$","$L5",null,{"alignItems":"center","data-component":"LabNameTag","width":"100%","children":["$","$L2",null,{"boxShadow":"0px 0px 10px #00000050","maxWidth":250,"width":"100%","children":["$","$L10",null,{"href":"https://itcode.dev","target":"_blank","children":["$","$L11",null,{"scale":1.1,"children":[["$","$L2",null,{"borderRadius":2,"className":"NameTag_tag__DZCHu","data-component":"NameTag","padding":1,"sx":{"background":"linear-gradient(45deg, #833AB4, #FD2B20, #fCAA43)"},"children":["$","$L5",null,{"borderRadius":2,"color":"white","gap":3,"padding":2,"children":[["$","$L2",null,{"className":"Tile_tile__czq9P","data-component":"Tile","overflow":"hidden","position":"relative","children":["$","$L2",null,{"height":"100%","left":0,"position":"absolute","top":0,"width":"100%","children":["$","$L12",null,{"src":"https://itcode.dev/logo.png"}]}]}],["$","$L2",null,{"borderTop":"1px solid white","width":"100%"}],["$","$L5",null,{"gap":1,"children":[["$","$L6",null,{"color":"inherit","fontWeight":"bold","children":"𝝅번째 알파카의 개발 연구소"}],["$","$L2",null,{"color":"inherit","width":"100%","children":["$","$L6",null,{"variant":"caption","children":"이 카드를 클릭하고 𝝅번째 알파카의 개발 연구소의 다양한 프로젝트를 확인해보세요!"}]}]]}]]}]}],["$","$L13",null,{}]]}]}]}]}],["$","$L14",null,{"next":{"thumbnail":"https://user-images.githubusercontent.com/50317129/145976356-6b5d1430-31c0-4c34-829e-6be8f747ab19.png","title":"[프로그래머스 / JAVA] Level 1 로또의 최고 순위와 최저 순위 (77484)","url":"/posts/2021/12/14/programmers-a0001"},"prev":{"thumbnail":"https://user-images.githubusercontent.com/50317129/134931033-89954c3d-5e00-4b3b-85aa-54a1dfa29e46.png","title":"[NextJS] 블로그 개편기 - 4. marked를 활용한 마크다운 변환기 구현하기","url":"/posts/2021/10/28/nextjs-reorganization-4"},"type":"posts"}],["$","$L5",null,{"alignItems":"center","justifyContent":"center","width":"100%","children":["$","$L11",null,{"children":["$","$L5",null,{"alignItems":"center","bgcolor":"lemonchiffon","borderRadius":1,"boxShadow":"0px 0px 10px #00000030","component":"div","data-component":"ThanksCard","direction":"row","gap":2,"padding":2,"children":[["$","$L15",null,{"iconName":"love-message-burst","width":100}],["$","$L5",null,{"children":[["$","$L6",null,{"color":"black","variant":"h6","gutterBottom":true,"children":"읽어주셔서 고마워요!"}],["$","$L6",null,{"color":"black","children":["도움이 되셨다면, ",["$","$L6",null,{"color":"hotpink","component":"span","fontWeight":"bold","children":"공감"}],"이나 ",["$","$L6",null,{"color":"dodgerblue","component":"span","fontWeight":"bold","children":"댓글"}],"을 달아주시는 건 어떤가요?"]}],["$","$L6",null,{"color":"black","children":"블로그 운영에 큰 힘이 됩니다."}]]}]]}]}]}],["$","$L7",null,{"direction":"row","gap":4,"iconColor":"inherit","justifyContent":"center","shareData":{"text":"이전 장에서 marked를 활용하여 이 블로그만의 마크다운 변환기를 구현했다. 이 변환기를 활용하여 밋밋한 코드블럭을 좀 더 IDE 같게 개선해보자.","title":"[NextJS] 블로그 개편기 - 5. marked를 응용하여 코드블럭 디자인 개선하기","url":"/posts/2021/11/07/nextjs-reorganization-5"}}],["$","$L16",null,{}],["$","$L5",null,{"alignItems":"center","children":["$","img",null,{"alt":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23484848&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23242424&url=https%3A%2F%2Fblog.itcode.dev%2Fposts%2F2021%2F11%2F07%2Fnextjs-reorganization-5","data-component":"Hits","src":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23484848&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23242424&url=https%3A%2F%2Fblog.itcode.dev%2Fposts%2F2021%2F11%2F07%2Fnextjs-reorganization-5"}]}]]}]}]]],["$","$L2",null,{"component":"footer","data-component":"Footer","marginTop":10,"children":[["$","$L2",null,{"position":"relative","children":[["$","$L5",null,{"className":"Footer_cloud__btPWK Footer_hour-15__T_I0b","width":"100%","children":["$","svg",null,{"className":"Wave_waves___Plcn","data-component":"Wave","height":40,"preserveAspectRatio":"none","shapeRendering":"auto","viewBox":"0 24 150 28","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":[["$","defs",null,{"children":["$","path",null,{"d":"M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z","id":"gentle-wave"}]}],["$","g",null,{"className":"Wave_parallax__AGFbj","children":[["$","use",null,{"fill":"inherit","opacity":"0.7","x":"48","xlinkHref":"#gentle-wave","y":"0"}],["$","use",null,{"fill":"inherit","opacity":"0.5","x":"48","xlinkHref":"#gentle-wave","y":"3"}],["$","use",null,{"fill":"inherit","opacity":"0.3","x":"48","xlinkHref":"#gentle-wave","y":"5"}],["$","use",null,{"fill":"inherit","x":"48","xlinkHref":"#gentle-wave","y":"7"}]]}]]}]}],["$","$L2",null,{"className":"Footer_sky__FGtTh Footer_hour-15__T_I0b","height":200}],["$","$L2",null,{"bottom":-20,"className":"Footer_ship__VuMth","left":"10%","position":"absolute","children":["$","img",null,{"alt":"icon","height":100,"src":"https://cdn-icons-png.freepik.com/512/6643/6643562.png","width":100}]}],["$","$L2",null,{"bottom":0,"position":"absolute","width":"100%","children":["$","svg",null,{"className":"Wave_waves___Plcn","data-component":"Wave","height":40,"preserveAspectRatio":"none","shapeRendering":"auto","viewBox":"0 24 150 28","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":[["$","defs",null,{"children":["$","path",null,{"d":"M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z","id":"gentle-wave"}]}],["$","g",null,{"className":"Wave_parallax__AGFbj","children":[["$","use",null,{"fill":"#6fb1fc","opacity":"0.7","x":"48","xlinkHref":"#gentle-wave","y":"0"}],["$","use",null,{"fill":"#6fb1fc","opacity":"0.5","x":"48","xlinkHref":"#gentle-wave","y":"3"}],["$","use",null,{"fill":"#6fb1fc","opacity":"0.3","x":"48","xlinkHref":"#gentle-wave","y":"5"}],["$","use",null,{"fill":"#6fb1fc","x":"48","xlinkHref":"#gentle-wave","y":"7"}]]}]]}]}]]}],["$","$L2",null,{"children":["$","$L5",null,{"alignItems":"center","className":"FooterTemplate_footer__97G2c","color":"white","data-component":"FooterTemplate","gap":4,"padding":4,"paddingBottom":8,"paddingTop":8,"children":[["$","$L5",null,{"alignItems":"center","color":"white","children":[["$","$L6",null,{"className":"FooterTemplate_title__Samo8","fontWeight":"bold","variant":"h6","children":"𝝅번째 알파카의 개발 낙서장"}],["$","$L6",null,{"variant":"caption","children":"5.0.0-alpha6"}]]}],["$","$L2",null,{"display":"grid","gap":2,"gridTemplateColumns":"1fr 1fr 1fr","children":[["$","$L10",null,{"data-component":"FooterLinkButton","href":"https://itcode.dev","target":"_blank","children":["$","$L17",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","img",null,{"alt":"itcode.dev","height":"100%","src":"https://itcode.dev/logo-transparent.png","width":"100%"}]}]}]}],["$","$L10",null,{"data-component":"FooterLinkButton","href":"https://github.com/RWB0104","target":"_blank","children":["$","$L17",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L18",null,{}]}]}]}],["$","$L10",null,{"data-component":"FooterLinkButton","href":"mailto:psj2716@mensakorea.org","target":"_blank","children":["$","$L17",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L19",null,{}]}]}]}],["$","$L10",null,{"data-component":"FooterLinkButton","href":"https://www.linkedin.com/in/itcode","target":"_blank","children":["$","$L17",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L1a",null,{}]}]}]}],["$","$L10",null,{"data-component":"FooterLinkButton","href":"/sitemap.xml","target":"_blank","children":["$","$L17",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L1b",null,{}]}]}]}],["$","$L10",null,{"data-component":"FooterLinkButton","href":"/rss.xml","target":"_blank","children":["$","$L17",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L1c",null,{}]}]}]}]]}],["$","$L5",null,{"alignItems":"center","color":"white","children":[["$","$L5",null,{"alignItems":"center","direction":"row","gap":0.5,"children":[["$","$L1d",null,{"fontSize":"inherit","htmlColor":"darkblue"}],["$","$L6",null,{"variant":"caption","children":"Developed by RWB since 2021.05"}]]}],["$","$L5",null,{"alignItems":"center","direction":"row","gap":0.5,"children":[["$","$L1e",null,{"fontSize":"inherit","htmlColor":"crimson"}],["$","$L6",null,{"variant":"caption","children":"5th upgraded at 2024.05"}]]}]]}],["$","img",null,{"alt":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23484848&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23242424&url=https%3A%2F%2Fblog.itcode.dev","data-component":"Hits","src":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23484848&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23242424&url=https%3A%2F%2Fblog.itcode.dev"}]]}]}]]}]]}],null]]},["$","$L1f",null,{"parallelRouterKey":"children","segmentPath":["children","$20","children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L21",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/53da9f19d95a44ac.css","precedence":"next","crossOrigin":""}]]}]]},[null,["$","html",null,{"lang":"ko","children":["$","body",null,{"children":["$","$22",null,{"children":["$","$L23",null,{"children":["$","$L24",null,{"children":[["$","$L1f",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L21",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}],["$","$L25",null,{}],["$","$L26",null,{}]]}]}]}]}]}],null]],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/a3507890a8a83f16.css","precedence":"next","crossOrigin":""}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/6961771bdd90d9c6.css","precedence":"next","crossOrigin":""}]],"$L27"]]]]
+27:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"[NextJS] 블로그 개편기 - 5. marked를 응용하여 코드블럭 디자인 개선하기 - 𝝅번째 알파카의 개발 낙서장"}],["$","meta","3",{"name":"description","content":"이전 장에서 marked를 활용하여 이 블로그만의 마크다운 변환기를 구현했다. 이 변환기를 활용하여 밋밋한 코드블럭을 좀 더 IDE 같게 개선해보자."}],["$","meta","4",{"name":"application-name","content":"𝝅번째 알파카의 개발 낙서장"}],["$","link","5",{"rel":"author","href":"https://github.com/RWB0104"}],["$","meta","6",{"name":"author","content":"Kapoo"}],["$","link","7",{"rel":"author","href":"https://www.linkedin.com/in/itcode"}],["$","meta","8",{"name":"author","content":"RWB"}],["$","link","9",{"rel":"manifest","href":"/manifest.webmanifest"}],["$","meta","10",{"name":"generator","content":"Next.js"}],["$","meta","11",{"name":"keywords","content":"NextJS,React,Markdown,HTML,SCSS,TypeScript"}],["$","meta","12",{"name":"creator","content":"RWB"}],["$","meta","13",{"name":"publisher","content":"GitHub Pages"}],["$","meta","14",{"property":"og:title","content":"[NextJS] 블로그 개편기 - 5. marked를 응용하여 코드블럭 디자인 개선하기 - 𝝅번째 알파카의 개발 낙서장"}],["$","meta","15",{"property":"og:description","content":"이전 장에서 marked를 활용하여 이 블로그만의 마크다운 변환기를 구현했다. 이 변환기를 활용하여 밋밋한 코드블럭을 좀 더 IDE 같게 개선해보자."}],["$","meta","16",{"property":"og:url","content":"https://blog.itcode.dev/posts/2021/11/07/nextjs-reorganization-5"}],["$","meta","17",{"property":"og:site_name","content":"𝝅번째 알파카의 개발 낙서장"}],["$","meta","18",{"property":"og:locale","content":"ko-KR"}],["$","meta","19",{"property":"og:image","content":"https://user-images.githubusercontent.com/50317129/134931033-89954c3d-5e00-4b3b-85aa-54a1dfa29e46.png"}],["$","meta","20",{"property":"og:type","content":"website"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:title","content":"[NextJS] 블로그 개편기 - 5. marked를 응용하여 코드블럭 디자인 개선하기 - 𝝅번째 알파카의 개발 낙서장"}],["$","meta","23",{"name":"twitter:description","content":"이전 장에서 marked를 활용하여 이 블로그만의 마크다운 변환기를 구현했다. 이 변환기를 활용하여 밋밋한 코드블럭을 좀 더 IDE 같게 개선해보자."}],["$","meta","24",{"name":"twitter:image","content":"https://user-images.githubusercontent.com/50317129/134931033-89954c3d-5e00-4b3b-85aa-54a1dfa29e46.png"}],["$","link","25",{"rel":"icon","href":"/favicon.ico"}],["$","link","26",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","27",{"rel":"apple-touch-icon","href":"/favicon.ico"}],["$","meta","28",{"name":"next-size-adjust"}]]
+1:null

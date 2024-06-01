@@ -1,0 +1,308 @@
+2:I[96815,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+3:I[77224,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+4:I[96525,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+5:I[32911,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+6:I[94103,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+7:I[914,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+8:I[85737,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+9:I[66304,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+a:I[84246,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+b:I[29027,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+c:I[97747,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+e:I[91012,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+f:I[13205,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+10:I[14148,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+11:I[10536,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+12:I[94120,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+13:I[12760,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+14:I[92928,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+15:I[30667,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+16:I[95212,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+17:I[58789,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+18:I[51444,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+19:I[45488,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+1a:I[78074,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+1b:I[66024,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+1c:I[1573,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+1d:I[63615,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+1e:I[61260,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-4b483a0b4ab922ed.js","78","static/chunks/app/%5B...markdown%5D/page-4cd97db4e5a23fa3.js"],""]
+1f:I[23845,[],""]
+21:I[23979,[],""]
+22:"$Sreact.suspense"
+23:I[78070,["286","static/chunks/286-5f2793dfa337861d.js","827","static/chunks/827-995b437ce3fae0fe.js","185","static/chunks/app/layout-ebf2cec5b513c194.js"],""]
+24:I[72990,["286","static/chunks/286-5f2793dfa337861d.js","827","static/chunks/827-995b437ce3fae0fe.js","185","static/chunks/app/layout-ebf2cec5b513c194.js"],""]
+25:I[41043,["286","static/chunks/286-5f2793dfa337861d.js","827","static/chunks/827-995b437ce3fae0fe.js","185","static/chunks/app/layout-ebf2cec5b513c194.js"],""]
+26:I[64073,["286","static/chunks/286-5f2793dfa337861d.js","827","static/chunks/827-995b437ce3fae0fe.js","185","static/chunks/app/layout-ebf2cec5b513c194.js"],""]
+27:I[90838,["286","static/chunks/286-5f2793dfa337861d.js","827","static/chunks/827-995b437ce3fae0fe.js","185","static/chunks/app/layout-ebf2cec5b513c194.js"],""]
+d:T40fd,
+# 5번 째 리뉴얼
+
+5번 째 블로그 리뉴얼이다. 4번 째 리뉴얼이 23년 9월이니, 반 년만에 다시 한 번 대공사를 수행했다.
+
+4번 째 블로그는 블로그의 UI 개선 및 허술한 코드의 보완이였다면, 5번 째는 프로젝트의 전반적인 구조 개선 및 통합을 통한 고도화를 중점으로 수행했다.
+
+주요 개선점은 아래와 같다.
+
+1. 모노레포 도입
+2. 프로젝트 구조 재설계
+3. 애니메이션 개선을 통한 UI/UX 고도화
+
+앞서 진행한 리뉴얼에 비해, 이번 리뉴얼은 개발자의 관점에서 훨씬 높은 수준의 개선이 이루어졌다.
+
+
+
+
+
+## 1. 모노레포 도입
+
+첫 번째로, 프로젝트에 모노레포를 도입했다. 소프트웨어 아키텍쳐에서 프로젝트 관리 방식은 크게 세 가지로 구분되며, 각각 **모놀리스(Monolith)**, **멀티레포(Multi-Repo)**, **모노레포(Mono-Repo)** 명칭으로 정의한다.
+
+![모놀리스, 멀티레포, 모노레포](https://github.com/RWB0104/blog.itcode.dev/assets/50317129/bc0fa216-339f-4e24-b909-b577e9e36fea)
+
+각 프로젝트 관리 방식을 도식화하면 위와 같다.
+
+- **모놀리스**
+    - 💡 세 방법 중 가장 거대한 구조를 가진다. 여러 프로젝트가 모여 하나의 레포지토리를 이룬다. 프로젝트의 규모가 작고, 빠른 속도를 요구하는 프로젝트일수록 유용하다.
+    - ✅ 코드의 재사용성이 높다.
+    - ✅ 개발 프로세스가 감소한다.
+    - ✅ 빌드 파이프라인 및 관리 포인트가 명확하다.
+    - ❌ 프로젝트 분석에 많은 시간이 소요된다.
+    - ❌ 사이드 이펙트 영향도가 기하급수적으로 높아진다.
+    - ❌ 규모에 비례하여 테스트 및 빌드 시간이 크게 증가한다.
+    - ❌ 각 코드의 응집도가 매우 높다.
+- **멀티레포**
+    - 💡 각각의 프로젝트가 나뉘어 각각의 레포지토리를 가진다. 프로젝트 규모가 크고, 각 프로젝트의 메인터넌스 확보가 가능한 프로젝트에 유용하다. 대부분의 서비스에서 일반적으로 채택한다.
+    - ✅ 프로젝트별 오너십 및 전문성 확보가 용이하다.
+    - ✅ 각 코드의 응집도가 낮아진다.
+    - ✅ 각 프로젝트마다 최적화된 설정 및 인프라 구축이 가능하다.
+    - ✅ 규모가 작고, 레포지토리 별 역할이 비교적 명확하여 분산 업무에 용이하다.
+    - ✅ 테스트 및 빌드의 병렬 처리가 가능하다.
+    - ❌ 중복 코드가 발생한다.
+    - ❌ 프로젝트별 설정이 세분화될수록 관리 포인트가 많아진다.
+    - ❌ 관심사에 따라 레포지토리의 갈라파고스화가 일어나기 쉽다.
+    - ❌ 각 프로젝트별로 의존성이 강해질 경우, 각 프로젝트의 변화에 따른 즉각적인 대응이 어렵다.
+- **모노레포**
+    - 💡 여러 프로젝트가 모여 하나의 레포지토리를 이루지만, 각 프로젝트가 구조적으로 구분되어있다. 개발자의 역량과 구성에 따라 모놀리스와 멀티레포의 장점을 취해 대규모 프로젝트를 보다 효과적으로 관리할 수 있는 방식이다.
+    - ✅ 전체 코드를 관리하여 코드의 재사용성을 높일 수 있으면서도, 구조적으로 분리하여 관리가 가능하다.
+    - ✅ 서비스 코드 전체에 일관성을 부여할 수 있다.
+    - ✅ 각 프로젝트 별 변화에 기민하게 대응할 수 있다.
+    - ❌ 진입장벽이 높다. 모노레포의 이해도가 떨어질 경우, 단점만을 취하는 촌극이 발생할 수 있다.
+    - ❌ 구조를 나눌뿐, 프로젝트의 규모는 여전히 거대하며, 이로인한 단점 역시 따라온다.
+
+
+
+### 1-1. Y?
+
+그렇다면 왜 나는 모노레포를 도입하기로 했을까? 그 이유는 [연구소](https://itcode.dev)와 [블로그](https://blog.itcode.dev)에 있다.
+
+두 사이트의 UI 및 레이아웃 구조는 매우 흡사하다. 그 뿐만 아니라, 꽤나 복잡한 비즈니스 로직 또한 동일한 방식으로 사용한다.
+
+일례로, 연구소 프로젝트 설명과 블로그의 게시글은 모두 마크다운을 활용하며, 이를 변환하는 로직 및 컴포넌트가 필요하다. 당연히 그 분량 또한 적지 않은데, 이러한 변경점이 있을 때마다 일일히 코드를 수동으로 복제해야했다.
+
+글 작성이 빈번히 일어나는 블로그에 비해, 비교적 변경의 여지가 적은 연구소 페이지는 상대적으로 갈라파고스화가 쉽게 일어나기 일쑤였다.
+
+<br />
+
+생각해보면, 이렇게나 비슷한 두 페이지를 굳이 두 레포지토리로 분리하여 관리하는 건 역시 불편하다.
+
+아예 하나의 레포지토리로 합쳐 전체적인 프로젝트의 일관성을 확보하고, 중복 코드를 줄이면 연구소와 블로그 페이지 모두에게 선순환이 될 수 있다고 생각했다.
+
+이전 회사에서 모노레포 기반의 프로젝트를 담당한 덕분에 대충 개념은 알고 있기도 하고, 요즘 트렌트라 이 참에 적용해보면 좋을 것 같았다.
+
+
+
+### 1-2. How?
+
+모노레포를 쓸 수 있는 도구가 몇 가지 있는데, 대표적으로 [turborepo](https://turbo.build/), [Lerna](https://lerna.js.org/), [NX](https://nx.dev/)가 있다.
+
+그 중 **NX**를 선택하기로 했다. 선택한 이유는 아래와 같다.
+
+- turborepo는 진입장벽이 낮다. 물론 장점인데, 보통 저러면 제공하는 기능이 상대적으로 빈약하다.
+- 이왕 하는거 어려운 걸로 해봐야지 하는 일종의 객기다. 어려운걸 시도하면 나중에 어디가서 한 마디라도 더 할 수 있다.
+- 비슷한 이유로, Hard -> Easy는 적당한데, Easy -> Hard는 Nothing -> Hard 보다 훨씬 어렵다.
+- Lerna는 이전 회사에서 접해본 경험이 있지만, NX가 인수했다. 즉, 미래가 불투명할 가능성이 높다.
+- NX 역시 이전 회사에서 접해봤고, 어렵지만 그 만큼 탐구할 요소가 많다.
+
+NX는 VSCode에 매우 친화적이다. VSCode를 활용하면 [Nx Console](https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console) 플러그인을 통해 NX의 기능과 명령어를 UI 기반으로 쉽게 사용할 수 있다.
+
+나 또한 해당 플러그인을 십분 활용하여 프로젝트를 구축했다.
+
+`apps/`와 `packages/`로 큰 카테고리를 나눴다. `apps/`에는 앱 구축과 관련된 코드들을 두고, `packages/`는 해당 앱을 구현하는 컴포넌트, API, 상태관리 프로젝트들이 위치하는 구조다.
+
+`apps/`는 빌드 대상으로, `apps/` 하위의 프로젝트들은 모두 빌드되어 배포될 코드들이다.
+
+<br />
+
+turborepo나 lerna와는 다르게, `package.json`과 `node_modules`가 최상단 루트에 하나만 위치한다.
+
+공식문서를 깊게 찾아보진 않았지만, 특별한 언급이 없는 걸로 보아, 모든 프로젝트들이 동일한 메타, 동일한 디펜던시 관리 체계를 갖는 것을 권장하는 듯 하다.
+
+생각해보면, 프로젝트마다 별도의 디펜던시 바운더리를 가질 경우, 동일한 디펜던시임에도 버전이 다르거나, 동일한 디펜던시를 각각 설치하기도 한다.
+
+디펜던시들은 Node.js와 React 등 많은 버전의 영향을 받는다. 디펜던시의 일관성이 약해질 경우, 특정 디펜던시를 A는 최신 버전으로 사용이 가능한데, B는 다른 요인으로 인해 그 보다 하위 버전을 사용하는 케이스가 발생할 수 있다.
+
+NX는 디펜던시의 일관성을 지킴으로써 얻는 이득에 좀 더 초점을 두는 모양이다. 다행히, 나 역시 일관성을 통해 얻는 이득이 더욱 효율적이라 생각한다.
+
+
+
+### 1-3. What the FXXX
+
+물론 단점도 있는데, 내 경우 대부분의 프로젝트는 `npm version` 명령어 기반의 버전관리를 사용한다. `npm version` 명령어를 사용하면, `major`, `minor`, `patch`에 따라 버전을 올리고 그에 따른 커밋과 태그를 만들어준다.
+
+이를 기반으로 태그가 생성될 때, 이를 감지하여 빌드 파이프라인을 구동하는 방식이다.
+
+문제는 1 레포지토리 당 1 `package.json`이라는 정책으로 인해, 기 방식으로는 개별적인 버전 관리가 불가능하다.
+
+일단은 버전을 하나로 두어 버전 업데이트 시, 연구소와 블로그 페이지 둘 다 배포를 수행하기로 했다.
+
+태그에 추가 플래그를 붙여 플래그에 따라 빌드 파이프를 구분할 수 있겠으나, 어차피 빌드도 오래 걸리지 않고, 주기적으로 최신화된 코드로 빌드하는 것도 괜찮은 것 같다.
+
+<br />
+
+GitHub Actions에서 빌드를 돌리다가 발견한건데, 로컬에선 딱히 별 말 없던 Nx Cloud가, GitHub Actions에서 난리를 핀다.
+
+아마 특정 환경에서 빌드 시 기본적으로 연결하도록 강제하는 코드가 있는 모양이다.
+
+개인적으로 이런걸 제일 싫어한다. 로컬에선 문제가 없는데 빌드 서버와 비슷하게 타 환경에서만 나는 오류들. 디버깅하기도 난감하다.
+빌드 시 `NX_NO_CLOUD=true` 명령어를 추가하여 Nx Cloud 연결을 끌 수 있다.
+
+``` bash
+NX_NO_CLOUD=true pnpm nx build {name}
+```
+
+위 명령어로 Nx Cloud를 비활성화하고 빌드할 수 있었다.
+
+
+
+
+
+## 2. 프로젝트 구조 재설계
+
+![image](https://github.com/RWB0104/blog.itcode.dev/assets/50317129/00dc8b3d-359d-4eb8-a562-be2bf654abd7)
+
+앞서 설명한 모노레포의 특징처럼, 모노레포는 어떻게 설계하냐에 따라 모놀리스와 멀티레포의 장점을 모두 취할수도 있고, 반대로 단점만 취할 수도 있다. 어떤걸 취할지는 전적으로 구성한 개발자의 몫이다.
+
+모든 게 그렇듯이, 허술하게 설계된 모노레포는 오히려 독이 될 수 있는 셈이다. 때문에 나 역시도, 모노레포의 장점을 최대한 챙기기 위해, 그에 걸맞는 구조 설계가 필요했다.
+
+![대략적인 구조](https://github.com/RWB0104/blog.itcode.dev/assets/50317129/4db10812-7ad0-4356-9ca8-601537d6c4a9)
+
+내가 생각한 구조의 큰 틀을 도식화하면 대략 위와 같은 그림이 나온다.
+
+- **Application** - 애플리케이션 모듈. 빌드될 서비스들이 위치한다. Next.js 앱 코드 등이 위치한다.
+- **Business Module** - 각 애플리케이션과 밀접한 연관을 가진 모듈이다. API, 상태관리를 참조할 수 있다. 앱 디자인 팩 등이 위치한다.
+- **Global Module** - 각 애플리케이션에 의존성이 없는 공통 모듈이다. 디자인 시스템, 공통 코드 등이 위치한다.
+
+API, State 모듈은 공통 모듈에 속하며, 비즈니스 모듈과의 관계를 강조하기 위해 별도로 표기한 것이다.
+
+각 관심사 및 역할에 따라 패키지를 구분하고 나누어 연결했다. 의존성 그래프를 확인하면 아래와 같다.
+
+![Nx Graph](https://github.com/RWB0104/blog.itcode.dev/assets/50317129/ae738955-563c-4fe6-bad1-ba779f85fa18)
+
+여기서 NX가 가지는 강점 하나가 나온다. `nx graph`를 통해 프로젝트 참조 구조를 확인할 수 있다. 화살표가 이어진 프로젝트는 서로 의존 관계에 있음을 의미한다.
+
+화살표가 나온 프로젝트가 해당 화살표로 연결된 프로젝트를 참조한다는 의미이다.
+
+즉, `global-ui-pack`은 `api`, `ui-pack`, `common`, `state` 프로젝트를 참조한다.
+
+> NX는 크게 application과 library라는 프로젝트 타입을 생성할 수 있다. application은 사용자에게 제공되는 소프트웨어이고, library는 다른 프로젝트에서 참조 가능한 코드 모음이다.
+
+<br />
+
+각 프로젝트는 아래와 같은 역할을 가진다.
+
+- `root` - 소개 페이지 Next.js 코드
+- `blog` - 블로그 Next.js 코드
+- `root-ui-pack` - 소개 페이지 디자인 팩
+- `blog-ui-pack` - 블로그 디자인 팩
+- `global-ui-pack` - 공통 디자인 팩. 공통 디자인이면서 공통 비즈니스 로직이 필요한 컴포넌트들이 주를 이룬다.
+- `ui-pack` - 디자인 시스템. 비즈니스 로직, API, 상태를 참조할 수 없다.
+- `api` - API 모듈
+- `common` - 공통 모듈
+- `markdown-kit` - 마크다운 모듈. 소개 페이지 및 블로그에서 사용하는 마크다운을 변환하는 범용 코드가 포함된다. 각 서비스 별 마크다운의 특성을 반영한 코드는, 해당 서비스의 비즈니스 영역에서 구현한다.
+- `state` - 상태관리 모듈
+
+위와 같은 구조와 역할을 가진다.
+
+물론, 프로젝트의 참조 규칙을 정의한다고 해도, 개념적인 형태로는 한계가 있다. 언제든지 휴먼 에러로 인해 규칙이 훼손될 수 있기 때문이다.
+
+나에 의해 모든게 이루어지는 프로젝트임에도, 가끔 규칙을 망각할 때가 있다. 하물며 프로젝트의 규모가 커지고 인원이 많아질수록 이런 현상은 훨씬 두드러지게 된다.
+
+NX는 이러한 문제를 ESLint의 규칙을 통해 강제성을 가질 수 있도록 관련 ESLint 플러그인을 기본으로 제공한다.
+
+``` json
+{
+  "name": "blog",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/blog",
+  "projectType": "application",
+  "tags": [
+    "app:blog",
+    "name:blog"
+  ],
+  "// targets": "to see all targets run: nx show project blog --web",
+  "targets": {}
+}
+```
+
+각 프로젝트는 `project.json`이라는 메타 파일을 가진다. 해당 파일의 태그에 원하는 텍스트를 배열로 지정할 수 있다.
+
+원하는 형식으로 프로젝트의 태그를 지정한다. 이 태그는 추후 ESLint의 룰에서 각 프로젝트의 참조를 정의하는 기준이 된다.
+
+여러 프로젝트에 동일한 태그를 주어 그룹 형식으로 관리하는 것도 가능하다.
+
+``` json
+{
+  "rules": {
+    "@nx/enforce-module-boundaries": [
+      "error",
+      {
+        "enforceBuildableLibDependency": true,
+        "allow": [],
+        "depConstraints": [
+          {
+            "sourceTag": "name:blog",
+            "onlyDependOnLibsWithTags": [
+              "lib:blog",
+              "lib:shared",
+              "lib:shared-ui"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+`@nx/enforce-module-boundaries` 규칙으로 참조 규칙을 정의할 수 있다. 프로젝트 최상단의 `./eslintrc.json`에 간단한 틀이 정의되어 있다.
+
+`allow`엔 어디서나 참조 가능한 프로젝트를 정의할 수 있다. 이를테면, `common` 같이 어디서나 참조해도 문제가 없는 모듈은 `allow`로 한 번에 적용하는 것이 관리 측면에서 이로울 수 있다.
+
+`depConstraints`에 배열로 원하는 참조 규칙을 지정할 수 있다. `sourceTag`에 원하는 태그 이름을 타깃하고 `onlyDependOnLibsWithTags`에 참조 가능한 태그 목록을 지정한다. 즉 `name:blog` 태그를 가진 프로젝트는 `lib:blog`, `lib:shared`, `lib:shared-ui`를 태그를 가진 프로젝트만을 참조할 수 있으며, 그 이외 프로젝트는 참조가 불가능하다. 정의한 참조 규칙을 실질적으로 구현할 수 있는 것이다.
+
+
+
+
+
+## 3. 애니메이션 고도화
+
+![null](https://github.com/RWB0104/blog.itcode.dev/assets/50317129/ca8c8483-f340-4640-9bda-db4c03cfd21d)
+
+기존의 애니메이션들은 [framer-motion](https://www.framer.com/motion/)을 기반으로 구성되어있었다. 디펜던시를 사용하다보니, 크고 작은 성능저하가 있었으며, 디펜던시 코드를 건드릴 수 없어 트러블슈팅이 어려웠다. 특히 소개페이지의 홈이 렌더링 이슈가 매우 심각했던 걸로 기억한다. (아마 디펜던시 내부에 useLayoutEffect가 많이 쓰였을 거라 추측된다.)
+
+때문에 이번 리뉴얼에선 여러 애니메이션을 직접 구현하는 것에 초점을 맞췄다. 틸트, 페이드, 뷰포트에 따른 애니메이션 실행 등 여러 애니메이션 요소들을 직접 개발했다. 이 요소들은 추후 게시글로 상세하게 풀어볼 예정이다.
+
+
+
+
+
+# 마치며
+
+이번 리뉴얼은 실무에서 얻었던 많은 인사이트를 반영하고 퍼포먼스를 개선할 수 있었던 뜻 깊은 리뉴얼이였다.
+
+특히 애니메이션을 직접 개발하며 UX의 상호작용을 생각해볼 수 있는 계기가 되었다. 수 많은 게시글 주제는 덤...
+
+리뉴얼 버프로 한 동안은 다시 블로그 운영에 집중할 수 있을 듯 하다.20:["markdown","projects/2024/06/01/5th-generation","c"]
+0:["_FAutQmmnc135Akw9bOm6",[[["",{"children":[["markdown","projects/2024/06/01/5th-generation","c"],{"children":["__PAGE__?{\"markdown\":[\"projects\",\"2024\",\"06\",\"01\",\"5th-generation\"]}",{}]}]},"$undefined","$undefined",true],["",{"children":[["markdown","projects/2024/06/01/5th-generation","c"],{"children":["__PAGE__",{},["$L1",["$","$L2",null,{"component":"main","data-component":"PageTemplate","children":[["$","$L3",null,{"title":"𝝅번째 알파카의 개발 낙서장","version":"5.0.0-beta8"}],[["$","$L4",null,{"src":"https://github.com/RWB0104/blog.itcode.dev/assets/50317129/7cb346d2-9499-4de1-8e99-055913dd4b82","children":["$","$L2",null,{"className":"MarkdownScreenerTemplate_root__dpmgV","data-component":"BaseScreenerTemplate","height":"100%","position":"relative","width":"100%","children":[["$","$L5",null,{"alignItems":"center","height":"100%","justifyContent":"center","padding":2,"position":"relative","width":"100%","children":[["$","$L5",null,{"direction":"row","children":[["$","$L2",null,{"bgcolor":"springgreen","boxShadow":"0px 0px 5px black","height":"100%","width":5}],["$","$L5",null,{"color":"white","paddingLeft":2,"paddingRight":2,"children":[["$","$L6",null,{"className":"MarkdownScreenerTemplate_text__5_mNa","fontWeight":"bold","variant":"h5","children":"The 5th Generation"}],["$","$L6",null,{"className":"MarkdownScreenerTemplate_text__5_mNa","children":"⏰ 2024-06-01 (토) 04:42:22"}]]}]]}],["$","$L7",null,{"bottom":"10%","direction":"row","gap":4,"position":"absolute","shareData":{"text":"5번 째 리뉴얼을 수행하며 블로그가 어떤식으로 변화됐는지, 어떤 것을 중점으로 삼았는지 다뤄본다.","title":"The 5th Generation","url":"https://blog.itcode.dev/projects/2024/06/01/5th-generation"}}]]}],["$","$L2",null,{"bottom":0,"left":0,"position":"absolute","width":"100%","children":["$","svg",null,{"className":"Wave_waves___Plcn","data-component":"Wave","height":80,"preserveAspectRatio":"none","shapeRendering":"auto","viewBox":"0 24 150 28","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":[["$","defs",null,{"children":["$","path",null,{"d":"M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z","id":"gentle-wave"}]}],["$","g",null,{"className":"Wave_parallax__AGFbj","children":[["$","use",null,{"fill":"$undefined","opacity":"0.7","x":"48","xlinkHref":"#gentle-wave","y":"0"}],["$","use",null,{"fill":"$undefined","opacity":"0.5","x":"48","xlinkHref":"#gentle-wave","y":"3"}],["$","use",null,{"fill":"$undefined","opacity":"0.3","x":"48","xlinkHref":"#gentle-wave","y":"5"}],["$","use",null,{"fill":"$undefined","x":"48","xlinkHref":"#gentle-wave","y":"7"}]]}]]}]}]]}]}],[["$","$L8",null,{"color":"springgreen"}],["$","$L9",null,{"children":["$","$L5",null,{"gap":4,"paddingTop":10,"children":[null,["$","$La",null,{"list":[{"idx":"1.","level":1,"text":"5번 째 리뉴얼"},{"idx":"1.1.","level":2,"text":"1. 모노레포 도입"},{"idx":"1.1.1.","level":3,"text":"1-1. Y?"},{"idx":"1.1.2.","level":3,"text":"1-2. How?"},{"idx":"1.1.3.","level":3,"text":"1-3. What the FXXX"},{"idx":"1.2.","level":2,"text":"2. 프로젝트 구조 재설계"},{"idx":"1.3.","level":2,"text":"3. 애니메이션 고도화"},{"idx":"2.","level":1,"text":"마치며"}]}],["$","$Lb",null,{"variant":"fullWidth"}],["$","$Lc",null,{"children":"$d"}],["$","$Lb",null,{"variant":"fullWidth"}],["$","$Le",null,{"tags":["React","Next.js","Markdown","NX","Monorepo"],"type":"projects"}],["$","$L5",null,{"alignItems":"center","data-component":"LabNameTag","width":"100%","children":["$","$L2",null,{"boxShadow":"0px 0px 10px #00000050","maxWidth":250,"width":"100%","children":["$","$Lf",null,{"href":"https://itcode.dev","target":"_blank","children":["$","$L10",null,{"scale":1.1,"children":[["$","$L2",null,{"borderRadius":2,"className":"NameTag_tag__DZCHu","data-component":"NameTag","padding":1,"sx":{"background":"linear-gradient(45deg, #833AB4, #FD2B20, #fCAA43)"},"children":["$","$L5",null,{"borderRadius":2,"color":"white","gap":3,"padding":2,"children":[["$","$L2",null,{"className":"Tile_tile__czq9P","data-component":"Tile","overflow":"hidden","position":"relative","children":["$","$L2",null,{"height":"100%","left":0,"position":"absolute","top":0,"width":"100%","children":["$","$L11",null,{"src":"https://itcode.dev/logo.png"}]}]}],["$","$L2",null,{"borderTop":"1px solid white","width":"100%"}],["$","$L5",null,{"gap":1,"children":[["$","$L6",null,{"color":"inherit","fontWeight":"bold","children":"𝝅번째 알파카의 개발 연구소"}],["$","$L2",null,{"color":"inherit","width":"100%","children":["$","$L6",null,{"variant":"caption","children":"이 카드를 클릭하고 𝝅번째 알파카의 개발 연구소의 다양한 프로젝트를 확인해보세요!"}]}]]}]]}]}],["$","$L12",null,{}]]}]}]}]}],["$","$L13",null,{"next":"$undefined","prev":{"thumbnail":"https://user-images.githubusercontent.com/50317129/156607880-c5abad92-1991-4c01-b85f-7153bf89cb64.png","title":"OpenLayers를 여행하는 개발자를 위한 안내서 - 26. 실전! OpenLayers6 Sandbox를 내 GeoServer로 구동하기","url":"/projects/2023/09/24/gis-guide-for-programmer-26"},"type":"projects"}],["$","$L5",null,{"alignItems":"center","justifyContent":"center","width":"100%","children":["$","$L10",null,{"children":["$","$L5",null,{"alignItems":"center","bgcolor":"lemonchiffon","borderRadius":1,"boxShadow":"0px 0px 10px #00000030","component":"div","data-component":"ThanksCard","direction":"row","gap":2,"padding":2,"children":[["$","$L14",null,{"iconName":"love-message-burst","width":100}],["$","$L5",null,{"children":[["$","$L6",null,{"color":"black","variant":"h6","gutterBottom":true,"children":"읽어주셔서 고마워요!"}],["$","$L6",null,{"color":"black","children":["도움이 되셨다면, ",["$","$L6",null,{"color":"hotpink","component":"span","fontWeight":"bold","children":"공감"}],"이나 ",["$","$L6",null,{"color":"dodgerblue","component":"span","fontWeight":"bold","children":"댓글"}],"을 달아주시는 건 어떤가요?"]}],["$","$L6",null,{"color":"black","children":"블로그 운영에 큰 힘이 됩니다."}]]}]]}]}]}],["$","$L7",null,{"direction":"row","gap":4,"iconColor":"inherit","justifyContent":"center","shareData":{"text":"5번 째 리뉴얼을 수행하며 블로그가 어떤식으로 변화됐는지, 어떤 것을 중점으로 삼았는지 다뤄본다.","title":"The 5th Generation","url":"/projects/2024/06/01/5th-generation"}}],["$","$L15",null,{}],["$","$L5",null,{"alignItems":"center","children":["$","img",null,{"alt":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23484848&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23242424&url=https%3A%2F%2Fblog.itcode.dev%2Fprojects%2F2024%2F06%2F01%2F5th-generation","data-component":"Hits","src":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23484848&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23242424&url=https%3A%2F%2Fblog.itcode.dev%2Fprojects%2F2024%2F06%2F01%2F5th-generation"}]}]]}]}]]],["$","$L2",null,{"component":"footer","data-component":"Footer","marginTop":10,"children":[["$","$L2",null,{"position":"relative","children":[["$","$L16",null,{}],["$","$L2",null,{"bottom":-20,"className":"Footer_ship__VuMth","left":"10%","position":"absolute","children":["$","img",null,{"alt":"icon","height":100,"src":"https://cdn-icons-png.freepik.com/512/6643/6643562.png","width":100}]}],["$","$L2",null,{"bottom":0,"position":"absolute","width":"100%","children":["$","svg",null,{"className":"Wave_waves___Plcn","data-component":"Wave","height":40,"preserveAspectRatio":"none","shapeRendering":"auto","viewBox":"0 24 150 28","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":[["$","defs",null,{"children":["$","path",null,{"d":"M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z","id":"gentle-wave"}]}],["$","g",null,{"className":"Wave_parallax__AGFbj","children":[["$","use",null,{"fill":"#6fb1fc","opacity":"0.7","x":"48","xlinkHref":"#gentle-wave","y":"0"}],["$","use",null,{"fill":"#6fb1fc","opacity":"0.5","x":"48","xlinkHref":"#gentle-wave","y":"3"}],["$","use",null,{"fill":"#6fb1fc","opacity":"0.3","x":"48","xlinkHref":"#gentle-wave","y":"5"}],["$","use",null,{"fill":"#6fb1fc","x":"48","xlinkHref":"#gentle-wave","y":"7"}]]}]]}]}]]}],["$","$L2",null,{"children":["$","$L5",null,{"alignItems":"center","className":"FooterTemplate_footer__97G2c","color":"white","data-component":"FooterTemplate","gap":4,"padding":4,"paddingBottom":8,"paddingTop":8,"children":[["$","$L5",null,{"alignItems":"center","color":"white","children":[["$","$L6",null,{"className":"FooterTemplate_title__Samo8","fontWeight":"bold","variant":"h6","children":"𝝅번째 알파카의 개발 낙서장"}],["$","$L6",null,{"variant":"caption","children":"5.0.0-beta8"}]]}],["$","$L2",null,{"display":"grid","gap":2,"gridTemplateColumns":"1fr 1fr 1fr","children":[["$","$Lf",null,{"data-component":"FooterLinkButton","href":"https://itcode.dev","target":"_blank","children":["$","$L17",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","img",null,{"alt":"itcode.dev","height":"100%","src":"https://itcode.dev/logo-transparent.png","width":"100%"}]}]}]}],["$","$Lf",null,{"data-component":"FooterLinkButton","href":"https://github.com/RWB0104","target":"_blank","children":["$","$L17",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L18",null,{}]}]}]}],["$","$Lf",null,{"data-component":"FooterLinkButton","href":"mailto:psj2716@mensakorea.org","target":"_blank","children":["$","$L17",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L19",null,{}]}]}]}],["$","$Lf",null,{"data-component":"FooterLinkButton","href":"https://www.linkedin.com/in/itcode","target":"_blank","children":["$","$L17",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L1a",null,{}]}]}]}],["$","$Lf",null,{"data-component":"FooterLinkButton","href":"/sitemap.xml","target":"_blank","children":["$","$L17",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L1b",null,{}]}]}]}],["$","$Lf",null,{"data-component":"FooterLinkButton","href":"/rss.xml","target":"_blank","children":["$","$L17",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L1c",null,{}]}]}]}]]}],["$","$L5",null,{"alignItems":"center","color":"white","children":[["$","$L5",null,{"alignItems":"center","direction":"row","gap":0.5,"children":[["$","$L1d",null,{"fontSize":"inherit","htmlColor":"darkblue"}],["$","$L6",null,{"variant":"caption","children":"Developed by RWB since 2021.05"}]]}],["$","$L5",null,{"alignItems":"center","direction":"row","gap":0.5,"children":[["$","$L1e",null,{"fontSize":"inherit","htmlColor":"crimson"}],["$","$L6",null,{"variant":"caption","children":"5th upgraded at 2024.05"}]]}]]}],["$","img",null,{"alt":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23484848&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23242424&url=https%3A%2F%2Fblog.itcode.dev","data-component":"Hits","src":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23484848&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23242424&url=https%3A%2F%2Fblog.itcode.dev"}]]}]}]]}]]}],null]]},["$","$L1f",null,{"parallelRouterKey":"children","segmentPath":["children","$20","children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L21",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/ff5a198c4b1dc826.css","precedence":"next","crossOrigin":""}]]}]]},[null,["$","html",null,{"lang":"ko","children":[["$","head",null,{"children":["$","meta",null,{"content":"ca-pub-5522045122225064","name":"google-adsense-account"}]}],["$","body",null,{"children":["$","$22",null,{"children":["$","$L23",null,{"gaKey":"G-7QYWYNZ90R","children":["$","$L24",null,{"children":["$","$L25",null,{"children":[["$","$L1f",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L21",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}],["$","$L26",null,{}],["$","$L27",null,{}]]}]}]}]}]}]]}],null]],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/a3507890a8a83f16.css","precedence":"next","crossOrigin":""}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/6961771bdd90d9c6.css","precedence":"next","crossOrigin":""}]],"$L28"]]]]
+28:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"The 5th Generation - 𝝅번째 알파카의 개발 낙서장"}],["$","meta","3",{"name":"description","content":"5번 째 리뉴얼을 수행하며 블로그가 어떤식으로 변화됐는지, 어떤 것을 중점으로 삼았는지 다뤄본다."}],["$","meta","4",{"name":"application-name","content":"𝝅번째 알파카의 개발 낙서장"}],["$","link","5",{"rel":"author","href":"https://github.com/RWB0104"}],["$","meta","6",{"name":"author","content":"Kapoo"}],["$","link","7",{"rel":"author","href":"https://www.linkedin.com/in/itcode"}],["$","meta","8",{"name":"author","content":"RWB"}],["$","link","9",{"rel":"manifest","href":"/manifest.webmanifest"}],["$","meta","10",{"name":"generator","content":"Next.js"}],["$","meta","11",{"name":"keywords","content":"React,Next.js,Markdown,NX,Monorepo"}],["$","meta","12",{"name":"creator","content":"RWB"}],["$","meta","13",{"name":"publisher","content":"GitHub Pages"}],["$","meta","14",{"property":"og:title","content":"The 5th Generation - 𝝅번째 알파카의 개발 낙서장"}],["$","meta","15",{"property":"og:description","content":"5번 째 리뉴얼을 수행하며 블로그가 어떤식으로 변화됐는지, 어떤 것을 중점으로 삼았는지 다뤄본다."}],["$","meta","16",{"property":"og:url","content":"https://blog.itcode.dev/projects/2024/06/01/5th-generation"}],["$","meta","17",{"property":"og:site_name","content":"𝝅번째 알파카의 개발 낙서장"}],["$","meta","18",{"property":"og:locale","content":"ko-KR"}],["$","meta","19",{"property":"og:image","content":"https://github.com/RWB0104/blog.itcode.dev/assets/50317129/7cb346d2-9499-4de1-8e99-055913dd4b82"}],["$","meta","20",{"property":"og:type","content":"website"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:title","content":"The 5th Generation - 𝝅번째 알파카의 개발 낙서장"}],["$","meta","23",{"name":"twitter:description","content":"5번 째 리뉴얼을 수행하며 블로그가 어떤식으로 변화됐는지, 어떤 것을 중점으로 삼았는지 다뤄본다."}],["$","meta","24",{"name":"twitter:image","content":"https://github.com/RWB0104/blog.itcode.dev/assets/50317129/7cb346d2-9499-4de1-8e99-055913dd4b82"}],["$","link","25",{"rel":"icon","href":"/favicon.ico"}],["$","link","26",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","27",{"rel":"apple-touch-icon","href":"/favicon.ico"}],["$","meta","28",{"name":"next-size-adjust"}]]
+1:null

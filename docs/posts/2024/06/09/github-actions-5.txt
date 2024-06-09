@@ -1,0 +1,494 @@
+2:I[96815,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+3:I[77224,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+4:I[96525,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+5:I[32911,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+6:I[94103,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+7:I[914,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+8:I[85737,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+9:I[66304,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+a:I[13239,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+b:I[84246,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+c:I[29027,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+d:I[97747,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+f:I[91012,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+10:I[13205,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+11:I[14148,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+12:I[10536,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+13:I[94120,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+14:I[12760,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+15:I[92928,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+16:I[30667,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+17:I[95212,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+18:I[58789,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+19:I[51444,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+1a:I[45488,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+1b:I[78074,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+1c:I[66024,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+1d:I[1573,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+1e:I[63615,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+1f:I[61260,["746","static/chunks/395b46ae-c0449b176eeaf484.js","286","static/chunks/286-5f2793dfa337861d.js","856","static/chunks/856-a3b2ca6e6899ec63.js","860","static/chunks/860-1c1930983f10b75c.js","655","static/chunks/655-d1245ae7c9a835d6.js","136","static/chunks/136-a88c810866fa0c90.js","78","static/chunks/app/%5B...markdown%5D/page-b07cddb9fa29a3b0.js"],""]
+20:I[23845,[],""]
+22:I[23979,[],""]
+23:"$Sreact.suspense"
+24:I[78070,["286","static/chunks/286-5f2793dfa337861d.js","827","static/chunks/827-995b437ce3fae0fe.js","185","static/chunks/app/layout-f848514643439247.js"],""]
+25:I[72990,["286","static/chunks/286-5f2793dfa337861d.js","827","static/chunks/827-995b437ce3fae0fe.js","185","static/chunks/app/layout-f848514643439247.js"],""]
+26:I[41043,["286","static/chunks/286-5f2793dfa337861d.js","827","static/chunks/827-995b437ce3fae0fe.js","185","static/chunks/app/layout-f848514643439247.js"],""]
+27:I[64073,["286","static/chunks/286-5f2793dfa337861d.js","827","static/chunks/827-995b437ce3fae0fe.js","185","static/chunks/app/layout-f848514643439247.js"],""]
+28:I[90838,["286","static/chunks/286-5f2793dfa337861d.js","827","static/chunks/827-995b437ce3fae0fe.js","185","static/chunks/app/layout-f848514643439247.js"],""]
+e:T3864,
+# 개요
+
+이 장에서는 GitHub Actions에게 실제 작업을 명령하는 단계(Steps)와 액션(Actions)에 대해 알아본다.
+
+GitHub Actions의 동작이 직접 기술되는 영역으로, 액션을 어떻게 구성하느냐에 따라 해당 워크플로의 목적이 정해지는 셈이다.
+
+
+
+
+
+## Steps(단계) 사용하기
+
+단계는 `Jobs` 하위에 기술되며, 여러개의 액션으로 구성된 집합체다.
+
+워크플로가 실행되는 동안, 단계는 하위에 기술된 액션을 순차적으로 실행한다.
+
+``` yaml
+name: jobs test
+on: workflow_dispatch
+jobs:
+  jobs_test1:
+    runs-on: ubuntu-latest
+    steps:
+	  # actions
+```
+
+원하는 작업 하위에 `steps`라는 지시어로 정의할 수 있다.
+
+위 예시는 `jobs_test1` 작업에 적용한 예시다.
+
+
+
+
+
+## Actions(액션) 정의하기
+
+워크플로의 동작을 기술하는 소단위 요소로, 기본적으로 Linux 쉘 명령어를 사용할 수 있다.
+
+``` yaml
+name: jobs test
+on: workflow_dispatch
+
+jobs:
+  jobs_test1:
+    runs-on: ubuntu-latest
+
+    steps:
+	    - run: echo "Hello, World!"
+
+	    - run: |
+        echo "This is for"
+        echo "multi line"
+```
+
+위 워크플로는 실행 시, `Hello, World` 텍스트를 출력하는 워크플로다.
+
+워크플로를 직접 작성하는 것 이외에도, 마켓에 배포된 액션을 활용하여 원하는 스크립트를 간편하게 사용할 수 있다.
+
+스크립트의 경우 첫 라인에 `|`를 입력하여 여러줄을 간편하게 사용할 수 있다.
+
+
+
+### Actions에 이름 지정하기
+
+액션에 `name`을 지정해줄 수 있다. 이 이름은 GitHub Actions 구동 시 표현되며, 액션의 동작이나 목적을 표현할 수 있다.
+
+지정된 `name`은 GitHub Actions에 표현된다.
+
+``` yaml
+name: name test
+on: workflow_dispatch
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: name test
+        run: echo include name
+
+      - run: echo exclude name
+```
+
+위 스크립트는 두 개의 액션을 포함하며, 하나는 `name`이 선언되어 있고, 다른 하나는 선언되지 않았다.
+
+GitHub Actions에선 아래와 같이 표현된다.
+
+![GitHub Actions의 액션 표현](https://github.com/RWB0104/blog.itcode.dev/assets/50317129/e1b2483a-6f7f-4e84-96f9-efed4b0957af)
+
+`name`이 기입된 경우, 해당 텍스트를 표현해주며, 없을 경우 기본 텍스트를 표현한다.
+
+이를 통해 각 액션의 특성을 직관적으로 나타낼 수 있다.
+
+`name` 속성은 optional이며, 동작에 어떠한 영향을 미치지 않는다.
+
+
+
+### Actions에 ID 지정하기
+
+`id`는 액션을 타깃할 수 있는 고윳값이다.
+
+``` yaml
+name: name test
+on: workflow_dispatch
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: name test
+        id: name
+        run: echo include name
+```
+
+`id`는 위와 같이 선언할 수 있으며, 원하는 텍스트를 기입하면 된다. 이 고윳값을 가진 특정 액션을 참조할 수 있게된다.
+
+
+
+### Actions에 출력값 지정하기
+
+작업에서 원하는 출력값을 지정할 수 있듯이, 액션에서도 원하는 출력값을 지정하여 활용할 수 있다.
+
+``` yaml
+name: actions output test
+on: workflow_dispatch
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: output test
+        id: key
+        run: echo "VAR=action output" >> $GITHUB_OUTPUT
+
+      - name: output check
+        run: echo ${{ steps.key.outputs.VAR }}
+```
+
+액션 내에서 출력값은 아래의 코드로 지정할 수 있다.
+
+``` bash
+echo "key=value" >> $GITHUB_OUTPUT
+```
+
+> 관련 정보를 찾다보면 `echo "::set-output name=SELECTED_COLOR::green"` 명령어로 할당하라는 자료를 볼 수 있는데, 해당 코드는 deprecated된 명령어다. 물론 사용하는데 지장은 없지만, GitHub Actions 콘솔에서 경고를 볼 수 있다. 자세한 내용은 [공식문서 참조](https://github.blog/changelog/2022-10-11-github-actions-deprecating-save-state-and-set-output-commands/)
+
+`key`에 원하는 키 값을, `value`에 할당할 값을 지정하면 출력값이 정의된다.
+
+출력값은 `${{ steps.[ID].outputs.[KEY] }}`의 형태로 사용할 수 있다.
+
+위 스크립트는 `VAR`라는 키에 `action output`이라는 값을 출력으로 할당했으며, 결과는 아래와 같다.
+
+``` bash
+action output
+```
+
+명령어를 여러개 사용하여 여러 출력값을 지정해줄 수도 있다.
+
+
+
+### Actions에 지정한 출력값을 타 Jobs에서 사용하기
+
+간혹, 여러 작업으로 나뉜 탓에, 현재 선언된 출력값을 다른 작업에서 참조해야할 일이 생길 수 있다.
+
+이 경우, 불가능하진 않지만, 선언 방식을 조금 바꿔줘야한다.
+
+``` yaml
+name: actions output test
+on: workflow_dispatch
+
+jobs:
+  var:
+    runs-on: ubuntu-latest
+
+    outputs:
+      VAR: ${{ steps.key.outputs.VAR }}
+
+    steps:
+      - name: output test
+        id: key
+        run: echo "VAR=action output" >> $GITHUB_OUTPUT
+
+  check:
+    runs-on: ubuntu-latest
+    needs: var
+
+    steps:
+      - name: output check in other job
+        run: echo ${{ needs.var.outputs.VAR }}
+```
+
+아까와 반대로 작업에 출력값을 지정한 것을 볼 수 있다. 특이한 점은, 출력값에 액션의 출력값을 매핑했다는 것이다.
+
+위와 같은 형태로, 작업에 출력값에 매핑시켜, 타 작업에서 이를 참조하도록 구성할 수 있다. 단, 참조 대상인 작업의 매핑이 완료됐다는 전제가 따른다. `check` 작업이 `var` 작업을 참조하고 있으므로, `needs` 키워드를 통해 `var` 작업이 종료된 이후에 실행하도록 흐름을 구성하고 있다.
+
+
+
+### Actions에 환경변수 지정하기
+
+워크플로에 환경변수를 지정했듯이, 액션에도 원하는 환경변수를 지정할 수 있다.
+
+``` yaml
+name: env test
+on: workflow_dispatch
+
+jobs:
+  var:
+    runs-on: ubuntu-latest
+
+    steps:
+      - id: key
+        run: echo "VAR=action env" >> $GITHUB_ENV
+
+      - run: echo ${{ env.VAR }}
+```
+
+액션 내에서 환경변수는 아래의 코드로 지정할 수 있다.
+
+``` bash
+echo "key=value" >> $GITHUB_ENV
+```
+
+위에서 언급한 출력값 지정 코드와 매우 유사하다. 마찬가지로 `echo "::set-env`로 시작하는 deprecated 코드가 존재한다.
+
+환경변수는 `${{ env.[KEY] }}` 코드로 호출이 가능하며, 선언된 스코프 내에서만 사용이 가능하다. 워크플로 어디서든 활용 가능한 워크플로 환경변수와 달리, 작업 환경변수는 해당 작업 내에서만 활용이 가능하다.
+
+> 만약 작업 내에서 선언한 환경변수를 다른 작업 내에서도 참조해야한다면, 그건 환경변수가 아닌 출력값으로 관리해야한다.
+
+``` bash
+action env
+```
+
+출력 결과는 위와 같다.
+
+
+
+#### 환경변수 오버라이딩
+
+[2장](/2023/10/26/github-actions-2)에서 워크플로에 환경변수를 지정할 수 있음을 알고 있다.
+
+만약 작업 내에 동일한 키의 환경변수를 다시 선언하면 어떻게 될까?
+
+``` yaml
+name: env test
+on: workflow_dispatch
+
+env:
+  VAR: workflow env
+
+jobs:
+  var:
+    runs-on: ubuntu-latest
+
+    steps:
+      - id: key
+        run: echo "VAR=action env" >> $GITHUB_ENV
+
+      - run: echo ${{ env.VAR }}
+
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo ${{ env.VAR }}
+```
+
+위 코드의 경우 `var`와 `check`라는 작업이 선언되어 있으며, 하위 액션에서 각각 `VAR` 환경변수를 출력하고 있다.
+
+단, `var`의 경우 액션 내부에서 `VAR` 환경변수를 재지정해주고 있다.
+
+이렇게 하위 스코프에서 동일한 키에 환경변수가 할당된 경우, 하위 스코프에서 할당된 값으로 오버라이딩된다.
+
+``` bash
+# var
+action env
+
+# check
+workflow env
+```
+
+따라 결과는 각각 위 처럼 나온다. `var` 작업 내에선 오버라이딩한 값을 출력하게 된다.
+
+
+
+### 조건부 Actions 구성하기
+
+조건부 액션을 통해, 특정 조건에서만 원하는 액션을 구동하거나 스킵할 수 있다.
+
+``` yaml
+name: conditional test
+on: workflow_dispatch
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: always run
+        run: echo "always run"
+
+      - name: run on condition
+        if: ${{ github.event_name == 'push' }}
+        run: echo "run at only push event"
+```
+
+액션에 `if` 지시어를 통해 `true` 혹은 `false`를 반환하여 조건을 지정할 수 있다. 위 코드는 GitHub Actions의 이벤트 이름을 호출하여 `push` 이벤트일 경우에만 추가 액션을 수행한다.
+
+``` bash
+# push 했을 경우
+always run
+run at only push event
+
+# push가 아닐 경우
+always run
+```
+
+작업 혹은 액션의 출력값을 활용하여 조건 분기를 활용하는 방식이 주로 사용된다.
+
+
+
+### 작업에 타임아웃 지정하기
+
+간혹, 워크플로의 특성에 따라 수 분 이상의 장시간 로드를 요구하는 워크플로가 있을 수 있다.
+
+이 경우 타임아웃을 지정하여 동작 시간을 제한할 수 있다.
+
+``` yaml
+name: timeout test
+on: workflow_dispatch
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+
+    steps:
+      - name: half min test
+        run: sleep 120
+```
+
+`timeout-minutes` 지시어를 통해 원하는 타임아웃 시간을 분 단위로 지정할 수 있다. 위 코드는 해당 작업의 동작 시간을 1분으로 제한하지만, `sleep` 명령어를 통해 2분의 대기시간을 지정했다.
+
+``` bash
+Error: The operation was canceled.
+```
+
+타임아웃에 초과될 경우, 위와 같은 에러가 발생한다.
+
+
+
+### 다양한 Actions 사용하기
+
+다른사람들이 만든 다양한 액션을 직접 사용할 수도 있다. 길고 복잡한 스크립트를 간편하게 압축하여 사용할 수 있다.
+
+이미 정의된 액션의 경우 `use` 지시어를 통해 해당 액션의 이름을 입력하면 된다.
+
+``` yaml
+name: checkout test
+on: workflow_dispatch
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: RWB0104/itcode.dev
+          path: repo
+      
+      - run: ls -al
+```
+
+[actions/checkout@v4](https://github.com/actions/checkout) 액션은 사용자의 현재 레포지토리를 checkout하여 코드를 내려받는 스크립트로, 자주 사용하게 될 액션이다.
+
+위와 같은 사용자 정의 액션은, 역할이나 목적에 따라 다양한 파라미터를 요구하기도 하는데, 이 경우 `with` 지시어로 `key: value` 형태의 파라미터를 지정할 수 있다. 당연히, 필요한 파라미터와 역할은 해당 액션 개발자가 문서로 제공해주니, 참고하여 지정하면 된다.
+
+일례로, 위 코드의 경우, `RWB0104/itcode.dev`라는 레포지토리를 `repo/` 경로에 체크아웃하도록 별도의 옵션을 부여한다.
+
+
+
+### ACtions에 캐시 사용하기
+
+보통 GitHub Actions을 사용하는 가장 큰 이유는 CI/CD다. 십중팔구 빌드 관련 작업을 하게 되는데, 모든 컨테이너는 스크립트 동작 마다 각각의 작업 단위로 독립적이다. 따라서, 모든 작업이 항상 초기화 상태에서 이루어짐을 전제로 한다.
+
+빌드 과정 중 디펜던시 및 라이브러리 설치는 많은 시간을 요구한다. 캐시를 적용하여 이 과정을 생략하여 빌드 시간을 대폭 개선할 수 있다.
+
+[actions/cache@v4](https://github.com/actions/cache) 액션으로 원하는 폴더를 캐싱해보자.
+
+프론트엔드에는 `node_module`라는 디펜던시 폴더가 존재한다. 해당 폴더를 캐싱하여, 디펜던시 설치 과정을 건너뛸 수 있다.
+
+``` yaml
+name: Caching Primes
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Cache Primes
+      id: cache-primes
+      uses: actions/cache@v4
+      with:
+        path: node_modules
+        key: cache-${{ hashFiles('./package-lock.json') }}
+
+    - name: Generate Prime Numbers
+      if: steps.cache-primes.outputs.cache-hit != 'true'
+      run: npm i
+
+    - run: npm build
+    
+    - run: npm publish
+```
+
+위 코드의 액션은 아래와 같다.
+
+1. 레포지토리를 체크아웃하여 코드를 컨테이너로 내려받는다.
+2. `node_module/` 폴더를 캐싱한다. 캐싱 키는 `key`에 입력한 값이다.
+   1. GitHub Actions은 해당 키로 데이터를 캐싱한다.
+   2. `${{ hashFiles('./package-lock.json') }}`은 `package-lock.json`의 해싱값을 반환하는 표현식이다. 디펜던시 변경이 있을 때마다 해당 JSON이 바뀌므로, 캐시 키도 같이 바뀌게 된다. 이 과정에서 새로운 캐시가 필요함을 알려줄 수 있다.
+3. `actions/cache@v4` 액션은 출력값으로 `cache-hit`를 반환하여 캐시 여부를 제공한다. 이를 조건문으로 활용하여 캐시되지 않았을 경우에만 디펜던시 설치를 수행한다.
+4. 프로젝트를 빌드한다.
+5. 프로젝트를 배포한다.
+
+위와 같은 식이다. 액션과 출력값, 분기를 적절히 활용하여 CI/CD를 최적화시켰다. 한 번 데이터가 캐시된 이후 디펜던시의 변경이 없다면, 다음 빌드 땐 디펜던시 설치 과정을 건너 뛰고 캐시된 데이터를 바로 사용할 수 있다.
+
+> 캐시 데이터는 레포지토리에서 [Actions 탭 - 사이드바의 Management 아이템 중 Caches 메뉴]에서 확인할 수 있다. 레포지토리별로 10GB를 제공하며, 용량을 초과할 경우, 가장 오래된 캐시를 제거하여 순차적으로 용량을 확보한다.
+
+
+
+
+
+# 마치며
+
+처음에 GitHub Actions나 CI/CD 서비스에 대한 개념이 아예 없었을 땐, 직접 로컬에서 빌드하고 배포하느라 흐름을 빈번히 끊었던 기억이 난다.
+
+GitHub Actions을 이해하게 된 후, 많은 자잘한 요소를 자동화시켜 개발 요소를 줄일 수 있었다.
+
+완벽한 글은 아니지만, 이 글을 통해 아직 GitHub Actions 이해하는데 도움이 되길 바란다.
+
+<br />
+
+이 글을 끝으로 GitHub Actions 시리즈를 정리한다. 호기롭게 시작했지만, 도중에 게시글 흐름이 끊기며 장시간 마무리하지 못 한 게시글이다.
+
+쓰고 싶은 글들이 몇 개 생겼는데, 이를 시작하기 전에 시리즈를 끝낼 필요가 있어서, 이 장을 끝으로 시리즈를 끝마친다.21:["markdown","posts/2024/06/09/github-actions-5","c"]
+0:["oWGOHzHl23KutkEXWDoX4",[[["",{"children":[["markdown","posts/2024/06/09/github-actions-5","c"],{"children":["__PAGE__?{\"markdown\":[\"posts\",\"2024\",\"06\",\"09\",\"github-actions-5\"]}",{}]}]},"$undefined","$undefined",true],["",{"children":[["markdown","posts/2024/06/09/github-actions-5","c"],{"children":["__PAGE__",{},["$L1",["$","$L2",null,{"component":"main","data-component":"PageTemplate","children":[["$","$L3",null,{"title":"𝝅번째 알파카의 개발 낙서장","version":"5.0.0-beta11"}],[["$","$L4",null,{"src":"https://github.com/RWB0104/blog.itcode.dev/assets/50317129/094a4fa5-f336-4c54-9df3-b5791d48de21","children":["$","$L2",null,{"className":"MarkdownScreenerTemplate_root__dpmgV","data-component":"BaseScreenerTemplate","height":"100%","position":"relative","width":"100%","children":[["$","$L5",null,{"alignItems":"center","height":"100%","justifyContent":"center","padding":2,"position":"relative","width":"100%","children":[["$","$L5",null,{"direction":"row","children":[["$","$L2",null,{"bgcolor":"dodgerblue","boxShadow":"0px 0px 5px black","height":"100%","width":5}],["$","$L5",null,{"color":"white","paddingLeft":2,"paddingRight":2,"children":[["$","$L6",null,{"className":"MarkdownScreenerTemplate_text__5_mNa","fontWeight":"bold","variant":"h5","children":"[GitHub Actions] 삼가 수동배포의 명복을 GitHub Actions빔 - 5. 일해라 GitHub Actions! Steps(단계) & Actions(액션)"}],["$","$L6",null,{"className":"MarkdownScreenerTemplate_text__5_mNa","children":"⏰ 2024-06-09 (일) 14:04:02"}]]}]]}],["$","$L7",null,{"bottom":"10%","direction":"row","gap":4,"position":"absolute","shareData":{"text":"GitHub Actions 워크플로의 목적과 동작이 정해지는 Steps와 Actions에 대해 알아본다.","title":"[GitHub Actions] 삼가 수동배포의 명복을 GitHub Actions빔 - 5. 일해라 GitHub Actions! Steps(단계) & Actions(액션)","url":"https://blog.itcode.dev/posts/2024/06/09/github-actions-5"}}]]}],["$","$L2",null,{"bottom":0,"left":0,"position":"absolute","width":"100%","children":["$","svg",null,{"className":"Wave_waves___Plcn","data-component":"Wave","height":80,"preserveAspectRatio":"none","shapeRendering":"auto","viewBox":"0 24 150 28","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":[["$","defs",null,{"children":["$","path",null,{"d":"M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z","id":"gentle-wave"}]}],["$","g",null,{"className":"Wave_parallax__AGFbj","children":[["$","use",null,{"fill":"$undefined","opacity":"0.7","x":"48","xlinkHref":"#gentle-wave","y":"0"}],["$","use",null,{"fill":"$undefined","opacity":"0.5","x":"48","xlinkHref":"#gentle-wave","y":"3"}],["$","use",null,{"fill":"$undefined","opacity":"0.3","x":"48","xlinkHref":"#gentle-wave","y":"5"}],["$","use",null,{"fill":"$undefined","x":"48","xlinkHref":"#gentle-wave","y":"7"}]]}]]}]}]]}]}],[["$","$L8",null,{"color":"dodgerblue"}],["$","$L9",null,{"children":["$","$L5",null,{"gap":4,"paddingTop":10,"children":[["$","$La",null,{"current":"/posts/2024/06/09/github-actions-5","groups":[{"title":"[GitHub Actions] 삼가 수동배포의 명복을 GitHub Actions빔 - 5. 일해라 GitHub Actions! Steps(단계) & Actions(액션)","url":"/posts/2024/06/09/github-actions-5"},{"title":"[GitHub Actions] 삼가 수동배포의 명복을 GitHub Actions빔 - 4. 일해라 GitHub Actions! Jobs(작업)","url":"/posts/2023/11/08/github-actions-4"},{"title":"[GitHub Actions] 삼가 수동배포의 명복을 GitHub Actions빔 - 3. GitHub Actions를 구동하는 방법. Events(이벤트)","url":"/posts/2023/10/29/github-actions-3"},{"title":"[GitHub Actions] 삼가 수동배포의 명복을 GitHub Actions빔 - 2. GitHub Actions 알아보기","url":"/posts/2023/10/26/github-actions-2"},{"title":"[GitHub Actions] 삼가 수동배포의 명복을 GitHub Actions빔 - 1. CI/CD","url":"/posts/2023/09/28/github-actions-1"}],"thumbnail":"https://github.com/RWB0104/blog.itcode.dev/assets/50317129/094a4fa5-f336-4c54-9df3-b5791d48de21","title":"삼가 수동배포의 명복을 GitHub Actions빔"}],["$","$Lb",null,{"list":[{"idx":"1.","level":1,"text":"개요"},{"idx":"1.1.","level":2,"text":"Steps(단계) 사용하기"},{"idx":"1.2.","level":2,"text":"Actions(액션) 정의하기"},{"idx":"1.2.1.","level":3,"text":"Actions에 이름 지정하기"},{"idx":"1.2.2.","level":3,"text":"Actions에 ID 지정하기"},{"idx":"1.2.3.","level":3,"text":"Actions에 출력값 지정하기"},{"idx":"1.2.4.","level":3,"text":"Actions에 지정한 출력값을 타 Jobs에서 사용하기"},{"idx":"1.2.5.","level":3,"text":"Actions에 환경변수 지정하기"},{"idx":"1.2.5.1.","level":4,"text":"환경변수 오버라이딩"},{"idx":"1.2.6.","level":3,"text":"조건부 Actions 구성하기"},{"idx":"1.2.7.","level":3,"text":"작업에 타임아웃 지정하기"},{"idx":"1.2.8.","level":3,"text":"다양한 Actions 사용하기"},{"idx":"1.2.9.","level":3,"text":"ACtions에 캐시 사용하기"},{"idx":"2.","level":1,"text":"마치며"}]}],["$","$Lc",null,{"variant":"fullWidth"}],["$","$Ld",null,{"children":"$e"}],["$","$Lc",null,{"variant":"fullWidth"}],["$","$Lf",null,{"tags":["GitHub","GitHub Actions","Workflows","Events","Jobs","Runners","Steps","Actions","YAML"],"type":"posts"}],["$","$L5",null,{"alignItems":"center","data-component":"LabNameTag","width":"100%","children":["$","$L2",null,{"boxShadow":"0px 0px 10px #00000050","maxWidth":250,"width":"100%","children":["$","$L10",null,{"href":"https://itcode.dev","target":"_blank","children":["$","$L11",null,{"scale":1.1,"children":[["$","$L2",null,{"borderRadius":2,"className":"NameTag_tag__DZCHu","data-component":"NameTag","padding":1,"sx":{"background":"linear-gradient(45deg, #833AB4, #FD2B20, #fCAA43)"},"children":["$","$L5",null,{"borderRadius":2,"color":"white","gap":3,"padding":2,"children":[["$","$L2",null,{"className":"Tile_tile__czq9P","data-component":"Tile","overflow":"hidden","position":"relative","children":["$","$L2",null,{"height":"100%","left":0,"position":"absolute","top":0,"width":"100%","children":["$","$L12",null,{"src":"https://itcode.dev/logo.png"}]}]}],["$","$L2",null,{"borderTop":"1px solid white","width":"100%"}],["$","$L5",null,{"gap":1,"children":[["$","$L6",null,{"color":"inherit","fontWeight":"bold","children":"𝝅번째 알파카의 개발 연구소"}],["$","$L2",null,{"color":"inherit","width":"100%","children":["$","$L6",null,{"variant":"caption","children":"이 카드를 클릭하고 𝝅번째 알파카의 개발 연구소의 다양한 프로젝트를 확인해보세요!"}]}]]}]]}]}],["$","$L13",null,{}]]}]}]}]}],["$","$L14",null,{"next":"$undefined","prev":{"thumbnail":"https://github.com/RWB0104/blog.itcode.dev/assets/50317129/028693b2-bde7-451c-a38e-cab34e3c00e2","title":"[속보] 반 년간 실종된 RWB. 자택에서 숨 쉰 채 발견돼..","url":"/posts/2024/05/28/missing-rwb"},"type":"posts"}],["$","$L5",null,{"alignItems":"center","justifyContent":"center","width":"100%","children":["$","$L11",null,{"children":["$","$L5",null,{"alignItems":"center","bgcolor":"lemonchiffon","borderRadius":1,"boxShadow":"0px 0px 10px #00000030","component":"div","data-component":"ThanksCard","direction":"row","gap":2,"padding":2,"children":[["$","$L15",null,{"iconName":"love-message-burst","width":100}],["$","$L5",null,{"children":[["$","$L6",null,{"color":"black","variant":"h6","gutterBottom":true,"children":"읽어주셔서 고마워요!"}],["$","$L6",null,{"color":"black","children":["도움이 되셨다면, ",["$","$L6",null,{"color":"hotpink","component":"span","fontWeight":"bold","children":"공감"}],"이나 ",["$","$L6",null,{"color":"dodgerblue","component":"span","fontWeight":"bold","children":"댓글"}],"을 달아주시는 건 어떤가요?"]}],["$","$L6",null,{"color":"black","children":"블로그 운영에 큰 힘이 됩니다."}]]}]]}]}]}],["$","$L7",null,{"direction":"row","gap":4,"iconColor":"inherit","justifyContent":"center","shareData":{"text":"GitHub Actions 워크플로의 목적과 동작이 정해지는 Steps와 Actions에 대해 알아본다.","title":"[GitHub Actions] 삼가 수동배포의 명복을 GitHub Actions빔 - 5. 일해라 GitHub Actions! Steps(단계) & Actions(액션)","url":"/posts/2024/06/09/github-actions-5"}}],["$","$L16",null,{}],["$","$L5",null,{"alignItems":"center","children":["$","img",null,{"alt":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23484848&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23242424&url=https%3A%2F%2Fblog.itcode.dev%2Fposts%2F2024%2F06%2F09%2Fgithub-actions-5","data-component":"Hits","src":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23484848&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23242424&url=https%3A%2F%2Fblog.itcode.dev%2Fposts%2F2024%2F06%2F09%2Fgithub-actions-5"}]}]]}]}]]],["$","$L2",null,{"component":"footer","data-component":"Footer","marginTop":10,"children":[["$","$L2",null,{"position":"relative","children":[["$","$L17",null,{}],["$","$L2",null,{"bottom":-20,"className":"Footer_ship__VuMth","left":"10%","position":"absolute","children":["$","img",null,{"alt":"icon","height":100,"src":"https://cdn-icons-png.freepik.com/512/6643/6643562.png","width":100}]}],["$","$L2",null,{"bottom":0,"position":"absolute","width":"100%","children":["$","svg",null,{"className":"Wave_waves___Plcn","data-component":"Wave","height":40,"preserveAspectRatio":"none","shapeRendering":"auto","viewBox":"0 24 150 28","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":[["$","defs",null,{"children":["$","path",null,{"d":"M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z","id":"gentle-wave"}]}],["$","g",null,{"className":"Wave_parallax__AGFbj","children":[["$","use",null,{"fill":"#6fb1fc","opacity":"0.7","x":"48","xlinkHref":"#gentle-wave","y":"0"}],["$","use",null,{"fill":"#6fb1fc","opacity":"0.5","x":"48","xlinkHref":"#gentle-wave","y":"3"}],["$","use",null,{"fill":"#6fb1fc","opacity":"0.3","x":"48","xlinkHref":"#gentle-wave","y":"5"}],["$","use",null,{"fill":"#6fb1fc","x":"48","xlinkHref":"#gentle-wave","y":"7"}]]}]]}]}]]}],["$","$L2",null,{"children":["$","$L5",null,{"alignItems":"center","className":"FooterTemplate_footer__97G2c","color":"white","data-component":"FooterTemplate","gap":4,"padding":4,"paddingBottom":8,"paddingTop":8,"children":[["$","$L5",null,{"alignItems":"center","color":"white","children":[["$","$L6",null,{"className":"FooterTemplate_title__Samo8","fontWeight":"bold","variant":"h6","children":"𝝅번째 알파카의 개발 낙서장"}],["$","$L6",null,{"variant":"caption","children":"5.0.1-1"}]]}],["$","$L2",null,{"display":"grid","gap":2,"gridTemplateColumns":"1fr 1fr 1fr","children":[["$","$L10",null,{"data-component":"FooterLinkButton","href":"https://itcode.dev","target":"_blank","children":["$","$L18",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","img",null,{"alt":"itcode.dev","height":"100%","src":"https://itcode.dev/logo-transparent.png","width":"100%"}]}]}]}],["$","$L10",null,{"data-component":"FooterLinkButton","href":"https://github.com/RWB0104","target":"_blank","children":["$","$L18",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L19",null,{}]}]}]}],["$","$L10",null,{"data-component":"FooterLinkButton","href":"mailto:psj2716@mensakorea.org","target":"_blank","children":["$","$L18",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L1a",null,{}]}]}]}],["$","$L10",null,{"data-component":"FooterLinkButton","href":"https://www.linkedin.com/in/itcode","target":"_blank","children":["$","$L18",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L1b",null,{}]}]}]}],["$","$L10",null,{"data-component":"FooterLinkButton","href":"/sitemap.xml","target":"_blank","children":["$","$L18",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L1c",null,{}]}]}]}],["$","$L10",null,{"data-component":"FooterLinkButton","href":"/rss.xml","target":"_blank","children":["$","$L18",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L1d",null,{}]}]}]}]]}],["$","$L5",null,{"alignItems":"center","color":"white","children":[["$","$L5",null,{"alignItems":"center","direction":"row","gap":0.5,"children":[["$","$L1e",null,{"fontSize":"inherit","htmlColor":"darkblue"}],["$","$L6",null,{"variant":"caption","children":"Developed by RWB since 2021.05"}]]}],["$","$L5",null,{"alignItems":"center","direction":"row","gap":0.5,"children":[["$","$L1f",null,{"fontSize":"inherit","htmlColor":"crimson"}],["$","$L6",null,{"variant":"caption","children":"5th upgraded at 2024.05"}]]}]]}],["$","img",null,{"alt":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23484848&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23242424&url=https%3A%2F%2Fblog.itcode.dev","data-component":"Hits","src":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23484848&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23242424&url=https%3A%2F%2Fblog.itcode.dev"}]]}]}]]}]]}],null]]},["$","$L20",null,{"parallelRouterKey":"children","segmentPath":["children","$21","children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L22",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/ff5a198c4b1dc826.css","precedence":"next","crossOrigin":""}]]}]]},[null,["$","html",null,{"lang":"ko","children":[["$","head",null,{"children":["$","meta",null,{"content":"ca-pub-5522045122225064","name":"google-adsense-account"}]}],["$","body",null,{"children":["$","$23",null,{"children":["$","$L24",null,{"gaKey":"G-7QYWYNZ90R","children":["$","$L25",null,{"children":["$","$L26",null,{"children":[["$","$L20",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L22",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}],["$","$L27",null,{}],["$","$L28",null,{}]]}]}]}]}]}]]}],null]],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/a3507890a8a83f16.css","precedence":"next","crossOrigin":""}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/6961771bdd90d9c6.css","precedence":"next","crossOrigin":""}]],"$L29"]]]]
+29:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"[GitHub Actions] 삼가 수동배포의 명복을 GitHub Actions빔 - 5. 일해라 GitHub Actions! Steps(단계) & Actions(액션) - 𝝅번째 알파카의 개발 낙서장"}],["$","meta","3",{"name":"description","content":"GitHub Actions 워크플로의 목적과 동작이 정해지는 Steps와 Actions에 대해 알아본다."}],["$","meta","4",{"name":"application-name","content":"𝝅번째 알파카의 개발 낙서장"}],["$","link","5",{"rel":"author","href":"https://github.com/RWB0104"}],["$","meta","6",{"name":"author","content":"Kapoo"}],["$","link","7",{"rel":"author","href":"https://www.linkedin.com/in/itcode"}],["$","meta","8",{"name":"author","content":"RWB"}],["$","link","9",{"rel":"manifest","href":"/manifest.webmanifest"}],["$","meta","10",{"name":"generator","content":"Next.js"}],["$","meta","11",{"name":"keywords","content":"GitHub,GitHub Actions,Workflows,Events,Jobs,Runners,Steps,Actions,YAML"}],["$","meta","12",{"name":"creator","content":"RWB"}],["$","meta","13",{"name":"publisher","content":"GitHub Pages"}],["$","meta","14",{"property":"og:title","content":"[GitHub Actions] 삼가 수동배포의 명복을 GitHub Actions빔 - 5. 일해라 GitHub Actions! Steps(단계) & Actions(액션) - 𝝅번째 알파카의 개발 낙서장"}],["$","meta","15",{"property":"og:description","content":"GitHub Actions 워크플로의 목적과 동작이 정해지는 Steps와 Actions에 대해 알아본다."}],["$","meta","16",{"property":"og:url","content":"https://blog.itcode.dev/posts/2024/06/09/github-actions-5"}],["$","meta","17",{"property":"og:site_name","content":"𝝅번째 알파카의 개발 낙서장"}],["$","meta","18",{"property":"og:locale","content":"ko-KR"}],["$","meta","19",{"property":"og:image","content":"https://github.com/RWB0104/blog.itcode.dev/assets/50317129/094a4fa5-f336-4c54-9df3-b5791d48de21"}],["$","meta","20",{"property":"og:type","content":"website"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:title","content":"[GitHub Actions] 삼가 수동배포의 명복을 GitHub Actions빔 - 5. 일해라 GitHub Actions! Steps(단계) & Actions(액션) - 𝝅번째 알파카의 개발 낙서장"}],["$","meta","23",{"name":"twitter:description","content":"GitHub Actions 워크플로의 목적과 동작이 정해지는 Steps와 Actions에 대해 알아본다."}],["$","meta","24",{"name":"twitter:image","content":"https://github.com/RWB0104/blog.itcode.dev/assets/50317129/094a4fa5-f336-4c54-9df3-b5791d48de21"}],["$","link","25",{"rel":"icon","href":"/favicon.ico"}],["$","link","26",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","27",{"rel":"apple-touch-icon","href":"/favicon.ico"}],["$","meta","28",{"name":"next-size-adjust"}]]
+1:null

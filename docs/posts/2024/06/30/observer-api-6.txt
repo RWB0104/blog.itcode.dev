@@ -1,0 +1,260 @@
+2:I[31253,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-d63fbd3836c70036.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+3:I[15441,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-d63fbd3836c70036.js","979","static/chunks/app/page-871c05277f892fb0.js"],"default"]
+4:I[75713,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-d63fbd3836c70036.js","979","static/chunks/app/page-871c05277f892fb0.js"],"default"]
+5:I[36032,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-d63fbd3836c70036.js","979","static/chunks/app/page-871c05277f892fb0.js"],"default"]
+6:I[4816,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-d63fbd3836c70036.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+7:I[67425,["746","static/chunks/395b46ae-d1f3c4e0e7243a60.js","128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","622","static/chunks/622-c69f910e2c9609c0.js","377","static/chunks/377-5459304f76782ae9.js","48","static/chunks/48-d63fbd3836c70036.js","78","static/chunks/app/%5B...markdown%5D/page-ef63b75fe2dd90fc.js"],"default"]
+8:I[28676,["746","static/chunks/395b46ae-d1f3c4e0e7243a60.js","128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","622","static/chunks/622-c69f910e2c9609c0.js","377","static/chunks/377-5459304f76782ae9.js","48","static/chunks/48-d63fbd3836c70036.js","78","static/chunks/app/%5B...markdown%5D/page-ef63b75fe2dd90fc.js"],"default"]
+9:I[12168,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-d63fbd3836c70036.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+a:I[25737,["746","static/chunks/395b46ae-d1f3c4e0e7243a60.js","128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","622","static/chunks/622-c69f910e2c9609c0.js","377","static/chunks/377-5459304f76782ae9.js","48","static/chunks/48-d63fbd3836c70036.js","78","static/chunks/app/%5B...markdown%5D/page-ef63b75fe2dd90fc.js"],"default"]
+b:I[50979,["746","static/chunks/395b46ae-d1f3c4e0e7243a60.js","128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","622","static/chunks/622-c69f910e2c9609c0.js","377","static/chunks/377-5459304f76782ae9.js","48","static/chunks/48-d63fbd3836c70036.js","78","static/chunks/app/%5B...markdown%5D/page-ef63b75fe2dd90fc.js"],"default"]
+c:I[66560,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-d63fbd3836c70036.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+d:I[29936,["746","static/chunks/395b46ae-d1f3c4e0e7243a60.js","128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","622","static/chunks/622-c69f910e2c9609c0.js","377","static/chunks/377-5459304f76782ae9.js","48","static/chunks/48-d63fbd3836c70036.js","78","static/chunks/app/%5B...markdown%5D/page-ef63b75fe2dd90fc.js"],"default"]
+f:I[64678,["746","static/chunks/395b46ae-d1f3c4e0e7243a60.js","128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","622","static/chunks/622-c69f910e2c9609c0.js","377","static/chunks/377-5459304f76782ae9.js","48","static/chunks/48-d63fbd3836c70036.js","78","static/chunks/app/%5B...markdown%5D/page-ef63b75fe2dd90fc.js"],"default"]
+10:I[89791,["746","static/chunks/395b46ae-d1f3c4e0e7243a60.js","128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","622","static/chunks/622-c69f910e2c9609c0.js","377","static/chunks/377-5459304f76782ae9.js","48","static/chunks/48-d63fbd3836c70036.js","78","static/chunks/app/%5B...markdown%5D/page-ef63b75fe2dd90fc.js"],"default"]
+11:I[5760,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-d63fbd3836c70036.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+12:I[98918,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-d63fbd3836c70036.js","979","static/chunks/app/page-871c05277f892fb0.js"],"default"]
+13:I[21055,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-d63fbd3836c70036.js","979","static/chunks/app/page-871c05277f892fb0.js"],"default"]
+14:I[44271,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-d63fbd3836c70036.js","979","static/chunks/app/page-871c05277f892fb0.js"],"default"]
+15:I[95534,["746","static/chunks/395b46ae-d1f3c4e0e7243a60.js","128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","622","static/chunks/622-c69f910e2c9609c0.js","377","static/chunks/377-5459304f76782ae9.js","48","static/chunks/48-d63fbd3836c70036.js","78","static/chunks/app/%5B...markdown%5D/page-ef63b75fe2dd90fc.js"],"default"]
+16:I[11494,["746","static/chunks/395b46ae-d1f3c4e0e7243a60.js","128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","622","static/chunks/622-c69f910e2c9609c0.js","377","static/chunks/377-5459304f76782ae9.js","48","static/chunks/48-d63fbd3836c70036.js","78","static/chunks/app/%5B...markdown%5D/page-ef63b75fe2dd90fc.js"],"default"]
+17:I[35559,["746","static/chunks/395b46ae-d1f3c4e0e7243a60.js","128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","622","static/chunks/622-c69f910e2c9609c0.js","377","static/chunks/377-5459304f76782ae9.js","48","static/chunks/48-d63fbd3836c70036.js","78","static/chunks/app/%5B...markdown%5D/page-ef63b75fe2dd90fc.js"],"default"]
+18:I[43439,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-d63fbd3836c70036.js","979","static/chunks/app/page-871c05277f892fb0.js"],"default"]
+19:I[20140,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-d63fbd3836c70036.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+1a:I[42019,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-d63fbd3836c70036.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+1b:I[36139,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-d63fbd3836c70036.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+1c:I[94634,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-d63fbd3836c70036.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+1d:I[3812,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-d63fbd3836c70036.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+1e:I[20015,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-d63fbd3836c70036.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+1f:I[91417,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-d63fbd3836c70036.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+20:I[17186,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-d63fbd3836c70036.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+21:I[80560,[],""]
+23:I[3602,[],""]
+24:"$Sreact.suspense"
+25:I[89696,["128","static/chunks/128-f15a9902e71a0cfb.js","622","static/chunks/622-c69f910e2c9609c0.js","965","static/chunks/965-368bab8011421292.js","185","static/chunks/app/layout-86ea2b89b83c3365.js"],"default"]
+26:I[53327,["128","static/chunks/128-f15a9902e71a0cfb.js","622","static/chunks/622-c69f910e2c9609c0.js","965","static/chunks/965-368bab8011421292.js","185","static/chunks/app/layout-86ea2b89b83c3365.js"],"default"]
+27:I[31798,["128","static/chunks/128-f15a9902e71a0cfb.js","622","static/chunks/622-c69f910e2c9609c0.js","965","static/chunks/965-368bab8011421292.js","185","static/chunks/app/layout-86ea2b89b83c3365.js"],"default"]
+28:I[90085,["128","static/chunks/128-f15a9902e71a0cfb.js","622","static/chunks/622-c69f910e2c9609c0.js","965","static/chunks/965-368bab8011421292.js","185","static/chunks/app/layout-86ea2b89b83c3365.js"],"default"]
+29:I[29459,["128","static/chunks/128-f15a9902e71a0cfb.js","622","static/chunks/622-c69f910e2c9609c0.js","965","static/chunks/965-368bab8011421292.js","185","static/chunks/app/layout-86ea2b89b83c3365.js"],"default"]
+e:T1acd,
+# ReportingObserver
+
+![null](https://github.com/RWB0104/blog.itcode.dev/assets/50317129/dae510dd-8b10-4fcd-961c-67032e33ae39)
+
+`ReportingObserver`는 웹 브라우저의 성능 및 사용성, 안정성 요소를 감지하는 옵저버다. 페이지에서 발생할 수 있는 문제점을 실시간으로 모니터링할 때 유용하게 사용할 수 있다.
+
+``` typescript
+const ro = new ReportingObserver(callback, options);
+
+ro.observe();
+```
+
+
+
+
+
+## options
+
+옵저버 선언 시, `options`을 전달하여 세부 사항을 조절할 수 있다. `ReportingObserverOptions` 타입을 가진다.
+
+
+
+### 보고서 타입 (types)
+
+옵저버에서 제공할 보고서 타입을 배열로 지정한다. 지정 가능한 값은 `deprecation`, `intervention` 두 가지다.
+
+- `deprecation` (사용 중단 보고서): 브라우저에서 deprecated 되거나, 될 예정인 기능을 사용하고 있을 경우, 관련 보고서를 제공함.
+- `intervention` (개입 보고서): 브라우저가 특정 동작에 개입해 동작을 수정하거나, 차단했을 경우, 관련 보고서를 제공함.
+
+
+
+### 기존 보고서 포함 여부 (buffered)
+
+`ReportingObserver`가 선언되기 이전의 보고서도 포함하는지 여부를 지정함. 기본적으로 `false`값을 가짐.
+
+
+
+
+
+## callback
+
+콜백 메서드로 관련 보고서를 다룰 수 있다. `ReportingObserverCallback` 타입을 가진다.
+
+
+
+### report
+
+발생한 보고서 배열을 반환한다. `Report` 타입을 가진다.
+
+- `type`: 보고서 타입을 반환한다. `deprecation`, `intervention` 중 하나를 갖는다.
+- `url`: 보고서 대상 URL을 반환한다. 일반적으로 현재 페이지 URL이 담겨있다.
+- `body`: 보고서 내용을 반환한다. 각 보고서에 따라 내용이 바뀐다.
+
+
+
+### observer
+
+옵저버 자기 자신을 반환한다. 이를 통해 콜백 메서드에서 옵저버에 접근할 수 있다.
+
+
+
+
+
+# React에서 커스텀 훅으로 간편하게 사용하기
+
+`ReportingObserver`를 커스텀 훅을 통해 간편하게 사용해보자.
+
+``` typescript
+export function useReportingObserver(): void
+{
+  //
+}
+```
+
+위와 같이 `useReportingObserver` 메서드를 정의한다.
+
+`useReportingObserver`를 사용하기 위해선 아래의 두 요소가 필요하다.
+
+1. 콜백 메서드
+2. 옵션
+
+`PerformanceObserver`와 마찬가지로 DOM이 필요없다.
+
+``` typescript
+import { useEffect } from "react";
+
+export type UseReportingObserverCallback = (entry: Report) => void;
+
+/**
+ * ReportingObserver 적용 훅 메서드
+ *
+ * @param {UseReportingObserverCallback} callback: 콜백 메서드
+ * @param {PerformanceObserverInit} options: 옵션
+ */
+export function useReportingObserver(
+  callback: UseReportingObserverCallback,
+  options?: ReportingObserverOptions
+): void {
+  useEffect(() => {
+    const ro = new ReportingObserver((reports) => {
+      reports.forEach(callback);
+    }, options);
+  }, [callback, options]);
+}
+```
+
+`ReportingObserver`를 초기화하여 `ro` 변수로 할당한다.
+
+`ro.observe()` 메서드를 통해 태그를 등록할 수 있다.
+
+``` typescript
+import { useEffect } from "react";
+
+export type UseReportingObserverCallback = (entry: Report) => void;
+
+/**
+ * ReportingObserver 적용 훅 메서드
+ *
+ * @param {UseReportingObserverCallback} callback: 콜백 메서드
+ * @param {PerformanceObserverInit} options: 옵션
+ */
+export function useReportingObserver(
+  callback: UseReportingObserverCallback,
+  options?: ReportingObserverOptions
+): void {
+  useEffect(() => {
+    const ro = new ReportingObserver((reports) => {
+      reports.forEach(callback);
+    }, options);
+
+    ro.observe();
+  }, [callback, options]);
+}
+```
+
+마지막으로, 컴포넌트가 렌더링 될 때마다 `ReportingObserver`의 등록이 중첩되지 않도록, 초기화 코드를 넣어준다.
+
+`ro.disconnect()` 메서드를 통해 `ReportingObserver`를 제거할 수 있다.
+
+
+
+## 전체 코드
+
+``` typescript
+import { useEffect } from "react";
+
+export type UseReportingObserverCallback = (entry: Report) => void;
+
+/**
+ * ReportingObserver 적용 훅 메서드
+ *
+ * @param {UseReportingObserverCallback} callback: 콜백 메서드
+ * @param {PerformanceObserverInit} options: 옵션
+ */
+export function useReportingObserver(
+  callback: UseReportingObserverCallback,
+  options?: ReportingObserverOptions
+): void {
+  useEffect(() => {
+    const ro = new ReportingObserver((reports) => {
+      reports.forEach(callback);
+    }, options);
+
+    ro.observe();
+
+    return () => {
+      ro.disconnect();
+    };
+  }, [callback, options]);
+}
+```
+
+전체 코드는 위와 같다.
+
+
+
+
+
+## CodeSandbox로 통한 예시
+
+CodeSandbox로 간단한 예시를 구현했다.
+
+<iframe src="https://codesandbox.io/embed/w558ks?view=split&module=%2Fsrc%2Fobserver-hook.ts&expanddevtools=1"
+     style="width:100%; height: 1000px; border:0; border-radius: 4px; overflow:hidden;"
+     title="ReportingObserver"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+
+
+
+
+
+# 마치며
+
+`ReportingObserver`는 서비스에서 발생하거나 발생할 수 있는 잠재적인 오류를 모니터링할 수 있는 옵저버다.
+
+이 옵저버를 적절히 활용하면 간단하게 자체적인 오류 모니터링 모듈을 구현할 수 있을 것이다.
+
+<br />
+
+그러나 이미 코드 품질 및 서비스 안정성을 검증하는 여러 오픈/상용 소프트웨어가 존재하기도 하고, 결정적으로 `ReportingObserver`에 대한 정보가 상당히 미흡하다.
+
+이 옵저버 또한 `PerformanceObserver`와 마찬가지로, 이런 게 있다 정도로만 짚고 넘어가도, 개발에 큰 지장은 없을 것이라 생각한다.
+
+
+
+
+
+# 시리즈를 끝마치며
+
+6편에 걸친 Observer API 시리즈가 완결됐다. 실제로 개발을 진행하면서, 몇몇 Event Driven 기반의 코드를 Observer API로 대체하고 있다. 컴포넌트 및 기능 개발에 있어서 더욱 효율적이고, 간편한 로직을 구현하기 용이했던 것 같다.
+
+특히, 요즘 개발하는 대부분의 개인 프로젝트에, 주요 옵저버를 React 훅으로 만들어 사용하고 있는데, DOM 등록 귀찮은 코드를 간단하게 줄일 수 있는 점이 매력적이였다.
+
+앞으로 종종 React 컴포넌트와 관련된 글을 작성할 예정인데, 이전에 Observer에 관련된 내용을 짚고 넘어가야 몇몇 컴포넌트 설명이 매끄러워질 것이라 판단했다.
+
+앞으로 있을 컴포넌트 설명과 더불어, 컴포넌트와 관계없이 이 글을 읽는 분들이, Observer API를 통해 기능 개발에 더 많은 인사이트를 얻길 바란다.22:["markdown","posts/2024/06/30/observer-api-6","c"]
+0:["sZ4katMHCRWybGeZpnic5",[[["",{"children":[["markdown","posts/2024/06/30/observer-api-6","c"],{"children":["__PAGE__?{\"markdown\":[\"posts\",\"2024\",\"06\",\"30\",\"observer-api-6\"]}",{}]}]},"$undefined","$undefined",true],["",{"children":[["markdown","posts/2024/06/30/observer-api-6","c"],{"children":["__PAGE__",{},[["$L1",["$","$L2",null,{"component":"main","data-component":"PageTemplate","children":[["$","$L3",null,{"title":"𝝅번째 알파카의 개발 낙서장","version":"5.0.0-beta11"}],[["$","$L4",null,{"src":"https://github.com/RWB0104/blog.itcode.dev/assets/50317129/c472262e-0b99-4a6f-836f-fc797bcf26d9","children":["$","$L2",null,{"className":"MarkdownScreenerTemplate_root__dpmgV","data-component":"BaseScreenerTemplate","height":"100%","position":"relative","width":"100%","children":[["$","$L5",null,{"alignItems":"center","height":"100%","justifyContent":"center","padding":2,"position":"relative","width":"100%","children":[["$","$L5",null,{"direction":"row","children":[["$","$L2",null,{"bgcolor":"dodgerblue","boxShadow":"0px 0px 5px black","height":"100%","width":5}],["$","$L5",null,{"color":"white","paddingLeft":2,"paddingRight":2,"children":[["$","$L6",null,{"className":"MarkdownScreenerTemplate_text__5_mNa","fontWeight":"bold","variant":"h5","children":"[Observer API 파헤치기] 6. ReportingObserver"}],["$","$L6",null,{"className":"MarkdownScreenerTemplate_text__5_mNa","children":"⏰ 2024-06-30 (일) 02:08:13"}]]}]]}],["$","$L7",null,{"bottom":"10%","direction":"row","gap":4,"position":"absolute","shareData":{"text":"PerformanceObserver API는 페이지의 성능 지표를 측정하는데 특화된 옵저버다. 해당 옵저버의 간략한 내용과 사용법에 대해 알아보자","title":"[Observer API 파헤치기] 6. ReportingObserver","url":"https://blog.itcode.dev/posts/2024/06/30/observer-api-6"}}]]}],["$","$L2",null,{"bottom":0,"left":0,"position":"absolute","width":"100%","children":["$","svg",null,{"className":"Wave_waves___Plcn","data-component":"Wave","height":80,"preserveAspectRatio":"none","shapeRendering":"auto","viewBox":"0 24 150 28","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":[["$","defs",null,{"children":["$","path",null,{"d":"M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z","id":"gentle-wave"}]}],["$","g",null,{"className":"Wave_parallax__AGFbj","children":[["$","use",null,{"fill":"$undefined","opacity":"0.7","x":"48","xlinkHref":"#gentle-wave","y":"0"}],["$","use",null,{"fill":"$undefined","opacity":"0.5","x":"48","xlinkHref":"#gentle-wave","y":"3"}],["$","use",null,{"fill":"$undefined","opacity":"0.3","x":"48","xlinkHref":"#gentle-wave","y":"5"}],["$","use",null,{"fill":"$undefined","x":"48","xlinkHref":"#gentle-wave","y":"7"}]]}]]}]}]]}]}],[["$","$L8",null,{"color":"dodgerblue"}],["$","$L9",null,{"children":["$","$L5",null,{"gap":4,"paddingTop":10,"children":[["$","$La",null,{"current":"/posts/2024/06/30/observer-api-6","groups":[{"title":"[Observer API 파헤치기] 6. ReportingObserver","url":"/posts/2024/06/30/observer-api-6"},{"title":"[Observer API 파헤치기] 5. PerformanceObserver","url":"/posts/2024/06/27/observer-api-5"},{"title":"[Observer API 파헤치기] 4. MutationObserver","url":"/posts/2024/06/24/observer-api-4"},{"title":"[Observer API 파헤치기] 3. ResizeObserver","url":"/posts/2024/06/20/observer-api-3"},{"title":"[Observer API 파헤치기] 2. IntersectionObserver","url":"/posts/2024/06/14/observer-api-2"},{"title":"[Observer API 파헤치기] 1. Observer API","url":"/posts/2024/06/12/observer-api-1"}],"thumbnail":"https://github.com/RWB0104/blog.itcode.dev/assets/50317129/c472262e-0b99-4a6f-836f-fc797bcf26d9","title":"Observer API 파헤치기"}],["$","$Lb",null,{"list":[{"idx":"1.","level":1,"text":"ReportingObserver"},{"idx":"1.1.","level":2,"text":"options"},{"idx":"1.1.1.","level":3,"text":"보고서 타입 (types)"},{"idx":"1.1.2.","level":3,"text":"기존 보고서 포함 여부 (buffered)"},{"idx":"1.2.","level":2,"text":"callback"},{"idx":"1.2.1.","level":3,"text":"report"},{"idx":"1.2.2.","level":3,"text":"observer"},{"idx":"2.","level":1,"text":"React에서 커스텀 훅으로 간편하게 사용하기"},{"idx":"2.1.","level":2,"text":"전체 코드"},{"idx":"2.2.","level":2,"text":"CodeSandbox로 통한 예시"},{"idx":"3.","level":1,"text":"마치며"},{"idx":"4.","level":1,"text":"시리즈를 끝마치며"}]}],["$","$Lc",null,{"variant":"fullWidth"}],["$","$Ld",null,{"children":"$e"}],["$","$Lc",null,{"variant":"fullWidth"}],["$","$Lf",null,{}],["$","$L10",null,{"tags":["JavaScript","TypeScript","React","Observer API","ReportingObserver"],"type":"posts"}],["$","$L5",null,{"alignItems":"center","data-component":"LabNameTag","width":"100%","children":["$","$L2",null,{"boxShadow":"0px 0px 10px #00000050","maxWidth":250,"width":"100%","children":["$","$L11",null,{"href":"https://itcode.dev","target":"_blank","children":["$","$L12",null,{"scale":1.1,"children":[["$","$L2",null,{"borderRadius":2,"className":"NameTag_tag__DZCHu","data-component":"NameTag","padding":1,"sx":{"background":"linear-gradient(45deg, #833AB4, #FD2B20, #fCAA43)"},"children":["$","$L5",null,{"borderRadius":2,"color":"white","gap":3,"padding":2,"children":[["$","$L2",null,{"className":"Tile_tile__czq9P","data-component":"Tile","overflow":"hidden","position":"relative","children":["$","$L2",null,{"height":"100%","left":0,"position":"absolute","top":0,"width":"100%","children":["$","$L13",null,{"src":"https://itcode.dev/logo.png"}]}]}],["$","$L2",null,{"borderTop":"1px solid white","width":"100%"}],["$","$L5",null,{"gap":1,"children":[["$","$L6",null,{"color":"inherit","fontWeight":"bold","children":"𝝅번째 알파카의 개발 연구소"}],["$","$L2",null,{"color":"inherit","width":"100%","children":["$","$L6",null,{"variant":"caption","children":"이 카드를 클릭하고 𝝅번째 알파카의 개발 연구소의 다양한 프로젝트를 확인해보세요!"}]}]]}]]}]}],["$","$L14",null,{}]]}]}]}]}],["$","$L15",null,{"next":"$undefined","prev":{"thumbnail":"https://github.com/RWB0104/blog.itcode.dev/assets/50317129/c472262e-0b99-4a6f-836f-fc797bcf26d9","title":"[Observer API 파헤치기] 5. PerformanceObserver","url":"/posts/2024/06/27/observer-api-5"},"type":"posts"}],["$","$L5",null,{"alignItems":"center","justifyContent":"center","width":"100%","children":["$","$L12",null,{"children":["$","$L5",null,{"alignItems":"center","bgcolor":"lemonchiffon","borderRadius":1,"boxShadow":"0px 0px 10px #00000030","component":"div","data-component":"ThanksCard","direction":"row","gap":2,"padding":2,"children":[["$","$L16",null,{"iconName":"love-message-burst","width":100}],["$","$L5",null,{"children":[["$","$L6",null,{"color":"black","variant":"h6","gutterBottom":true,"children":"읽어주셔서 고마워요!"}],["$","$L6",null,{"color":"black","children":["도움이 되셨다면, ",["$","$L6",null,{"color":"hotpink","component":"span","fontWeight":"bold","children":"공감"}],"이나 ",["$","$L6",null,{"color":"dodgerblue","component":"span","fontWeight":"bold","children":"댓글"}],"을 달아주시는 건 어떤가요?"]}],["$","$L6",null,{"color":"black","children":"블로그 운영에 큰 힘이 됩니다."}]]}]]}]}]}],["$","$L7",null,{"direction":"row","gap":4,"iconColor":"inherit","justifyContent":"center","shareData":{"text":"PerformanceObserver API는 페이지의 성능 지표를 측정하는데 특화된 옵저버다. 해당 옵저버의 간략한 내용과 사용법에 대해 알아보자","title":"[Observer API 파헤치기] 6. ReportingObserver","url":"/posts/2024/06/30/observer-api-6"}}],["$","$L17",null,{}],["$","$L5",null,{"alignItems":"center","children":["$","img",null,{"alt":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23484848&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23242424&url=https%3A%2F%2Fblog.itcode.dev%2Fposts%2F2024%2F06%2F30%2Fobserver-api-6","data-component":"Hits","src":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23484848&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23242424&url=https%3A%2F%2Fblog.itcode.dev%2Fposts%2F2024%2F06%2F30%2Fobserver-api-6"}]}]]}]}]]],["$","$L2",null,{"component":"footer","data-component":"Footer","marginTop":10,"children":[["$","$L2",null,{"position":"relative","children":[["$","$L18",null,{}],["$","$L2",null,{"bottom":-20,"className":"Footer_ship__VuMth","left":"10%","position":"absolute","children":["$","img",null,{"alt":"icon","height":100,"src":"https://cdn-icons-png.freepik.com/512/6643/6643562.png","width":100}]}],["$","$L2",null,{"bottom":0,"position":"absolute","width":"100%","children":["$","svg",null,{"className":"Wave_waves___Plcn","data-component":"Wave","height":40,"preserveAspectRatio":"none","shapeRendering":"auto","viewBox":"0 24 150 28","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":[["$","defs",null,{"children":["$","path",null,{"d":"M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z","id":"gentle-wave"}]}],["$","g",null,{"className":"Wave_parallax__AGFbj","children":[["$","use",null,{"fill":"#6fb1fc","opacity":"0.7","x":"48","xlinkHref":"#gentle-wave","y":"0"}],["$","use",null,{"fill":"#6fb1fc","opacity":"0.5","x":"48","xlinkHref":"#gentle-wave","y":"3"}],["$","use",null,{"fill":"#6fb1fc","opacity":"0.3","x":"48","xlinkHref":"#gentle-wave","y":"5"}],["$","use",null,{"fill":"#6fb1fc","x":"48","xlinkHref":"#gentle-wave","y":"7"}]]}]]}]}]]}],["$","$L2",null,{"children":["$","$L5",null,{"alignItems":"center","className":"FooterTemplate_footer__97G2c","color":"white","data-component":"FooterTemplate","gap":4,"padding":4,"paddingBottom":8,"paddingTop":8,"children":[["$","$L5",null,{"alignItems":"center","color":"white","children":[["$","$L6",null,{"className":"FooterTemplate_title__Samo8","fontWeight":"bold","variant":"h6","children":"𝝅번째 알파카의 개발 낙서장"}],["$","$L6",null,{"variant":"caption","children":"5.7.0"}]]}],["$","$L2",null,{"display":"grid","gap":2,"gridTemplateColumns":"1fr 1fr 1fr","children":[["$","$L11",null,{"data-component":"FooterLinkButton","href":"https://itcode.dev","target":"_blank","children":["$","$L19",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","img",null,{"alt":"itcode.dev","height":"100%","src":"https://itcode.dev/logo-transparent.png","width":"100%"}]}]}]}],["$","$L11",null,{"data-component":"FooterLinkButton","href":"https://github.com/RWB0104","target":"_blank","children":["$","$L19",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L1a",null,{}]}]}]}],["$","$L11",null,{"data-component":"FooterLinkButton","href":"mailto:psj2716@gmail.com","target":"_blank","children":["$","$L19",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L1b",null,{}]}]}]}],["$","$L11",null,{"data-component":"FooterLinkButton","href":"https://www.linkedin.com/in/itcode","target":"_blank","children":["$","$L19",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L1c",null,{}]}]}]}],["$","$L11",null,{"data-component":"FooterLinkButton","href":"/sitemap.xml","target":"_blank","children":["$","$L19",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L1d",null,{}]}]}]}],["$","$L11",null,{"data-component":"FooterLinkButton","href":"/rss.xml","target":"_blank","children":["$","$L19",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L1e",null,{}]}]}]}]]}],["$","$L5",null,{"alignItems":"center","color":"white","children":[["$","$L5",null,{"alignItems":"center","direction":"row","gap":0.5,"children":[["$","$L1f",null,{"fontSize":"inherit","htmlColor":"darkblue"}],["$","$L6",null,{"variant":"caption","children":"Developed by RWB since 2021.05"}]]}],["$","$L5",null,{"alignItems":"center","direction":"row","gap":0.5,"children":[["$","$L20",null,{"fontSize":"inherit","htmlColor":"crimson"}],["$","$L6",null,{"variant":"caption","children":"5th upgraded at 2024.05"}]]}]]}],["$","img",null,{"alt":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23484848&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23242424&url=https%3A%2F%2Fblog.itcode.dev","data-component":"Hits","src":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23484848&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23242424&url=https%3A%2F%2Fblog.itcode.dev"}]]}]}]]}]]}]],null],null]},["$","$L21",null,{"parallelRouterKey":"children","segmentPath":["children","$22","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L23",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/5253784961ea69b7.css","precedence":"next","crossOrigin":"$undefined"}]]}],null]},[["$","html",null,{"lang":"ko","children":[["$","head",null,{"children":[["$","script",null,{"crossOrigin":"anonymous","src":"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5522045122225064","async":true}],["$","meta",null,{"content":"ca-pub-5522045122225064","name":"google-adsense-account"}]]}],["$","body",null,{"children":["$","$24",null,{"children":["$","$L25",null,{"gaKey":"G-7QYWYNZ90R","children":["$","$L26",null,{"children":["$","$L27",null,{"children":[["$","$L21",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L23",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}],["$","$L28",null,{}],["$","$L29",null,{}]]}]}]}]}]}]]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/ca108af39b388357.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/bc8633ce02ba4b2d.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/ab32bf3b01486e34.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","3",{"rel":"stylesheet","href":"/_next/static/css/d880172cf76a61a7.css","precedence":"next","crossOrigin":"$undefined"}]],"$L2a"]]]]
+2a:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"[Observer API 파헤치기] 6. ReportingObserver - 𝝅번째 알파카의 개발 낙서장"}],["$","meta","3",{"name":"description","content":"PerformanceObserver API는 페이지의 성능 지표를 측정하는데 특화된 옵저버다. 해당 옵저버의 간략한 내용과 사용법에 대해 알아보자"}],["$","meta","4",{"name":"application-name","content":"𝝅번째 알파카의 개발 낙서장"}],["$","link","5",{"rel":"author","href":"https://github.com/RWB0104"}],["$","meta","6",{"name":"author","content":"Kapoo"}],["$","link","7",{"rel":"author","href":"https://www.linkedin.com/in/itcode"}],["$","meta","8",{"name":"author","content":"RWB"}],["$","link","9",{"rel":"manifest","href":"/manifest.webmanifest","crossOrigin":"use-credentials"}],["$","meta","10",{"name":"generator","content":"Next.js"}],["$","meta","11",{"name":"keywords","content":"JavaScript,TypeScript,React,Observer API,ReportingObserver"}],["$","meta","12",{"name":"creator","content":"RWB"}],["$","meta","13",{"name":"publisher","content":"GitHub Pages"}],["$","meta","14",{"property":"og:title","content":"[Observer API 파헤치기] 6. ReportingObserver - 𝝅번째 알파카의 개발 낙서장"}],["$","meta","15",{"property":"og:description","content":"PerformanceObserver API는 페이지의 성능 지표를 측정하는데 특화된 옵저버다. 해당 옵저버의 간략한 내용과 사용법에 대해 알아보자"}],["$","meta","16",{"property":"og:url","content":"https://blog.itcode.dev/posts/2024/06/30/observer-api-6"}],["$","meta","17",{"property":"og:site_name","content":"𝝅번째 알파카의 개발 낙서장"}],["$","meta","18",{"property":"og:locale","content":"ko-KR"}],["$","meta","19",{"property":"og:image","content":"https://github.com/RWB0104/blog.itcode.dev/assets/50317129/c472262e-0b99-4a6f-836f-fc797bcf26d9"}],["$","meta","20",{"property":"og:type","content":"website"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:title","content":"[Observer API 파헤치기] 6. ReportingObserver - 𝝅번째 알파카의 개발 낙서장"}],["$","meta","23",{"name":"twitter:description","content":"PerformanceObserver API는 페이지의 성능 지표를 측정하는데 특화된 옵저버다. 해당 옵저버의 간략한 내용과 사용법에 대해 알아보자"}],["$","meta","24",{"name":"twitter:image","content":"https://github.com/RWB0104/blog.itcode.dev/assets/50317129/c472262e-0b99-4a6f-836f-fc797bcf26d9"}],["$","link","25",{"rel":"icon","href":"/favicon.ico"}],["$","link","26",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","27",{"rel":"apple-touch-icon","href":"/favicon.ico"}],["$","meta","28",{"name":"next-size-adjust"}]]
+1:null

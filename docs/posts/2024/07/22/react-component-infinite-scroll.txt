@@ -1,0 +1,435 @@
+2:I[31253,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-89b774ca72478c0b.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+3:I[15441,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-89b774ca72478c0b.js","979","static/chunks/app/page-871c05277f892fb0.js"],"default"]
+4:I[75713,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-89b774ca72478c0b.js","979","static/chunks/app/page-871c05277f892fb0.js"],"default"]
+5:I[36032,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-89b774ca72478c0b.js","979","static/chunks/app/page-871c05277f892fb0.js"],"default"]
+6:I[4816,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-89b774ca72478c0b.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+7:I[67425,["746","static/chunks/395b46ae-d1f3c4e0e7243a60.js","128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","622","static/chunks/622-c69f910e2c9609c0.js","377","static/chunks/377-5459304f76782ae9.js","48","static/chunks/48-89b774ca72478c0b.js","78","static/chunks/app/%5B...markdown%5D/page-e2093a6e5fc3e106.js"],"default"]
+8:I[28676,["746","static/chunks/395b46ae-d1f3c4e0e7243a60.js","128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","622","static/chunks/622-c69f910e2c9609c0.js","377","static/chunks/377-5459304f76782ae9.js","48","static/chunks/48-89b774ca72478c0b.js","78","static/chunks/app/%5B...markdown%5D/page-e2093a6e5fc3e106.js"],"default"]
+9:I[12168,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-89b774ca72478c0b.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+a:I[25737,["746","static/chunks/395b46ae-d1f3c4e0e7243a60.js","128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","622","static/chunks/622-c69f910e2c9609c0.js","377","static/chunks/377-5459304f76782ae9.js","48","static/chunks/48-89b774ca72478c0b.js","78","static/chunks/app/%5B...markdown%5D/page-e2093a6e5fc3e106.js"],"default"]
+b:I[50979,["746","static/chunks/395b46ae-d1f3c4e0e7243a60.js","128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","622","static/chunks/622-c69f910e2c9609c0.js","377","static/chunks/377-5459304f76782ae9.js","48","static/chunks/48-89b774ca72478c0b.js","78","static/chunks/app/%5B...markdown%5D/page-e2093a6e5fc3e106.js"],"default"]
+c:I[66560,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-89b774ca72478c0b.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+d:I[29936,["746","static/chunks/395b46ae-d1f3c4e0e7243a60.js","128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","622","static/chunks/622-c69f910e2c9609c0.js","377","static/chunks/377-5459304f76782ae9.js","48","static/chunks/48-89b774ca72478c0b.js","78","static/chunks/app/%5B...markdown%5D/page-e2093a6e5fc3e106.js"],"default"]
+f:I[64678,["746","static/chunks/395b46ae-d1f3c4e0e7243a60.js","128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","622","static/chunks/622-c69f910e2c9609c0.js","377","static/chunks/377-5459304f76782ae9.js","48","static/chunks/48-89b774ca72478c0b.js","78","static/chunks/app/%5B...markdown%5D/page-e2093a6e5fc3e106.js"],"default"]
+10:I[89791,["746","static/chunks/395b46ae-d1f3c4e0e7243a60.js","128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","622","static/chunks/622-c69f910e2c9609c0.js","377","static/chunks/377-5459304f76782ae9.js","48","static/chunks/48-89b774ca72478c0b.js","78","static/chunks/app/%5B...markdown%5D/page-e2093a6e5fc3e106.js"],"default"]
+11:I[5760,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-89b774ca72478c0b.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+12:I[98918,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-89b774ca72478c0b.js","979","static/chunks/app/page-871c05277f892fb0.js"],"default"]
+13:I[21055,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-89b774ca72478c0b.js","979","static/chunks/app/page-871c05277f892fb0.js"],"default"]
+14:I[44271,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-89b774ca72478c0b.js","979","static/chunks/app/page-871c05277f892fb0.js"],"default"]
+15:I[95534,["746","static/chunks/395b46ae-d1f3c4e0e7243a60.js","128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","622","static/chunks/622-c69f910e2c9609c0.js","377","static/chunks/377-5459304f76782ae9.js","48","static/chunks/48-89b774ca72478c0b.js","78","static/chunks/app/%5B...markdown%5D/page-e2093a6e5fc3e106.js"],"default"]
+16:I[11494,["746","static/chunks/395b46ae-d1f3c4e0e7243a60.js","128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","622","static/chunks/622-c69f910e2c9609c0.js","377","static/chunks/377-5459304f76782ae9.js","48","static/chunks/48-89b774ca72478c0b.js","78","static/chunks/app/%5B...markdown%5D/page-e2093a6e5fc3e106.js"],"default"]
+17:I[35559,["746","static/chunks/395b46ae-d1f3c4e0e7243a60.js","128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","622","static/chunks/622-c69f910e2c9609c0.js","377","static/chunks/377-5459304f76782ae9.js","48","static/chunks/48-89b774ca72478c0b.js","78","static/chunks/app/%5B...markdown%5D/page-e2093a6e5fc3e106.js"],"default"]
+18:I[43439,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-89b774ca72478c0b.js","979","static/chunks/app/page-871c05277f892fb0.js"],"default"]
+19:I[20140,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-89b774ca72478c0b.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+1a:I[42019,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-89b774ca72478c0b.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+1b:I[36139,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-89b774ca72478c0b.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+1c:I[94634,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-89b774ca72478c0b.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+1d:I[3812,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-89b774ca72478c0b.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+1e:I[20015,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-89b774ca72478c0b.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+1f:I[91417,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-89b774ca72478c0b.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+20:I[17186,["128","static/chunks/128-f15a9902e71a0cfb.js","909","static/chunks/909-97e7151ede91fad6.js","623","static/chunks/623-76104f245c39a5c2.js","48","static/chunks/48-89b774ca72478c0b.js","979","static/chunks/app/page-871c05277f892fb0.js"],""]
+21:I[80560,[],""]
+23:I[3602,[],""]
+24:"$Sreact.suspense"
+25:I[89696,["128","static/chunks/128-f15a9902e71a0cfb.js","622","static/chunks/622-c69f910e2c9609c0.js","965","static/chunks/965-368bab8011421292.js","185","static/chunks/app/layout-41c20b5842d6270b.js"],"default"]
+26:I[53327,["128","static/chunks/128-f15a9902e71a0cfb.js","622","static/chunks/622-c69f910e2c9609c0.js","965","static/chunks/965-368bab8011421292.js","185","static/chunks/app/layout-41c20b5842d6270b.js"],"default"]
+27:I[31798,["128","static/chunks/128-f15a9902e71a0cfb.js","622","static/chunks/622-c69f910e2c9609c0.js","965","static/chunks/965-368bab8011421292.js","185","static/chunks/app/layout-41c20b5842d6270b.js"],"default"]
+28:I[90085,["128","static/chunks/128-f15a9902e71a0cfb.js","622","static/chunks/622-c69f910e2c9609c0.js","965","static/chunks/965-368bab8011421292.js","185","static/chunks/app/layout-41c20b5842d6270b.js"],"default"]
+29:I[29459,["128","static/chunks/128-f15a9902e71a0cfb.js","622","static/chunks/622-c69f910e2c9609c0.js","965","static/chunks/965-368bab8011421292.js","185","static/chunks/app/layout-41c20b5842d6270b.js"],"default"]
+e:T2c5d,
+# 개요
+
+적지 않은 기간동안 블로그가 휴지기에 들어갔었다. 물론 그 기간에도 일을 쉬거나 한 건 아니여서, 개발을 안 하진 않았다.
+
+덕분에 크고작은 컴포넌트를 개발할 수 있었는데, 그 중 사용성이 높은 컴포넌트들을 추려서 이 시리즈에 정리해보고자 한다.
+
+그 중 첫 번째로, 게시판이나 목록 등에 많이 사용하는 무한 스크롤(Infinite Scroll)에 대해 다뤄보고자 한다.
+
+
+
+
+
+## 요구사항
+
+컴포넌트를 만들기 전에, 컴포넌트의 요구사항을 정리해본다.
+
+1. 컴포넌트가 스크롤하여 마지막 위치까지 내려올 경우, 이를 감지하여 원하는 동작을 수행한다.
+
+요구사항은 위와 같이 심플하다. 핵심 키워드는 <span class="blue-600">마지막 위치 감지</span>로, 이를 구현하는 것이 관건이다.
+
+
+
+
+
+## InfiniteScroll 컴포넌트 구현
+
+개발할 컴포넌트를 `InfiniteScroll`이라 명명하고, 위의 요구사항으로 토대로 `InfiniteScroll` 컴포넌트를 구현한다.
+
+
+
+### 레이아웃 구현
+
+`InfiniteScroll`의 기본 레이아웃을 구현한다.
+
+``` tsx
+export default function InfiniteScroll(): JSX.Element
+{
+	return (
+		<div />
+	)
+}
+```
+
+기본적인 토대가 되는 레이아웃 `div`를 선언한다.
+
+
+
+### 인터페이스 구현
+
+`InfiniteScroll` 컴포넌트가 받을 인터페이스를 구현한다.
+
+``` tsx
+export type InfiniteScrollEndHandler = () => void;
+
+export interface InfiniteScrollProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>
+{
+	/**
+	 * 비활성화 여부
+	 */
+	disabled?: boolean;
+
+	/**
+	 * 스크롤 끝 이벤트 메서드
+	 */
+	onEnd?: InfiniteScrollEndHandler;
+}
+
+export default function InfiniteScroll({ disabled, onEnd, children, ...props }: InfiniteScrollProps): JSX.Element
+{
+	return (
+		<div {...props}>
+			{children}
+		</div>
+	)
+}
+```
+
+`InfiniteScroll` 컴포넌트가 받을 커스텀 프로퍼티는 `disabled`와 `onEnd` 메서드다. 각 프로퍼티의 역할은 주석의 내용과 동일하다.
+
+그 밖에, `DetailedHTMLProps` 인터페이스를 확장함으로써, `InfiniteScroll`가 기본 `div` 프로퍼티를 모두 수용할 수 있도록 구성했다.
+
+스크롤이 컴포넌트 마지막에 도달한 시점에, `onEnd`를 수행하도록 구성할 것이다. 만약 `disabled`가 `true`일 경우, 비활성화로 인식하여 동작을 막는다.
+
+
+
+### 스크롤 감지 로직 구현
+
+핵심 로직인 스크롤 감지 로직을 구현한다.
+
+일반적으로 `document.addEventListener` 기반의 스크롤 이벤트를 떠올리겠지만, 이 방법은 작업의 오버헤드가 너무 크다.
+
+`document`에 이벤트를 붙임으로써, 스코프가 컴포넌트 바깥으로 벗어나는 문제가 있으며, 스크롤을 하는 족족 이벤트 로직이 수행되므로 최적화 면에서도 좋지 못하다.
+
+실제로 구현해보면, 후술할 Observer 방식에 비해 쓸데없는 코드를 상당수 추가해야 할것이다.
+
+<br />
+
+우리는 이 로직을 구현하기 위해, 일전에 다뤘던 `IntersectionObserver`를 활용할 것이다.
+
+> 브라우저의 `Observer API`인 `IntersectionObserver`의 대한 내용은 해당 블로그의 [[Observer API 파헤치기] 2. IntersectionObserver](/posts/2024/06/14/observer-api-2)를 참조하자.
+
+![null](https://github.com/user-attachments/assets/20b481a8-2fc2-450b-9063-c7291b07aa6a)
+
+원리는 이러하다.
+
+1. `InfiniteScroll` 내부에 위치 감지용 더미 컴포넌트를 최하단에 위치시킨다.
+2. `IntersectionObserver`를 활용해 더미 컴포넌트가 사용자에게 보여지는 지 여부를 판단한다.
+3. 더미 컴포넌트가 보여질 경우, 스크롤 끝에 도달했다는 뜻으로 판단하여, `onEnd` 메서드를 실행한다.
+4. 만약, `disabled`가 `true`일 경우, 더미 컴포넌트를 생성하지 않음으로써, 동작을 미연에 방지할 수 있다.
+
+``` tsx
+import { useIntersectionObserver } from '@kapoo/common';
+import { useState, DetailedHTMLProps, HTMLAttributes } from 'react';
+
+export type InfiniteScrollEndHandler = () => void;
+
+export interface InfiniteScrollProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>
+{
+	/**
+	 * 비활성화 여부
+	 */
+	disabled?: boolean;
+
+	/**
+	 * 스크롤 끝 이벤트 메서드
+	 */
+	onEnd?: InfiniteScrollEndHandler;
+}
+
+export default function InfiniteScroll({ disabled, onEnd, children, ...props }: InfiniteScrollProps): JSX.Element
+{
+	const [ domState, setDomState ] = useState<HTMLDivElement | null>(null);
+
+	useIntersectionObserver(domState, (entry) =>
+	{
+		// DOM이 보일 경우
+		if (entry.isIntersecting)
+		{
+			onEnd?.();
+		}
+	});
+
+	return (
+		<div {...props}>
+			{children}
+
+			{children && !disabled ? <div ref={setDomState} style={{ width: '100%' }} /> : null}
+		</div>
+	)
+}
+```
+
+`useIntersectionObserver`는 외부 라이브러리가 아닌, 프로젝트 내부에서 직접 구현한 코드로, 아래와 같다.
+
+``` typescript
+import { useEffect } from "react";
+
+export type UseIntersectionObserverCallback = (
+  entry: IntersectionObserverEntry
+) => void;
+
+/**
+ * IntersectionObserver 적용 훅 메서드
+ *
+ * @param {Element | string | null} ref: Element
+ * @param {UseIntersectionObserverCallback} callback: 콜백 메서드
+ * @param {IntersectionObserverInit} options: 옵션
+ */
+export function useIntersectionObserver(
+  ref: Element | string | null,
+  callback: UseIntersectionObserverCallback,
+  options?: IntersectionObserverInit
+): void
+{
+  useEffect(() => {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(callback);
+    }, options);
+
+    // DOM이 유효할 경우
+    if (ref) {
+      // ref가 문자열일 경우
+      if (typeof ref === "string") {
+        const tag = document.querySelector(ref);
+
+        // 태그가 유효할 경우
+        if (tag) {
+          io.observe(tag);
+        }
+      }
+
+      // DOM일 경우
+      else {
+        io.observe(ref);
+      }
+    }
+
+    return () => {
+      io.disconnect();
+    };
+  }, [ref, callback, options]);
+}
+```
+
+더미 컴포넌트를 표현하는데 `children`의 유효 여부도 포함되어 있는데, 중복 동작을 막기 위한 조치다.
+
+컴포넌트의 초기 렌더링 시, 데이터가 아직 그려지지 않은 순간에 더미 컴포넌트가 노출되면서, 의도하지 않게 `onEnd` 메서드를 수행한다.
+
+이를 방지하기 위해, 반드시 유효한 컴포넌트가 렌더링 된 이후에 이벤트를 요청하도록 구성하는 장치다.
+
+
+
+### IntersectionObserver 옵션 활용하기
+
+위 코드로 충분히 동작하는 코드지만, 경우에 따라 아쉬운 점이 생기기도 한다.
+
+사용자가 페이지 끝에 도달하는 경우, 그 순간 다음 데이터를 호출(일반적으로 API)한다. 이 과정에서 데이터를 호출하고, 가공하여 렌더링하기까지 꽤 적지 않은 시간이 소모된다.
+
+사용자의 UX를 향상시키기 위해, 실제 스크롤이 끝나는 지점보다 살짝 위를 기준으로 잡는다면 어떨까?
+
+마치 사용자 눈에는 로딩 없이 목록을 끊기지 않고 볼 수 있는 것처럼 보일 것이다.
+
+`IntersectionObserver`의 `rootMargin` 옵션을 활용하여 이를 구현할 수 있다.
+
+``` tsx
+import { useIntersectionObserver } from '@kapoo/common';
+import { useState, DetailedHTMLProps, HTMLAttributes } from 'react';
+
+export type InfiniteScrollEndHandler = () => void;
+
+export interface InfiniteScrollProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>
+{
+	/**
+	 * 비활성화 여부
+	 */
+	disabled?: boolean;
+
+	/**
+	 * 마진
+	 */
+	rootMargin?: string;
+
+	/**
+	 * 스크롤 끝 이벤트 메서드
+	 */
+	onEnd?: InfiniteScrollEndHandler;
+}
+
+export default function InfiniteScroll({ disabled, rootMargin, onEnd, children, ...props }: InfiniteScrollProps): JSX.Element
+{
+	const [ domState, setDomState ] = useState<HTMLDivElement | null>(null);
+
+	useIntersectionObserver(domState, (entry) =>
+	{
+		// DOM이 보일 경우
+		if (entry.isIntersecting)
+		{
+			onEnd?.();
+		}
+	}, { rootMargin });
+
+	return (
+		<div {...props}>
+			{children}
+
+			{children && !disabled ? <div ref={setDomState} style={{ width: '100%' }} /> : null}
+		</div>
+	)
+}
+```
+
+`rootMargin`을 추가로 받아, `useIntersectionObserver`에 전달했다. CSS의 `margin` 속성과 동일하게 입력하면 된다.
+
+
+
+
+### 전체 코드
+
+``` tsx
+import { useIntersectionObserver } from '@kapoo/common';
+import { useState, DetailedHTMLProps, HTMLAttributes } from 'react';
+
+export type InfiniteScrollEndHandler = () => void;
+
+export interface InfiniteScrollProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>
+{
+	/**
+	 * 비활성화 여부
+	 */
+	disabled?: boolean;
+
+	/**
+	 * 마진
+	 */
+	rootMargin?: string;
+
+	/**
+	 * 스크롤 끝 이벤트 메서드
+	 */
+	onEnd?: InfiniteScrollEndHandler;
+}
+
+export default function InfiniteScroll({ disabled, rootMargin, onEnd, children, ...props }: InfiniteScrollProps): JSX.Element
+{
+	const [ domState, setDomState ] = useState<HTMLDivElement | null>(null);
+
+	useIntersectionObserver(domState, (entry) =>
+	{
+		// DOM이 보일 경우
+		if (entry.isIntersecting)
+		{
+			onEnd?.();
+		}
+	}, { rootMargin });
+
+	return (
+		<div {...props}>
+			{children}
+
+			{children && !disabled ? <div ref={setDomState} style={{ width: '100%' }} /> : null}
+		</div>
+	)
+}
+```
+
+``` typescript
+import { useEffect } from "react";
+
+export type UseIntersectionObserverCallback = (
+  entry: IntersectionObserverEntry
+) => void;
+
+/**
+ * IntersectionObserver 적용 훅 메서드
+ *
+ * @param {Element | string | null} ref: Element
+ * @param {UseIntersectionObserverCallback} callback: 콜백 메서드
+ * @param {IntersectionObserverInit} options: 옵션
+ */
+export function useIntersectionObserver(
+  ref: Element | string | null,
+  callback: UseIntersectionObserverCallback,
+  options?: IntersectionObserverInit
+): void
+{
+  useEffect(() => {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(callback);
+    }, options);
+
+    // DOM이 유효할 경우
+    if (ref) {
+      // ref가 문자열일 경우
+      if (typeof ref === "string") {
+        const tag = document.querySelector(ref);
+
+        // 태그가 유효할 경우
+        if (tag) {
+          io.observe(tag);
+        }
+      }
+
+      // DOM일 경우
+      else {
+        io.observe(ref);
+      }
+    }
+
+    return () => {
+      io.disconnect();
+    };
+  }, [ref, callback, options]);
+}
+```
+
+전체 코드는 위와 같다.
+
+
+
+
+
+## CodeSandbox로 보는 컴포넌트
+
+컴포넌트를 CodeSandbox로 직접 확인해보자.
+
+`rootMargin`의 경우, 아래의 미리보기 환경에서는 내부적인 문제 때문인지 동작하지 않으며, 전체화면으로 볼 때만 작동하는 듯 하다.
+
+<iframe src="https://codesandbox.io/embed/qk7wjn?view=split&module=%2Fsrc%2FApp.tsx"
+     style="width:100%; height: 1000px; border:0; border-radius: 4px; overflow:hidden;"
+     title="InfiniteScroll"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>22:["markdown","posts/2024/07/22/react-component-infinite-scroll","c"]
+0:["bkbUUx3rEoX_uG5WuJR2O",[[["",{"children":[["markdown","posts/2024/07/22/react-component-infinite-scroll","c"],{"children":["__PAGE__?{\"markdown\":[\"posts\",\"2024\",\"07\",\"22\",\"react-component-infinite-scroll\"]}",{}]}]},"$undefined","$undefined",true],["",{"children":[["markdown","posts/2024/07/22/react-component-infinite-scroll","c"],{"children":["__PAGE__",{},[["$L1",["$","$L2",null,{"component":"main","data-component":"PageTemplate","children":[["$","$L3",null,{"title":"𝝅번째 알파카의 개발 낙서장","version":"5.9.0"}],[["$","$L4",null,{"src":"https://github.com/user-attachments/assets/48516902-3d5e-4d9d-bb75-617638c9b440","children":["$","$L2",null,{"className":"MarkdownScreenerTemplate_root__dpmgV","data-component":"BaseScreenerTemplate","height":"100%","position":"relative","width":"100%","children":[["$","$L5",null,{"alignItems":"center","height":"100%","justifyContent":"center","padding":2,"position":"relative","width":"100%","children":[["$","$L5",null,{"direction":"row","children":[["$","$L2",null,{"bgcolor":"dodgerblue","boxShadow":"0px 0px 5px black","height":"100%","width":5}],["$","$L5",null,{"color":"white","paddingLeft":2,"paddingRight":2,"children":[["$","$L6",null,{"className":"MarkdownScreenerTemplate_text__5_mNa","fontWeight":"bold","variant":"h5","children":"[React Component] 무한 스크롤(Infinite Scroll) 컴포넌트 만들어보기"}],["$","$L6",null,{"className":"MarkdownScreenerTemplate_text__5_mNa","children":"⏰ 2024-07-22 (월) 21:43:03"}]]}]]}],["$","$L7",null,{"bottom":"10%","direction":"row","gap":4,"position":"absolute","shareData":{"text":"바닐라 React.js 환경에서 무한 스크롤(Infinite Scroll) 컴포넌트를 직접 구현해보자","title":"[React Component] 무한 스크롤(Infinite Scroll) 컴포넌트 만들어보기","url":"https://blog.itcode.dev/posts/2024/07/22/react-component-infinite-scroll"}}]]}],["$","$L2",null,{"bottom":0,"left":0,"position":"absolute","width":"100%","children":["$","svg",null,{"className":"Wave_waves___Plcn","data-component":"Wave","height":80,"preserveAspectRatio":"none","shapeRendering":"auto","viewBox":"0 24 150 28","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":[["$","defs",null,{"children":["$","path",null,{"d":"M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z","id":"gentle-wave"}]}],["$","g",null,{"className":"Wave_parallax__AGFbj","children":[["$","use",null,{"fill":"$undefined","opacity":"0.7","x":"48","xlinkHref":"#gentle-wave","y":"0"}],["$","use",null,{"fill":"$undefined","opacity":"0.5","x":"48","xlinkHref":"#gentle-wave","y":"3"}],["$","use",null,{"fill":"$undefined","opacity":"0.3","x":"48","xlinkHref":"#gentle-wave","y":"5"}],["$","use",null,{"fill":"$undefined","x":"48","xlinkHref":"#gentle-wave","y":"7"}]]}]]}]}]]}]}],[["$","$L8",null,{"color":"dodgerblue"}],["$","$L9",null,{"children":["$","$L5",null,{"gap":4,"paddingTop":10,"children":[["$","$La",null,{"current":"/posts/2024/07/22/react-component-infinite-scroll","groups":[{"title":"[React Component] 무한 스크롤(Infinite Scroll) 컴포넌트 만들어보기","url":"/posts/2024/07/22/react-component-infinite-scroll"}],"thumbnail":"https://github.com/user-attachments/assets/48516902-3d5e-4d9d-bb75-617638c9b440","title":"React Component"}],["$","$Lb",null,{"list":[{"idx":"1.","level":1,"text":"개요"},{"idx":"1.1.","level":2,"text":"요구사항"},{"idx":"1.2.","level":2,"text":"InfiniteScroll 컴포넌트 구현"},{"idx":"1.2.1.","level":3,"text":"레이아웃 구현"},{"idx":"1.2.2.","level":3,"text":"인터페이스 구현"},{"idx":"1.2.3.","level":3,"text":"스크롤 감지 로직 구현"},{"idx":"1.2.4.","level":3,"text":"IntersectionObserver 옵션 활용하기"},{"idx":"1.2.5.","level":3,"text":"전체 코드"},{"idx":"1.3.","level":2,"text":"CodeSandbox로 보는 컴포넌트"}]}],["$","$Lc",null,{"variant":"fullWidth"}],["$","$Ld",null,{"children":"$e"}],["$","$Lc",null,{"variant":"fullWidth"}],["$","$Lf",null,{}],["$","$L10",null,{"tags":["TypeScript","React"],"type":"posts"}],["$","$L5",null,{"alignItems":"center","data-component":"LabNameTag","width":"100%","children":["$","$L2",null,{"boxShadow":"0px 0px 10px #00000050","maxWidth":250,"width":"100%","children":["$","$L11",null,{"href":"https://itcode.dev","target":"_blank","children":["$","$L12",null,{"scale":1.1,"children":[["$","$L2",null,{"borderRadius":2,"className":"NameTag_tag__DZCHu","data-component":"NameTag","padding":1,"sx":{"background":"linear-gradient(45deg, #833AB4, #FD2B20, #fCAA43)"},"children":["$","$L5",null,{"borderRadius":2,"color":"white","gap":3,"padding":2,"children":[["$","$L2",null,{"className":"Tile_tile__czq9P","data-component":"Tile","overflow":"hidden","position":"relative","children":["$","$L2",null,{"height":"100%","left":0,"position":"absolute","top":0,"width":"100%","children":["$","$L13",null,{"src":"https://itcode.dev/logo.png"}]}]}],["$","$L2",null,{"borderTop":"1px solid white","width":"100%"}],["$","$L5",null,{"gap":1,"children":[["$","$L6",null,{"color":"inherit","fontWeight":"bold","children":"𝝅번째 알파카의 개발 연구소"}],["$","$L2",null,{"color":"inherit","width":"100%","children":["$","$L6",null,{"variant":"caption","children":"이 카드를 클릭하고 𝝅번째 알파카의 개발 연구소의 다양한 프로젝트를 확인해보세요!"}]}]]}]]}]}],["$","$L14",null,{}]]}]}]}]}],["$","$L15",null,{"next":"$undefined","prev":{"thumbnail":"https://github.com/RWB0104/blog.itcode.dev/assets/50317129/1865e448-684c-4967-9a58-013bb1ef30df","title":"useEffect & useLayoutEffect","url":"/posts/2024/07/11/use-effect-use-layout-effect"},"type":"posts"}],["$","$L5",null,{"alignItems":"center","justifyContent":"center","width":"100%","children":["$","$L12",null,{"children":["$","$L5",null,{"alignItems":"center","bgcolor":"lemonchiffon","borderRadius":1,"boxShadow":"0px 0px 10px #00000030","component":"div","data-component":"ThanksCard","direction":"row","gap":2,"padding":2,"children":[["$","$L16",null,{"iconName":"love-message-burst","width":100}],["$","$L5",null,{"children":[["$","$L6",null,{"color":"black","variant":"h6","gutterBottom":true,"children":"읽어주셔서 고마워요!"}],["$","$L6",null,{"color":"black","children":["도움이 되셨다면, ",["$","$L6",null,{"color":"hotpink","component":"span","fontWeight":"bold","children":"공감"}],"이나 ",["$","$L6",null,{"color":"dodgerblue","component":"span","fontWeight":"bold","children":"댓글"}],"을 달아주시는 건 어떤가요?"]}],["$","$L6",null,{"color":"black","children":"블로그 운영에 큰 힘이 됩니다."}]]}]]}]}]}],["$","$L7",null,{"direction":"row","gap":4,"iconColor":"inherit","justifyContent":"center","shareData":{"text":"바닐라 React.js 환경에서 무한 스크롤(Infinite Scroll) 컴포넌트를 직접 구현해보자","title":"[React Component] 무한 스크롤(Infinite Scroll) 컴포넌트 만들어보기","url":"/posts/2024/07/22/react-component-infinite-scroll"}}],["$","$L17",null,{}],["$","$L5",null,{"alignItems":"center","children":["$","img",null,{"alt":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23484848&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23242424&url=https%3A%2F%2Fblog.itcode.dev%2Fposts%2F2024%2F07%2F22%2Freact-component-infinite-scroll","data-component":"Hits","src":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23484848&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23242424&url=https%3A%2F%2Fblog.itcode.dev%2Fposts%2F2024%2F07%2F22%2Freact-component-infinite-scroll"}]}]]}]}]]],["$","$L2",null,{"component":"footer","data-component":"Footer","marginTop":10,"children":[["$","$L2",null,{"position":"relative","children":[["$","$L18",null,{}],["$","$L2",null,{"bottom":-20,"className":"Footer_ship__VuMth","left":"10%","position":"absolute","children":["$","img",null,{"alt":"icon","height":100,"src":"https://cdn-icons-png.freepik.com/512/6643/6643562.png","width":100}]}],["$","$L2",null,{"bottom":0,"position":"absolute","width":"100%","children":["$","svg",null,{"className":"Wave_waves___Plcn","data-component":"Wave","height":40,"preserveAspectRatio":"none","shapeRendering":"auto","viewBox":"0 24 150 28","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":[["$","defs",null,{"children":["$","path",null,{"d":"M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z","id":"gentle-wave"}]}],["$","g",null,{"className":"Wave_parallax__AGFbj","children":[["$","use",null,{"fill":"#6fb1fc","opacity":"0.7","x":"48","xlinkHref":"#gentle-wave","y":"0"}],["$","use",null,{"fill":"#6fb1fc","opacity":"0.5","x":"48","xlinkHref":"#gentle-wave","y":"3"}],["$","use",null,{"fill":"#6fb1fc","opacity":"0.3","x":"48","xlinkHref":"#gentle-wave","y":"5"}],["$","use",null,{"fill":"#6fb1fc","x":"48","xlinkHref":"#gentle-wave","y":"7"}]]}]]}]}]]}],["$","$L2",null,{"children":["$","$L5",null,{"alignItems":"center","className":"FooterTemplate_footer__97G2c","color":"white","data-component":"FooterTemplate","gap":4,"padding":4,"paddingBottom":8,"paddingTop":8,"children":[["$","$L5",null,{"alignItems":"center","color":"white","children":[["$","$L6",null,{"className":"FooterTemplate_title__Samo8","fontWeight":"bold","variant":"h6","children":"𝝅번째 알파카의 개발 낙서장"}],["$","$L6",null,{"variant":"caption","children":"5.9.0"}]]}],["$","$L2",null,{"display":"grid","gap":2,"gridTemplateColumns":"1fr 1fr 1fr","children":[["$","$L11",null,{"data-component":"FooterLinkButton","href":"https://itcode.dev","target":"_blank","children":["$","$L19",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","img",null,{"alt":"itcode.dev","height":"100%","src":"https://itcode.dev/logo-transparent.png","width":"100%"}]}]}]}],["$","$L11",null,{"data-component":"FooterLinkButton","href":"https://github.com/RWB0104","target":"_blank","children":["$","$L19",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L1a",null,{}]}]}]}],["$","$L11",null,{"data-component":"FooterLinkButton","href":"mailto:psj2716@gmail.com","target":"_blank","children":["$","$L19",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L1b",null,{}]}]}]}],["$","$L11",null,{"data-component":"FooterLinkButton","href":"https://www.linkedin.com/in/itcode","target":"_blank","children":["$","$L19",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L1c",null,{}]}]}]}],["$","$L11",null,{"data-component":"FooterLinkButton","href":"/sitemap.xml","target":"_blank","children":["$","$L19",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L1d",null,{}]}]}]}],["$","$L11",null,{"data-component":"FooterLinkButton","href":"/rss.xml","target":"_blank","children":["$","$L19",null,{"className":"SymbolicButton_button__Yg0O3","data-component":"SymbolicButton","children":["$","$L5",null,{"alignItems":"center","bgcolor":"$undefined","border":"1px solid","borderColor":"white","borderRadius":"50%","boxShadow":"0px 0px 5px #00000050","height":40,"justifyContent":"center","padding":0.5,"width":40,"children":["$","$L1e",null,{}]}]}]}]]}],["$","$L5",null,{"alignItems":"center","color":"white","children":[["$","$L5",null,{"alignItems":"center","direction":"row","gap":0.5,"children":[["$","$L1f",null,{"fontSize":"inherit","htmlColor":"darkblue"}],["$","$L6",null,{"variant":"caption","children":"Developed by RWB since 2021.05"}]]}],["$","$L5",null,{"alignItems":"center","direction":"row","gap":0.5,"children":[["$","$L20",null,{"fontSize":"inherit","htmlColor":"crimson"}],["$","$L6",null,{"variant":"caption","children":"5th upgraded at 2024.05"}]]}]]}],["$","img",null,{"alt":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23484848&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23242424&url=https%3A%2F%2Fblog.itcode.dev","data-component":"Hits","src":"https://hits.seeyoufarm.com/api/count/incr/badge.svg?count_bg=%23484848&icon=react.svg&icon_color=dodgerblue&title=view&title_bg=%23242424&url=https%3A%2F%2Fblog.itcode.dev"}]]}]}]]}]]}]],null],null]},["$","$L21",null,{"parallelRouterKey":"children","segmentPath":["children","$22","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L23",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/2f1fc16fd429ff22.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/a336ca791a5e0838.css","precedence":"next","crossOrigin":"$undefined"}]]}],null]},[["$","html",null,{"lang":"ko","children":[["$","head",null,{"children":[["$","script",null,{"crossOrigin":"anonymous","src":"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5522045122225064","async":true}],["$","meta",null,{"content":"ca-pub-5522045122225064","name":"google-adsense-account"}]]}],["$","body",null,{"children":["$","$24",null,{"children":["$","$L25",null,{"gaKey":"G-7QYWYNZ90R","children":["$","$L26",null,{"children":["$","$L27",null,{"children":[["$","$L21",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L23",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}],["$","$L28",null,{}],["$","$L29",null,{}]]}]}]}]}]}]]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/ca108af39b388357.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/bc8633ce02ba4b2d.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/ab32bf3b01486e34.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","3",{"rel":"stylesheet","href":"/_next/static/css/d880172cf76a61a7.css","precedence":"next","crossOrigin":"$undefined"}]],"$L2a"]]]]
+2a:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"[React Component] 무한 스크롤(Infinite Scroll) 컴포넌트 만들어보기 - 𝝅번째 알파카의 개발 낙서장"}],["$","meta","3",{"name":"description","content":"바닐라 React.js 환경에서 무한 스크롤(Infinite Scroll) 컴포넌트를 직접 구현해보자"}],["$","meta","4",{"name":"application-name","content":"𝝅번째 알파카의 개발 낙서장"}],["$","link","5",{"rel":"author","href":"https://github.com/RWB0104"}],["$","meta","6",{"name":"author","content":"Kapoo"}],["$","link","7",{"rel":"author","href":"https://www.linkedin.com/in/itcode"}],["$","meta","8",{"name":"author","content":"RWB"}],["$","link","9",{"rel":"manifest","href":"/manifest.webmanifest","crossOrigin":"use-credentials"}],["$","meta","10",{"name":"generator","content":"Next.js"}],["$","meta","11",{"name":"keywords","content":"TypeScript,React"}],["$","meta","12",{"name":"creator","content":"RWB"}],["$","meta","13",{"name":"publisher","content":"GitHub Pages"}],["$","meta","14",{"property":"og:title","content":"[React Component] 무한 스크롤(Infinite Scroll) 컴포넌트 만들어보기 - 𝝅번째 알파카의 개발 낙서장"}],["$","meta","15",{"property":"og:description","content":"바닐라 React.js 환경에서 무한 스크롤(Infinite Scroll) 컴포넌트를 직접 구현해보자"}],["$","meta","16",{"property":"og:url","content":"https://blog.itcode.dev/posts/2024/07/22/react-component-infinite-scroll"}],["$","meta","17",{"property":"og:site_name","content":"𝝅번째 알파카의 개발 낙서장"}],["$","meta","18",{"property":"og:locale","content":"ko-KR"}],["$","meta","19",{"property":"og:image","content":"https://github.com/user-attachments/assets/48516902-3d5e-4d9d-bb75-617638c9b440"}],["$","meta","20",{"property":"og:type","content":"website"}],["$","meta","21",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","22",{"name":"twitter:title","content":"[React Component] 무한 스크롤(Infinite Scroll) 컴포넌트 만들어보기 - 𝝅번째 알파카의 개발 낙서장"}],["$","meta","23",{"name":"twitter:description","content":"바닐라 React.js 환경에서 무한 스크롤(Infinite Scroll) 컴포넌트를 직접 구현해보자"}],["$","meta","24",{"name":"twitter:image","content":"https://github.com/user-attachments/assets/48516902-3d5e-4d9d-bb75-617638c9b440"}],["$","link","25",{"rel":"icon","href":"/favicon.ico"}],["$","link","26",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","27",{"rel":"apple-touch-icon","href":"/favicon.ico"}],["$","meta","28",{"name":"next-size-adjust"}]]
+1:null

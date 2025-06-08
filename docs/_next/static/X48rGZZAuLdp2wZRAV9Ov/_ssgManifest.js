@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002F[...contents]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

@@ -18,8 +18,8 @@ f:I[59366,["486","static/chunks/afa401a5-3a2ef3bc22d602ad.js","80","static/chunk
 15:I[87837,[],"ViewportBoundary"]
 17:I[87837,[],"MetadataBoundary"]
 19:I[67034,[],""]
-:HL["/_next/static/css/95abb35334c0f314.css","style"]
-0:{"P":null,"b":"E_aGCk-_UQj_5UJna0amV","p":"","c":["","posts","2021","06","06","jekyll-blog-prepare-git"],"i":false,"f":[[["",{"children":[["contents","posts/2021/06/06/jekyll-blog-prepare-git","c"],{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/95abb35334c0f314.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ko","children":["$","body",null,{"children":["$","$2",null,{"children":["$","$L3",null,{"gaKey":"G-7QYWYNZ90R","children":["$","$L4",null,{"children":["$","$L5",null,{"buttonPosition":"bottom-left","children":[["$","$L6",null,{"title":"𝝅번째 알파카의 개발 낙서장","version":"v6.2.0"}],["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L9",null,{"propertyId":"6830ab140f5891190cc5911b","widgetId":"1irv1ohta"}],["$","$La",null,{}],["$","$Lb",null,{"bodyColor":"linear-gradient(0deg,#0052d4,#4364f7,#6fb1fc)","mainColor":"#6fb1fc","children":["$","div",null,{"className":"flex flex-col justify-center items-center gap-8 p-8 w-full","children":[["$","div",null,{"className":"flex flex-col justify-center items-center gap-1 mt-10 text-white","children":[["$","p",null,{"data-component":"Typography","className":"font-bold text-xl","children":"𝝅번째 알파카의 개발 낙서장"}],["$","small",null,{"data-component":"Typography","className":"text-sm font-medium leading-none opacity-80","variant":"small","children":["v","6.2.0"]}]]}],["$","div",null,{"className":"justify-center gap-4 grid grid-cols-3","children":[["$","$Lc",null,{"delayDuration":0.3,"children":["$","$Ld",null,{"children":[["$","$Le",null,{"children":["$","$Lf",null,{"className":"flex size-10 items-center justify-between rounded-full border-2 p-2 border-white","data-component":"IconButton","href":"https://itcode.dev","target":"_blank","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"white","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-globe","children":[["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],["$","path","13o1zl",{"d":"M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"}],["$","path","9i4pu4",{"d":"M2 12h20"}],"$undefined"]}]}]}],["$","$L10",null,{"children":"https://itcode.dev"}]]}]}],["$","$Lc",null,{"delayDuration":0.3,"children":["$","$Ld",null,{"children":[["$","$Le",null,{"children":["$","$Lf",null,{"className":"flex size-10 items-center justify-between rounded-full border-2 p-2 border-white","data-component":"IconButton","href":"https://github.com/RWB0104","target":"_blank","children":["$","svg",null,{"className":"bi bi-github","data-component":"GithubIcon","fill":"white","height":"100%","viewBox":"0 0 16 16","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":["$","path",null,{"d":"M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"}]}]}]}],["$","$L10",null,{"children":"https://github.com/RWB0104"}]]}]}],["$","$Lc",null,{"delayDuration":0.3,"children":["$","$Ld",null,{"children":[["$","$Le",null,{"children":["$","$Lf",null,{"className":"flex size-10 items-center justify-between rounded-full border-2 p-2 border-white","data-component":"IconButton","href":"https://www.linkedin.com/in/itcode","target":"_blank","children":["$","svg",null,{"className":"bi bi-linkedin","data-component":"LinkedInIcon","fill":"white","height":"100%","viewBox":"0 0 16 16","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":["$","path",null,{"d":"M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"}]}]}]}],["$","$L10",null,{"children":"https://www.linkedin.com/in/itcode"}]]}]}],["$","$Lc",null,{"delayDuration":0.3,"children":["$","$Ld",null,{"children":[["$","$Le",null,{"children":["$","$Lf",null,{"className":"flex size-10 items-center justify-between rounded-full border-2 p-2 border-white","data-component":"IconButton","href":"mailto:psj2716@gmail.com","target":"_blank","children":["$","svg",null,{"className":"bi bi-google","data-component":"GoogleIcon","fill":"white","height":"100%","viewBox":"0 0 16 16","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":["$","path",null,{"d":"M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"}]}]}]}],["$","$L10",null,{"children":"mailto:psj2716@gmail.com"}]]}]}],["$","$Lc",null,{"delayDuration":0.3,"children":["$","$Ld",null,{"children":[["$","$Le",null,{"children":["$","$Lf",null,{"className":"flex size-10 items-center justify-between rounded-full border-2 p-2 border-white","data-component":"IconButton","href":"/sitemap.xml","target":"_blank","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"white","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-book-open-text","children":[["$","path","1akyts",{"d":"M12 7v14"}],["$","path","7q9ll5",{"d":"M16 12h2"}],["$","path","msurwy",{"d":"M16 8h2"}],["$","path","ruj8y",{"d":"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"}],["$","path","32wvfc",{"d":"M6 12h2"}],["$","path","30oboj",{"d":"M6 8h2"}],"$undefined"]}]}]}],["$","$L10",null,{"children":"/sitemap.xml"}]]}]}],["$","$Lc",null,{"delayDuration":0.3,"children":["$","$Ld",null,{"children":[["$","$Le",null,{"children":["$","$Lf",null,{"className":"flex size-10 items-center justify-between rounded-full border-2 p-2 border-white","data-component":"IconButton","href":"/rss.xml","target":"_blank","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"white","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-rss","children":[["$","path","pv89mb",{"d":"M4 11a9 9 0 0 1 9 9"}],["$","path","k0647b",{"d":"M4 4a16 16 0 0 1 16 16"}],["$","circle","bfqh0e",{"cx":"5","cy":"19","r":"1"}],"$undefined"]}]}]}],["$","$L10",null,{"children":"/rss.xml"}]]}]}]]}],["$","div",null,{"className":"flex flex-col justify-center items-center gap-1 opacity-80 mt-10 text-white","children":[["$","small",null,{"data-component":"Typography","variant":"small","children":"Developed by RWB since 2021.05","className":"text-sm font-medium leading-none"}],["$","small",null,{"data-component":"Typography","variant":"small","children":"6th upgraded at 2025.05","className":"text-sm font-medium leading-none"}]]}]]}]}]]}]}]}]}]}]}]]}],{"children":[["contents","posts/2021/06/06/jekyll-blog-prepare-git","c"],["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L11","$undefined",null,["$","$L12",null,{"children":["$L13","$L14",null]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","yj1bqU-5yplCumPChLkAc",{"children":[["$","$L15",null,{"children":"$L16"}],null]}],["$","$L17",null,{"children":"$L18"}]]}],false]],"m":"$undefined","G":["$19","$undefined"],"s":false,"S":true}
+:HL["/_next/static/css/37ffd9c121b66ad8.css","style"]
+0:{"P":null,"b":"e2TvXNPHjfCKOhmtUu0vq","p":"","c":["","posts","2021","06","06","jekyll-blog-prepare-git"],"i":false,"f":[[["",{"children":[["contents","posts/2021/06/06/jekyll-blog-prepare-git","c"],{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/37ffd9c121b66ad8.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ko","children":["$","body",null,{"children":["$","$2",null,{"children":["$","$L3",null,{"gaKey":"G-7QYWYNZ90R","children":["$","$L4",null,{"children":["$","$L5",null,{"buttonPosition":"bottom-left","children":[["$","$L6",null,{"title":"𝝅번째 알파카의 개발 낙서장","version":"v6.3.0"}],["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L9",null,{"propertyId":"6830ab140f5891190cc5911b","widgetId":"1irv1ohta"}],["$","$La",null,{}],["$","$Lb",null,{"bodyColor":"linear-gradient(0deg,#0052d4,#4364f7,#6fb1fc)","mainColor":"#6fb1fc","children":["$","div",null,{"className":"flex flex-col justify-center items-center gap-8 p-8 w-full","children":[["$","div",null,{"className":"flex flex-col justify-center items-center gap-1 mt-10 text-white","children":[["$","p",null,{"data-component":"Typography","className":"font-bold text-xl","children":"𝝅번째 알파카의 개발 낙서장"}],["$","small",null,{"data-component":"Typography","className":"text-sm font-medium leading-none opacity-80","variant":"small","children":["v","6.3.0"]}]]}],["$","div",null,{"className":"justify-center gap-4 grid grid-cols-3","children":[["$","$Lc",null,{"delayDuration":0.3,"children":["$","$Ld",null,{"children":[["$","$Le",null,{"children":["$","$Lf",null,{"className":"flex size-10 items-center justify-between rounded-full border-2 p-2 border-white","data-component":"IconButton","href":"https://itcode.dev","target":"_blank","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"white","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-globe","children":[["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],["$","path","13o1zl",{"d":"M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"}],["$","path","9i4pu4",{"d":"M2 12h20"}],"$undefined"]}]}]}],["$","$L10",null,{"children":"https://itcode.dev"}]]}]}],["$","$Lc",null,{"delayDuration":0.3,"children":["$","$Ld",null,{"children":[["$","$Le",null,{"children":["$","$Lf",null,{"className":"flex size-10 items-center justify-between rounded-full border-2 p-2 border-white","data-component":"IconButton","href":"https://github.com/RWB0104","target":"_blank","children":["$","svg",null,{"className":"bi bi-github","data-component":"GithubIcon","fill":"white","height":"100%","viewBox":"0 0 16 16","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":["$","path",null,{"d":"M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"}]}]}]}],["$","$L10",null,{"children":"https://github.com/RWB0104"}]]}]}],["$","$Lc",null,{"delayDuration":0.3,"children":["$","$Ld",null,{"children":[["$","$Le",null,{"children":["$","$Lf",null,{"className":"flex size-10 items-center justify-between rounded-full border-2 p-2 border-white","data-component":"IconButton","href":"https://www.linkedin.com/in/itcode","target":"_blank","children":["$","svg",null,{"className":"bi bi-linkedin","data-component":"LinkedInIcon","fill":"white","height":"100%","viewBox":"0 0 16 16","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":["$","path",null,{"d":"M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"}]}]}]}],["$","$L10",null,{"children":"https://www.linkedin.com/in/itcode"}]]}]}],["$","$Lc",null,{"delayDuration":0.3,"children":["$","$Ld",null,{"children":[["$","$Le",null,{"children":["$","$Lf",null,{"className":"flex size-10 items-center justify-between rounded-full border-2 p-2 border-white","data-component":"IconButton","href":"mailto:psj2716@gmail.com","target":"_blank","children":["$","svg",null,{"className":"bi bi-google","data-component":"GoogleIcon","fill":"white","height":"100%","viewBox":"0 0 16 16","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":["$","path",null,{"d":"M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"}]}]}]}],["$","$L10",null,{"children":"mailto:psj2716@gmail.com"}]]}]}],["$","$Lc",null,{"delayDuration":0.3,"children":["$","$Ld",null,{"children":[["$","$Le",null,{"children":["$","$Lf",null,{"className":"flex size-10 items-center justify-between rounded-full border-2 p-2 border-white","data-component":"IconButton","href":"/sitemap.xml","target":"_blank","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"white","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-book-open-text","children":[["$","path","1akyts",{"d":"M12 7v14"}],["$","path","7q9ll5",{"d":"M16 12h2"}],["$","path","msurwy",{"d":"M16 8h2"}],["$","path","ruj8y",{"d":"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"}],["$","path","32wvfc",{"d":"M6 12h2"}],["$","path","30oboj",{"d":"M6 8h2"}],"$undefined"]}]}]}],["$","$L10",null,{"children":"/sitemap.xml"}]]}]}],["$","$Lc",null,{"delayDuration":0.3,"children":["$","$Ld",null,{"children":[["$","$Le",null,{"children":["$","$Lf",null,{"className":"flex size-10 items-center justify-between rounded-full border-2 p-2 border-white","data-component":"IconButton","href":"/rss.xml","target":"_blank","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"white","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-rss","children":[["$","path","pv89mb",{"d":"M4 11a9 9 0 0 1 9 9"}],["$","path","k0647b",{"d":"M4 4a16 16 0 0 1 16 16"}],["$","circle","bfqh0e",{"cx":"5","cy":"19","r":"1"}],"$undefined"]}]}]}],["$","$L10",null,{"children":"/rss.xml"}]]}]}]]}],["$","div",null,{"className":"flex flex-col justify-center items-center gap-1 opacity-80 mt-10 text-white","children":[["$","small",null,{"data-component":"Typography","variant":"small","children":"Developed by RWB since 2021.05","className":"text-sm font-medium leading-none"}],["$","small",null,{"data-component":"Typography","variant":"small","children":"6th upgraded at 2025.05","className":"text-sm font-medium leading-none"}]]}]]}]}]]}]}]}]}]}]}]]}],{"children":[["contents","posts/2021/06/06/jekyll-blog-prepare-git","c"],["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L11","$undefined",null,["$","$L12",null,{"children":["$L13","$L14",null]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","o0p51FTBAj3j9VrG_BVG0",{"children":[["$","$L15",null,{"children":"$L16"}],null]}],["$","$L17",null,{"children":"$L18"}]]}],false]],"m":"$undefined","G":["$19","$undefined"],"s":false,"S":true}
 1a:I[57844,["461","static/chunks/53f5d41f-e3c6df36464e472c.js","80","static/chunks/80-98bf534572512044.js","89","static/chunks/89-b6f4d83ef6b21b4d.js","101","static/chunks/101-3bea1a207f632710.js","61","static/chunks/61-d653ce8d0c838598.js","904","static/chunks/904-a4af79af6464e17c.js","616","static/chunks/616-25a3bca67fe2bca6.js","619","static/chunks/app/%5B...contents%5D/page-7fd8f7d0ddb62a6b.js"],"default"]
 1b:I[80697,["486","static/chunks/afa401a5-3a2ef3bc22d602ad.js","80","static/chunks/80-98bf534572512044.js","89","static/chunks/89-b6f4d83ef6b21b4d.js","101","static/chunks/101-3bea1a207f632710.js","616","static/chunks/616-25a3bca67fe2bca6.js","523","static/chunks/523-ec3997a266278567.js","974","static/chunks/app/page-53e7ddf718c767ef.js"],"default"]
 1c:I[22183,["461","static/chunks/53f5d41f-e3c6df36464e472c.js","80","static/chunks/80-98bf534572512044.js","89","static/chunks/89-b6f4d83ef6b21b4d.js","101","static/chunks/101-3bea1a207f632710.js","61","static/chunks/61-d653ce8d0c838598.js","904","static/chunks/904-a4af79af6464e17c.js","616","static/chunks/616-25a3bca67fe2bca6.js","619","static/chunks/app/%5B...contents%5D/page-7fd8f7d0ddb62a6b.js"],"AspectRatio"]
@@ -30,22 +30,22 @@ f:I[59366,["486","static/chunks/afa401a5-3a2ef3bc22d602ad.js","80","static/chunk
 21:I[20513,["461","static/chunks/53f5d41f-e3c6df36464e472c.js","80","static/chunks/80-98bf534572512044.js","89","static/chunks/89-b6f4d83ef6b21b4d.js","101","static/chunks/101-3bea1a207f632710.js","61","static/chunks/61-d653ce8d0c838598.js","904","static/chunks/904-a4af79af6464e17c.js","616","static/chunks/616-25a3bca67fe2bca6.js","619","static/chunks/app/%5B...contents%5D/page-7fd8f7d0ddb62a6b.js"],"default"]
 23:I[34206,["461","static/chunks/53f5d41f-e3c6df36464e472c.js","80","static/chunks/80-98bf534572512044.js","89","static/chunks/89-b6f4d83ef6b21b4d.js","101","static/chunks/101-3bea1a207f632710.js","61","static/chunks/61-d653ce8d0c838598.js","904","static/chunks/904-a4af79af6464e17c.js","616","static/chunks/616-25a3bca67fe2bca6.js","619","static/chunks/app/%5B...contents%5D/page-7fd8f7d0ddb62a6b.js"],"default"]
 24:I[63778,["461","static/chunks/53f5d41f-e3c6df36464e472c.js","80","static/chunks/80-98bf534572512044.js","89","static/chunks/89-b6f4d83ef6b21b4d.js","101","static/chunks/101-3bea1a207f632710.js","61","static/chunks/61-d653ce8d0c838598.js","904","static/chunks/904-a4af79af6464e17c.js","616","static/chunks/616-25a3bca67fe2bca6.js","619","static/chunks/app/%5B...contents%5D/page-7fd8f7d0ddb62a6b.js"],"default"]
-22:T39fa,
-<p class="red-A400 center">※ 본 게시물은 Jekyll 시절의 게시글을 토대로 복원한 게시물입니다.</p>
+22:T3ab3,
+<p class="text-red-500 center">※ 본 게시물은 Jekyll 시절의 게시글을 토대로 복원한 게시물입니다.</p>
 
 # 개요
 
-<span class="blue-400">GitHub</span>는 각 프로젝트를 하나의 Repository로 관리한다. 생성한 Repository는 <span class="orange-A400">Git</span>을 이용하여 관리할 수 있다. <span class="blue-400">GitHub</span> 페이지 자체로도 Repository 내부의 파일 생성, 수정, 삭제가 가능하지만 매우 번거로우므로 대부분 <span class="orange-A400">Git</span>을 활용하는 것이 권장된다.
+<span class="text-blue-400">GitHub</span>는 각 프로젝트를 하나의 Repository로 관리한다. 생성한 Repository는 <span class="text-orange-500">Git</span>을 이용하여 관리할 수 있다. <span class="text-blue-400">GitHub</span> 페이지 자체로도 Repository 내부의 파일 생성, 수정, 삭제가 가능하지만 매우 번거로우므로 대부분 <span class="text-orange-500">Git</span>을 활용하는 것이 권장된다.
 
 # GitHub Repository 생성하기
 
-이전 장에서 <span class="blue-400">GitHub</span> 계정을 만들었다. <a href="https://github.com">GitHub 홈페이지</a>로 이동하여 로그인을 해보자.
+이전 장에서 <span class="text-blue-400">GitHub</span> 계정을 만들었다. <a href="https://github.com">GitHub 홈페이지</a>로 이동하여 로그인을 해보자.
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/50317129/90412420-0b9b8f00-e0e8-11ea-80a5-d28ff329a020.png" width="820px" />
 </p>
 
-해당 계정에서 관리하는 Repository의 전체 리스트를 보여준다. 아직 별다른 활동을 하지 않았다면 위 사진처럼 심플하게 보여준다. <span class="lightBlue-A400">Create Repository</span> 버튼을 눌러 새로운 Repository를 생성하자.
+해당 계정에서 관리하는 Repository의 전체 리스트를 보여준다. 아직 별다른 활동을 하지 않았다면 위 사진처럼 심플하게 보여준다. <span class="text-sky-500">Create Repository</span> 버튼을 눌러 새로운 Repository를 생성하자.
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/50317129/90422505-eada3600-e0f5-11ea-92f1-695a58f7f783.png" width="820px" />
@@ -55,13 +55,13 @@ f:I[59366,["486","static/chunks/afa401a5-3a2ef3bc22d602ad.js","80","static/chunk
 * Repository name: Repository 이름. 블로그 호스팅을 위해 **{username}.github.io로 설정**하자.
 * Public / Private: Repository의 공개여부. 호스팅용 Repository는 반드시 **Public**이어야 한다.
 
-이 때, 주의할 점이 한가지 있는데, <span class="red-A400">Repository의 이름을 {username}.github.io</span>으로 지정한다. 만약, username이 <span class="teal-A400">test</span>라면, Repository의 이름은 <span class="teal-A400">test</span>.github.io이 된다. 아이디가 아닌 username임에 주의하자. username은 프로필에서 확인할 수 있다.
+이 때, 주의할 점이 한가지 있는데, <span class="text-red-500">Repository의 이름을 {username}.github.io</span>으로 지정한다. 만약, username이 <span class="text-teal-500">test</span>라면, Repository의 이름은 <span class="text-teal-500">test</span>.github.io이 된다. 아이디가 아닌 username임에 주의하자. username은 프로필에서 확인할 수 있다.
 
 > GitHub Pages는 {username}.github.io 형식의 Repository를 Root(/)로 호스팅해준다. 즉, https://{username}.github.io가 된다. 만약 이와 같은 형식이 아닌 일반적인 Repository의 경우 https://{username}.github.io/{Repository Name}과 같이 하위 경로로 호스팅한다.
 
 한 계정이 관리하는 Repository의 이름은 중복될 수 없으므로, Root 경로의 호스팅은 계정 당 하나만 가능하다. 계정을 많이 만들어서 운용하면 어느정도 해소할 수 있긴 하다.
 
-나머지 옵션은 호스팅에 영향을 미치지 않으므로 무시하고 넘어가도 된다. 입력한 내용을 확인한 뒤 <span class="lightBlue-A400">Create Repository</span>를 클릭하여 생성한다. Repository 목록에 생성한 Repository가 추가됐음을 확인할 수 있다.
+나머지 옵션은 호스팅에 영향을 미치지 않으므로 무시하고 넘어가도 된다. 입력한 내용을 확인한 뒤 <span class="text-sky-500">Create Repository</span>를 클릭하여 생성한다. Repository 목록에 생성한 Repository가 추가됐음을 확인할 수 있다.
 
 앞으로 이 Repository에 Jekyll 블로그 소스를 올릴 것이다.
 
@@ -69,20 +69,20 @@ f:I[59366,["486","static/chunks/afa401a5-3a2ef3bc22d602ad.js","80","static/chunk
 	<img src="https://user-images.githubusercontent.com/50317129/90917728-6bfb3b00-e41e-11ea-8313-0251fba0659f.png" width="820px" />
 </p>
 
-생성된 저장소로 접근하면 위와 같은 화면이 나온다. 위 내용은 <span class="orange-A400">Git</span> 명령어를 이용하여 사용자의 PC에 저장소를 생성하고, 이를 <span class="blue-400">GitHub</span>의 원격 저장소와 연결하여 소스관리를 하는 절차를 안내하는 내용이다.
+생성된 저장소로 접근하면 위와 같은 화면이 나온다. 위 내용은 <span class="text-orange-500">Git</span> 명령어를 이용하여 사용자의 PC에 저장소를 생성하고, 이를 <span class="text-blue-400">GitHub</span>의 원격 저장소와 연결하여 소스관리를 하는 절차를 안내하는 내용이다.
 
 # Git 설치하기
 
-이제 생성한 Repository를 관리할 <span class="orange-A400">Git</span>을 설치해보자. <span class="orange-A400">Git</span>은 소스코드를 효율적으로 관리할 수 있는 강력한 형상관리 툴로, Linux의 아버지 리누스 토르발스(Linus Benedict Torvalds)가 개발했다. 넓은 의미로 우리가 흔히 하는 복사 및 백업과 동일하지만, <span class="orange-A400">Git</span>은 그것 보다는 더욱 강력하다.
+이제 생성한 Repository를 관리할 <span class="text-orange-500">Git</span>을 설치해보자. <span class="text-orange-500">Git</span>은 소스코드를 효율적으로 관리할 수 있는 강력한 형상관리 툴로, Linux의 아버지 리누스 토르발스(Linus Benedict Torvalds)가 개발했다. 넓은 의미로 우리가 흔히 하는 복사 및 백업과 동일하지만, <span class="text-orange-500">Git</span>은 그것 보다는 더욱 강력하다.
 
 * 명령어 입력만으로 소스코드 백업이 가능하다.
-* <span class="orange-A400">Git</span> 저장소와 통신이 가능한 환경이면 어디서나 저장된 소스코드를 받아오거나, 수정, 반영할 수 있다.
+* <span class="text-orange-500">Git</span> 저장소와 통신이 가능한 환경이면 어디서나 저장된 소스코드를 받아오거나, 수정, 반영할 수 있다.
 * 커밋 시 해당 내역이 관리되며, 원할 경우 해당 커밋 이전으로 되돌릴 수 있다.
 * 커밋 별로 변경점을 비교할 수 있다.
 
 > Commit(커밋): Git의 변경사항(파일 생성, 수정, 삭제)을 저장소에 기록하는 작업
 
-Jekyll 블로그는 <span class="blue-400">GitHub</span>를 통해 관리하므로, 이와 연계된 <span class="orange-A400">Git</span>의 사용은 필수다. 물론 <span class="orange-A400">Git</span>을 사용하지 않고 <span class="blue-400">GitHub</span>의 Repository에서 파일 추가, 삭제, 수정이 가능하다. 그러나 이 방법은 다수의 파일을 관리하는데 매우 비효율적이며, 파일 갱신 즉시 블로그에 내용이 반영되므로 오류가 있을 경우에도 블로그에 그대로 반영된다. 또한, 어찌됐든 Jekyll 사용하면서 코드를 만지게 될텐데, VSCode같은 에디터라도 쓰는게 개발환경에 여러모로 도움이 된다.
+Jekyll 블로그는 <span class="text-blue-400">GitHub</span>를 통해 관리하므로, 이와 연계된 <span class="text-orange-500">Git</span>의 사용은 필수다. 물론 <span class="text-orange-500">Git</span>을 사용하지 않고 <span class="text-blue-400">GitHub</span>의 Repository에서 파일 추가, 삭제, 수정이 가능하다. 그러나 이 방법은 다수의 파일을 관리하는데 매우 비효율적이며, 파일 갱신 즉시 블로그에 내용이 반영되므로 오류가 있을 경우에도 블로그에 그대로 반영된다. 또한, 어찌됐든 Jekyll 사용하면서 코드를 만지게 될텐데, VSCode같은 에디터라도 쓰는게 개발환경에 여러모로 도움이 된다.
 
 ## 설치파일 다운로드
 
@@ -92,7 +92,7 @@ Jekyll 블로그는 <span class="blue-400">GitHub</span>를 통해 관리하므�
 	<img src="https://user-images.githubusercontent.com/50317129/90918409-90a3e280-e41f-11ea-846f-68332ffecdbe.png" width="820px" />
 </p>
 
-<span class="orange-A400">Git</span> 홈페이지는 위와 같다. 놀랍게도 홈페이지에서 자체적으로 **접속한 OS의 정보를 확인하고 해당 OS에 가장 적합한 Git을 추천**한다. 페이지 우측 상단의 모니터 그림에서 적합한 버전을 제공받을 수 있다.
+<span class="text-orange-500">Git</span> 홈페이지는 위와 같다. 놀랍게도 홈페이지에서 자체적으로 **접속한 OS의 정보를 확인하고 해당 OS에 가장 적합한 Git을 추천**한다. 페이지 우측 상단의 모니터 그림에서 적합한 버전을 제공받을 수 있다.
 
 ## 라이센스 동의
 
@@ -100,7 +100,7 @@ Jekyll 블로그는 <span class="blue-400">GitHub</span>를 통해 관리하므�
 	<img src="https://user-images.githubusercontent.com/50317129/90949816-b0222600-e486-11ea-95d7-7ee7150d4f4f.png" width="820px" />
 </p>
 
-<span class="orange-A400">Git</span> 사용 라이센스에 동의한다. 당연하게도 동의 안 하면 설치가 불가능하다.
+<span class="text-orange-500">Git</span> 사용 라이센스에 동의한다. 당연하게도 동의 안 하면 설치가 불가능하다.
 
 ## 설치경로 선택
 
@@ -115,7 +115,7 @@ Jekyll 블로그는 <span class="blue-400">GitHub</span>를 통해 관리하므�
 설치 시 적용할 옵션을 선택한다.
 
 * On the Desktop: 바탕화면 바로가기 생성
-* <span class="blue-400">Git Bash Here</span>: 바탕화면에서 오른쪽 마우스 클릭 시 Git Bash 실행 메뉴 추가
+* <span class="text-blue-400">Git Bash Here</span>: 바탕화면에서 오른쪽 마우스 클릭 시 Git Bash 실행 메뉴 추가
 * Git GUI Here: 바탕화면에서 오른쪽 마우스 클릭 시 Git GUI 실행 메뉴 추가
 * Git LFS: 대용량 파일 지원
 * Associate .git* configuration files with the default text editor: git 설정파일을 기본 텍스트 편집기와 연결
@@ -137,16 +137,16 @@ Jekyll 블로그는 <span class="blue-400">GitHub</span>를 통해 관리하므�
 
 ## Git 편집기 선택(Choosing the default editor used by Git)
 
-<p class="red-A400 center small">※ Git을 처음 접하시는 분들은 해당 설정을 기본값으로 지정하시길 권장합니다.</p>
+<p class="text-red-500 center small">※ Git을 처음 접하시는 분들은 해당 설정을 기본값으로 지정하시길 권장합니다.</p>
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/50317129/90952499-f97e6f80-e49e-11ea-95a0-818471fd3417.png" width="820px" />
 </p>
 
-<span class="orange-A400">Git</span>을 사용하기 위한 기본 편집기를 선택한다. 기본 권장옵션은 Vim이며, 원하는 편집기로 변경이 가능하다. 지원하는 편집기는 아래와 같다.
+<span class="text-orange-500">Git</span>을 사용하기 위한 기본 편집기를 선택한다. 기본 권장옵션은 Vim이며, 원하는 편집기로 변경이 가능하다. 지원하는 편집기는 아래와 같다.
 
 * Nano Editor
-* <span class="blue-400">Vim</span>
+* <span class="text-blue-400">Vim</span>
 * Notepad++
 * Visual Studio Code
 * Visual Studio Code Insider
@@ -156,7 +156,7 @@ Jekyll 블로그는 <span class="blue-400">GitHub</span>를 통해 관리하므�
 
 ## 환경변수 지정(Adjusting your PATH environment)
 
-<p class="red-A400 center small">※ Git을 처음 접하시는 분들은 해당 설정을 기본값으로 지정하시길 권장합니다.</p>
+<p class="text-red-500 center small">※ Git을 처음 접하시는 분들은 해당 설정을 기본값으로 지정하시길 권장합니다.</p>
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/50317129/90952606-f6d04a00-e49f-11ea-85d0-204d305f8f9b.png" width="820px" />
@@ -165,25 +165,25 @@ Jekyll 블로그는 <span class="blue-400">GitHub</span>를 통해 관리하므�
 환경변수를 지정하는 옵션을 선택한다.
 
 * Use Git from Git Bash Only: Bash 환경에서만 Git 사용 가능 (환경변수 미변경)
-* <span class="blue-400">Use Git from Windows Command Prompt</span>: 윈도우 프롬프트에서 Git 사용 가능
+* <span class="text-blue-400">Use Git from Windows Command Prompt</span>: 윈도우 프롬프트에서 Git 사용 가능
 * Use Git abnd optional Unix tools from the Windows Command Prompt: 윈도우 프롬프트에 Git 및 Linux 명령어 사용 가능
 
 ## HTTPS 전송 방법 설정(Choosing HTTPS tranport backend)
 
-<p class="red-A400 center small">※ Git을 처음 접하시는 분들은 해당 설정을 기본값으로 지정하시길 권장합니다.</p>
+<p class="text-red-500 center small">※ Git을 처음 접하시는 분들은 해당 설정을 기본값으로 지정하시길 권장합니다.</p>
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/50317129/90952734-0e5c0280-e4a1-11ea-8a9f-08a164f05b5e.png" width="820px" />
 </p>
 
-<span class="orange-A400">Git</span> 사용 시 HTTPS 전송 방법을 선택한다.
+<span class="text-orange-500">Git</span> 사용 시 HTTPS 전송 방법을 선택한다.
 
-* <span class="blue-400">Use The OpenSSH library</span>: OpenSSH 라이브러리 사용
+* <span class="text-blue-400">Use The OpenSSH library</span>: OpenSSH 라이브러리 사용
 * Use The native Windows Secure Channel library: Windows 인증서 저장소 사용
 
 ## 개행문자 처리방식 지정(Configuring the line ending conversions)
 
-<p class="red-A400 center small">※ Git을 처음 접하시는 분들은 해당 설정을 기본값으로 지정하시길 권장합니다.</p>
+<p class="text-red-500 center small">※ Git을 처음 접하시는 분들은 해당 설정을 기본값으로 지정하시길 권장합니다.</p>
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/50317129/90953593-a4932700-e4a7-11ea-95dd-5c6cb50662ea.png" width="820px" />
@@ -191,13 +191,13 @@ Jekyll 블로그는 <span class="blue-400">GitHub</span>를 통해 관리하므�
 
 Checkout, Commit 작업 시 파일의 개행문자 처리 방식을 선택한다.
 
-* <span class="blue-400">Checkout Windows-style, commit Unix-style line endings</span>: Checkout 시엔 Windows방식(CRLF), commit 시엔 Unix방식(LF)로 지정
+* <span class="text-blue-400">Checkout Windows-style, commit Unix-style line endings</span>: Checkout 시엔 Windows방식(CRLF), commit 시엔 Unix방식(LF)로 지정
 * Checkout as-is, commit Unix-style line endings: Checkout 시엔 변환 없음, commit시엔 Unix방식(LF)로 지정
 * Checkout as-is, commit as-is: Checkout, commit 둘 다 변환 없음
 
 ## Git Bash 선택(Configuring the terminal emulator to use with Git Bash)
 
-<p class="red-A400 center small">※ Git을 처음 접하시는 분들은 해당 설정을 기본값으로 지정하시길 권장합니다.</p>
+<p class="text-red-500 center small">※ Git을 처음 접하시는 분들은 해당 설정을 기본값으로 지정하시길 권장합니다.</p>
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/50317129/90953681-ba551c00-e4a8-11ea-9fc4-fe1c43e2ef28.png" width="820px" />
@@ -205,12 +205,12 @@ Checkout, Commit 작업 시 파일의 개행문자 처리 방식을 선택한다
 
 Git Bash 실행 시 사용할 터미널을 선택한다.
 
-* <span class="blue-400">Use MinTTY</span>: MinTTY 터미널 사용
+* <span class="text-blue-400">Use MinTTY</span>: MinTTY 터미널 사용
 * Use Windows default console window: Windows 기본 터미널 사용
 
 ## Pull 기본동작 지정 (Choose the default behavior of 'git pull')
 
-<p class="red-A400 center small">※ Git을 처음 접하시는 분들은 해당 설정을 기본값으로 지정하시길 권장합니다.</p>
+<p class="text-red-500 center small">※ Git을 처음 접하시는 분들은 해당 설정을 기본값으로 지정하시길 권장합니다.</p>
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/50317129/90953682-bc1edf80-e4a8-11ea-9d0c-d9c0d71afbaf.png" width="820px" />
@@ -218,13 +218,13 @@ Git Bash 실행 시 사용할 터미널을 선택한다.
 
 `git pull` 명령어 실행 시 수행할 동작을 지정한다.
 
-* <span class="blue-400">Default (fast-forward or merge)</span>: fast-forward 혹은 merge를 이용한 병합
+* <span class="text-blue-400">Default (fast-forward or merge)</span>: fast-forward 혹은 merge를 이용한 병합
 * Rebase: rebase를 이용항 병합
 * Only ever fast-forward: fast-forward를 이용한 병합
 
 ## Credential helper 지정(Choose a credential helper)
 
-<p class="red-A400 center small">※ Git을 처음 접하시는 분들은 해당 설정을 기본값으로 지정하시길 권장합니다.</p>
+<p class="text-red-500 center small">※ Git을 처음 접하시는 분들은 해당 설정을 기본값으로 지정하시길 권장합니다.</p>
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/50317129/90954457-53873100-e4af-11ea-9a98-ef5131c4ab1a.png" width="820px" />
@@ -235,18 +235,18 @@ Credential helper를 지정한다.
 > Credential은 데이터 통신에 HTTP 프로토콜을 사용 시, 매번 입력해야하는 인증정보를 저장하고 자동으로 입력해주는 시스템을 제공한다.
 
 * None: 사용하지 않음
-* <span class="blue-400">Git Credential Manager</span>: Windows 전용 Credential Manager 사용
+* <span class="text-blue-400">Git Credential Manager</span>: Windows 전용 Credential Manager 사용
 * Git Credential Manager Core: Cross-Platform을 지원하는 Credential Manager 사용
 
 ## 실험 옵션 지정(Configuring experimental options)
 
-<p class="red-A400 center small">※ Git을 처음 접하시는 분들은 해당 설정을 기본값으로 지정하시길 권장합니다.</p>
+<p class="text-red-500 center small">※ Git을 처음 접하시는 분들은 해당 설정을 기본값으로 지정하시길 권장합니다.</p>
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/50317129/90954553-225b3080-e4b0-11ea-8930-6b461f966b4c.png" width="820px" />
 </p>
 
-<span class="orange-A400">Git</span>에서 제공하는 실험적인 옵션을 선택한다. 해당 옵션은 업데이트에 따라 정식으로 지원되거나, 제외될 수 있다.
+<span class="text-orange-500">Git</span>에서 제공하는 실험적인 옵션을 선택한다. 해당 옵션은 업데이트에 따라 정식으로 지원되거나, 제외될 수 있다.
 
 * Enable experimental support for pseudo consoles: 가상 터미널 지원
 
@@ -262,11 +262,11 @@ Credential helper를 지정한다.
 	<img src="https://user-images.githubusercontent.com/50317129/90957782-0618bd00-e4cb-11ea-9972-7bd3fe1aa45b.png" width="820px" />
 </p>
 
-설치가 완료됐다. <span class="blue-400">Launch Git Bash</span>를 체크하면 Git 명령어를 입력할 수 있는 Git Bash가 즉시 실행된다.
+설치가 완료됐다. <span class="text-blue-400">Launch Git Bash</span>를 체크하면 Git 명령어를 입력할 수 있는 Git Bash가 즉시 실행된다.
 
 ## Git Bash 실행하기
 
-설치 후 바탕화면이나 폴더에서 오른쪽 마우스를 클릭해서 컨텍스트 메뉴를 띄우자. [설치 옵션](#설치-옵션)에서 선택했던 내용에 따라 <span class="blue-400">Git Bash Here</span>, <span class="blue-400">Git GUI Here</span>가 생성됨을 확인할 수 있다. 해당 메뉴를 클릭하면 Bash 혹은 GUI를 실행할 수 있다. Bash는 콘솔 형태이며, GUI는 UI가 있는 흔한 프로그램이다.
+설치 후 바탕화면이나 폴더에서 오른쪽 마우스를 클릭해서 컨텍스트 메뉴를 띄우자. [설치 옵션](#설치-옵션)에서 선택했던 내용에 따라 <span class="text-blue-400">Git Bash Here</span>, <span class="text-blue-400">Git GUI Here</span>가 생성됨을 확인할 수 있다. 해당 메뉴를 클릭하면 Bash 혹은 GUI를 실행할 수 있다. Bash는 콘솔 형태이며, GUI는 UI가 있는 흔한 프로그램이다.
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/50317129/90957788-0913ad80-e4cb-11ea-8627-6ceba19d58b4.png" width="820px" />

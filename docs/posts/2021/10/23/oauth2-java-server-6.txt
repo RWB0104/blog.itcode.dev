@@ -18,8 +18,8 @@ f:I[59366,["486","static/chunks/afa401a5-3a2ef3bc22d602ad.js","80","static/chunk
 15:I[87837,[],"ViewportBoundary"]
 17:I[87837,[],"MetadataBoundary"]
 19:I[67034,[],""]
-:HL["/_next/static/css/95abb35334c0f314.css","style"]
-0:{"P":null,"b":"E_aGCk-_UQj_5UJna0amV","p":"","c":["","posts","2021","10","23","oauth2-java-server-6"],"i":false,"f":[[["",{"children":[["contents","posts/2021/10/23/oauth2-java-server-6","c"],{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/95abb35334c0f314.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ko","children":["$","body",null,{"children":["$","$2",null,{"children":["$","$L3",null,{"gaKey":"G-7QYWYNZ90R","children":["$","$L4",null,{"children":["$","$L5",null,{"buttonPosition":"bottom-left","children":[["$","$L6",null,{"title":"𝝅번째 알파카의 개발 낙서장","version":"v6.2.0"}],["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L9",null,{"propertyId":"6830ab140f5891190cc5911b","widgetId":"1irv1ohta"}],["$","$La",null,{}],["$","$Lb",null,{"bodyColor":"linear-gradient(0deg,#0052d4,#4364f7,#6fb1fc)","mainColor":"#6fb1fc","children":["$","div",null,{"className":"flex flex-col justify-center items-center gap-8 p-8 w-full","children":[["$","div",null,{"className":"flex flex-col justify-center items-center gap-1 mt-10 text-white","children":[["$","p",null,{"data-component":"Typography","className":"font-bold text-xl","children":"𝝅번째 알파카의 개발 낙서장"}],["$","small",null,{"data-component":"Typography","className":"text-sm font-medium leading-none opacity-80","variant":"small","children":["v","6.2.0"]}]]}],["$","div",null,{"className":"justify-center gap-4 grid grid-cols-3","children":[["$","$Lc",null,{"delayDuration":0.3,"children":["$","$Ld",null,{"children":[["$","$Le",null,{"children":["$","$Lf",null,{"className":"flex size-10 items-center justify-between rounded-full border-2 p-2 border-white","data-component":"IconButton","href":"https://itcode.dev","target":"_blank","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"white","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-globe","children":[["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],["$","path","13o1zl",{"d":"M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"}],["$","path","9i4pu4",{"d":"M2 12h20"}],"$undefined"]}]}]}],["$","$L10",null,{"children":"https://itcode.dev"}]]}]}],["$","$Lc",null,{"delayDuration":0.3,"children":["$","$Ld",null,{"children":[["$","$Le",null,{"children":["$","$Lf",null,{"className":"flex size-10 items-center justify-between rounded-full border-2 p-2 border-white","data-component":"IconButton","href":"https://github.com/RWB0104","target":"_blank","children":["$","svg",null,{"className":"bi bi-github","data-component":"GithubIcon","fill":"white","height":"100%","viewBox":"0 0 16 16","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":["$","path",null,{"d":"M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"}]}]}]}],["$","$L10",null,{"children":"https://github.com/RWB0104"}]]}]}],["$","$Lc",null,{"delayDuration":0.3,"children":["$","$Ld",null,{"children":[["$","$Le",null,{"children":["$","$Lf",null,{"className":"flex size-10 items-center justify-between rounded-full border-2 p-2 border-white","data-component":"IconButton","href":"https://www.linkedin.com/in/itcode","target":"_blank","children":["$","svg",null,{"className":"bi bi-linkedin","data-component":"LinkedInIcon","fill":"white","height":"100%","viewBox":"0 0 16 16","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":["$","path",null,{"d":"M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"}]}]}]}],["$","$L10",null,{"children":"https://www.linkedin.com/in/itcode"}]]}]}],["$","$Lc",null,{"delayDuration":0.3,"children":["$","$Ld",null,{"children":[["$","$Le",null,{"children":["$","$Lf",null,{"className":"flex size-10 items-center justify-between rounded-full border-2 p-2 border-white","data-component":"IconButton","href":"mailto:psj2716@gmail.com","target":"_blank","children":["$","svg",null,{"className":"bi bi-google","data-component":"GoogleIcon","fill":"white","height":"100%","viewBox":"0 0 16 16","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":["$","path",null,{"d":"M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"}]}]}]}],["$","$L10",null,{"children":"mailto:psj2716@gmail.com"}]]}]}],["$","$Lc",null,{"delayDuration":0.3,"children":["$","$Ld",null,{"children":[["$","$Le",null,{"children":["$","$Lf",null,{"className":"flex size-10 items-center justify-between rounded-full border-2 p-2 border-white","data-component":"IconButton","href":"/sitemap.xml","target":"_blank","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"white","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-book-open-text","children":[["$","path","1akyts",{"d":"M12 7v14"}],["$","path","7q9ll5",{"d":"M16 12h2"}],["$","path","msurwy",{"d":"M16 8h2"}],["$","path","ruj8y",{"d":"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"}],["$","path","32wvfc",{"d":"M6 12h2"}],["$","path","30oboj",{"d":"M6 8h2"}],"$undefined"]}]}]}],["$","$L10",null,{"children":"/sitemap.xml"}]]}]}],["$","$Lc",null,{"delayDuration":0.3,"children":["$","$Ld",null,{"children":[["$","$Le",null,{"children":["$","$Lf",null,{"className":"flex size-10 items-center justify-between rounded-full border-2 p-2 border-white","data-component":"IconButton","href":"/rss.xml","target":"_blank","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"white","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-rss","children":[["$","path","pv89mb",{"d":"M4 11a9 9 0 0 1 9 9"}],["$","path","k0647b",{"d":"M4 4a16 16 0 0 1 16 16"}],["$","circle","bfqh0e",{"cx":"5","cy":"19","r":"1"}],"$undefined"]}]}]}],["$","$L10",null,{"children":"/rss.xml"}]]}]}]]}],["$","div",null,{"className":"flex flex-col justify-center items-center gap-1 opacity-80 mt-10 text-white","children":[["$","small",null,{"data-component":"Typography","variant":"small","children":"Developed by RWB since 2021.05","className":"text-sm font-medium leading-none"}],["$","small",null,{"data-component":"Typography","variant":"small","children":"6th upgraded at 2025.05","className":"text-sm font-medium leading-none"}]]}]]}]}]]}]}]}]}]}]}]]}],{"children":[["contents","posts/2021/10/23/oauth2-java-server-6","c"],["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L11","$undefined",null,["$","$L12",null,{"children":["$L13","$L14",null]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","hZmDkJ4DGf3oCtTvR4_1N",{"children":[["$","$L15",null,{"children":"$L16"}],null]}],["$","$L17",null,{"children":"$L18"}]]}],false]],"m":"$undefined","G":["$19","$undefined"],"s":false,"S":true}
+:HL["/_next/static/css/37ffd9c121b66ad8.css","style"]
+0:{"P":null,"b":"e2TvXNPHjfCKOhmtUu0vq","p":"","c":["","posts","2021","10","23","oauth2-java-server-6"],"i":false,"f":[[["",{"children":[["contents","posts/2021/10/23/oauth2-java-server-6","c"],{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/37ffd9c121b66ad8.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ko","children":["$","body",null,{"children":["$","$2",null,{"children":["$","$L3",null,{"gaKey":"G-7QYWYNZ90R","children":["$","$L4",null,{"children":["$","$L5",null,{"buttonPosition":"bottom-left","children":[["$","$L6",null,{"title":"𝝅번째 알파카의 개발 낙서장","version":"v6.3.0"}],["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L9",null,{"propertyId":"6830ab140f5891190cc5911b","widgetId":"1irv1ohta"}],["$","$La",null,{}],["$","$Lb",null,{"bodyColor":"linear-gradient(0deg,#0052d4,#4364f7,#6fb1fc)","mainColor":"#6fb1fc","children":["$","div",null,{"className":"flex flex-col justify-center items-center gap-8 p-8 w-full","children":[["$","div",null,{"className":"flex flex-col justify-center items-center gap-1 mt-10 text-white","children":[["$","p",null,{"data-component":"Typography","className":"font-bold text-xl","children":"𝝅번째 알파카의 개발 낙서장"}],["$","small",null,{"data-component":"Typography","className":"text-sm font-medium leading-none opacity-80","variant":"small","children":["v","6.3.0"]}]]}],["$","div",null,{"className":"justify-center gap-4 grid grid-cols-3","children":[["$","$Lc",null,{"delayDuration":0.3,"children":["$","$Ld",null,{"children":[["$","$Le",null,{"children":["$","$Lf",null,{"className":"flex size-10 items-center justify-between rounded-full border-2 p-2 border-white","data-component":"IconButton","href":"https://itcode.dev","target":"_blank","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"white","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-globe","children":[["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],["$","path","13o1zl",{"d":"M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"}],["$","path","9i4pu4",{"d":"M2 12h20"}],"$undefined"]}]}]}],["$","$L10",null,{"children":"https://itcode.dev"}]]}]}],["$","$Lc",null,{"delayDuration":0.3,"children":["$","$Ld",null,{"children":[["$","$Le",null,{"children":["$","$Lf",null,{"className":"flex size-10 items-center justify-between rounded-full border-2 p-2 border-white","data-component":"IconButton","href":"https://github.com/RWB0104","target":"_blank","children":["$","svg",null,{"className":"bi bi-github","data-component":"GithubIcon","fill":"white","height":"100%","viewBox":"0 0 16 16","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":["$","path",null,{"d":"M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"}]}]}]}],["$","$L10",null,{"children":"https://github.com/RWB0104"}]]}]}],["$","$Lc",null,{"delayDuration":0.3,"children":["$","$Ld",null,{"children":[["$","$Le",null,{"children":["$","$Lf",null,{"className":"flex size-10 items-center justify-between rounded-full border-2 p-2 border-white","data-component":"IconButton","href":"https://www.linkedin.com/in/itcode","target":"_blank","children":["$","svg",null,{"className":"bi bi-linkedin","data-component":"LinkedInIcon","fill":"white","height":"100%","viewBox":"0 0 16 16","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":["$","path",null,{"d":"M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"}]}]}]}],["$","$L10",null,{"children":"https://www.linkedin.com/in/itcode"}]]}]}],["$","$Lc",null,{"delayDuration":0.3,"children":["$","$Ld",null,{"children":[["$","$Le",null,{"children":["$","$Lf",null,{"className":"flex size-10 items-center justify-between rounded-full border-2 p-2 border-white","data-component":"IconButton","href":"mailto:psj2716@gmail.com","target":"_blank","children":["$","svg",null,{"className":"bi bi-google","data-component":"GoogleIcon","fill":"white","height":"100%","viewBox":"0 0 16 16","width":"100%","xmlns":"http://www.w3.org/2000/svg","children":["$","path",null,{"d":"M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"}]}]}]}],["$","$L10",null,{"children":"mailto:psj2716@gmail.com"}]]}]}],["$","$Lc",null,{"delayDuration":0.3,"children":["$","$Ld",null,{"children":[["$","$Le",null,{"children":["$","$Lf",null,{"className":"flex size-10 items-center justify-between rounded-full border-2 p-2 border-white","data-component":"IconButton","href":"/sitemap.xml","target":"_blank","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"white","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-book-open-text","children":[["$","path","1akyts",{"d":"M12 7v14"}],["$","path","7q9ll5",{"d":"M16 12h2"}],["$","path","msurwy",{"d":"M16 8h2"}],["$","path","ruj8y",{"d":"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"}],["$","path","32wvfc",{"d":"M6 12h2"}],["$","path","30oboj",{"d":"M6 8h2"}],"$undefined"]}]}]}],["$","$L10",null,{"children":"/sitemap.xml"}]]}]}],["$","$Lc",null,{"delayDuration":0.3,"children":["$","$Ld",null,{"children":[["$","$Le",null,{"children":["$","$Lf",null,{"className":"flex size-10 items-center justify-between rounded-full border-2 p-2 border-white","data-component":"IconButton","href":"/rss.xml","target":"_blank","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"white","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-rss","children":[["$","path","pv89mb",{"d":"M4 11a9 9 0 0 1 9 9"}],["$","path","k0647b",{"d":"M4 4a16 16 0 0 1 16 16"}],["$","circle","bfqh0e",{"cx":"5","cy":"19","r":"1"}],"$undefined"]}]}]}],["$","$L10",null,{"children":"/rss.xml"}]]}]}]]}],["$","div",null,{"className":"flex flex-col justify-center items-center gap-1 opacity-80 mt-10 text-white","children":[["$","small",null,{"data-component":"Typography","variant":"small","children":"Developed by RWB since 2021.05","className":"text-sm font-medium leading-none"}],["$","small",null,{"data-component":"Typography","variant":"small","children":"6th upgraded at 2025.05","className":"text-sm font-medium leading-none"}]]}]]}]}]]}]}]}]}]}]}]]}],{"children":[["contents","posts/2021/10/23/oauth2-java-server-6","c"],["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L11","$undefined",null,["$","$L12",null,{"children":["$L13","$L14",null]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","fd8rTHkgQsTg5BbMbebIN",{"children":[["$","$L15",null,{"children":"$L16"}],null]}],["$","$L17",null,{"children":"$L18"}]]}],false]],"m":"$undefined","G":["$19","$undefined"],"s":false,"S":true}
 1a:I[57844,["461","static/chunks/53f5d41f-e3c6df36464e472c.js","80","static/chunks/80-98bf534572512044.js","89","static/chunks/89-b6f4d83ef6b21b4d.js","101","static/chunks/101-3bea1a207f632710.js","61","static/chunks/61-d653ce8d0c838598.js","904","static/chunks/904-a4af79af6464e17c.js","616","static/chunks/616-25a3bca67fe2bca6.js","619","static/chunks/app/%5B...contents%5D/page-7fd8f7d0ddb62a6b.js"],"default"]
 1b:I[80697,["486","static/chunks/afa401a5-3a2ef3bc22d602ad.js","80","static/chunks/80-98bf534572512044.js","89","static/chunks/89-b6f4d83ef6b21b4d.js","101","static/chunks/101-3bea1a207f632710.js","616","static/chunks/616-25a3bca67fe2bca6.js","523","static/chunks/523-ec3997a266278567.js","974","static/chunks/app/page-53e7ddf718c767ef.js"],"default"]
 1c:I[22183,["461","static/chunks/53f5d41f-e3c6df36464e472c.js","80","static/chunks/80-98bf534572512044.js","89","static/chunks/89-b6f4d83ef6b21b4d.js","101","static/chunks/101-3bea1a207f632710.js","61","static/chunks/61-d653ce8d0c838598.js","904","static/chunks/904-a4af79af6464e17c.js","616","static/chunks/616-25a3bca67fe2bca6.js","619","static/chunks/app/%5B...contents%5D/page-7fd8f7d0ddb62a6b.js"],"AspectRatio"]
@@ -30,7 +30,7 @@ f:I[59366,["486","static/chunks/afa401a5-3a2ef3bc22d602ad.js","80","static/chunk
 21:I[20513,["461","static/chunks/53f5d41f-e3c6df36464e472c.js","80","static/chunks/80-98bf534572512044.js","89","static/chunks/89-b6f4d83ef6b21b4d.js","101","static/chunks/101-3bea1a207f632710.js","61","static/chunks/61-d653ce8d0c838598.js","904","static/chunks/904-a4af79af6464e17c.js","616","static/chunks/616-25a3bca67fe2bca6.js","619","static/chunks/app/%5B...contents%5D/page-7fd8f7d0ddb62a6b.js"],"default"]
 23:I[34206,["461","static/chunks/53f5d41f-e3c6df36464e472c.js","80","static/chunks/80-98bf534572512044.js","89","static/chunks/89-b6f4d83ef6b21b4d.js","101","static/chunks/101-3bea1a207f632710.js","61","static/chunks/61-d653ce8d0c838598.js","904","static/chunks/904-a4af79af6464e17c.js","616","static/chunks/616-25a3bca67fe2bca6.js","619","static/chunks/app/%5B...contents%5D/page-7fd8f7d0ddb62a6b.js"],"default"]
 24:I[63778,["461","static/chunks/53f5d41f-e3c6df36464e472c.js","80","static/chunks/80-98bf534572512044.js","89","static/chunks/89-b6f4d83ef6b21b4d.js","101","static/chunks/101-3bea1a207f632710.js","61","static/chunks/61-d653ce8d0c838598.js","904","static/chunks/904-a4af79af6464e17c.js","616","static/chunks/616-25a3bca67fe2bca6.js","619","static/chunks/app/%5B...contents%5D/page-7fd8f7d0ddb62a6b.js"],"default"]
-22:T6f46,
+22:T6f94,
 # 개요
 
 세 번째 플랫폼으로, KAKAO에 OAuth 서비스를 신청하고 인증 모듈을 구현한다.
@@ -67,18 +67,18 @@ OAuth 정보를 관리하게 될 애플리케이션을 생성하자. 이름은 �
 
 OAuth API를 생성하기 위해선 먼저 동의 화면을 구성해야한다. 정보 제공 동의 그거 맞다.
 
-좌측 사이드바의 [<span class="lightBlue-600">카카오 로그인</span> - <span class="lightBlue-600">동의항목</span>] 메뉴에서 구성 가능하다. 설정 가능한 상태는 아래와 같다.
+좌측 사이드바의 [<span class="text-sky-600">카카오 로그인</span> - <span class="text-sky-600">동의항목</span>] 메뉴에서 구성 가능하다. 설정 가능한 상태는 아래와 같다.
 
-* <span class="teal-500">필수 동의</span> - 반드시 동의해야하는 항목. 해당 항목을 동의하지 않으면 로그인 불가능.
-* <span class="teal-500">선택 동의</span> - 사용자의 선택에 따라 동의하는 항목. 동의 여부가 로그인에 영향을 미치지 않음
-* <span class="teal-500">이용 중 동의</span> - 로그인 시에는 표출되지 않음. 추후 API를 통해 필요할 때 별도로 동의 요청
-* <span class="teal-500">사용 안함</span> - 사용하지 않음
+* <span class="text-teal-500">필수 동의</span> - 반드시 동의해야하는 항목. 해당 항목을 동의하지 않으면 로그인 불가능.
+* <span class="text-teal-500">선택 동의</span> - 사용자의 선택에 따라 동의하는 항목. 동의 여부가 로그인에 영향을 미치지 않음
+* <span class="text-teal-500">이용 중 동의</span> - 로그인 시에는 표출되지 않음. 추후 API를 통해 필요할 때 별도로 동의 요청
+* <span class="text-teal-500">사용 안함</span> - 사용하지 않음
 
 사용자에게 어떤 항목도 동의를 강제하지 않는 네이버와 달리, 카카오는 필수 사항에 대해선 반드시 동의를 받아야만 로그인이 가능하도록 구성되어있다.
 
 닉네임, 프로필사진, 이메일을 지정한다. 이메일의 경우 비즈니스 앱만 필수로 지정 가능하다.
 
-> <b class="orange-600">비즈니스 앱?</b>  
+> <b class="text-orange-600">비즈니스 앱?</b>  
 > KAKAO의 OAuth 애플리케이션 심사와 같은 개념이다. 단, 기본적으로 사업자 등록 번호 등을 요구하는데, 사업자 등록번호가 없는 개인의 경우 별도로 신청해야한다. 이는 차후 심사 단계에서 자세히 다룬다.
 
 
@@ -87,7 +87,7 @@ OAuth API를 생성하기 위해선 먼저 동의 화면을 구성해야한다. 
 
 로그인 후 `code`를 전달할 리다이렉트 URI를 지정한다.
 
-좌측 사이드바의 [<span class="lightBlue-600">카카오 로그인</span>] 메뉴에서 구성 가능하다.
+좌측 사이드바의 [<span class="text-sky-600">카카오 로그인</span>] 메뉴에서 구성 가능하다.
 
 줄바꿈으로 구분하여 여러 URL을 등록할 수 있다.
 
@@ -95,7 +95,7 @@ OAuth API를 생성하기 위해선 먼저 동의 화면을 구성해야한다. 
 
 ## 5. 보안 활성화
 
-좌측 사이드바의 [<span class="lightBlue-600">카카오 로그인</span> - <span class="lightBlue-600">보안</span>] 메뉴에서 Client Secret를 활성화한다.
+좌측 사이드바의 [<span class="text-sky-600">카카오 로그인</span> - <span class="text-sky-600">보안</span>] 메뉴에서 Client Secret를 활성화한다.
 
 이를 활성화해야 Secret키를 사용할 수 있다.
 
@@ -103,13 +103,13 @@ OAuth API를 생성하기 위해선 먼저 동의 화면을 구성해야한다. 
 
 ## 6. 카카오 로그인 활성화
 
-좌측 사이드바의 [<span class="lightBlue-600">카카오 로그인</span>] 메뉴에서 활성화로 체크하여 애플리케이션을 활성화할 수 있다.
+좌측 사이드바의 [<span class="text-sky-600">카카오 로그인</span>] 메뉴에서 활성화로 체크하여 애플리케이션을 활성화할 수 있다.
 
 
 
 ## 7. API 키 확인
 
-애플리케이션 메인인 [<span class="lightBlue-600">요약 정보</span>]에서 바로 확인할 수 있다.
+애플리케이션 메인인 [<span class="text-sky-600">요약 정보</span>]에서 바로 확인할 수 있다.
 
 ![null](https://user-images.githubusercontent.com/50317129/138510821-9bfd446e-3912-4f17-8bc3-8e746818cce7.png)
 
@@ -258,7 +258,7 @@ OAuth2.0 서비스를 수행함에 있어서 필요한 URL은 위와 같다. 이
 
 ## 인증 URL 반환 메서드
 
-<span class="blue-500">카카오 플랫폼 로그인 URL을 반환하는 기능</span>을 구현한다.
+<span class="text-blue-500">카카오 플랫폼 로그인 URL을 반환하는 기능</span>을 구현한다.
 
 우선 API를 살펴보자.
 
@@ -291,15 +291,15 @@ GET https://kauth.kakao.com/oauth/authorize?response_type=code&client_id={:clien
 
 <br />
 
-이미 `AuthModule`에 공통 메서드로 선언된 게 있으므로, <span class="red-400">따로 구현하지 않아도 된다.</span>
+이미 `AuthModule`에 공통 메서드로 선언된 게 있으므로, <span class="text-red-400">따로 구현하지 않아도 된다.</span>
 
 
 
 ## 접근 토큰 반환 메서드
 
-로그인 결과로 Code를 전달받으므로 <span class="blue-500">Access Token으로 교환하는 기능</span>을 구현한다.
+로그인 결과로 Code를 전달받으므로 <span class="text-blue-500">Access Token으로 교환하는 기능</span>을 구현한다.
 
-카카오 API는 아래와 같다. scribeJAVA가 카카오에 대한 처리를 잘 못 하는건지, 동일한 인터페이스를 사용하면 파라미터를 제대로 입력하지 않아 오류가 뜬다. 때문에 어쩔 수 없이 <span class="red-400">직접 요청을 생성하여 사용</span>해야한다.
+카카오 API는 아래와 같다. scribeJAVA가 카카오에 대한 처리를 잘 못 하는건지, 동일한 인터페이스를 사용하면 파라미터를 제대로 입력하지 않아 오류가 뜬다. 때문에 어쩔 수 없이 <span class="text-red-400">직접 요청을 생성하여 사용</span>해야한다.
 
 <br />
 
@@ -345,13 +345,13 @@ POST https://kauth.kakao.com/oauth/token?grant_type=authorization_code&client_id
 
 `AccessTokenRequestParams` 객체로 요청을 생성하여 `service.getAccessToken`으로 응답을 받는다.
 
-라이브러리의 처리 문제로 `AuthModule`의 공통 메서드가 아닌, <span class="red-600">별도로 오버라이딩한 메서드를 사용</span>해야한다.
+라이브러리의 처리 문제로 `AuthModule`의 공통 메서드가 아닌, <span class="text-red-600">별도로 오버라이딩한 메서드를 사용</span>해야한다.
 
 
 
 ## 접근 토큰 갱신 및 반환 메서드
 
-Access Token은 만료시간이 한시간 정도로 매우 짧다. Access Token이 만료될 경우, 사용자에게 플랫폼 로그인을 통해 인증 정보를 다시 요구해야하지만 Refresh Token이 있다면 별도의 절차 없이 서비스 내부에서 <span class="blue-500">Access Token을 재발급</span> 받을 수 있다.
+Access Token은 만료시간이 한시간 정도로 매우 짧다. Access Token이 만료될 경우, 사용자에게 플랫폼 로그인을 통해 인증 정보를 다시 요구해야하지만 Refresh Token이 있다면 별도의 절차 없이 서비스 내부에서 <span class="text-blue-500">Access Token을 재발급</span> 받을 수 있다.
 
 이 Refresh Token은 인증 권한은 없지만, Access Token을 재발급받는 권한을 가진다.
 
@@ -396,13 +396,13 @@ POST https://kauth.kakao.com/oauth/token?grant_type=refresh_token&client_id={:cl
 
 <br />
 
-`AuthModule`의 공통 메서드로 대체 가능하므로 <span class="red-400">별도로 구현하지 않는다.</span>
+`AuthModule`의 공통 메서드로 대체 가능하므로 <span class="text-red-400">별도로 구현하지 않는다.</span>
 
 
 
 ## 사용자 정보 응답 반환 메서드
 
-<span class="blue-500">Access Token으로 유저 정보를 호출하는 기능</span>을 구현한다. 발급받은 Access Token을 실제로 유의미하게 쓰는 부분이다.
+<span class="text-blue-500">Access Token으로 유저 정보를 호출하는 기능</span>을 구현한다. 발급받은 Access Token을 실제로 유의미하게 쓰는 부분이다.
 
 카카오 API는 아래와 같다.
 
@@ -461,13 +461,13 @@ Authorization: Bearer {:access_token}
 
 id는 우리가 생각하는 `xxx@google.com` 형태의 아이디가 아니라 아이디별로 부여받는 고유 해쉬값이다.
 
-`AuthModule`의 공통 메서드로 대체 가능하므로 <span class="red-400">별도로 구현하지 않는다.</span>
+`AuthModule`의 공통 메서드로 대체 가능하므로 <span class="text-red-400">별도로 구현하지 않는다.</span>
 
 
 
 ## 유저 정보 객체 반환 메서드
 
-<span class="blue-500">카카오의 유저 정보 호출 API 응답 형식에 맞게끔 응답을 파싱</span>하여 `UserInfoBean`로 반환하는 메서드를 구현한다.
+<span class="text-blue-500">카카오의 유저 정보 호출 API 응답 형식에 맞게끔 응답을 파싱</span>하여 `UserInfoBean`로 반환하는 메서드를 구현한다.
 
 이 프로젝트에선 이름, 이메일, 프로필사진 URL만을 사용하므로, 응답에서 해당 값을 빼내어 객체에 담는다.
 
@@ -499,7 +499,7 @@ public UserInfoBean getUserInfoBean(String body) throws JsonProcessingException
 
 ## 연동 해제 결과 반환 메서드
 
-카카오 아이디로 처음 로그인을 하면 정보 제공 동의를 수행하는데, 나중에 다시 로그인을 하면 이러한 동의 과정이 생략된다. 즉, 플랫폼에서 첫 로그인 시 정보 제공 동의를 받아 어딘가로부터 저장한다는 뜻이다. 만약 사용자가 서비스로부터 회원 탈퇴를 수행한다면 <span class="blue-500">카카오와의 연동을 해제하여 정보를 완전히 삭제</span>할 필요가 있다.
+카카오 아이디로 처음 로그인을 하면 정보 제공 동의를 수행하는데, 나중에 다시 로그인을 하면 이러한 동의 과정이 생략된다. 즉, 플랫폼에서 첫 로그인 시 정보 제공 동의를 받아 어딘가로부터 저장한다는 뜻이다. 만약 사용자가 서비스로부터 회원 탈퇴를 수행한다면 <span class="text-blue-500">카카오와의 연동을 해제하여 정보를 완전히 삭제</span>할 필요가 있다.
 
 카카오 API는 아래와 같다.
 
@@ -555,7 +555,7 @@ public boolean deleteInfo(String access) throws IOException, ExecutionException,
 
 ## 정보 제공 동의 갱신 URL 반환 메서드
 
-서비스 운영 중 추가적인 사용자 정보가 필요하거나 필요 없을 때, <span class="blue-500">사용자 정보 동의 갱신을 통해 동의 정보를 다시 지정</span>할 수 있다.
+서비스 운영 중 추가적인 사용자 정보가 필요하거나 필요 없을 때, <span class="text-blue-500">사용자 정보 동의 갱신을 통해 동의 정보를 다시 지정</span>할 수 있다.
 
 카카오의 경우, 동의하지않은 선택 정보에 대해서만 동의가 가능하며, 이미 동의한 데이터는 별도의 API로 해제해야한다.
 

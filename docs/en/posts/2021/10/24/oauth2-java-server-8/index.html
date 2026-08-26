@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <link rel="stylesheet" type="text/css" href="/assets/static/style-5fd05477.T-dnyTzB.css">
+        <meta charset="UTF-8" />
+        
+        
+    <title>[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 8. Implementing the Processes | Notes from the π-th Alpaca</title><meta property="og:title" content="[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 8. Implementing the Processes | Notes from the π-th Alpaca" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script async="" data-testid="Ga4Script" src="https://www.googletagmanager.com/gtag/js?id=G-7QYWYNZ90R"></script><meta content="en_US" property="og:locale"/><link href="https://blog.itcode.dev/en/posts/2021/10/24/oauth2-java-server-8" rel="canonical"/><link href="https://blog.itcode.dev/posts/2021/10/24/oauth2-java-server-8" hrefLang="ko" rel="alternate"/><link href="https://blog.itcode.dev/en/posts/2021/10/24/oauth2-java-server-8" hrefLang="en" rel="alternate"/><link href="https://blog.itcode.dev/posts/2021/10/24/oauth2-java-server-8" hrefLang="x-default" rel="alternate"/><script data-testid="ThemeScript">(function () {
+	try {
+		var theme = localStorage.getItem('theme');
+		var isDark = theme === 'dark' || (theme !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+
+		if (isDark) {
+			document.documentElement.classList.add('dark');
+		}
+	} catch (error) {}
+})();</script>
+    
+    <meta name="description" content="From chapter 4 through chapter 7, we implemented the authentication module for each platform. In this chapter, we implement the processes, the layer that uses these modules. Processes are organized and managed by HTTP method." /><meta property="og:description" content="From chapter 4 through chapter 7, we implemented the authentication module for each platform. In this chapter, we implement the processes, the layer that uses these modules. Processes are organized and managed by HTTP method." />
+    <meta property="og:image" content="https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png"><meta name="twitter:card" content="summary_large_image">
+  
+        
+      </head>
+      <body>
+        
+        <div id="root"><link rel="preload" as="image" href="/logo.png"/><link rel="preload" as="image" href="https://github.com/RWB0104.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png"/><link rel="preload" as="image" href="https://github.com/user-attachments/assets/e2a11c89-57af-4944-9068-bf237369f8b3"/><main class="flex w-full flex-col" data-testid="Layout"><div data-testid="Navigator"><div class="w-full" id="headline"></div><header class="flex items-center gap-4 py-3 max-sm:p-3 fixed top-0 left-0 z-20 w-full px-8 transition duration-300 bg-transparent text-white backdrop-blur-none" data-testid="Header"><div class="flex items-center"><button type="button" tabindex="0" data-slot="sheet-trigger" data-base-ui-click-trigger="" id="base-ui-_R_6m5_" aria-haspopup="dialog" aria-expanded="false" class="group/button inline-flex shrink-0 items-center justify-center border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-8 rounded-[min(var(--radius-md),10px)] in-data-[slot=button-group]:rounded-md"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></button></div><a data-testid="LocaleAnchor" href="/en"><div class="flex items-center gap-4 font-bold font-playwright text-lg"><img alt="blog.itcode.dev" height="24" src="/logo.png" width="24"/><span class="max-sm:hidden">blog.itcode.dev</span></div></a><div class="flex flex-1 items-center justify-end gap-2"><button type="button" tabindex="0" data-slot="tooltip-trigger" aria-label="설정" data-base-ui-click-trigger="" id="base-ui-_R_6mu5_" aria-haspopup="dialog" aria-expanded="false" data-base-ui-tooltip-trigger="" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings" aria-hidden="true"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path><circle cx="12" cy="12" r="3"></circle></svg></button></div></header></div><section data-testid="ContentPage"><div data-testid="ScreenerTemplate"><div class="relative h-[200dvh]"><div class="h-dvh w-full sticky top-0" data-testid="ScreenerBox" style="filter:blur(0px)"><div class="absolute top-0 left-0 size-full"><div class="grid grid-rows-[70%_10%_20%] size-full transition-[filter] duration-700 ease-out" data-testid="ScreenerTestPattern"><div class="grid grid-cols-7" data-testid="ScreenerTestPatternBars"><div class="bg-[#c0c0c0]"></div><div class="bg-[#c0c000]"></div><div class="bg-[#00c0c0]"></div><div class="bg-[#00c000]"></div><div class="bg-[#c000c0]"></div><div class="bg-[#c00000]"></div><div class="bg-[#0000c0]"></div></div><div class="grid grid-cols-7" data-testid="ScreenerTestPatternChroma"><div class="bg-[#0000c0]"></div><div class="bg-black"></div><div class="bg-[#c000c0]"></div><div class="bg-black"></div><div class="bg-[#00c0c0]"></div><div class="bg-black"></div><div class="bg-[#c0c0c0]"></div></div><div class="grid grid-cols-[1.5fr_1.5fr_1fr_0.5fr_0.5fr_0.5fr_1.5fr]" data-testid="ScreenerTestPatternPluge"><div class="bg-[#00214c]"></div><div class="bg-white"></div><div class="bg-[#32006c]"></div><div class="bg-[#0a0a0a]"></div><div class="bg-black"></div><div class="bg-[#1a1a1a]"></div><div class="bg-black"></div></div></div></div><div class="absolute top-0 left-0 size-full overflow-hidden"></div><div class="relative z-2 size-full"><div class="relative size-full"><div class="absolute inset-x-0 top-0 flex flex-col items-center gap-2 pt-32 pr-6 pl-6 text-center text-white bg-linear-to-t from-50% from-transparent to-black/60 pb-[max(4rem,env(safe-area-inset-bottom))] sm:items-start sm:pr-10 sm:pb-20 sm:pl-10 sm:text-left"></div><div class="absolute inset-x-0 bottom-0 flex flex-col items-center gap-5 pt-32 pr-6 pl-6 text-center text-white bg-linear-to-t from-15% from-black via-50% via-black/70 to-transparent pb-[max(4rem,env(safe-area-inset-bottom))] sm:items-start sm:pr-10 sm:pb-20 sm:pl-10 sm:text-left lang-en:font-playwright"><p class="fade-in slide-in-from-bottom-2 animate-in fill-mode-both font-medium text-white/70 text-xs uppercase tracking-widest duration-500 sm:text-sm"></p><h1 class="fade-in slide-in-from-bottom-4 max-w-3xl animate-in fill-mode-both font-extrabold text-2xl tracking-tight delay-150 duration-700 sm:text-3xl lg:text-5xl lang-en:sm:leading-12 lang-en:lg:leading-16">[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 8. Implementing the Processes</h1><p class="fade-in slide-in-from-bottom-4 max-w-2xl animate-in fill-mode-both text-sm text-white/80 delay-300 duration-700 sm:text-base lg:text-lg">From chapter 4 through chapter 7, we implemented the authentication module for each platform. In this chapter, we implement the processes, the layer that uses these modules. Processes are organized and managed by HTTP method.</p></div><div class="fade-in absolute bottom-4 left-1/2 z-3 -translate-x-1/2 animate-in fill-mode-both delay-500 duration-500 sm:bottom-6"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down animate-bounce text-white/70" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></div></div></div></div></div><div class="relative z-10 -mt-[100dvh] min-h-[110dvh] rounded-t-[2rem] bg-background transition-colors duration-300"><div class="cursor-grab select-none group" data-testid="Dragger"><div class="flex flex-col gap-2 justify-self-center rounded p-4 transition-colors duration-300 group-hover:bg-foreground/10"><div class="w-8 border-foreground/20 border-t-2"></div><div class="w-8 border-foreground/20 border-t-2"></div></div></div><div class="justify-self-center px-5 my-20 flex w-full max-w-4xl flex-col gap-20 pt-20" data-testid="ContainerTemplate"><div class="flex flex-col gap-5"><h2 class="font-bold text-3xl lg:text-5xl">[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 8. Implementing the Processes</h2><div class="flex flex-col gap-1 text-muted-foreground"><i>From chapter 4 through chapter 7, we implemented the authentication module for each platform. In this chapter, we implement the processes, the layer that uses these modules. Processes are organized and managed by HTTP method.</i></div><div class="h-px w-full bg-border"></div><div class="flex items-center gap-3"><img alt="RWB0104" class="rounded-full drop-shadow" height="36" src="https://github.com/RWB0104.png" width="36"/><div class="flex flex-col"><a class="font-bold hover:underline" href="https://github.com/RWB0104" rel="noopener" target="_blank">@<!-- -->RWB</a><i class="text-muted-foreground text-xs">written at<!-- --> <!-- -->2021-10-24 14:58:10</i></div></div></div><a data-testid="LocaleAnchor" href="/" hrefLang="ko" class="w-full"><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 border-border bg-background shadow-xs hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50 h-9 gap-1.5 px-2.5 in-data-[slot=button-group]:rounded-md has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 w-full"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-languages" aria-hidden="true"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg>한국어로 보기</button></a><div class="overflow-hidden rounded-lg border" data-testid="ContentGroup"><img alt="Building an OAuth2.0 Authorization Server" class="aspect-video w-full object-cover" height="100%" loading="lazy" src="https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png" width="100%"/><div class="flex flex-col gap-2 p-4"><p class="text-muted-foreground text-sm">시리즈 모아보기</p><h4 class="scroll-m-20 font-semibold text-xl tracking-tight">Building an OAuth2.0 Authorization Server</h4><div class="mt-2 flex items-center justify-between gap-2"><button aria-expanded="false" class="inline-flex items-center gap-1 rounded-md px-3 py-1.5 font-medium text-sm transition-colors hover:bg-accent hover:text-accent-foreground" type="button">전체보기<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down transition-transform" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button><div class="flex items-center gap-2 text-muted-foreground"><a data-testid="LocaleAnchor" href="/en/posts/2021/10/23/oauth2-java-server-7" aria-label="이전 글: [OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 7. Applying for the GitHub OAuth Service and Implementing the Module"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left hover:text-foreground" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg></a><span class="font-code text-xs tabular-nums" data-testid="ContentGroupPosition">8<!-- --> / <!-- -->11</span><a data-testid="LocaleAnchor" href="/en/posts/2021/10/25/oauth2-java-server-10" aria-label="다음 글: [OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 10. Implementing the Controllers"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right hover:text-foreground" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></a></div></div></div></div><nav class="rounded-lg border border-l-4 bg-muted/40 p-4 border-l-blue-600 dark:border-l-blue-400" data-testid="MarkdownToc"><p class="mb-3 flex items-center gap-1.5 border-b pb-2 font-semibold text-xs uppercase tracking-wide text-blue-600 dark:text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-list-tree" aria-hidden="true"><path d="M8 5h13"></path><path d="M13 12h8"></path><path d="M13 19h8"></path><path d="M3 10a2 2 0 0 0 2 2h3"></path><path d="M3 5v12a2 2 0 0 0 2 2h3"></path></svg>Table of Contents</p><div class="flex flex-col gap-0.5 text-sm"><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 transition-colors hover:bg-background hover:text-foreground pl-2 font-medium text-foreground/90" href="#Overview"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">1.</span><span class="truncate">Overview</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 transition-colors hover:bg-background hover:text-foreground pl-2 font-medium text-foreground/90" href="#Structure"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">2.</span><span class="truncate">Structure</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 transition-colors hover:bg-background hover:text-foreground pl-2 font-medium text-foreground/90" href="#Implementing-the-Processes"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.</span><span class="truncate">Implementing the Processes</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-6" href="#Implementing-the-Process-Abstract-Class"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.1.</span><span class="truncate">Implementing the Process Abstract Class</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-6" href="#Implementing-the-GET-Process"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.2.</span><span class="truncate">Implementing the GET Process</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-10" href="#Method-to-Return-the-Authorization-URL-Response"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.2.1.</span><span class="truncate">Method to Return the Authorization URL Response</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-10" href="#Method-to-Return-the-User-Info-Response"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.2.2.</span><span class="truncate">Method to Return the User Info Response</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-10" href="#Full-Code"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.2.3.</span><span class="truncate">Full Code</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-6" href="#Implementing-the-POST-Process"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.3.</span><span class="truncate">Implementing the POST Process</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-10" href="#Method-to-Return-the-Login-Response"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.3.1.</span><span class="truncate">Method to Return the Login Response</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-10" href="#Method-to-Return-the-Auto-Login-Response"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.3.2.</span><span class="truncate">Method to Return the Auto-Login Response</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-10" href="#Method-to-Return-the-Logout-Response"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.3.3.</span><span class="truncate">Method to Return the Logout Response</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-10" href="#Full-Code"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.3.4.</span><span class="truncate">Full Code</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-6" href="#Implementing-the-PUT-Process"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.4.</span><span class="truncate">Implementing the PUT Process</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-10" href="#Method-to-Return-the-Response-for-Renewing-the-Consent-to-Provide-Information-URL"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.4.1.</span><span class="truncate">Method to Return the Response for Renewing the Consent-to-Provide-Information URL</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-10" href="#Full-Code"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.4.2.</span><span class="truncate">Full Code</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-6" href="#Implementing-the-DELETE-Process"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.5.</span><span class="truncate">Implementing the DELETE Process</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-10" href="#Method-to-Return-the-Unlink-Response"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.5.1.</span><span class="truncate">Method to Return the Unlink Response</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-10" href="#Full-Code"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.5.2.</span><span class="truncate">Full Code</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 transition-colors hover:bg-background hover:text-foreground pl-2 font-medium text-foreground/90" href="#Wrap-up"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">4.</span><span class="truncate">Wrap-up</span></a></div></nav><div class="size-full" data-testid="MarkdownViewer"><div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Overview" id="Overview"><h1 class="text-4xl font-bold" node="[object Object]">Overview</h1></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">From chapter 4 through chapter 7, we implemented the authentication module for each platform. In this chapter, we implement the processes, the layer that uses these modules.</p>
+<p class="my-4">Processes are organized and managed by HTTP method.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Structure" id="Structure"><h1 class="text-4xl font-bold" node="[object Object]">Structure</h1></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">Since there&#x27;s nothing beyond account-related operations, the only top-level category is <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">account</span>.</p>
+<p class="my-4">The HTTP methods needed for the work are <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">GET</span>, <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">POST</span>, <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">PUT</span>, and <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">DELETE</span>, so we split them up as below.</p>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">AccountGetProcess</span> - the account GET process class</li>
+<li class="ml-6 list-disc" node="[object Object]"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">AccountPostProcess</span> - the account POST process class</li>
+<li class="ml-6 list-disc" node="[object Object]"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">AccountPutProcess</span> - the account PUT process class</li>
+<li class="ml-6 list-disc" node="[object Object]"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">AccountDeleteProcess</span> - the account DELETE process class</li>
+</ul>
+<p class="my-4">Logic used for the <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">GET</span> method is organized so it belongs in <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">AccountGetProcess</span>, and so on.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Implementing-the-Processes" id="Implementing-the-Processes"><h1 class="text-4xl font-bold" node="[object Object]">Implementing the Processes</h1></a><div class="mt-1 w-full border-b"></div></div>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Implementing-the-Process-Abstract-Class" id="Implementing-the-Process-Abstract-Class"><h2 class="text-3xl font-bold" node="[object Object]">Implementing the Process Abstract Class</h2></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">To apply common logic across multiple processes, let&#x27;s implement a Process abstract class that all process objects will extend.</p>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-java" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JAVA</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>package global.module;
+
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import oauth.account.module.AuthModule;
+import oauth.account.module.GithubAuthModule;
+import oauth.account.module.GoogleAuthModule;
+import oauth.account.module.KakaoAuthModule;
+import oauth.account.module.NaverAuthModule;
+
+/**
+ * 프로세스 추상 클래스
+ *
+ * @author RWB
+ * @since 2021.09.30 Thu 01:14:25
+ */
+abstract public class Process
+{
+	protected HttpServletRequest request;
+	protected HttpServletResponse response;
+	
+	/**
+	 * 생성자 메서드
+	 *
+	 * @param request: [HttpServletRequest] HttpServletResponse 객체
+	 * @param response: [HttpServletResponse] HttpServletResponse 객체
+	 */
+	protected Process(HttpServletRequest request, HttpServletResponse response)
+	{
+		this.request = request;
+		this.response = response;
+	}
+	
+	/**
+	 * 인증 모듈 반환 메서드
+	 *
+	 * @param platform: [String] 플랫폼
+	 *
+	 * @return [AuthModule] AuthModule 객체
+	 *
+	 * @throws NullPointerException 유효하지 않은 플랫폼
+	 */
+	protected AuthModule getAuthModule(String platform) throws NullPointerException
+	{
+		return switch (platform)
+				{
+					case &quot;naver&quot; -&gt; NaverAuthModule.getInstance();
+					case &quot;google&quot; -&gt; GoogleAuthModule.getInstance();
+					case &quot;kakao&quot; -&gt; KakaoAuthModule.getInstance();
+					case &quot;github&quot; -&gt; GithubAuthModule.getInstance();
+					default -&gt; throw new NullPointerException(Util.builder(&quot;&#x27;&quot;, platform, &quot;&#x27; is invalid platform&quot;));
+				};
+	}
+}</code></pre></div></div></pre>
+<p class="my-4">To make it easy to access the servlet objects <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">HttpServletRequest</span> and <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">HttpServletResponse</span>, each local variable is declared with the <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">protected</span> access modifier.</p>
+<p class="my-4">When using the constructor, it&#x27;s required to always pass <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">HttpServletRequest</span> and <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">HttpServletResponse</span> as arguments.</p>
+<p class="my-4">This means every subclass process that extends <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">Process</span> is required to accept the servlet objects as arguments, and can access the servlet objects via <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">request</span> and <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">response</span> inside the process.</p>
+<br/>
+<p class="my-4"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">getAuthModule</span> is a method that <span class="text-blue-400">returns the corresponding instance based on each platform&#x27;s name</span>. Since the authentication module is used heavily by the processes, it&#x27;s declared in <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">Process</span> so that every process class that extends it can access this method.</p>
+<p class="my-4">With this structure, the same process can call the <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">AuthModule</span> object for a given platform and use the methods declared for that particular platform.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Implementing-the-GET-Process" id="Implementing-the-GET-Process"><h2 class="text-3xl font-bold" node="[object Object]">Implementing the GET Process</h2></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">Let&#x27;s implement the process class that groups together the operations corresponding to <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">GET</span> among the account processes.</p>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Method to return the authorization URL response</li>
+<li class="ml-6 list-disc" node="[object Object]">Method to return the user info response</li>
+</ul>
+<p class="my-4">The operations corresponding to <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">GET</span> are the two methods above. They mostly consist of operations that simply fetch data.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Method-to-Return-the-Authorization-URL-Response" id="Method-to-Return-the-Authorization-URL-Response"><h3 class="text-2xl font-bold" node="[object Object]">Method to Return the Authorization URL Response</h3></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">This method <span class="text-blue-400">returns the authorization URL for the platform login</span>.</p>
+<p class="my-4">It obtains the URL via <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">AuthModule</span>&#x27;s <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">getAuthorizationUrl</span> method, builds a response object with that content, and returns it.</p>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-java" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JAVA</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>public Response getAuthorizationUrlResponse(String platform)
+{
+	Response response;
+	
+	ResponseBean&lt;String&gt; responseBean = new ResponseBean&lt;&gt;();
+	
+	// 인증 URL 응답 생성 시도
+	try
+	{
+		String state = UUID.randomUUID().toString();
+		
+		request.getSession().setAttribute(&quot;state&quot;, state);
+		
+		AuthModule authModule = getAuthModule(platform);
+		
+		responseBean.setFlag(true);
+		responseBean.setTitle(&quot;success&quot;);
+		responseBean.setMessage(Util.builder(platform, &quot; authrorization url response success&quot;));
+		responseBean.setBody(authModule.getAuthorizationUrl(state));
+		
+		response = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();
+	}
+	
+	// 예외
+	catch (Exception e)
+	{
+		e.printStackTrace();
+		
+		responseBean.setFlag(false);
+		responseBean.setTitle(e.getClass().getSimpleName());
+		responseBean.setMessage(e.getMessage());
+		responseBean.setBody(null);
+		
+		response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();
+	}
+	
+	return response;
+}</code></pre></div></div></pre>
+<p class="my-4">To verify it&#x27;s the same session, a <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">state</span> value is generated when this process runs and passed to <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">getAuthorizationUrl</span>. The <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">state</span> we pass will appear as a URL parameter in the URL returned by that method.</p>
+<p class="my-4">We also register that same <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">state</span> as a session attribute.</p>
+<p class="my-4">Since a platform login goes through multiple windows, request hijacking is fairly easy. Session information can easily get corrupted in this process, so <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">state</span> lets us verify that the entire login flow is happening within the same session.</p>
+<p class="my-4">If the <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">state</span> in the URL doesn&#x27;t match the <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">state</span> in the session, or if there&#x27;s no session information at all, we can conclude this isn&#x27;t a legitimate login flow.</p>
+<p class="my-4">This session value is later used when receiving the Access Token and completing the login operation.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Method-to-Return-the-User-Info-Response" id="Method-to-Return-the-User-Info-Response"><h3 class="text-2xl font-bold" node="[object Object]">Method to Return the User Info Response</h3></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">This method <span class="text-blue-400">retrieves the user response via the Access Token</span>.</p>
+<p class="my-4">It obtains a <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">UserInfoBean</span> object via <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">AuthModule</span>&#x27;s <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">getUserInfoBean</span> method, builds a response object with that content, and returns it.</p>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-java" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JAVA</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>public Response getUserInfoResponse(String accessCookie)
+{
+	Response response;
+	
+	ResponseBean&lt;UserInfoBean&gt; responseBean = new ResponseBean&lt;&gt;();
+	
+	// 사용자 정보 응답 생성 시도
+	try
+	{
+		Jws&lt;Claims&gt; jws = JwtModule.openJwt(accessCookie);
+		
+		String accessToken = jws.getBody().get(&quot;access&quot;, String.class);
+		String platform = jws.getBody().get(&quot;platform&quot;, String.class);
+		
+		AuthModule authModule = getAuthModule(platform);
+		
+		com.github.scribejava.core.model.Response userInfoResponse = authModule.getUserInfo(accessToken);
+		
+		// 응답이 정상적이지 않을 경우
+		if (userInfoResponse.getCode() != 200)
+		{
+			throw new OAuthResponseException(userInfoResponse);
+		}
+		
+		responseBean.setFlag(true);
+		responseBean.setTitle(&quot;success&quot;);
+		responseBean.setMessage(&quot;user info response success&quot;);
+		responseBean.setBody(authModule.getUserInfoBean(userInfoResponse.getBody()));
+		
+		response = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();
+	}
+	
+	// 예외
+	catch (Exception e)
+	{
+		e.printStackTrace();
+		
+		responseBean.setFlag(false);
+		responseBean.setTitle(e.getClass().getSimpleName());
+		responseBean.setMessage(e.getMessage());
+		responseBean.setBody(null);
+		
+		response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();
+	}
+	
+	return response;
+}</code></pre></div></div></pre>
+<p class="my-4">As will be explained later, <span class="text-green-600">at login time, the Access Token and Refresh Token are each built into a JWT together with the platform</span>, and stored as the access and refresh cookies.</p>
+<p class="my-4">Since each JWT cookie contains the platform info, having just the access cookie is enough to find both the Access Token and its platform.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Full-Code" id="Full-Code"><h3 class="text-2xl font-bold" node="[object Object]">Full Code</h3></a><div class="mt-1 w-full border-b"></div></div>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-java" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JAVA</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>package oauth.account.process;
+
+import com.github.scribejava.core.model.OAuthResponseException;
+import global.bean.ResponseBean;
+import global.module.JwtModule;
+import global.module.Process;
+import global.module.Util;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jws;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+import oauth.account.bean.UserInfoBean;
+import oauth.account.module.AuthModule;
+
+import java.util.UUID;
+
+/**
+ * 계정 GET 프로세스 클래스
+ *
+ * @author RWB
+ * @since 2021.09.30 Thu 21:00:48
+ */
+public class AccountGetProcess extends Process
+{
+	/**
+	 * 생성자 메서드
+	 *
+	 * @param request: [HttpServletRequest] HttpServletRequest 객체
+	 * @param response: [HttpServletResponse] HttpServletResponse 객체
+	 */
+	public AccountGetProcess(HttpServletRequest request, HttpServletResponse response)
+	{
+		super(request, response);
+	}
+	
+	/**
+	 * 인증 URL 응답 반환 메서드
+	 *
+	 * @param platform: [String] 플랫폼
+	 *
+	 * @return [Response] 응답 객체
+	 */
+	public Response getAuthorizationUrlResponse(String platform)
+	{
+		Response response;
+		
+		ResponseBean&lt;String&gt; responseBean = new ResponseBean&lt;&gt;();
+		
+		// 인증 URL 응답 생성 시도
+		try
+		{
+			String state = UUID.randomUUID().toString();
+			
+			request.getSession().setAttribute(&quot;state&quot;, state);
+			
+			AuthModule authModule = getAuthModule(platform);
+			
+			responseBean.setFlag(true);
+			responseBean.setTitle(&quot;success&quot;);
+			responseBean.setMessage(Util.builder(platform, &quot; authrorization url response success&quot;));
+			responseBean.setBody(authModule.getAuthorizationUrl(state));
+			
+			response = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();
+		}
+		
+		// 예외
+		catch (Exception e)
+		{
+			e.printStackTrace();
+			
+			responseBean.setFlag(false);
+			responseBean.setTitle(e.getClass().getSimpleName());
+			responseBean.setMessage(e.getMessage());
+			responseBean.setBody(null);
+			
+			response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();
+		}
+		
+		return response;
+	}
+	
+	/**
+	 * 사용자 정보 응답 반환 메서드
+	 *
+	 * @param accessCookie: [String] 접근 토큰 쿠키
+	 *
+	 * @return [Response] 응답 객체
+	 */
+	public Response getUserInfoResponse(String accessCookie)
+	{
+		Response response;
+		
+		ResponseBean&lt;UserInfoBean&gt; responseBean = new ResponseBean&lt;&gt;();
+		
+		// 사용자 정보 응답 생성 시도
+		try
+		{
+			Jws&lt;Claims&gt; jws = JwtModule.openJwt(accessCookie);
+			
+			String accessToken = jws.getBody().get(&quot;access&quot;, String.class);
+			String platform = jws.getBody().get(&quot;platform&quot;, String.class);
+			
+			AuthModule authModule = getAuthModule(platform);
+			
+			com.github.scribejava.core.model.Response userInfoResponse = authModule.getUserInfo(accessToken);
+			
+			// 응답이 정상적이지 않을 경우
+			if (userInfoResponse.getCode() != 200)
+			{
+				throw new OAuthResponseException(userInfoResponse);
+			}
+			
+			responseBean.setFlag(true);
+			responseBean.setTitle(&quot;success&quot;);
+			responseBean.setMessage(&quot;user info response success&quot;);
+			responseBean.setBody(authModule.getUserInfoBean(userInfoResponse.getBody()));
+			
+			response = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();
+		}
+		
+		// 예외
+		catch (Exception e)
+		{
+			e.printStackTrace();
+			
+			responseBean.setFlag(false);
+			responseBean.setTitle(e.getClass().getSimpleName());
+			responseBean.setMessage(e.getMessage());
+			responseBean.setBody(null);
+			
+			response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();
+		}
+		
+		return response;
+	}
+}</code></pre></div></div></pre>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Implementing-the-POST-Process" id="Implementing-the-POST-Process"><h2 class="text-3xl font-bold" node="[object Object]">Implementing the POST Process</h2></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">Let&#x27;s implement the process class that groups together the operations corresponding to <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">POST</span> among the account processes.</p>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Method to return the login response</li>
+<li class="ml-6 list-disc" node="[object Object]">Method to return the auto-login response</li>
+<li class="ml-6 list-disc" node="[object Object]">Method to return the logout response</li>
+</ul>
+<p class="my-4">The operations corresponding to <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">POST</span> are the methods above. They mostly consist of login/logout operations.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Method-to-Return-the-Login-Response" id="Method-to-Return-the-Login-Response"><h3 class="text-2xl font-bold" node="[object Object]">Method to Return the Login Response</h3></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">This method <span class="text-blue-400">performs login by exchanging the <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">code</span> issued after the platform login for an Access Token</span>.</p>
+<p class="my-4">It obtains an <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">OAuth2AccessToken</span> object via <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">AuthModule</span>&#x27;s <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">getAccessToken</span> method and extracts the Access Token and Refresh Token.</p>
+<p class="my-4">These tokens are built into JWT cookies to complete the login process.</p>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-java" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JAVA</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>public Response postLoginResponse(String platform, String code, String state)
+{
+	Response response;
+	
+	ResponseBean&lt;String&gt; responseBean = new ResponseBean&lt;&gt;();
+	
+	HttpSession session = request.getSession();
+	
+	// 로그인 응답 생성 시도
+	try
+	{
+		Object sessionState = Objects.requireNonNull(session.getAttribute(&quot;state&quot;));
+		
+		// 고유 상태값이 일치하지 않을 경우
+		if (!state.equals(sessionState))
+		{
+			throw new BadAttributeValueExpException(&quot;state is mismatched&quot;);
+		}
+		
+		AuthModule authModule = getAuthModule(platform);
+		
+		OAuth2AccessToken oAuth2AccessToken = authModule.getAccessToken(code);
+		
+		String accessToken = oAuth2AccessToken.getAccessToken();
+		String refreshToken = oAuth2AccessToken.getRefreshToken();
+		
+		HashMap&lt;String, Object&gt; accessMap = new HashMap&lt;&gt;();
+		accessMap.put(&quot;access&quot;, accessToken);
+		accessMap.put(&quot;platform&quot;, platform);
+		
+		HashMap&lt;String, Object&gt; refreshMap = new HashMap&lt;&gt;();
+		refreshMap.put(&quot;refresh&quot;, refreshToken);
+		refreshMap.put(&quot;platform&quot;, platform);
+		
+		String accessJwt = JwtModule.generateJwt(state, accessMap);
+		String refreshJwt = JwtModule.generateJwt(state, refreshMap);
+		
+		NewCookie accessCookie = new NewCookie(&quot;access&quot;, accessJwt, &quot;/oauth2&quot;, &quot;.itcode.dev&quot;, &quot;access token&quot;, -1, true, true);
+		NewCookie refreshCookie = new NewCookie(&quot;refresh&quot;, refreshJwt, &quot;/oauth2&quot;, &quot;.itcode.dev&quot;, &quot;refresh token&quot;, refreshToken == null ? 0 : 86400 * 7 + 3600 * 9, true, true);
+		
+		responseBean.setFlag(true);
+		responseBean.setTitle(&quot;success&quot;);
+		responseBean.setMessage(&quot;authorized success&quot;);
+		responseBean.setBody(null);
+		
+		response = Response.ok(responseBean, MediaType.APPLICATION_JSON).cookie(accessCookie, refreshCookie).build();
+	}
+	
+	// 예외
+	catch (Exception e)
+	{
+		e.printStackTrace();
+		
+		responseBean.setFlag(false);
+		responseBean.setTitle(e.getClass().getSimpleName());
+		responseBean.setMessage(e.getMessage());
+		responseBean.setBody(null);
+		
+		response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();
+	}
+	
+	// 시도 후
+	finally
+	{
+		session.invalidate();
+	}
+	
+	return response;
+}</code></pre></div></div></pre>
+<p class="my-4">During the <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">getAuthorizationUrlResponse</span> operation in <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">AccountGetProcess</span>, we stored <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">state</span> in a session attribute — here, that <span class="text-orange-500">session value is used to perform verification</span>.</p>
+<p class="my-4">We extract the <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">state</span> received as an argument via the URL and the <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">state</span> from the session and compare them, throwing an exception if they don&#x27;t match. This is a security measure that prevents an attacker from hijacking the URL midway and sending a request with a completely different <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">code</span>.</p>
+<p class="my-4">Once the Access Token and Refresh Token are received, they&#x27;re built into JWT cookies.</p>
+<br/>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Access Token JWT</li>
+</ul>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-json" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JSON</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>{
+	&quot;iss&quot;: &quot;oauth2&quot;,
+	&quot;sub&quot;: &quot;auth&quot;,
+	&quot;aud&quot;: &quot;c9159786-40bf-4cf2-8c93-f683d1070137&quot;,
+	&quot;access&quot;: &quot;{ACCESS_TOKEN}&quot;,
+	&quot;platform&quot;: &quot;naver&quot;,
+	&quot;exp&quot;: 1634986011,
+	&quot;nbf&quot;: 1634982411,
+	&quot;iat&quot;: 1634982411,
+	&quot;jti&quot;: &quot;c9159786-40bf-4cf2-8c93-f683d1070137&quot;
+}</code></pre></div></div></pre>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Refresh Token JWT</li>
+</ul>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-json" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JSON</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>{
+	&quot;iss&quot;: &quot;oauth2&quot;,
+	&quot;sub&quot;: &quot;auth&quot;,
+	&quot;aud&quot;: &quot;c9159786-40bf-4cf2-8c93-f683d1070137&quot;,
+	&quot;refresh&quot;: &quot;{REFRESH_TOKEN}&quot;,
+	&quot;platform&quot;: &quot;naver&quot;,
+	&quot;exp&quot;: 1634986011,
+	&quot;nbf&quot;: 1634982411,
+	&quot;iat&quot;: 1634982411,
+	&quot;jti&quot;: &quot;c9159786-40bf-4cf2-8c93-f683d1070137&quot;
+}</code></pre></div></div></pre>
+<br/>
+<p class="my-4">The content of the JWT is as above. The cookie is created carrying this JWT. <span class="text-green-400">The access cookie is created as a session cookie so that it&#x27;s immediately destroyed when the browser closes</span>, while <span class="text-green-400">the refresh cookie is given some retention period so it can be used again later</span>.</p>
+<p class="my-4">The cookie domain is set to <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">.itcode.dev</span>, because the Frontend and Backend run in completely different environments.</p>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Frontend - <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">project.itcode.dev</span></li>
+<li class="ml-6 list-disc" node="[object Object]">Backend - <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">api.itcode.dev</span></li>
+</ul>
+<p class="my-4">Due to the browser&#x27;s security policy, cookies can&#x27;t be created for a different domain. So it&#x27;s set to <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">.itcode.dev</span> so it applies to all subdomains.</p>
+<p class="my-4">If the domain isn&#x27;t specified, the cookie is automatically issued targeting <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">api.itcode.dev</span>. As a result, the <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">project.itcode.dev</span> domain service wouldn&#x27;t be able to access the cookie.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Method-to-Return-the-Auto-Login-Response" id="Method-to-Return-the-Auto-Login-Response"><h3 class="text-2xl font-bold" node="[object Object]">Method to Return the Auto-Login Response</h3></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">If a user has logged in before and <span class="text-blue-400">already has access and refresh cookies, this method uses them to perform auto-login</span>.</p>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-java" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JAVA</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>public Response postAutoLoginResponse(String accessCookie, String refreshCookie)
+{
+	Response response;
+	
+	ResponseBean&lt;String&gt; responseBean = new ResponseBean&lt;&gt;();
+	
+	// 자동 로그인 시도
+	try
+	{
+		// 접근 토큰 쿠키가 있을 경우
+		if (accessCookie != null)
+		{
+			responseBean.setFlag(true);
+			responseBean.setTitle(&quot;success&quot;);
+			responseBean.setMessage(&quot;auto authorized success&quot;);
+			responseBean.setBody(null);
+			
+			response = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();
+		}
+		
+		// 리프레쉬 토큰 쿠키가 없을 경우
+		else if (refreshCookie == null)
+		{
+			responseBean.setFlag(false);
+			responseBean.setTitle(&quot;fail&quot;);
+			responseBean.setMessage(&quot;refresh token is empty&quot;);
+			responseBean.setBody(null);
+			
+			response = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();
+		}
+		
+		// 리프레쉬 토큰 쿠키가 있을 경우
+		else
+		{
+			Jws&lt;Claims&gt; refreshJws = JwtModule.openJwt(refreshCookie);
+			
+			String refreshToken = refreshJws.getBody().get(&quot;refresh&quot;, String.class);
+			String platform = refreshJws.getBody().get(&quot;platform&quot;, String.class);
+			
+			AuthModule authModule = getAuthModule(platform);
+			
+			OAuth2AccessToken oAuth2AccessToken = authModule.getRefreshAccessToken(refreshToken);
+			
+			String accessToken = oAuth2AccessToken.getAccessToken();
+			
+			HashMap&lt;String, Object&gt; accessMap = new HashMap&lt;&gt;();
+			accessMap.put(&quot;access&quot;, accessToken);
+			accessMap.put(&quot;platform&quot;, platform);
+			
+			HashMap&lt;String, Object&gt; refreshMap = new HashMap&lt;&gt;();
+			refreshMap.put(&quot;refresh&quot;, refreshToken);
+			refreshMap.put(&quot;platform&quot;, platform);
+			
+			String uuid = UUID.randomUUID().toString();
+			
+			String accessJwt = JwtModule.generateJwt(uuid, accessMap);
+			String refreshJwt = JwtModule.generateJwt(uuid, refreshMap);
+			
+			NewCookie newAccessCookie = new NewCookie(&quot;access&quot;, accessJwt, &quot;/oauth2&quot;, &quot;.itcode.dev&quot;, &quot;access token&quot;, -1, true, true);
+			NewCookie newRefreshCookie = new NewCookie(&quot;refresh&quot;, refreshJwt, &quot;/oauth2&quot;, &quot;.itcode.dev&quot;, &quot;refresh token&quot;, 86400 * 7 + 3600 * 9, true, true);
+			
+			responseBean.setFlag(true);
+			responseBean.setTitle(&quot;success&quot;);
+			responseBean.setMessage(&quot;auto authorized success&quot;);
+			responseBean.setBody(null);
+			
+			response = Response.ok(responseBean, MediaType.APPLICATION_JSON).cookie(newAccessCookie, newRefreshCookie).build();
+		}
+	}
+	
+	// 예외
+	catch (Exception e)
+	{
+		e.printStackTrace();
+		
+		responseBean.setFlag(false);
+		responseBean.setTitle(e.getClass().getSimpleName());
+		responseBean.setMessage(e.getMessage());
+		responseBean.setBody(null);
+		
+		NewCookie newAccessCookie = new NewCookie(&quot;access&quot;, null, &quot;/oauth2&quot;, &quot;.itcode.dev&quot;, &quot;access token&quot;, 0, true, true);
+		NewCookie newRefreshCookie = new NewCookie(&quot;refresh&quot;, null, &quot;/oauth2&quot;, &quot;.itcode.dev&quot;, &quot;refresh token&quot;, 0, true, true);
+		
+		response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).cookie(newAccessCookie, newRefreshCookie).build();
+	}
+	
+	return response;
+}</code></pre></div></div></pre>
+<p class="my-4">If the access cookie is already present, since we already have valid authentication info, no further action is taken and we simply move on.</p>
+<p class="my-4">If <span class="text-orange-400">there&#x27;s no access cookie but only a refresh cookie exists, this uses it to reissue the Access Token and refresh the authentication info</span>, performing login automatically.</p>
+<p class="my-4">The login logic itself is the same as the regular login method — only the Access Token is refreshed using the Refresh Token.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Method-to-Return-the-Logout-Response" id="Method-to-Return-the-Logout-Response"><h3 class="text-2xl font-bold" node="[object Object]">Method to Return the Logout Response</h3></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">A method that performs logout by <span class="text-blue-400">removing the authentication info</span>.</p>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-java" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JAVA</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>public Response postLogoutResponse()
+{
+	Response response;
+
+	ResponseBean&lt;String&gt; responseBean = new ResponseBean&lt;&gt;();
+
+	// 로그아웃 응답 생성 시도
+	try
+	{
+		NewCookie accessCookie = new NewCookie(&quot;access&quot;, null, &quot;/oauth2&quot;, &quot;.itcode.dev&quot;, &quot;access token&quot;, 0, true, true);
+		NewCookie refreshCookie = new NewCookie(&quot;refresh&quot;, null, &quot;/oauth2&quot;, &quot;.itcode.dev&quot;, &quot;refresh token&quot;, 0, true, true);
+
+		responseBean.setFlag(true);
+		responseBean.setTitle(&quot;success&quot;);
+		responseBean.setMessage(&quot;logout success&quot;);
+		responseBean.setBody(null);
+
+		response = Response.ok(responseBean, MediaType.APPLICATION_JSON).cookie(accessCookie, refreshCookie).build();
+	}
+
+	// 예외
+	catch (Exception e)
+	{
+		e.printStackTrace();
+
+		responseBean.setFlag(false);
+		responseBean.setTitle(e.getClass().getSimpleName());
+		responseBean.setMessage(e.getMessage());
+		responseBean.setBody(null);
+
+		response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();
+	}
+
+	return response;
+}</code></pre></div></div></pre>
+<p class="my-4">The authentication info is cookie-based. Since the <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">HttpOnly</span> option is enabled for security when the server creates the cookies, JavaScript cannot touch the access and refresh cookies.</p>
+<p class="my-4">The server overwrites the cookie expiration time with 0 to remove the authentication cookies.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Full-Code" id="Full-Code"><h3 class="text-2xl font-bold" node="[object Object]">Full Code</h3></a><div class="mt-1 w-full border-b"></div></div>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-java" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JAVA</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>package oauth.account.process;
+
+import com.github.scribejava.core.model.OAuth2AccessToken;
+import global.bean.ResponseBean;
+import global.module.JwtModule;
+import global.module.Process;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jws;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.NewCookie;
+import jakarta.ws.rs.core.Response;
+import oauth.account.module.AuthModule;
+
+import javax.management.BadAttributeValueExpException;
+import java.util.HashMap;
+import java.util.Objects;
+import java.util.UUID;
+
+/**
+ * 계정 POST 프로세스 클래스
+ *
+ * @author RWB
+ * @since 2021.10.02 Sat 00:53:52
+ */
+public class AccountPostProcess extends Process
+{
+	/**
+	 * 생성자 메서드
+	 *
+	 * @param request: [HttpServletRequest] HttpServletRequest 객체
+	 * @param response: [HttpServletResponse] HttpServletResponse 객체
+	 */
+	public AccountPostProcess(HttpServletRequest request, HttpServletResponse response)
+	{
+		super(request, response);
+	}
+	
+	/**
+	 * 로그인 응답 반환 메서드
+	 *
+	 * @param platform: [String] 플랫폼
+	 * @param code: [String] 인증 코드
+	 * @param state: [String] 고유 상태값
+	 *
+	 * @return [Response] 응답 객체
+	 */
+	public Response postLoginResponse(String platform, String code, String state)
+	{
+		Response response;
+		
+		ResponseBean&lt;String&gt; responseBean = new ResponseBean&lt;&gt;();
+		
+		HttpSession session = request.getSession();
+		
+		// 로그인 응답 생성 시도
+		try
+		{
+			Object sessionState = Objects.requireNonNull(session.getAttribute(&quot;state&quot;));
+			
+			// 고유 상태값이 일치하지 않을 경우
+			if (!state.equals(sessionState))
+			{
+				throw new BadAttributeValueExpException(&quot;state is mismatched&quot;);
+			}
+			
+			AuthModule authModule = getAuthModule(platform);
+			
+			OAuth2AccessToken oAuth2AccessToken = authModule.getAccessToken(code);
+			
+			String accessToken = oAuth2AccessToken.getAccessToken();
+			String refreshToken = oAuth2AccessToken.getRefreshToken();
+			
+			HashMap&lt;String, Object&gt; accessMap = new HashMap&lt;&gt;();
+			accessMap.put(&quot;access&quot;, accessToken);
+			accessMap.put(&quot;platform&quot;, platform);
+			
+			HashMap&lt;String, Object&gt; refreshMap = new HashMap&lt;&gt;();
+			refreshMap.put(&quot;refresh&quot;, refreshToken);
+			refreshMap.put(&quot;platform&quot;, platform);
+			
+			String accessJwt = JwtModule.generateJwt(state, accessMap);
+			String refreshJwt = JwtModule.generateJwt(state, refreshMap);
+			
+			NewCookie accessCookie = new NewCookie(&quot;access&quot;, accessJwt, &quot;/oauth2&quot;, &quot;.itcode.dev&quot;, &quot;access token&quot;, -1, true, true);
+			NewCookie refreshCookie = new NewCookie(&quot;refresh&quot;, refreshJwt, &quot;/oauth2&quot;, &quot;.itcode.dev&quot;, &quot;refresh token&quot;, refreshToken == null ? 0 : 86400 * 7 + 3600 * 9, true, true);
+			
+			responseBean.setFlag(true);
+			responseBean.setTitle(&quot;success&quot;);
+			responseBean.setMessage(&quot;authorized success&quot;);
+			responseBean.setBody(null);
+			
+			response = Response.ok(responseBean, MediaType.APPLICATION_JSON).cookie(accessCookie, refreshCookie).build();
+		}
+		
+		// 예외
+		catch (Exception e)
+		{
+			e.printStackTrace();
+			
+			responseBean.setFlag(false);
+			responseBean.setTitle(e.getClass().getSimpleName());
+			responseBean.setMessage(e.getMessage());
+			responseBean.setBody(null);
+			
+			response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();
+		}
+		
+		// 시도 후
+		finally
+		{
+			session.invalidate();
+		}
+		
+		return response;
+	}
+	
+	/**
+	 * 자동 로그인 응답 반환 메서드
+	 *
+	 * @param accessCookie: [String] 접근 토큰 쿠키
+	 * @param refreshCookie: [String] 리프레쉬 토큰 쿠키
+	 *
+	 * @return [Response] 응답 객체
+	 */
+	public Response postAutoLoginResponse(String accessCookie, String refreshCookie)
+	{
+		Response response;
+		
+		ResponseBean&lt;String&gt; responseBean = new ResponseBean&lt;&gt;();
+		
+		// 자동 로그인 시도
+		try
+		{
+			// 접근 토큰 쿠키가 있을 경우
+			if (accessCookie != null)
+			{
+				responseBean.setFlag(true);
+				responseBean.setTitle(&quot;success&quot;);
+				responseBean.setMessage(&quot;auto authorized success&quot;);
+				responseBean.setBody(null);
+				
+				response = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();
+			}
+			
+			// 리프레쉬 토큰 쿠키가 없을 경우
+			else if (refreshCookie == null)
+			{
+				responseBean.setFlag(false);
+				responseBean.setTitle(&quot;fail&quot;);
+				responseBean.setMessage(&quot;refresh token is empty&quot;);
+				responseBean.setBody(null);
+				
+				response = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();
+			}
+			
+			// 리프레쉬 토큰 쿠키가 있을 경우
+			else
+			{
+				Jws&lt;Claims&gt; refreshJws = JwtModule.openJwt(refreshCookie);
+				
+				String refreshToken = refreshJws.getBody().get(&quot;refresh&quot;, String.class);
+				String platform = refreshJws.getBody().get(&quot;platform&quot;, String.class);
+				
+				AuthModule authModule = getAuthModule(platform);
+				
+				OAuth2AccessToken oAuth2AccessToken = authModule.getRefreshAccessToken(refreshToken);
+				
+				String accessToken = oAuth2AccessToken.getAccessToken();
+				
+				HashMap&lt;String, Object&gt; accessMap = new HashMap&lt;&gt;();
+				accessMap.put(&quot;access&quot;, accessToken);
+				accessMap.put(&quot;platform&quot;, platform);
+				
+				HashMap&lt;String, Object&gt; refreshMap = new HashMap&lt;&gt;();
+				refreshMap.put(&quot;refresh&quot;, refreshToken);
+				refreshMap.put(&quot;platform&quot;, platform);
+				
+				String uuid = UUID.randomUUID().toString();
+				
+				String accessJwt = JwtModule.generateJwt(uuid, accessMap);
+				String refreshJwt = JwtModule.generateJwt(uuid, refreshMap);
+				
+				NewCookie newAccessCookie = new NewCookie(&quot;access&quot;, accessJwt, &quot;/oauth2&quot;, &quot;.itcode.dev&quot;, &quot;access token&quot;, -1, true, true);
+				NewCookie newRefreshCookie = new NewCookie(&quot;refresh&quot;, refreshJwt, &quot;/oauth2&quot;, &quot;.itcode.dev&quot;, &quot;refresh token&quot;, 86400 * 7 + 3600 * 9, true, true);
+				
+				responseBean.setFlag(true);
+				responseBean.setTitle(&quot;success&quot;);
+				responseBean.setMessage(&quot;auto authorized success&quot;);
+				responseBean.setBody(null);
+				
+				response = Response.ok(responseBean, MediaType.APPLICATION_JSON).cookie(newAccessCookie, newRefreshCookie).build();
+			}
+		}
+		
+		// 예외
+		catch (Exception e)
+		{
+			e.printStackTrace();
+			
+			responseBean.setFlag(false);
+			responseBean.setTitle(e.getClass().getSimpleName());
+			responseBean.setMessage(e.getMessage());
+			responseBean.setBody(null);
+			
+			NewCookie newAccessCookie = new NewCookie(&quot;access&quot;, null, &quot;/oauth2&quot;, &quot;.itcode.dev&quot;, &quot;access token&quot;, 0, true, true);
+			NewCookie newRefreshCookie = new NewCookie(&quot;refresh&quot;, null, &quot;/oauth2&quot;, &quot;.itcode.dev&quot;, &quot;refresh token&quot;, 0, true, true);
+			
+			response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).cookie(newAccessCookie, newRefreshCookie).build();
+		}
+		
+		return response;
+	}
+	
+	/**
+	 * 로그아웃 응답 반환 메서드
+	 *
+	 * @return [Response] 응답 객체
+	 */
+	public Response postLogoutResponse()
+	{
+		Response response;
+		
+		ResponseBean&lt;String&gt; responseBean = new ResponseBean&lt;&gt;();
+		
+		// 로그아웃 응답 생성 시도
+		try
+		{
+			NewCookie accessCookie = new NewCookie(&quot;access&quot;, null, &quot;/oauth2&quot;, &quot;.itcode.dev&quot;, &quot;access token&quot;, 0, true, true);
+			NewCookie refreshCookie = new NewCookie(&quot;refresh&quot;, null, &quot;/oauth2&quot;, &quot;.itcode.dev&quot;, &quot;refresh token&quot;, 0, true, true);
+			
+			responseBean.setFlag(true);
+			responseBean.setTitle(&quot;success&quot;);
+			responseBean.setMessage(&quot;logout success&quot;);
+			responseBean.setBody(null);
+			
+			response = Response.ok(responseBean, MediaType.APPLICATION_JSON).cookie(accessCookie, refreshCookie).build();
+		}
+		
+		// 예외
+		catch (Exception e)
+		{
+			e.printStackTrace();
+			
+			responseBean.setFlag(false);
+			responseBean.setTitle(e.getClass().getSimpleName());
+			responseBean.setMessage(e.getMessage());
+			responseBean.setBody(null);
+			
+			response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();
+		}
+		
+		return response;
+	}
+}</code></pre></div></div></pre>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Implementing-the-PUT-Process" id="Implementing-the-PUT-Process"><h2 class="text-3xl font-bold" node="[object Object]">Implementing the PUT Process</h2></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">Let&#x27;s implement the process that groups together the operations corresponding to <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">PUT</span> among the account processes.</p>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Method to return the response for renewing the consent-to-provide-information URL</li>
+</ul>
+<p class="my-4">There&#x27;s a single method corresponding to <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">PUT</span>. It consists of operations for modifying data.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Method-to-Return-the-Response-for-Renewing-the-Consent-to-Provide-Information-URL" id="Method-to-Return-the-Response-for-Renewing-the-Consent-to-Provide-Information-URL"><h3 class="text-2xl font-bold" node="[object Object]">Method to Return the Response for Renewing the Consent-to-Provide-Information URL</h3></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">This method <span class="text-blue-400">returns the URL that newly renews the consent to provide information</span>.</p>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-java" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JAVA</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>public Response putUpdateAuthorizationUrl(String accessCookie)
+{
+	Response response;
+
+	ResponseBean&lt;String&gt; responseBean = new ResponseBean&lt;&gt;();
+
+	// 정보 제공 동의 갱신 URL 응답 생성 시도
+	try
+	{
+		String state = UUID.randomUUID().toString();
+
+		Jws&lt;Claims&gt; jws = JwtModule.openJwt(accessCookie);
+
+		String platform = jws.getBody().get(&quot;platform&quot;, String.class);
+
+		AuthModule authModule = getAuthModule(platform);
+
+		String url = authModule.getUpdateAuthorizationUrl(state);
+
+		// URL이 null일 경우
+		if (url == null)
+		{
+			responseBean.setFlag(false);
+			responseBean.setTitle(&quot;skipped&quot;);
+			responseBean.setMessage(Util.builder(platform, &quot; doesn&#x27;t need that service&quot;));
+			responseBean.setBody(null);
+		}
+
+		// URL이 유효할 경우
+		else
+		{
+			request.getSession().setAttribute(&quot;state&quot;, state);
+
+			responseBean.setFlag(true);
+			responseBean.setTitle(&quot;success&quot;);
+			responseBean.setMessage(Util.builder(platform, &quot; reauthrorization url response success&quot;));
+			responseBean.setBody(url);
+		}
+
+		response = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();
+	}
+
+	// 예외
+	catch (Exception e)
+	{
+		e.printStackTrace();
+
+		responseBean.setFlag(false);
+		responseBean.setTitle(e.getClass().getSimpleName());
+		responseBean.setMessage(e.getMessage());
+		responseBean.setBody(null);
+
+		response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();
+	}
+
+	return response;
+}</code></pre></div></div></pre>
+<p class="my-4">The first time you log in, you go through a process of consenting to or refusing the information the service requires. Afterward, when requesting user info, only the information the user has consented to is provided, based on their consent record.</p>
+<p class="my-4">If, while the service is running, the required information changes and additional information is needed, we need to renew the consent to provide information.</p>
+<p class="my-4">The service redirects to the returned URL, renews the consent, and then a <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">code</span> reflecting the updated information is returned. The process after that follows the same steps as login.</p>
+<br/>
+<p class="my-4">In other words, <span class="text-blue-400">renewing consent to provide information is essentially the same as performing login again with newly updated information</span>.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Full-Code" id="Full-Code"><h3 class="text-2xl font-bold" node="[object Object]">Full Code</h3></a><div class="mt-1 w-full border-b"></div></div>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-java" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JAVA</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>package oauth.account.process;
+
+import global.bean.ResponseBean;
+import global.module.JwtModule;
+import global.module.Process;
+import global.module.Util;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jws;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+import oauth.account.module.AuthModule;
+
+import java.util.UUID;
+
+/**
+ * 계정 PUT 프로세스 클래스
+ *
+ * @author RWB
+ * @since 2021.10.19 Tue 21:56:32
+ */
+public class AccountPutProcess extends Process
+{
+	/**
+	 * 생성자 메서드
+	 *
+	 * @param request: [HttpServletRequest] HttpServletRequest 객체
+	 * @param response: [HttpServletResponse] HttpServletResponse 객체
+	 */
+	public AccountPutProcess(HttpServletRequest request, HttpServletResponse response)
+	{
+		super(request, response);
+	}
+	
+	/**
+	 * 정보 제공 동의 갱신 URL 응답 반환 메서드
+	 *
+	 * @param accessCookie: [String] 접근 토큰 쿠키
+	 *
+	 * @return [Response] 응답 객체
+	 */
+	public Response putUpdateAuthorizationUrl(String accessCookie)
+	{
+		Response response;
+		
+		ResponseBean&lt;String&gt; responseBean = new ResponseBean&lt;&gt;();
+		
+		// 정보 제공 동의 갱신 URL 응답 생성 시도
+		try
+		{
+			String state = UUID.randomUUID().toString();
+			
+			Jws&lt;Claims&gt; jws = JwtModule.openJwt(accessCookie);
+			
+			String platform = jws.getBody().get(&quot;platform&quot;, String.class);
+			
+			AuthModule authModule = getAuthModule(platform);
+			
+			String url = authModule.getUpdateAuthorizationUrl(state);
+			
+			// URL이 null일 경우
+			if (url == null)
+			{
+				responseBean.setFlag(false);
+				responseBean.setTitle(&quot;skipped&quot;);
+				responseBean.setMessage(Util.builder(platform, &quot; doesn&#x27;t need that service&quot;));
+				responseBean.setBody(null);
+			}
+			
+			// URL이 유효할 경우
+			else
+			{
+				request.getSession().setAttribute(&quot;state&quot;, state);
+				
+				responseBean.setFlag(true);
+				responseBean.setTitle(&quot;success&quot;);
+				responseBean.setMessage(Util.builder(platform, &quot; reauthrorization url response success&quot;));
+				responseBean.setBody(url);
+			}
+			
+			response = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();
+		}
+		
+		// 예외
+		catch (Exception e)
+		{
+			e.printStackTrace();
+			
+			responseBean.setFlag(false);
+			responseBean.setTitle(e.getClass().getSimpleName());
+			responseBean.setMessage(e.getMessage());
+			responseBean.setBody(null);
+			
+			response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();
+		}
+		
+		return response;
+	}
+}</code></pre></div></div></pre>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Implementing-the-DELETE-Process" id="Implementing-the-DELETE-Process"><h2 class="text-3xl font-bold" node="[object Object]">Implementing the DELETE Process</h2></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">Let&#x27;s implement the process that groups together the operations corresponding to <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">DELETE</span> among the account processes.</p>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Method to return the unlink response</li>
+</ul>
+<p class="my-4">There&#x27;s a single method corresponding to <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">DELETE</span>. It mostly consists of operations for deleting data.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Method-to-Return-the-Unlink-Response" id="Method-to-Return-the-Unlink-Response"><h3 class="text-2xl font-bold" node="[object Object]">Method to Return the Unlink Response</h3></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">This method <span class="text-blue-400">completely unlinks from the platform and performs logout</span>.</p>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-java" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JAVA</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>public Response deleteInfoResponse(String accessCookie)
+{
+	Response response;
+
+	ResponseBean&lt;String&gt; responseBean = new ResponseBean&lt;&gt;();
+
+	// 연동 해제 응답 생성 시도
+	try
+	{
+		Jws&lt;Claims&gt; jws = JwtModule.openJwt(accessCookie);
+
+		String accessToken = jws.getBody().get(&quot;access&quot;, String.class);
+		String platform = jws.getBody().get(&quot;platform&quot;, String.class);
+
+		AuthModule authModule = getAuthModule(platform);
+
+		// 연동 해제에 성공할 경우
+		if (authModule.deleteInfo(accessToken))
+		{
+			response = new AccountPostProcess(request, this.response).postLogoutResponse();
+		}
+
+		// 아닐 경우
+		else
+		{
+			throw new RequestAuthenticationException(&quot;revoke fail&quot;);
+		}
+	}
+
+	// 예외
+	catch (Exception e)
+	{
+		e.printStackTrace();
+
+		responseBean.setFlag(false);
+		responseBean.setTitle(e.getClass().getSimpleName());
+		responseBean.setMessage(e.getMessage());
+		responseBean.setBody(null);
+
+		response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();
+	}
+
+	return response;
+}</code></pre></div></div></pre>
+<p class="my-4">Once you unlink from the platform, the previously issued Access Token and Refresh Token expire and can no longer function.</p>
+<p class="my-4">This is usually done as part of account withdrawal, but since this project doesn&#x27;t have a separate sign-up process, it simply logs the user out automatically.</p>
+<p class="my-4">The next time the user logs in, they&#x27;ll go through the same process as logging in for the first time.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Full-Code" id="Full-Code"><h3 class="text-2xl font-bold" node="[object Object]">Full Code</h3></a><div class="mt-1 w-full border-b"></div></div>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-java" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JAVA</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>package oauth.account.process;
+
+import global.bean.ResponseBean;
+import global.module.JwtModule;
+import global.module.Process;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jws;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+import oauth.account.module.AuthModule;
+import org.glassfish.jersey.client.authentication.RequestAuthenticationException;
+
+/**
+ * 계정 DELETE 프로세스 클래스
+ *
+ * @author RWB
+ * @since 2021.10.02 Sat 00:53:52
+ */
+public class AccountDeleteProcess extends Process
+{
+	/**
+	 * 생성자 메서드
+	 *
+	 * @param request: [HttpServletRequest] HttpServletRequest 객체
+	 * @param response: [HttpServletResponse] HttpServletResponse 객체
+	 */
+	public AccountDeleteProcess(HttpServletRequest request, HttpServletResponse response)
+	{
+		super(request, response);
+	}
+	
+	/**
+	 * 연동 해제 응답 반환 메서드
+	 *
+	 * @param accessCookie: [String] 접근 토큰 쿠키
+	 *
+	 * @return [Response] 응답 객체
+	 */
+	public Response deleteInfoResponse(String accessCookie)
+	{
+		Response response;
+		
+		ResponseBean&lt;String&gt; responseBean = new ResponseBean&lt;&gt;();
+		
+		// 연동 해제 응답 생성 시도
+		try
+		{
+			Jws&lt;Claims&gt; jws = JwtModule.openJwt(accessCookie);
+			
+			String accessToken = jws.getBody().get(&quot;access&quot;, String.class);
+			String platform = jws.getBody().get(&quot;platform&quot;, String.class);
+			
+			AuthModule authModule = getAuthModule(platform);
+			
+			// 연동 해제에 성공할 경우
+			if (authModule.deleteInfo(accessToken))
+			{
+				response = new AccountPostProcess(request, this.response).postLogoutResponse();
+			}
+			
+			// 아닐 경우
+			else
+			{
+				throw new RequestAuthenticationException(&quot;revoke fail&quot;);
+			}
+		}
+		
+		// 예외
+		catch (Exception e)
+		{
+			e.printStackTrace();
+			
+			responseBean.setFlag(false);
+			responseBean.setTitle(e.getClass().getSimpleName());
+			responseBean.setMessage(e.getMessage());
+			responseBean.setBody(null);
+			
+			response = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();
+		}
+		
+		return response;
+	}
+}</code></pre></div></div></pre>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Wrap-up" id="Wrap-up"><h1 class="text-4xl font-bold" node="[object Object]">Wrap-up</h1></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">With this, the project&#x27;s implementation is complete. Thanks to returning the different authentication modules — <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">NaverAuthModule</span>, <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">GoogleAuthModule</span>, and so on — through the shared parent object <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">AuthModule</span>, I was able to avoid complicated branching and duplicated code.</p>
+<p class="my-4">The moment a pipeline splits, the sub-pipelines connected to it also tend to be forced apart. Thanks to properly designing the lowest-level module, you can see that the upper pipelines built on top of it can be managed as a single unit.</p>
+<p class="my-4">The next chapter covers how to set up the controllers using Jersey.</p></div><div><div class="flex flex-wrap gap-2"><span class="inline-flex items-center rounded-md bg-secondary px-2.5 py-1 font-semibold text-secondary-foreground text-xs transition-colors hover:bg-secondary/80" data-testid="ContentTag"># <!-- -->JAVA</span><span class="inline-flex items-center rounded-md bg-secondary px-2.5 py-1 font-semibold text-secondary-foreground text-xs transition-colors hover:bg-secondary/80" data-testid="ContentTag"># <!-- -->OAuth2.0</span></div><div class="mt-4 flex w-full items-center justify-end border-t pt-4"><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 bg-secondary text-secondary-foreground hover:bg-[color-mix(in_oklch,var(--secondary),var(--foreground)_5%)] aria-expanded:bg-secondary aria-expanded:text-secondary-foreground h-9 gap-1.5 px-2.5 in-data-[slot=button-group]:rounded-md has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 w-20"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>List</button></div></div><div class="grid w-full grid-cols-1 gap-4 sm:grid-cols-2" data-testid="ContentAdjacent"><div class="w-full"><a data-testid="ContentAdjacentPrev" href="/en/posts/2021/10/23/oauth2-java-server-7" class="group flex flex-col items-stretch overflow-hidden rounded-lg border transition-colors hover:bg-accent hover:text-accent-foreground"><div class="aspect-32/8 size-full overflow-hidden"><img alt="[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 7. Applying for the GitHub OAuth Service and Implementing the Module" class="size-full shrink-0 object-cover transition transition-scale group-hover:scale-105" height="100%" src="https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png" width="100%"/></div><div class="flex flex-1 items-center gap-2 p-4"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left shrink-0 text-muted-foreground" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg><div class="flex flex-col gap-1 overflow-hidden"><p class="text-muted-foreground text-xs">Previous</p><p class="truncate font-medium">[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 7. Applying for the GitHub OAuth Service and Implementing the Module</p></div></div></a></div><div class="w-full"><a data-testid="ContentAdjacentNext" href="/en/posts/2021/10/25/oauth2-java-server-10" class="group flex flex-col items-stretch overflow-hidden rounded-lg border transition-colors hover:bg-accent hover:text-accent-foreground"><div class="aspect-32/8 size-full overflow-hidden"><img alt="[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 10. Implementing the Controllers" class="size-full shrink-0 object-cover transition transition-scale group-hover:scale-105" height="100%" src="https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png" width="100%"/></div><div class="flex flex-1 items-center justify-end gap-2 p-4"><div class="flex flex-col gap-1 overflow-hidden"><p class="text-end text-muted-foreground text-xs">Next</p><p class="truncate font-medium">[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 10. Implementing the Controllers</p></div><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right shrink-0 text-muted-foreground" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></div></a></div></div><div class="w-full" data-url="/posts/2021/10/24/oauth2-java-server-8"></div></div></div></div></section><footer class="relative mt-100" data-testid="AppFooter"><div class="absolute bottom-full left-0 h-50 w-full"><div class="relative size-full"><svg class="mb--2 min-h-10 transition duration-300 fill-(--wave16) absolute bottom-full left-0 z-1 h-10 w-full" data-hour="16" data-testid="Wave" preserveAspectRatio="none" shape-rendering="auto" viewBox="0 24 150 28" xmlns="http://www.w3.org/2000/svg"><defs><path d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" id="gentle-wave"></path></defs><g><use class="animation-duration-7000 animate-move-forever delay-[-2s]" fill="inherit" opacity="0.7" x="48" xlink:href="#gentle-wave" y="0"></use><use class="animation-duration-10000 animate-move-forever delay-[-3s]" fill="inherit" opacity="0.5" x="48" xlink:href="#gentle-wave" y="3"></use><use class="animation-duration-13000 animate-move-forever delay-[-4s]" fill="inherit" opacity="0.3" x="48" xlink:href="#gentle-wave" y="5"></use><use class="animation-duration-20000 animate-move-forever delay-[-5s]" fill="inherit" x="48" xlink:href="#gentle-wave" y="7"></use></g></svg><div class="transition duration-300 bg-(image:--sky16) absolute top-0 left-0 size-full" data-component="Sky" data-hour="16"></div><img alt="ship" class="absolute -bottom-2 left-1/10 z-1 size-20 animate-boat sm:size-25" height="auto" src="https://github.com/user-attachments/assets/e2a11c89-57af-4944-9068-bf237369f8b3" width="auto"/><svg class="mb--2 min-h-10 transition duration-300 fill-(--wave7) absolute bottom-0 left-0 z-2 h-10 w-full" data-hour="7" data-testid="Wave" preserveAspectRatio="none" shape-rendering="auto" viewBox="0 24 150 28" xmlns="http://www.w3.org/2000/svg"><defs><path d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" id="gentle-wave"></path></defs><g><use class="animation-duration-7000 animate-move-forever delay-[-2s]" fill="inherit" opacity="0.7" x="48" xlink:href="#gentle-wave" y="0"></use><use class="animation-duration-10000 animate-move-forever delay-[-3s]" fill="inherit" opacity="0.5" x="48" xlink:href="#gentle-wave" y="3"></use><use class="animation-duration-13000 animate-move-forever delay-[-4s]" fill="inherit" opacity="0.3" x="48" xlink:href="#gentle-wave" y="5"></use><use class="animation-duration-20000 animate-move-forever delay-[-5s]" fill="inherit" x="48" xlink:href="#gentle-wave" y="7"></use></g></svg></div></div><div class="min-h-10 bg-(--wave7)"><div class="flex w-full flex-col items-center gap-6 px-6 py-12 text-white"><div class="flex flex-col items-center gap-1 text-center"><div class="flex items-center gap-2"><img alt="blog.itcode.dev" height="24" src="/logo.png" width="24"/><p class="font-bold lang-en:font-playwright text-xl">Notes from the π-th Alpaca</p></div><span class="text-white/70 text-xs">7.0.1</span></div><div class="flex flex-wrap items-center justify-center gap-1"><a aria-label="Homepage" class="flex size-9 items-center justify-center rounded-full p-2 text-white/80 transition-colors hover:bg-white/10 hover:text-white" href="https://itcode.dev" rel="noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg></a><a aria-label="GitHub" class="flex size-9 items-center justify-center rounded-full p-2 text-white/80 transition-colors hover:bg-white/10 hover:text-white" href="https://github.com/RWB0104" rel="noreferrer" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a><a aria-label="LinkedIn" class="flex size-9 items-center justify-center rounded-full p-2 text-white/80 transition-colors hover:bg-white/10 hover:text-white" href="https://www.linkedin.com/in/itcode" rel="noreferrer" target="_blank"><svg viewBox="0 0 256 256" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="[&amp;&gt;path]:fill-inherit"><path d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 67.013ZM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009-.002-12.157 9.851-22.014 22.008-22.016 12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453" fill="#0A66C2"></path></svg></a><a aria-label="Email" class="flex size-9 items-center justify-center rounded-full p-2 text-white/80 transition-colors hover:bg-white/10 hover:text-white" href="mailto:psj2716@gmail.com" rel="noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg></a><a aria-label="Sitemap" class="flex size-9 items-center justify-center rounded-full p-2 text-white/80 transition-colors hover:bg-white/10 hover:text-white" href="/sitemap.xml" rel="noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open-text" aria-hidden="true"><path d="M12 5v16"></path><path d="M16 13h2"></path><path d="M16 9h2"></path><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"></path><path d="M6 13h2"></path><path d="M6 9h2"></path></svg></a><a aria-label="RSS" class="flex size-9 items-center justify-center rounded-full p-2 text-white/80 transition-colors hover:bg-white/10 hover:text-white" href="/rss/en.xml" rel="noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rss" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></div><div class="flex flex-col items-center gap-0.5 text-center text-white/50 text-xs"><span>Developed by <!-- -->RWB<!-- --> since 2021.05</span><span>7th upgraded at 2026.08</span></div></div></div></footer><div class="fixed right-8 bottom-8 z-10 flex flex-col items-end gap-4" data-testid="Floater"><div role="group" data-slot="button-group" data-orientation="vertical" class="flex w-fit items-stretch *:focus-visible:relative *:focus-visible:z-10 has-[&gt;[data-slot=button-group]]:gap-2 has-[select[aria-hidden=true]:last-child]:[&amp;&gt;[data-slot=select-trigger]:last-of-type]:rounded-r-md [&amp;&gt;[data-slot=select-trigger]:not([class*=&#x27;w-&#x27;])]:w-fit [&amp;&gt;input]:flex-1 flex-col *:data-slot:rounded-b-none [&amp;&gt;[data-slot]:not(:has(~[data-slot]))]:rounded-b-md! [&amp;&gt;[data-slot]~[data-slot]]:rounded-t-none [&amp;&gt;[data-slot]~[data-slot]]:border-t-0"><button type="button" tabindex="0" data-slot="button" aria-label="맨 위로 이동" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 border-border bg-background shadow-xs hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-up" aria-hidden="true"><path d="m18 15-6-6-6 6"></path></svg></button><button type="button" tabindex="0" data-slot="button" aria-label="맨 아래로 이동" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 border-border bg-background shadow-xs hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button></div></div></main></div>
+        
+        <script id="vike_pageContext" type="application/json">{"locale":"en","urlLogical":"\/posts\/2021\/10\/24\/oauth2-java-server-8","pageId":"\/pages\/posts\/@id","routeParams":{"*":"2021\/10\/24\/oauth2-java-server-8"},"data":{"adjacent":{"next":{"image":"https:\/\/user-images.githubusercontent.com\/50317129\/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 10. Implementing the Controllers","url":"\/posts\/2021\/10\/25\/oauth2-java-server-10"},"prev":{"image":"https:\/\/user-images.githubusercontent.com\/50317129\/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 7. Applying for the GitHub OAuth Service and Implementing the Module","url":"\/posts\/2021\/10\/23\/oauth2-java-server-7"}},"detail":{"body":"\n# Overview\n\nFrom chapter 4 through chapter 7, we implemented the authentication module for each platform. In this chapter, we implement the processes, the layer that uses these modules.\n\nProcesses are organized and managed by HTTP method.\n\n\n\n\n\n\n\n\n\n\n# Structure\n\nSince there's nothing beyond account-related operations, the only top-level category is `account`.\n\nThe HTTP methods needed for the work are `GET`, `POST`, `PUT`, and `DELETE`, so we split them up as below.\n\n* `AccountGetProcess` - the account GET process class\n* `AccountPostProcess` - the account POST process class\n* `AccountPutProcess` - the account PUT process class\n* `AccountDeleteProcess` - the account DELETE process class\n\nLogic used for the `GET` method is organized so it belongs in `AccountGetProcess`, and so on.\n\n\n\n\n\n\n\n\n\n\n# Implementing the Processes\n\n\n\n\n## Implementing the Process Abstract Class\n\nTo apply common logic across multiple processes, let's implement a Process abstract class that all process objects will extend.\n\n``` java\npackage global.module;\n\nimport jakarta.servlet.http.HttpServletRequest;\nimport jakarta.servlet.http.HttpServletResponse;\nimport oauth.account.module.AuthModule;\nimport oauth.account.module.GithubAuthModule;\nimport oauth.account.module.GoogleAuthModule;\nimport oauth.account.module.KakaoAuthModule;\nimport oauth.account.module.NaverAuthModule;\n\n\/**\n * 프로세스 추상 클래스\n *\n * @author RWB\n * @since 2021.09.30 Thu 01:14:25\n *\/\nabstract public class Process\n{\n\tprotected HttpServletRequest request;\n\tprotected HttpServletResponse response;\n\t\n\t\/**\n\t * 생성자 메서드\n\t *\n\t * @param request: [HttpServletRequest] HttpServletResponse 객체\n\t * @param response: [HttpServletResponse] HttpServletResponse 객체\n\t *\/\n\tprotected Process(HttpServletRequest request, HttpServletResponse response)\n\t{\n\t\tthis.request = request;\n\t\tthis.response = response;\n\t}\n\t\n\t\/**\n\t * 인증 모듈 반환 메서드\n\t *\n\t * @param platform: [String] 플랫폼\n\t *\n\t * @return [AuthModule] AuthModule 객체\n\t *\n\t * @throws NullPointerException 유효하지 않은 플랫폼\n\t *\/\n\tprotected AuthModule getAuthModule(String platform) throws NullPointerException\n\t{\n\t\treturn switch (platform)\n\t\t\t\t{\n\t\t\t\t\tcase \"naver\" -> NaverAuthModule.getInstance();\n\t\t\t\t\tcase \"google\" -> GoogleAuthModule.getInstance();\n\t\t\t\t\tcase \"kakao\" -> KakaoAuthModule.getInstance();\n\t\t\t\t\tcase \"github\" -> GithubAuthModule.getInstance();\n\t\t\t\t\tdefault -> throw new NullPointerException(Util.builder(\"'\", platform, \"' is invalid platform\"));\n\t\t\t\t};\n\t}\n}\n```\n\nTo make it easy to access the servlet objects `HttpServletRequest` and `HttpServletResponse`, each local variable is declared with the `protected` access modifier.\n\nWhen using the constructor, it's required to always pass `HttpServletRequest` and `HttpServletResponse` as arguments.\n\nThis means every subclass process that extends `Process` is required to accept the servlet objects as arguments, and can access the servlet objects via `request` and `response` inside the process.\n\n\u003cbr \/>\n\n`getAuthModule` is a method that \u003cspan class=\"text-blue-400\">returns the corresponding instance based on each platform's name\u003c\/span>. Since the authentication module is used heavily by the processes, it's declared in `Process` so that every process class that extends it can access this method.\n\nWith this structure, the same process can call the `AuthModule` object for a given platform and use the methods declared for that particular platform.\n\n\n\n\n\n## Implementing the GET Process\n\nLet's implement the process class that groups together the operations corresponding to `GET` among the account processes.\n\n* Method to return the authorization URL response\n* Method to return the user info response\n\nThe operations corresponding to `GET` are the two methods above. They mostly consist of operations that simply fetch data.\n\n\n\n### Method to Return the Authorization URL Response\n\nThis method \u003cspan class=\"text-blue-400\">returns the authorization URL for the platform login\u003c\/span>.\n\nIt obtains the URL via `AuthModule`'s `getAuthorizationUrl` method, builds a response object with that content, and returns it.\n\n``` java\npublic Response getAuthorizationUrlResponse(String platform)\n{\n\tResponse response;\n\t\n\tResponseBean\u003cString> responseBean = new ResponseBean\u003c>();\n\t\n\t\/\/ 인증 URL 응답 생성 시도\n\ttry\n\t{\n\t\tString state = UUID.randomUUID().toString();\n\t\t\n\t\trequest.getSession().setAttribute(\"state\", state);\n\t\t\n\t\tAuthModule authModule = getAuthModule(platform);\n\t\t\n\t\tresponseBean.setFlag(true);\n\t\tresponseBean.setTitle(\"success\");\n\t\tresponseBean.setMessage(Util.builder(platform, \" authrorization url response success\"));\n\t\tresponseBean.setBody(authModule.getAuthorizationUrl(state));\n\t\t\n\t\tresponse = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();\n\t}\n\t\n\t\/\/ 예외\n\tcatch (Exception e)\n\t{\n\t\te.printStackTrace();\n\t\t\n\t\tresponseBean.setFlag(false);\n\t\tresponseBean.setTitle(e.getClass().getSimpleName());\n\t\tresponseBean.setMessage(e.getMessage());\n\t\tresponseBean.setBody(null);\n\t\t\n\t\tresponse = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();\n\t}\n\t\n\treturn response;\n}\n```\n\nTo verify it's the same session, a `state` value is generated when this process runs and passed to `getAuthorizationUrl`. The `state` we pass will appear as a URL parameter in the URL returned by that method.\n\nWe also register that same `state` as a session attribute.\n\nSince a platform login goes through multiple windows, request hijacking is fairly easy. Session information can easily get corrupted in this process, so `state` lets us verify that the entire login flow is happening within the same session.\n\nIf the `state` in the URL doesn't match the `state` in the session, or if there's no session information at all, we can conclude this isn't a legitimate login flow.\n\nThis session value is later used when receiving the Access Token and completing the login operation.\n\n\n\n### Method to Return the User Info Response\n\nThis method \u003cspan class=\"text-blue-400\">retrieves the user response via the Access Token\u003c\/span>.\n\nIt obtains a `UserInfoBean` object via `AuthModule`'s `getUserInfoBean` method, builds a response object with that content, and returns it.\n\n``` java\npublic Response getUserInfoResponse(String accessCookie)\n{\n\tResponse response;\n\t\n\tResponseBean\u003cUserInfoBean> responseBean = new ResponseBean\u003c>();\n\t\n\t\/\/ 사용자 정보 응답 생성 시도\n\ttry\n\t{\n\t\tJws\u003cClaims> jws = JwtModule.openJwt(accessCookie);\n\t\t\n\t\tString accessToken = jws.getBody().get(\"access\", String.class);\n\t\tString platform = jws.getBody().get(\"platform\", String.class);\n\t\t\n\t\tAuthModule authModule = getAuthModule(platform);\n\t\t\n\t\tcom.github.scribejava.core.model.Response userInfoResponse = authModule.getUserInfo(accessToken);\n\t\t\n\t\t\/\/ 응답이 정상적이지 않을 경우\n\t\tif (userInfoResponse.getCode() != 200)\n\t\t{\n\t\t\tthrow new OAuthResponseException(userInfoResponse);\n\t\t}\n\t\t\n\t\tresponseBean.setFlag(true);\n\t\tresponseBean.setTitle(\"success\");\n\t\tresponseBean.setMessage(\"user info response success\");\n\t\tresponseBean.setBody(authModule.getUserInfoBean(userInfoResponse.getBody()));\n\t\t\n\t\tresponse = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();\n\t}\n\t\n\t\/\/ 예외\n\tcatch (Exception e)\n\t{\n\t\te.printStackTrace();\n\t\t\n\t\tresponseBean.setFlag(false);\n\t\tresponseBean.setTitle(e.getClass().getSimpleName());\n\t\tresponseBean.setMessage(e.getMessage());\n\t\tresponseBean.setBody(null);\n\t\t\n\t\tresponse = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();\n\t}\n\t\n\treturn response;\n}\n```\n\nAs will be explained later, \u003cspan class=\"text-green-600\">at login time, the Access Token and Refresh Token are each built into a JWT together with the platform\u003c\/span>, and stored as the access and refresh cookies.\n\nSince each JWT cookie contains the platform info, having just the access cookie is enough to find both the Access Token and its platform.\n\n\n\n### Full Code\n\n``` java\npackage oauth.account.process;\n\nimport com.github.scribejava.core.model.OAuthResponseException;\nimport global.bean.ResponseBean;\nimport global.module.JwtModule;\nimport global.module.Process;\nimport global.module.Util;\nimport io.jsonwebtoken.Claims;\nimport io.jsonwebtoken.Jws;\nimport jakarta.servlet.http.HttpServletRequest;\nimport jakarta.servlet.http.HttpServletResponse;\nimport jakarta.ws.rs.core.MediaType;\nimport jakarta.ws.rs.core.Response;\nimport oauth.account.bean.UserInfoBean;\nimport oauth.account.module.AuthModule;\n\nimport java.util.UUID;\n\n\/**\n * 계정 GET 프로세스 클래스\n *\n * @author RWB\n * @since 2021.09.30 Thu 21:00:48\n *\/\npublic class AccountGetProcess extends Process\n{\n\t\/**\n\t * 생성자 메서드\n\t *\n\t * @param request: [HttpServletRequest] HttpServletRequest 객체\n\t * @param response: [HttpServletResponse] HttpServletResponse 객체\n\t *\/\n\tpublic AccountGetProcess(HttpServletRequest request, HttpServletResponse response)\n\t{\n\t\tsuper(request, response);\n\t}\n\t\n\t\/**\n\t * 인증 URL 응답 반환 메서드\n\t *\n\t * @param platform: [String] 플랫폼\n\t *\n\t * @return [Response] 응답 객체\n\t *\/\n\tpublic Response getAuthorizationUrlResponse(String platform)\n\t{\n\t\tResponse response;\n\t\t\n\t\tResponseBean\u003cString> responseBean = new ResponseBean\u003c>();\n\t\t\n\t\t\/\/ 인증 URL 응답 생성 시도\n\t\ttry\n\t\t{\n\t\t\tString state = UUID.randomUUID().toString();\n\t\t\t\n\t\t\trequest.getSession().setAttribute(\"state\", state);\n\t\t\t\n\t\t\tAuthModule authModule = getAuthModule(platform);\n\t\t\t\n\t\t\tresponseBean.setFlag(true);\n\t\t\tresponseBean.setTitle(\"success\");\n\t\t\tresponseBean.setMessage(Util.builder(platform, \" authrorization url response success\"));\n\t\t\tresponseBean.setBody(authModule.getAuthorizationUrl(state));\n\t\t\t\n\t\t\tresponse = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();\n\t\t}\n\t\t\n\t\t\/\/ 예외\n\t\tcatch (Exception e)\n\t\t{\n\t\t\te.printStackTrace();\n\t\t\t\n\t\t\tresponseBean.setFlag(false);\n\t\t\tresponseBean.setTitle(e.getClass().getSimpleName());\n\t\t\tresponseBean.setMessage(e.getMessage());\n\t\t\tresponseBean.setBody(null);\n\t\t\t\n\t\t\tresponse = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();\n\t\t}\n\t\t\n\t\treturn response;\n\t}\n\t\n\t\/**\n\t * 사용자 정보 응답 반환 메서드\n\t *\n\t * @param accessCookie: [String] 접근 토큰 쿠키\n\t *\n\t * @return [Response] 응답 객체\n\t *\/\n\tpublic Response getUserInfoResponse(String accessCookie)\n\t{\n\t\tResponse response;\n\t\t\n\t\tResponseBean\u003cUserInfoBean> responseBean = new ResponseBean\u003c>();\n\t\t\n\t\t\/\/ 사용자 정보 응답 생성 시도\n\t\ttry\n\t\t{\n\t\t\tJws\u003cClaims> jws = JwtModule.openJwt(accessCookie);\n\t\t\t\n\t\t\tString accessToken = jws.getBody().get(\"access\", String.class);\n\t\t\tString platform = jws.getBody().get(\"platform\", String.class);\n\t\t\t\n\t\t\tAuthModule authModule = getAuthModule(platform);\n\t\t\t\n\t\t\tcom.github.scribejava.core.model.Response userInfoResponse = authModule.getUserInfo(accessToken);\n\t\t\t\n\t\t\t\/\/ 응답이 정상적이지 않을 경우\n\t\t\tif (userInfoResponse.getCode() != 200)\n\t\t\t{\n\t\t\t\tthrow new OAuthResponseException(userInfoResponse);\n\t\t\t}\n\t\t\t\n\t\t\tresponseBean.setFlag(true);\n\t\t\tresponseBean.setTitle(\"success\");\n\t\t\tresponseBean.setMessage(\"user info response success\");\n\t\t\tresponseBean.setBody(authModule.getUserInfoBean(userInfoResponse.getBody()));\n\t\t\t\n\t\t\tresponse = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();\n\t\t}\n\t\t\n\t\t\/\/ 예외\n\t\tcatch (Exception e)\n\t\t{\n\t\t\te.printStackTrace();\n\t\t\t\n\t\t\tresponseBean.setFlag(false);\n\t\t\tresponseBean.setTitle(e.getClass().getSimpleName());\n\t\t\tresponseBean.setMessage(e.getMessage());\n\t\t\tresponseBean.setBody(null);\n\t\t\t\n\t\t\tresponse = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();\n\t\t}\n\t\t\n\t\treturn response;\n\t}\n}\n```\n\n\n\n\n\n## Implementing the POST Process\n\nLet's implement the process class that groups together the operations corresponding to `POST` among the account processes.\n\n* Method to return the login response\n* Method to return the auto-login response\n* Method to return the logout response\n\nThe operations corresponding to `POST` are the methods above. They mostly consist of login\/logout operations.\n\n\n\n### Method to Return the Login Response\n\nThis method \u003cspan class=\"text-blue-400\">performs login by exchanging the `code` issued after the platform login for an Access Token\u003c\/span>.\n\nIt obtains an `OAuth2AccessToken` object via `AuthModule`'s `getAccessToken` method and extracts the Access Token and Refresh Token.\n\nThese tokens are built into JWT cookies to complete the login process.\n\n``` java\npublic Response postLoginResponse(String platform, String code, String state)\n{\n\tResponse response;\n\t\n\tResponseBean\u003cString> responseBean = new ResponseBean\u003c>();\n\t\n\tHttpSession session = request.getSession();\n\t\n\t\/\/ 로그인 응답 생성 시도\n\ttry\n\t{\n\t\tObject sessionState = Objects.requireNonNull(session.getAttribute(\"state\"));\n\t\t\n\t\t\/\/ 고유 상태값이 일치하지 않을 경우\n\t\tif (!state.equals(sessionState))\n\t\t{\n\t\t\tthrow new BadAttributeValueExpException(\"state is mismatched\");\n\t\t}\n\t\t\n\t\tAuthModule authModule = getAuthModule(platform);\n\t\t\n\t\tOAuth2AccessToken oAuth2AccessToken = authModule.getAccessToken(code);\n\t\t\n\t\tString accessToken = oAuth2AccessToken.getAccessToken();\n\t\tString refreshToken = oAuth2AccessToken.getRefreshToken();\n\t\t\n\t\tHashMap\u003cString, Object> accessMap = new HashMap\u003c>();\n\t\taccessMap.put(\"access\", accessToken);\n\t\taccessMap.put(\"platform\", platform);\n\t\t\n\t\tHashMap\u003cString, Object> refreshMap = new HashMap\u003c>();\n\t\trefreshMap.put(\"refresh\", refreshToken);\n\t\trefreshMap.put(\"platform\", platform);\n\t\t\n\t\tString accessJwt = JwtModule.generateJwt(state, accessMap);\n\t\tString refreshJwt = JwtModule.generateJwt(state, refreshMap);\n\t\t\n\t\tNewCookie accessCookie = new NewCookie(\"access\", accessJwt, \"\/oauth2\", \".itcode.dev\", \"access token\", -1, true, true);\n\t\tNewCookie refreshCookie = new NewCookie(\"refresh\", refreshJwt, \"\/oauth2\", \".itcode.dev\", \"refresh token\", refreshToken == null ? 0 : 86400 * 7 + 3600 * 9, true, true);\n\t\t\n\t\tresponseBean.setFlag(true);\n\t\tresponseBean.setTitle(\"success\");\n\t\tresponseBean.setMessage(\"authorized success\");\n\t\tresponseBean.setBody(null);\n\t\t\n\t\tresponse = Response.ok(responseBean, MediaType.APPLICATION_JSON).cookie(accessCookie, refreshCookie).build();\n\t}\n\t\n\t\/\/ 예외\n\tcatch (Exception e)\n\t{\n\t\te.printStackTrace();\n\t\t\n\t\tresponseBean.setFlag(false);\n\t\tresponseBean.setTitle(e.getClass().getSimpleName());\n\t\tresponseBean.setMessage(e.getMessage());\n\t\tresponseBean.setBody(null);\n\t\t\n\t\tresponse = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();\n\t}\n\t\n\t\/\/ 시도 후\n\tfinally\n\t{\n\t\tsession.invalidate();\n\t}\n\t\n\treturn response;\n}\n```\n\nDuring the `getAuthorizationUrlResponse` operation in `AccountGetProcess`, we stored `state` in a session attribute — here, that \u003cspan class=\"text-orange-500\">session value is used to perform verification\u003c\/span>.\n\nWe extract the `state` received as an argument via the URL and the `state` from the session and compare them, throwing an exception if they don't match. This is a security measure that prevents an attacker from hijacking the URL midway and sending a request with a completely different `code`.\n\nOnce the Access Token and Refresh Token are received, they're built into JWT cookies.\n\n\u003cbr \/>\n\n* Access Token JWT\n\n``` json\n{\n\t\"iss\": \"oauth2\",\n\t\"sub\": \"auth\",\n\t\"aud\": \"c9159786-40bf-4cf2-8c93-f683d1070137\",\n\t\"access\": \"{ACCESS_TOKEN}\",\n\t\"platform\": \"naver\",\n\t\"exp\": 1634986011,\n\t\"nbf\": 1634982411,\n\t\"iat\": 1634982411,\n\t\"jti\": \"c9159786-40bf-4cf2-8c93-f683d1070137\"\n}\n```\n\n* Refresh Token JWT\n\n``` json\n{\n\t\"iss\": \"oauth2\",\n\t\"sub\": \"auth\",\n\t\"aud\": \"c9159786-40bf-4cf2-8c93-f683d1070137\",\n\t\"refresh\": \"{REFRESH_TOKEN}\",\n\t\"platform\": \"naver\",\n\t\"exp\": 1634986011,\n\t\"nbf\": 1634982411,\n\t\"iat\": 1634982411,\n\t\"jti\": \"c9159786-40bf-4cf2-8c93-f683d1070137\"\n}\n```\n\n\u003cbr \/>\n\nThe content of the JWT is as above. The cookie is created carrying this JWT. \u003cspan class=\"text-green-400\">The access cookie is created as a session cookie so that it's immediately destroyed when the browser closes\u003c\/span>, while \u003cspan class=\"text-green-400\">the refresh cookie is given some retention period so it can be used again later\u003c\/span>.\n\nThe cookie domain is set to `.itcode.dev`, because the Frontend and Backend run in completely different environments.\n\n* Frontend - `project.itcode.dev`\n* Backend - `api.itcode.dev`\n\nDue to the browser's security policy, cookies can't be created for a different domain. So it's set to `.itcode.dev` so it applies to all subdomains.\n\nIf the domain isn't specified, the cookie is automatically issued targeting `api.itcode.dev`. As a result, the `project.itcode.dev` domain service wouldn't be able to access the cookie.\n\n\n\n### Method to Return the Auto-Login Response\n\nIf a user has logged in before and \u003cspan class=\"text-blue-400\">already has access and refresh cookies, this method uses them to perform auto-login\u003c\/span>.\n\n``` java\npublic Response postAutoLoginResponse(String accessCookie, String refreshCookie)\n{\n\tResponse response;\n\t\n\tResponseBean\u003cString> responseBean = new ResponseBean\u003c>();\n\t\n\t\/\/ 자동 로그인 시도\n\ttry\n\t{\n\t\t\/\/ 접근 토큰 쿠키가 있을 경우\n\t\tif (accessCookie != null)\n\t\t{\n\t\t\tresponseBean.setFlag(true);\n\t\t\tresponseBean.setTitle(\"success\");\n\t\t\tresponseBean.setMessage(\"auto authorized success\");\n\t\t\tresponseBean.setBody(null);\n\t\t\t\n\t\t\tresponse = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();\n\t\t}\n\t\t\n\t\t\/\/ 리프레쉬 토큰 쿠키가 없을 경우\n\t\telse if (refreshCookie == null)\n\t\t{\n\t\t\tresponseBean.setFlag(false);\n\t\t\tresponseBean.setTitle(\"fail\");\n\t\t\tresponseBean.setMessage(\"refresh token is empty\");\n\t\t\tresponseBean.setBody(null);\n\t\t\t\n\t\t\tresponse = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();\n\t\t}\n\t\t\n\t\t\/\/ 리프레쉬 토큰 쿠키가 있을 경우\n\t\telse\n\t\t{\n\t\t\tJws\u003cClaims> refreshJws = JwtModule.openJwt(refreshCookie);\n\t\t\t\n\t\t\tString refreshToken = refreshJws.getBody().get(\"refresh\", String.class);\n\t\t\tString platform = refreshJws.getBody().get(\"platform\", String.class);\n\t\t\t\n\t\t\tAuthModule authModule = getAuthModule(platform);\n\t\t\t\n\t\t\tOAuth2AccessToken oAuth2AccessToken = authModule.getRefreshAccessToken(refreshToken);\n\t\t\t\n\t\t\tString accessToken = oAuth2AccessToken.getAccessToken();\n\t\t\t\n\t\t\tHashMap\u003cString, Object> accessMap = new HashMap\u003c>();\n\t\t\taccessMap.put(\"access\", accessToken);\n\t\t\taccessMap.put(\"platform\", platform);\n\t\t\t\n\t\t\tHashMap\u003cString, Object> refreshMap = new HashMap\u003c>();\n\t\t\trefreshMap.put(\"refresh\", refreshToken);\n\t\t\trefreshMap.put(\"platform\", platform);\n\t\t\t\n\t\t\tString uuid = UUID.randomUUID().toString();\n\t\t\t\n\t\t\tString accessJwt = JwtModule.generateJwt(uuid, accessMap);\n\t\t\tString refreshJwt = JwtModule.generateJwt(uuid, refreshMap);\n\t\t\t\n\t\t\tNewCookie newAccessCookie = new NewCookie(\"access\", accessJwt, \"\/oauth2\", \".itcode.dev\", \"access token\", -1, true, true);\n\t\t\tNewCookie newRefreshCookie = new NewCookie(\"refresh\", refreshJwt, \"\/oauth2\", \".itcode.dev\", \"refresh token\", 86400 * 7 + 3600 * 9, true, true);\n\t\t\t\n\t\t\tresponseBean.setFlag(true);\n\t\t\tresponseBean.setTitle(\"success\");\n\t\t\tresponseBean.setMessage(\"auto authorized success\");\n\t\t\tresponseBean.setBody(null);\n\t\t\t\n\t\t\tresponse = Response.ok(responseBean, MediaType.APPLICATION_JSON).cookie(newAccessCookie, newRefreshCookie).build();\n\t\t}\n\t}\n\t\n\t\/\/ 예외\n\tcatch (Exception e)\n\t{\n\t\te.printStackTrace();\n\t\t\n\t\tresponseBean.setFlag(false);\n\t\tresponseBean.setTitle(e.getClass().getSimpleName());\n\t\tresponseBean.setMessage(e.getMessage());\n\t\tresponseBean.setBody(null);\n\t\t\n\t\tNewCookie newAccessCookie = new NewCookie(\"access\", null, \"\/oauth2\", \".itcode.dev\", \"access token\", 0, true, true);\n\t\tNewCookie newRefreshCookie = new NewCookie(\"refresh\", null, \"\/oauth2\", \".itcode.dev\", \"refresh token\", 0, true, true);\n\t\t\n\t\tresponse = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).cookie(newAccessCookie, newRefreshCookie).build();\n\t}\n\t\n\treturn response;\n}\n```\n\nIf the access cookie is already present, since we already have valid authentication info, no further action is taken and we simply move on.\n\nIf \u003cspan class=\"text-orange-400\">there's no access cookie but only a refresh cookie exists, this uses it to reissue the Access Token and refresh the authentication info\u003c\/span>, performing login automatically.\n\nThe login logic itself is the same as the regular login method — only the Access Token is refreshed using the Refresh Token.\n\n\n\n### Method to Return the Logout Response\n\nA method that performs logout by \u003cspan class=\"text-blue-400\">removing the authentication info\u003c\/span>.\n\n``` java\npublic Response postLogoutResponse()\n{\n\tResponse response;\n\n\tResponseBean\u003cString> responseBean = new ResponseBean\u003c>();\n\n\t\/\/ 로그아웃 응답 생성 시도\n\ttry\n\t{\n\t\tNewCookie accessCookie = new NewCookie(\"access\", null, \"\/oauth2\", \".itcode.dev\", \"access token\", 0, true, true);\n\t\tNewCookie refreshCookie = new NewCookie(\"refresh\", null, \"\/oauth2\", \".itcode.dev\", \"refresh token\", 0, true, true);\n\n\t\tresponseBean.setFlag(true);\n\t\tresponseBean.setTitle(\"success\");\n\t\tresponseBean.setMessage(\"logout success\");\n\t\tresponseBean.setBody(null);\n\n\t\tresponse = Response.ok(responseBean, MediaType.APPLICATION_JSON).cookie(accessCookie, refreshCookie).build();\n\t}\n\n\t\/\/ 예외\n\tcatch (Exception e)\n\t{\n\t\te.printStackTrace();\n\n\t\tresponseBean.setFlag(false);\n\t\tresponseBean.setTitle(e.getClass().getSimpleName());\n\t\tresponseBean.setMessage(e.getMessage());\n\t\tresponseBean.setBody(null);\n\n\t\tresponse = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();\n\t}\n\n\treturn response;\n}\n```\n\nThe authentication info is cookie-based. Since the `HttpOnly` option is enabled for security when the server creates the cookies, JavaScript cannot touch the access and refresh cookies.\n\nThe server overwrites the cookie expiration time with 0 to remove the authentication cookies.\n\n\n\n### Full Code\n\n``` java\npackage oauth.account.process;\n\nimport com.github.scribejava.core.model.OAuth2AccessToken;\nimport global.bean.ResponseBean;\nimport global.module.JwtModule;\nimport global.module.Process;\nimport io.jsonwebtoken.Claims;\nimport io.jsonwebtoken.Jws;\nimport jakarta.servlet.http.HttpServletRequest;\nimport jakarta.servlet.http.HttpServletResponse;\nimport jakarta.servlet.http.HttpSession;\nimport jakarta.ws.rs.core.MediaType;\nimport jakarta.ws.rs.core.NewCookie;\nimport jakarta.ws.rs.core.Response;\nimport oauth.account.module.AuthModule;\n\nimport javax.management.BadAttributeValueExpException;\nimport java.util.HashMap;\nimport java.util.Objects;\nimport java.util.UUID;\n\n\/**\n * 계정 POST 프로세스 클래스\n *\n * @author RWB\n * @since 2021.10.02 Sat 00:53:52\n *\/\npublic class AccountPostProcess extends Process\n{\n\t\/**\n\t * 생성자 메서드\n\t *\n\t * @param request: [HttpServletRequest] HttpServletRequest 객체\n\t * @param response: [HttpServletResponse] HttpServletResponse 객체\n\t *\/\n\tpublic AccountPostProcess(HttpServletRequest request, HttpServletResponse response)\n\t{\n\t\tsuper(request, response);\n\t}\n\t\n\t\/**\n\t * 로그인 응답 반환 메서드\n\t *\n\t * @param platform: [String] 플랫폼\n\t * @param code: [String] 인증 코드\n\t * @param state: [String] 고유 상태값\n\t *\n\t * @return [Response] 응답 객체\n\t *\/\n\tpublic Response postLoginResponse(String platform, String code, String state)\n\t{\n\t\tResponse response;\n\t\t\n\t\tResponseBean\u003cString> responseBean = new ResponseBean\u003c>();\n\t\t\n\t\tHttpSession session = request.getSession();\n\t\t\n\t\t\/\/ 로그인 응답 생성 시도\n\t\ttry\n\t\t{\n\t\t\tObject sessionState = Objects.requireNonNull(session.getAttribute(\"state\"));\n\t\t\t\n\t\t\t\/\/ 고유 상태값이 일치하지 않을 경우\n\t\t\tif (!state.equals(sessionState))\n\t\t\t{\n\t\t\t\tthrow new BadAttributeValueExpException(\"state is mismatched\");\n\t\t\t}\n\t\t\t\n\t\t\tAuthModule authModule = getAuthModule(platform);\n\t\t\t\n\t\t\tOAuth2AccessToken oAuth2AccessToken = authModule.getAccessToken(code);\n\t\t\t\n\t\t\tString accessToken = oAuth2AccessToken.getAccessToken();\n\t\t\tString refreshToken = oAuth2AccessToken.getRefreshToken();\n\t\t\t\n\t\t\tHashMap\u003cString, Object> accessMap = new HashMap\u003c>();\n\t\t\taccessMap.put(\"access\", accessToken);\n\t\t\taccessMap.put(\"platform\", platform);\n\t\t\t\n\t\t\tHashMap\u003cString, Object> refreshMap = new HashMap\u003c>();\n\t\t\trefreshMap.put(\"refresh\", refreshToken);\n\t\t\trefreshMap.put(\"platform\", platform);\n\t\t\t\n\t\t\tString accessJwt = JwtModule.generateJwt(state, accessMap);\n\t\t\tString refreshJwt = JwtModule.generateJwt(state, refreshMap);\n\t\t\t\n\t\t\tNewCookie accessCookie = new NewCookie(\"access\", accessJwt, \"\/oauth2\", \".itcode.dev\", \"access token\", -1, true, true);\n\t\t\tNewCookie refreshCookie = new NewCookie(\"refresh\", refreshJwt, \"\/oauth2\", \".itcode.dev\", \"refresh token\", refreshToken == null ? 0 : 86400 * 7 + 3600 * 9, true, true);\n\t\t\t\n\t\t\tresponseBean.setFlag(true);\n\t\t\tresponseBean.setTitle(\"success\");\n\t\t\tresponseBean.setMessage(\"authorized success\");\n\t\t\tresponseBean.setBody(null);\n\t\t\t\n\t\t\tresponse = Response.ok(responseBean, MediaType.APPLICATION_JSON).cookie(accessCookie, refreshCookie).build();\n\t\t}\n\t\t\n\t\t\/\/ 예외\n\t\tcatch (Exception e)\n\t\t{\n\t\t\te.printStackTrace();\n\t\t\t\n\t\t\tresponseBean.setFlag(false);\n\t\t\tresponseBean.setTitle(e.getClass().getSimpleName());\n\t\t\tresponseBean.setMessage(e.getMessage());\n\t\t\tresponseBean.setBody(null);\n\t\t\t\n\t\t\tresponse = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();\n\t\t}\n\t\t\n\t\t\/\/ 시도 후\n\t\tfinally\n\t\t{\n\t\t\tsession.invalidate();\n\t\t}\n\t\t\n\t\treturn response;\n\t}\n\t\n\t\/**\n\t * 자동 로그인 응답 반환 메서드\n\t *\n\t * @param accessCookie: [String] 접근 토큰 쿠키\n\t * @param refreshCookie: [String] 리프레쉬 토큰 쿠키\n\t *\n\t * @return [Response] 응답 객체\n\t *\/\n\tpublic Response postAutoLoginResponse(String accessCookie, String refreshCookie)\n\t{\n\t\tResponse response;\n\t\t\n\t\tResponseBean\u003cString> responseBean = new ResponseBean\u003c>();\n\t\t\n\t\t\/\/ 자동 로그인 시도\n\t\ttry\n\t\t{\n\t\t\t\/\/ 접근 토큰 쿠키가 있을 경우\n\t\t\tif (accessCookie != null)\n\t\t\t{\n\t\t\t\tresponseBean.setFlag(true);\n\t\t\t\tresponseBean.setTitle(\"success\");\n\t\t\t\tresponseBean.setMessage(\"auto authorized success\");\n\t\t\t\tresponseBean.setBody(null);\n\t\t\t\t\n\t\t\t\tresponse = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();\n\t\t\t}\n\t\t\t\n\t\t\t\/\/ 리프레쉬 토큰 쿠키가 없을 경우\n\t\t\telse if (refreshCookie == null)\n\t\t\t{\n\t\t\t\tresponseBean.setFlag(false);\n\t\t\t\tresponseBean.setTitle(\"fail\");\n\t\t\t\tresponseBean.setMessage(\"refresh token is empty\");\n\t\t\t\tresponseBean.setBody(null);\n\t\t\t\t\n\t\t\t\tresponse = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();\n\t\t\t}\n\t\t\t\n\t\t\t\/\/ 리프레쉬 토큰 쿠키가 있을 경우\n\t\t\telse\n\t\t\t{\n\t\t\t\tJws\u003cClaims> refreshJws = JwtModule.openJwt(refreshCookie);\n\t\t\t\t\n\t\t\t\tString refreshToken = refreshJws.getBody().get(\"refresh\", String.class);\n\t\t\t\tString platform = refreshJws.getBody().get(\"platform\", String.class);\n\t\t\t\t\n\t\t\t\tAuthModule authModule = getAuthModule(platform);\n\t\t\t\t\n\t\t\t\tOAuth2AccessToken oAuth2AccessToken = authModule.getRefreshAccessToken(refreshToken);\n\t\t\t\t\n\t\t\t\tString accessToken = oAuth2AccessToken.getAccessToken();\n\t\t\t\t\n\t\t\t\tHashMap\u003cString, Object> accessMap = new HashMap\u003c>();\n\t\t\t\taccessMap.put(\"access\", accessToken);\n\t\t\t\taccessMap.put(\"platform\", platform);\n\t\t\t\t\n\t\t\t\tHashMap\u003cString, Object> refreshMap = new HashMap\u003c>();\n\t\t\t\trefreshMap.put(\"refresh\", refreshToken);\n\t\t\t\trefreshMap.put(\"platform\", platform);\n\t\t\t\t\n\t\t\t\tString uuid = UUID.randomUUID().toString();\n\t\t\t\t\n\t\t\t\tString accessJwt = JwtModule.generateJwt(uuid, accessMap);\n\t\t\t\tString refreshJwt = JwtModule.generateJwt(uuid, refreshMap);\n\t\t\t\t\n\t\t\t\tNewCookie newAccessCookie = new NewCookie(\"access\", accessJwt, \"\/oauth2\", \".itcode.dev\", \"access token\", -1, true, true);\n\t\t\t\tNewCookie newRefreshCookie = new NewCookie(\"refresh\", refreshJwt, \"\/oauth2\", \".itcode.dev\", \"refresh token\", 86400 * 7 + 3600 * 9, true, true);\n\t\t\t\t\n\t\t\t\tresponseBean.setFlag(true);\n\t\t\t\tresponseBean.setTitle(\"success\");\n\t\t\t\tresponseBean.setMessage(\"auto authorized success\");\n\t\t\t\tresponseBean.setBody(null);\n\t\t\t\t\n\t\t\t\tresponse = Response.ok(responseBean, MediaType.APPLICATION_JSON).cookie(newAccessCookie, newRefreshCookie).build();\n\t\t\t}\n\t\t}\n\t\t\n\t\t\/\/ 예외\n\t\tcatch (Exception e)\n\t\t{\n\t\t\te.printStackTrace();\n\t\t\t\n\t\t\tresponseBean.setFlag(false);\n\t\t\tresponseBean.setTitle(e.getClass().getSimpleName());\n\t\t\tresponseBean.setMessage(e.getMessage());\n\t\t\tresponseBean.setBody(null);\n\t\t\t\n\t\t\tNewCookie newAccessCookie = new NewCookie(\"access\", null, \"\/oauth2\", \".itcode.dev\", \"access token\", 0, true, true);\n\t\t\tNewCookie newRefreshCookie = new NewCookie(\"refresh\", null, \"\/oauth2\", \".itcode.dev\", \"refresh token\", 0, true, true);\n\t\t\t\n\t\t\tresponse = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).cookie(newAccessCookie, newRefreshCookie).build();\n\t\t}\n\t\t\n\t\treturn response;\n\t}\n\t\n\t\/**\n\t * 로그아웃 응답 반환 메서드\n\t *\n\t * @return [Response] 응답 객체\n\t *\/\n\tpublic Response postLogoutResponse()\n\t{\n\t\tResponse response;\n\t\t\n\t\tResponseBean\u003cString> responseBean = new ResponseBean\u003c>();\n\t\t\n\t\t\/\/ 로그아웃 응답 생성 시도\n\t\ttry\n\t\t{\n\t\t\tNewCookie accessCookie = new NewCookie(\"access\", null, \"\/oauth2\", \".itcode.dev\", \"access token\", 0, true, true);\n\t\t\tNewCookie refreshCookie = new NewCookie(\"refresh\", null, \"\/oauth2\", \".itcode.dev\", \"refresh token\", 0, true, true);\n\t\t\t\n\t\t\tresponseBean.setFlag(true);\n\t\t\tresponseBean.setTitle(\"success\");\n\t\t\tresponseBean.setMessage(\"logout success\");\n\t\t\tresponseBean.setBody(null);\n\t\t\t\n\t\t\tresponse = Response.ok(responseBean, MediaType.APPLICATION_JSON).cookie(accessCookie, refreshCookie).build();\n\t\t}\n\t\t\n\t\t\/\/ 예외\n\t\tcatch (Exception e)\n\t\t{\n\t\t\te.printStackTrace();\n\t\t\t\n\t\t\tresponseBean.setFlag(false);\n\t\t\tresponseBean.setTitle(e.getClass().getSimpleName());\n\t\t\tresponseBean.setMessage(e.getMessage());\n\t\t\tresponseBean.setBody(null);\n\t\t\t\n\t\t\tresponse = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();\n\t\t}\n\t\t\n\t\treturn response;\n\t}\n}\n```\n\n\n\n\n\n## Implementing the PUT Process\n\nLet's implement the process that groups together the operations corresponding to `PUT` among the account processes.\n\n* Method to return the response for renewing the consent-to-provide-information URL\n\nThere's a single method corresponding to `PUT`. It consists of operations for modifying data.\n\n\n\n### Method to Return the Response for Renewing the Consent-to-Provide-Information URL\n\nThis method \u003cspan class=\"text-blue-400\">returns the URL that newly renews the consent to provide information\u003c\/span>.\n\n``` java\npublic Response putUpdateAuthorizationUrl(String accessCookie)\n{\n\tResponse response;\n\n\tResponseBean\u003cString> responseBean = new ResponseBean\u003c>();\n\n\t\/\/ 정보 제공 동의 갱신 URL 응답 생성 시도\n\ttry\n\t{\n\t\tString state = UUID.randomUUID().toString();\n\n\t\tJws\u003cClaims> jws = JwtModule.openJwt(accessCookie);\n\n\t\tString platform = jws.getBody().get(\"platform\", String.class);\n\n\t\tAuthModule authModule = getAuthModule(platform);\n\n\t\tString url = authModule.getUpdateAuthorizationUrl(state);\n\n\t\t\/\/ URL이 null일 경우\n\t\tif (url == null)\n\t\t{\n\t\t\tresponseBean.setFlag(false);\n\t\t\tresponseBean.setTitle(\"skipped\");\n\t\t\tresponseBean.setMessage(Util.builder(platform, \" doesn't need that service\"));\n\t\t\tresponseBean.setBody(null);\n\t\t}\n\n\t\t\/\/ URL이 유효할 경우\n\t\telse\n\t\t{\n\t\t\trequest.getSession().setAttribute(\"state\", state);\n\n\t\t\tresponseBean.setFlag(true);\n\t\t\tresponseBean.setTitle(\"success\");\n\t\t\tresponseBean.setMessage(Util.builder(platform, \" reauthrorization url response success\"));\n\t\t\tresponseBean.setBody(url);\n\t\t}\n\n\t\tresponse = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();\n\t}\n\n\t\/\/ 예외\n\tcatch (Exception e)\n\t{\n\t\te.printStackTrace();\n\n\t\tresponseBean.setFlag(false);\n\t\tresponseBean.setTitle(e.getClass().getSimpleName());\n\t\tresponseBean.setMessage(e.getMessage());\n\t\tresponseBean.setBody(null);\n\n\t\tresponse = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();\n\t}\n\n\treturn response;\n}\n```\n\nThe first time you log in, you go through a process of consenting to or refusing the information the service requires. Afterward, when requesting user info, only the information the user has consented to is provided, based on their consent record.\n\nIf, while the service is running, the required information changes and additional information is needed, we need to renew the consent to provide information.\n\nThe service redirects to the returned URL, renews the consent, and then a `code` reflecting the updated information is returned. The process after that follows the same steps as login.\n\n\u003cbr \/>\n\nIn other words, \u003cspan class=\"text-blue-400\">renewing consent to provide information is essentially the same as performing login again with newly updated information\u003c\/span>.\n\n\n\n### Full Code\n\n``` java\npackage oauth.account.process;\n\nimport global.bean.ResponseBean;\nimport global.module.JwtModule;\nimport global.module.Process;\nimport global.module.Util;\nimport io.jsonwebtoken.Claims;\nimport io.jsonwebtoken.Jws;\nimport jakarta.servlet.http.HttpServletRequest;\nimport jakarta.servlet.http.HttpServletResponse;\nimport jakarta.ws.rs.core.MediaType;\nimport jakarta.ws.rs.core.Response;\nimport oauth.account.module.AuthModule;\n\nimport java.util.UUID;\n\n\/**\n * 계정 PUT 프로세스 클래스\n *\n * @author RWB\n * @since 2021.10.19 Tue 21:56:32\n *\/\npublic class AccountPutProcess extends Process\n{\n\t\/**\n\t * 생성자 메서드\n\t *\n\t * @param request: [HttpServletRequest] HttpServletRequest 객체\n\t * @param response: [HttpServletResponse] HttpServletResponse 객체\n\t *\/\n\tpublic AccountPutProcess(HttpServletRequest request, HttpServletResponse response)\n\t{\n\t\tsuper(request, response);\n\t}\n\t\n\t\/**\n\t * 정보 제공 동의 갱신 URL 응답 반환 메서드\n\t *\n\t * @param accessCookie: [String] 접근 토큰 쿠키\n\t *\n\t * @return [Response] 응답 객체\n\t *\/\n\tpublic Response putUpdateAuthorizationUrl(String accessCookie)\n\t{\n\t\tResponse response;\n\t\t\n\t\tResponseBean\u003cString> responseBean = new ResponseBean\u003c>();\n\t\t\n\t\t\/\/ 정보 제공 동의 갱신 URL 응답 생성 시도\n\t\ttry\n\t\t{\n\t\t\tString state = UUID.randomUUID().toString();\n\t\t\t\n\t\t\tJws\u003cClaims> jws = JwtModule.openJwt(accessCookie);\n\t\t\t\n\t\t\tString platform = jws.getBody().get(\"platform\", String.class);\n\t\t\t\n\t\t\tAuthModule authModule = getAuthModule(platform);\n\t\t\t\n\t\t\tString url = authModule.getUpdateAuthorizationUrl(state);\n\t\t\t\n\t\t\t\/\/ URL이 null일 경우\n\t\t\tif (url == null)\n\t\t\t{\n\t\t\t\tresponseBean.setFlag(false);\n\t\t\t\tresponseBean.setTitle(\"skipped\");\n\t\t\t\tresponseBean.setMessage(Util.builder(platform, \" doesn't need that service\"));\n\t\t\t\tresponseBean.setBody(null);\n\t\t\t}\n\t\t\t\n\t\t\t\/\/ URL이 유효할 경우\n\t\t\telse\n\t\t\t{\n\t\t\t\trequest.getSession().setAttribute(\"state\", state);\n\t\t\t\t\n\t\t\t\tresponseBean.setFlag(true);\n\t\t\t\tresponseBean.setTitle(\"success\");\n\t\t\t\tresponseBean.setMessage(Util.builder(platform, \" reauthrorization url response success\"));\n\t\t\t\tresponseBean.setBody(url);\n\t\t\t}\n\t\t\t\n\t\t\tresponse = Response.ok(responseBean, MediaType.APPLICATION_JSON).build();\n\t\t}\n\t\t\n\t\t\/\/ 예외\n\t\tcatch (Exception e)\n\t\t{\n\t\t\te.printStackTrace();\n\t\t\t\n\t\t\tresponseBean.setFlag(false);\n\t\t\tresponseBean.setTitle(e.getClass().getSimpleName());\n\t\t\tresponseBean.setMessage(e.getMessage());\n\t\t\tresponseBean.setBody(null);\n\t\t\t\n\t\t\tresponse = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();\n\t\t}\n\t\t\n\t\treturn response;\n\t}\n}\n```\n\n\n\n\n\n## Implementing the DELETE Process\n\nLet's implement the process that groups together the operations corresponding to `DELETE` among the account processes.\n\n* Method to return the unlink response\n\nThere's a single method corresponding to `DELETE`. It mostly consists of operations for deleting data.\n\n\n\n### Method to Return the Unlink Response\n\nThis method \u003cspan class=\"text-blue-400\">completely unlinks from the platform and performs logout\u003c\/span>.\n\n``` java\npublic Response deleteInfoResponse(String accessCookie)\n{\n\tResponse response;\n\n\tResponseBean\u003cString> responseBean = new ResponseBean\u003c>();\n\n\t\/\/ 연동 해제 응답 생성 시도\n\ttry\n\t{\n\t\tJws\u003cClaims> jws = JwtModule.openJwt(accessCookie);\n\n\t\tString accessToken = jws.getBody().get(\"access\", String.class);\n\t\tString platform = jws.getBody().get(\"platform\", String.class);\n\n\t\tAuthModule authModule = getAuthModule(platform);\n\n\t\t\/\/ 연동 해제에 성공할 경우\n\t\tif (authModule.deleteInfo(accessToken))\n\t\t{\n\t\t\tresponse = new AccountPostProcess(request, this.response).postLogoutResponse();\n\t\t}\n\n\t\t\/\/ 아닐 경우\n\t\telse\n\t\t{\n\t\t\tthrow new RequestAuthenticationException(\"revoke fail\");\n\t\t}\n\t}\n\n\t\/\/ 예외\n\tcatch (Exception e)\n\t{\n\t\te.printStackTrace();\n\n\t\tresponseBean.setFlag(false);\n\t\tresponseBean.setTitle(e.getClass().getSimpleName());\n\t\tresponseBean.setMessage(e.getMessage());\n\t\tresponseBean.setBody(null);\n\n\t\tresponse = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();\n\t}\n\n\treturn response;\n}\n```\n\nOnce you unlink from the platform, the previously issued Access Token and Refresh Token expire and can no longer function.\n\nThis is usually done as part of account withdrawal, but since this project doesn't have a separate sign-up process, it simply logs the user out automatically.\n\nThe next time the user logs in, they'll go through the same process as logging in for the first time.\n\n\n\n### Full Code\n\n``` java\npackage oauth.account.process;\n\nimport global.bean.ResponseBean;\nimport global.module.JwtModule;\nimport global.module.Process;\nimport io.jsonwebtoken.Claims;\nimport io.jsonwebtoken.Jws;\nimport jakarta.servlet.http.HttpServletRequest;\nimport jakarta.servlet.http.HttpServletResponse;\nimport jakarta.ws.rs.core.MediaType;\nimport jakarta.ws.rs.core.Response;\nimport oauth.account.module.AuthModule;\nimport org.glassfish.jersey.client.authentication.RequestAuthenticationException;\n\n\/**\n * 계정 DELETE 프로세스 클래스\n *\n * @author RWB\n * @since 2021.10.02 Sat 00:53:52\n *\/\npublic class AccountDeleteProcess extends Process\n{\n\t\/**\n\t * 생성자 메서드\n\t *\n\t * @param request: [HttpServletRequest] HttpServletRequest 객체\n\t * @param response: [HttpServletResponse] HttpServletResponse 객체\n\t *\/\n\tpublic AccountDeleteProcess(HttpServletRequest request, HttpServletResponse response)\n\t{\n\t\tsuper(request, response);\n\t}\n\t\n\t\/**\n\t * 연동 해제 응답 반환 메서드\n\t *\n\t * @param accessCookie: [String] 접근 토큰 쿠키\n\t *\n\t * @return [Response] 응답 객체\n\t *\/\n\tpublic Response deleteInfoResponse(String accessCookie)\n\t{\n\t\tResponse response;\n\t\t\n\t\tResponseBean\u003cString> responseBean = new ResponseBean\u003c>();\n\t\t\n\t\t\/\/ 연동 해제 응답 생성 시도\n\t\ttry\n\t\t{\n\t\t\tJws\u003cClaims> jws = JwtModule.openJwt(accessCookie);\n\t\t\t\n\t\t\tString accessToken = jws.getBody().get(\"access\", String.class);\n\t\t\tString platform = jws.getBody().get(\"platform\", String.class);\n\t\t\t\n\t\t\tAuthModule authModule = getAuthModule(platform);\n\t\t\t\n\t\t\t\/\/ 연동 해제에 성공할 경우\n\t\t\tif (authModule.deleteInfo(accessToken))\n\t\t\t{\n\t\t\t\tresponse = new AccountPostProcess(request, this.response).postLogoutResponse();\n\t\t\t}\n\t\t\t\n\t\t\t\/\/ 아닐 경우\n\t\t\telse\n\t\t\t{\n\t\t\t\tthrow new RequestAuthenticationException(\"revoke fail\");\n\t\t\t}\n\t\t}\n\t\t\n\t\t\/\/ 예외\n\t\tcatch (Exception e)\n\t\t{\n\t\t\te.printStackTrace();\n\t\t\t\n\t\t\tresponseBean.setFlag(false);\n\t\t\tresponseBean.setTitle(e.getClass().getSimpleName());\n\t\t\tresponseBean.setMessage(e.getMessage());\n\t\t\tresponseBean.setBody(null);\n\t\t\t\n\t\t\tresponse = Response.status(Response.Status.BAD_REQUEST).entity(responseBean).type(MediaType.APPLICATION_JSON).build();\n\t\t}\n\t\t\n\t\treturn response;\n\t}\n}\n```\n\n\n\n\n\n\n\n\n\n\n# Wrap-up\n\nWith this, the project's implementation is complete. Thanks to returning the different authentication modules — `NaverAuthModule`, `GoogleAuthModule`, and so on — through the shared parent object `AuthModule`, I was able to avoid complicated branching and duplicated code.\n\nThe moment a pipeline splits, the sub-pipelines connected to it also tend to be forced apart. Thanks to properly designing the lowest-level module, you can see that the upper pipelines built on top of it can be managed as a single unit.\n\nThe next chapter covers how to set up the controllers using Jersey.\n","meta":{"category":"JAVA","createdAt":1635087490000,"group":"Building an OAuth2.0 Authorization Server","hasComment":true,"hasPublish":true,"images":["https:\/\/user-images.githubusercontent.com\/50317129\/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png"],"subtitle":["From chapter 4 through chapter 7, we implemented the authentication module for each platform. In this chapter, we implement the processes, the layer that uses these modules. Processes are organized and managed by HTTP method."],"tags":["JAVA","OAuth2.0"],"title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 8. Implementing the Processes","type":"posts"},"url":"\/2021\/10\/24\/oauth2-java-server-8","toc":[{"idx":"1.","level":1,"text":"Overview"},{"idx":"2.","level":1,"text":"Structure"},{"idx":"3.","level":1,"text":"Implementing the Processes"},{"idx":"3.1.","level":2,"text":"Implementing the Process Abstract Class"},{"idx":"3.2.","level":2,"text":"Implementing the GET Process"},{"idx":"3.2.1.","level":3,"text":"Method to Return the Authorization URL Response"},{"idx":"3.2.2.","level":3,"text":"Method to Return the User Info Response"},{"idx":"3.2.3.","level":3,"text":"Full Code"},{"idx":"3.3.","level":2,"text":"Implementing the POST Process"},{"idx":"3.3.1.","level":3,"text":"Method to Return the Login Response"},{"idx":"3.3.2.","level":3,"text":"Method to Return the Auto-Login Response"},{"idx":"3.3.3.","level":3,"text":"Method to Return the Logout Response"},{"idx":"3.3.4.","level":3,"text":"Full Code"},{"idx":"3.4.","level":2,"text":"Implementing the PUT Process"},{"idx":"3.4.1.","level":3,"text":"Method to Return the Response for Renewing the Consent-to-Provide-Information URL"},{"idx":"3.4.2.","level":3,"text":"Full Code"},{"idx":"3.5.","level":2,"text":"Implementing the DELETE Process"},{"idx":"3.5.1.","level":3,"text":"Method to Return the Unlink Response"},{"idx":"3.5.2.","level":3,"text":"Full Code"},{"idx":"4.","level":1,"text":"Wrap-up"}]},"group":[{"title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 12. Closing Thoughts","url":"\/posts\/2021\/10\/25\/oauth2-java-server-12"},{"title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 11. Applying for OAuth Service Review","url":"\/posts\/2021\/10\/25\/oauth2-java-server-11"},{"title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 10. Implementing the Controllers","url":"\/posts\/2021\/10\/25\/oauth2-java-server-10"},{"title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 8. Implementing the Processes","url":"\/posts\/2021\/10\/24\/oauth2-java-server-8"},{"title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 7. Applying for the GitHub OAuth Service and Implementing the Module","url":"\/posts\/2021\/10\/23\/oauth2-java-server-7"},{"title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 6. Applying for the KAKAO OAuth Service and Implementing the Module","url":"\/posts\/2021\/10\/23\/oauth2-java-server-6"},{"title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 5. Applying for the Google OAuth Service and Implementing the Module","url":"\/posts\/2021\/10\/23\/oauth2-java-server-5"},{"title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 4. Applying for the NAVER OAuth Service and Implementing the Module","url":"\/posts\/2021\/10\/22\/oauth2-java-server-4"},{"title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 3. Implementing the OAuth2.0 Authentication Module with scribeJAVA","url":"\/posts\/2021\/10\/20\/oauth2-java-server-3"},{"title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 2. Designing the Authorization Server","url":"\/posts\/2021\/10\/14\/oauth2-java-server-2"},{"title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 1. What is OAuth2.0?","url":"\/posts\/2021\/10\/14\/oauth2-java-server-1"}]}}</script>
+        <script id="vike_globalContext" type="application/json">{}</script>
+        <script src="/assets/entries/entry-client-routing.D3zuzaAF.js" type="module" async></script>
+        <link rel="modulepreload" href="/assets/entries/pages_posts_-id.D_Okxrcr.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-CdR2FKoq.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-Fpn0-Pqm.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-BEFtOQL8.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-OPBnc4Ld.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-DR8IhSux.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-Czpn1I53.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-C7ctEtix.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-BLfCQZmh.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-D-TcBJg8.js" as="script" type="text/javascript">
+      </body>
+    </html>

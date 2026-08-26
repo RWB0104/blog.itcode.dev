@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <link rel="stylesheet" type="text/css" href="/assets/static/style-5fd05477.T-dnyTzB.css">
+        <meta charset="UTF-8" />
+        
+        
+    <title>Optimizing Code With and Without Big O | Notes from the π-th Alpaca</title><meta property="og:title" content="Optimizing Code With and Without Big O | Notes from the π-th Alpaca" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script async="" data-testid="Ga4Script" src="https://www.googletagmanager.com/gtag/js?id=G-7QYWYNZ90R"></script><meta content="en_US" property="og:locale"/><link href="https://blog.itcode.dev/en/posts/2021/07/23/about-algorithm-chapter05" rel="canonical"/><link href="https://blog.itcode.dev/posts/2021/07/23/about-algorithm-chapter05" hrefLang="ko" rel="alternate"/><link href="https://blog.itcode.dev/en/posts/2021/07/23/about-algorithm-chapter05" hrefLang="en" rel="alternate"/><link href="https://blog.itcode.dev/posts/2021/07/23/about-algorithm-chapter05" hrefLang="x-default" rel="alternate"/><script data-testid="ThemeScript">(function () {
+	try {
+		var theme = localStorage.getItem('theme');
+		var isDark = theme === 'dark' || (theme !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+
+		if (isDark) {
+			document.documentElement.classList.add('dark');
+		}
+	} catch (error) {}
+})();</script>
+    
+    <meta name="description" content="So far, we&#039;ve quantified algorithm performance comparisons using Big O notation. But Big O notation isn&#039;t perfect for measuring an algorithm&#039;s performance either. In the previous chapter, we explained that both N(O^2) and N(N^2 - N) are considered N(O^2) under Big O notation. Because of this property, algorithms that actually show a clear difference can end up measured as having nearly identical performance under Big O notation." /><meta property="og:description" content="So far, we&#039;ve quantified algorithm performance comparisons using Big O notation. But Big O notation isn&#039;t perfect for measuring an algorithm&#039;s performance either. In the previous chapter, we explained that both N(O^2) and N(N^2 - N) are considered N(O^2) under Big O notation. Because of this property, algorithms that actually show a clear difference can end up measured as having nearly identical performance under Big O notation." />
+    <meta property="og:image" content="https://user-images.githubusercontent.com/50317129/125144706-add9c080-e159-11eb-9522-063c655ddf36.png"><meta name="twitter:card" content="summary_large_image">
+  
+        
+      </head>
+      <body>
+        
+        <div id="root"><link rel="preload" as="image" href="/logo.png"/><link rel="preload" as="image" href="https://github.com/RWB0104.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/126793171-d9677021-0ff9-414c-b83b-165dc037222f.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/126793179-854c05e3-04cc-420a-8a42-22fe0145c4cb.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/126793193-d865b162-9c02-44a0-a59c-d2e1674f4e5f.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/126793202-90a4dfc3-d40c-4073-9127-763781156693.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/126793209-88b076db-fe26-4cee-9a0c-1f0540beb0c8.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/126793215-a5a7dde7-8fbf-42a4-b585-5b5778297cc3.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/126793223-3580ae05-867b-464d-9d58-831e93b6142b.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/126793231-7c8448af-29e1-4d65-9c37-630dcec47e24.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/126793239-cefccd38-954e-4c49-85be-a007698d072b.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/126793255-354bc82f-0c65-4a75-bfde-c192f97344dc.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/126793276-bd4020c4-fcda-4b45-b993-2575ff7c1b69.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/126793282-277dc152-91d4-47a8-bdcb-3f5280593040.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/126793296-8e9c6a9b-8aff-4634-86cc-684338c990dc.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/126793310-19358a00-e527-405d-8033-1eef2c11060b.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/126793315-ca00a872-d867-40e5-95c3-c9de2b7c7851.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/126793330-af0a7836-5bfd-477c-b614-c8c2fc8f108f.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/126793337-f90959c9-c798-46f5-b64a-68807621edad.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/126793345-4f6a2819-4dac-4c81-b9c6-4ca7fd4c8749.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/126793357-e0e62399-9d03-48a8-8f23-721e43022a65.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/126793365-b658adfc-df4b-4e56-b130-e78e81826d54.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/126793370-a6ec0819-47c7-49c6-8f30-b953d9311336.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/126793374-db4248af-daf1-4e02-8622-c16d2a2c9f69.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/125144706-add9c080-e159-11eb-9522-063c655ddf36.png"/><link rel="preload" as="image" href="https://github.com/user-attachments/assets/e2a11c89-57af-4944-9068-bf237369f8b3"/><main class="flex w-full flex-col" data-testid="Layout"><div data-testid="Navigator"><div class="w-full" id="headline"></div><header class="flex items-center gap-4 py-3 max-sm:p-3 fixed top-0 left-0 z-20 w-full px-8 transition duration-300 bg-transparent text-white backdrop-blur-none" data-testid="Header"><div class="flex items-center"><button type="button" tabindex="0" data-slot="sheet-trigger" data-base-ui-click-trigger="" id="base-ui-_R_6m5_" aria-haspopup="dialog" aria-expanded="false" class="group/button inline-flex shrink-0 items-center justify-center border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-8 rounded-[min(var(--radius-md),10px)] in-data-[slot=button-group]:rounded-md"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></button></div><a data-testid="LocaleAnchor" href="/en"><div class="flex items-center gap-4 font-bold font-playwright text-lg"><img alt="blog.itcode.dev" height="24" src="/logo.png" width="24"/><span class="max-sm:hidden">blog.itcode.dev</span></div></a><div class="flex flex-1 items-center justify-end gap-2"><button type="button" tabindex="0" data-slot="tooltip-trigger" aria-label="설정" data-base-ui-click-trigger="" id="base-ui-_R_6mu5_" aria-haspopup="dialog" aria-expanded="false" data-base-ui-tooltip-trigger="" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings" aria-hidden="true"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path><circle cx="12" cy="12" r="3"></circle></svg></button></div></header></div><section data-testid="ContentPage"><div data-testid="ScreenerTemplate"><div class="relative h-[200dvh]"><div class="h-dvh w-full sticky top-0" data-testid="ScreenerBox" style="filter:blur(0px)"><div class="absolute top-0 left-0 size-full"><div class="grid grid-rows-[70%_10%_20%] size-full transition-[filter] duration-700 ease-out" data-testid="ScreenerTestPattern"><div class="grid grid-cols-7" data-testid="ScreenerTestPatternBars"><div class="bg-[#c0c0c0]"></div><div class="bg-[#c0c000]"></div><div class="bg-[#00c0c0]"></div><div class="bg-[#00c000]"></div><div class="bg-[#c000c0]"></div><div class="bg-[#c00000]"></div><div class="bg-[#0000c0]"></div></div><div class="grid grid-cols-7" data-testid="ScreenerTestPatternChroma"><div class="bg-[#0000c0]"></div><div class="bg-black"></div><div class="bg-[#c000c0]"></div><div class="bg-black"></div><div class="bg-[#00c0c0]"></div><div class="bg-black"></div><div class="bg-[#c0c0c0]"></div></div><div class="grid grid-cols-[1.5fr_1.5fr_1fr_0.5fr_0.5fr_0.5fr_1.5fr]" data-testid="ScreenerTestPatternPluge"><div class="bg-[#00214c]"></div><div class="bg-white"></div><div class="bg-[#32006c]"></div><div class="bg-[#0a0a0a]"></div><div class="bg-black"></div><div class="bg-[#1a1a1a]"></div><div class="bg-black"></div></div></div></div><div class="absolute top-0 left-0 size-full overflow-hidden"></div><div class="relative z-2 size-full"><div class="relative size-full"><div class="absolute inset-x-0 top-0 flex flex-col items-center gap-2 pt-32 pr-6 pl-6 text-center text-white bg-linear-to-t from-50% from-transparent to-black/60 pb-[max(4rem,env(safe-area-inset-bottom))] sm:items-start sm:pr-10 sm:pb-20 sm:pl-10 sm:text-left"></div><div class="absolute inset-x-0 bottom-0 flex flex-col items-center gap-5 pt-32 pr-6 pl-6 text-center text-white bg-linear-to-t from-15% from-black via-50% via-black/70 to-transparent pb-[max(4rem,env(safe-area-inset-bottom))] sm:items-start sm:pr-10 sm:pb-20 sm:pl-10 sm:text-left lang-en:font-playwright"><p class="fade-in slide-in-from-bottom-2 animate-in fill-mode-both font-medium text-white/70 text-xs uppercase tracking-widest duration-500 sm:text-sm"></p><h1 class="fade-in slide-in-from-bottom-4 max-w-3xl animate-in fill-mode-both font-extrabold text-2xl tracking-tight delay-150 duration-700 sm:text-3xl lg:text-5xl lang-en:sm:leading-12 lang-en:lg:leading-16">Optimizing Code With and Without Big O</h1><p class="fade-in slide-in-from-bottom-4 max-w-2xl animate-in fill-mode-both text-sm text-white/80 delay-300 duration-700 sm:text-base lg:text-lg">So far, we&#x27;ve quantified algorithm performance comparisons using Big O notation. But Big O notation isn&#x27;t perfect for measuring an algorithm&#x27;s performance either. In the previous chapter, we explained that both N(O^2) and N(N^2 - N) are considered N(O^2) under Big O notation. Because of this property, algorithms that actually show a clear difference can end up measured as having nearly identical performance under Big O notation.</p></div><div class="fade-in absolute bottom-4 left-1/2 z-3 -translate-x-1/2 animate-in fill-mode-both delay-500 duration-500 sm:bottom-6"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down animate-bounce text-white/70" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></div></div></div></div></div><div class="relative z-10 -mt-[100dvh] min-h-[110dvh] rounded-t-[2rem] bg-background transition-colors duration-300"><div class="cursor-grab select-none group" data-testid="Dragger"><div class="flex flex-col gap-2 justify-self-center rounded p-4 transition-colors duration-300 group-hover:bg-foreground/10"><div class="w-8 border-foreground/20 border-t-2"></div><div class="w-8 border-foreground/20 border-t-2"></div></div></div><div class="justify-self-center px-5 my-20 flex w-full max-w-4xl flex-col gap-20 pt-20" data-testid="ContainerTemplate"><div class="flex flex-col gap-5"><h2 class="font-bold text-3xl lg:text-5xl">Optimizing Code With and Without Big O</h2><div class="flex flex-col gap-1 text-muted-foreground"><i>So far, we&#x27;ve quantified algorithm performance comparisons using Big O notation. But Big O notation isn&#x27;t perfect for measuring an algorithm&#x27;s performance either. In the previous chapter, we explained that both N(O^2) and N(N^2 - N) are considered N(O^2) under Big O notation. Because of this property, algorithms that actually show a clear difference can end up measured as having nearly identical performance under Big O notation.</i></div><div class="h-px w-full bg-border"></div><div class="flex items-center gap-3"><img alt="RWB0104" class="rounded-full drop-shadow" height="36" src="https://github.com/RWB0104.png" width="36"/><div class="flex flex-col"><a class="font-bold hover:underline" href="https://github.com/RWB0104" rel="noopener" target="_blank">@<!-- -->RWB</a><i class="text-muted-foreground text-xs">written at<!-- --> <!-- -->2021-07-23 14:42:33</i></div></div></div><a data-testid="LocaleAnchor" href="/" hrefLang="ko" class="w-full"><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 border-border bg-background shadow-xs hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50 h-9 gap-1.5 px-2.5 in-data-[slot=button-group]:rounded-md has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 w-full"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-languages" aria-hidden="true"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg>한국어로 보기</button></a><div class="overflow-hidden rounded-lg border" data-testid="ContentGroup"><img alt="Grokking Algorithms" class="aspect-video w-full object-cover" height="100%" loading="lazy" src="https://user-images.githubusercontent.com/50317129/125144706-add9c080-e159-11eb-9522-063c655ddf36.png" width="100%"/><div class="flex flex-col gap-2 p-4"><p class="text-muted-foreground text-sm">시리즈 모아보기</p><h4 class="scroll-m-20 font-semibold text-xl tracking-tight">Grokking Algorithms</h4><div class="mt-2 flex items-center justify-between gap-2"><button aria-expanded="false" class="inline-flex items-center gap-1 rounded-md px-3 py-1.5 font-medium text-sm transition-colors hover:bg-accent hover:text-accent-foreground" type="button">전체보기<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down transition-transform" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button><div class="flex items-center gap-2 text-muted-foreground"><a data-testid="LocaleAnchor" href="/en/posts/2021/07/16/about-algorithm-chapter04" aria-label="이전 글: Using Big O to Speed Up Code"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left hover:text-foreground" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg></a><span class="font-code text-xs tabular-nums" data-testid="ContentGroupPosition">5<!-- --> / <!-- -->9</span><a data-testid="LocaleAnchor" href="/en/posts/2021/07/24/about-algorithm-chapter06" aria-label="다음 글: Optimizing for the Positive Scenario"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right hover:text-foreground" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></a></div></div></div></div><nav class="rounded-lg border border-l-4 bg-muted/40 p-4 border-l-blue-600 dark:border-l-blue-400" data-testid="MarkdownToc"><p class="mb-3 flex items-center gap-1.5 border-b pb-2 font-semibold text-xs uppercase tracking-wide text-blue-600 dark:text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-list-tree" aria-hidden="true"><path d="M8 5h13"></path><path d="M13 12h8"></path><path d="M13 19h8"></path><path d="M3 10a2 2 0 0 0 2 2h3"></path><path d="M3 5v12a2 2 0 0 0 2 2h3"></path></svg>Table of Contents</p><div class="flex flex-col gap-0.5 text-sm"><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 transition-colors hover:bg-background hover:text-foreground pl-2 font-medium text-foreground/90" href="#Chapter-5.-Optimizing-Code-With-and-Without-Big-O"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">1.</span><span class="truncate">Chapter 5. Optimizing Code With and Without Big O</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-6" href="#5-1.-Selection-Sort"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">1.1.</span><span class="truncate">5-1. Selection Sort</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-6" href="#5-2.-Selection-Sort-in-Action"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">1.2.</span><span class="truncate">5-2. Selection Sort in Action</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-6" href="#5-3.-Implementing-Selection-Sort"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">1.3.</span><span class="truncate">5-3. Implementing Selection Sort</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-6" href="#5-4.-The-Efficiency-of-Selection-Sort"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">1.4.</span><span class="truncate">5-4. The Efficiency of Selection Sort</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-6" href="#5-5.-Ignoring-Constants"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">1.5.</span><span class="truncate">5-5. Ignoring Constants</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-6" href="#5-6.-The-Role-of-Big-O"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">1.6.</span><span class="truncate">5-6. The Role of Big O</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-6" href="#5-7.-A-Practical-Example"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">1.7.</span><span class="truncate">5-7. A Practical Example</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 transition-colors hover:bg-background hover:text-foreground pl-2 font-medium text-foreground/90" href="#Wrap-up"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">2.</span><span class="truncate">Wrap-up</span></a></div></nav><div class="size-full" data-testid="MarkdownViewer"><p class="my-4 text-orange-500" align="center">This post is part of a personal study group activity, summarizing the content after reading through the book &quot;Grokking Algorithms.&quot;</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Chapter-5.-Optimizing-Code-With-and-Without-Big-O" id="Chapter-5.-Optimizing-Code-With-and-Without-Big-O"><h1 class="text-4xl font-bold" node="[object Object]">Chapter 5. Optimizing Code With and Without Big O</h1></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">So far, we&#x27;ve quantified algorithm performance comparisons using <span class="text-blue-400">Big O notation</span>. But Big O notation isn&#x27;t perfect for measuring an algorithm&#x27;s performance either.</p>
+<p class="my-4">In the previous chapter, we explained that both <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo stretchy="false">(</mo><msup><mi>O</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">N(O^2)</annotation></semantics></math></span> and <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo stretchy="false">(</mo><msup><mi>N</mi><mn>2</mn></msup><mo>−</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">N(N^2 - N)</annotation></semantics></math></span> are considered <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo stretchy="false">(</mo><msup><mi>O</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">N(O^2)</annotation></semantics></math></span> under Big O notation. Because of this property, algorithms that actually show a clear difference can end up measured as having nearly identical performance under Big O notation.</p>
+<p class="my-4">An algorithm&#x27;s speed is a critical metric when choosing between algorithms, so measuring it accurately is very important. In this chapter, as described above, we&#x27;ll distinguish between algorithms that generally appear to have <span class="text-pink-400">similar</span> performance and determine which one is actually faster.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#5-1.-Selection-Sort" id="5-1.-Selection-Sort"><h2 class="text-3xl font-bold" node="[object Object]">5-1. Selection Sort</h2></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">The previous chapter walked through the <span class="text-orange-400">bubble sort</span> algorithm. In this chapter, we&#x27;ll walk through a different sorting algorithm: <span class="text-orange-400">selection sort</span>.</p>
+<p class="my-4">The selection sort algorithm works by scanning the elements on each passthrough to find the minimum value, then moving it to the front to sort it.</p>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793171-d9677021-0ff9-414c-b83b-165dc037222f.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<p class="my-4">The array we&#x27;ll use for sorting is shown above, and the process proceeds as follows.</p>
+<ol>
+<li class="ml-6 list-disc" node="[object Object]">Examine the very first value.</li>
+</ol>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793179-854c05e3-04cc-420a-8a42-22fe0145c4cb.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<p class="my-4">The key idea is to find the smallest element within a single passthrough. Since this is still the first step, the first element becomes the minimum by default.</p>
+<ol start="2">
+<li class="ml-6 list-disc" node="[object Object]">Move the search pointer forward by one and compare it against the passthrough minimum.</li>
+</ol>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793193-d865b162-9c02-44a0-a59c-d2e1674f4e5f.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Minimum: 5</li>
+<li class="ml-6 list-disc" node="[object Object]">Value examined: 3</li>
+</ul>
+<p class="my-4">Update the passthrough minimum to 3.</p>
+<ol start="3">
+<li class="ml-6 list-disc" node="[object Object]">Repeat step 2.</li>
+</ol>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793202-90a4dfc3-d40c-4073-9127-763781156693.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Minimum: 3</li>
+<li class="ml-6 list-disc" node="[object Object]">Value examined: 9</li>
+</ul>
+<p class="my-4">Since the passthrough minimum is smaller, it isn&#x27;t updated.</p>
+<ol start="4">
+<li class="ml-6 list-disc" node="[object Object]">Repeat step 2.</li>
+</ol>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793209-88b076db-fe26-4cee-9a0c-1f0540beb0c8.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Minimum: 3</li>
+<li class="ml-6 list-disc" node="[object Object]">Value examined: 2</li>
+</ul>
+<p class="my-4">Update the passthrough minimum to 2.</p>
+<ol start="5">
+<li class="ml-6 list-disc" node="[object Object]">Repeat step 2.</li>
+</ol>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793215-a5a7dde7-8fbf-42a4-b585-5b5778297cc3.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Minimum: 2</li>
+<li class="ml-6 list-disc" node="[object Object]">Value examined: 6</li>
+</ul>
+<p class="my-4">Since the passthrough minimum is smaller, it isn&#x27;t updated. Since this is the last element, the scan ends and a single element gets sorted.</p>
+<ol start="6">
+<li class="ml-6 list-disc" node="[object Object]">Move the element with the passthrough minimum to the front.</li>
+</ol>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793223-3580ae05-867b-464d-9d58-831e93b6142b.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<p class="my-4">Swap the front element, 5, with the minimum value, 2. Since 2 is now fully in its correct position, it&#x27;s excluded from all future passthroughs.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#5-2.-Selection-Sort-in-Action" id="5-2.-Selection-Sort-in-Action"><h2 class="text-3xl font-bold" node="[object Object]">5-2. Selection Sort in Action</h2></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">Now that we understand how selection sort works from the previous section, let&#x27;s perform selection sort on the entire array.</p>
+<p class="my-4"><small class="text-red-500">Passthrough 1 is identical to the process from the previous section.</small></p>
+<ol>
+<li class="ml-6 list-disc" node="[object Object]">Passthrough 1: Examine the very first element.</li>
+</ol>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793179-854c05e3-04cc-420a-8a42-22fe0145c4cb.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Minimum: -</li>
+<li class="ml-6 list-disc" node="[object Object]">Value examined: 5</li>
+</ul>
+<p class="my-4">The key idea is to find the smallest element within a single passthrough. Since this is still the first step, the first element becomes the minimum by default.</p>
+<ol start="2">
+<li class="ml-6 list-disc" node="[object Object]">Passthrough 1: Move the search pointer forward by one and compare it against the passthrough minimum.</li>
+</ol>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793193-d865b162-9c02-44a0-a59c-d2e1674f4e5f.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Minimum: 5</li>
+<li class="ml-6 list-disc" node="[object Object]">Value examined: 3</li>
+</ul>
+<p class="my-4">Update the passthrough minimum to 3.</p>
+<ol start="3">
+<li class="ml-6 list-disc" node="[object Object]">Passthrough 1: Repeat step 2.</li>
+</ol>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793202-90a4dfc3-d40c-4073-9127-763781156693.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Minimum: 3</li>
+<li class="ml-6 list-disc" node="[object Object]">Value examined: 9</li>
+</ul>
+<p class="my-4">Since the passthrough minimum is smaller, it isn&#x27;t updated.</p>
+<ol start="4">
+<li class="ml-6 list-disc" node="[object Object]">Passthrough 1: Repeat step 2.</li>
+</ol>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793209-88b076db-fe26-4cee-9a0c-1f0540beb0c8.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Minimum: 3</li>
+<li class="ml-6 list-disc" node="[object Object]">Value examined: 2</li>
+</ul>
+<p class="my-4">Update the passthrough minimum to 2.</p>
+<ol start="5">
+<li class="ml-6 list-disc" node="[object Object]">Passthrough 1: Repeat step 2.</li>
+</ol>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793215-a5a7dde7-8fbf-42a4-b585-5b5778297cc3.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Minimum: 2</li>
+<li class="ml-6 list-disc" node="[object Object]">Value examined: 6</li>
+</ul>
+<p class="my-4">Since the passthrough minimum is smaller, it isn&#x27;t updated. Since this is the last element, the scan ends and a single element gets sorted.</p>
+<ol start="6">
+<li class="ml-6 list-disc" node="[object Object]">Passthrough 1: Move the element with the passthrough minimum to the front.</li>
+</ol>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793223-3580ae05-867b-464d-9d58-831e93b6142b.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<p class="my-4">Swap the front element, 5, with the minimum value, 2. Since 2 is now fully in its correct position, it&#x27;s <strong>excluded from all future passthroughs</strong>.</p>
+<ol start="7">
+<li class="ml-6 list-disc" node="[object Object]">Passthrough 2: Examine the second element.</li>
+</ol>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Minimum: -</li>
+<li class="ml-6 list-disc" node="[object Object]">Value examined: 3</li>
+</ul>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793231-7c8448af-29e1-4d65-9c37-630dcec47e24.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<p class="my-4">Assign this element as the minimum.</p>
+<ol start="8">
+<li class="ml-6 list-disc" node="[object Object]">Passthrough 2: Repeat step 2.</li>
+</ol>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793239-cefccd38-954e-4c49-85be-a007698d072b.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Minimum: 3</li>
+<li class="ml-6 list-disc" node="[object Object]">Value examined: 9</li>
+</ul>
+<p class="my-4">Since the passthrough minimum is smaller, it isn&#x27;t updated.</p>
+<ol start="9">
+<li class="ml-6 list-disc" node="[object Object]">Passthrough 2: Repeat step 2.</li>
+</ol>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793255-354bc82f-0c65-4a75-bfde-c192f97344dc.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Minimum: 3</li>
+<li class="ml-6 list-disc" node="[object Object]">Value examined: 5</li>
+</ul>
+<p class="my-4">Since the passthrough minimum is smaller, it isn&#x27;t updated.</p>
+<ol start="10">
+<li class="ml-6 list-disc" node="[object Object]">Passthrough 2: Repeat step 2.</li>
+</ol>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793276-bd4020c4-fcda-4b45-b993-2575ff7c1b69.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Minimum: 3</li>
+<li class="ml-6 list-disc" node="[object Object]">Value examined: 6</li>
+</ul>
+<p class="my-4">Since the passthrough minimum is smaller, it isn&#x27;t updated.</p>
+<ol start="11">
+<li class="ml-6 list-disc" node="[object Object]">Passthrough 2: Move the element with the passthrough minimum to the second position.</li>
+</ol>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793282-277dc152-91d4-47a8-bdcb-3f5280593040.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<p class="my-4">The minimum value, 3, happens to already be in the correct position, so no swap occurs. Since the second element is now sorted, it&#x27;s likewise excluded from all future passthroughs.</p>
+<ol start="12">
+<li class="ml-6 list-disc" node="[object Object]">Passthrough 3: Examine the third element.</li>
+</ol>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793296-8e9c6a9b-8aff-4634-86cc-684338c990dc.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Minimum: -</li>
+<li class="ml-6 list-disc" node="[object Object]">Value examined: 9</li>
+</ul>
+<p class="my-4">Assign this element as the minimum.</p>
+<ol start="13">
+<li class="ml-6 list-disc" node="[object Object]">Passthrough 3: Repeat step 2.</li>
+</ol>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793310-19358a00-e527-405d-8033-1eef2c11060b.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Minimum: 9</li>
+<li class="ml-6 list-disc" node="[object Object]">Value examined: 5</li>
+</ul>
+<p class="my-4">Update the passthrough minimum to 5.</p>
+<ol start="14">
+<li class="ml-6 list-disc" node="[object Object]">Passthrough 3: Repeat step 2.</li>
+</ol>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793315-ca00a872-d867-40e5-95c3-c9de2b7c7851.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Minimum: 5</li>
+<li class="ml-6 list-disc" node="[object Object]">Value examined: 6</li>
+</ul>
+<p class="my-4">Since the passthrough minimum is smaller, it isn&#x27;t updated.</p>
+<ol start="15">
+<li class="ml-6 list-disc" node="[object Object]">Passthrough 3: Move the element with the passthrough minimum to the third position.</li>
+</ol>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793330-af0a7836-5bfd-477c-b614-c8c2fc8f108f.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<p class="my-4">Swap the third element, 9, with the minimum value, 5.</p>
+<ol start="16">
+<li class="ml-6 list-disc" node="[object Object]">Passthrough 4: Examine the fourth element.</li>
+</ol>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793337-f90959c9-c798-46f5-b64a-68807621edad.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Minimum: -</li>
+<li class="ml-6 list-disc" node="[object Object]">Value examined: 9</li>
+</ul>
+<p class="my-4">Assign this element as the minimum.</p>
+<ol start="17">
+<li class="ml-6 list-disc" node="[object Object]">Passthrough 4: Repeat step 2.</li>
+</ol>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793345-4f6a2819-4dac-4c81-b9c6-4ca7fd4c8749.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Minimum: 9</li>
+<li class="ml-6 list-disc" node="[object Object]">Value examined: 6</li>
+</ul>
+<p class="my-4">Update the passthrough minimum to 6.</p>
+<ol start="18">
+<li class="ml-6 list-disc" node="[object Object]">Passthrough 4: Move the element with the passthrough minimum to the fourth position.</li>
+</ol>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793357-e0e62399-9d03-48a8-8f23-721e43022a65.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<p class="my-4">Swap the fourth element, 9, with the minimum value, 6.</p>
+<ol start="19">
+<li class="ml-6 list-disc" node="[object Object]">Passthrough 5: Examine the last element.</li>
+</ol>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793365-b658adfc-df4b-4e56-b130-e78e81826d54.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Minimum: -</li>
+<li class="ml-6 list-disc" node="[object Object]">Value examined: 9</li>
+</ul>
+<p class="my-4">Update the passthrough minimum to 9.</p>
+<p class="my-4">Since this is the last element, it&#x27;s already in its sorted position by default, and the passthrough ends.</p>
+<p class="my-4">With this, the final sorted array produced by selection sort looks like this.</p>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793370-a6ec0819-47c7-49c6-8f30-b953d9311336.png" width="600px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#5-3.-Implementing-Selection-Sort" id="5-3.-Implementing-Selection-Sort"><h2 class="text-3xl font-bold" node="[object Object]">5-3. Implementing Selection Sort</h2></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">Let&#x27;s implement selection sort in <span class="text-orange-400">Java</span> based on the process above.</p>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-java" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JAVA</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.Arrays;
+
+/**
+ * 누구나 자료 구조와 알고리즘 선택 정렬 클래스
+ *
+ * @author RWB
+ * @see &lt;a href=&quot;https://blog.itcode.dev/posts/2021/07/23/about-algorithm-chapter05/&quot;&gt;빅 오를 사용하거나 사용하지 않는 코드 최적화&lt;/a&gt;
+ * @since 2021.07.23 Fri 01:12:20
+ */
+public class SelectionSort
+{
+	/**
+	 * 메인 함수
+	 *
+	 * @param args: [String[]] 매개변수
+	 *
+	 * @throws IOException 데이터 입출력 예외
+	 */
+	public static void main(String[] args) throws IOException
+	{
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
+		
+		writer.write(&quot;중복 확인할 정수 배열을 띄어쓰기로 구분하여 입력 &gt;&gt; &quot;);
+		writer.flush();
+		
+		// 배열
+		int[] array = Arrays.stream(reader.readLine().split(&quot; &quot;)).mapToInt(Integer::parseInt).toArray();
+		
+		int[] processes = selectionSort(array);
+		
+		writer.write(Arrays.toString(array));
+		writer.newLine();
+		writer.flush();
+		
+		writer.write(&quot; - 비교 작업량: &quot;);
+		writer.write(String.valueOf(processes[0]));
+		writer.newLine();
+		writer.flush();
+		
+		writer.write(&quot; - 스왑 작업량: &quot;);
+		writer.write(String.valueOf(processes[1]));
+		writer.newLine();
+		writer.flush();
+		
+		writer.write(&quot; - 총 작업량: &quot;);
+		writer.write(String.valueOf(processes[0] + processes[1]));
+		writer.newLine();
+		writer.flush();
+		
+		writer.close();
+		reader.close();
+	}
+	
+	/**
+	 * 선택 정렬 함수
+	 *
+	 * @param array : [int[]] 대상 배열
+	 *
+	 * @return [int[]] 작업 갯수 배열
+	 */
+	private static int[] selectionSort(int[] array)
+	{
+		int compareCount = 0;
+		int swapCount = 0;
+		
+		for (int i = 0; i &lt; array.length; i++)
+		{
+			// 패스스루의 최소값 인덱스
+			int min = i;
+			
+			for (int j = i + 1; j &lt; array.length; j++)
+			{
+				compareCount++;
+				
+				// 현재 요소의 값이 패스스루의 최소값보다 작을 경우
+				if (array[j] &lt; array[min])
+				{
+					min = j;
+				}
+			}
+			
+			// 최소 인덱스에 변화가 있었을 경우
+			if (min != i)
+			{
+				int temp = array[min];
+				
+				array[min] = array[i];
+				array[i] = temp;
+				
+				swapCount++;
+			}
+		}
+		
+		return new int[] { compareCount, swapCount };
+	}
+}</code></pre></div></div></pre>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Input</li>
+</ul>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-tc" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">TC</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>5 3 4 1 2</code></pre></div></div></pre>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Output</li>
+</ul>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-tc" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">TC</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>[1, 2, 3, 4, 5]
+ - 비교 작업량: 10
+ - 스왑 작업량: 4
+ - 총 작업량: 14</code></pre></div></div></pre>
+<p class="my-4">It takes a space-separated array of numbers from the user, performs selection sort, and displays the amount of work broken down by category. The core logic is performed in the <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">selectionSort</span> method.</p>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">First <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">for</span>: passthrough</li>
+<li class="ml-6 list-disc" node="[object Object]">Second <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">for</span>: comparison work</li>
+<li class="ml-6 list-disc" node="[object Object]"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">if</span> statement: swap work</li>
+</ul>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-java" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JAVA</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>for (int i = 0; i &lt; array.length; i++)
+{
+	// 패스스루의 최소값 인덱스
+	int min = i;
+	
+	for (int j = i + 1; j &lt; array.length; j++)
+	{
+		compareCount++;
+		
+		// 현재 요소의 값이 패스스루의 최소값보다 작을 경우
+		if (array[j] &lt; array[min])
+		{
+			min = j;
+		}
+	}
+	
+	// 최소 인덱스에 변화가 있었을 경우
+	if (min != i)
+	{
+		int temp = array[min];
+		
+		array[min] = array[i];
+		array[i] = temp;
+		
+		swapCount++;
+	}
+}</code></pre></div></div></pre>
+<p class="my-4">For each passthrough, the first element is assigned to the minimum <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">min</span>. Then, each subsequent element up through the last is compared against <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">min</span> in sequence.</p>
+<p class="my-4">Whenever an element smaller than <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">min</span> is found, it replaces <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">min</span>. Ultimately, <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">min</span> ends up holding the smallest value among all the elements examined.</p>
+<p class="my-4">The <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">if</span> statement checks whether <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">min</span> has changed. If it&#x27;s not the index of the passthrough&#x27;s first element, that means <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">min</span> changed, so a swap is performed.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#5-4.-The-Efficiency-of-Selection-Sort" id="5-4.-The-Efficiency-of-Selection-Sort"><h2 class="text-3xl font-bold" node="[object Object]">5-4. The Efficiency of Selection Sort</h2></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">Let&#x27;s examine the efficiency of selection sort. As mentioned above, selection sort consists of <span class="text-blue-400">comparison</span> and <span class="text-blue-400">exchange</span> operations. Comparisons always happen, while exchanges happen conditionally.</p>
+<p class="my-4">For an array of 5 elements, the amount of comparison work when performing selection sort is as follows.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="my-10 flex justify-center" data-testid="MarkdownTable"><div class="inline-block max-w-full overflow-auto"><table class="[&amp;_thead_tr]:border-neutral-800 [&amp;_thead_tr]:border-b-2 [&amp;_thead_tr]:dark:border-neutral-200 [&amp;_tbody_tr]:border-neutral-200 [&amp;_tbody_tr]:border-b [&amp;_tbody_tr]:dark:border-neutral-700 [&amp;_tbody_tr:last-child]:border-b-0 [&amp;_tbody_tr:hover]:bg-neutral-100 [&amp;_tbody_tr:hover]:dark:bg-neutral-800 [&amp;_tbody_tr]:duration-300 [&amp;_th]:px-4 [&amp;_th]:py-2 [&amp;_th]:text-left [&amp;_td]:text-nowrap [&amp;_td]:px-4 [&amp;_td]:py-2" node="[object Object]"><thead><tr><th style="text-align:center">Passthrough</th><th style="text-align:center">Work count</th></tr></thead><tbody><tr><td style="text-align:center">1</td><td style="text-align:center">4</td></tr><tr><td style="text-align:center">2</td><td style="text-align:center">3</td></tr><tr><td style="text-align:center">3</td><td style="text-align:center">2</td></tr><tr><td style="text-align:center">4</td><td style="text-align:center">1</td></tr></tbody></table></div></div>
+<p class="my-4"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">4 + 3 + 2 + 1 = 10</annotation></semantics></math></span>, so a total of 10 comparisons are performed. In general terms, this can be defined as <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>N</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mi>N</mi><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mo>⋯</mo><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">(N - 1) + (N - 2) + \dots + 1</annotation></semantics></math></span>.</p>
+<p class="my-4">Unlike comparisons, exchanges happen at most once per passthrough, and depending on the conditions, may not happen at all.</p>
+<p class="my-4">In the worst case, an exchange happens on every passthrough, so with 5 elements, we can expect at most 4 exchange operations.</p>
+<p class="my-4">For example, with <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>5</mn><mo separator="true">,</mo><mn>3</mn><mo separator="true">,</mo><mn>4</mn><mo separator="true">,</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[ 5, 3, 4, 1, 2 ]</annotation></semantics></math></span>, a swap occurs on every single passthrough.</p>
+<blockquote class="my-4 border-l-4 px-4 py-2 [&amp;&gt;*:first-child]:mt-0 [&amp;&gt;*:last-child]:mb-0 border-neutral-300 dark:border-neutral-700" data-testid="MarkdownBlockquote" node="[object Object]">
+<p class="my-4"><strong>Doesn&#x27;t the book say the worst case is when the array is reversed??</strong><br/>
+With a reversed array, only two exchanges actually end up occurring. Once half is sorted, the remaining back half sorts itself automatically.</p>
+</blockquote>
+<p class="my-4">Comparing bubble sort and selection sort looks like this.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="my-10 flex justify-center" data-testid="MarkdownTable"><div class="inline-block max-w-full overflow-auto"><table class="[&amp;_thead_tr]:border-neutral-800 [&amp;_thead_tr]:border-b-2 [&amp;_thead_tr]:dark:border-neutral-200 [&amp;_tbody_tr]:border-neutral-200 [&amp;_tbody_tr]:border-b [&amp;_tbody_tr]:dark:border-neutral-700 [&amp;_tbody_tr:last-child]:border-b-0 [&amp;_tbody_tr:hover]:bg-neutral-100 [&amp;_tbody_tr:hover]:dark:bg-neutral-800 [&amp;_tbody_tr]:duration-300 [&amp;_th]:px-4 [&amp;_th]:py-2 [&amp;_th]:text-left [&amp;_td]:text-nowrap [&amp;_td]:px-4 [&amp;_td]:py-2" node="[object Object]"><thead><tr><th style="text-align:center"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span></th><th style="text-align:center">Bubble Sort</th><th style="text-align:center">Selection Sort</th><th style="text-align:center">Difference</th></tr></thead><tbody><tr><td style="text-align:center">5</td><td style="text-align:center">20</td><td style="text-align:center">14</td><td style="text-align:center">30%</td></tr><tr><td style="text-align:center">10</td><td style="text-align:center">90</td><td style="text-align:center">54</td><td style="text-align:center">40%</td></tr><tr><td style="text-align:center">20</td><td style="text-align:center">380</td><td style="text-align:center">199</td><td style="text-align:center">52.4%</td></tr><tr><td style="text-align:center">40</td><td style="text-align:center">1560</td><td style="text-align:center">819</td><td style="text-align:center">52.5%</td></tr><tr><td style="text-align:center">80</td><td style="text-align:center">6320</td><td style="text-align:center">3229</td><td style="text-align:center">51.1%</td></tr><tr><td style="text-align:center">100</td><td style="text-align:center">9900</td><td style="text-align:center">5049</td><td style="text-align:center">51%</td></tr></tbody></table></div></div>
+<p class="my-4">Selection sort&#x27;s speed converges to about 50% of bubble sort&#x27;s. In other words, even in the worst case, selection sort is roughly twice as fast.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#5-5.-Ignoring-Constants" id="5-5.-Ignoring-Constants"><h2 class="text-3xl font-bold" node="[object Object]">5-5. Ignoring Constants</h2></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">The detailed comparison in the previous section confirmed there&#x27;s a meaningful difference between bubble sort and selection sort. Expressed in Big O notation, selection sort is <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>N</mi><mn>2</mn></msup><mi mathvariant="normal">/</mi><mn>2</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N^2 / 2)</annotation></semantics></math></span>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="my-10 flex justify-center" data-testid="MarkdownTable"><div class="inline-block max-w-full overflow-auto"><table class="[&amp;_thead_tr]:border-neutral-800 [&amp;_thead_tr]:border-b-2 [&amp;_thead_tr]:dark:border-neutral-200 [&amp;_tbody_tr]:border-neutral-200 [&amp;_tbody_tr]:border-b [&amp;_tbody_tr]:dark:border-neutral-700 [&amp;_tbody_tr:last-child]:border-b-0 [&amp;_tbody_tr:hover]:bg-neutral-100 [&amp;_tbody_tr:hover]:dark:bg-neutral-800 [&amp;_tbody_tr]:duration-300 [&amp;_th]:px-4 [&amp;_th]:py-2 [&amp;_th]:text-left [&amp;_td]:text-nowrap [&amp;_td]:px-4 [&amp;_td]:py-2" node="[object Object]"><thead><tr><th style="text-align:center"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span></th><th style="text-align:center"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>N</mi><mn>2</mn></msup><mi mathvariant="normal">/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">N^2 / 2</annotation></semantics></math></span></th><th style="text-align:center">Selection sort&#x27;s work count</th></tr></thead><tbody><tr><td style="text-align:center">5</td><td style="text-align:center">12.5</td><td style="text-align:center">14</td></tr><tr><td style="text-align:center">10</td><td style="text-align:center">50</td><td style="text-align:center">54</td></tr><tr><td style="text-align:center">20</td><td style="text-align:center">200</td><td style="text-align:center">199</td></tr><tr><td style="text-align:center">40</td><td style="text-align:center">800</td><td style="text-align:center">819</td></tr><tr><td style="text-align:center">80</td><td style="text-align:center">3200</td><td style="text-align:center">3229</td></tr><tr><td style="text-align:center">100</td><td style="text-align:center">5000</td><td style="text-align:center">5049</td></tr></tbody></table></div></div>
+<p class="my-4">The table above backs this up. But the actual Big O notation for both bubble sort and selection sort is the same: <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>N</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N^2)</annotation></semantics></math></span>. Selection sort likewise has <span class="text-red-400">two nested loops</span>, exhibiting the same <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>N</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N^2)</annotation></semantics></math></span> characteristics. This is a property that&#x27;s been mentioned consistently since Chapter 3, where Big O notation was first introduced: <span class="text-teal-400">Big O notation ignores constants</span>.</p>
+<p class="my-4">Constants clearly matter numerically, so why does a technique that&#x27;s supposed to measure <strong>performance</strong> take such a loose form?</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#5-6.-The-Role-of-Big-O" id="5-6.-The-Role-of-Big-O"><h2 class="text-3xl font-bold" node="[object Object]">5-6. The Role of Big O</h2></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">Why does Big O notation ignore constants? This can be explained by the perspective Big O notation takes. Let&#x27;s compare the workloads of <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N)</annotation></semantics></math></span> vs. <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>N</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N^2)</annotation></semantics></math></span>, and <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>100</mn><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(100N)</annotation></semantics></math></span> vs. <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>N</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N^2)</annotation></semantics></math></span>, to see what perspective Big O notation adopts when evaluating algorithms.</p>
+<!-- -->
+	<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/126793374-db4248af-daf1-4e02-8622-c16d2a2c9f69.png" width="800px" node="[object Object]" class="pointer-events-none h-auto w-full"/></button></div>
+<!-- -->
+<p class="my-4">For <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>N</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N^2)</annotation></semantics></math></span>, it&#x27;s always equal to or slower than <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N)</annotation></semantics></math></span> no matter what. But <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>100</mn><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(100N)</annotation></semantics></math></span> is a bit different. In the early range where the data is small, <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>N</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N^2)</annotation></semantics></math></span> is actually faster, but once the data grows large enough, <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>100</mn><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(100N)</annotation></semantics></math></span> becomes faster.</p>
+<p class="my-4">This is why Big O notation doesn&#x27;t put much weight on constants. When the ranges are entirely different, like <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N)</annotation></semantics></math></span> vs. <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>N</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N^2)</annotation></semantics></math></span>, one is always faster or always slower.</p>
+<p class="my-4">But for <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>100</mn><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(100N)</annotation></semantics></math></span> vs. <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>N</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N^2)</annotation></semantics></math></span>, which one is relatively faster or slower depends on the amount of data. To distinguish between algorithms in this kind of situation, Big O notation ignores constants. Either way, in the long run, both <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N)</annotation></semantics></math></span> and <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>100</mn><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(100N)</annotation></semantics></math></span> end up faster than <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>N</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N^2)</annotation></semantics></math></span>.</p>
+<p class="my-4">Big O notation is still a valid measure of performance when comparing algorithms from entirely different ranges. Just keep in mind that even with identical time complexity, the actual performance shown by algorithms can differ meaningfully.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#5-7.-A-Practical-Example" id="5-7.-A-Practical-Example"><h2 class="text-3xl font-bold" node="[object Object]">5-7. A Practical Example</h2></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">Let&#x27;s design an algorithm that, given an array of <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span> elements, selects only one out of every two elements to build a new array with <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>÷</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">N \div 2</annotation></semantics></math></span> elements.</p>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-java" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JAVA</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.Arrays;
+
+/**
+ * 누구나 자료 구조와 알고리즘 배열 선택 클래스
+ *
+ * @author RWB
+ * @see &lt;a href=&quot;https://blog.itcode.dev/posts/2021/07/23/about-algorithm-chapter05/&quot;&gt;빅 오를 사용하거나 사용하지 않는 코드 최적화&lt;/a&gt;
+ * @since 2021.07.23 Fri 22:32:54
+ */
+public class HalfArray
+{
+	/**
+	 * 메인 함수
+	 *
+	 * @param args: [String[]] 매개변수
+	 *
+	 * @throws IOException 데이터 입출력 예외
+	 */
+	public static void main(String[] args) throws IOException
+	{
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
+		
+		writer.write(&quot;정수 배열을 띄어쓰기로 구분하여 입력 &gt;&gt; &quot;);
+		writer.flush();
+		
+		// 배열
+		int[] array = Arrays.stream(reader.readLine().split(&quot; &quot;)).mapToInt(Integer::parseInt).toArray();
+		
+		int[] result = solve(array);
+		
+		writer.write(Arrays.toString(result));
+		writer.newLine();
+		writer.flush();
+		
+		writer.close();
+		reader.close();
+	}
+	
+	/**
+	 * 알고리즘 결과 반환 함수
+	 *
+	 * @param array: [int[]] 대상 배열
+	 *
+	 * @return [int[]] 결과 배열
+	 */
+	private static int[] solve(int[] array)
+	{
+		int length = (int) Math.ceil(array.length / 2D);
+		
+		int[] result = new int[length];
+		
+		int count = 0;
+		
+		for (int i = 0; i &lt; array.length; i++)
+		{
+			// 인덱스가 짝수일 경우
+			if (i % 2 == 0)
+			{
+				result[count] = array[i];
+				
+				count++;
+			}
+		}
+		
+		return result;
+	}
+}</code></pre></div></div></pre>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Input</li>
+</ul>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-tc" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">TC</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>0 1 2 3 4 5 6 7 8 9</code></pre></div></div></pre>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Output</li>
+</ul>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-tc" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">TC</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>[0, 2, 4, 6, 8]</code></pre></div></div></pre>
+<p class="my-4">The algorithm above iterates over every element of the array and, whenever the index is even, extracts that value into a new array which it then returns.</p>
+<p class="my-4">This algorithm consists of <span class="text-orange-400">scanning</span> and <span class="text-orange-400">insertion</span>.</p>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Scanning: <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span> elements</li>
+<li class="ml-6 list-disc" node="[object Object]">Insertion: <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mi mathvariant="normal">/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">N / 2</annotation></semantics></math></span> elements</li>
+</ul>
+<p class="my-4">In other words, the exact time complexity of the algorithm above is <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1.5</mn><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1.5N)</annotation></semantics></math></span>, but as mentioned above, since constants are ignored, it&#x27;s expressed as <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N)</annotation></semantics></math></span>.</p>
+<p class="my-4">Let&#x27;s optimize the algorithm above a bit further.</p>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-java" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JAVA</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.Arrays;
+
+/**
+ * 누구나 자료 구조와 알고리즘 향상된 배열 선택 클래스
+ *
+ * @author RWB
+ * @see &lt;a href=&quot;https://blog.itcode.dev/posts/2021/07/23/about-algorithm-chapter05/&quot;&gt;빅 오를 사용하거나 사용하지 않는 코드 최적화&lt;/a&gt;
+ * @since 2021.07.23 Fri 22:51:52
+ */
+public class ImproveHalfArray
+{
+	/**
+	 * 메인 함수
+	 *
+	 * @param args: [String[]] 매개변수
+	 *
+	 * @throws IOException 데이터 입출력 예외
+	 */
+	public static void main(String[] args) throws IOException
+	{
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
+		
+		writer.write(&quot;요소의 갯수가 짝수개인 정수 배열을 띄어쓰기로 구분하여 입력 &gt;&gt; &quot;);
+		writer.flush();
+		
+		// 배열
+		int[] array = Arrays.stream(reader.readLine().split(&quot; &quot;)).mapToInt(Integer::parseInt).toArray();
+		
+		int[] result = solve(array);
+		
+		writer.write(Arrays.toString(result));
+		writer.newLine();
+		writer.flush();
+		
+		writer.close();
+		reader.close();
+	}
+	
+	/**
+	 * 알고리즘 결과 반환 함수
+	 *
+	 * @param array: [int[]] 대상 배열
+	 *
+	 * @return [int[]] 결과 배열
+	 */
+	private static int[] solve(int[] array)
+	{
+		int length = (int) Math.ceil(array.length / 2D);
+		
+		int[] result = new int[length];
+		
+		int count = 0;
+		
+		for (int i = 0; i &lt; array.length; i += 2)
+		{
+			result[count] = array[i];
+			
+			count++;
+		}
+		
+		return result;
+	}
+}</code></pre></div></div></pre>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Input</li>
+</ul>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-tc" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">TC</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>0 1 2 3 4 5 6 7 8 9</code></pre></div></div></pre>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Output</li>
+</ul>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-tc" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">TC</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>[0, 2, 4, 6, 8]</code></pre></div></div></pre>
+<p class="my-4">The algorithm above is an improved version of the <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">for</span> loop in the <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">solve</span> method.</p>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-java" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JAVA</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>for (int i = 0; i &lt; array.length; i += 2)
+{
+	result[count] = array[i];
+	
+	count++;
+}</code></pre></div></div></pre>
+<p class="my-4">Instead of scanning each element one by one to determine whether its index is even, it scans only even indices from the start and inserts directly. In other words, scanning work is reduced by 50%.</p>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Scanning: <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mi mathvariant="normal">/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">N / 2</annotation></semantics></math></span> elements</li>
+<li class="ml-6 list-disc" node="[object Object]">Insertion: <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mi mathvariant="normal">/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">N / 2</annotation></semantics></math></span> elements</li>
+</ul>
+<p class="my-4">This algorithm has a genuine time complexity of <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N)</annotation></semantics></math></span>. Strictly speaking, the algorithm below has better performance, but from a time-complexity standpoint, both are identical.</p>
+<p class="my-4">Even with identical time complexity, when the amount of data is enormous, the algorithm below would be more suitable.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Wrap-up" id="Wrap-up"><h1 class="text-4xl font-bold" node="[object Object]">Wrap-up</h1></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">The main points covered in this chapter are as follows.</p>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Because Big O notation takes a pessimistic perspective, it ignores constants in time complexity.</li>
+<li class="ml-6 list-disc" node="[object Object]">Even with identical time complexity, actual performance can differ meaningfully.</li>
+</ul>
+<p class="my-4">Every so often, when meeting various people, you run into someone who always looks at life from a negative perspective. If Big O notation were personified, I imagine it would be exactly this kind of person.</p>
+<p class="my-4">Sometimes viewing things negatively is useful, but &quot;always&quot; doesn&#x27;t hold universally. There are countless perspectives in the world, and algorithms are no exception. Fortunately, in reality, most things fall within the range of the ordinary.</p>
+<p class="my-4">In the next chapter, let&#x27;s step away from the negative perspective and spend some time looking at things from an average perspective instead.</p></div><div><div class="flex flex-wrap gap-2"><span class="inline-flex items-center rounded-md bg-secondary px-2.5 py-1 font-semibold text-secondary-foreground text-xs transition-colors hover:bg-secondary/80" data-testid="ContentTag"># <!-- -->Data Structures</span><span class="inline-flex items-center rounded-md bg-secondary px-2.5 py-1 font-semibold text-secondary-foreground text-xs transition-colors hover:bg-secondary/80" data-testid="ContentTag"># <!-- -->Algorithm</span><span class="inline-flex items-center rounded-md bg-secondary px-2.5 py-1 font-semibold text-secondary-foreground text-xs transition-colors hover:bg-secondary/80" data-testid="ContentTag"># <!-- -->Grokking Algorithms</span><span class="inline-flex items-center rounded-md bg-secondary px-2.5 py-1 font-semibold text-secondary-foreground text-xs transition-colors hover:bg-secondary/80" data-testid="ContentTag"># <!-- -->Selection Sort</span></div><div class="mt-4 flex w-full items-center justify-end border-t pt-4"><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 bg-secondary text-secondary-foreground hover:bg-[color-mix(in_oklch,var(--secondary),var(--foreground)_5%)] aria-expanded:bg-secondary aria-expanded:text-secondary-foreground h-9 gap-1.5 px-2.5 in-data-[slot=button-group]:rounded-md has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 w-20"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>List</button></div></div><div class="grid w-full grid-cols-1 gap-4 sm:grid-cols-2" data-testid="ContentAdjacent"><div class="w-full"><a data-testid="ContentAdjacentPrev" href="/en/posts/2021/07/16/about-algorithm-chapter04" class="group flex flex-col items-stretch overflow-hidden rounded-lg border transition-colors hover:bg-accent hover:text-accent-foreground"><div class="aspect-32/8 size-full overflow-hidden"><img alt="Using Big O to Speed Up Code" class="size-full shrink-0 object-cover transition transition-scale group-hover:scale-105" height="100%" src="https://user-images.githubusercontent.com/50317129/125144706-add9c080-e159-11eb-9522-063c655ddf36.png" width="100%"/></div><div class="flex flex-1 items-center gap-2 p-4"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left shrink-0 text-muted-foreground" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg><div class="flex flex-col gap-1 overflow-hidden"><p class="text-muted-foreground text-xs">Previous</p><p class="truncate font-medium">Using Big O to Speed Up Code</p></div></div></a></div><div class="w-full"><a data-testid="ContentAdjacentNext" href="/en/posts/2021/07/24/about-algorithm-chapter06" class="group flex flex-col items-stretch overflow-hidden rounded-lg border transition-colors hover:bg-accent hover:text-accent-foreground"><div class="aspect-32/8 size-full overflow-hidden"><img alt="Optimizing for the Positive Scenario" class="size-full shrink-0 object-cover transition transition-scale group-hover:scale-105" height="100%" src="https://user-images.githubusercontent.com/50317129/125144706-add9c080-e159-11eb-9522-063c655ddf36.png" width="100%"/></div><div class="flex flex-1 items-center justify-end gap-2 p-4"><div class="flex flex-col gap-1 overflow-hidden"><p class="text-end text-muted-foreground text-xs">Next</p><p class="truncate font-medium">Optimizing for the Positive Scenario</p></div><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right shrink-0 text-muted-foreground" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></div></a></div></div><div class="w-full" data-url="/posts/2021/07/23/about-algorithm-chapter05"></div></div></div></div></section><footer class="relative mt-100" data-testid="AppFooter"><div class="absolute bottom-full left-0 h-50 w-full"><div class="relative size-full"><svg class="mb--2 min-h-10 transition duration-300 fill-(--wave16) absolute bottom-full left-0 z-1 h-10 w-full" data-hour="16" data-testid="Wave" preserveAspectRatio="none" shape-rendering="auto" viewBox="0 24 150 28" xmlns="http://www.w3.org/2000/svg"><defs><path d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" id="gentle-wave"></path></defs><g><use class="animation-duration-7000 animate-move-forever delay-[-2s]" fill="inherit" opacity="0.7" x="48" xlink:href="#gentle-wave" y="0"></use><use class="animation-duration-10000 animate-move-forever delay-[-3s]" fill="inherit" opacity="0.5" x="48" xlink:href="#gentle-wave" y="3"></use><use class="animation-duration-13000 animate-move-forever delay-[-4s]" fill="inherit" opacity="0.3" x="48" xlink:href="#gentle-wave" y="5"></use><use class="animation-duration-20000 animate-move-forever delay-[-5s]" fill="inherit" x="48" xlink:href="#gentle-wave" y="7"></use></g></svg><div class="transition duration-300 bg-(image:--sky16) absolute top-0 left-0 size-full" data-component="Sky" data-hour="16"></div><img alt="ship" class="absolute -bottom-2 left-1/10 z-1 size-20 animate-boat sm:size-25" height="auto" src="https://github.com/user-attachments/assets/e2a11c89-57af-4944-9068-bf237369f8b3" width="auto"/><svg class="mb--2 min-h-10 transition duration-300 fill-(--wave7) absolute bottom-0 left-0 z-2 h-10 w-full" data-hour="7" data-testid="Wave" preserveAspectRatio="none" shape-rendering="auto" viewBox="0 24 150 28" xmlns="http://www.w3.org/2000/svg"><defs><path d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" id="gentle-wave"></path></defs><g><use class="animation-duration-7000 animate-move-forever delay-[-2s]" fill="inherit" opacity="0.7" x="48" xlink:href="#gentle-wave" y="0"></use><use class="animation-duration-10000 animate-move-forever delay-[-3s]" fill="inherit" opacity="0.5" x="48" xlink:href="#gentle-wave" y="3"></use><use class="animation-duration-13000 animate-move-forever delay-[-4s]" fill="inherit" opacity="0.3" x="48" xlink:href="#gentle-wave" y="5"></use><use class="animation-duration-20000 animate-move-forever delay-[-5s]" fill="inherit" x="48" xlink:href="#gentle-wave" y="7"></use></g></svg></div></div><div class="min-h-10 bg-(--wave7)"><div class="flex w-full flex-col items-center gap-6 px-6 py-12 text-white"><div class="flex flex-col items-center gap-1 text-center"><div class="flex items-center gap-2"><img alt="blog.itcode.dev" height="24" src="/logo.png" width="24"/><p class="font-bold lang-en:font-playwright text-xl">Notes from the π-th Alpaca</p></div><span class="text-white/70 text-xs">7.0.1</span></div><div class="flex flex-wrap items-center justify-center gap-1"><a aria-label="Homepage" class="flex size-9 items-center justify-center rounded-full p-2 text-white/80 transition-colors hover:bg-white/10 hover:text-white" href="https://itcode.dev" rel="noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg></a><a aria-label="GitHub" class="flex size-9 items-center justify-center rounded-full p-2 text-white/80 transition-colors hover:bg-white/10 hover:text-white" href="https://github.com/RWB0104" rel="noreferrer" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a><a aria-label="LinkedIn" class="flex size-9 items-center justify-center rounded-full p-2 text-white/80 transition-colors hover:bg-white/10 hover:text-white" href="https://www.linkedin.com/in/itcode" rel="noreferrer" target="_blank"><svg viewBox="0 0 256 256" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="[&amp;&gt;path]:fill-inherit"><path d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 67.013ZM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009-.002-12.157 9.851-22.014 22.008-22.016 12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453" fill="#0A66C2"></path></svg></a><a aria-label="Email" class="flex size-9 items-center justify-center rounded-full p-2 text-white/80 transition-colors hover:bg-white/10 hover:text-white" href="mailto:psj2716@gmail.com" rel="noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg></a><a aria-label="Sitemap" class="flex size-9 items-center justify-center rounded-full p-2 text-white/80 transition-colors hover:bg-white/10 hover:text-white" href="/sitemap.xml" rel="noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open-text" aria-hidden="true"><path d="M12 5v16"></path><path d="M16 13h2"></path><path d="M16 9h2"></path><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"></path><path d="M6 13h2"></path><path d="M6 9h2"></path></svg></a><a aria-label="RSS" class="flex size-9 items-center justify-center rounded-full p-2 text-white/80 transition-colors hover:bg-white/10 hover:text-white" href="/rss/en.xml" rel="noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rss" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></div><div class="flex flex-col items-center gap-0.5 text-center text-white/50 text-xs"><span>Developed by <!-- -->RWB<!-- --> since 2021.05</span><span>7th upgraded at 2026.08</span></div></div></div></footer><div class="fixed right-8 bottom-8 z-10 flex flex-col items-end gap-4" data-testid="Floater"><div role="group" data-slot="button-group" data-orientation="vertical" class="flex w-fit items-stretch *:focus-visible:relative *:focus-visible:z-10 has-[&gt;[data-slot=button-group]]:gap-2 has-[select[aria-hidden=true]:last-child]:[&amp;&gt;[data-slot=select-trigger]:last-of-type]:rounded-r-md [&amp;&gt;[data-slot=select-trigger]:not([class*=&#x27;w-&#x27;])]:w-fit [&amp;&gt;input]:flex-1 flex-col *:data-slot:rounded-b-none [&amp;&gt;[data-slot]:not(:has(~[data-slot]))]:rounded-b-md! [&amp;&gt;[data-slot]~[data-slot]]:rounded-t-none [&amp;&gt;[data-slot]~[data-slot]]:border-t-0"><button type="button" tabindex="0" data-slot="button" aria-label="맨 위로 이동" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 border-border bg-background shadow-xs hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-up" aria-hidden="true"><path d="m18 15-6-6-6 6"></path></svg></button><button type="button" tabindex="0" data-slot="button" aria-label="맨 아래로 이동" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 border-border bg-background shadow-xs hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button></div></div></main></div>
+        
+        <script id="vike_pageContext" type="application/json">{"locale":"en","urlLogical":"\/posts\/2021\/07\/23\/about-algorithm-chapter05","pageId":"\/pages\/posts\/@id","routeParams":{"*":"2021\/07\/23\/about-algorithm-chapter05"},"data":{"adjacent":{"next":{"image":"https:\/\/user-images.githubusercontent.com\/50317129\/125144706-add9c080-e159-11eb-9522-063c655ddf36.png","title":"Optimizing for the Positive Scenario","url":"\/posts\/2021\/07\/24\/about-algorithm-chapter06"},"prev":{"image":"https:\/\/user-images.githubusercontent.com\/50317129\/125144706-add9c080-e159-11eb-9522-063c655ddf36.png","title":"Using Big O to Speed Up Code","url":"\/posts\/2021\/07\/16\/about-algorithm-chapter04"}},"detail":{"body":"\n\u003cp class=\"text-orange-500\" align=\"center\">This post is part of a personal study group activity, summarizing the content after reading through the book \"Grokking Algorithms.\"\u003c\/p>\n\n# Chapter 5. Optimizing Code With and Without Big O\n\nSo far, we've quantified algorithm performance comparisons using \u003cspan class=\"text-blue-400\">Big O notation\u003c\/span>. But Big O notation isn't perfect for measuring an algorithm's performance either.\n\nIn the previous chapter, we explained that both $N(O^2)$ and $N(N^2 - N)$ are considered $N(O^2)$ under Big O notation. Because of this property, algorithms that actually show a clear difference can end up measured as having nearly identical performance under Big O notation.\n\nAn algorithm's speed is a critical metric when choosing between algorithms, so measuring it accurately is very important. In this chapter, as described above, we'll distinguish between algorithms that generally appear to have \u003cspan class=\"text-pink-400\">similar\u003c\/span> performance and determine which one is actually faster.\n\n## 5-1. Selection Sort\n\nThe previous chapter walked through the \u003cspan class=\"text-orange-400\">bubble sort\u003c\/span> algorithm. In this chapter, we'll walk through a different sorting algorithm: \u003cspan class=\"text-orange-400\">selection sort\u003c\/span>.\n\nThe selection sort algorithm works by scanning the elements on each passthrough to find the minimum value, then moving it to the front to sort it.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793171-d9677021-0ff9-414c-b83b-165dc037222f.png\" width=\"600px\" \/>\n\u003c\/p>\n\nThe array we'll use for sorting is shown above, and the process proceeds as follows.\n\n1. Examine the very first value.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793179-854c05e3-04cc-420a-8a42-22fe0145c4cb.png\" width=\"600px\" \/>\n\u003c\/p>\n\nThe key idea is to find the smallest element within a single passthrough. Since this is still the first step, the first element becomes the minimum by default.\n\n2. Move the search pointer forward by one and compare it against the passthrough minimum.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793193-d865b162-9c02-44a0-a59c-d2e1674f4e5f.png\" width=\"600px\" \/>\n\u003c\/p>\n\n* Minimum: 5\n* Value examined: 3\n\nUpdate the passthrough minimum to 3.\n\n3. Repeat step 2.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793202-90a4dfc3-d40c-4073-9127-763781156693.png\" width=\"600px\" \/>\n\u003c\/p>\n\n* Minimum: 3\n* Value examined: 9\n\nSince the passthrough minimum is smaller, it isn't updated.\n\n4. Repeat step 2.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793209-88b076db-fe26-4cee-9a0c-1f0540beb0c8.png\" width=\"600px\" \/>\n\u003c\/p>\n\n* Minimum: 3\n* Value examined: 2\n\nUpdate the passthrough minimum to 2.\n\n5. Repeat step 2.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793215-a5a7dde7-8fbf-42a4-b585-5b5778297cc3.png\" width=\"600px\" \/>\n\u003c\/p>\n\n* Minimum: 2\n* Value examined: 6\n\nSince the passthrough minimum is smaller, it isn't updated. Since this is the last element, the scan ends and a single element gets sorted.\n\n6. Move the element with the passthrough minimum to the front.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793223-3580ae05-867b-464d-9d58-831e93b6142b.png\" width=\"600px\" \/>\n\u003c\/p>\n\nSwap the front element, 5, with the minimum value, 2. Since 2 is now fully in its correct position, it's excluded from all future passthroughs.\n\n## 5-2. Selection Sort in Action\n\nNow that we understand how selection sort works from the previous section, let's perform selection sort on the entire array.\n\n\u003csmall class=\"text-red-500\">Passthrough 1 is identical to the process from the previous section.\u003c\/small>\n\n1. Passthrough 1: Examine the very first element.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793179-854c05e3-04cc-420a-8a42-22fe0145c4cb.png\" width=\"600px\" \/>\n\u003c\/p>\n\n* Minimum: -\n* Value examined: 5\n\nThe key idea is to find the smallest element within a single passthrough. Since this is still the first step, the first element becomes the minimum by default.\n\n2. Passthrough 1: Move the search pointer forward by one and compare it against the passthrough minimum.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793193-d865b162-9c02-44a0-a59c-d2e1674f4e5f.png\" width=\"600px\" \/>\n\u003c\/p>\n\n* Minimum: 5\n* Value examined: 3\n\nUpdate the passthrough minimum to 3.\n\n3. Passthrough 1: Repeat step 2.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793202-90a4dfc3-d40c-4073-9127-763781156693.png\" width=\"600px\" \/>\n\u003c\/p>\n\n* Minimum: 3\n* Value examined: 9\n\nSince the passthrough minimum is smaller, it isn't updated.\n\n4. Passthrough 1: Repeat step 2.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793209-88b076db-fe26-4cee-9a0c-1f0540beb0c8.png\" width=\"600px\" \/>\n\u003c\/p>\n\n* Minimum: 3\n* Value examined: 2\n\nUpdate the passthrough minimum to 2.\n\n5. Passthrough 1: Repeat step 2.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793215-a5a7dde7-8fbf-42a4-b585-5b5778297cc3.png\" width=\"600px\" \/>\n\u003c\/p>\n\n* Minimum: 2\n* Value examined: 6\n\nSince the passthrough minimum is smaller, it isn't updated. Since this is the last element, the scan ends and a single element gets sorted.\n\n6. Passthrough 1: Move the element with the passthrough minimum to the front.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793223-3580ae05-867b-464d-9d58-831e93b6142b.png\" width=\"600px\" \/>\n\u003c\/p>\n\nSwap the front element, 5, with the minimum value, 2. Since 2 is now fully in its correct position, it's **excluded from all future passthroughs**.\n\n7. Passthrough 2: Examine the second element.\n\n* Minimum: -\n* Value examined: 3\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793231-7c8448af-29e1-4d65-9c37-630dcec47e24.png\" width=\"600px\" \/>\n\u003c\/p>\n\nAssign this element as the minimum.\n\n8. Passthrough 2: Repeat step 2.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793239-cefccd38-954e-4c49-85be-a007698d072b.png\" width=\"600px\" \/>\n\u003c\/p>\n\n* Minimum: 3\n* Value examined: 9\n\nSince the passthrough minimum is smaller, it isn't updated.\n\n9. Passthrough 2: Repeat step 2.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793255-354bc82f-0c65-4a75-bfde-c192f97344dc.png\" width=\"600px\" \/>\n\u003c\/p>\n\n* Minimum: 3\n* Value examined: 5\n\nSince the passthrough minimum is smaller, it isn't updated.\n\n10. Passthrough 2: Repeat step 2.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793276-bd4020c4-fcda-4b45-b993-2575ff7c1b69.png\" width=\"600px\" \/>\n\u003c\/p>\n\n* Minimum: 3\n* Value examined: 6\n\nSince the passthrough minimum is smaller, it isn't updated.\n\n11. Passthrough 2: Move the element with the passthrough minimum to the second position.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793282-277dc152-91d4-47a8-bdcb-3f5280593040.png\" width=\"600px\" \/>\n\u003c\/p>\n\nThe minimum value, 3, happens to already be in the correct position, so no swap occurs. Since the second element is now sorted, it's likewise excluded from all future passthroughs.\n\n12. Passthrough 3: Examine the third element.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793296-8e9c6a9b-8aff-4634-86cc-684338c990dc.png\" width=\"600px\" \/>\n\u003c\/p>\n\n* Minimum: -\n* Value examined: 9\n\nAssign this element as the minimum.\n\n13. Passthrough 3: Repeat step 2.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793310-19358a00-e527-405d-8033-1eef2c11060b.png\" width=\"600px\" \/>\n\u003c\/p>\n\n* Minimum: 9\n* Value examined: 5\n\nUpdate the passthrough minimum to 5.\n\n14. Passthrough 3: Repeat step 2.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793315-ca00a872-d867-40e5-95c3-c9de2b7c7851.png\" width=\"600px\" \/>\n\u003c\/p>\n\n* Minimum: 5\n* Value examined: 6\n\nSince the passthrough minimum is smaller, it isn't updated.\n\n15. Passthrough 3: Move the element with the passthrough minimum to the third position.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793330-af0a7836-5bfd-477c-b614-c8c2fc8f108f.png\" width=\"600px\" \/>\n\u003c\/p>\n\nSwap the third element, 9, with the minimum value, 5.\n\n16. Passthrough 4: Examine the fourth element.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793337-f90959c9-c798-46f5-b64a-68807621edad.png\" width=\"600px\" \/>\n\u003c\/p>\n\n* Minimum: -\n* Value examined: 9\n\nAssign this element as the minimum.\n\n17. Passthrough 4: Repeat step 2.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793345-4f6a2819-4dac-4c81-b9c6-4ca7fd4c8749.png\" width=\"600px\" \/>\n\u003c\/p>\n\n* Minimum: 9\n* Value examined: 6\n\nUpdate the passthrough minimum to 6.\n\n18. Passthrough 4: Move the element with the passthrough minimum to the fourth position.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793357-e0e62399-9d03-48a8-8f23-721e43022a65.png\" width=\"600px\" \/>\n\u003c\/p>\n\nSwap the fourth element, 9, with the minimum value, 6.\n\n19. Passthrough 5: Examine the last element.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793365-b658adfc-df4b-4e56-b130-e78e81826d54.png\" width=\"600px\" \/>\n\u003c\/p>\n\n* Minimum: -\n* Value examined: 9\n\nUpdate the passthrough minimum to 9.\n\nSince this is the last element, it's already in its sorted position by default, and the passthrough ends.\n\nWith this, the final sorted array produced by selection sort looks like this.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793370-a6ec0819-47c7-49c6-8f30-b953d9311336.png\" width=\"600px\" \/>\n\u003c\/p>\n\n## 5-3. Implementing Selection Sort\n\nLet's implement selection sort in \u003cspan class=\"text-orange-400\">Java\u003c\/span> based on the process above.\n\n``` java\nimport java.io.BufferedReader;\nimport java.io.BufferedWriter;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.io.OutputStreamWriter;\nimport java.util.Arrays;\n\n\/**\n * 누구나 자료 구조와 알고리즘 선택 정렬 클래스\n *\n * @author RWB\n * @see \u003ca href=\"https:\/\/blog.itcode.dev\/posts\/2021\/07\/23\/about-algorithm-chapter05\/\">빅 오를 사용하거나 사용하지 않는 코드 최적화\u003c\/a>\n * @since 2021.07.23 Fri 01:12:20\n *\/\npublic class SelectionSort\n{\n\t\/**\n\t * 메인 함수\n\t *\n\t * @param args: [String[]] 매개변수\n\t *\n\t * @throws IOException 데이터 입출력 예외\n\t *\/\n\tpublic static void main(String[] args) throws IOException\n\t{\n\t\tBufferedReader reader = new BufferedReader(new InputStreamReader(System.in));\n\t\tBufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));\n\t\t\n\t\twriter.write(\"중복 확인할 정수 배열을 띄어쓰기로 구분하여 입력 >> \");\n\t\twriter.flush();\n\t\t\n\t\t\/\/ 배열\n\t\tint[] array = Arrays.stream(reader.readLine().split(\" \")).mapToInt(Integer::parseInt).toArray();\n\t\t\n\t\tint[] processes = selectionSort(array);\n\t\t\n\t\twriter.write(Arrays.toString(array));\n\t\twriter.newLine();\n\t\twriter.flush();\n\t\t\n\t\twriter.write(\" - 비교 작업량: \");\n\t\twriter.write(String.valueOf(processes[0]));\n\t\twriter.newLine();\n\t\twriter.flush();\n\t\t\n\t\twriter.write(\" - 스왑 작업량: \");\n\t\twriter.write(String.valueOf(processes[1]));\n\t\twriter.newLine();\n\t\twriter.flush();\n\t\t\n\t\twriter.write(\" - 총 작업량: \");\n\t\twriter.write(String.valueOf(processes[0] + processes[1]));\n\t\twriter.newLine();\n\t\twriter.flush();\n\t\t\n\t\twriter.close();\n\t\treader.close();\n\t}\n\t\n\t\/**\n\t * 선택 정렬 함수\n\t *\n\t * @param array : [int[]] 대상 배열\n\t *\n\t * @return [int[]] 작업 갯수 배열\n\t *\/\n\tprivate static int[] selectionSort(int[] array)\n\t{\n\t\tint compareCount = 0;\n\t\tint swapCount = 0;\n\t\t\n\t\tfor (int i = 0; i \u003c array.length; i++)\n\t\t{\n\t\t\t\/\/ 패스스루의 최소값 인덱스\n\t\t\tint min = i;\n\t\t\t\n\t\t\tfor (int j = i + 1; j \u003c array.length; j++)\n\t\t\t{\n\t\t\t\tcompareCount++;\n\t\t\t\t\n\t\t\t\t\/\/ 현재 요소의 값이 패스스루의 최소값보다 작을 경우\n\t\t\t\tif (array[j] \u003c array[min])\n\t\t\t\t{\n\t\t\t\t\tmin = j;\n\t\t\t\t}\n\t\t\t}\n\t\t\t\n\t\t\t\/\/ 최소 인덱스에 변화가 있었을 경우\n\t\t\tif (min != i)\n\t\t\t{\n\t\t\t\tint temp = array[min];\n\t\t\t\t\n\t\t\t\tarray[min] = array[i];\n\t\t\t\tarray[i] = temp;\n\t\t\t\t\n\t\t\t\tswapCount++;\n\t\t\t}\n\t\t}\n\t\t\n\t\treturn new int[] { compareCount, swapCount };\n\t}\n}\n```\n\n* Input\n\n``` tc\n5 3 4 1 2\n```\n\n* Output\n\n``` tc\n[1, 2, 3, 4, 5]\n - 비교 작업량: 10\n - 스왑 작업량: 4\n - 총 작업량: 14\n```\n\nIt takes a space-separated array of numbers from the user, performs selection sort, and displays the amount of work broken down by category. The core logic is performed in the `selectionSort` method.\n\n* First `for`: passthrough\n* Second `for`: comparison work\n* `if` statement: swap work\n\n``` java\nfor (int i = 0; i \u003c array.length; i++)\n{\n\t\/\/ 패스스루의 최소값 인덱스\n\tint min = i;\n\t\n\tfor (int j = i + 1; j \u003c array.length; j++)\n\t{\n\t\tcompareCount++;\n\t\t\n\t\t\/\/ 현재 요소의 값이 패스스루의 최소값보다 작을 경우\n\t\tif (array[j] \u003c array[min])\n\t\t{\n\t\t\tmin = j;\n\t\t}\n\t}\n\t\n\t\/\/ 최소 인덱스에 변화가 있었을 경우\n\tif (min != i)\n\t{\n\t\tint temp = array[min];\n\t\t\n\t\tarray[min] = array[i];\n\t\tarray[i] = temp;\n\t\t\n\t\tswapCount++;\n\t}\n}\n```\n\nFor each passthrough, the first element is assigned to the minimum `min`. Then, each subsequent element up through the last is compared against `min` in sequence.\n\nWhenever an element smaller than `min` is found, it replaces `min`. Ultimately, `min` ends up holding the smallest value among all the elements examined.\n\nThe `if` statement checks whether `min` has changed. If it's not the index of the passthrough's first element, that means `min` changed, so a swap is performed.\n\n\n## 5-4. The Efficiency of Selection Sort\n\nLet's examine the efficiency of selection sort. As mentioned above, selection sort consists of \u003cspan class=\"text-blue-400\">comparison\u003c\/span> and \u003cspan class=\"text-blue-400\">exchange\u003c\/span> operations. Comparisons always happen, while exchanges happen conditionally.\n\nFor an array of 5 elements, the amount of comparison work when performing selection sort is as follows.\n\n| Passthrough | Work count |\n| :------: | :----: |\n|    1     |   4    |\n|    2     |   3    |\n|    3     |   2    |\n|    4     |   1    |\n\n$4 + 3 + 2 + 1 = 10$, so a total of 10 comparisons are performed. In general terms, this can be defined as $(N - 1) + (N - 2) + \\dots + 1$.\n\nUnlike comparisons, exchanges happen at most once per passthrough, and depending on the conditions, may not happen at all.\n\nIn the worst case, an exchange happens on every passthrough, so with 5 elements, we can expect at most 4 exchange operations.\n\nFor example, with $[ 5, 3, 4, 1, 2 ]$, a swap occurs on every single passthrough.\n\n> **Doesn't the book say the worst case is when the array is reversed??**  \n> With a reversed array, only two exchanges actually end up occurring. Once half is sorted, the remaining back half sorts itself automatically.\n\nComparing bubble sort and selection sort looks like this.\n\n|  $N$  | Bubble Sort | Selection Sort | Difference  |\n| :---: | :-------: | :-------: | :---: |\n|   5   |    20     |    14     |  30%  |\n|  10   |    90     |    54     |  40%  |\n|  20   |    380    |    199    | 52.4% |\n|  40   |   1560    |    819    | 52.5% |\n|  80   |   6320    |   3229    | 51.1% |\n|  100  |   9900    |   5049    |  51%  |\n\nSelection sort's speed converges to about 50% of bubble sort's. In other words, even in the worst case, selection sort is roughly twice as fast.\n\n## 5-5. Ignoring Constants\n\nThe detailed comparison in the previous section confirmed there's a meaningful difference between bubble sort and selection sort. Expressed in Big O notation, selection sort is $O(N^2 \/ 2)$.\n\n|  $N$  | $N^2 \/ 2$ | Selection sort's work count |\n| :---: | :-------: | :----------------: |\n|   5   |   12.5    |         14         |\n|  10   |    50     |         54         |\n|  20   |    200    |        199         |\n|  40   |    800    |        819         |\n|  80   |   3200    |        3229        |\n|  100  |   5000    |        5049        |\n\nThe table above backs this up. But the actual Big O notation for both bubble sort and selection sort is the same: $O(N^2)$. Selection sort likewise has \u003cspan class=\"text-red-400\">two nested loops\u003c\/span>, exhibiting the same $O(N^2)$ characteristics. This is a property that's been mentioned consistently since Chapter 3, where Big O notation was first introduced: \u003cspan class=\"text-teal-400\">Big O notation ignores constants\u003c\/span>.\n\nConstants clearly matter numerically, so why does a technique that's supposed to measure **performance** take such a loose form?\n\n## 5-6. The Role of Big O\n\nWhy does Big O notation ignore constants? This can be explained by the perspective Big O notation takes. Let's compare the workloads of $O(N)$ vs. $O(N^2)$, and $O(100N)$ vs. $O(N^2)$, to see what perspective Big O notation adopts when evaluating algorithms.\n\n\u003cp align=\"center\">\n\t\u003cimg src=\"https:\/\/user-images.githubusercontent.com\/50317129\/126793374-db4248af-daf1-4e02-8622-c16d2a2c9f69.png\" width=\"800px\" \/>\n\u003c\/p>\n\nFor $O(N^2)$, it's always equal to or slower than $O(N)$ no matter what. But $O(100N)$ is a bit different. In the early range where the data is small, $O(N^2)$ is actually faster, but once the data grows large enough, $O(100N)$ becomes faster.\n\nThis is why Big O notation doesn't put much weight on constants. When the ranges are entirely different, like $O(N)$ vs. $O(N^2)$, one is always faster or always slower.\n\nBut for $O(100N)$ vs. $O(N^2)$, which one is relatively faster or slower depends on the amount of data. To distinguish between algorithms in this kind of situation, Big O notation ignores constants. Either way, in the long run, both $O(N)$ and $O(100N)$ end up faster than $O(N^2)$.\n\nBig O notation is still a valid measure of performance when comparing algorithms from entirely different ranges. Just keep in mind that even with identical time complexity, the actual performance shown by algorithms can differ meaningfully.\n\n## 5-7. A Practical Example\n\nLet's design an algorithm that, given an array of $N$ elements, selects only one out of every two elements to build a new array with $N \\div 2$ elements.\n\n``` java\nimport java.io.BufferedReader;\nimport java.io.BufferedWriter;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.io.OutputStreamWriter;\nimport java.util.Arrays;\n\n\/**\n * 누구나 자료 구조와 알고리즘 배열 선택 클래스\n *\n * @author RWB\n * @see \u003ca href=\"https:\/\/blog.itcode.dev\/posts\/2021\/07\/23\/about-algorithm-chapter05\/\">빅 오를 사용하거나 사용하지 않는 코드 최적화\u003c\/a>\n * @since 2021.07.23 Fri 22:32:54\n *\/\npublic class HalfArray\n{\n\t\/**\n\t * 메인 함수\n\t *\n\t * @param args: [String[]] 매개변수\n\t *\n\t * @throws IOException 데이터 입출력 예외\n\t *\/\n\tpublic static void main(String[] args) throws IOException\n\t{\n\t\tBufferedReader reader = new BufferedReader(new InputStreamReader(System.in));\n\t\tBufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));\n\t\t\n\t\twriter.write(\"정수 배열을 띄어쓰기로 구분하여 입력 >> \");\n\t\twriter.flush();\n\t\t\n\t\t\/\/ 배열\n\t\tint[] array = Arrays.stream(reader.readLine().split(\" \")).mapToInt(Integer::parseInt).toArray();\n\t\t\n\t\tint[] result = solve(array);\n\t\t\n\t\twriter.write(Arrays.toString(result));\n\t\twriter.newLine();\n\t\twriter.flush();\n\t\t\n\t\twriter.close();\n\t\treader.close();\n\t}\n\t\n\t\/**\n\t * 알고리즘 결과 반환 함수\n\t *\n\t * @param array: [int[]] 대상 배열\n\t *\n\t * @return [int[]] 결과 배열\n\t *\/\n\tprivate static int[] solve(int[] array)\n\t{\n\t\tint length = (int) Math.ceil(array.length \/ 2D);\n\t\t\n\t\tint[] result = new int[length];\n\t\t\n\t\tint count = 0;\n\t\t\n\t\tfor (int i = 0; i \u003c array.length; i++)\n\t\t{\n\t\t\t\/\/ 인덱스가 짝수일 경우\n\t\t\tif (i % 2 == 0)\n\t\t\t{\n\t\t\t\tresult[count] = array[i];\n\t\t\t\t\n\t\t\t\tcount++;\n\t\t\t}\n\t\t}\n\t\t\n\t\treturn result;\n\t}\n}\n```\n\n* Input\n\n``` tc\n0 1 2 3 4 5 6 7 8 9\n```\n\n* Output\n\n``` tc\n[0, 2, 4, 6, 8]\n```\n\nThe algorithm above iterates over every element of the array and, whenever the index is even, extracts that value into a new array which it then returns.\n\nThis algorithm consists of \u003cspan class=\"text-orange-400\">scanning\u003c\/span> and \u003cspan class=\"text-orange-400\">insertion\u003c\/span>.\n\n* Scanning: $N$ elements\n* Insertion: $N \/ 2$ elements\n\nIn other words, the exact time complexity of the algorithm above is $O(1.5N)$, but as mentioned above, since constants are ignored, it's expressed as $O(N)$.\n\nLet's optimize the algorithm above a bit further.\n\n``` java\nimport java.io.BufferedReader;\nimport java.io.BufferedWriter;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.io.OutputStreamWriter;\nimport java.util.Arrays;\n\n\/**\n * 누구나 자료 구조와 알고리즘 향상된 배열 선택 클래스\n *\n * @author RWB\n * @see \u003ca href=\"https:\/\/blog.itcode.dev\/posts\/2021\/07\/23\/about-algorithm-chapter05\/\">빅 오를 사용하거나 사용하지 않는 코드 최적화\u003c\/a>\n * @since 2021.07.23 Fri 22:51:52\n *\/\npublic class ImproveHalfArray\n{\n\t\/**\n\t * 메인 함수\n\t *\n\t * @param args: [String[]] 매개변수\n\t *\n\t * @throws IOException 데이터 입출력 예외\n\t *\/\n\tpublic static void main(String[] args) throws IOException\n\t{\n\t\tBufferedReader reader = new BufferedReader(new InputStreamReader(System.in));\n\t\tBufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));\n\t\t\n\t\twriter.write(\"요소의 갯수가 짝수개인 정수 배열을 띄어쓰기로 구분하여 입력 >> \");\n\t\twriter.flush();\n\t\t\n\t\t\/\/ 배열\n\t\tint[] array = Arrays.stream(reader.readLine().split(\" \")).mapToInt(Integer::parseInt).toArray();\n\t\t\n\t\tint[] result = solve(array);\n\t\t\n\t\twriter.write(Arrays.toString(result));\n\t\twriter.newLine();\n\t\twriter.flush();\n\t\t\n\t\twriter.close();\n\t\treader.close();\n\t}\n\t\n\t\/**\n\t * 알고리즘 결과 반환 함수\n\t *\n\t * @param array: [int[]] 대상 배열\n\t *\n\t * @return [int[]] 결과 배열\n\t *\/\n\tprivate static int[] solve(int[] array)\n\t{\n\t\tint length = (int) Math.ceil(array.length \/ 2D);\n\t\t\n\t\tint[] result = new int[length];\n\t\t\n\t\tint count = 0;\n\t\t\n\t\tfor (int i = 0; i \u003c array.length; i += 2)\n\t\t{\n\t\t\tresult[count] = array[i];\n\t\t\t\n\t\t\tcount++;\n\t\t}\n\t\t\n\t\treturn result;\n\t}\n}\n```\n\n* Input\n\n``` tc\n0 1 2 3 4 5 6 7 8 9\n```\n\n* Output\n\n``` tc\n[0, 2, 4, 6, 8]\n```\n\nThe algorithm above is an improved version of the `for` loop in the `solve` method.\n\n``` java\nfor (int i = 0; i \u003c array.length; i += 2)\n{\n\tresult[count] = array[i];\n\t\n\tcount++;\n}\n```\n\nInstead of scanning each element one by one to determine whether its index is even, it scans only even indices from the start and inserts directly. In other words, scanning work is reduced by 50%.\n\n* Scanning: $N \/ 2$ elements\n* Insertion: $N \/ 2$ elements\n\nThis algorithm has a genuine time complexity of $O(N)$. Strictly speaking, the algorithm below has better performance, but from a time-complexity standpoint, both are identical.\n\nEven with identical time complexity, when the amount of data is enormous, the algorithm below would be more suitable.\n\n# Wrap-up\n\nThe main points covered in this chapter are as follows.\n\n* Because Big O notation takes a pessimistic perspective, it ignores constants in time complexity.\n* Even with identical time complexity, actual performance can differ meaningfully.\n\nEvery so often, when meeting various people, you run into someone who always looks at life from a negative perspective. If Big O notation were personified, I imagine it would be exactly this kind of person.\n\nSometimes viewing things negatively is useful, but \"always\" doesn't hold universally. There are countless perspectives in the world, and algorithms are no exception. Fortunately, in reality, most things fall within the range of the ordinary.\n\nIn the next chapter, let's step away from the negative perspective and spend some time looking at things from an average perspective instead.\n","meta":{"category":"Algorithm","createdAt":1627051353000,"group":"Grokking Algorithms","hasComment":true,"hasPublish":true,"images":["https:\/\/user-images.githubusercontent.com\/50317129\/125144706-add9c080-e159-11eb-9522-063c655ddf36.png"],"subtitle":["So far, we've quantified algorithm performance comparisons using Big O notation. But Big O notation isn't perfect for measuring an algorithm's performance either. In the previous chapter, we explained that both N(O^2) and N(N^2 - N) are considered N(O^2) under Big O notation. Because of this property, algorithms that actually show a clear difference can end up measured as having nearly identical performance under Big O notation."],"tags":["Data Structures","Algorithm","Grokking Algorithms","Selection Sort"],"title":"Optimizing Code With and Without Big O","type":"posts"},"url":"\/2021\/07\/23\/about-algorithm-chapter05","toc":[{"idx":"1.","level":1,"text":"Chapter 5. Optimizing Code With and Without Big O"},{"idx":"1.1.","level":2,"text":"5-1. Selection Sort"},{"idx":"1.2.","level":2,"text":"5-2. Selection Sort in Action"},{"idx":"1.3.","level":2,"text":"5-3. Implementing Selection Sort"},{"idx":"1.4.","level":2,"text":"5-4. The Efficiency of Selection Sort"},{"idx":"1.5.","level":2,"text":"5-5. Ignoring Constants"},{"idx":"1.6.","level":2,"text":"5-6. The Role of Big O"},{"idx":"1.7.","level":2,"text":"5-7. A Practical Example"},{"idx":"2.","level":1,"text":"Wrap-up"}]},"group":[{"title":"Recursive Iteration Using Recursion","url":"\/posts\/2021\/08\/04\/about-algorithm-chapter09"},{"title":"Writing Leaner Code with Stacks and Queues","url":"\/posts\/2021\/07\/31\/about-algorithm-chapter08"},{"title":"Blazing-Fast Lookups with Hash Tables","url":"\/posts\/2021\/07\/29\/about-algorithm-chapter07"},{"title":"Optimizing for the Positive Scenario","url":"\/posts\/2021\/07\/24\/about-algorithm-chapter06"},{"title":"Optimizing Code With and Without Big O","url":"\/posts\/2021\/07\/23\/about-algorithm-chapter05"},{"title":"Using Big O to Speed Up Code","url":"\/posts\/2021\/07\/16\/about-algorithm-chapter04"},{"title":"Big O Notation","url":"\/posts\/2021\/07\/14\/about-algorithm-chapter03"},{"title":"Why Algorithms Matter","url":"\/posts\/2021\/07\/10\/about-algorithm-chapter02"},{"title":"Why Data Structures Matter","url":"\/posts\/2021\/07\/10\/about-algorithm-chapter01"}]}}</script>
+        <script id="vike_globalContext" type="application/json">{}</script>
+        <script src="/assets/entries/entry-client-routing.D3zuzaAF.js" type="module" async></script>
+        <link rel="modulepreload" href="/assets/entries/pages_posts_-id.D_Okxrcr.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-CdR2FKoq.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-Fpn0-Pqm.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-BEFtOQL8.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-OPBnc4Ld.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-DR8IhSux.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-Czpn1I53.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-C7ctEtix.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-BLfCQZmh.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-D-TcBJg8.js" as="script" type="text/javascript">
+      </body>
+    </html>

@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <link rel="stylesheet" type="text/css" href="/assets/static/style-5fd05477.T-dnyTzB.css">
+        <meta charset="UTF-8" />
+        
+        
+    <title>[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 4. Applying for the NAVER OAuth Service and Implementing the Module | Notes from the π-th Alpaca</title><meta property="og:title" content="[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 4. Applying for the NAVER OAuth Service and Implementing the Module | Notes from the π-th Alpaca" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script async="" data-testid="Ga4Script" src="https://www.googletagmanager.com/gtag/js?id=G-7QYWYNZ90R"></script><meta content="en_US" property="og:locale"/><link href="https://blog.itcode.dev/en/posts/2021/10/22/oauth2-java-server-4" rel="canonical"/><link href="https://blog.itcode.dev/posts/2021/10/22/oauth2-java-server-4" hrefLang="ko" rel="alternate"/><link href="https://blog.itcode.dev/en/posts/2021/10/22/oauth2-java-server-4" hrefLang="en" rel="alternate"/><link href="https://blog.itcode.dev/posts/2021/10/22/oauth2-java-server-4" hrefLang="x-default" rel="alternate"/><script data-testid="ThemeScript">(function () {
+	try {
+		var theme = localStorage.getItem('theme');
+		var isDark = theme === 'dark' || (theme !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+
+		if (isDark) {
+			document.documentElement.classList.add('dark');
+		}
+	} catch (error) {}
+})();</script>
+    
+    <meta name="description" content="As the first platform, let&#039;s apply for an OAuth service with NAVER and implement the authentication module." /><meta property="og:description" content="As the first platform, let&#039;s apply for an OAuth service with NAVER and implement the authentication module." />
+    <meta property="og:image" content="https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png"><meta name="twitter:card" content="summary_large_image">
+  
+        
+      </head>
+      <body>
+        
+        <div id="root"><link rel="preload" as="image" href="/logo.png"/><link rel="preload" as="image" href="https://github.com/RWB0104.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/138466274-8c7dff01-7aaf-4911-a2c6-874caa418122.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/138097785-f918f5b3-2d9f-49c0-82b6-09f95c64242c.png"/><link rel="preload" as="image" href="https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png"/><link rel="preload" as="image" href="https://github.com/user-attachments/assets/e2a11c89-57af-4944-9068-bf237369f8b3"/><main class="flex w-full flex-col" data-testid="Layout"><div data-testid="Navigator"><div class="w-full" id="headline"></div><header class="flex items-center gap-4 py-3 max-sm:p-3 fixed top-0 left-0 z-20 w-full px-8 transition duration-300 bg-transparent text-white backdrop-blur-none" data-testid="Header"><div class="flex items-center"><button type="button" tabindex="0" data-slot="sheet-trigger" data-base-ui-click-trigger="" id="base-ui-_R_6m5_" aria-haspopup="dialog" aria-expanded="false" class="group/button inline-flex shrink-0 items-center justify-center border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-8 rounded-[min(var(--radius-md),10px)] in-data-[slot=button-group]:rounded-md"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></button></div><a data-testid="LocaleAnchor" href="/en"><div class="flex items-center gap-4 font-bold font-playwright text-lg"><img alt="blog.itcode.dev" height="24" src="/logo.png" width="24"/><span class="max-sm:hidden">blog.itcode.dev</span></div></a><div class="flex flex-1 items-center justify-end gap-2"><button type="button" tabindex="0" data-slot="tooltip-trigger" aria-label="설정" data-base-ui-click-trigger="" id="base-ui-_R_6mu5_" aria-haspopup="dialog" aria-expanded="false" data-base-ui-tooltip-trigger="" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings" aria-hidden="true"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path><circle cx="12" cy="12" r="3"></circle></svg></button></div></header></div><section data-testid="ContentPage"><div data-testid="ScreenerTemplate"><div class="relative h-[200dvh]"><div class="h-dvh w-full sticky top-0" data-testid="ScreenerBox" style="filter:blur(0px)"><div class="absolute top-0 left-0 size-full"><div class="grid grid-rows-[70%_10%_20%] size-full transition-[filter] duration-700 ease-out" data-testid="ScreenerTestPattern"><div class="grid grid-cols-7" data-testid="ScreenerTestPatternBars"><div class="bg-[#c0c0c0]"></div><div class="bg-[#c0c000]"></div><div class="bg-[#00c0c0]"></div><div class="bg-[#00c000]"></div><div class="bg-[#c000c0]"></div><div class="bg-[#c00000]"></div><div class="bg-[#0000c0]"></div></div><div class="grid grid-cols-7" data-testid="ScreenerTestPatternChroma"><div class="bg-[#0000c0]"></div><div class="bg-black"></div><div class="bg-[#c000c0]"></div><div class="bg-black"></div><div class="bg-[#00c0c0]"></div><div class="bg-black"></div><div class="bg-[#c0c0c0]"></div></div><div class="grid grid-cols-[1.5fr_1.5fr_1fr_0.5fr_0.5fr_0.5fr_1.5fr]" data-testid="ScreenerTestPatternPluge"><div class="bg-[#00214c]"></div><div class="bg-white"></div><div class="bg-[#32006c]"></div><div class="bg-[#0a0a0a]"></div><div class="bg-black"></div><div class="bg-[#1a1a1a]"></div><div class="bg-black"></div></div></div></div><div class="absolute top-0 left-0 size-full overflow-hidden"></div><div class="relative z-2 size-full"><div class="relative size-full"><div class="absolute inset-x-0 top-0 flex flex-col items-center gap-2 pt-32 pr-6 pl-6 text-center text-white bg-linear-to-t from-50% from-transparent to-black/60 pb-[max(4rem,env(safe-area-inset-bottom))] sm:items-start sm:pr-10 sm:pb-20 sm:pl-10 sm:text-left"></div><div class="absolute inset-x-0 bottom-0 flex flex-col items-center gap-5 pt-32 pr-6 pl-6 text-center text-white bg-linear-to-t from-15% from-black via-50% via-black/70 to-transparent pb-[max(4rem,env(safe-area-inset-bottom))] sm:items-start sm:pr-10 sm:pb-20 sm:pl-10 sm:text-left lang-en:font-playwright"><p class="fade-in slide-in-from-bottom-2 animate-in fill-mode-both font-medium text-white/70 text-xs uppercase tracking-widest duration-500 sm:text-sm"></p><h1 class="fade-in slide-in-from-bottom-4 max-w-3xl animate-in fill-mode-both font-extrabold text-2xl tracking-tight delay-150 duration-700 sm:text-3xl lg:text-5xl lang-en:sm:leading-12 lang-en:lg:leading-16">[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 4. Applying for the NAVER OAuth Service and Implementing the Module</h1><p class="fade-in slide-in-from-bottom-4 max-w-2xl animate-in fill-mode-both text-sm text-white/80 delay-300 duration-700 sm:text-base lg:text-lg">As the first platform, let&#x27;s apply for an OAuth service with NAVER and implement the authentication module.</p></div><div class="fade-in absolute bottom-4 left-1/2 z-3 -translate-x-1/2 animate-in fill-mode-both delay-500 duration-500 sm:bottom-6"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down animate-bounce text-white/70" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></div></div></div></div></div><div class="relative z-10 -mt-[100dvh] min-h-[110dvh] rounded-t-[2rem] bg-background transition-colors duration-300"><div class="cursor-grab select-none group" data-testid="Dragger"><div class="flex flex-col gap-2 justify-self-center rounded p-4 transition-colors duration-300 group-hover:bg-foreground/10"><div class="w-8 border-foreground/20 border-t-2"></div><div class="w-8 border-foreground/20 border-t-2"></div></div></div><div class="justify-self-center px-5 my-20 flex w-full max-w-4xl flex-col gap-20 pt-20" data-testid="ContainerTemplate"><div class="flex flex-col gap-5"><h2 class="font-bold text-3xl lg:text-5xl">[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 4. Applying for the NAVER OAuth Service and Implementing the Module</h2><div class="flex flex-col gap-1 text-muted-foreground"><i>As the first platform, let&#x27;s apply for an OAuth service with NAVER and implement the authentication module.</i></div><div class="h-px w-full bg-border"></div><div class="flex items-center gap-3"><img alt="RWB0104" class="rounded-full drop-shadow" height="36" src="https://github.com/RWB0104.png" width="36"/><div class="flex flex-col"><a class="font-bold hover:underline" href="https://github.com/RWB0104" rel="noopener" target="_blank">@<!-- -->RWB</a><i class="text-muted-foreground text-xs">written at<!-- --> <!-- -->2021-10-22 13:25:16</i></div></div></div><a data-testid="LocaleAnchor" href="/" hrefLang="ko" class="w-full"><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 border-border bg-background shadow-xs hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50 h-9 gap-1.5 px-2.5 in-data-[slot=button-group]:rounded-md has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 w-full"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-languages" aria-hidden="true"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg>한국어로 보기</button></a><div class="overflow-hidden rounded-lg border" data-testid="ContentGroup"><img alt="Building an OAuth2.0 Authorization Server" class="aspect-video w-full object-cover" height="100%" loading="lazy" src="https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png" width="100%"/><div class="flex flex-col gap-2 p-4"><p class="text-muted-foreground text-sm">시리즈 모아보기</p><h4 class="scroll-m-20 font-semibold text-xl tracking-tight">Building an OAuth2.0 Authorization Server</h4><div class="mt-2 flex items-center justify-between gap-2"><button aria-expanded="false" class="inline-flex items-center gap-1 rounded-md px-3 py-1.5 font-medium text-sm transition-colors hover:bg-accent hover:text-accent-foreground" type="button">전체보기<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down transition-transform" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button><div class="flex items-center gap-2 text-muted-foreground"><a data-testid="LocaleAnchor" href="/en/posts/2021/10/20/oauth2-java-server-3" aria-label="이전 글: [OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 3. Implementing the OAuth2.0 Authentication Module with scribeJAVA"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left hover:text-foreground" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg></a><span class="font-code text-xs tabular-nums" data-testid="ContentGroupPosition">4<!-- --> / <!-- -->11</span><a data-testid="LocaleAnchor" href="/en/posts/2021/10/23/oauth2-java-server-5" aria-label="다음 글: [OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 5. Applying for the Google OAuth Service and Implementing the Module"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right hover:text-foreground" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></a></div></div></div></div><nav class="rounded-lg border border-l-4 bg-muted/40 p-4 border-l-blue-600 dark:border-l-blue-400" data-testid="MarkdownToc"><p class="mb-3 flex items-center gap-1.5 border-b pb-2 font-semibold text-xs uppercase tracking-wide text-blue-600 dark:text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-list-tree" aria-hidden="true"><path d="M8 5h13"></path><path d="M13 12h8"></path><path d="M13 19h8"></path><path d="M3 10a2 2 0 0 0 2 2h3"></path><path d="M3 5v12a2 2 0 0 0 2 2h3"></path></svg>Table of Contents</p><div class="flex flex-col gap-0.5 text-sm"><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 transition-colors hover:bg-background hover:text-foreground pl-2 font-medium text-foreground/90" href="#Overview"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">1.</span><span class="truncate">Overview</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 transition-colors hover:bg-background hover:text-foreground pl-2 font-medium text-foreground/90" href="#Applying-for-the-NAVER-OAuth-Service"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">2.</span><span class="truncate">Applying for the NAVER OAuth Service</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-6" href="#1.-Access-the-Naver-Developer-Center"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">2.1.</span><span class="truncate">1. Access the Naver Developer Center</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-6" href="#2.-Registering-the-Application"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">2.2.</span><span class="truncate">2. Registering the Application</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-10" href="#Application-Name"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">2.2.1.</span><span class="truncate">Application Name</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-10" href="#API-to-Use"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">2.2.2.</span><span class="truncate">API to Use</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-10" href="#Login-Open-API-Service-Environment"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">2.2.3.</span><span class="truncate">Login Open API Service Environment</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-10" href="#Checking-the-API-Information"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">2.2.4.</span><span class="truncate">Checking the API Information</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 transition-colors hover:bg-background hover:text-foreground pl-2 font-medium text-foreground/90" href="#Implementing-the-NAVER-Authentication-Module"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.</span><span class="truncate">Implementing the NAVER Authentication Module</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-6" href="#Creating-the-properties-File"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.1.</span><span class="truncate">Creating the properties File</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-6" href="#Assigning-Basic-Methods-and-Variables-for-the-Authentication-Module"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.2.</span><span class="truncate">Assigning Basic Methods and Variables for the Authentication Module</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-6" href="#Assigning-API-URLs"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.3.</span><span class="truncate">Assigning API URLs</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-6" href="#Method-to-Return-the-Authentication-URL"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.4.</span><span class="truncate">Method to Return the Authentication URL</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-6" href="#Method-to-Return-the-Access-Token"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.5.</span><span class="truncate">Method to Return the Access Token</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-6" href="#Method-to-Refresh-and-Return-the-Access-Token"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.6.</span><span class="truncate">Method to Refresh and Return the Access Token</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-6" href="#Method-to-Return-the-User-Info-Response"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.7.</span><span class="truncate">Method to Return the User Info Response</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-6" href="#Method-to-Return-the-User-Info-Object"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.8.</span><span class="truncate">Method to Return the User Info Object</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-6" href="#Method-to-Return-the-Result-of-Unlinking"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.9.</span><span class="truncate">Method to Return the Result of Unlinking</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-6" href="#Method-to-Return-the-URL-for-Renewing-Consent-to-Provide-Information"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.10.</span><span class="truncate">Method to Return the URL for Renewing Consent to Provide Information</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 text-muted-foreground transition-colors hover:bg-background hover:text-foreground pl-6" href="#Full-Code"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">3.11.</span><span class="truncate">Full Code</span></a><a class="flex items-baseline gap-1.5 truncate rounded-md px-2 py-1 transition-colors hover:bg-background hover:text-foreground pl-2 font-medium text-foreground/90" href="#Wrap-up"><span class="shrink-0 text-muted-foreground/70 text-xs tabular-nums">4.</span><span class="truncate">Wrap-up</span></a></div></nav><div class="size-full" data-testid="MarkdownViewer"><div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Overview" id="Overview"><h1 class="text-4xl font-bold" node="[object Object]">Overview</h1></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">As the first platform, let&#x27;s apply for an OAuth service with NAVER and implement the authentication module.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Applying-for-the-NAVER-OAuth-Service" id="Applying-for-the-NAVER-OAuth-Service"><h1 class="text-4xl font-bold" node="[object Object]">Applying for the NAVER OAuth Service</h1></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">Let&#x27;s apply for the NAVER OAuth service to obtain the API information.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#1.-Access-the-Naver-Developer-Center" id="1.-Access-the-Naver-Developer-Center"><h2 class="text-3xl font-bold" node="[object Object]">1. Access the Naver Developer Center</h2></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">After logging in, go to the <a class="text-blue-600 decoration-blue-600/50 dark:text-blue-400 dark:decoration-blue-400/50 inline-flex items-center gap-0.5 underline decoration-dotted underline-offset-4 duration-300 hover:decoration-solid" data-testid="MarkdownAnchor" href="https://developers.naver.com/main/" node="[object Object]" target="_blank" id="base-ui-_R_rbaq9_" data-base-ui-tooltip-trigger="" data-slot="tooltip-trigger">Naver Developer Center<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link shrink-0" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a>.</p>
+<p class="my-4">NAVER provides its OAuth service under the name &quot;Naver ID Login,&quot; commonly abbreviated as &quot;Neh-aro&quot; (네아로).</p>
+<p class="my-4">You just need to register an application that uses this service in the Naver Developer Center.</p>
+<br/>
+<p class="my-4">Go to the [<span class="text-sky-600">Application</span> - <span class="text-sky-600">Register Application</span>] menu in the top header.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#2.-Registering-the-Application" id="2.-Registering-the-Application"><h2 class="text-3xl font-bold" node="[object Object]">2. Registering the Application</h2></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">Let&#x27;s register an application that will manage the OAuth information.</p>
+<p class="my-4">You must fill in all the fields below, and these fields can be changed at any time even after review.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Application-Name" id="Application-Name"><h3 class="text-2xl font-bold" node="[object Object]">Application Name</h3></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">This is the name of the application. This name is also displayed in the Naver login window.</p>
+<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/138466274-8c7dff01-7aaf-4911-a2c6-874caa418122.png" alt="null" node="[object Object]" aria-label="null" class="pointer-events-none h-auto w-full"/></button></div>
+<p class="my-4">An example of my Naver login window. My application&#x27;s name is OAuth2, and the name specified there is displayed in the OAuth2 part of the window above.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#API-to-Use" id="API-to-Use"><h3 class="text-2xl font-bold" node="[object Object]">API to Use</h3></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">Select the API you want to use.</p>
+<p class="my-4">Naver provides various APIs, but for now, in line with the purpose of this project, select the <span class="text-blue-400">Naver ID Login service</span>.</p>
+<br/>
+<p class="my-4">Once you select the Naver ID Login service, a form for selecting the data to be provided is added.</p>
+<p class="my-4">This lets you select what information can be obtained from the user&#x27;s authentication data, and you can classify each item as required or optional.</p>
+<p class="my-4">Information marked as required or optional can be accessed later when calling the user&#x27;s information.</p>
+<br/>
+<blockquote class="my-4 border-l-4 px-4 py-2 [&amp;&gt;*:first-child]:mt-0 [&amp;&gt;*:last-child]:mb-0 border-neutral-300 dark:border-neutral-700" data-testid="MarkdownBlockquote" node="[object Object]">
+<p class="my-4"><b class="text-red-600">🛑 Caution!!</b><br/>
+With Naver, even required information can be arbitrarily refused by the user. In other words, even if you notify the user that this information is required for the service to operate, if the user refuses it, there&#x27;s nothing the service can do about it.<br/>
+For this reason, verifying user information matters more with Naver than with other platforms. The difference between required and optional comes down to whether the checkbox defaults to checked or unchecked. Required items are checked by default, while optional items are shown to the user unchecked by default.</p>
+</blockquote>
+<p class="my-4">Select the information you want. If it&#x27;s absolutely necessary, mark it as required; otherwise, leave it as optional. Don&#x27;t check everything &quot;just in case.&quot; It&#x27;s not impossible to do so, but later during the review for activating full OAuth key distribution, requesting unnecessary or excessive data access permissions could result in the review being rejected. Only request the minimum information that&#x27;s truly necessary.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Login-Open-API-Service-Environment" id="Login-Open-API-Service-Environment"><h3 class="text-2xl font-bold" node="[object Object]">Login Open API Service Environment</h3></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">Enter the environment in which OAuth will be used.</p>
+<p class="my-4">Since this project is built for the web, select PC Web. You can also add Android or iOS. You can add multiple environments at once and manage access to multiple platforms with a single key in an integrated way.</p>
+<br/>
+<p class="my-4">The service URL is the URL of the service to which you&#x27;re applying Naver ID Login.</p>
+<p class="my-4">The Callback URL is the URL to which the login result will be delivered. You can specify up to 5, and the <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">callback</span> value in the <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">naver.properties</span> file you&#x27;ll configure later must be one of these registered Callback URLs. If an unregistered Callback URL is detected during the platform login process, an error is returned.</p>
+<p class="my-4">Enter it in a URL format like <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">https://example.com/oauth2</span>, and you can append arbitrary URL parameters like <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">https://example.com/oauth2?key=value</span>.</p>
+<p class="my-4">Once everything looks good, create the application.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Checking-the-API-Information" id="Checking-the-API-Information"><h3 class="text-2xl font-bold" node="[object Object]">Checking the API Information</h3></a><div class="mt-1 w-full border-b"></div></div>
+<div class="my-10 flex flex-col items-center justify-center gap-4" data-testid="MarkdownImg"><button class="cursor-pointer overflow-hidden rounded shadow-lg" type="button"><img src="https://user-images.githubusercontent.com/50317129/138097785-f918f5b3-2d9f-49c0-82b6-09f95c64242c.png" alt="null" node="[object Object]" aria-label="null" class="pointer-events-none h-auto w-full"/></button></div>
+<p class="my-4">Once you create the application, you can see the API and Secret. The Secret is masked by default, and you can view it by clicking a separate button. If you believe the Secret has been leaked, you can reissue it. In that case, of course, you must apply the changed Secret to the authorization server.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Implementing-the-NAVER-Authentication-Module" id="Implementing-the-NAVER-Authentication-Module"><h1 class="text-4xl font-bold" node="[object Object]">Implementing the NAVER Authentication Module</h1></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">Now that all the necessary preparations are in place, let&#x27;s implement the NAVER authentication module. We&#x27;ll implement it by extending the previously implemented <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">AuthModule</span>.</p>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-java" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JAVA</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>public class NaverAuthModule extends AuthModule
+{
+	// NAVER authentication module
+}</code></pre></div></div></pre>
+<p class="my-4">The basic form of the object is as above.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="my-10 flex justify-center" data-testid="MarkdownTable"><div class="inline-block max-w-full overflow-auto"><table class="[&amp;_thead_tr]:border-neutral-800 [&amp;_thead_tr]:border-b-2 [&amp;_thead_tr]:dark:border-neutral-200 [&amp;_tbody_tr]:border-neutral-200 [&amp;_tbody_tr]:border-b [&amp;_tbody_tr]:dark:border-neutral-700 [&amp;_tbody_tr:last-child]:border-b-0 [&amp;_tbody_tr:hover]:bg-neutral-100 [&amp;_tbody_tr:hover]:dark:bg-neutral-800 [&amp;_tbody_tr]:duration-300 [&amp;_th]:px-4 [&amp;_th]:py-2 [&amp;_th]:text-left [&amp;_td]:text-nowrap [&amp;_td]:px-4 [&amp;_td]:py-2" node="[object Object]"><thead><tr><th style="text-align:center">Method</th><th style="text-align:center">Method Type</th><th style="text-align:center">Description</th><th style="text-align:center">Implementation Needed?</th></tr></thead><tbody><tr><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">getAuthorizationUrl</span></td><td style="text-align:center">abstract</td><td style="text-align:center">Returns the authentication URL</td><td style="text-align:center">Y</td></tr><tr><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">getAccessToken</span></td><td style="text-align:center"></td><td style="text-align:center">Returns the access token</td><td style="text-align:center"></td></tr><tr><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">getRefreshAccessToken</span></td><td style="text-align:center"></td><td style="text-align:center">Refreshes and returns the access token</td><td style="text-align:center"></td></tr><tr><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">getUserInfo</span></td><td style="text-align:center"></td><td style="text-align:center">Returns the user info response</td><td style="text-align:center"></td></tr><tr><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">getRefreshTokenEndpoint</span></td><td style="text-align:center"></td><td style="text-align:center">Returns the access token reissue request URL</td><td style="text-align:center"></td></tr><tr><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">getApiKeyBean</span></td><td style="text-align:center"></td><td style="text-align:center">Returns the API key object</td><td style="text-align:center"></td></tr><tr><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">getUserInfoEndPoint</span></td><td style="text-align:center"></td><td style="text-align:center">Returns the user info request URL</td><td style="text-align:center"></td></tr><tr><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">getUserInfoBean</span></td><td style="text-align:center">abstract</td><td style="text-align:center">Returns the user info object</td><td style="text-align:center">Y</td></tr><tr><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">deleteInfo</span></td><td style="text-align:center">abstract</td><td style="text-align:center">Returns the result of unlinking</td><td style="text-align:center">Y</td></tr><tr><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">getUpdateAuthorizationUrl</span></td><td style="text-align:center">abstract</td><td style="text-align:center">Returns the URL for renewing consent to provide information</td><td style="text-align:center">Y</td></tr><tr><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">getAccessTokenEndpoint</span></td><td style="text-align:center">abstract</td><td style="text-align:center">Returns the access token request URL</td><td style="text-align:center">Y</td></tr><tr><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">getAuthorizationBaseUrl</span></td><td style="text-align:center">abstract</td><td style="text-align:center">Returns the authentication API request URL</td><td style="text-align:center">Y</td></tr></tbody></table></div></div>
+<p class="my-4">The above is what the NAVER module needs to implement.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Creating-the-properties-File" id="Creating-the-properties-File"><h2 class="text-3xl font-bold" node="[object Object]">Creating the properties File</h2></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">Create a <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">naver.properties</span> file under <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">WEB-INF</span>. You can also copy the already-created <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">sample.properties</span> and use that.</p>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-properties" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">PROPERTIES</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>api=API_KEY
+secret=SECRET_KEY
+callback=CALLBACK_URL</code></pre></div></div></pre>
+<p class="my-4">The basic format is as above; just enter the appropriate values for each item.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Assigning-Basic-Methods-and-Variables-for-the-Authentication-Module" id="Assigning-Basic-Methods-and-Variables-for-the-Authentication-Module"><h2 class="text-3xl font-bold" node="[object Object]">Assigning Basic Methods and Variables for the Authentication Module</h2></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">For the authentication module to work correctly, there are certain methods and variables that need to be set up by default, such as configuring API information and returning the instance.</p>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-java" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JAVA</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>private static final String MODULE_NAME = &quot;naver&quot;;
+
+private static final String API_KEY;
+private static final String SECRET_KEY;
+private static final String CALLBACK_URL;
+
+static
+{
+	ApiKeyBean apiKeyBean = getApiKeyBean(MODULE_NAME);
+	
+	API_KEY = apiKeyBean.getApi();
+	SECRET_KEY = apiKeyBean.getSecret();
+	CALLBACK_URL = apiKeyBean.getCallback();
+}
+
+private static final ServiceBuilderOAuth20 SERVICE_BUILDER = new ServiceBuilder(API_KEY).apiSecret(SECRET_KEY).callback(CALLBACK_URL);
+
+private static final NaverAuthModule INSTANCE = new NaverAuthModule(SERVICE_BUILDER);
+
+private NaverAuthModule(ServiceBuilderOAuth20 serviceBuilder)
+{
+	super(serviceBuilder);
+}
+
+public static NaverAuthModule getInstance()
+{
+	return INSTANCE;
+}</code></pre></div></div></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="my-10 flex justify-center" data-testid="MarkdownTable"><div class="inline-block max-w-full overflow-auto"><table class="[&amp;_thead_tr]:border-neutral-800 [&amp;_thead_tr]:border-b-2 [&amp;_thead_tr]:dark:border-neutral-200 [&amp;_tbody_tr]:border-neutral-200 [&amp;_tbody_tr]:border-b [&amp;_tbody_tr]:dark:border-neutral-700 [&amp;_tbody_tr:last-child]:border-b-0 [&amp;_tbody_tr:hover]:bg-neutral-100 [&amp;_tbody_tr:hover]:dark:bg-neutral-800 [&amp;_tbody_tr]:duration-300 [&amp;_th]:px-4 [&amp;_th]:py-2 [&amp;_th]:text-left [&amp;_td]:text-nowrap [&amp;_td]:px-4 [&amp;_td]:py-2" node="[object Object]"><thead><tr><th style="text-align:center">Field</th><th style="text-align:center">Type</th><th style="text-align:center">Description</th></tr></thead><tbody><tr><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">MODULE_NAME</span></td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">The module name</td></tr><tr><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">API_KEY</span></td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">The API key</td></tr><tr><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">SECRET_KEY</span></td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">The secret key</td></tr><tr><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">CALLBACK_URL</span></td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">The callback URL</td></tr><tr><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">SERVICE_BUILDER</span></td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">ServiceBuilderOAuth20</span></td><td style="text-align:center">The OAuth2.0 service builder</td></tr><tr><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">INSTANCE</span></td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">NaverAuthModule</span></td><td style="text-align:center">The instance</td></tr></tbody></table></div></div>
+<p class="my-4">All the defined variables are declared as <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">static final</span>, so <span class="text-red-400">they&#x27;re declared only once when the instance is created and cannot be reassigned</span>.</p>
+<p class="my-4">Through the <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">static{ }</span> block, the API information is set up when the instance is created.</p>
+<p class="my-4">When assigning the API values, the <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">getApiKeyBean()</span> method parses the properties with the given name and returns an <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">ApiKeyBean</span> object, which is then used.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Assigning-API-URLs" id="Assigning-API-URLs"><h2 class="text-3xl font-bold" node="[object Object]">Assigning API URLs</h2></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">Let&#x27;s implement the methods that return the request URL for each API.</p>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-java" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JAVA</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>@Override
+public String getAccessTokenEndpoint()
+{
+	return &quot;https://nid.naver.com/oauth2.0/token&quot;;
+}
+
+@Override
+protected String getAuthorizationBaseUrl()
+{
+	return &quot;https://nid.naver.com/oauth2.0/authorize&quot;;
+}
+
+@Override
+protected String getUserInfoEndPoint()
+{
+	return &quot;https://openapi.naver.com/v1/nid/me&quot;;
+}</code></pre></div></div></pre>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">getAccessTokenEndpoint()</span> - token-related APIs use the URL returned by this method.</li>
+<li class="ml-6 list-disc" node="[object Object]"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">getAuthorizationBaseUrl()</span> - authentication-related APIs use the URL returned by this method.</li>
+<li class="ml-6 list-disc" node="[object Object]"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">getUserInfoEndPoint()</span> - user info-related APIs use the URL returned by this method.</li>
+</ul>
+<p class="my-4">These are the URLs needed to carry out OAuth2.0 operations. Among these, <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">getAccessTokenEndpoint()</span> and <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">getAuthorizationBaseUrl()</span> are abstract methods of <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">DefaultApi20</span>, an object from the scribeJAVA library, and the remaining one is an abstract method of <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">AuthModule</span>.</p>
+<p class="my-4"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">DefaultApi20</span> doesn&#x27;t provide a separate method related to the user account API. However, since the user account API is essential when using <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">AuthModule</span>&#x27;s common method for fetching user info, it&#x27;s managed as an abstract method of <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">AuthModule</span>.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Method-to-Return-the-Authentication-URL" id="Method-to-Return-the-Authentication-URL"><h2 class="text-3xl font-bold" node="[object Object]">Method to Return the Authentication URL</h2></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">Let&#x27;s implement <span class="text-blue-500">the feature that returns the Naver platform login URL</span>.</p>
+<p class="my-4">First, let&#x27;s look at the API.</p>
+<br/>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Request</li>
+</ul>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-txt" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">TXT</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>GET/POST https://nid.naver.com/oauth2.0/authorize?response_type=code&amp;client_id={:client_id}&amp;redirect_uri={:redirect_uri}&amp;state={:state}</code></pre></div></div></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="my-10 flex justify-center" data-testid="MarkdownTable"><div class="inline-block max-w-full overflow-auto"><table class="[&amp;_thead_tr]:border-neutral-800 [&amp;_thead_tr]:border-b-2 [&amp;_thead_tr]:dark:border-neutral-200 [&amp;_tbody_tr]:border-neutral-200 [&amp;_tbody_tr]:border-b [&amp;_tbody_tr]:dark:border-neutral-700 [&amp;_tbody_tr:last-child]:border-b-0 [&amp;_tbody_tr:hover]:bg-neutral-100 [&amp;_tbody_tr:hover]:dark:bg-neutral-800 [&amp;_tbody_tr]:duration-300 [&amp;_th]:px-4 [&amp;_th]:py-2 [&amp;_th]:text-left [&amp;_td]:text-nowrap [&amp;_td]:px-4 [&amp;_td]:py-2" node="[object Object]"><thead><tr><th style="text-align:center">parameter</th><th style="text-align:center">type</th><th style="text-align:center">data</th><th style="text-align:center">required</th><th style="text-align:center">description</th></tr></thead><tbody><tr><td style="text-align:center">{:response_type}</td><td style="text-align:center">path</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Y</td><td style="text-align:center">The response type. Fixed to <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">code</span></td></tr><tr><td style="text-align:center">{:client_id}</td><td style="text-align:center">path</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Y</td><td style="text-align:center">The API key</td></tr><tr><td style="text-align:center">{:redirect_uri}</td><td style="text-align:center">path</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Y</td><td style="text-align:center">The Callback URL</td></tr><tr><td style="text-align:center">{:state}</td><td style="text-align:center">path</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Y</td><td style="text-align:center">A unique state value</td></tr><tr><td style="text-align:center">{:scope}</td><td style="text-align:center">path</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center"></td><td style="text-align:center">The access scope; not used</td></tr></tbody></table></div></div>
+<br/>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Response</li>
+</ul>
+<p class="my-4">The Naver platform login page</p>
+<br/>
+<p class="my-4">The Naver platform login API is as above. You just need to design the method to return the request URL.</p>
+<p class="my-4">You could build the URL directly with string operations, but you can easily generate the URL using the <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">service.getAuthorizationUrl()</span> method.</p>
+<p class="my-4">Since it&#x27;s already declared as a common method in <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">AuthModule</span>, <span class="text-red-400">there&#x27;s no need to implement it separately.</span></p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Method-to-Return-the-Access-Token" id="Method-to-Return-the-Access-Token"><h2 class="text-3xl font-bold" node="[object Object]">Method to Return the Access Token</h2></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">Since we receive the Code as the login result, we&#x27;ll implement <span class="text-blue-500">the feature that exchanges it for an Access Token</span>.</p>
+<p class="my-4">The Naver API is as follows.</p>
+<br/>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Request</li>
+</ul>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-txt" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">TXT</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>GET/POST https://nid.naver.com/oauth2.0/token?grant_type=authorization_code&amp;client_id={:client_id}&amp;client_secret={:client_secret}&amp;code={:code}&amp;state={:state}</code></pre></div></div></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="my-10 flex justify-center" data-testid="MarkdownTable"><div class="inline-block max-w-full overflow-auto"><table class="[&amp;_thead_tr]:border-neutral-800 [&amp;_thead_tr]:border-b-2 [&amp;_thead_tr]:dark:border-neutral-200 [&amp;_tbody_tr]:border-neutral-200 [&amp;_tbody_tr]:border-b [&amp;_tbody_tr]:dark:border-neutral-700 [&amp;_tbody_tr:last-child]:border-b-0 [&amp;_tbody_tr:hover]:bg-neutral-100 [&amp;_tbody_tr:hover]:dark:bg-neutral-800 [&amp;_tbody_tr]:duration-300 [&amp;_th]:px-4 [&amp;_th]:py-2 [&amp;_th]:text-left [&amp;_td]:text-nowrap [&amp;_td]:px-4 [&amp;_td]:py-2" node="[object Object]"><thead><tr><th style="text-align:center">parameter</th><th style="text-align:center">type</th><th style="text-align:center">data</th><th style="text-align:center">required</th><th style="text-align:center">description</th></tr></thead><tbody><tr><td style="text-align:center">{:grant_type}</td><td style="text-align:center">path</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Y</td><td style="text-align:center">The grant type. Fixed to <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">authorization_code</span></td></tr><tr><td style="text-align:center">{:client_id}</td><td style="text-align:center">path</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Y</td><td style="text-align:center">The API key</td></tr><tr><td style="text-align:center">{:client_secret}</td><td style="text-align:center">path</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Y</td><td style="text-align:center">The secret key</td></tr><tr><td style="text-align:center">{:code}</td><td style="text-align:center">path</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Y</td><td style="text-align:center">The authorization code</td></tr><tr><td style="text-align:center">{:state}</td><td style="text-align:center">path</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center"></td><td style="text-align:center">A unique state value</td></tr></tbody></table></div></div>
+<br/>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Response</li>
+</ul>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-json" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JSON</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>{
+	&quot;access_token&quot;: &quot;AAAAQosjWDJieBiQZc3to9YQp6HDLvrmyKC+6+iZ3gq7qrkqf50ljZC+Lgoqrg&quot;,
+	&quot;refresh_token&quot;: &quot;c8ceMEJisO4Se7uGisHoX0f5JEii7JnipglQipkOn5Zp3tyP7dHQoP0zNKHUq2gY&quot;,
+	&quot;token_type&quot;: &quot;bearer&quot;,
+	&quot;expires_in&quot;: &quot;3600&quot;
+}</code></pre></div></div></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="my-10 flex justify-center" data-testid="MarkdownTable"><div class="inline-block max-w-full overflow-auto"><table class="[&amp;_thead_tr]:border-neutral-800 [&amp;_thead_tr]:border-b-2 [&amp;_thead_tr]:dark:border-neutral-200 [&amp;_tbody_tr]:border-neutral-200 [&amp;_tbody_tr]:border-b [&amp;_tbody_tr]:dark:border-neutral-700 [&amp;_tbody_tr:last-child]:border-b-0 [&amp;_tbody_tr:hover]:bg-neutral-100 [&amp;_tbody_tr:hover]:dark:bg-neutral-800 [&amp;_tbody_tr]:duration-300 [&amp;_th]:px-4 [&amp;_th]:py-2 [&amp;_th]:text-left [&amp;_td]:text-nowrap [&amp;_td]:px-4 [&amp;_td]:py-2" node="[object Object]"><thead><tr><th style="text-align:center">parameter</th><th style="text-align:center">data</th><th style="text-align:center">description</th></tr></thead><tbody><tr><td style="text-align:center">access_token</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">The access token</td></tr><tr><td style="text-align:center">refresh_token</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">The refresh token</td></tr><tr><td style="text-align:center">token_type</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">The token type</td></tr><tr><td style="text-align:center">expires_in</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">The expiration time (in seconds)</td></tr></tbody></table></div></div>
+<br/>
+<p class="my-4">The response of the <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">service.getAccessToken()</span> method gives us the <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">OAuth2AccessToken</span> object, which is the DTO for the JSON response above.</p>
+<p class="my-4">Since this too can be handled by the common method declared in <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">AuthModule</span>, there&#x27;s no need to <span class="text-red-400">implement it separately.</span></p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Method-to-Refresh-and-Return-the-Access-Token" id="Method-to-Refresh-and-Return-the-Access-Token"><h2 class="text-3xl font-bold" node="[object Object]">Method to Refresh and Return the Access Token</h2></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">The Access Token has a very short expiration time, about one hour. When the Access Token expires, normally the user would need to be asked to re-authenticate via platform login, but if a Refresh Token is available, you can <span class="text-blue-500">reissue the Access Token</span> internally in the service without going through any extra steps.</p>
+<p class="my-4">This Refresh Token doesn&#x27;t carry authentication rights, but it does carry the right to reissue an Access Token.</p>
+<p class="my-4">The Naver API implementing this is as follows.</p>
+<br/>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Request</li>
+</ul>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-txt" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">TXT</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>GET/POST https://nid.naver.com/oauth2.0/token?grant_type=refresh_token&amp;client_id={:client_id}&amp;client_secret={:client_secret}&amp;refresh_token=${:refresh_token}</code></pre></div></div></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="my-10 flex justify-center" data-testid="MarkdownTable"><div class="inline-block max-w-full overflow-auto"><table class="[&amp;_thead_tr]:border-neutral-800 [&amp;_thead_tr]:border-b-2 [&amp;_thead_tr]:dark:border-neutral-200 [&amp;_tbody_tr]:border-neutral-200 [&amp;_tbody_tr]:border-b [&amp;_tbody_tr]:dark:border-neutral-700 [&amp;_tbody_tr:last-child]:border-b-0 [&amp;_tbody_tr:hover]:bg-neutral-100 [&amp;_tbody_tr:hover]:dark:bg-neutral-800 [&amp;_tbody_tr]:duration-300 [&amp;_th]:px-4 [&amp;_th]:py-2 [&amp;_th]:text-left [&amp;_td]:text-nowrap [&amp;_td]:px-4 [&amp;_td]:py-2" node="[object Object]"><thead><tr><th style="text-align:center">parameter</th><th style="text-align:center">type</th><th style="text-align:center">data</th><th style="text-align:center">required</th><th style="text-align:center">description</th></tr></thead><tbody><tr><td style="text-align:center">{:grant_type}</td><td style="text-align:center">path</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Y</td><td style="text-align:center">The grant type. Fixed to <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">refresh_token</span></td></tr><tr><td style="text-align:center">{:client_id}</td><td style="text-align:center">path</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Y</td><td style="text-align:center">The API key</td></tr><tr><td style="text-align:center">{:client_secret}</td><td style="text-align:center">path</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Y</td><td style="text-align:center">The secret key</td></tr><tr><td style="text-align:center">{:refresh_token}</td><td style="text-align:center">path</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Y</td><td style="text-align:center">The refresh token</td></tr></tbody></table></div></div>
+<br/>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Response</li>
+</ul>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-json" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JSON</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>{
+    &quot;access_token&quot;:&quot;AAAAQjbRkysCNmMdQ7kmowPrjyRNIRYKG2iGHhbGawP0xfuYwjrE2WTI3p44SNepkFXME/NlxfamcJKPmUU4dSUhz+R2CmUqnN0lGuOcbEw6iexg&quot;,
+    &quot;token_type&quot;:&quot;bearer&quot;,
+    &quot;expires_in&quot;:&quot;3600&quot;
+}</code></pre></div></div></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="my-10 flex justify-center" data-testid="MarkdownTable"><div class="inline-block max-w-full overflow-auto"><table class="[&amp;_thead_tr]:border-neutral-800 [&amp;_thead_tr]:border-b-2 [&amp;_thead_tr]:dark:border-neutral-200 [&amp;_tbody_tr]:border-neutral-200 [&amp;_tbody_tr]:border-b [&amp;_tbody_tr]:dark:border-neutral-700 [&amp;_tbody_tr:last-child]:border-b-0 [&amp;_tbody_tr:hover]:bg-neutral-100 [&amp;_tbody_tr:hover]:dark:bg-neutral-800 [&amp;_tbody_tr]:duration-300 [&amp;_th]:px-4 [&amp;_th]:py-2 [&amp;_th]:text-left [&amp;_td]:text-nowrap [&amp;_td]:px-4 [&amp;_td]:py-2" node="[object Object]"><thead><tr><th style="text-align:center">parameter</th><th style="text-align:center">data</th><th style="text-align:center">description</th></tr></thead><tbody><tr><td style="text-align:center">access_token</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">The access token</td></tr><tr><td style="text-align:center">token_type</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">The token type</td></tr><tr><td style="text-align:center">expires_in</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">The expiration time (in seconds)</td></tr></tbody></table></div></div>
+<br/>
+<p class="my-4">Since this can be replaced by <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">AuthModule</span>&#x27;s common method, <span class="text-red-400">it&#x27;s not implemented separately.</span></p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Method-to-Return-the-User-Info-Response" id="Method-to-Return-the-User-Info-Response"><h2 class="text-3xl font-bold" node="[object Object]">Method to Return the User Info Response</h2></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">Let&#x27;s implement <span class="text-blue-500">the feature that fetches user info using the Access Token</span>. This is the part where the issued Access Token is actually put to meaningful use.</p>
+<p class="my-4">The Naver API is as follows.</p>
+<br/>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Request</li>
+</ul>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-txt" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">TXT</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>GET https://openapi.naver.com/v1/nid/me
+Authorization: Bearer {:access_token}</code></pre></div></div></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="my-10 flex justify-center" data-testid="MarkdownTable"><div class="inline-block max-w-full overflow-auto"><table class="[&amp;_thead_tr]:border-neutral-800 [&amp;_thead_tr]:border-b-2 [&amp;_thead_tr]:dark:border-neutral-200 [&amp;_tbody_tr]:border-neutral-200 [&amp;_tbody_tr]:border-b [&amp;_tbody_tr]:dark:border-neutral-700 [&amp;_tbody_tr:last-child]:border-b-0 [&amp;_tbody_tr:hover]:bg-neutral-100 [&amp;_tbody_tr:hover]:dark:bg-neutral-800 [&amp;_tbody_tr]:duration-300 [&amp;_th]:px-4 [&amp;_th]:py-2 [&amp;_th]:text-left [&amp;_td]:text-nowrap [&amp;_td]:px-4 [&amp;_td]:py-2" node="[object Object]"><thead><tr><th style="text-align:center">parameter</th><th style="text-align:center">type</th><th style="text-align:center">data</th><th style="text-align:center">required</th><th style="text-align:center">description</th></tr></thead><tbody><tr><td style="text-align:center">{:access_token}</td><td style="text-align:center">header</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Y</td><td style="text-align:center">The access token</td></tr></tbody></table></div></div>
+<br/>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Response</li>
+</ul>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-json" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JSON</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>{
+	&quot;resultcode&quot;: &quot;00&quot;,
+	&quot;message&quot;: &quot;success&quot;,
+	&quot;response&quot;: {
+		&quot;email&quot;: &quot;openapi@naver.com&quot;,
+		&quot;nickname&quot;: &quot;OpenAPI&quot;,
+		&quot;profile_image&quot;: &quot;https://ssl.pstatic.net/static/pwe/address/nodata_33x33.gif&quot;,
+		&quot;age&quot;: &quot;40-49&quot;,
+		&quot;gender&quot;: &quot;F&quot;,
+		&quot;id&quot;: &quot;32742776&quot;,
+		&quot;name&quot;: &quot;오픈 API&quot;,
+		&quot;birthday&quot;: &quot;10-01&quot;,
+		&quot;birthyear&quot;: &quot;1900&quot;,
+		&quot;mobile&quot;: &quot;010-0000-0000&quot;
+	}
+}</code></pre></div></div></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="my-10 flex justify-center" data-testid="MarkdownTable"><div class="inline-block max-w-full overflow-auto"><table class="[&amp;_thead_tr]:border-neutral-800 [&amp;_thead_tr]:border-b-2 [&amp;_thead_tr]:dark:border-neutral-200 [&amp;_tbody_tr]:border-neutral-200 [&amp;_tbody_tr]:border-b [&amp;_tbody_tr]:dark:border-neutral-700 [&amp;_tbody_tr:last-child]:border-b-0 [&amp;_tbody_tr:hover]:bg-neutral-100 [&amp;_tbody_tr:hover]:dark:bg-neutral-800 [&amp;_tbody_tr]:duration-300 [&amp;_th]:px-4 [&amp;_th]:py-2 [&amp;_th]:text-left [&amp;_td]:text-nowrap [&amp;_td]:px-4 [&amp;_td]:py-2" node="[object Object]"><thead><tr><th style="text-align:center">parameter</th><th style="text-align:center">data</th><th style="text-align:center">description</th></tr></thead><tbody><tr><td style="text-align:center">resultcode</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center"><a class="text-blue-600 decoration-blue-600/50 dark:text-blue-400 dark:decoration-blue-400/50 inline-flex items-center gap-0.5 underline decoration-dotted underline-offset-4 duration-300 hover:decoration-solid" data-testid="MarkdownAnchor" href="https://developers.naver.com/docs/common/openapiguide/errorcode.md" node="[object Object]" target="_blank" id="base-ui-_R_1n373aq9_" data-base-ui-tooltip-trigger="" data-slot="tooltip-trigger">API call result code<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link shrink-0" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></td></tr><tr><td style="text-align:center">message</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">The call result message</td></tr><tr><td style="text-align:center">response.id</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">A unique identifier hash for the same person</td></tr><tr><td style="text-align:center">response.nickname</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">The user&#x27;s nickname (id*** if not set)</td></tr><tr><td style="text-align:center">response.name</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">The user&#x27;s name</td></tr><tr><td style="text-align:center">response.email</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">The user&#x27;s email address (based on the email in &quot;My Info&quot;)</td></tr><tr><td style="text-align:center">response.gender</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Gender (F - female, M - male, U - unknown)</td></tr><tr><td style="text-align:center">response.age</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Age range</td></tr><tr><td style="text-align:center">response.birthday</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Birthday (MM-DD)</td></tr><tr><td style="text-align:center">response.profile_image</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">URL of the user&#x27;s profile picture</td></tr><tr><td style="text-align:center">response.birthyear</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Birth year</td></tr><tr><td style="text-align:center">response.mobile</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Mobile phone number</td></tr></tbody></table></div></div>
+<br/>
+<p class="my-4">The id is not the <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">xxx@naver.com</span>-style ID we normally think of, but a unique hash value assigned per account.</p>
+<p class="my-4">You can get the Naver ID via <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">response.email</span>, but it&#x27;s limited. If you&#x27;ve changed [<span class="text-sky-600">My Info</span> - <span class="text-sky-600">Contact Email</span>] to a different email, that email will be shown instead of the Naver email. <span class="text-red-400">Officially, there&#x27;s no way to reliably get the Naver email from the profile API.</span></p>
+<p class="my-4">Since this can be replaced by <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">AuthModule</span>&#x27;s common method, <span class="text-red-400">it&#x27;s not implemented separately.</span></p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Method-to-Return-the-User-Info-Object" id="Method-to-Return-the-User-Info-Object"><h2 class="text-3xl font-bold" node="[object Object]">Method to Return the User Info Object</h2></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">Let&#x27;s implement the method that <span class="text-blue-500">parses the response according to Naver&#x27;s user info API response format</span> and returns it as a <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">UserInfoBean</span>.</p>
+<p class="my-4">This project only uses the name, email, and profile picture URL, so we extract those values from the response and store them in the object.</p>
+<br/>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Code</li>
+</ul>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-java" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JAVA</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>@Override
+public UserInfoBean getUserInfoBean(String body) throws JsonProcessingException
+{
+	ObjectMapper mapper = new ObjectMapper();
+	
+	JsonNode node = mapper.readTree(body);
+	
+	String email = node.get(&quot;response&quot;).get(&quot;email&quot;) == null ? &quot;미동의&quot; : node.get(&quot;response&quot;).get(&quot;email&quot;).textValue();
+	String name = node.get(&quot;response&quot;).get(&quot;name&quot;) == null ? &quot;미동의&quot; : node.get(&quot;response&quot;).get(&quot;name&quot;).textValue();
+	String profile_image = node.get(&quot;response&quot;).get(&quot;profile_image&quot;) == null ? &quot;/oauth2/assets/images/logo.png&quot; : node.get(&quot;response&quot;).get(&quot;profile_image&quot;).textValue();
+	
+	return new UserInfoBean(email, name, profile_image, MODULE_NAME);
+}</code></pre></div></div></pre>
+<br/>
+<p class="my-4">We extract the needed values according to the response format. If the user didn&#x27;t consent to providing the information, the target object returns <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">null</span>. <span class="text-red-600">Since Naver allows consent/refusal regardless of whether an item is required or optional</span>, <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">null</span> handling must always be done for the data.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Method-to-Return-the-Result-of-Unlinking" id="Method-to-Return-the-Result-of-Unlinking"><h2 class="text-3xl font-bold" node="[object Object]">Method to Return the Result of Unlinking</h2></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">The first time you log in with a Naver ID, you go through consent to provide information, but on subsequent logins, this consent step is skipped. In other words, this means the platform saves the consent to provide information somewhere the first time you log in. If a user withdraws their membership from the service, it&#x27;s necessary to <span class="text-blue-500">unlink from Naver and completely delete the information</span>.</p>
+<p class="my-4">The Naver API is as follows.</p>
+<br/>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Request</li>
+</ul>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-txt" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">TXT</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>GET/POST https://nid.naver.com/oauth2.0/token?grant_type=delete&amp;client_id={:client_id}&amp;client_secret={:client_secret}&amp;access_token={:access_token}&amp;service_provider=NAVER</code></pre></div></div></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="my-10 flex justify-center" data-testid="MarkdownTable"><div class="inline-block max-w-full overflow-auto"><table class="[&amp;_thead_tr]:border-neutral-800 [&amp;_thead_tr]:border-b-2 [&amp;_thead_tr]:dark:border-neutral-200 [&amp;_tbody_tr]:border-neutral-200 [&amp;_tbody_tr]:border-b [&amp;_tbody_tr]:dark:border-neutral-700 [&amp;_tbody_tr:last-child]:border-b-0 [&amp;_tbody_tr:hover]:bg-neutral-100 [&amp;_tbody_tr:hover]:dark:bg-neutral-800 [&amp;_tbody_tr]:duration-300 [&amp;_th]:px-4 [&amp;_th]:py-2 [&amp;_th]:text-left [&amp;_td]:text-nowrap [&amp;_td]:px-4 [&amp;_td]:py-2" node="[object Object]"><thead><tr><th style="text-align:center">parameter</th><th style="text-align:center">type</th><th style="text-align:center">data</th><th style="text-align:center">required</th><th style="text-align:center">description</th></tr></thead><tbody><tr><td style="text-align:center">{:grant_type}</td><td style="text-align:center">path</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Y</td><td style="text-align:center">The grant type. Fixed to <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">delete</span></td></tr><tr><td style="text-align:center">{:client_id}</td><td style="text-align:center">path</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Y</td><td style="text-align:center">The API key</td></tr><tr><td style="text-align:center">{:client_secret}</td><td style="text-align:center">path</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Y</td><td style="text-align:center">The secret key</td></tr><tr><td style="text-align:center">{:access_token}</td><td style="text-align:center">path</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Y</td><td style="text-align:center">The access token</td></tr><tr><td style="text-align:center">{:service_provider}</td><td style="text-align:center">path</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Y</td><td style="text-align:center">The service provider. Fixed to <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">NAVER</span></td></tr></tbody></table></div></div>
+<br/>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Response</li>
+</ul>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-json" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JSON</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>{
+	&quot;access_token&quot;: &quot;c8ceMEjfnorlQwEisqemfpM1Wzw7aGp7JnipglQipkOn5Zp3tyP7dHQoP0zNKHUq2gY&quot;,
+	&quot;result&quot;: &quot;success&quot;
+}</code></pre></div></div></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="my-10 flex justify-center" data-testid="MarkdownTable"><div class="inline-block max-w-full overflow-auto"><table class="[&amp;_thead_tr]:border-neutral-800 [&amp;_thead_tr]:border-b-2 [&amp;_thead_tr]:dark:border-neutral-200 [&amp;_tbody_tr]:border-neutral-200 [&amp;_tbody_tr]:border-b [&amp;_tbody_tr]:dark:border-neutral-700 [&amp;_tbody_tr:last-child]:border-b-0 [&amp;_tbody_tr:hover]:bg-neutral-100 [&amp;_tbody_tr:hover]:dark:bg-neutral-800 [&amp;_tbody_tr]:duration-300 [&amp;_th]:px-4 [&amp;_th]:py-2 [&amp;_th]:text-left [&amp;_td]:text-nowrap [&amp;_td]:px-4 [&amp;_td]:py-2" node="[object Object]"><thead><tr><th style="text-align:center">parameter</th><th style="text-align:center">data</th><th style="text-align:center">description</th></tr></thead><tbody><tr><td style="text-align:center">access_token</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">The access token that was deleted</td></tr><tr><td style="text-align:center">result</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">The processing result; returns success if successful</td></tr></tbody></table></div></div>
+<br/>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Code</li>
+</ul>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-java" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JAVA</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>@Override
+public boolean deleteInfo(String access) throws IOException, ExecutionException, InterruptedException
+{
+	OAuthRequest oAuthRequest = new OAuthRequest(Verb.GET, getAccessTokenEndpoint());
+	oAuthRequest.addQuerystringParameter(&quot;client_id&quot;, API_KEY);
+	oAuthRequest.addQuerystringParameter(&quot;client_secret&quot;, SECRET_KEY);
+	oAuthRequest.addQuerystringParameter(&quot;access_token&quot;, access);
+	oAuthRequest.addQuerystringParameter(&quot;grant_type&quot;, &quot;delete&quot;);
+	oAuthRequest.addQuerystringParameter(&quot;service_provider&quot;, &quot;NAVER&quot;);
+	
+	service.signRequest(access, oAuthRequest);
+	
+	Response response = service.execute(oAuthRequest);
+	
+	return response.isSuccessful();
+}</code></pre></div></div></pre>
+<br/>
+<p class="my-4">The implementation is simple. Using the <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">OAuthRequest</span> object, you can easily build the request. Since the response body itself doesn&#x27;t matter, we just use <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">response.isSuccessful()</span> to determine whether the response is normal and return that as a <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">boolean</span>.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Method-to-Return-the-URL-for-Renewing-Consent-to-Provide-Information" id="Method-to-Return-the-URL-for-Renewing-Consent-to-Provide-Information"><h2 class="text-3xl font-bold" node="[object Object]">Method to Return the URL for Renewing Consent to Provide Information</h2></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">While the service is running, if additional user information becomes necessary or unnecessary, you can <span class="text-blue-500">reset the consent information by renewing user info consent</span>.</p>
+<p class="my-4">The API is as follows.</p>
+<br/>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Request</li>
+</ul>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-txt" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">TXT</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>GET/POST https://nid.naver.com/oauth2.0/authorize?auth_type=reprompt&amp;state=${:state}&amp;response_type=code&amp;client_id=${:client_id}&amp;redirect_uri=${:redirect_uri}</code></pre></div></div></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="my-10 flex justify-center" data-testid="MarkdownTable"><div class="inline-block max-w-full overflow-auto"><table class="[&amp;_thead_tr]:border-neutral-800 [&amp;_thead_tr]:border-b-2 [&amp;_thead_tr]:dark:border-neutral-200 [&amp;_tbody_tr]:border-neutral-200 [&amp;_tbody_tr]:border-b [&amp;_tbody_tr]:dark:border-neutral-700 [&amp;_tbody_tr:last-child]:border-b-0 [&amp;_tbody_tr:hover]:bg-neutral-100 [&amp;_tbody_tr:hover]:dark:bg-neutral-800 [&amp;_tbody_tr]:duration-300 [&amp;_th]:px-4 [&amp;_th]:py-2 [&amp;_th]:text-left [&amp;_td]:text-nowrap [&amp;_td]:px-4 [&amp;_td]:py-2" node="[object Object]"><thead><tr><th style="text-align:center">parameter</th><th style="text-align:center">type</th><th style="text-align:center">data</th><th style="text-align:center">required</th><th style="text-align:center">description</th></tr></thead><tbody><tr><td style="text-align:center">{:response_type}</td><td style="text-align:center">path</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Y</td><td style="text-align:center">The response type. Fixed to <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">code</span></td></tr><tr><td style="text-align:center">{:client_id}</td><td style="text-align:center">path</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Y</td><td style="text-align:center">The API key</td></tr><tr><td style="text-align:center">{:redirect_uri}</td><td style="text-align:center">path</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Y</td><td style="text-align:center">The Callback URL</td></tr><tr><td style="text-align:center">{:state}</td><td style="text-align:center">path</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center">Y</td><td style="text-align:center">A unique state value</td></tr><tr><td style="text-align:center">{:auth_type}</td><td style="text-align:center">path</td><td style="text-align:center"><span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">String</span></td><td style="text-align:center"></td><td style="text-align:center">The auth type. Fixed to <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">reprompt</span></td></tr></tbody></table></div></div>
+<br/>
+<ul>
+<li class="ml-6 list-disc" node="[object Object]">Response</li>
+</ul>
+<p class="my-4">The Naver platform&#x27;s consent-to-provide-information page</p>
+<br/>
+<p class="my-4">On that page, the user can reselect whether to consent to providing information. After that, just like login, <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">code</span> and <span class="select-text rounded bg-neutral-100 px-[0.3rem] py-[0.2rem] font-code! font-semibold text-sm dark:bg-neutral-800" data-testid="MarkdownCodeline" node="[object Object]">state</span> are sent to the redirect URL. The behavior afterward is the same as login.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Full-Code" id="Full-Code"><h2 class="text-3xl font-bold" node="[object Object]">Full Code</h2></a><div class="mt-1 w-full border-b"></div></div>
+<pre><div class="mt-6 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 [&amp;_pre]:m-0! [&amp;_pre]:overflow-auto [&amp;_pre]:rounded-none! [&amp;_pre]:p-4 language-java" data-testid="MarkdownCodeblock" node="[object Object]"><div class="flex items-center justify-between border-b border-b-neutral-200 bg-neutral-100 px-4 py-1.5 dark:border-b-neutral-800 dark:bg-neutral-900"><div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg><p class="text-sm">JAVA</p></div><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div class="[&amp;_code]:font-code!"><pre><code>package oauth.account.module;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.github.scribejava.core.builder.ServiceBuilder;
+import com.github.scribejava.core.builder.ServiceBuilderOAuth20;
+import com.github.scribejava.core.model.OAuthRequest;
+import com.github.scribejava.core.model.Response;
+import com.github.scribejava.core.model.Verb;
+import oauth.account.bean.ApiKeyBean;
+import oauth.account.bean.UserInfoBean;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.concurrent.ExecutionException;
+
+/**
+ * Naver 인증 모듈 클래스
+ *
+ * @author RWB
+ * @since 2021.09.29 Wed 23:45:49
+ */
+public class NaverAuthModule extends AuthModule
+{
+	private static final String MODULE_NAME = &quot;naver&quot;;
+	
+	private static final String API_KEY;
+	private static final String SECRET_KEY;
+	private static final String CALLBACK_URL;
+	
+	static
+	{
+		ApiKeyBean apiKeyBean = getApiKeyBean(MODULE_NAME);
+		
+		API_KEY = apiKeyBean.getApi();
+		SECRET_KEY = apiKeyBean.getSecret();
+		CALLBACK_URL = apiKeyBean.getCallback();
+	}
+	
+	private static final ServiceBuilderOAuth20 SERVICE_BUILDER = new ServiceBuilder(API_KEY).apiSecret(SECRET_KEY).callback(CALLBACK_URL);
+	
+	private static final NaverAuthModule INSTANCE = new NaverAuthModule(SERVICE_BUILDER);
+	
+	/**
+	 * 생성자 메서드
+	 *
+	 * @param serviceBuilder: [ServiceBuilderOAuth20] API 서비스 빌더
+	 */
+	private NaverAuthModule(ServiceBuilderOAuth20 serviceBuilder)
+	{
+		super(serviceBuilder);
+	}
+	
+	/**
+	 * 인스턴스 반환 메서드
+	 *
+	 * @return [NaverAuthModule] 인스턴스
+	 */
+	public static NaverAuthModule getInstance()
+	{
+		return INSTANCE;
+	}
+	
+	/**
+	 * 유저 정보 객체 반환 메서드
+	 *
+	 * @param body: [String] OAuth 응답 내용
+	 *
+	 * @return [UserInfoBean] 유저 정보 객체
+	 *
+	 * @throws JsonProcessingException JSON 파싱 예외
+	 */
+	@Override
+	public UserInfoBean getUserInfoBean(String body) throws JsonProcessingException
+	{
+		ObjectMapper mapper = new ObjectMapper();
+		
+		JsonNode node = mapper.readTree(body);
+		
+		String email = node.get(&quot;response&quot;).get(&quot;email&quot;) == null ? &quot;미동의&quot; : node.get(&quot;response&quot;).get(&quot;email&quot;).textValue();
+		String name = node.get(&quot;response&quot;).get(&quot;name&quot;) == null ? &quot;미동의&quot; : node.get(&quot;response&quot;).get(&quot;name&quot;).textValue();
+		String profile_image = node.get(&quot;response&quot;).get(&quot;profile_image&quot;) == null ? &quot;/oauth2/assets/images/logo.png&quot; : node.get(&quot;response&quot;).get(&quot;profile_image&quot;).textValue();
+		
+		return new UserInfoBean(email, name, profile_image, MODULE_NAME);
+	}
+	
+	/**
+	 * 연동 해제 결과 반환 메서드
+	 *
+	 * @param access: [String] 접근 토큰
+	 *
+	 * @return [boolean] 연동 해제 결과
+	 *
+	 * @throws IOException 데이터 입출력 예외
+	 * @throws ExecutionException 실행 예외
+	 * @throws InterruptedException 인터럽트 예외
+	 */
+	@Override
+	public boolean deleteInfo(String access) throws IOException, ExecutionException, InterruptedException
+	{
+		OAuthRequest oAuthRequest = new OAuthRequest(Verb.GET, getAccessTokenEndpoint());
+		oAuthRequest.addQuerystringParameter(&quot;client_id&quot;, API_KEY);
+		oAuthRequest.addQuerystringParameter(&quot;client_secret&quot;, SECRET_KEY);
+		oAuthRequest.addQuerystringParameter(&quot;access_token&quot;, access);
+		oAuthRequest.addQuerystringParameter(&quot;grant_type&quot;, &quot;delete&quot;);
+		oAuthRequest.addQuerystringParameter(&quot;service_provider&quot;, &quot;NAVER&quot;);
+		
+		service.signRequest(access, oAuthRequest);
+		
+		Response response = service.execute(oAuthRequest);
+		
+		return response.isSuccessful();
+	}
+	
+	/**
+	 * 정보 제공 동의 갱신 URL 반환 메서드
+	 *
+	 * @param state: [String] 고유 상태값
+	 *
+	 * @return [String] 정보 제공 동의 갱신 URL
+	 */
+	@Override
+	public String getUpdateAuthorizationUrl(String state)
+	{
+		HashMap&lt;String, String&gt; params = new HashMap&lt;&gt;();
+		params.put(&quot;state&quot;, state);
+		params.put(&quot;auth_type&quot;, &quot;reprompt&quot;);
+		
+		return service.getAuthorizationUrl(params);
+	}
+	
+	/**
+	 * 접근 토큰 요청 URL 반환 메서드
+	 *
+	 * @return [String] 접근 토큰 요청 URL
+	 */
+	@Override
+	public String getAccessTokenEndpoint()
+	{
+		return &quot;https://nid.naver.com/oauth2.0/token&quot;;
+	}
+	
+	/**
+	 * 인증 API 요청 URL 반환 메서드
+	 *
+	 * @return [String] 인증 API 요청 URL
+	 */
+	@Override
+	protected String getAuthorizationBaseUrl()
+	{
+		return &quot;https://nid.naver.com/oauth2.0/authorize&quot;;
+	}
+	
+	/**
+	 * 사용자 정보 요청 URL 반환 메서드
+	 *
+	 * @return [String] 사용자 정보 요청 URL
+	 */
+	@Override
+	protected String getUserInfoEndPoint()
+	{
+		return &quot;https://openapi.naver.com/v1/nid/me&quot;;
+	}
+}</code></pre></div></div></pre>
+<p class="my-4">The full, organized code is as above.</p>
+<div class="pt-10 pb-4" data-testid="MarkdownHeading"><a class="inline-block w-fit scroll-mt-16" href="#Wrap-up" id="Wrap-up"><h1 class="text-4xl font-bold" node="[object Object]">Wrap-up</h1></a><div class="mt-1 w-full border-b"></div></div>
+<p class="my-4">With this, the implementation of the NAVER authentication module is complete. At this stage, since it&#x27;s still in development, it can only be used with designated test IDs. You need to register a test account in the API settings in order to test login with that account. Once the application is approved after review, login will be available with all IDs.</p></div><div><div class="flex flex-wrap gap-2"><span class="inline-flex items-center rounded-md bg-secondary px-2.5 py-1 font-semibold text-secondary-foreground text-xs transition-colors hover:bg-secondary/80" data-testid="ContentTag"># <!-- -->JAVA</span><span class="inline-flex items-center rounded-md bg-secondary px-2.5 py-1 font-semibold text-secondary-foreground text-xs transition-colors hover:bg-secondary/80" data-testid="ContentTag"># <!-- -->OAuth2.0</span><span class="inline-flex items-center rounded-md bg-secondary px-2.5 py-1 font-semibold text-secondary-foreground text-xs transition-colors hover:bg-secondary/80" data-testid="ContentTag"># <!-- -->scribeJAVA</span></div><div class="mt-4 flex w-full items-center justify-end border-t pt-4"><button type="button" tabindex="0" data-slot="button" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 bg-secondary text-secondary-foreground hover:bg-[color-mix(in_oklch,var(--secondary),var(--foreground)_5%)] aria-expanded:bg-secondary aria-expanded:text-secondary-foreground h-9 gap-1.5 px-2.5 in-data-[slot=button-group]:rounded-md has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 w-20"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>List</button></div></div><div class="grid w-full grid-cols-1 gap-4 sm:grid-cols-2" data-testid="ContentAdjacent"><div class="w-full"><a data-testid="ContentAdjacentPrev" href="/en/posts/2021/10/20/oauth2-java-server-3" class="group flex flex-col items-stretch overflow-hidden rounded-lg border transition-colors hover:bg-accent hover:text-accent-foreground"><div class="aspect-32/8 size-full overflow-hidden"><img alt="[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 3. Implementing the OAuth2.0 Authentication Module with scribeJAVA" class="size-full shrink-0 object-cover transition transition-scale group-hover:scale-105" height="100%" src="https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png" width="100%"/></div><div class="flex flex-1 items-center gap-2 p-4"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left shrink-0 text-muted-foreground" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg><div class="flex flex-col gap-1 overflow-hidden"><p class="text-muted-foreground text-xs">Previous</p><p class="truncate font-medium">[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 3. Implementing the OAuth2.0 Authentication Module with scribeJAVA</p></div></div></a></div><div class="w-full"><a data-testid="ContentAdjacentNext" href="/en/posts/2021/10/23/oauth2-java-server-5" class="group flex flex-col items-stretch overflow-hidden rounded-lg border transition-colors hover:bg-accent hover:text-accent-foreground"><div class="aspect-32/8 size-full overflow-hidden"><img alt="[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 5. Applying for the Google OAuth Service and Implementing the Module" class="size-full shrink-0 object-cover transition transition-scale group-hover:scale-105" height="100%" src="https://user-images.githubusercontent.com/50317129/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png" width="100%"/></div><div class="flex flex-1 items-center justify-end gap-2 p-4"><div class="flex flex-col gap-1 overflow-hidden"><p class="text-end text-muted-foreground text-xs">Next</p><p class="truncate font-medium">[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 5. Applying for the Google OAuth Service and Implementing the Module</p></div><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right shrink-0 text-muted-foreground" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></div></a></div></div><div class="w-full" data-url="/posts/2021/10/22/oauth2-java-server-4"></div></div></div></div></section><footer class="relative mt-100" data-testid="AppFooter"><div class="absolute bottom-full left-0 h-50 w-full"><div class="relative size-full"><svg class="mb--2 min-h-10 transition duration-300 fill-(--wave16) absolute bottom-full left-0 z-1 h-10 w-full" data-hour="16" data-testid="Wave" preserveAspectRatio="none" shape-rendering="auto" viewBox="0 24 150 28" xmlns="http://www.w3.org/2000/svg"><defs><path d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" id="gentle-wave"></path></defs><g><use class="animation-duration-7000 animate-move-forever delay-[-2s]" fill="inherit" opacity="0.7" x="48" xlink:href="#gentle-wave" y="0"></use><use class="animation-duration-10000 animate-move-forever delay-[-3s]" fill="inherit" opacity="0.5" x="48" xlink:href="#gentle-wave" y="3"></use><use class="animation-duration-13000 animate-move-forever delay-[-4s]" fill="inherit" opacity="0.3" x="48" xlink:href="#gentle-wave" y="5"></use><use class="animation-duration-20000 animate-move-forever delay-[-5s]" fill="inherit" x="48" xlink:href="#gentle-wave" y="7"></use></g></svg><div class="transition duration-300 bg-(image:--sky16) absolute top-0 left-0 size-full" data-component="Sky" data-hour="16"></div><img alt="ship" class="absolute -bottom-2 left-1/10 z-1 size-20 animate-boat sm:size-25" height="auto" src="https://github.com/user-attachments/assets/e2a11c89-57af-4944-9068-bf237369f8b3" width="auto"/><svg class="mb--2 min-h-10 transition duration-300 fill-(--wave7) absolute bottom-0 left-0 z-2 h-10 w-full" data-hour="7" data-testid="Wave" preserveAspectRatio="none" shape-rendering="auto" viewBox="0 24 150 28" xmlns="http://www.w3.org/2000/svg"><defs><path d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" id="gentle-wave"></path></defs><g><use class="animation-duration-7000 animate-move-forever delay-[-2s]" fill="inherit" opacity="0.7" x="48" xlink:href="#gentle-wave" y="0"></use><use class="animation-duration-10000 animate-move-forever delay-[-3s]" fill="inherit" opacity="0.5" x="48" xlink:href="#gentle-wave" y="3"></use><use class="animation-duration-13000 animate-move-forever delay-[-4s]" fill="inherit" opacity="0.3" x="48" xlink:href="#gentle-wave" y="5"></use><use class="animation-duration-20000 animate-move-forever delay-[-5s]" fill="inherit" x="48" xlink:href="#gentle-wave" y="7"></use></g></svg></div></div><div class="min-h-10 bg-(--wave7)"><div class="flex w-full flex-col items-center gap-6 px-6 py-12 text-white"><div class="flex flex-col items-center gap-1 text-center"><div class="flex items-center gap-2"><img alt="blog.itcode.dev" height="24" src="/logo.png" width="24"/><p class="font-bold lang-en:font-playwright text-xl">Notes from the π-th Alpaca</p></div><span class="text-white/70 text-xs">7.0.1</span></div><div class="flex flex-wrap items-center justify-center gap-1"><a aria-label="Homepage" class="flex size-9 items-center justify-center rounded-full p-2 text-white/80 transition-colors hover:bg-white/10 hover:text-white" href="https://itcode.dev" rel="noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg></a><a aria-label="GitHub" class="flex size-9 items-center justify-center rounded-full p-2 text-white/80 transition-colors hover:bg-white/10 hover:text-white" href="https://github.com/RWB0104" rel="noreferrer" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a><a aria-label="LinkedIn" class="flex size-9 items-center justify-center rounded-full p-2 text-white/80 transition-colors hover:bg-white/10 hover:text-white" href="https://www.linkedin.com/in/itcode" rel="noreferrer" target="_blank"><svg viewBox="0 0 256 256" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="[&amp;&gt;path]:fill-inherit"><path d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 67.013ZM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009-.002-12.157 9.851-22.014 22.008-22.016 12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453" fill="#0A66C2"></path></svg></a><a aria-label="Email" class="flex size-9 items-center justify-center rounded-full p-2 text-white/80 transition-colors hover:bg-white/10 hover:text-white" href="mailto:psj2716@gmail.com" rel="noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg></a><a aria-label="Sitemap" class="flex size-9 items-center justify-center rounded-full p-2 text-white/80 transition-colors hover:bg-white/10 hover:text-white" href="/sitemap.xml" rel="noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open-text" aria-hidden="true"><path d="M12 5v16"></path><path d="M16 13h2"></path><path d="M16 9h2"></path><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"></path><path d="M6 13h2"></path><path d="M6 9h2"></path></svg></a><a aria-label="RSS" class="flex size-9 items-center justify-center rounded-full p-2 text-white/80 transition-colors hover:bg-white/10 hover:text-white" href="/rss/en.xml" rel="noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rss" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></div><div class="flex flex-col items-center gap-0.5 text-center text-white/50 text-xs"><span>Developed by <!-- -->RWB<!-- --> since 2021.05</span><span>7th upgraded at 2026.08</span></div></div></div></footer><div class="fixed right-8 bottom-8 z-10 flex flex-col items-end gap-4" data-testid="Floater"><div role="group" data-slot="button-group" data-orientation="vertical" class="flex w-fit items-stretch *:focus-visible:relative *:focus-visible:z-10 has-[&gt;[data-slot=button-group]]:gap-2 has-[select[aria-hidden=true]:last-child]:[&amp;&gt;[data-slot=select-trigger]:last-of-type]:rounded-r-md [&amp;&gt;[data-slot=select-trigger]:not([class*=&#x27;w-&#x27;])]:w-fit [&amp;&gt;input]:flex-1 flex-col *:data-slot:rounded-b-none [&amp;&gt;[data-slot]:not(:has(~[data-slot]))]:rounded-b-md! [&amp;&gt;[data-slot]~[data-slot]]:rounded-t-none [&amp;&gt;[data-slot]~[data-slot]]:border-t-0"><button type="button" tabindex="0" data-slot="button" aria-label="맨 위로 이동" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 border-border bg-background shadow-xs hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-up" aria-hidden="true"><path d="m18 15-6-6-6 6"></path></svg></button><button type="button" tabindex="0" data-slot="button" aria-label="맨 아래로 이동" class="group/button inline-flex shrink-0 items-center justify-center rounded-md border bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 border-border bg-background shadow-xs hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50 size-9"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button></div></div></main></div>
+        
+        <script id="vike_pageContext" type="application/json">{"locale":"en","urlLogical":"\/posts\/2021\/10\/22\/oauth2-java-server-4","pageId":"\/pages\/posts\/@id","routeParams":{"*":"2021\/10\/22\/oauth2-java-server-4"},"data":{"adjacent":{"next":{"image":"https:\/\/user-images.githubusercontent.com\/50317129\/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 5. Applying for the Google OAuth Service and Implementing the Module","url":"\/posts\/2021\/10\/23\/oauth2-java-server-5"},"prev":{"image":"https:\/\/user-images.githubusercontent.com\/50317129\/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png","title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 3. Implementing the OAuth2.0 Authentication Module with scribeJAVA","url":"\/posts\/2021\/10\/20\/oauth2-java-server-3"}},"detail":{"body":"\n# Overview\n\nAs the first platform, let's apply for an OAuth service with NAVER and implement the authentication module.\n\n\n\n\n\n# Applying for the NAVER OAuth Service\n\nLet's apply for the NAVER OAuth service to obtain the API information.\n\n\n\n## 1. Access the Naver Developer Center\n\nAfter logging in, go to the [Naver Developer Center](https:\/\/developers.naver.com\/main\/).\n\nNAVER provides its OAuth service under the name \"Naver ID Login,\" commonly abbreviated as \"Neh-aro\" (네아로).\n\nYou just need to register an application that uses this service in the Naver Developer Center.\n\n\u003cbr \/>\n\nGo to the [\u003cspan class=\"text-sky-600\">Application\u003c\/span> - \u003cspan class=\"text-sky-600\">Register Application\u003c\/span>] menu in the top header.\n\n\n\n## 2. Registering the Application\n\nLet's register an application that will manage the OAuth information.\n\nYou must fill in all the fields below, and these fields can be changed at any time even after review.\n\n\n\n### Application Name\n\nThis is the name of the application. This name is also displayed in the Naver login window.\n\n![null](https:\/\/user-images.githubusercontent.com\/50317129\/138466274-8c7dff01-7aaf-4911-a2c6-874caa418122.png)\n\nAn example of my Naver login window. My application's name is OAuth2, and the name specified there is displayed in the OAuth2 part of the window above.\n\n\n\n### API to Use\n\nSelect the API you want to use.\n\nNaver provides various APIs, but for now, in line with the purpose of this project, select the \u003cspan class=\"text-blue-400\">Naver ID Login service\u003c\/span>.\n\n\u003cbr \/>\n\nOnce you select the Naver ID Login service, a form for selecting the data to be provided is added.\n\nThis lets you select what information can be obtained from the user's authentication data, and you can classify each item as required or optional.\n\nInformation marked as required or optional can be accessed later when calling the user's information.\n\n\u003cbr \/>\n\n> \u003cb class=\"text-red-600\">🛑 Caution!!\u003c\/b>  \n> With Naver, even required information can be arbitrarily refused by the user. In other words, even if you notify the user that this information is required for the service to operate, if the user refuses it, there's nothing the service can do about it.  \n> For this reason, verifying user information matters more with Naver than with other platforms. The difference between required and optional comes down to whether the checkbox defaults to checked or unchecked. Required items are checked by default, while optional items are shown to the user unchecked by default.\n\nSelect the information you want. If it's absolutely necessary, mark it as required; otherwise, leave it as optional. Don't check everything \"just in case.\" It's not impossible to do so, but later during the review for activating full OAuth key distribution, requesting unnecessary or excessive data access permissions could result in the review being rejected. Only request the minimum information that's truly necessary.\n\n\n\n### Login Open API Service Environment\n\nEnter the environment in which OAuth will be used.\n\nSince this project is built for the web, select PC Web. You can also add Android or iOS. You can add multiple environments at once and manage access to multiple platforms with a single key in an integrated way.\n\n\u003cbr \/>\n\nThe service URL is the URL of the service to which you're applying Naver ID Login.\n\nThe Callback URL is the URL to which the login result will be delivered. You can specify up to 5, and the `callback` value in the `naver.properties` file you'll configure later must be one of these registered Callback URLs. If an unregistered Callback URL is detected during the platform login process, an error is returned.\n\nEnter it in a URL format like `https:\/\/example.com\/oauth2`, and you can append arbitrary URL parameters like `https:\/\/example.com\/oauth2?key=value`.\n\nOnce everything looks good, create the application.\n\n\n\n### Checking the API Information\n\n![null](https:\/\/user-images.githubusercontent.com\/50317129\/138097785-f918f5b3-2d9f-49c0-82b6-09f95c64242c.png)\n\nOnce you create the application, you can see the API and Secret. The Secret is masked by default, and you can view it by clicking a separate button. If you believe the Secret has been leaked, you can reissue it. In that case, of course, you must apply the changed Secret to the authorization server.\n\n\n\n\n\n# Implementing the NAVER Authentication Module\n\nNow that all the necessary preparations are in place, let's implement the NAVER authentication module. We'll implement it by extending the previously implemented `AuthModule`.\n\n``` java\npublic class NaverAuthModule extends AuthModule\n{\n\t\/\/ NAVER authentication module\n}\n```\n\nThe basic form of the object is as above.\n\n|           Method            | Method Type |                 Description                  | Implementation Needed? |\n| :-------------------------: | :---------: | :-----------------------------------: | :------------: |\n|    `getAuthorizationUrl`    |   abstract     |         Returns the authentication URL          |       Y        |\n|      `getAccessToken`       |             |         Returns the access token         |                |\n|   `getRefreshAccessToken`   |             |     Refreshes and returns the access token     |                |\n|        `getUserInfo`        |             |     Returns the user info response      |                |\n|  `getRefreshTokenEndpoint`  |             | Returns the access token reissue request URL |                |\n|       `getApiKeyBean`       |             |        Returns the API key object        |                |\n|    `getUserInfoEndPoint`    |             |   Returns the user info request URL    |                |\n|      `getUserInfoBean`      |   abstract     |      Returns the user info object       |       Y        |\n|        `deleteInfo`         |   abstract     |      Returns the result of unlinking       |       Y        |\n| `getUpdateAuthorizationUrl` |   abstract     |  Returns the URL for renewing consent to provide information  |       Y        |\n|  `getAccessTokenEndpoint`   |   abstract     |    Returns the access token request URL     |       Y        |\n|  `getAuthorizationBaseUrl`  |   abstract     |     Returns the authentication API request URL     |       Y        |\n\nThe above is what the NAVER module needs to implement.\n\n\n\n## Creating the properties File\n\nCreate a `naver.properties` file under `WEB-INF`. You can also copy the already-created `sample.properties` and use that.\n\n``` properties\napi=API_KEY\nsecret=SECRET_KEY\ncallback=CALLBACK_URL\n```\n\nThe basic format is as above; just enter the appropriate values for each item.\n\n\n\n## Assigning Basic Methods and Variables for the Authentication Module\n\nFor the authentication module to work correctly, there are certain methods and variables that need to be set up by default, such as configuring API information and returning the instance.\n\n``` java\nprivate static final String MODULE_NAME = \"naver\";\n\nprivate static final String API_KEY;\nprivate static final String SECRET_KEY;\nprivate static final String CALLBACK_URL;\n\nstatic\n{\n\tApiKeyBean apiKeyBean = getApiKeyBean(MODULE_NAME);\n\t\n\tAPI_KEY = apiKeyBean.getApi();\n\tSECRET_KEY = apiKeyBean.getSecret();\n\tCALLBACK_URL = apiKeyBean.getCallback();\n}\n\nprivate static final ServiceBuilderOAuth20 SERVICE_BUILDER = new ServiceBuilder(API_KEY).apiSecret(SECRET_KEY).callback(CALLBACK_URL);\n\nprivate static final NaverAuthModule INSTANCE = new NaverAuthModule(SERVICE_BUILDER);\n\nprivate NaverAuthModule(ServiceBuilderOAuth20 serviceBuilder)\n{\n\tsuper(serviceBuilder);\n}\n\npublic static NaverAuthModule getInstance()\n{\n\treturn INSTANCE;\n}\n```\n\n|       Field        |          Type           |         Description         |\n| :---------------: | :---------------------: | :------------------: |\n|   `MODULE_NAME`   |        `String`         |      The module name       |\n|     `API_KEY`     |        `String`         |        The API key         |\n|   `SECRET_KEY`    |        `String`         |       The secret key       |\n|  `CALLBACK_URL`   |        `String`         |       The callback URL       |\n| `SERVICE_BUILDER` | `ServiceBuilderOAuth20` | The OAuth2.0 service builder |\n|    `INSTANCE`     |    `NaverAuthModule`    |       The instance       |\n\nAll the defined variables are declared as `static final`, so \u003cspan class=\"text-red-400\">they're declared only once when the instance is created and cannot be reassigned\u003c\/span>.\n\nThrough the `static{ }` block, the API information is set up when the instance is created.\n\nWhen assigning the API values, the `getApiKeyBean()` method parses the properties with the given name and returns an `ApiKeyBean` object, which is then used.\n\n\n\n## Assigning API URLs\n\nLet's implement the methods that return the request URL for each API.\n\n``` java\n@Override\npublic String getAccessTokenEndpoint()\n{\n\treturn \"https:\/\/nid.naver.com\/oauth2.0\/token\";\n}\n\n@Override\nprotected String getAuthorizationBaseUrl()\n{\n\treturn \"https:\/\/nid.naver.com\/oauth2.0\/authorize\";\n}\n\n@Override\nprotected String getUserInfoEndPoint()\n{\n\treturn \"https:\/\/openapi.naver.com\/v1\/nid\/me\";\n}\n```\n\n* `getAccessTokenEndpoint()` - token-related APIs use the URL returned by this method.\n* `getAuthorizationBaseUrl()` - authentication-related APIs use the URL returned by this method.\n* `getUserInfoEndPoint()` - user info-related APIs use the URL returned by this method.\n\nThese are the URLs needed to carry out OAuth2.0 operations. Among these, `getAccessTokenEndpoint()` and `getAuthorizationBaseUrl()` are abstract methods of `DefaultApi20`, an object from the scribeJAVA library, and the remaining one is an abstract method of `AuthModule`.\n\n`DefaultApi20` doesn't provide a separate method related to the user account API. However, since the user account API is essential when using `AuthModule`'s common method for fetching user info, it's managed as an abstract method of `AuthModule`.\n\n\n\n## Method to Return the Authentication URL\n\nLet's implement \u003cspan class=\"text-blue-500\">the feature that returns the Naver platform login URL\u003c\/span>.\n\nFirst, let's look at the API.\n\n\u003cbr \/>\n\n* Request\n\n``` txt\nGET\/POST https:\/\/nid.naver.com\/oauth2.0\/authorize?response_type=code&client_id={:client_id}&redirect_uri={:redirect_uri}&state={:state}\n```\n\n|    parameter     | type  |   data   | required |           description           |\n| :--------------: | :---: | :------: | :------: | :-----------------------------: |\n| {:response_type} | path  | `String` |    Y     |    The response type. Fixed to `code`     |\n|   {:client_id}   | path  | `String` |    Y     |              The API key              |\n| {:redirect_uri}  | path  | `String` |    Y     |          The Callback URL           |\n|     {:state}     | path  | `String` |    Y     |           A unique state value           |\n|     {:scope}     | path  | `String` |          | The access scope; not used |\n\n\u003cbr \/>\n\n* Response\n\nThe Naver platform login page\n\n\u003cbr \/>\n\nThe Naver platform login API is as above. You just need to design the method to return the request URL.\n\nYou could build the URL directly with string operations, but you can easily generate the URL using the `service.getAuthorizationUrl()` method.\n\nSince it's already declared as a common method in `AuthModule`, \u003cspan class=\"text-red-400\">there's no need to implement it separately.\u003c\/span>\n\n\n\n## Method to Return the Access Token\n\nSince we receive the Code as the login result, we'll implement \u003cspan class=\"text-blue-500\">the feature that exchanges it for an Access Token\u003c\/span>.\n\nThe Naver API is as follows.\n\n\u003cbr \/>\n\n* Request\n\n``` txt\nGET\/POST https:\/\/nid.naver.com\/oauth2.0\/token?grant_type=authorization_code&client_id={:client_id}&client_secret={:client_secret}&code={:code}&state={:state}\n```\n\n|    parameter     | type  |   data   | required |              description               |\n| :--------------: | :---: | :------: | :------: | :------------------------------------: |\n|  {:grant_type}   | path  | `String` |    Y     | The grant type. Fixed to `authorization_code` |\n|   {:client_id}   | path  | `String` |    Y     |                 The API key                  |\n| {:client_secret} | path  | `String` |    Y     |                The secret key                |\n|     {:code}      | path  | `String` |    Y     |               The authorization code                |\n|     {:state}     | path  | `String` |          |              A unique state value               |\n\n\u003cbr \/>\n\n* Response\n\n``` json\n{\n\t\"access_token\": \"AAAAQosjWDJieBiQZc3to9YQp6HDLvrmyKC+6+iZ3gq7qrkqf50ljZC+Lgoqrg\",\n\t\"refresh_token\": \"c8ceMEJisO4Se7uGisHoX0f5JEii7JnipglQipkOn5Zp3tyP7dHQoP0zNKHUq2gY\",\n\t\"token_type\": \"bearer\",\n\t\"expires_in\": \"3600\"\n}\n```\n\n|   parameter   |   data   |    description     |\n| :-----------: | :------: | :----------------: |\n| access_token  | `String` |     The access token      |\n| refresh_token | `String` |   The refresh token    |\n|  token_type   | `String` |     The token type      |\n|  expires_in   | `String` | The expiration time (in seconds) |\n\n\u003cbr \/>\n\nThe response of the `service.getAccessToken()` method gives us the `OAuth2AccessToken` object, which is the DTO for the JSON response above.\n\nSince this too can be handled by the common method declared in `AuthModule`, there's no need to \u003cspan class=\"text-red-400\">implement it separately.\u003c\/span>\n\n\n\n## Method to Refresh and Return the Access Token\n\nThe Access Token has a very short expiration time, about one hour. When the Access Token expires, normally the user would need to be asked to re-authenticate via platform login, but if a Refresh Token is available, you can \u003cspan class=\"text-blue-500\">reissue the Access Token\u003c\/span> internally in the service without going through any extra steps.\n\nThis Refresh Token doesn't carry authentication rights, but it does carry the right to reissue an Access Token.\n\nThe Naver API implementing this is as follows.\n\n\u003cbr \/>\n\n* Request\n\n``` txt\nGET\/POST https:\/\/nid.naver.com\/oauth2.0\/token?grant_type=refresh_token&client_id={:client_id}&client_secret={:client_secret}&refresh_token=${:refresh_token}\n```\n\n|    parameter     | type  |   data   | required |            description            |\n| :--------------: | :---: | :------: | :------: | :-------------------------------: |\n|  {:grant_type}   | path  | `String` |    Y     | The grant type. Fixed to `refresh_token` |\n|   {:client_id}   | path  | `String` |    Y     |               The API key               |\n| {:client_secret} | path  | `String` |    Y     |             The secret key              |\n| {:refresh_token} | path  | `String` |    Y     |           The refresh token           |\n\n\u003cbr \/>\n\n* Response\n\n``` json\n{\n    \"access_token\":\"AAAAQjbRkysCNmMdQ7kmowPrjyRNIRYKG2iGHhbGawP0xfuYwjrE2WTI3p44SNepkFXME\/NlxfamcJKPmUU4dSUhz+R2CmUqnN0lGuOcbEw6iexg\",\n    \"token_type\":\"bearer\",\n    \"expires_in\":\"3600\"\n}\n```\n\n|  parameter   |   data   |    description     |\n| :----------: | :------: | :----------------: |\n| access_token | `String` |     The access token      |\n|  token_type  | `String` |     The token type      |\n|  expires_in  | `String` | The expiration time (in seconds) |\n\n\u003cbr \/>\n\nSince this can be replaced by `AuthModule`'s common method, \u003cspan class=\"text-red-400\">it's not implemented separately.\u003c\/span>\n\n\n\n## Method to Return the User Info Response\n\nLet's implement \u003cspan class=\"text-blue-500\">the feature that fetches user info using the Access Token\u003c\/span>. This is the part where the issued Access Token is actually put to meaningful use.\n\nThe Naver API is as follows.\n\n\u003cbr \/>\n\n* Request\n\n``` txt\nGET https:\/\/openapi.naver.com\/v1\/nid\/me\nAuthorization: Bearer {:access_token}\n```\n\n|    parameter    |  type  |   data   | required | description |\n| :-------------: | :----: | :------: | :------: | :---------: |\n| {:access_token} | header | `String` |    Y     |  The access token  |\n\n\u003cbr \/>\n\n* Response\n\n``` json\n{\n\t\"resultcode\": \"00\",\n\t\"message\": \"success\",\n\t\"response\": {\n\t\t\"email\": \"openapi@naver.com\",\n\t\t\"nickname\": \"OpenAPI\",\n\t\t\"profile_image\": \"https:\/\/ssl.pstatic.net\/static\/pwe\/address\/nodata_33x33.gif\",\n\t\t\"age\": \"40-49\",\n\t\t\"gender\": \"F\",\n\t\t\"id\": \"32742776\",\n\t\t\"name\": \"오픈 API\",\n\t\t\"birthday\": \"10-01\",\n\t\t\"birthyear\": \"1900\",\n\t\t\"mobile\": \"010-0000-0000\"\n\t}\n}\n```\n\n|       parameter        |   data   |                                       description                                        |\n| :--------------------: | :------: | :--------------------------------------------------------------------------------------: |\n|       resultcode       | `String` | [API call result code](https:\/\/developers.naver.com\/docs\/common\/openapiguide\/errorcode.md) |\n|        message         | `String` |                                     The call result message                                     |\n|      response.id       | `String` |                              A unique identifier hash for the same person                              |\n|   response.nickname    | `String` |                              The user's nickname (id*** if not set)                               |\n|     response.name      | `String` |                                       The user's name                                        |\n|     response.email     | `String` |                      The user's email address (based on the email in \"My Info\")                       |\n|    response.gender     | `String` |                         Gender (F - female, M - male, U - unknown)                          |\n|      response.age      | `String` |                                          Age range                                          |\n|   response.birthday    | `String` |                                       Birthday (MM-DD)                                       |\n| response.profile_image | `String` |                                  URL of the user's profile picture                                  |\n|   response.birthyear   | `String` |                                         Birth year                                         |\n|    response.mobile     | `String` |                                       Mobile phone number                                       |\n\n\u003cbr \/>\n\nThe id is not the `xxx@naver.com`-style ID we normally think of, but a unique hash value assigned per account.\n\nYou can get the Naver ID via `response.email`, but it's limited. If you've changed [\u003cspan class=\"text-sky-600\">My Info\u003c\/span> - \u003cspan class=\"text-sky-600\">Contact Email\u003c\/span>] to a different email, that email will be shown instead of the Naver email. \u003cspan class=\"text-red-400\">Officially, there's no way to reliably get the Naver email from the profile API.\u003c\/span>\n\nSince this can be replaced by `AuthModule`'s common method, \u003cspan class=\"text-red-400\">it's not implemented separately.\u003c\/span>\n\n\n\n## Method to Return the User Info Object\n\nLet's implement the method that \u003cspan class=\"text-blue-500\">parses the response according to Naver's user info API response format\u003c\/span> and returns it as a `UserInfoBean`.\n\nThis project only uses the name, email, and profile picture URL, so we extract those values from the response and store them in the object.\n\n\u003cbr \/>\n\n* Code\n\n``` java\n@Override\npublic UserInfoBean getUserInfoBean(String body) throws JsonProcessingException\n{\n\tObjectMapper mapper = new ObjectMapper();\n\t\n\tJsonNode node = mapper.readTree(body);\n\t\n\tString email = node.get(\"response\").get(\"email\") == null ? \"미동의\" : node.get(\"response\").get(\"email\").textValue();\n\tString name = node.get(\"response\").get(\"name\") == null ? \"미동의\" : node.get(\"response\").get(\"name\").textValue();\n\tString profile_image = node.get(\"response\").get(\"profile_image\") == null ? \"\/oauth2\/assets\/images\/logo.png\" : node.get(\"response\").get(\"profile_image\").textValue();\n\t\n\treturn new UserInfoBean(email, name, profile_image, MODULE_NAME);\n}\n```\n\n\u003cbr \/>\n\nWe extract the needed values according to the response format. If the user didn't consent to providing the information, the target object returns `null`. \u003cspan class=\"text-red-600\">Since Naver allows consent\/refusal regardless of whether an item is required or optional\u003c\/span>, `null` handling must always be done for the data.\n\n\n\n## Method to Return the Result of Unlinking\n\nThe first time you log in with a Naver ID, you go through consent to provide information, but on subsequent logins, this consent step is skipped. In other words, this means the platform saves the consent to provide information somewhere the first time you log in. If a user withdraws their membership from the service, it's necessary to \u003cspan class=\"text-blue-500\">unlink from Naver and completely delete the information\u003c\/span>.\n\nThe Naver API is as follows.\n\n\u003cbr \/>\n\n* Request\n\n``` txt\nGET\/POST https:\/\/nid.naver.com\/oauth2.0\/token?grant_type=delete&client_id={:client_id}&client_secret={:client_secret}&access_token={:access_token}&service_provider=NAVER\n```\n\n|      parameter      | type  |   data   | required |          description          |\n| :-----------------: | :---: | :------: | :------: | :---------------------------: |\n|    {:grant_type}    | path  | `String` |    Y     |  The grant type. Fixed to `delete`   |\n|    {:client_id}     | path  | `String` |    Y     |             The API key             |\n|  {:client_secret}   | path  | `String` |    Y     |           The secret key            |\n|   {:access_token}   | path  | `String` |    Y     |           The access token           |\n| {:service_provider} | path  | `String` |    Y     | The service provider. Fixed to `NAVER` |\n\n\u003cbr \/>\n\n* Response\n\n``` json\n{\n\t\"access_token\": \"c8ceMEjfnorlQwEisqemfpM1Wzw7aGp7JnipglQipkOn5Zp3tyP7dHQoP0zNKHUq2gY\",\n\t\"result\": \"success\"\n}\n```\n\n|  parameter   |   data   |            description             |\n| :----------: | :------: | :--------------------------------: |\n| access_token | `String` |      The access token that was deleted       |\n|    result    | `String` | The processing result; returns success if successful |\n\n\u003cbr \/>\n\n* Code\n\n``` java\n@Override\npublic boolean deleteInfo(String access) throws IOException, ExecutionException, InterruptedException\n{\n\tOAuthRequest oAuthRequest = new OAuthRequest(Verb.GET, getAccessTokenEndpoint());\n\toAuthRequest.addQuerystringParameter(\"client_id\", API_KEY);\n\toAuthRequest.addQuerystringParameter(\"client_secret\", SECRET_KEY);\n\toAuthRequest.addQuerystringParameter(\"access_token\", access);\n\toAuthRequest.addQuerystringParameter(\"grant_type\", \"delete\");\n\toAuthRequest.addQuerystringParameter(\"service_provider\", \"NAVER\");\n\t\n\tservice.signRequest(access, oAuthRequest);\n\t\n\tResponse response = service.execute(oAuthRequest);\n\t\n\treturn response.isSuccessful();\n}\n```\n\n\u003cbr \/>\n\nThe implementation is simple. Using the `OAuthRequest` object, you can easily build the request. Since the response body itself doesn't matter, we just use `response.isSuccessful()` to determine whether the response is normal and return that as a `boolean`.\n\n\n\n## Method to Return the URL for Renewing Consent to Provide Information\n\nWhile the service is running, if additional user information becomes necessary or unnecessary, you can \u003cspan class=\"text-blue-500\">reset the consent information by renewing user info consent\u003c\/span>.\n\nThe API is as follows.\n\n\u003cbr \/>\n\n* Request\n\n``` txt\nGET\/POST https:\/\/nid.naver.com\/oauth2.0\/authorize?auth_type=reprompt&state=${:state}&response_type=code&client_id=${:client_id}&redirect_uri=${:redirect_uri}\n```\n\n|    parameter     | type  |   data   | required |         description          |\n| :--------------: | :---: | :------: | :------: | :--------------------------: |\n| {:response_type} | path  | `String` |    Y     |   The response type. Fixed to `code`   |\n|   {:client_id}   | path  | `String` |    Y     |            The API key             |\n| {:redirect_uri}  | path  | `String` |    Y     |         The Callback URL         |\n|     {:state}     | path  | `String` |    Y     |         A unique state value          |\n|   {:auth_type}   | path  | `String` |          | The auth type. Fixed to `reprompt` |\n\n\u003cbr \/>\n\n* Response\n\nThe Naver platform's consent-to-provide-information page\n\n\u003cbr \/>\n\nOn that page, the user can reselect whether to consent to providing information. After that, just like login, `code` and `state` are sent to the redirect URL. The behavior afterward is the same as login.\n\n\n\n## Full Code\n\n``` java\npackage oauth.account.module;\n\nimport com.fasterxml.jackson.core.JsonProcessingException;\nimport com.fasterxml.jackson.databind.JsonNode;\nimport com.fasterxml.jackson.databind.ObjectMapper;\nimport com.github.scribejava.core.builder.ServiceBuilder;\nimport com.github.scribejava.core.builder.ServiceBuilderOAuth20;\nimport com.github.scribejava.core.model.OAuthRequest;\nimport com.github.scribejava.core.model.Response;\nimport com.github.scribejava.core.model.Verb;\nimport oauth.account.bean.ApiKeyBean;\nimport oauth.account.bean.UserInfoBean;\n\nimport java.io.IOException;\nimport java.util.HashMap;\nimport java.util.concurrent.ExecutionException;\n\n\/**\n * Naver 인증 모듈 클래스\n *\n * @author RWB\n * @since 2021.09.29 Wed 23:45:49\n *\/\npublic class NaverAuthModule extends AuthModule\n{\n\tprivate static final String MODULE_NAME = \"naver\";\n\t\n\tprivate static final String API_KEY;\n\tprivate static final String SECRET_KEY;\n\tprivate static final String CALLBACK_URL;\n\t\n\tstatic\n\t{\n\t\tApiKeyBean apiKeyBean = getApiKeyBean(MODULE_NAME);\n\t\t\n\t\tAPI_KEY = apiKeyBean.getApi();\n\t\tSECRET_KEY = apiKeyBean.getSecret();\n\t\tCALLBACK_URL = apiKeyBean.getCallback();\n\t}\n\t\n\tprivate static final ServiceBuilderOAuth20 SERVICE_BUILDER = new ServiceBuilder(API_KEY).apiSecret(SECRET_KEY).callback(CALLBACK_URL);\n\t\n\tprivate static final NaverAuthModule INSTANCE = new NaverAuthModule(SERVICE_BUILDER);\n\t\n\t\/**\n\t * 생성자 메서드\n\t *\n\t * @param serviceBuilder: [ServiceBuilderOAuth20] API 서비스 빌더\n\t *\/\n\tprivate NaverAuthModule(ServiceBuilderOAuth20 serviceBuilder)\n\t{\n\t\tsuper(serviceBuilder);\n\t}\n\t\n\t\/**\n\t * 인스턴스 반환 메서드\n\t *\n\t * @return [NaverAuthModule] 인스턴스\n\t *\/\n\tpublic static NaverAuthModule getInstance()\n\t{\n\t\treturn INSTANCE;\n\t}\n\t\n\t\/**\n\t * 유저 정보 객체 반환 메서드\n\t *\n\t * @param body: [String] OAuth 응답 내용\n\t *\n\t * @return [UserInfoBean] 유저 정보 객체\n\t *\n\t * @throws JsonProcessingException JSON 파싱 예외\n\t *\/\n\t@Override\n\tpublic UserInfoBean getUserInfoBean(String body) throws JsonProcessingException\n\t{\n\t\tObjectMapper mapper = new ObjectMapper();\n\t\t\n\t\tJsonNode node = mapper.readTree(body);\n\t\t\n\t\tString email = node.get(\"response\").get(\"email\") == null ? \"미동의\" : node.get(\"response\").get(\"email\").textValue();\n\t\tString name = node.get(\"response\").get(\"name\") == null ? \"미동의\" : node.get(\"response\").get(\"name\").textValue();\n\t\tString profile_image = node.get(\"response\").get(\"profile_image\") == null ? \"\/oauth2\/assets\/images\/logo.png\" : node.get(\"response\").get(\"profile_image\").textValue();\n\t\t\n\t\treturn new UserInfoBean(email, name, profile_image, MODULE_NAME);\n\t}\n\t\n\t\/**\n\t * 연동 해제 결과 반환 메서드\n\t *\n\t * @param access: [String] 접근 토큰\n\t *\n\t * @return [boolean] 연동 해제 결과\n\t *\n\t * @throws IOException 데이터 입출력 예외\n\t * @throws ExecutionException 실행 예외\n\t * @throws InterruptedException 인터럽트 예외\n\t *\/\n\t@Override\n\tpublic boolean deleteInfo(String access) throws IOException, ExecutionException, InterruptedException\n\t{\n\t\tOAuthRequest oAuthRequest = new OAuthRequest(Verb.GET, getAccessTokenEndpoint());\n\t\toAuthRequest.addQuerystringParameter(\"client_id\", API_KEY);\n\t\toAuthRequest.addQuerystringParameter(\"client_secret\", SECRET_KEY);\n\t\toAuthRequest.addQuerystringParameter(\"access_token\", access);\n\t\toAuthRequest.addQuerystringParameter(\"grant_type\", \"delete\");\n\t\toAuthRequest.addQuerystringParameter(\"service_provider\", \"NAVER\");\n\t\t\n\t\tservice.signRequest(access, oAuthRequest);\n\t\t\n\t\tResponse response = service.execute(oAuthRequest);\n\t\t\n\t\treturn response.isSuccessful();\n\t}\n\t\n\t\/**\n\t * 정보 제공 동의 갱신 URL 반환 메서드\n\t *\n\t * @param state: [String] 고유 상태값\n\t *\n\t * @return [String] 정보 제공 동의 갱신 URL\n\t *\/\n\t@Override\n\tpublic String getUpdateAuthorizationUrl(String state)\n\t{\n\t\tHashMap\u003cString, String> params = new HashMap\u003c>();\n\t\tparams.put(\"state\", state);\n\t\tparams.put(\"auth_type\", \"reprompt\");\n\t\t\n\t\treturn service.getAuthorizationUrl(params);\n\t}\n\t\n\t\/**\n\t * 접근 토큰 요청 URL 반환 메서드\n\t *\n\t * @return [String] 접근 토큰 요청 URL\n\t *\/\n\t@Override\n\tpublic String getAccessTokenEndpoint()\n\t{\n\t\treturn \"https:\/\/nid.naver.com\/oauth2.0\/token\";\n\t}\n\t\n\t\/**\n\t * 인증 API 요청 URL 반환 메서드\n\t *\n\t * @return [String] 인증 API 요청 URL\n\t *\/\n\t@Override\n\tprotected String getAuthorizationBaseUrl()\n\t{\n\t\treturn \"https:\/\/nid.naver.com\/oauth2.0\/authorize\";\n\t}\n\t\n\t\/**\n\t * 사용자 정보 요청 URL 반환 메서드\n\t *\n\t * @return [String] 사용자 정보 요청 URL\n\t *\/\n\t@Override\n\tprotected String getUserInfoEndPoint()\n\t{\n\t\treturn \"https:\/\/openapi.naver.com\/v1\/nid\/me\";\n\t}\n}\n```\n\nThe full, organized code is as above.\n\n\n\n\n\n# Wrap-up\n\nWith this, the implementation of the NAVER authentication module is complete. At this stage, since it's still in development, it can only be used with designated test IDs. You need to register a test account in the API settings in order to test login with that account. Once the application is approved after review, login will be available with all IDs.\n","meta":{"category":"JAVA","createdAt":1634909116000,"group":"Building an OAuth2.0 Authorization Server","hasComment":true,"hasPublish":true,"images":["https:\/\/user-images.githubusercontent.com\/50317129\/137171016-99af1db1-a346-4def-9329-6072b927bdc0.png"],"subtitle":["As the first platform, let's apply for an OAuth service with NAVER and implement the authentication module."],"tags":["JAVA","OAuth2.0","scribeJAVA"],"title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 4. Applying for the NAVER OAuth Service and Implementing the Module","type":"posts"},"url":"\/2021\/10\/22\/oauth2-java-server-4","toc":[{"idx":"1.","level":1,"text":"Overview"},{"idx":"2.","level":1,"text":"Applying for the NAVER OAuth Service"},{"idx":"2.1.","level":2,"text":"1. Access the Naver Developer Center"},{"idx":"2.2.","level":2,"text":"2. Registering the Application"},{"idx":"2.2.1.","level":3,"text":"Application Name"},{"idx":"2.2.2.","level":3,"text":"API to Use"},{"idx":"2.2.3.","level":3,"text":"Login Open API Service Environment"},{"idx":"2.2.4.","level":3,"text":"Checking the API Information"},{"idx":"3.","level":1,"text":"Implementing the NAVER Authentication Module"},{"idx":"3.1.","level":2,"text":"Creating the properties File"},{"idx":"3.2.","level":2,"text":"Assigning Basic Methods and Variables for the Authentication Module"},{"idx":"3.3.","level":2,"text":"Assigning API URLs"},{"idx":"3.4.","level":2,"text":"Method to Return the Authentication URL"},{"idx":"3.5.","level":2,"text":"Method to Return the Access Token"},{"idx":"3.6.","level":2,"text":"Method to Refresh and Return the Access Token"},{"idx":"3.7.","level":2,"text":"Method to Return the User Info Response"},{"idx":"3.8.","level":2,"text":"Method to Return the User Info Object"},{"idx":"3.9.","level":2,"text":"Method to Return the Result of Unlinking"},{"idx":"3.10.","level":2,"text":"Method to Return the URL for Renewing Consent to Provide Information"},{"idx":"3.11.","level":2,"text":"Full Code"},{"idx":"4.","level":1,"text":"Wrap-up"}]},"group":[{"title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 12. Closing Thoughts","url":"\/posts\/2021\/10\/25\/oauth2-java-server-12"},{"title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 11. Applying for OAuth Service Review","url":"\/posts\/2021\/10\/25\/oauth2-java-server-11"},{"title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 10. Implementing the Controllers","url":"\/posts\/2021\/10\/25\/oauth2-java-server-10"},{"title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 8. Implementing the Processes","url":"\/posts\/2021\/10\/24\/oauth2-java-server-8"},{"title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 7. Applying for the GitHub OAuth Service and Implementing the Module","url":"\/posts\/2021\/10\/23\/oauth2-java-server-7"},{"title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 6. Applying for the KAKAO OAuth Service and Implementing the Module","url":"\/posts\/2021\/10\/23\/oauth2-java-server-6"},{"title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 5. Applying for the Google OAuth Service and Implementing the Module","url":"\/posts\/2021\/10\/23\/oauth2-java-server-5"},{"title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 4. Applying for the NAVER OAuth Service and Implementing the Module","url":"\/posts\/2021\/10\/22\/oauth2-java-server-4"},{"title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 3. Implementing the OAuth2.0 Authentication Module with scribeJAVA","url":"\/posts\/2021\/10\/20\/oauth2-java-server-3"},{"title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 2. Designing the Authorization Server","url":"\/posts\/2021\/10\/14\/oauth2-java-server-2"},{"title":"[OAuth2.0] Building an OAuth2.0 Authorization Server with ScribeJAVA - 1. What is OAuth2.0?","url":"\/posts\/2021\/10\/14\/oauth2-java-server-1"}]}}</script>
+        <script id="vike_globalContext" type="application/json">{}</script>
+        <script src="/assets/entries/entry-client-routing.D3zuzaAF.js" type="module" async></script>
+        <link rel="modulepreload" href="/assets/entries/pages_posts_-id.D_Okxrcr.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-CdR2FKoq.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-Fpn0-Pqm.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-BEFtOQL8.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-OPBnc4Ld.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-DR8IhSux.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-Czpn1I53.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-C7ctEtix.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-BLfCQZmh.js" as="script" type="text/javascript">
+        <link rel="modulepreload" href="/assets/chunks/chunk-D-TcBJg8.js" as="script" type="text/javascript">
+      </body>
+    </html>
